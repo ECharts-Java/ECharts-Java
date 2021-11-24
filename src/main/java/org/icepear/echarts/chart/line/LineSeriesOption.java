@@ -18,9 +18,7 @@ import lombok.Setter;
  */
 @Getter
 @Setter
-public class LineSeriesOption {
-    private SeriesOption seriesOption;
-
+public class LineSeriesOption extends SeriesOption {
     private LineStateOption lineStateOption;
 
     private SeriesOnCartesianOptionMixin seriesOnCartesianOptionMixin;

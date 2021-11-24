@@ -11,18 +11,11 @@ import com.google.gson.JsonSerializer;
 
 import org.icepear.echarts.chart.line.LineSeriesOption;
 import org.icepear.echarts.chart.line.LineStateOption;
-import org.icepear.echarts.util.SeriesOption;
 
 public class LineSeriesOptionSerializer implements JsonSerializer<LineSeriesOption> {
     @Override
     public JsonElement serialize(LineSeriesOption src, Type typeOfSrc, JsonSerializationContext context) {
         JsonObject obj = new Gson().toJsonTree(src).getAsJsonObject();
-        obj.remove("seriesOption");
-        JsonObject seriesObj = context.serialize(src.getSeriesOption(), SeriesOption.class)
-                .getAsJsonObject();
-        for (Entry<String, JsonElement> e : seriesObj.entrySet()) {
-            obj.add(e.getKey(), e.getValue());
-        }
         obj.remove("lineStateOption");
         JsonObject stateObj = context.serialize(src.getLineStateOption(), LineStateOption.class)
                 .getAsJsonObject();
