@@ -27,3 +27,8 @@ hs_err_pid*
 .settings/
 .vscode/
 target/
+
+.apt_generated/
+.apt_generated_tests/
+
+.factorypath
