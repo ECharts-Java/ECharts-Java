@@ -9,8 +9,8 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonSerializationContext;
 import com.google.gson.JsonSerializer;
 
-import org.icepear.echarts.chart.LineSeriesOption;
-import org.icepear.echarts.chart.LineStateOptionMixin;
+import org.icepear.echarts.chart.line.LineSeriesOption;
+import org.icepear.echarts.chart.line.LineStateOption;
 import org.icepear.echarts.util.SeriesOption;
 
 public class LineSeriesOptionSerializer implements JsonSerializer<LineSeriesOption> {
@@ -23,8 +23,8 @@ public class LineSeriesOptionSerializer implements JsonSerializer<LineSeriesOpti
         for (Entry<String, JsonElement> e : seriesObj.entrySet()) {
             obj.add(e.getKey(), e.getValue());
         }
-        obj.remove("lineStateOptionMixin");
-        JsonObject stateObj = context.serialize(src.getLineStateOptionMixin(), LineStateOptionMixin.class)
+        obj.remove("lineStateOption");
+        JsonObject stateObj = context.serialize(src.getLineStateOption(), LineStateOption.class)
                 .getAsJsonObject();
         for (Entry<String, JsonElement> e : stateObj.entrySet()) {
             obj.add(e.getKey(), e.getValue());
