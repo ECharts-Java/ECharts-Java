@@ -1,4 +1,4 @@
-package org.icepear.echarts.chart;
+package org.icepear.echarts.chart.line;
 
 import lombok.Getter;
 import lombok.Setter;
