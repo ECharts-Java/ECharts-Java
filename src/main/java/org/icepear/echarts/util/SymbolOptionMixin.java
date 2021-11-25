@@ -6,16 +6,24 @@ import lombok.Setter;
 /**
  * https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/util/types.ts#L950
  */
-@Getter
-@Setter
-public class SymbolOptionMixin {
-    private String symbol;
+public interface SymbolOptionMixin {
+    @Getter
+    @Setter
+    public String symbol = null;
 
-    private Integer symbolSize;
+    @Getter
+    @Setter
+    public Integer symbolSize = null;
 
-    private Integer symbolRotate;
+    @Getter
+    @Setter
+    public Integer symbolRotate = null;
 
-    private Boolean symbolKeepAspect;
+    @Getter
+    @Setter
+    public Boolean symbolKeepAspect = null;
 
-    private Integer symbolOffset;
+    @Getter
+    @Setter
+    public Integer symbolOffset = null;
 }

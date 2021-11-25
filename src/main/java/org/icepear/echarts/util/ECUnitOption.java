@@ -8,28 +8,40 @@ import lombok.Setter;
 /**
  * https://github.com/apache/echarts/blob/f3471f0a7080e68f8819f7b000d32d73fb0820fb/src/util/types.ts#L501
  */
-@Getter
-@Setter
-public class ECUnitOption {
-    private AnimationOptionMixin animationOptionMixin;
+public interface ECUnitOption extends AnimationOptionMixin, ColorPaletteOptionMixin {
+    @Getter
+    @Setter
+    public Object baseOption = null;
 
-    private ColorPaletteOptionMixin colorPaletteOptionMixin;
+    @Getter
+    @Setter
+    public Object options = null;
 
-    private Object baseOption;
+    @Getter
+    @Setter
+    public Object media = null;
 
-    private Object options;
+    @Getter
+    @Setter
+    public List<ComponentOption> timeline = null;
 
-    private Object media;
+    @Getter
+    @Setter
+    public String backgroundColor = null;
 
-    private List<ComponentOption> timeline;
+    @Getter
+    @Setter
+    public String darkMode = null;
 
-    private String backgroundColor;
+    @Getter
+    @Setter
+    public Object textStyle = null;
 
-    private String darkMode;
+    @Getter
+    @Setter
+    public Boolean useUTC = null;
 
-    private Object textStyle;
-
-    private Boolean useUTC;
-
-    private AnimationOption stateAnimation;
+    @Getter
+    @Setter
+    public AnimationOption stateAnimation = null;
 }

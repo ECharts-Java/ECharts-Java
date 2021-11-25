@@ -13,58 +13,100 @@ import lombok.Setter;
 /**
  * https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/export/option.ts#L246
  */
-@Getter
-@Setter
-public class EChartsOption  {
-    private ECBasicOption ecBasicOption;
+public interface EChartsOption extends ECBasicOption {
+    @Getter
+    @Setter
+    public List<Object> dataset = null;
 
-    private List<Object> dataset;
+    @Getter
+    @Setter
+    public Object aria = null;
 
-    private Object aria;
+    @Getter
+    @Setter
+    public List<Object> title = null;
 
-    private List<Object> title;
+    @Getter
+    @Setter
+    public List<Object> grid = null;
 
-    private List<Object> grid;
+    @Getter
+    @Setter
+    public List<Object> radar = null;
 
-    private List<Object> radar;
+    @Getter
+    @Setter
+    public List<Object> polar = null;
 
-    private List<Object> polar;
+    @Getter
+    @Setter
+    public List<Object> geo = null;
 
-    private List<Object> geo;
+    @Getter
+    @Setter
+    public List<Object> angleAxis = null;
 
-    private List<Object> angleAxis;
+    @Getter
+    @Setter
+    public List<Object> radiusAxis = null;
 
-    private List<Object> radiusAxis;
+    @Getter
+    @Setter
+    public List<XAxisOption> xAxis = null;
 
-    private List<XAxisOption> xAxis;
+    @Getter
+    @Setter
+    public List<YAxisOption> yAxis = null;
 
-    private List<YAxisOption> yAxis;
+    @Getter
+    @Setter
+    public List<Object> singleAxis = null;
 
-    private List<Object> singleAxis;
+    @Getter
+    @Setter
+    public List<Object> parallel = null;
 
-    private List<Object> parallel;
+    @Getter
+    @Setter
+    public List<Object> parallelAxis = null;
 
-    private List<Object> parallelAxis;
+    @Getter
+    @Setter
+    public List<Object> calendar = null;
 
-    private List<Object> calendar;
+    @Getter
+    @Setter
+    public List<Object> toolbox = null;
 
-    private List<Object> toolbox;
+    @Getter
+    @Setter
+    public List<Object> tooltip = null;
 
-    private List<Object> tooltip;
+    @Getter
+    @Setter
+    public List<Object> axisPointer = null;
 
-    private List<Object> axisPointer;
+    @Getter
+    @Setter
+    public List<Object> brush = null;
 
-    private List<Object> brush;
+    @Getter
+    @Setter
+    public List<Object> legend = null;
 
-    private List<Object> timeline;
+    @Getter
+    @Setter
+    public List<Object> dataZoom = null;
 
-    private List<Object>  legend;
+    @Getter
+    @Setter
+    public List<Object> visualMap = null;
 
-    private List<Object>  dataZoom;
+    @Getter
+    @Setter
+    public List<Object> graphic = null;
 
-    private List<Object> visualMap;
-
-    private List<Object> graphic;
-
-    private List<SeriesOption> series;
+    @Getter
+    @Setter
+    public List<SeriesOption> series = null;
 }

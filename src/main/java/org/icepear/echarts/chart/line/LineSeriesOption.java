@@ -16,42 +16,50 @@ import lombok.Setter;
 /**
  * https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/chart/line/LineSeries.ts#L73
  */
-@Getter
-@Setter
-public class LineSeriesOption extends SeriesOption {
-    private LineStateOption lineStateOption;
+public interface LineSeriesOption
+        extends SeriesOption, LineStateOption, SeriesOnCartesianOptionMixin, SeriesOnPolarOptionMixin,
+        SeriesStackOptionMixin, SeriesSamplingOptionMixin, SymbolOptionMixin, SeriesEncodeOptionMixin {
+    @Getter
+    @Setter
+    public Boolean clip = null;
 
-    private SeriesOnCartesianOptionMixin seriesOnCartesianOptionMixin;
+    @Getter
+    @Setter
+    public Object lineStyle = null;
 
-    private SeriesOnPolarOptionMixin seriesOnPolarOptionMixin;
+    @Getter
+    @Setter
+    public Object areaStyle = null;
 
-    private SeriesStackOptionMixin seriesStackOptionMixin;
+    @Getter
+    @Setter
+    public String step = null;
 
-    private SeriesSamplingOptionMixin seriesSamplingOptionMixin;
+    @Getter
+    @Setter
+    public String smooth = null;
 
-    private SymbolOptionMixin symbolOptionMixin;
+    @Getter
+    @Setter
+    public String smoothMonotone = null;
 
-    private SeriesEncodeOptionMixin seriesEncodeOptionMixin;
+    @Getter
+    @Setter
+    public Boolean connectNulls = null;
 
-    private Boolean clip;
+    @Getter
+    @Setter
+    public Boolean showSymbol = null;
 
-    private Object lineStyle;
+    @Getter
+    @Setter
+    public Boolean showAllSymbol = null;
 
-    private Object areaStyle;
+    @Getter
+    @Setter
+    public List<Integer> data = null;
 
-    private String step;
-
-    private String smooth;
-
-    private String smoothMonotone;
-
-    private Boolean connectNulls;
-
-    private Boolean showSymbol;
-
-    private Boolean showAllSymbol;
-
-    private List<Integer> data;
-
-    private Boolean triggerLineEvent;
+    @Getter
+    @Setter
+    public Boolean triggerLineEvent = null;
 }

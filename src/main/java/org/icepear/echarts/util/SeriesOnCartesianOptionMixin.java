@@ -6,14 +6,20 @@ import lombok.Setter;
 /**
  * https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/util/types.ts#L1669
  */
-@Getter
-@Setter
-public class SeriesOnCartesianOptionMixin {
-    private Integer xAxisIndex;
+public interface SeriesOnCartesianOptionMixin {
+    @Getter
+    @Setter
+    public Integer xAxisIndex = null;
 
-    private Integer yAxisIndex;
+    @Getter
+    @Setter
+    public Integer yAxisIndex = null;
 
-    private String xAxisId;
-    
-    private String yAxisId;
+    @Getter
+    @Setter
+    public String xAxisId = null;
+
+    @Getter
+    @Setter
+    public String yAxisId = null;
 }

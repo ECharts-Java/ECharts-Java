@@ -9,50 +9,84 @@ import lombok.Setter;
 /**
  * https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/coord/axisCommonTypes.ts#L30
  */
-@Getter
-@Setter
-public class AxisBaseOptionCommon {
-    private ComponentOption componentOption;
+public interface AxisBaseOptionCommon extends ComponentOption, AnimationOptionMixin {
+    @Getter
+    @Setter
+    public Boolean show = null;
 
-    private AnimationOptionMixin animationOptionMixin;
+    @Getter
+    @Setter
+    public Boolean inverse = null;
 
-    private Boolean show;
+    @Getter
+    @Setter
+    public String nameLocation = null;
 
-    private Boolean inverse;
+    @Getter
+    @Setter
+    public Integer nameRotate = null;
 
-    private String nameLocation;
-    
-    private Integer nameRotate;
+    @Getter
+    @Setter
+    public Object nameTruncate = null;
 
-    private Object nameTruncate;
+    @Getter
+    @Setter
+    public Object nameTextStyle = null;
 
-    private Object nameTextStyle;
+    @Getter
+    @Setter
+    public Integer nameGap = null;
 
-    private Integer nameGap;
+    @Getter
+    @Setter
+    public Boolean silent = null;
 
-    private Boolean silent;
-    
-    private Boolean triggerEvent;
+    @Getter
+    @Setter
+    public Boolean triggerEvent = null;
 
-    private Object tooltip;
+    @Getter
+    @Setter
+    public Object tooltip = null;
 
-    private Object axisLabel;
+    @Getter
+    @Setter
+    public Object axisLabel = null;
 
-    private Object axisPointer;
+    @Getter
+    @Setter
+    public Object axisPointer = null;
 
-    private Object axisLine;
+    @Getter
+    @Setter
+    public Object axisLine = null;
 
-    private Object axisTick;
+    @Getter
+    @Setter
+    public Object axisTick = null;
 
-    private Object minorTick;
+    @Getter
+    @Setter
+    public Object minorTick = null;
 
-    private Object splitLine;
+    @Getter
+    @Setter
+    public Object splitLine = null;
 
-    private Object minorSplitLine;
+    @Getter
+    @Setter
+    public Object minorSplitLine = null;
 
-    private Object splitArea;
+    @Getter
+    @Setter
+    public Object splitArea = null;
 
-    private Integer min;
+    @Getter
+    @Setter
+    public Integer min = null;
 
-    private Integer max;
+    @Getter
+    @Setter
+    public Integer max = null;
 }

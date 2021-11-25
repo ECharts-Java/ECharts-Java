@@ -8,18 +8,24 @@ import lombok.Setter;
 /**
  * https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/coord/cartesian/AxisModel.ts#L33
  */
-@Getter
-@Setter
-public class CartesianAxisOption {
-    private AxisBaseOption axisBaseOption;
+public interface CartesianAxisOption extends AxisBaseOption {
+    @Getter
+    @Setter
+    public Integer gridIndex = null;
 
-    private Integer gridIndex;
+    @Getter
+    @Setter
+    public String gridId = null;
 
-    private String gridId;
+    @Getter
+    @Setter
+    public String position = null;
 
-    private String position;
+    @Getter
+    @Setter
+    public Integer offset = null;
 
-    private Integer offset;
-
-    private Object categorySortInfo;
+    @Getter
+    @Setter
+    public Object categorySortInfo = null;
 }
