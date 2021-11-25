@@ -6,8 +6,6 @@ import java.io.InputStreamReader;
 import java.io.Reader;
 import java.util.Arrays;
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
 
@@ -17,11 +15,12 @@ import org.icepear.echarts.component.Option;
 import org.icepear.echarts.component.ValueAxis;
 import org.icepear.echarts.component.XAxis;
 import org.icepear.echarts.component.YAxis;
-import org.icepear.echarts.serializer.XAxisSerializer;
-import org.icepear.echarts.serializer.YAxisSerializer;
+import org.icepear.echarts.serializer.EChartSerializer;
+import org.junit.Before;
 import org.junit.Test;
 
 public class LineTest {
+    @Before
     @Test
     public void testBasicLineChart() {
         CategoryAxis xCategoryAxis = new CategoryAxis();
@@ -44,12 +43,9 @@ public class LineTest {
         option.setYAxis(Arrays.asList(yAxis));
         option.setSeries(Arrays.asList(series));
 
-        Gson gson = new GsonBuilder().registerTypeAdapter(XAxis.class, new XAxisSerializer())
-                .registerTypeAdapter(YAxis.class, new YAxisSerializer()).create();
-
         Reader reader = new InputStreamReader(this.getClass().getResourceAsStream("reference/basic-line-chart.json"));
         JsonElement expected = JsonParser.parseReader(reader);
-        JsonElement actual = gson.toJsonTree(option);
+        JsonElement actual = EChartSerializer.toJsonTree(option);
         assertEquals(expected, actual);
     }
 }
