@@ -51,7 +51,7 @@ public class LineSeriesOption extends SeriesOption {
 
     private Boolean showAllSymbol;
 
-    private List<Object> data;
+    private List<Integer> data;
 
     private Boolean triggerLineEvent;
 }

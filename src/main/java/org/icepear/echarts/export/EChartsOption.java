@@ -1,7 +1,9 @@
-package org.icepear.echarts.exports;
+package org.icepear.echarts.export;
 
 import java.util.List;
 
+import org.icepear.echarts.coord.cartesian.XAxisOption;
+import org.icepear.echarts.coord.cartesian.YAxisOption;
 import org.icepear.echarts.util.ECBasicOption;
 import org.icepear.echarts.util.SeriesOption;
 
@@ -13,7 +15,7 @@ import lombok.Setter;
  */
 @Getter
 @Setter
-public class EChartsOption {
+public class EChartsOption  {
     private ECBasicOption ecBasicOption;
 
     private List<Object> dataset;
@@ -34,9 +36,9 @@ public class EChartsOption {
 
     private List<Object> radiusAxis;
 
-    private List<Object> xAxis;
+    private List<XAxisOption> xAxis;
 
-    private List<Object> yAxis;
+    private List<YAxisOption> yAxis;
 
     private List<Object> singleAxis;
 
