@@ -8,18 +8,16 @@ import lombok.Setter;
 /**
  * https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/coord/axisCommonTypes.ts#L110
  */
-@Getter
-@Setter
-public class CategoryAxisBaseOption implements AxisBaseOption {
-    private AxisBaseOptionCommon axisBaseOptionCommon;
+public interface CategoryAxisBaseOption extends AxisBaseOption, AxisBaseOptionCommon {
+    @Getter
+    @Setter
+    public Boolean boundaryGap = null;
 
-    private Boolean boundaryGap;
+    @Getter
+    @Setter
+    public List<Object> data = null;
 
-    private List<Object> data;
-
-    private Boolean deduplication;
-
-    public CategoryAxisBaseOption() {
-        
-    }
+    @Getter
+    @Setter
+    public Boolean deduplication = null;
 }

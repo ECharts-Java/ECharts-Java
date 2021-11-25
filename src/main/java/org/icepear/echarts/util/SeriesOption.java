@@ -2,120 +2,87 @@ package org.icepear.echarts.util;
 
 import java.util.Map;
 
-// import java.util.List;
-
 import lombok.Getter;
 import lombok.Setter;
-import lombok.experimental.Delegate;
 
 /**
  * https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/util/types.ts#L1587
  */
-@Getter
-@Setter
-public class SeriesOption {
-    @Delegate(types=ComponentOption.class)
-    private ComponentOption componentOption;
+public interface SeriesOption
+        extends ComponentOption, AnimationOptionMixin, ColorPaletteOptionMixin, StatesOptionMixin {
+    @Getter
+    @Setter
+    public Boolean silent = null;
 
-    @Delegate(types=AnimationOptionMixin.class)
-    private AnimationOptionMixin animationOptionMixin;
+    @Getter
+    @Setter
+    public String blendMode = null;
 
-    @Delegate(types=ColorPaletteOptionMixin.class)
-    private ColorPaletteOptionMixin colorPaletteOptionMixin;
+    @Getter
+    @Setter
+    public String cursor = null;
 
-    @Delegate(types=StatesOptionMixin.class)
-    private StatesOptionMixin statesOptionMixin;
+    @Getter
+    @Setter
+    public String dataGroupId = null;
 
-    private Boolean silent;
+    @Getter
+    @Setter
+    public Object data = null;
 
-    private String blendMode;
+    @Getter
+    @Setter
+    public String colorBy = null;
 
-    private String cursor;
+    @Getter
+    @Setter
+    public Boolean legendHoverLink = null;
 
-    private String dataGroupId;
+    @Getter
+    @Setter
+    public Integer progressive = null;
 
-    private Object data;
+    @Getter
+    @Setter
+    public Integer progressiveThreshold = null;
 
-    private String colorBy;
+    @Getter
+    @Setter
+    public String progressiveChunkMode = null;
 
-    private Boolean legendHoverLink;
+    @Getter
+    @Setter
+    public String coordinateSystem = null;
 
-    private Integer progressive;
+    @Getter
+    @Setter
+    public Integer hoverLayerThreshold = null;
 
-    private Integer progressiveThreshold;
+    @Getter
+    @Setter
+    public String seriesLayoutBy = null;
 
-    private String progressiveChunkMode;
+    @Getter
+    @Setter
+    public Object labelLine = null;
 
-    private String coordinateSystem;
+    @Getter
+    @Setter
+    public Object labelLayout = null;
 
-    private Integer hoverLayerThreshold;
+    @Getter
+    @Setter
+    public Object stateAnimation = null;
 
-    private String seriesLayoutBy;
+    @Getter
+    @Setter
+    public Object universalTransition = null;
 
-    private Object labelLine;
+    @Getter
+    @Setter
+    public Map<String, Boolean> selectedMap = null;
 
-    private Object labelLayout;
-
-    private Object stateAnimation;
-
-    private Object universalTransition;
-
-    private Map<String, Boolean> selectedMap;
-
-    private String selectedMode;
-
-    // private String darkMode;
-
-    // private List<String> backgroundColor;
-
-    // private List<String> gradientColor;
-
-    // private Aria aria;
-
-    // private TextStyle textStyle;
-
-    // private Boolean useUTC;
-
-    // private List<Title> title;
-
-    // private List<RadiusAxis> radiusAxis;
-
-    // private List<AngleAxis> angleAxis;
-
-    // private List<Polar> polar;
-
-    // private List<Toolbox> toolbox;
-
-    // private List<Dataset> dataset;
-
-    // private List<Graphic> graphic;
-
-    // private List<AxisPointer> axisPointer;
-
-    // private List<Tooltip> tooltip;
-
-    // private List<Axis> yAxis;
-
-    // private List<Axis> xAxis;
-
-    // private List<Grid> grid;
-
-    // private List<Series> series;
-
-    // private List<Legend> legend;
-
-    // private List<VisualMap> visualMap;
-
-    // private List<MarkArea> markArea;
-
-    // private List<MarkLine> markLine;
-
-    // private List<MarkPoint> markPoint;
-
-    // private List<DataZoom> dataZoom;
-    
-    public SeriesOption() {
-        this.componentOption = new ComponentOption();
-        this.animationOptionMixin = new AnimationOptionMixin();
-    }
+    @Getter
+    @Setter
+    public String selectedMode = null;
 }

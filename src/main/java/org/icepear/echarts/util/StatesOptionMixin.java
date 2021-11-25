@@ -6,12 +6,16 @@ import lombok.Setter;
 /**
  * https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/util/types.ts#L1534
  */
-@Getter
-@Setter
-public class StatesOptionMixin {
-    private Object emphasis;
+public interface StatesOptionMixin {
+    @Getter
+    @Setter
+    public Object emphasis = null;
 
-    private Object select;
+    @Getter
+    @Setter
+    public Object select = null;
 
-    private Object blur;
+    @Getter
+    @Setter
+    public Object blur = null;
 }

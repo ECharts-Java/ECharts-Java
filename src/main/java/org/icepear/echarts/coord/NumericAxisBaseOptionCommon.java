@@ -8,18 +8,24 @@ import lombok.Setter;
 /**
  * https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/coord/axisCommonTypes.ts#L84
  */
-@Getter
-@Setter
-public class NumericAxisBaseOptionCommon {
-    private AxisBaseOptionCommon axisBaseOptionCommon;
+public interface NumericAxisBaseOptionCommon extends AxisBaseOptionCommon {
+    @Getter
+    @Setter
+    public List<Integer> boundaryGap = null;
 
-    private List<Integer> boundaryGap;
+    @Getter
+    @Setter
+    public Integer splitNumber = null;
 
-    private Integer splitNumber;
+    @Getter
+    @Setter
+    public Integer interval = null;
 
-    private Integer interval;
+    @Getter
+    @Setter
+    public Integer minInterval = null;
 
-    private Integer minInterval;
-
-    private Integer maxInterval;
+    @Getter
+    @Setter
+    public Integer maxInterval = null;
 }

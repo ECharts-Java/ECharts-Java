@@ -6,22 +6,36 @@ import lombok.Setter;
 /**
  * https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/util/types.ts#L880
  */
-@Getter
-@Setter
-public class AnimationOptionMixin {
-    private String animation;
+public interface AnimationOptionMixin {
+    @Getter
+    @Setter
+    public String animation = null;
 
-    private Integer animationThreshold;
+    @Getter
+    @Setter
+    public Integer animationThreshold = null;
 
-    private Integer animationDuration;
+    @Getter
+    @Setter
+    public Integer animationDuration = null;
 
-    private String animationEasing;
+    @Getter
+    @Setter
+    public String animationEasing = null;
 
-    private Integer animationDelay;
+    @Getter
+    @Setter
+    public Integer animationDelay = null;
 
-    private Integer animationDurationUpdate;
+    @Getter
+    @Setter
+    public Integer animationDurationUpdate = null;
 
-    private String animationEasingUpdate;
+    @Getter
+    @Setter
+    public String animationEasingUpdate = null;
 
-    private Integer animationDelayUpdate;
+    @Getter
+    @Setter
+    public Integer animationDelayUpdate = null;
 }

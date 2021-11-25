@@ -6,18 +6,28 @@ import lombok.Setter;
 /**
  * https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/util/types.ts#L1491
  */
-@Getter
-@Setter
-public class ComponentOption {
-    private String mainType;
+public interface ComponentOption {
+    @Getter
+    @Setter
+    public String mainType = null;
 
-    private String type;
+    @Getter
+    @Setter
+    public String type = null;
 
-    private String id;
+    @Getter
+    @Setter
+    public String id = null;
 
-    private String name;
+    @Getter
+    @Setter
+    public String name = null;
 
-    private Integer z;
+    @Getter
+    @Setter
+    public Integer z = null;
 
-    private Integer zlevel;
+    @Getter
+    @Setter
+    public Integer zlevel = null;
 }

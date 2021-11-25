@@ -8,18 +8,28 @@ import lombok.Setter;
 /**
  * https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/util/types.ts#L1711
  */
-@Getter
-@Setter
-public class SeriesEncodeOptionMixin {
-    private Integer datasetIndex;
-    
-    private String datasetId;
+public interface SeriesEncodeOptionMixin {
+    @Getter
+    @Setter
+    public Integer datasetIndex = null;
 
-    private String seriesLayoutBy;
+    @Getter
+    @Setter
+    public String datasetId = null;
 
-    private String sourceHeader;
+    @Getter
+    @Setter
+    public String seriesLayoutBy = null;
 
-    private List<Object> dimensions;
+    @Getter
+    @Setter
+    public String sourceHeader = null;
 
-    private String encode;
+    @Getter
+    @Setter
+    public List<Object> dimensions = null;
+
+    @Getter
+    @Setter
+    public String encode = null;
 }

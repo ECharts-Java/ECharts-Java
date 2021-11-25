@@ -6,12 +6,16 @@ import lombok.Setter;
 /**
  * https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/chart/line/LineSeries.ts#L55
  */
-@Getter
-@Setter
-public class LineStateOption {
-    private Object itemStyle;
+public interface LineStateOption {
+    @Getter
+    @Setter
+    public Object itemStyle = null;
 
-    private Object label;
+    @Getter
+    @Setter
+    public Object label = null;
 
-    private Object endLabel;
+    @Getter
+    @Setter
+    public Object endLabel = null;
 }
