@@ -13,11 +13,11 @@ public interface SymbolOptionMixin {
 
     @Getter
     @Setter
-    public Integer symbolSize = null;
+    public Number symbolSize = null;
 
     @Getter
     @Setter
-    public Integer symbolRotate = null;
+    public Number symbolRotate = null;
 
     @Getter
     @Setter
@@ -25,5 +25,5 @@ public interface SymbolOptionMixin {
 
     @Getter
     @Setter
-    public Integer symbolOffset = null;
+    public Number symbolOffset = null;
 }

@@ -24,7 +24,7 @@ public interface AxisBaseOptionCommon extends ComponentOption, AnimationOptionMi
 
     @Getter
     @Setter
-    public Integer nameRotate = null;
+    public Number nameRotate = null;
 
     @Getter
     @Setter
@@ -36,7 +36,7 @@ public interface AxisBaseOptionCommon extends ComponentOption, AnimationOptionMi
 
     @Getter
     @Setter
-    public Integer nameGap = null;
+    public Number nameGap = null;
 
     @Getter
     @Setter
@@ -84,9 +84,9 @@ public interface AxisBaseOptionCommon extends ComponentOption, AnimationOptionMi
 
     @Getter
     @Setter
-    public Integer min = null;
+    public Number min = null;
 
     @Getter
     @Setter
-    public Integer max = null;
+    public Number max = null;
 }

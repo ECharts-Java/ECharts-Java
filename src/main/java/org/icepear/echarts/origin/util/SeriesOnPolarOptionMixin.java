@@ -9,7 +9,7 @@ import lombok.Setter;
 public interface SeriesOnPolarOptionMixin {
     @Getter
     @Setter
-    public Integer polarIndex = null;
+    public Number polarIndex = null;
 
     @Getter
     @Setter

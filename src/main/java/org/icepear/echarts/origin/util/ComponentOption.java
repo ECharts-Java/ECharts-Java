@@ -25,9 +25,9 @@ public interface ComponentOption {
 
     @Getter
     @Setter
-    public Integer z = null;
+    public Number z = null;
 
     @Getter
     @Setter
-    public Integer zlevel = null;
+    public Number zlevel = null;
 }

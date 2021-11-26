@@ -2,6 +2,10 @@ package org.icepear.echarts.origin.export;
 
 import java.util.List;
 
+import org.icepear.echarts.component.Grid;
+import org.icepear.echarts.origin.component.legend.LegendOption;
+import org.icepear.echarts.origin.component.title.TitleOption;
+import org.icepear.echarts.origin.component.tooltip.TooltipOption;
 import org.icepear.echarts.origin.coord.cartesian.XAxisOption;
 import org.icepear.echarts.origin.coord.cartesian.YAxisOption;
 import org.icepear.echarts.origin.util.ECBasicOption;
@@ -24,11 +28,11 @@ public interface EChartsOption extends ECBasicOption {
 
     @Getter
     @Setter
-    public List<Object> title = null;
+    public List<TitleOption> title = null;
 
     @Getter
     @Setter
-    public List<Object> grid = null;
+    public List<Grid> grid = null;
 
     @Getter
     @Setter
@@ -80,7 +84,7 @@ public interface EChartsOption extends ECBasicOption {
 
     @Getter
     @Setter
-    public List<Object> tooltip = null;
+    public List<TooltipOption> tooltip = null;
 
     @Getter
     @Setter
@@ -92,7 +96,7 @@ public interface EChartsOption extends ECBasicOption {
 
     @Getter
     @Setter
-    public List<Object> legend = null;
+    public List<LegendOption> legend = null;
 
     @Getter
     @Setter

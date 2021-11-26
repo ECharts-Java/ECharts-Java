@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Map;
 
 import org.icepear.echarts.origin.chart.line.LineSeriesOption;
+import org.icepear.echarts.origin.util.AreaStyleOption;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -19,7 +20,7 @@ public class LineSeries implements LineSeriesOption {
 
     @Getter
     @Setter
-    public Object areaStyle = null;
+    public AreaStyleOption areaStyle = null;
 
     @Getter
     @Setter
@@ -27,7 +28,7 @@ public class LineSeries implements LineSeriesOption {
 
     @Getter
     @Setter
-    public String smooth = null;
+    public Boolean smooth = null;
 
     @Getter
     @Setter
@@ -79,11 +80,11 @@ public class LineSeries implements LineSeriesOption {
 
     @Getter
     @Setter
-    public Integer progressive = null;
+    public Number progressive = null;
 
     @Getter
     @Setter
-    public Integer progressiveThreshold = null;
+    public Number progressiveThreshold = null;
 
     @Getter
     @Setter
@@ -95,7 +96,7 @@ public class LineSeries implements LineSeriesOption {
 
     @Getter
     @Setter
-    public Integer hoverLayerThreshold = null;
+    public Number hoverLayerThreshold = null;
 
     @Getter
     @Setter
@@ -143,11 +144,11 @@ public class LineSeries implements LineSeriesOption {
 
     @Getter
     @Setter
-    public Integer z = null;
+    public Number z = null;
 
     @Getter
     @Setter
-    public Integer zlevel = null;
+    public Number zlevel = null;
 
     @Getter
     @Setter
@@ -155,11 +156,11 @@ public class LineSeries implements LineSeriesOption {
 
     @Getter
     @Setter
-    public Integer animationThreshold = null;
+    public Number animationThreshold = null;
 
     @Getter
     @Setter
-    public Integer animationDuration = null;
+    public Number animationDuration = null;
 
     @Getter
     @Setter
@@ -167,11 +168,11 @@ public class LineSeries implements LineSeriesOption {
 
     @Getter
     @Setter
-    public Integer animationDelay = null;
+    public Number animationDelay = null;
 
     @Getter
     @Setter
-    public Integer animationDurationUpdate = null;
+    public Number animationDurationUpdate = null;
 
     @Getter
     @Setter
@@ -179,7 +180,7 @@ public class LineSeries implements LineSeriesOption {
 
     @Getter
     @Setter
-    public Integer animationDelayUpdate = null;
+    public Number animationDelayUpdate = null;
 
     @Getter
     @Setter
@@ -215,11 +216,11 @@ public class LineSeries implements LineSeriesOption {
 
     @Getter
     @Setter
-    public Integer xAxisIndex = null;
+    public Number xAxisIndex = null;
 
     @Getter
     @Setter
-    public Integer yAxisIndex = null;
+    public Number yAxisIndex = null;
 
     @Getter
     @Setter
@@ -231,7 +232,7 @@ public class LineSeries implements LineSeriesOption {
 
     @Getter
     @Setter
-    public Integer polarIndex = null;
+    public Number polarIndex = null;
 
     @Getter
     @Setter
@@ -251,11 +252,11 @@ public class LineSeries implements LineSeriesOption {
 
     @Getter
     @Setter
-    public Integer symbolSize = null;
+    public Number symbolSize = null;
 
     @Getter
     @Setter
-    public Integer symbolRotate = null;
+    public Number symbolRotate = null;
 
     @Getter
     @Setter
@@ -263,11 +264,11 @@ public class LineSeries implements LineSeriesOption {
 
     @Getter
     @Setter
-    public Integer symbolOffset = null;
+    public Number symbolOffset = null;
 
     @Getter
     @Setter
-    public Integer datasetIndex = null;
+    public Number datasetIndex = null;
 
     @Getter
     @Setter

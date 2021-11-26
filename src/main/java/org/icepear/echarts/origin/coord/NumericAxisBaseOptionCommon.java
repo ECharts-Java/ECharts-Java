@@ -11,21 +11,21 @@ import lombok.Setter;
 public interface NumericAxisBaseOptionCommon extends AxisBaseOptionCommon {
     @Getter
     @Setter
-    public List<Integer> boundaryGap = null;
+    public List<Number> boundaryGap = null;
 
     @Getter
     @Setter
-    public Integer splitNumber = null;
+    public Number splitNumber = null;
 
     @Getter
     @Setter
-    public Integer interval = null;
+    public Number interval = null;
 
     @Getter
     @Setter
-    public Integer minInterval = null;
+    public Number minInterval = null;
 
     @Getter
     @Setter
-    public Integer maxInterval = null;
+    public Number maxInterval = null;
 }
