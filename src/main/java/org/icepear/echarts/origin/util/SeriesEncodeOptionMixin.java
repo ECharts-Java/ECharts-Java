@@ -11,7 +11,7 @@ import lombok.Setter;
 public interface SeriesEncodeOptionMixin {
     @Getter
     @Setter
-    public Integer datasetIndex = null;
+    public Number datasetIndex = null;
 
     @Getter
     @Setter

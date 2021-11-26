@@ -1,5 +1,6 @@
 package org.icepear.echarts.origin.chart.line;
 
+import org.icepear.echarts.origin.util.AreaStyleOption;
 import org.icepear.echarts.origin.util.SeriesEncodeOptionMixin;
 import org.icepear.echarts.origin.util.SeriesOnCartesianOptionMixin;
 import org.icepear.echarts.origin.util.SeriesOnPolarOptionMixin;
@@ -27,7 +28,7 @@ public interface LineSeriesOption
 
     @Getter
     @Setter
-    public Object areaStyle = null;
+    public AreaStyleOption areaStyle = null;
 
     @Getter
     @Setter
@@ -35,7 +36,7 @@ public interface LineSeriesOption
 
     @Getter
     @Setter
-    public String smooth = null;
+    public Boolean smooth = null;
 
     @Getter
     @Setter

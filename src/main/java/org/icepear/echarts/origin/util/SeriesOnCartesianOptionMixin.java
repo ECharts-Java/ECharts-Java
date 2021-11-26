@@ -9,11 +9,11 @@ import lombok.Setter;
 public interface SeriesOnCartesianOptionMixin {
     @Getter
     @Setter
-    public Integer xAxisIndex = null;
+    public Number xAxisIndex = null;
 
     @Getter
     @Setter
-    public Integer yAxisIndex = null;
+    public Number yAxisIndex = null;
 
     @Getter
     @Setter

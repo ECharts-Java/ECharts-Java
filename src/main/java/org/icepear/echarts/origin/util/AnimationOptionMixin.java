@@ -13,11 +13,11 @@ public interface AnimationOptionMixin {
 
     @Getter
     @Setter
-    public Integer animationThreshold = null;
+    public Number animationThreshold = null;
 
     @Getter
     @Setter
-    public Integer animationDuration = null;
+    public Number animationDuration = null;
 
     @Getter
     @Setter
@@ -25,11 +25,11 @@ public interface AnimationOptionMixin {
 
     @Getter
     @Setter
-    public Integer animationDelay = null;
+    public Number animationDelay = null;
 
     @Getter
     @Setter
-    public Integer animationDurationUpdate = null;
+    public Number animationDurationUpdate = null;
 
     @Getter
     @Setter
@@ -37,5 +37,5 @@ public interface AnimationOptionMixin {
 
     @Getter
     @Setter
-    public Integer animationDelayUpdate = null;
+    public Number animationDelayUpdate = null;
 }

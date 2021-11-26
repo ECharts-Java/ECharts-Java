@@ -40,11 +40,11 @@ public interface SeriesOption
 
     @Getter
     @Setter
-    public Integer progressive = null;
+    public Number progressive = null;
 
     @Getter
     @Setter
-    public Integer progressiveThreshold = null;
+    public Number progressiveThreshold = null;
 
     @Getter
     @Setter
@@ -56,7 +56,7 @@ public interface SeriesOption
 
     @Getter
     @Setter
-    public Integer hoverLayerThreshold = null;
+    public Number hoverLayerThreshold = null;
 
     @Getter
     @Setter

@@ -2,6 +2,9 @@ package org.icepear.echarts.component;
 
 import java.util.List;
 
+import org.icepear.echarts.origin.component.legend.LegendOption;
+import org.icepear.echarts.origin.component.title.TitleOption;
+import org.icepear.echarts.origin.component.tooltip.TooltipOption;
 import org.icepear.echarts.origin.coord.cartesian.XAxisOption;
 import org.icepear.echarts.origin.coord.cartesian.YAxisOption;
 import org.icepear.echarts.origin.export.EChartsOption;
@@ -23,11 +26,11 @@ public class Option implements EChartsOption {
 
     @Getter
     @Setter
-    public List<Object> title = null;
+    public List<TitleOption> title = null;
 
     @Getter
     @Setter
-    public List<Object> grid = null;
+    public List<Grid> grid = null;
 
     @Getter
     @Setter
@@ -79,7 +82,7 @@ public class Option implements EChartsOption {
 
     @Getter
     @Setter
-    public List<Object> tooltip = null;
+    public List<TooltipOption> tooltip = null;
 
     @Getter
     @Setter
@@ -91,7 +94,7 @@ public class Option implements EChartsOption {
 
     @Getter
     @Setter
-    public List<Object> legend = null;
+    public List<LegendOption> legend = null;
 
     @Getter
     @Setter
@@ -151,11 +154,11 @@ public class Option implements EChartsOption {
 
     @Getter
     @Setter
-    public Integer animationThreshold = null;
+    public Number animationThreshold = null;
 
     @Getter
     @Setter
-    public Integer animationDuration = null;
+    public Number animationDuration = null;
 
     @Getter
     @Setter
@@ -163,11 +166,11 @@ public class Option implements EChartsOption {
 
     @Getter
     @Setter
-    public Integer animationDelay = null;
+    public Number animationDelay = null;
 
     @Getter
     @Setter
-    public Integer animationDurationUpdate = null;
+    public Number animationDurationUpdate = null;
 
     @Getter
     @Setter
@@ -175,7 +178,7 @@ public class Option implements EChartsOption {
 
     @Getter
     @Setter
-    public Integer animationDelayUpdate = null;
+    public Number animationDelayUpdate = null;
 
     @Getter
     @Setter

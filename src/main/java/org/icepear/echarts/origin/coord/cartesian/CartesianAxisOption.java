@@ -11,7 +11,7 @@ import lombok.Setter;
 public interface CartesianAxisOption extends AxisBaseOption {
     @Getter
     @Setter
-    public Integer gridIndex = null;
+    public Number gridIndex = null;
 
     @Getter
     @Setter
@@ -23,7 +23,7 @@ public interface CartesianAxisOption extends AxisBaseOption {
 
     @Getter
     @Setter
-    public Integer offset = null;
+    public Number offset = null;
 
     @Getter
     @Setter

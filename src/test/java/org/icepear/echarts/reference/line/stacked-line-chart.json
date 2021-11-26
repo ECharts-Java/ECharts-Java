@@ -1,0 +1,130 @@
+{
+    "title": [
+        {
+            "text": "Stacked Line"
+        }
+    ],
+    "grid": [
+        {
+            "containLabel": true,
+            "right": "4%",
+            "bottom": "3%",
+            "left": "3%"
+        }
+    ],
+    "xAxis": [
+        {
+            "boundaryGap": false,
+            "data": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+            ],
+            "type": "category"
+        }
+    ],
+    "yAxis": [
+        {
+            "type": "value"
+        }
+    ],
+    "toolbox": [
+        {
+            "feature": {
+                "saveAsImage": {}
+            }
+        }
+    ],
+    "tooltip": [
+        {
+            "trigger": "axis"
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "Email",
+                "Union Ads",
+                "Video Ads",
+                "Direct",
+                "Search Engine"
+            ]
+        }
+    ],
+    "series": [
+        {
+            "data": [
+                120,
+                132,
+                101,
+                134,
+                90,
+                230,
+                210
+            ],
+            "type": "line",
+            "name": "Email",
+            "stack": "Total"
+        },
+        {
+            "data": [
+                220,
+                182,
+                191,
+                234,
+                290,
+                330,
+                310
+            ],
+            "type": "line",
+            "name": "Union Ads",
+            "stack": "Total"
+        },
+        {
+            "data": [
+                150,
+                232,
+                201,
+                154,
+                190,
+                330,
+                410
+            ],
+            "type": "line",
+            "name": "Video Ads",
+            "stack": "Total"
+        },
+        {
+            "data": [
+                320,
+                332,
+                301,
+                334,
+                390,
+                330,
+                320
+            ],
+            "type": "line",
+            "name": "Direct",
+            "stack": "Total"
+        },
+        {
+            "data": [
+                820,
+                932,
+                901,
+                934,
+                1290,
+                1330,
+                1320
+            ],
+            "type": "line",
+            "name": "Search Engine",
+            "stack": "Total"
+        }
+    ]
+}

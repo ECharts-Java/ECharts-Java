@@ -14,23 +14,23 @@ public class ValueAxis implements ValueAxisBaseOption {
 
     @Getter
     @Setter
-    private List<Integer> boundaryGap = null;
+    private List<Number> boundaryGap = null;
 
     @Getter
     @Setter
-    private Integer splitNumber = null;
+    private Number splitNumber = null;
 
     @Getter
     @Setter
-    private Integer interval = null;
+    private Number interval = null;
 
     @Getter
     @Setter
-    private Integer minInterval = null;
+    private Number minInterval = null;
 
     @Getter
     @Setter
-    private Integer maxInterval = null;
+    private Number maxInterval = null;
 
     @Getter
     @Setter
@@ -46,7 +46,7 @@ public class ValueAxis implements ValueAxisBaseOption {
 
     @Getter
     @Setter
-    private Integer nameRotate = null;
+    private Number nameRotate = null;
 
     @Getter
     @Setter
@@ -58,7 +58,7 @@ public class ValueAxis implements ValueAxisBaseOption {
 
     @Getter
     @Setter
-    private Integer nameGap = null;
+    private Number nameGap = null;
 
     @Getter
     @Setter
@@ -106,11 +106,11 @@ public class ValueAxis implements ValueAxisBaseOption {
 
     @Getter
     @Setter
-    private Integer min = null;
+    private Number min = null;
 
     @Getter
     @Setter
-    private Integer max = null;
+    private Number max = null;
 
     @Getter
     @Setter
@@ -130,11 +130,11 @@ public class ValueAxis implements ValueAxisBaseOption {
 
     @Getter
     @Setter
-    private Integer z = null;
+    private Number z = null;
 
     @Getter
     @Setter
-    private Integer zlevel = null;
+    private Number zlevel = null;
 
     @Getter
     @Setter
@@ -142,11 +142,11 @@ public class ValueAxis implements ValueAxisBaseOption {
 
     @Getter
     @Setter
-    private Integer animationThreshold = null;
+    private Number animationThreshold = null;
 
     @Getter
     @Setter
-    private Integer animationDuration = null;
+    private Number animationDuration = null;
 
     @Getter
     @Setter
@@ -154,11 +154,11 @@ public class ValueAxis implements ValueAxisBaseOption {
 
     @Getter
     @Setter
-    private Integer animationDelay = null;
+    private Number animationDelay = null;
 
     @Getter
     @Setter
-    private Integer animationDurationUpdate = null;
+    private Number animationDurationUpdate = null;
 
     @Getter
     @Setter
@@ -166,5 +166,5 @@ public class ValueAxis implements ValueAxisBaseOption {
 
     @Getter
     @Setter
-    private Integer animationDelayUpdate = null;
+    private Number animationDelayUpdate = null;
 }

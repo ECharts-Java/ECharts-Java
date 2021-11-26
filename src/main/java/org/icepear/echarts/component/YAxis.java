@@ -13,7 +13,7 @@ public class YAxis implements YAxisOption {
 
     @Getter
     @Setter
-    private Integer gridIndex = null;
+    private Number gridIndex = null;
 
     @Getter
     @Setter
@@ -25,7 +25,7 @@ public class YAxis implements YAxisOption {
 
     @Getter
     @Setter
-    private Integer offset = null;
+    private Number offset = null;
 
     @Getter
     @Setter

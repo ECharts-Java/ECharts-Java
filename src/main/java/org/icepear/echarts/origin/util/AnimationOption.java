@@ -9,7 +9,7 @@ import lombok.Setter;
 public interface AnimationOption {
     @Getter
     @Setter
-    public Integer duration = null;
+    public Number duration = null;
 
     @Getter
     @Setter
@@ -17,5 +17,5 @@ public interface AnimationOption {
 
     @Getter
     @Setter
-    public Integer delay = null;
+    public Number delay = null;
 }
