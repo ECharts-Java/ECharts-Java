@@ -11,106 +11,55 @@ import org.icepear.echarts.origin.coord.cartesian.YAxisOption;
 import org.icepear.echarts.origin.util.ECBasicOption;
 import org.icepear.echarts.origin.util.SeriesOption;
 
-import lombok.Getter;
-import lombok.Setter;
-
 /**
  * https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/export/option.ts#L246
  */
 public interface EChartsOption extends ECBasicOption {
-    @Getter
-    @Setter
-    public List<Object> dataset = null;
+    void setDataset(List<Object> dataset);
 
-    @Getter
-    @Setter
-    public Object aria = null;
+    void setAria(Object aria);
 
-    @Getter
-    @Setter
-    public List<TitleOption> title = null;
+    void setTitle(List<TitleOption> title);
 
-    @Getter
-    @Setter
-    public List<Grid> grid = null;
+    void setGrid(List<Grid> grid);
 
-    @Getter
-    @Setter
-    public List<Object> radar = null;
+    void setRadar(List<Object> radar);
 
-    @Getter
-    @Setter
-    public List<Object> polar = null;
+    void setPolar(List<Object> polar);
 
-    @Getter
-    @Setter
-    public List<Object> geo = null;
+    void setGeo(List<Object> geo);
 
-    @Getter
-    @Setter
-    public List<Object> angleAxis = null;
+    void setAngleAxis(List<Object> angleAxis);
 
-    @Getter
-    @Setter
-    public List<Object> radiusAxis = null;
+    void setRadiusAxis(List<Object> radiusAxis);
 
-    @Getter
-    @Setter
-    public List<XAxisOption> xAxis = null;
+    void setXAxis(List<XAxisOption> xAxis);
 
-    @Getter
-    @Setter
-    public List<YAxisOption> yAxis = null;
+    void setYAxis(List<YAxisOption> yAxis);
 
-    @Getter
-    @Setter
-    public List<Object> singleAxis = null;
+    void setSingleAxis(List<Object> singleAxis);
 
-    @Getter
-    @Setter
-    public List<Object> parallel = null;
+    void setParallel(List<Object> parallel);
 
-    @Getter
-    @Setter
-    public List<Object> parallelAxis = null;
+    void setParallelAxis(List<Object> parallelAxis);
 
-    @Getter
-    @Setter
-    public List<Object> calendar = null;
+    void setCalendar(List<Object> calendar);
 
-    @Getter
-    @Setter
-    public List<Object> toolbox = null;
+    void setToolbox(List<Object> toolbox);
 
-    @Getter
-    @Setter
-    public List<TooltipOption> tooltip = null;
+    void setTooltip(List<TooltipOption> tooltip);
 
-    @Getter
-    @Setter
-    public List<Object> axisPointer = null;
+    void setAxisPointer(List<Object> axisPointer);
 
-    @Getter
-    @Setter
-    public List<Object> brush = null;
+    void setBrush(List<Object> brush);
 
-    @Getter
-    @Setter
-    public List<LegendOption> legend = null;
+    void setLegend(List<LegendOption> legend);
 
-    @Getter
-    @Setter
-    public List<Object> dataZoom = null;
+    void setDataZoom(List<Object> dataZoom);
 
-    @Getter
-    @Setter
-    public List<Object> visualMap = null;
+    void setVisualMap(List<Object> visualMap);
 
-    @Getter
-    @Setter
-    public List<Object> graphic = null;
+    void setGraphic(List<Object> graphic);
 
-    @Getter
-    @Setter
-    public List<SeriesOption> series = null;
+    void setSeries(List<SeriesOption> series);
 }

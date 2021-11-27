@@ -3,42 +3,23 @@ package org.icepear.echarts.origin.component.tooltip;
 import org.icepear.echarts.origin.util.CommonTooltipOption;
 import org.icepear.echarts.origin.util.ComponentOption;
 
-import lombok.Getter;
-import lombok.Setter;
-
 /**
  * https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/component/tooltip/TooltipModel.ts#L35
  */
 public interface TooltipOption extends CommonTooltipOption, ComponentOption {
-    @Getter
-    @Setter
-    public Object axisPointer = null;
+    void setAxisPointer(Object axisPointer);
 
-    @Getter
-    @Setter
-    public Boolean showContent = null;
+    void setShowContent(Boolean showContent);
 
-    @Getter
-    @Setter
-    public String trigger = null;
+    void setTrigger(String trigger);
 
-    @Getter
-    @Setter
-    public String displayMode = null;
+    void setDisplayMode(String displayMode);
 
-    @Getter
-    @Setter
-    public String renderMode = null;
+    void setRenderMode(String renderMode);
 
-    @Getter
-    @Setter
-    public Boolean appendToBody = null;
+    void setAppendToBody(Boolean appendToBody);
 
-    @Getter
-    @Setter
-    public String className = null;
+    void setClassName(String className);
 
-    @Getter
-    @Setter
-    public Object order = null;
+    void setOrder(Object order);
 }

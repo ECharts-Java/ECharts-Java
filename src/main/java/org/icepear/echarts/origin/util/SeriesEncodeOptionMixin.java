@@ -2,34 +2,19 @@ package org.icepear.echarts.origin.util;
 
 import java.util.List;
 
-import lombok.Getter;
-import lombok.Setter;
-
 /**
  * https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/util/types.ts#L1711
  */
 public interface SeriesEncodeOptionMixin {
-    @Getter
-    @Setter
-    public Number datasetIndex = null;
+    void setDatasetIndex(Number datasetIndex);
 
-    @Getter
-    @Setter
-    public String datasetId = null;
+    void setDatasetId(String datasetId);
 
-    @Getter
-    @Setter
-    public String seriesLayoutBy = null;
+    void setSeriesLayoutBy(String seriesLayoutBy);
 
-    @Getter
-    @Setter
-    public String sourceHeader = null;
+    void setSourceHeader(String sourceHeader);
 
-    @Getter
-    @Setter
-    public List<Object> dimensions = null;
+    void setDimensions(List<Object> dimensions);
 
-    @Getter
-    @Setter
-    public String encode = null;
+    void setEncode(String encode);
 }

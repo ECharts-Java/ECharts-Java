@@ -4,95 +4,51 @@ import org.icepear.echarts.origin.component.tooltip.TooltipOption;
 import org.icepear.echarts.origin.coord.cartesian.GridOption;
 import org.icepear.echarts.type.BoxLength;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 
+@Data
 public class Grid implements GridOption {
-    @Getter
-    @Setter
-    public Boolean show = null;
+    private Boolean show = null;
 
-    @Getter
-    @Setter
-    public Boolean containLabel = null;
+    private Boolean containLabel = null;
 
-    @Getter
-    @Setter
-    public String backgroundColor = null;
+    private String backgroundColor = null;
 
-    @Getter
-    @Setter
-    public Number borderWidth = null;
+    private Number borderWidth = null;
 
-    @Getter
-    @Setter
-    public String borderColor = null;
+    private String borderColor = null;
 
-    @Getter
-    @Setter
-    public TooltipOption tooltip = null;
+    private TooltipOption tooltip = null;
 
-    @Getter
-    @Setter
-    public String mainType = null;
+    private String mainType = null;
 
-    @Getter
-    @Setter
-    public String type = null;
+    private String type = null;
 
-    @Getter
-    @Setter
-    public String id = null;
+    private String id = null;
 
-    @Getter
-    @Setter
-    public String name = null;
+    private String name = null;
 
-    @Getter
-    @Setter
-    public Number z = null;
+    private Number z = null;
 
-    @Getter
-    @Setter
-    public Number zlevel = null;
+    private Number zlevel = null;
 
-    @Getter
-    @Setter
-    public BoxLength<?> width = null;
+    private BoxLength<?> width = null;
 
-    @Getter
-    @Setter
-    public BoxLength<?> height = null;
+    private BoxLength<?> height = null;
 
-    @Getter
-    @Setter
-    public BoxLength<?> top = null;
+    private BoxLength<?> top = null;
 
-    @Getter
-    @Setter
-    public BoxLength<?> right = null;
+    private BoxLength<?> right = null;
 
-    @Getter
-    @Setter
-    public BoxLength<?> bottom = null;
+    private BoxLength<?> bottom = null;
 
-    @Getter
-    @Setter
-    public BoxLength<?> left = null;
+    private BoxLength<?> left = null;
 
-    @Getter
-    @Setter
-    public Number shadowBlur = null;
+    private Number shadowBlur = null;
 
-    @Getter
-    @Setter
-    public String shadowColor = null;
+    private String shadowColor = null;
 
-    @Getter
-    @Setter
-    public Number shadowOffsetX = null;
+    private Number shadowOffsetX = null;
 
-    @Getter
-    @Setter
-    public Number shadowOffsetY = null;
+    private Number shadowOffsetY = null;
 }

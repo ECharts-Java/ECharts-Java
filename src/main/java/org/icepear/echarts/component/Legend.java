@@ -7,200 +7,104 @@ import org.icepear.echarts.origin.component.legend.LegendOption;
 import org.icepear.echarts.origin.component.tooltip.TooltipOption;
 import org.icepear.echarts.type.BoxLength;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 
+@Data
 public class Legend implements LegendOption {
-    @Getter
-    @Setter
-    public Boolean show = null;
+    private Boolean show = null;
 
-    @Getter
-    @Setter
-    public Object orient = null;
+    private Object orient = null;
 
-    @Getter
-    @Setter
-    public String align = null;
+    private String align = null;
 
-    @Getter
-    @Setter
-    public String backgroundColor = null;
+    private String backgroundColor = null;
 
-    @Getter
-    @Setter
-    public List<Number> borderRadius = null;
+    private List<Number> borderRadius = null;
 
-    @Getter
-    @Setter
-    public List<Number> padding = null;
+    private List<Number> padding = null;
 
-    @Getter
-    @Setter
-    public Number itemGap = null;
+    private Number itemGap = null;
 
-    @Getter
-    @Setter
-    public Number itemWidth = null;
+    private Number itemWidth = null;
 
-    @Getter
-    @Setter
-    public Number itemHeight = null;
+    private Number itemHeight = null;
 
-    @Getter
-    @Setter
-    public String selectedMode = null;
+    private String selectedMode = null;
 
-    @Getter
-    @Setter
-    public Map<String, Boolean> selected = null;
+    private Map<String, Boolean> selected = null;
 
-    @Getter
-    @Setter
-    public Object selector = null;
+    private Object selector = null;
 
-    @Getter
-    @Setter
-    public Object selectorLabel = null;
+    private Object selectorLabel = null;
 
-    @Getter
-    @Setter
-    public Object emphasis = null;
+    private Object emphasis = null;
 
-    @Getter
-    @Setter
-    public String selectorPosition = null;
+    private String selectorPosition = null;
 
-    @Getter
-    @Setter
-    public Number selectorItemGap = null;
+    private Number selectorItemGap = null;
 
-    @Getter
-    @Setter
-    public Number selectorButtonGap = null;
+    private Number selectorButtonGap = null;
 
-    @Getter
-    @Setter
-    public List<Object> data = null;
+    private List<Object> data = null;
 
-    @Getter
-    @Setter
-    public TooltipOption tooltip = null;
+    private TooltipOption tooltip = null;
 
-    @Getter
-    @Setter
-    public String mainType = null;
+    private String mainType = null;
 
-    @Getter
-    @Setter
-    public String type = null;
+    private String type = null;
 
-    @Getter
-    @Setter
-    public String id = null;
+    private String id = null;
 
-    @Getter
-    @Setter
-    public String name = null;
+    private String name = null;
 
-    @Getter
-    @Setter
-    public Number z = null;
+    private Number z = null;
 
-    @Getter
-    @Setter
-    public Number zlevel = null;
+    private Number zlevel = null;
 
-    @Getter
-    @Setter
-    public String icon = null;
+    private String icon = null;
 
-    @Getter
-    @Setter
-    public String inactiveColor = null;
+    private String inactiveColor = null;
 
-    @Getter
-    @Setter
-    public String inactiveBorderColor = null;
+    private String inactiveBorderColor = null;
 
-    @Getter
-    @Setter
-    public Number inactiveBorderWidth = null;
+    private Number inactiveBorderWidth = null;
 
-    @Getter
-    @Setter
-    public String formatter = null;
+    private String formatter = null;
 
-    @Getter
-    @Setter
-    public Object itemStyle = null;
+    private Object itemStyle = null;
 
-    @Getter
-    @Setter
-    public Object lineStyle = null;
+    private Object lineStyle = null;
 
-    @Getter
-    @Setter
-    public Object textStyle = null;
+    private Object textStyle = null;
 
-    @Getter
-    @Setter
-    public String symbolRotate = null;
+    private String symbolRotate = null;
 
     @Deprecated
-    @Getter
-    @Setter
-    public Boolean symbolKeepAspect = null;
+    private Boolean symbolKeepAspect = null;
 
-    @Getter
-    @Setter
-    public BoxLength<?> width = null;
+    private BoxLength<?> width = null;
 
-    @Getter
-    @Setter
-    public BoxLength<?> height = null;
+    private BoxLength<?> height = null;
 
-    @Getter
-    @Setter
-    public BoxLength<?> top = null;
+    private BoxLength<?> top = null;
 
-    @Getter
-    @Setter
-    public BoxLength<?> right = null;
+    private BoxLength<?> right = null;
 
-    @Getter
-    @Setter
-    public BoxLength<?> bottom = null;
+    private BoxLength<?> bottom = null;
 
-    @Getter
-    @Setter
-    public BoxLength<?> left = null;
+    private BoxLength<?> left = null;
 
-    @Getter
-    @Setter
-    public String borderColor = null;
+    private String borderColor = null;
 
-    @Getter
-    @Setter
-    public Number borderWidth = null;
+    private Number borderWidth = null;
 
-    @Getter
-    @Setter
-    public String borderType = null;
+    private String borderType = null;
 
-    @Getter
-    @Setter
-    public Object borderCap = null;
+    private Object borderCap = null;
 
-    @Getter
-    @Setter
-    public Object borderJoin = null;
+    private Object borderJoin = null;
 
-    @Getter
-    @Setter
-    public Number borderDashOffset = null;
+    private Number borderDashOffset = null;
 
-    @Getter
-    @Setter
-    public Number borderMiterLimit = null;
+    private Number borderMiterLimit = null;
 }

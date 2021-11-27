@@ -53,7 +53,7 @@ public class LineTest {
         option.setSeries(Arrays.asList(series));
 
         Reader reader = new InputStreamReader(
-                this.getClass().getResourceAsStream("reference/line/basic-line-chart.json"));
+                this.getClass().getResourceAsStream("/line/basic-line-chart.json"));
         JsonElement expected = JsonParser.parseReader(reader);
         JsonElement actual = EChartSerializer.toJsonTree(option);
         assertEquals(expected, actual);
@@ -84,7 +84,7 @@ public class LineTest {
         option.setSeries(Arrays.asList(series));
 
         Reader reader = new InputStreamReader(
-                this.getClass().getResourceAsStream("reference/line/smoothed-line-chart.json"));
+                this.getClass().getResourceAsStream("/line/smoothed-line-chart.json"));
         JsonElement expected = JsonParser.parseReader(reader);
         JsonElement actual = EChartSerializer.toJsonTree(option);
         assertEquals(expected, actual);
@@ -116,7 +116,7 @@ public class LineTest {
         option.setSeries(Arrays.asList(series));
 
         Reader reader = new InputStreamReader(
-                this.getClass().getResourceAsStream("reference/line/basic-area-chart.json"));
+                this.getClass().getResourceAsStream("/line/basic-area-chart.json"));
         JsonElement expected = JsonParser.parseReader(reader);
         JsonElement actual = EChartSerializer.toJsonTree(option);
         assertEquals(expected, actual);
@@ -198,7 +198,7 @@ public class LineTest {
         option.setSeries(Arrays.asList(series1, series2, series3, series4, series5));
 
         Reader reader = new InputStreamReader(
-                this.getClass().getResourceAsStream("reference/line/stacked-line-chart.json"));
+                this.getClass().getResourceAsStream("/line/stacked-line-chart.json"));
         JsonElement expected = JsonParser.parseReader(reader);
         JsonElement actual = EChartSerializer.toJsonTree(option);
         assertEquals(expected, actual);

@@ -2,47 +2,24 @@ package org.icepear.echarts.origin.component.toolbox.feature;
 
 import org.icepear.echarts.origin.component.toolbox.ToolboxFeatureOption;
 
-import lombok.Getter;
-import lombok.Setter;
-
 public interface ToolboxDataViewFeatureOption extends ToolboxFeatureOption {
-    @Getter
-    @Setter
-    public Boolean readOnly = null;
+    void setReadOnly(Boolean readOnly);
 
-    @Getter
-    @Setter
-    public String optionToContent = null;
+    void setOptionToContent(String optionToContent);
 
-    @Getter
-    @Setter
-    public Object contentToOption = null;
+    void setContentToOption(Object contentToOption);
 
-    @Getter
-    @Setter
-    public String lang = null;
+    void setLang(String lang);
 
-    @Getter
-    @Setter
-    public String backgroundColor = null;
+    void setBackgroundColor(String backgroundColor);
 
-    @Getter
-    @Setter
-    public String textColor = null;
+    void setTextColor(String textColor);
 
-    @Getter
-    @Setter
-    public String textareaColor = null;
+    void setTextareaColor(String textareaColor);
 
-    @Getter
-    @Setter
-    public String textareaBorderColor = null;
+    void setTextareaBorderColor(String textareaBorderColor);
 
-    @Getter
-    @Setter
-    public String buttonColor = null;
+    void setButtonColor(String buttonColor);
     
-    @Getter
-    @Setter
-    public String buttonTextColor = null;
+    void setButtonTextColor(String buttonTextColor);
 }

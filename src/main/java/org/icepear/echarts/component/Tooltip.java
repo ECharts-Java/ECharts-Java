@@ -4,155 +4,81 @@ import java.util.List;
 
 import org.icepear.echarts.origin.component.tooltip.TooltipOption;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 
+@Data
 public class Tooltip implements TooltipOption {
-    @Getter
-    @Setter
-    public Object axisPointer = null;
+    private Object axisPointer = null;
 
-    @Getter
-    @Setter
-    public Boolean showContent = null;
+    private Boolean showContent = null;
 
-    @Getter
-    @Setter
-    public String trigger = null;
+    private String trigger = null;
 
-    @Getter
-    @Setter
-    public String displayMode = null;
+    private String displayMode = null;
 
-    @Getter
-    @Setter
-    public String renderMode = null;
+    private String renderMode = null;
 
-    @Getter
-    @Setter
-    public Boolean appendToBody = null;
+    private Boolean appendToBody = null;
 
-    @Getter
-    @Setter
-    public String className = null;
+    private String className = null;
 
-    @Getter
-    @Setter
-    public Object order = null;
+    private Object order = null;
 
-    @Getter
-    @Setter
-    public Boolean show = null;
+    private Boolean show = null;
 
-    @Getter
-    @Setter
-    public String triggerOn = null;
+    private String triggerOn = null;
 
-    @Getter
-    @Setter
-    public Boolean alwaysShowContent = null;
+    private Boolean alwaysShowContent = null;
 
-    @Getter
-    @Setter
-    public String formatter = null;
+    private String formatter = null;
 
-    @Getter
-    @Setter
-    public Object position = null;
+    private Object position = null;
 
-    @Getter
-    @Setter
-    public Boolean confine = null;
+    private Boolean confine = null;
 
-    @Getter
-    @Setter
-    public Object align = null;
+    private Object align = null;
 
-    @Getter
-    @Setter
-    public Object verticalAlign = null;
+    private Object verticalAlign = null;
 
-    @Getter
-    @Setter
-    public Number showDelay = null;
+    private Number showDelay = null;
 
-    @Getter
-    @Setter
-    public Number hideDelay = null;
+    private Number hideDelay = null;
 
-    @Getter
-    @Setter
-    public Number transitionDuration = null;
+    private Number transitionDuration = null;
 
-    @Getter
-    @Setter
-    public Boolean enterable = null;
+    private Boolean enterable = null;
 
-    @Getter
-    @Setter
-    public String backgroundColor = null;
+    private String backgroundColor = null;
 
-    @Getter
-    @Setter
-    public String borderColor = null;
+    private String borderColor = null;
 
-    @Getter
-    @Setter
-    public Number borderRadius = null;
+    private Number borderRadius = null;
 
-    @Getter
-    @Setter
-    public Number borderWidth = null;
+    private Number borderWidth = null;
 
-    @Getter
-    @Setter
-    public Number shadowBlur = null;
+    private Number shadowBlur = null;
 
-    @Getter
-    @Setter
-    public String shadowColor = null;
+    private String shadowColor = null;
 
-    @Getter
-    @Setter
-    public Number shadowOffsetX = null;
+    private Number shadowOffsetX = null;
 
-    @Getter
-    @Setter
-    public Number shadowOffsetY = null;
+    private Number shadowOffsetY = null;
 
-    @Getter
-    @Setter
-    public List<Number> padding = null;
+    private List<Number> padding = null;
 
-    @Getter
-    @Setter
-    public String extraCssText = null;
+    private String extraCssText = null;
 
-    @Getter
-    @Setter
-    public Object textStyle = null;
+    private Object textStyle = null;
 
-    @Getter
-    @Setter
-    public String mainType = null;
+    private String mainType = null;
 
-    @Getter
-    @Setter
-    public String type = null;
+    private String type = null;
 
-    @Getter
-    @Setter
-    public String id = null;
+    private String id = null;
 
-    @Getter
-    @Setter
-    public String name = null;
+    private String name = null;
 
-    @Getter
-    @Setter
-    public Number z = null;
+    private Number z = null;
 
-    @Getter
-    @Setter
-    public Number zlevel = null;
+    private Number zlevel = null;
 }

@@ -4,35 +4,18 @@ import java.util.List;
 
 import org.icepear.echarts.origin.component.toolbox.ToolboxFeatureOption;
 
-import lombok.Getter;
-import lombok.Setter;
-
 public interface ToolboxSaveAsImageFeatureOption extends ToolboxFeatureOption {
-    @Getter
-    @Setter
-    public String type = null;
+    void setType(String type);
 
-    @Getter
-    @Setter
-    public String backgroundColor = null;
+    void setBackgroundColor(String backgroundColor);
 
-    @Getter
-    @Setter
-    public String connectedBackgroundColor = null;
+    void setConnectedBackgroundColor(String connectedBackgroundColor);
 
-    @Getter
-    @Setter
-    public String name = null;
+    void setName(String name);
 
-    @Getter
-    @Setter
-    public List<String> excludeComponents = null;
+    void setExcludeComponents(List<String> excludeComponents);
 
-    @Getter
-    @Setter
-    public Number pixelRatio = null;
+    void setPixelRatio(Number pixelRatio);
 
-    @Getter
-    @Setter
-    public List<String> lang = null;
+    void setLang(List<String> lang);
 }

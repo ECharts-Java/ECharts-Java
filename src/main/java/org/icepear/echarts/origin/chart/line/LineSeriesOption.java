@@ -9,52 +9,29 @@ import org.icepear.echarts.origin.util.SeriesSamplingOptionMixin;
 import org.icepear.echarts.origin.util.SeriesStackOptionMixin;
 import org.icepear.echarts.origin.util.SymbolOptionMixin;
 
-import lombok.Getter;
-import lombok.Setter;
-
 /**
  * https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/chart/line/LineSeries.ts#L73
  */
 public interface LineSeriesOption
         extends SeriesOption, LineStateOption, SeriesOnCartesianOptionMixin, SeriesOnPolarOptionMixin,
         SeriesStackOptionMixin, SeriesSamplingOptionMixin, SymbolOptionMixin, SeriesEncodeOptionMixin {
-    @Getter
-    @Setter
-    public Boolean clip = null;
+    void setClip(Boolean clip);
 
-    @Getter
-    @Setter
-    public Object lineStyle = null;
+    void setLineStyle(Object lineStyle);
 
-    @Getter
-    @Setter
-    public AreaStyleOption areaStyle = null;
+    void setAreaStyle(AreaStyleOption areaStyle);
 
-    @Getter
-    @Setter
-    public String step = null;
+    void setStep(String step);
 
-    @Getter
-    @Setter
-    public Boolean smooth = null;
+    void setSmooth(Boolean smooth);
 
-    @Getter
-    @Setter
-    public String smoothMonotone = null;
+    void setSmoothMonotone(String smoothMonotone);
 
-    @Getter
-    @Setter
-    public Boolean connectNulls = null;
+    void setConnectNulls(Boolean connectNulls);
 
-    @Getter
-    @Setter
-    public Boolean showSymbol = null;
+    void setShowSymbol(Boolean showSymbol);
 
-    @Getter
-    @Setter
-    public Boolean showAllSymbol = null;
+    void setShowAllSymbol(Boolean showAllSymbol);
 
-    @Getter
-    @Setter
-    public Boolean triggerLineEvent = null;
+    void setTriggerLineEvent(Boolean triggerLineEvent);
 }

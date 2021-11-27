@@ -1,29 +1,16 @@
 package org.icepear.echarts.origin.util;
 
-import lombok.Getter;
-import lombok.Setter;
-
 /**
  * https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/util/types.ts#L950
  */
 public interface SymbolOptionMixin {
-    @Getter
-    @Setter
-    public String symbol = null;
+    void setSymbol(String symbol);
 
-    @Getter
-    @Setter
-    public Number symbolSize = null;
+    void setSymbolSize(Number symbolSize);
 
-    @Getter
-    @Setter
-    public Number symbolRotate = null;
+    void setSymbolRotate(Number symbolRotate);
 
-    @Getter
-    @Setter
-    public Boolean symbolKeepAspect = null;
+    void setSymbolKeepAspect(Boolean symbolKeepAspect);
 
-    @Getter
-    @Setter
-    public Number symbolOffset = null;
+    void setSymbolOffset(Number symbolOffset);
 }

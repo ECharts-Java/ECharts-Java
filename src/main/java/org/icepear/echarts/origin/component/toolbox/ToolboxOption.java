@@ -8,62 +8,33 @@ import org.icepear.echarts.origin.util.BorderOptionMixin;
 import org.icepear.echarts.origin.util.BoxLayoutOptionMixin;
 import org.icepear.echarts.origin.util.ComponentOption;
 
-import lombok.Getter;
-import lombok.Setter;
-
 /**
  * https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/component/toolbox/ToolboxModel.ts#L42
  */
 public interface ToolboxOption extends ComponentOption, BoxLayoutOptionMixin, BorderOptionMixin {
-    @Getter
-    @Setter
-    Boolean show = null;
+    void setShow(Boolean show);
 
-    @Getter
-    @Setter
-    Object orient = null;
+    void setOrient(Object orient);
 
-    @Getter
-    @Setter
-    String backgroundColor = null;
+    void setBackgroundColor(String backgroundColor);
 
-    @Getter
-    @Setter
-    Number borderRadius = null;
+    void setBorderRadius(List<Number> borderRadius);
 
-    @Getter
-    @Setter
-    List<Number> padding = null;
+    void setPadding(List<Number> padding);
 
-    @Getter
-    @Setter
-    Number itemSize = null;
+    void setItemSize(Number itemSize);
 
-    @Getter
-    @Setter
-    Number itemGap = null;
+    void setItemGap(Number itemGap);
 
-    @Getter
-    @Setter
-    Boolean showTitle = null;
+    void setShowTitle(Boolean showTitle);
 
-    @Getter
-    @Setter
-    Object iconStyle = null;
+    void setIconStyle(Object iconStyle);
 
-    @Getter
-    @Setter
-    Object emphasis = null;
+    void setEmphasis(Object emphasis);
 
-    @Getter
-    @Setter
-    Object textStyle = null;
+    void setTextStyle(Object textStyle);
 
-    @Getter
-    @Setter
-    TooltipOption tooltip = null;
+    void setTooltip(TooltipOption tooltip);
 
-    @Getter
-    @Setter
-    Map<String, ToolboxFeatureOption> feature = null;
+    void setFeature(Map<String, ToolboxFeatureOption> feature);
 }

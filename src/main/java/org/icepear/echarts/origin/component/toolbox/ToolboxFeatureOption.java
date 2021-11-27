@@ -1,37 +1,20 @@
 package org.icepear.echarts.origin.component.toolbox;
 
-import lombok.Getter;
-import lombok.Setter;
-
 /**
  * https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/component/toolbox/featureManager.ts#L37
  */
 public interface ToolboxFeatureOption {
-    @Getter
-    @Setter
-    Boolean show = null;
+    void setShow(Boolean show);
 
-    @Getter
-    @Setter
-    String title = null;
+    void setTitle(String title);
 
-    @Getter
-    @Setter
-    String icon = null;
+    void setIcon(String icon);
 
-    @Getter
-    @Setter
-    Object iconStyle = null;
+    void setIconStyle(Object iconStyle);
 
-    @Getter
-    @Setter
-    Object emphasis = null;
+    void setEmphasis(Object emphasis);
 
-    @Getter
-    @Setter
-    Object iconStatus = null;
+    void setIconStatus(Object iconStatus);
 
-    @Getter
-    @Setter
-    Object onclick = null;
+    void setOnclick(Object onclick);
 }

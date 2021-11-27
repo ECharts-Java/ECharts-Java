@@ -1,37 +1,20 @@
 package org.icepear.echarts.origin.util;
 
-import lombok.Getter;
-import lombok.Setter;
-
 /**
  * https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/util/types.ts#L848
  */
 public interface BorderOptionMixin {
-    @Getter
-    @Setter
-    public String borderColor = null;
+    void setBorderColor(String borderColor);
 
-    @Getter
-    @Setter
-    public Number borderWidth = null;
+    void setBorderWidth(Number borderWidth);
 
-    @Getter
-    @Setter
-    public String borderType = null;
+    void setBorderType(String borderType);
 
-    @Getter
-    @Setter
-    public Object borderCap = null;
+    void setBorderCap(Object borderCap);
 
-    @Getter
-    @Setter
-    public Object borderJoin = null;
+    void setBorderJoin(Object borderJoin);
 
-    @Getter
-    @Setter
-    public Number borderDashOffset = null;
+    void setBorderDashOffset(Number borderDashOffset);
 
-    @Getter
-    @Setter
-    public Number borderMiterLimit = null;
+    void setBorderMiterLimit(Number borderMiterLimit);
 }

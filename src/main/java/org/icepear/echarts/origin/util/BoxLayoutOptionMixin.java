@@ -2,34 +2,19 @@ package org.icepear.echarts.origin.util;
 
 import org.icepear.echarts.type.BoxLength;
 
-import lombok.Getter;
-import lombok.Setter;
-
 /**
  * https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/util/types.ts#L825
  */
 public interface BoxLayoutOptionMixin {
-    @Getter
-    @Setter
-    public BoxLength<?> width = null;
+    void setWidth(BoxLength<?> width);
 
-    @Getter
-    @Setter
-    public BoxLength<?> height = null;
+    void setHeight(BoxLength<?> height);
 
-    @Getter
-    @Setter
-    public BoxLength<?> top = null;
+    void setTop(BoxLength<?> top);
 
-    @Getter
-    @Setter
-    public BoxLength<?> right = null;
+    void setRight(BoxLength<?> right);
 
-    @Getter
-    @Setter
-    public BoxLength<?> bottom = null;
+    void setBottom(BoxLength<?> bottom);
 
-    @Getter
-    @Setter
-    public BoxLength<?> left = null;
+    void setLeft(BoxLength<?> left);
 }
