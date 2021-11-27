@@ -8,86 +8,45 @@ import org.icepear.echarts.origin.util.BorderOptionMixin;
 import org.icepear.echarts.origin.util.BoxLayoutOptionMixin;
 import org.icepear.echarts.origin.util.ComponentOption;
 
-import lombok.Getter;
-import lombok.Setter;
-
 /**
  * https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/component/legend/LegendModel.ts#L159
  */
 public interface LegendOption extends ComponentOption, LegendStyleOption, BoxLayoutOptionMixin, BorderOptionMixin {
-    @Getter
-    @Setter
-    public Boolean show = null;
+    void setShow(Boolean show);
 
-    @Getter
-    @Setter
-    public Object orient = null;
+    void setOrient(Object orient);
 
-    @Getter
-    @Setter
-    public String align = null;
+    void setAlign(String align);
 
-    @Getter
-    @Setter
-    public String backgroundColor = null;
+    void setBackgroundColor(String backgroundColor);
 
-    @Getter
-    @Setter
-    public List<Number> borderRadius = null;
+    void setBorderRadius(List<Number> borderRadius);
 
-    @Getter
-    @Setter
-    public List<Number> padding = null;
+    void setPadding(List<Number> padding);
 
-    @Getter
-    @Setter
-    public Number itemGap = null;
+    void setItemGap(Number itemGap);
 
-    @Getter
-    @Setter
-    public Number itemWidth = null;
+    void setItemWidth(Number itemWidth);
 
-    @Getter
-    @Setter
-    public Number itemHeight = null;
+    void setItemHeight(Number itemHeight);
 
-    @Getter
-    @Setter
-    public String selectedMode = null;
+    void setSelectedMode(String selectedMode);
 
-    @Getter
-    @Setter
-    public Map<String, Boolean> selected = null;
+    void setSelected(Map<String, Boolean> selected);
 
-    @Getter
-    @Setter
-    public Object selector = null;
+    void setSelector(Object selector);
 
-    @Getter
-    @Setter
-    public Object selectorLabel = null;
+    void setSelectorLabel(Object selectorLabel);
 
-    @Getter
-    @Setter
-    public Object emphasis = null;
+    void setEmphasis(Object emphasis);
 
-    @Getter
-    @Setter
-    public String selectorPosition = null;
+    void setSelectorPosition(String selectorPosition);
 
-    @Getter
-    @Setter
-    public Number selectorItemGap = null;
+    void setSelectorItemGap(Number selectorItemGap);
 
-    @Getter
-    @Setter
-    public Number selectorButtonGap = null;
+    void setSelectorButtonGap(Number selectorButtonGap);
 
-    @Getter
-    @Setter
-    public List<Object> data = null;
+    void setData(List<Object> data);
 
-    @Getter
-    @Setter
-    public TooltipOption tooltip = null;
+    void setTooltip(TooltipOption tooltip);
 }

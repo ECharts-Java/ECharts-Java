@@ -12,179 +12,93 @@ import org.icepear.echarts.origin.util.AnimationOption;
 import org.icepear.echarts.origin.util.ComponentOption;
 import org.icepear.echarts.origin.util.SeriesOption;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 
+@Data
 public class Option implements EChartsOption {
-    @Getter
-    @Setter
-    public List<Object> dataset = null;
+    private List<Object> dataset = null;
 
-    @Getter
-    @Setter
-    public Object aria = null;
+    private Object aria = null;
 
-    @Getter
-    @Setter
-    public List<TitleOption> title = null;
+    private List<TitleOption> title = null;
 
-    @Getter
-    @Setter
-    public List<Grid> grid = null;
+    private List<Grid> grid = null;
 
-    @Getter
-    @Setter
-    public List<Object> radar = null;
+    private List<Object> radar = null;
 
-    @Getter
-    @Setter
-    public List<Object> polar = null;
+    private List<Object> polar = null;
 
-    @Getter
-    @Setter
-    public List<Object> geo = null;
+    private List<Object> geo = null;
 
-    @Getter
-    @Setter
-    public List<Object> angleAxis = null;
+    private List<Object> angleAxis = null;
 
-    @Getter
-    @Setter
-    public List<Object> radiusAxis = null;
+    private List<Object> radiusAxis = null;
 
-    @Getter
-    @Setter
-    public List<XAxisOption> xAxis = null;
+    private List<XAxisOption> xAxis = null;
 
-    @Getter
-    @Setter
-    public List<YAxisOption> yAxis = null;
+    private List<YAxisOption> yAxis = null;
 
-    @Getter
-    @Setter
-    public List<Object> singleAxis = null;
+    private List<Object> singleAxis = null;
 
-    @Getter
-    @Setter
-    public List<Object> parallel = null;
+    private List<Object> parallel = null;
 
-    @Getter
-    @Setter
-    public List<Object> parallelAxis = null;
+    private List<Object> parallelAxis = null;
 
-    @Getter
-    @Setter
-    public List<Object> calendar = null;
+    private List<Object> calendar = null;
 
-    @Getter
-    @Setter
-    public List<Object> toolbox = null;
+    private List<Object> toolbox = null;
 
-    @Getter
-    @Setter
-    public List<TooltipOption> tooltip = null;
+    private List<TooltipOption> tooltip = null;
 
-    @Getter
-    @Setter
-    public List<Object> axisPointer = null;
+    private List<Object> axisPointer = null;
 
-    @Getter
-    @Setter
-    public List<Object> brush = null;
+    private List<Object> brush = null;
 
-    @Getter
-    @Setter
-    public List<LegendOption> legend = null;
+    private List<LegendOption> legend = null;
 
-    @Getter
-    @Setter
-    public List<Object> dataZoom = null;
+    private List<Object> dataZoom = null;
 
-    @Getter
-    @Setter
-    public List<Object> visualMap = null;
+    private List<Object> visualMap = null;
 
-    @Getter
-    @Setter
-    public List<Object> graphic = null;
+    private List<Object> graphic = null;
 
-    @Getter
-    @Setter
-    public List<SeriesOption> series = null;
+    private List<SeriesOption> series = null;
 
-    @Getter
-    @Setter
-    public Object baseOption = null;
+    private Object baseOption = null;
 
-    @Getter
-    @Setter
-    public Object options = null;
+    private Object options = null;
 
-    @Getter
-    @Setter
-    public Object media = null;
+    private Object media = null;
 
-    @Getter
-    @Setter
-    public List<ComponentOption> timeline = null;
+    private List<ComponentOption> timeline = null;
 
-    @Getter
-    @Setter
-    public String backgroundColor = null;
+    private String backgroundColor = null;
 
-    @Getter
-    @Setter
-    public String darkMode = null;
+    private String darkMode = null;
 
-    @Getter
-    @Setter
-    public Object textStyle = null;
+    private Object textStyle = null;
 
-    @Getter
-    @Setter
-    public Boolean useUTC = null;
+    private Boolean useUTC = null;
 
-    @Getter
-    @Setter
-    public AnimationOption stateAnimation = null;
+    private AnimationOption stateAnimation = null;
 
-    @Getter
-    @Setter
-    public String animation = null;
+    private String animation = null;
 
-    @Getter
-    @Setter
-    public Number animationThreshold = null;
+    private Number animationThreshold = null;
 
-    @Getter
-    @Setter
-    public Number animationDuration = null;
+    private Number animationDuration = null;
 
-    @Getter
-    @Setter
-    public String animationEasing = null;
+    private String animationEasing = null;
 
-    @Getter
-    @Setter
-    public Number animationDelay = null;
+    private Number animationDelay = null;
 
-    @Getter
-    @Setter
-    public Number animationDurationUpdate = null;
+    private Number animationDurationUpdate = null;
 
-    @Getter
-    @Setter
-    public String animationEasingUpdate = null;
+    private String animationEasingUpdate = null;
 
-    @Getter
-    @Setter
-    public Number animationDelayUpdate = null;
+    private Number animationDelayUpdate = null;
 
-    @Getter
-    @Setter
-    public List<String> color = null;
+    private List<String> color = null;
 
-    @Getter
-    @Setter
-    public List<List<String>> colorLayer = null;
+    private List<List<String>> colorLayer = null;
 }

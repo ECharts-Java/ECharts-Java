@@ -1,41 +1,22 @@
 package org.icepear.echarts.origin.util;
 
-import lombok.Getter;
-import lombok.Setter;
-
 /**
  * https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/util/types.ts#L880
  */
 public interface AnimationOptionMixin {
-    @Getter
-    @Setter
-    public String animation = null;
+    void setAnimation(String animation);
 
-    @Getter
-    @Setter
-    public Number animationThreshold = null;
+    void setAnimationThreshold(Number animationThreshold);
 
-    @Getter
-    @Setter
-    public Number animationDuration = null;
+    void setAnimationDuration(Number animationDuration);
 
-    @Getter
-    @Setter
-    public String animationEasing = null;
+    void setAnimationEasing(String animationEasing);
 
-    @Getter
-    @Setter
-    public Number animationDelay = null;
+    void setAnimationDelay(Number animationDelay);
 
-    @Getter
-    @Setter
-    public Number animationDurationUpdate = null;
+    void setAnimationDurationUpdate(Number animationDurationUpdate);
 
-    @Getter
-    @Setter
-    public String animationEasingUpdate = null;
+    void setAnimationEasingUpdate(String animationEasingUpdate);
 
-    @Getter
-    @Setter
-    public Number animationDelayUpdate = null;
+    void setAnimationDelayUpdate(Number animationDelayUpdate);
 }

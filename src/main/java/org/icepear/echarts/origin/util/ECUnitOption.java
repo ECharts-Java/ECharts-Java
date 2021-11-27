@@ -2,46 +2,25 @@ package org.icepear.echarts.origin.util;
 
 import java.util.List;
 
-import lombok.Getter;
-import lombok.Setter;
-
 /**
  * https://github.com/apache/echarts/blob/f3471f0a7080e68f8819f7b000d32d73fb0820fb/src/util/types.ts#L501
  */
 public interface ECUnitOption extends AnimationOptionMixin, ColorPaletteOptionMixin {
-    @Getter
-    @Setter
-    public Object baseOption = null;
+    void setBaseOption(Object baseOption);
 
-    @Getter
-    @Setter
-    public Object options = null;
+    void setOptions(Object options);
 
-    @Getter
-    @Setter
-    public Object media = null;
+    void setMedia(Object media);
 
-    @Getter
-    @Setter
-    public List<ComponentOption> timeline = null;
+    void setTimeline(List<ComponentOption> timeline);
 
-    @Getter
-    @Setter
-    public String backgroundColor = null;
+    void setBackgroundColor(String backgroundColor);
 
-    @Getter
-    @Setter
-    public String darkMode = null;
+    void setDarkMode(String darkMode);
 
-    @Getter
-    @Setter
-    public Object textStyle = null;
+    void setTextStyle(Object textStyle);
 
-    @Getter
-    @Setter
-    public Boolean useUTC = null;
+    void setUseUTC(Boolean useUTC);
 
-    @Getter
-    @Setter
-    public AnimationOption stateAnimation = null;
+    void setStateAnimation(AnimationOption stateAnimation);
 }

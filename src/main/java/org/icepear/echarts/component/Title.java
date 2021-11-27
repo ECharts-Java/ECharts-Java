@@ -5,151 +5,79 @@ import java.util.List;
 import org.icepear.echarts.origin.component.title.TitleOption;
 import org.icepear.echarts.type.BoxLength;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 
+@Data
 public class Title implements TitleOption {
-    @Getter
-    @Setter
-    public Boolean show = null;
+    private Boolean show = null;
 
-    @Getter
-    @Setter
-    public String text = null;
+    private String text = null;
 
-    @Getter
-    @Setter
-    public String link = null;
+    private String link = null;
 
-    @Getter
-    @Setter
-    public String target = null;
+    private String target = null;
 
-    @Getter
-    @Setter
-    public String subtext = null;
+    private String subtext = null;
 
-    @Getter
-    @Setter
-    public String sublink = null;
+    private String sublink = null;
 
-    @Getter
-    @Setter
-    public String subtarget = null;
+    private String subtarget = null;
 
-    @Getter
-    @Setter
-    public Object textAlign = null;
+    private Object textAlign = null;
 
-    @Getter
-    @Setter
-    public Object textVerticalAlign = null;
+    private Object textVerticalAlign = null;
 
-    @Getter
-    @Setter
-    public Object textBaseline = null;
+    private Object textBaseline = null;
 
-    @Getter
-    @Setter
-    public String backgroundColor = null;
+    private String backgroundColor = null;
 
-    @Getter
-    @Setter
-    public List<Number> padding = null;
+    private List<Number> padding = null;
 
-    @Getter
-    @Setter
-    public Number itemGap = null;
+    private Number itemGap = null;
 
-    @Getter
-    @Setter
-    public Object textStyle = null;
+    private Object textStyle = null;
 
-    @Getter
-    @Setter
-    public Object subtextStyle = null;
+    private Object subtextStyle = null;
 
-    @Getter
-    @Setter
-    public Boolean triggerEvent = null;
+    private Boolean triggerEvent = null;
 
-    @Getter
-    @Setter
-    public List<Number> borderRadius = null;
+    private List<Number> borderRadius = null;
 
-    @Getter
-    @Setter
-    public String mainType = null;
+    private String mainType = null;
 
-    @Getter
-    @Setter
-    public String type = null;
+    private String type = null;
 
-    @Getter
-    @Setter
-    public String id = null;
+    private String id = null;
 
-    @Getter
-    @Setter
-    public String name = null;
+    private String name = null;
 
-    @Getter
-    @Setter
-    public Number z = null;
+    private Number z = null;
 
-    @Getter
-    @Setter
-    public Number zlevel = null;
+    private Number zlevel = null;
 
-    @Getter
-    @Setter
-    public BoxLength<?> width = null;
+    private BoxLength<?> width = null;
 
-    @Getter
-    @Setter
-    public BoxLength<?> height = null;
+    private BoxLength<?> height = null;
 
-    @Getter
-    @Setter
-    public BoxLength<?> top = null;
+    private BoxLength<?> top = null;
 
-    @Getter
-    @Setter
-    public BoxLength<?> right = null;
+    private BoxLength<?> right = null;
 
-    @Getter
-    @Setter
-    public BoxLength<?> bottom = null;
+    private BoxLength<?> bottom = null;
 
-    @Getter
-    @Setter
-    public BoxLength<?> left = null;
+    private BoxLength<?> left = null;
 
-    @Getter
-    @Setter
-    public String borderColor = null;
+    private String borderColor = null;
 
-    @Getter
-    @Setter
-    public Number borderWidth = null;
+    private Number borderWidth = null;
 
-    @Getter
-    @Setter
-    public String borderType = null;
+    private String borderType = null;
 
-    @Getter
-    @Setter
-    public Object borderCap = null;
+    private Object borderCap = null;
 
-    @Getter
-    @Setter
-    public Object borderJoin = null;
+    private Object borderJoin = null;
 
-    @Getter
-    @Setter
-    public Number borderDashOffset = null;
+    private Number borderDashOffset = null;
 
-    @Getter
-    @Setter
-    public Number borderMiterLimit = null;
+    private Number borderMiterLimit = null;
 }

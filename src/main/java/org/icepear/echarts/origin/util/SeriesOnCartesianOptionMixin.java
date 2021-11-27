@@ -1,25 +1,14 @@
 package org.icepear.echarts.origin.util;
 
-import lombok.Getter;
-import lombok.Setter;
-
 /**
  * https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/util/types.ts#L1669
  */
 public interface SeriesOnCartesianOptionMixin {
-    @Getter
-    @Setter
-    public Number xAxisIndex = null;
+    void setXAxisIndex(Number xAxisIndex);
 
-    @Getter
-    @Setter
-    public Number yAxisIndex = null;
+    void setYAxisIndex(Number yAxisIndex);
 
-    @Getter
-    @Setter
-    public String xAxisId = null;
+    void setXAxisId(String xAxisId);
 
-    @Getter
-    @Setter
-    public String yAxisId = null;
+    void setYAxisId(String yAxisId);
 }

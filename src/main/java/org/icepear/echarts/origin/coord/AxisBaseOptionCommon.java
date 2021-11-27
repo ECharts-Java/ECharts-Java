@@ -3,90 +3,47 @@ package org.icepear.echarts.origin.coord;
 import org.icepear.echarts.origin.util.AnimationOptionMixin;
 import org.icepear.echarts.origin.util.ComponentOption;
 
-import lombok.Getter;
-import lombok.Setter;
-
 /**
  * https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/coord/axisCommonTypes.ts#L30
  */
 public interface AxisBaseOptionCommon extends ComponentOption, AnimationOptionMixin {
-    @Getter
-    @Setter
-    public Boolean show = null;
+    void setShow(Boolean show);
 
-    @Getter
-    @Setter
-    public Boolean inverse = null;
+    void setInverse(Boolean inverse);
 
-    @Getter
-    @Setter
-    public String nameLocation = null;
+    void setNameLocation(String nameLocation);
 
-    @Getter
-    @Setter
-    public Number nameRotate = null;
+    void setNameRotate(Number nameRotate);
 
-    @Getter
-    @Setter
-    public Object nameTruncate = null;
+    void setNameTruncate(Object nameTruncate);
 
-    @Getter
-    @Setter
-    public Object nameTextStyle = null;
+    void setNameTextStyle(Object nameTextStyle);
 
-    @Getter
-    @Setter
-    public Number nameGap = null;
+    void setNameGap(Number nameGap);
 
-    @Getter
-    @Setter
-    public Boolean silent = null;
+    void setSilent(Boolean silent);
 
-    @Getter
-    @Setter
-    public Boolean triggerEvent = null;
+    void setTriggerEvent(Boolean triggerEvent);
 
-    @Getter
-    @Setter
-    public Object tooltip = null;
+    void setTooltip(Object tooltip);
 
-    @Getter
-    @Setter
-    public Object axisLabel = null;
+    void setAxisLabel(Object axisLabel);
 
-    @Getter
-    @Setter
-    public Object axisPointer = null;
+    void setAxisPointer(Object axisPointer);
 
-    @Getter
-    @Setter
-    public Object axisLine = null;
+    void setAxisLine(Object axisLine);
 
-    @Getter
-    @Setter
-    public Object axisTick = null;
+    void setAxisTick(Object axisTick);
 
-    @Getter
-    @Setter
-    public Object minorTick = null;
+    void setMinorTick(Object minorTick);
 
-    @Getter
-    @Setter
-    public Object splitLine = null;
+    void setSplitLine(Object splitLine);
 
-    @Getter
-    @Setter
-    public Object minorSplitLine = null;
+    void setMinorSplitLine(Object minorSplitLine);
 
-    @Getter
-    @Setter
-    public Object splitArea = null;
+    void setSplitArea(Object splitArea);
 
-    @Getter
-    @Setter
-    public Number min = null;
+    void setMin(Number min);
 
-    @Getter
-    @Setter
-    public Number max = null;
+    void setMax(Number max);
 }

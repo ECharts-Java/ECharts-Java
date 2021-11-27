@@ -1,25 +1,14 @@
 package org.icepear.echarts.origin.util;
 
-import lombok.Getter;
-import lombok.Setter;
-
 /**
  * https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/util/types.ts#L841
  */
 public interface ShadowOptionMixin {
-    @Getter
-    @Setter
-    public Number shadowBlur = null;
+    void setShadowBlur(Number shadowBlur);
 
-    @Getter
-    @Setter
-    public String shadowColor = null;
+    void setShadowColor(String shadowColor);
 
-    @Getter
-    @Setter
-    public Number shadowOffsetX = null;
+    void setShadowOffsetX(Number shadowOffsetX);
 
-    @Getter
-    @Setter
-    public Number shadowOffsetY = null;
+    void setShadowOffsetY(Number shadowOffsetY);
 }

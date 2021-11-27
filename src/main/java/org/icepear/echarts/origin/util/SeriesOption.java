@@ -2,87 +2,46 @@ package org.icepear.echarts.origin.util;
 
 import java.util.Map;
 
-import lombok.Getter;
-import lombok.Setter;
-
 /**
  * https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/util/types.ts#L1587
  */
 public interface SeriesOption
         extends ComponentOption, AnimationOptionMixin, ColorPaletteOptionMixin, StatesOptionMixin {
-    @Getter
-    @Setter
-    public Boolean silent = null;
+    void setSilent(Boolean silent);
 
-    @Getter
-    @Setter
-    public String blendMode = null;
+    void setBlendMode(String blendMode);
 
-    @Getter
-    @Setter
-    public String cursor = null;
+    void setCursor(String cursor);
 
-    @Getter
-    @Setter
-    public String dataGroupId = null;
+    void setDataGroupId(String dataGroupId);
 
-    @Getter
-    @Setter
-    public Object data = null;
+    void setData(Object data);
 
-    @Getter
-    @Setter
-    public String colorBy = null;
+    void setColorBy(String colorBy);
 
-    @Getter
-    @Setter
-    public Boolean legendHoverLink = null;
+    void setLegendHoverLink(Boolean legendHoverLink);
 
-    @Getter
-    @Setter
-    public Number progressive = null;
+    void setProgressive(Number progressive);
 
-    @Getter
-    @Setter
-    public Number progressiveThreshold = null;
+    void setProgressiveThreshold(Number progressiveThreshold);
 
-    @Getter
-    @Setter
-    public String progressiveChunkMode = null;
+    void setProgressiveChunkMode(String progressiveChunkMode);
 
-    @Getter
-    @Setter
-    public String coordinateSystem = null;
+    void setCoordinateSystem(String coordinateSystem);
 
-    @Getter
-    @Setter
-    public Number hoverLayerThreshold = null;
+    void setHoverLayerThreshold(Number hoverLayerThreshold);
 
-    @Getter
-    @Setter
-    public String seriesLayoutBy = null;
+    void setSeriesLayoutBy(String seriesLayoutBy);
 
-    @Getter
-    @Setter
-    public Object labelLine = null;
+    void setLabelLine(Object labelLine);
 
-    @Getter
-    @Setter
-    public Object labelLayout = null;
+    void setLabelLayout(Object labelLayout);
 
-    @Getter
-    @Setter
-    public Object stateAnimation = null;
+    void setStateAnimation(Object stateAnimation);
 
-    @Getter
-    @Setter
-    public Object universalTransition = null;
+    void setUniversalTransition(Object universalTransition);
 
-    @Getter
-    @Setter
-    public Map<String, Boolean> selectedMap = null;
+    void setSelectedMap(Map<String, Boolean> selectedMap);
 
-    @Getter
-    @Setter
-    public String selectedMode = null;
+    void setSelectedMode(String selectedMode);
 }

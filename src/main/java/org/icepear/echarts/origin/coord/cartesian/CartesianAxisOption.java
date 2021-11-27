@@ -2,30 +2,17 @@ package org.icepear.echarts.origin.coord.cartesian;
 
 import org.icepear.echarts.origin.coord.AxisBaseOption;
 
-import lombok.Getter;
-import lombok.Setter;
-
 /**
  * https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/coord/cartesian/AxisModel.ts#L33
  */
 public interface CartesianAxisOption extends AxisBaseOption {
-    @Getter
-    @Setter
-    public Number gridIndex = null;
+    void setGridIndex(Number gridIndex);
 
-    @Getter
-    @Setter
-    public String gridId = null;
+    void setGridId(String gridId);
 
-    @Getter
-    @Setter
-    public String position = null;
+    void setPosition(String position);
 
-    @Getter
-    @Setter
-    public Number offset = null;
+    void setOffset(Number offset);
 
-    @Getter
-    @Setter
-    public Object categorySortInfo = null;
+    void setCategorySortInfo(Object categorySortInfo);
 }

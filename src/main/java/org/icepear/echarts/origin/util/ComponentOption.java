@@ -1,33 +1,18 @@
 package org.icepear.echarts.origin.util;
 
-import lombok.Getter;
-import lombok.Setter;
-
 /**
  * https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/util/types.ts#L1491
  */
 public interface ComponentOption {
-    @Getter
-    @Setter
-    public String mainType = null;
+    void setMainType(String mainType);
 
-    @Getter
-    @Setter
-    public String type = null;
+    void setType(String type);
 
-    @Getter
-    @Setter
-    public String id = null;
+    void setId(String id);
 
-    @Getter
-    @Setter
-    public String name = null;
+    void setName(String name);
 
-    @Getter
-    @Setter
-    public Number z = null;
+    void setZ(Number z);
 
-    @Getter
-    @Setter
-    public Number zlevel = null;
+    void setZlevel(Number zlevel);
 }

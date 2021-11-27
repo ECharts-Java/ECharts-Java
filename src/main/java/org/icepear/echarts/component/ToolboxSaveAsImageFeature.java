@@ -4,63 +4,35 @@ import java.util.List;
 
 import org.icepear.echarts.origin.component.toolbox.feature.ToolboxSaveAsImageFeatureOption;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 
+@Data
 public class ToolboxSaveAsImageFeature implements ToolboxSaveAsImageFeatureOption {
-    @Getter
-    @Setter
-    public String type = null;
+    private String type = null;
 
-    @Getter
-    @Setter
-    public String backgroundColor = null;
+    private String backgroundColor = null;
 
-    @Getter
-    @Setter
-    public String connectedBackgroundColor = null;
+    private String connectedBackgroundColor = null;
 
-    @Getter
-    @Setter
-    public String name = null;
+    private String name = null;
 
-    @Getter
-    @Setter
-    public List<String> excludeComponents = null;
+    private List<String> excludeComponents = null;
 
-    @Getter
-    @Setter
-    public Number pixelRatio = null;
+    private Number pixelRatio = null;
 
-    @Getter
-    @Setter
-    public List<String> lang = null;
+    private List<String> lang = null;
 
-    @Getter
-    @Setter
-    Boolean show = null;
+    private Boolean show = null;
 
-    @Getter
-    @Setter
-    String title = null;
+    private String title = null;
 
-    @Getter
-    @Setter
-    String icon = null;
+    private String icon = null;
 
-    @Getter
-    @Setter
-    Object iconStyle = null;
+    private Object iconStyle = null;
 
-    @Getter
-    @Setter
-    Object emphasis = null;
+    private Object emphasis = null;
 
-    @Getter
-    @Setter
-    Object iconStatus = null;
+    private Object iconStatus = null;
 
-    @Getter
-    @Setter
-    Object onclick = null;
+    private Object onclick = null;
 }

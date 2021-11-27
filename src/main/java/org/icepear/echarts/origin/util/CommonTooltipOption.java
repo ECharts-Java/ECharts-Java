@@ -2,102 +2,53 @@ package org.icepear.echarts.origin.util;
 
 import java.util.List;
 
-import lombok.Getter;
-import lombok.Setter;
-
 /**
  * https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/util/types.ts#L1295
  */
 public interface CommonTooltipOption {
-    @Getter
-    @Setter
-    public Boolean show = null;
+    void setShow(Boolean show);
 
-    @Getter
-    @Setter
-    public String triggerOn = null;
+    void setTriggerOn(String triggerOn);
 
-    @Getter
-    @Setter
-    public Boolean alwaysShowContent = null;
+    void setAlwaysShowContent(Boolean alwaysShowContent);
 
-    @Getter
-    @Setter
-    public String formatter = null;
+    void setFormatter(String formatter);
 
-    @Getter
-    @Setter
-    public Object position = null;
+    void setPosition(Object position);
 
-    @Getter
-    @Setter
-    public Boolean confine = null;
+    void setConfine(Boolean confine);
 
-    @Getter
-    @Setter
-    public Object align = null;
+    void setAlign(Object align);
 
-    @Getter
-    @Setter
-    public Object verticalAlign = null;
+    void setVerticalAlign(Object verticalAlign);
 
-    @Getter
-    @Setter
-    public Number showDelay = null;
+    void setShowDelay(Number showDelay);
 
-    @Getter
-    @Setter
-    public Number hideDelay = null;
+    void setHideDelay(Number hideDelay);
 
-    @Getter
-    @Setter
-    public Number transitionDuration = null;
+    void setTransitionDuration(Number transitionDuration);
 
-    @Getter
-    @Setter
-    public Boolean enterable = null;
+    void setEnterable(Boolean enterable);
 
-    @Getter
-    @Setter
-    public String backgroundColor = null;
+    void setBackgroundColor(String backgroundColor);
 
-    @Getter
-    @Setter
-    public String borderColor = null;
+    void setBorderColor(String borderColor);
 
-    @Getter
-    @Setter
-    public Number borderRadius = null;
+    void setBorderRadius(Number borderRadius);
 
-    @Getter
-    @Setter
-    public Number borderWidth = null;
+    void setBorderWidth(Number borderWidth);
 
-    @Getter
-    @Setter
-    public Number shadowBlur = null;
+    void setShadowBlur(Number shadowBlur);
 
-    @Getter
-    @Setter
-    public String shadowColor = null;
+    void setShadowColor(String shadowColor);
 
-    @Getter
-    @Setter
-    public Number shadowOffsetX = null;
+    void setShadowOffsetX(Number shadowOffsetX);
 
-    @Getter
-    @Setter
-    public Number shadowOffsetY = null;
+    void setShadowOffsetY(Number shadowOffsetY);
 
-    @Getter
-    @Setter
-    public List<Number> padding = null;
+    void setPadding(List<Number> padding);
 
-    @Getter
-    @Setter
-    public String extraCssText = null;
+    void setExtraCssText(String extraCssText);
 
-    @Getter
-    @Setter
-    public Object textStyle = null;
+    void setTextStyle(Object textStyle);
 }

@@ -2,19 +2,10 @@ package org.icepear.echarts.origin.component.toolbox.feature;
 
 import org.icepear.echarts.origin.component.toolbox.ToolboxFeatureOption;
 
-import lombok.Getter;
-import lombok.Setter;
-
 public interface ToolboxMagicTypeFeatureOption extends ToolboxFeatureOption {
-    @Getter
-    @Setter
-    public Object type = null;
+    void setType(Object type);
 
-    @Getter
-    @Setter
-    public Object option = null;
+    void setOption(Object option);
 
-    @Getter
-    @Setter
-    public Object seriesIndex = null;
+    void setSeriesIndex(Object seriesIndex);
 }

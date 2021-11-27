@@ -6,78 +6,41 @@ import org.icepear.echarts.origin.util.BorderOptionMixin;
 import org.icepear.echarts.origin.util.BoxLayoutOptionMixin;
 import org.icepear.echarts.origin.util.ComponentOption;
 
-import lombok.Getter;
-import lombok.Setter;
-
 /**
  * https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/component/title/install.ts#L42
  */
 public interface TitleOption extends ComponentOption, BoxLayoutOptionMixin, BorderOptionMixin {
-    @Getter
-    @Setter
-    public Boolean show = null;
+    void setShow(Boolean show);
 
-    @Getter
-    @Setter
-    public String text = null;
+    void setText(String text);
 
-    @Getter
-    @Setter
-    public String link = null;
+    void setLink(String link);
 
-    @Getter
-    @Setter
-    public String target = null;
+    void setTarget(String target);
 
-    @Getter
-    @Setter
-    public String subtext = null;
+    void setSubtext(String subtext);
 
-    @Getter
-    @Setter
-    public String sublink = null;
+    void setSublink(String sublink);
 
-    @Getter
-    @Setter
-    public String subtarget = null;
+    void setSubtarget(String subtarget);
 
-    @Getter
-    @Setter
-    public Object textAlign = null;
+    void setTextAlign(Object textAlign);
 
-    @Getter
-    @Setter
-    public Object textVerticalAlign = null;
+    void setTextVerticalAlign(Object textVerticalAlign);
 
-    @Getter
-    @Setter
-    public Object textBaseline = null;
+    void setTextBaseline(Object textBaseline);
 
-    @Getter
-    @Setter
-    public String backgroundColor = null;
+    void setBackgroundColor(String backgroundColor);
 
-    @Getter
-    @Setter
-    public List<Number> padding = null;
+    void setPadding(List<Number> padding);
 
-    @Getter
-    @Setter
-    public Number itemGap = null;
+    void setItemGap(Number itemGap);
 
-    @Getter
-    @Setter
-    public Object textStyle = null;
+    void setTextStyle(Object textStyle);
 
-    @Getter
-    @Setter
-    public Object subtextStyle = null;
+    void setSubtextStyle(Object subtextStyle);
 
-    @Getter
-    @Setter
-    public Boolean triggerEvent = null;
+    void setTriggerEvent(Boolean triggerEvent);
 
-    @Getter
-    @Setter
-    public List<Number> borderRadius = null;
+    void setBorderRadius(List<Number> borderRadius);
 }

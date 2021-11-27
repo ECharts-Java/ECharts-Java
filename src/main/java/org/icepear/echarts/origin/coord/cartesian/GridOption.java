@@ -5,34 +5,19 @@ import org.icepear.echarts.origin.util.BoxLayoutOptionMixin;
 import org.icepear.echarts.origin.util.ComponentOption;
 import org.icepear.echarts.origin.util.ShadowOptionMixin;
 
-import lombok.Getter;
-import lombok.Setter;
-
 /**
  * https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/coord/cartesian/GridModel.ts#L26
  */
 public interface GridOption extends ComponentOption, BoxLayoutOptionMixin, ShadowOptionMixin {
-    @Getter
-    @Setter
-    public Boolean show = null;
+    void setShow(Boolean show);
 
-    @Getter
-    @Setter
-    public Boolean containLabel = null;
+    void setContainLabel(Boolean containLabel);
 
-    @Getter
-    @Setter
-    public String backgroundColor = null;
+    void setBackgroundColor(String backgroundColor);
 
-    @Getter
-    @Setter
-    public Number borderWidth = null;
+    void setBorderWidth(Number borderWidth);
 
-    @Getter
-    @Setter
-    public String borderColor = null;
+    void setBorderColor(String borderColor);
 
-    @Getter
-    @Setter
-    public TooltipOption tooltip = null;
+    void setTooltip(TooltipOption tooltip);
 }
