@@ -32,3 +32,5 @@ target/
 .apt_generated_tests/
 
 .factorypath
+
+.DS_Store
