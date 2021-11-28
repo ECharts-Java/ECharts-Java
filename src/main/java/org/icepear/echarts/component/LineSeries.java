@@ -5,6 +5,8 @@ import java.util.Map;
 
 import org.icepear.echarts.origin.chart.line.LineSeriesOption;
 import org.icepear.echarts.origin.util.AreaStyleOption;
+import org.icepear.echarts.origin.util.EmphasisOption;
+import org.icepear.echarts.origin.util.LabelOption;
 
 import lombok.Data;
 
@@ -100,7 +102,7 @@ public class LineSeries implements LineSeriesOption {
 
     private List<List<String>> colorLayer = null;
 
-    private Object emphasis = null;
+    private EmphasisOption emphasis = null;
 
     private Object select = null;
 
@@ -108,9 +110,9 @@ public class LineSeries implements LineSeriesOption {
 
     private Object itemStyle = null;
 
-    private Object label = null;
+    private LabelOption label = null;
 
-    private Object endLabel = null;
+    private LabelOption endLabel = null;
 
     private Number xAxisIndex = null;
 
