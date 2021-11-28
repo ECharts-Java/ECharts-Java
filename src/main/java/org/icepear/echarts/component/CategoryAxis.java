@@ -8,77 +8,77 @@ import lombok.Data;
 
 @Data
 public class CategoryAxis implements CategoryAxisBaseOption {
-    private Boolean boundaryGap = null;
+    private Boolean boundaryGap;
 
-    private List<Object> data = null;
+    private List<Object> data;
 
-    private Boolean deduplication = null;
+    private Boolean deduplication;
 
-    private Boolean show = null;
+    private Boolean show;
 
-    private Boolean inverse = null;
+    private Boolean inverse;
 
-    private String nameLocation = null;
+    private String nameLocation;
 
-    private Number nameRotate = null;
+    private Number nameRotate;
 
-    private Object nameTruncate = null;
+    private Object nameTruncate;
 
-    private Object nameTextStyle = null;
+    private Object nameTextStyle;
 
-    private Number nameGap = null;
+    private Number nameGap;
 
-    private Boolean silent = null;
+    private Boolean silent;
 
-    private Boolean triggerEvent = null;
+    private Boolean triggerEvent;
 
-    private Object tooltip = null;
+    private Object tooltip;
 
-    private Object axisLabel = null;
+    private Object axisLabel;
 
-    private Object axisPointer = null;
+    private Object axisPointer;
 
-    private Object axisLine = null;
+    private Object axisLine;
 
-    private Object axisTick = null;
+    private Object axisTick;
 
-    private Object minorTick = null;
+    private Object minorTick;
 
-    private Object splitLine = null;
+    private Object splitLine;
 
-    private Object minorSplitLine = null;
+    private Object minorSplitLine;
 
-    private Object splitArea = null;
+    private Object splitArea;
 
-    private Number min = null;
+    private Number min;
 
-    private Number max = null;
+    private Number max;
 
-    private String mainType = null;
+    private String mainType;
 
-    private String type = null;
+    private String type;
 
-    private String id = null;
+    private String id;
 
-    private String name = null;
+    private String name;
 
-    private Number z = null;
+    private Number z;
 
-    private Number zlevel = null;
+    private Number zlevel;
 
-    private String animation = null;
+    private String animation;
 
-    private Number animationThreshold = null;
+    private Number animationThreshold;
 
-    private Number animationDuration = null;
+    private Number animationDuration;
 
-    private String animationEasing = null;
+    private String animationEasing;
 
-    private Number animationDelay = null;
+    private Number animationDelay;
 
-    private Number animationDurationUpdate = null;
+    private Number animationDurationUpdate;
 
-    private String animationEasingUpdate = null;
+    private String animationEasingUpdate;
 
-    private Number animationDelayUpdate = null;
+    private Number animationDelayUpdate;
 }

@@ -8,47 +8,47 @@ import lombok.Data;
 
 @Data
 public class Grid implements GridOption {
-    private Boolean show = null;
+    private Boolean show;
 
-    private Boolean containLabel = null;
+    private Boolean containLabel;
 
-    private String backgroundColor = null;
+    private String backgroundColor;
 
-    private Number borderWidth = null;
+    private Number borderWidth;
 
-    private String borderColor = null;
+    private String borderColor;
 
-    private TooltipOption tooltip = null;
+    private TooltipOption tooltip;
 
-    private String mainType = null;
+    private String mainType;
 
-    private String type = null;
+    private String type;
 
-    private String id = null;
+    private String id;
 
-    private String name = null;
+    private String name;
 
-    private Number z = null;
+    private Number z;
 
-    private Number zlevel = null;
+    private Number zlevel;
 
-    private BoxLength<?> width = null;
+    private BoxLength<?> width;
 
-    private BoxLength<?> height = null;
+    private BoxLength<?> height;
 
-    private BoxLength<?> top = null;
+    private BoxLength<?> top;
 
-    private BoxLength<?> right = null;
+    private BoxLength<?> right;
 
-    private BoxLength<?> bottom = null;
+    private BoxLength<?> bottom;
 
-    private BoxLength<?> left = null;
+    private BoxLength<?> left;
 
-    private Number shadowBlur = null;
+    private Number shadowBlur;
 
-    private String shadowColor = null;
+    private String shadowColor;
 
-    private Number shadowOffsetX = null;
+    private Number shadowOffsetX;
 
-    private Number shadowOffsetY = null;
+    private Number shadowOffsetY;
 }

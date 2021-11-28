@@ -12,141 +12,141 @@ import lombok.Data;
 
 @Data
 public class LineSeries implements LineSeriesOption {
-    private Boolean clip = null;
+    private Boolean clip;
 
-    private Object lineStyle = null;
+    private Object lineStyle;
 
-    private AreaStyleOption areaStyle = null;
+    private AreaStyleOption areaStyle;
 
-    private String step = null;
+    private String step;
 
-    private Boolean smooth = null;
+    private Boolean smooth;
 
-    private String smoothMonotone = null;
+    private String smoothMonotone;
 
-    private Boolean connectNulls = null;
+    private Boolean connectNulls;
 
-    private Boolean showSymbol = null;
+    private Boolean showSymbol;
 
-    private Boolean showAllSymbol = null;
+    private Boolean showAllSymbol;
 
-    private Boolean triggerLineEvent = null;
+    private Boolean triggerLineEvent;
 
-    private Boolean silent = null;
+    private Boolean silent;
 
-    private String blendMode = null;
+    private String blendMode;
 
-    private String cursor = null;
+    private String cursor;
 
-    private String dataGroupId = null;
+    private String dataGroupId;
 
-    private Object data = null;
+    private List<Object> data;
 
-    private String colorBy = null;
+    private String colorBy;
 
-    private Boolean legendHoverLink = null;
+    private Boolean legendHoverLink;
 
-    private Number progressive = null;
+    private Number progressive;
 
-    private Number progressiveThreshold = null;
+    private Number progressiveThreshold;
 
-    private String progressiveChunkMode = null;
+    private String progressiveChunkMode;
 
-    private String coordinateSystem = null;
+    private String coordinateSystem;
 
-    private Number hoverLayerThreshold = null;
+    private Number hoverLayerThreshold;
 
-    private String seriesLayoutBy = null;
+    private String seriesLayoutBy;
 
-    private Object labelLine = null;
+    private Object labelLine;
 
-    private Object labelLayout = null;
+    private Object labelLayout;
 
-    private Object stateAnimation = null;
+    private Object stateAnimation;
 
-    private Object universalTransition = null;
+    private Object universalTransition;
 
-    private Map<String, Boolean> selectedMap = null;
+    private Map<String, Boolean> selectedMap;
 
-    private String selectedMode = null;
+    private String selectedMode;
 
-    private String mainType = null;
+    private String mainType;
 
-    private String type = null;
+    private String type;
 
-    private String id = null;
+    private String id;
 
-    private String name = null;
+    private String name;
 
-    private Number z = null;
+    private Number z;
 
-    private Number zlevel = null;
+    private Number zlevel;
 
-    private String animation = null;
+    private String animation;
 
-    private Number animationThreshold = null;
+    private Number animationThreshold;
 
-    private Number animationDuration = null;
+    private Number animationDuration;
 
-    private String animationEasing = null;
+    private String animationEasing;
 
-    private Number animationDelay = null;
+    private Number animationDelay;
 
-    private Number animationDurationUpdate = null;
+    private Number animationDurationUpdate;
 
-    private String animationEasingUpdate = null;
+    private String animationEasingUpdate;
 
-    private Number animationDelayUpdate = null;
+    private Number animationDelayUpdate;
 
-    private List<String> color = null;
+    private List<String> color;
 
-    private List<List<String>> colorLayer = null;
+    private List<List<String>> colorLayer;
 
-    private EmphasisOption emphasis = null;
+    private EmphasisOption emphasis;
 
-    private Object select = null;
+    private Object select;
 
-    private Object blur = null;
+    private Object blur;
 
-    private Object itemStyle = null;
+    private Object itemStyle;
 
-    private LabelOption label = null;
+    private LabelOption label;
 
-    private LabelOption endLabel = null;
+    private LabelOption endLabel;
 
-    private Number xAxisIndex = null;
+    private Number xAxisIndex;
 
-    private Number yAxisIndex = null;
+    private Number yAxisIndex;
 
-    private String xAxisId = null;
+    private String xAxisId;
 
-    private String yAxisId = null;
+    private String yAxisId;
 
-    private Number polarIndex = null;
+    private Number polarIndex;
 
-    private String polarId = null;
+    private String polarId;
 
-    private String stack = null;
+    private String stack;
 
-    private String sampling = null;
+    private String sampling;
 
-    private String symbol = null;
+    private String symbol;
 
-    private Number symbolSize = null;
+    private Number symbolSize;
 
-    private Number symbolRotate = null;
+    private Number symbolRotate;
 
-    private Boolean symbolKeepAspect = null;
+    private Boolean symbolKeepAspect;
 
-    private Number symbolOffset = null;
+    private Number symbolOffset;
 
-    private Number datasetIndex = null;
+    private Number datasetIndex;
 
-    private String datasetId = null;
+    private String datasetId;
 
-    private String sourceHeader = null;
+    private String sourceHeader;
 
-    private List<Object> dimensions = null;
+    private List<Object> dimensions;
 
-    private String encode = null;
+    private String encode;
 }

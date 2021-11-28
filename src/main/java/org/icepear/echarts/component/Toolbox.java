@@ -12,67 +12,67 @@ import lombok.Data;
 
 @Data
 public class Toolbox implements ToolboxOption {
-    private Boolean show = null;
+    private Boolean show;
 
-    private Object orient = null;
+    private Object orient;
 
-    private String backgroundColor = null;
+    private String backgroundColor;
 
-    private List<Number> borderRadius = null;
+    private List<Number> borderRadius;
 
-    private List<Number> padding = null;
+    private List<Number> padding;
 
-    private Number itemSize = null;
+    private Number itemSize;
 
-    private Number itemGap = null;
+    private Number itemGap;
 
-    private Boolean showTitle = null;
+    private Boolean showTitle;
 
-    private Object iconStyle = null;
+    private Object iconStyle;
 
-    private Object emphasis = null;
+    private Object emphasis;
 
-    private Object textStyle = null;
+    private Object textStyle;
 
-    private TooltipOption tooltip = null;
+    private TooltipOption tooltip;
 
-    private Map<String, ToolboxFeatureOption> feature = null;
+    private Map<String, ToolboxFeatureOption> feature;
 
-    private String mainType = null;
+    private String mainType;
 
-    private String type = null;
+    private String type;
 
-    private String id = null;
+    private String id;
 
-    private String name = null;
+    private String name;
 
-    private Number z = null;
+    private Number z;
 
-    private Number zlevel = null;
+    private Number zlevel;
 
-    private BoxLength<?> width = null;
+    private BoxLength<?> width;
 
-    private BoxLength<?> height = null;
+    private BoxLength<?> height;
 
-    private BoxLength<?> top = null;
+    private BoxLength<?> top;
 
-    private BoxLength<?> right = null;
+    private BoxLength<?> right;
 
-    private BoxLength<?> bottom = null;
+    private BoxLength<?> bottom;
 
-    private BoxLength<?> left = null;
+    private BoxLength<?> left;
 
-    private String borderColor = null;
+    private String borderColor;
 
-    private Number borderWidth = null;
+    private Number borderWidth;
 
-    private String borderType = null;
+    private String borderType;
 
-    private Object borderCap = null;
+    private Object borderCap;
 
-    private Object borderJoin = null;
+    private Object borderJoin;
 
-    private Number borderDashOffset = null;
+    private Number borderDashOffset;
 
-    private Number borderMiterLimit = null;
+    private Number borderMiterLimit;
 }

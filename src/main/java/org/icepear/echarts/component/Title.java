@@ -9,75 +9,75 @@ import lombok.Data;
 
 @Data
 public class Title implements TitleOption {
-    private Boolean show = null;
+    private Boolean show;
 
-    private String text = null;
+    private String text;
 
-    private String link = null;
+    private String link;
 
-    private String target = null;
+    private String target;
 
-    private String subtext = null;
+    private String subtext;
 
-    private String sublink = null;
+    private String sublink;
 
-    private String subtarget = null;
+    private String subtarget;
 
-    private Object textAlign = null;
+    private Object textAlign;
 
-    private Object textVerticalAlign = null;
+    private Object textVerticalAlign;
 
-    private Object textBaseline = null;
+    private Object textBaseline;
 
-    private String backgroundColor = null;
+    private String backgroundColor;
 
-    private List<Number> padding = null;
+    private List<Number> padding;
 
-    private Number itemGap = null;
+    private Number itemGap;
 
-    private Object textStyle = null;
+    private Object textStyle;
 
-    private Object subtextStyle = null;
+    private Object subtextStyle;
 
-    private Boolean triggerEvent = null;
+    private Boolean triggerEvent;
 
-    private List<Number> borderRadius = null;
+    private List<Number> borderRadius;
 
-    private String mainType = null;
+    private String mainType;
 
-    private String type = null;
+    private String type;
 
-    private String id = null;
+    private String id;
 
-    private String name = null;
+    private String name;
 
-    private Number z = null;
+    private Number z;
 
-    private Number zlevel = null;
+    private Number zlevel;
 
-    private BoxLength<?> width = null;
+    private BoxLength<?> width;
 
-    private BoxLength<?> height = null;
+    private BoxLength<?> height;
 
-    private BoxLength<?> top = null;
+    private BoxLength<?> top;
 
-    private BoxLength<?> right = null;
+    private BoxLength<?> right;
 
-    private BoxLength<?> bottom = null;
+    private BoxLength<?> bottom;
 
-    private BoxLength<?> left = null;
+    private BoxLength<?> left;
 
-    private String borderColor = null;
+    private String borderColor;
 
-    private Number borderWidth = null;
+    private Number borderWidth;
 
-    private String borderType = null;
+    private String borderType;
 
-    private Object borderCap = null;
+    private Object borderCap;
 
-    private Object borderJoin = null;
+    private Object borderJoin;
 
-    private Number borderDashOffset = null;
+    private Number borderDashOffset;
 
-    private Number borderMiterLimit = null;
+    private Number borderMiterLimit;
 }

@@ -11,100 +11,100 @@ import lombok.Data;
 
 @Data
 public class Legend implements LegendOption {
-    private Boolean show = null;
+    private Boolean show;
 
-    private Object orient = null;
+    private Object orient;
 
-    private String align = null;
+    private String align;
 
-    private String backgroundColor = null;
+    private String backgroundColor;
 
-    private List<Number> borderRadius = null;
+    private List<Number> borderRadius;
 
-    private List<Number> padding = null;
+    private List<Number> padding;
 
-    private Number itemGap = null;
+    private Number itemGap;
 
-    private Number itemWidth = null;
+    private Number itemWidth;
 
-    private Number itemHeight = null;
+    private Number itemHeight;
 
-    private String selectedMode = null;
+    private String selectedMode;
 
-    private Map<String, Boolean> selected = null;
+    private Map<String, Boolean> selected;
 
-    private Object selector = null;
+    private Object selector;
 
-    private Object selectorLabel = null;
+    private Object selectorLabel;
 
-    private Object emphasis = null;
+    private Object emphasis;
 
-    private String selectorPosition = null;
+    private String selectorPosition;
 
-    private Number selectorItemGap = null;
+    private Number selectorItemGap;
 
-    private Number selectorButtonGap = null;
+    private Number selectorButtonGap;
 
-    private List<Object> data = null;
+    private List<Object> data;
 
-    private TooltipOption tooltip = null;
+    private TooltipOption tooltip;
 
-    private String mainType = null;
+    private String mainType;
 
-    private String type = null;
+    private String type;
 
-    private String id = null;
+    private String id;
 
-    private String name = null;
+    private String name;
 
-    private Number z = null;
+    private Number z;
 
-    private Number zlevel = null;
+    private Number zlevel;
 
-    private String icon = null;
+    private String icon;
 
-    private String inactiveColor = null;
+    private String inactiveColor;
 
-    private String inactiveBorderColor = null;
+    private String inactiveBorderColor;
 
-    private Number inactiveBorderWidth = null;
+    private Number inactiveBorderWidth;
 
-    private String formatter = null;
+    private String formatter;
 
-    private Object itemStyle = null;
+    private Object itemStyle;
 
-    private Object lineStyle = null;
+    private Object lineStyle;
 
-    private Object textStyle = null;
+    private Object textStyle;
 
-    private String symbolRotate = null;
+    private String symbolRotate;
 
     @Deprecated
-    private Boolean symbolKeepAspect = null;
+    private Boolean symbolKeepAspect;
 
-    private BoxLength<?> width = null;
+    private BoxLength<?> width;
 
-    private BoxLength<?> height = null;
+    private BoxLength<?> height;
 
-    private BoxLength<?> top = null;
+    private BoxLength<?> top;
 
-    private BoxLength<?> right = null;
+    private BoxLength<?> right;
 
-    private BoxLength<?> bottom = null;
+    private BoxLength<?> bottom;
 
-    private BoxLength<?> left = null;
+    private BoxLength<?> left;
 
-    private String borderColor = null;
+    private String borderColor;
 
-    private Number borderWidth = null;
+    private Number borderWidth;
 
-    private String borderType = null;
+    private String borderType;
 
-    private Object borderCap = null;
+    private Object borderCap;
 
-    private Object borderJoin = null;
+    private Object borderJoin;
 
-    private Number borderDashOffset = null;
+    private Number borderDashOffset;
 
-    private Number borderMiterLimit = null;
+    private Number borderMiterLimit;
 }
