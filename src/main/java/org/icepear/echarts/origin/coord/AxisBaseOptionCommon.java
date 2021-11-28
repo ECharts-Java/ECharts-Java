@@ -33,7 +33,7 @@ public interface AxisBaseOptionCommon extends ComponentOption, AnimationOptionMi
 
     void setAxisLine(Object axisLine);
 
-    void setAxisTick(Object axisTick);
+    void setAxisTick(AxisTickOption axisTick);
 
     void setMinorTick(Object minorTick);
 

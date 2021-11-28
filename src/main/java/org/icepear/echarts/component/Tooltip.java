@@ -2,13 +2,14 @@ package org.icepear.echarts.component;
 
 import java.util.List;
 
+import org.icepear.echarts.origin.component.axisPointer.AxisPointerOption;
 import org.icepear.echarts.origin.component.tooltip.TooltipOption;
 
 import lombok.Data;
 
 @Data
 public class Tooltip implements TooltipOption {
-    private Object axisPointer;
+    private AxisPointerOption axisPointer;
 
     private Boolean showContent;
 

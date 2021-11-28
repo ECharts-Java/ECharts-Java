@@ -1,0 +1,56 @@
+{
+    "grid": [
+        {
+            "containLabel": true,
+            "right": "4%",
+            "bottom": "3%",
+            "left": "3%"
+        }
+    ],
+    "xAxis": [
+        {
+            "data": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+            ],
+            "axisTick": {
+                "alignWithLabel": true
+            },
+            "type": "category"
+        }
+    ],
+    "yAxis": [
+        {
+            "type": "value"
+        }
+    ],
+    "tooltip": [
+        {
+            "axisPointer": {
+                "type": "shadow"
+            },
+            "trigger": "axis"
+        }
+    ],
+    "series": [
+        {
+            "barWidth": "60%",
+            "data": [
+                10,
+                52,
+                200,
+                334,
+                390,
+                330,
+                220
+            ],
+            "type": "bar",
+            "name": "Direct"
+        }
+    ]
+}
