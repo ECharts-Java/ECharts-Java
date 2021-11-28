@@ -16,89 +16,89 @@ import lombok.Data;
 
 @Data
 public class Option implements EChartsOption {
-    private List<Object> dataset = null;
+    private List<Object> dataset;
 
-    private Object aria = null;
+    private Object aria;
 
-    private List<TitleOption> title = null;
+    private List<TitleOption> title;
 
-    private List<Grid> grid = null;
+    private List<Grid> grid;
 
-    private List<Object> radar = null;
+    private List<Object> radar;
 
-    private List<Object> polar = null;
+    private List<Object> polar;
 
-    private List<Object> geo = null;
+    private List<Object> geo;
 
-    private List<Object> angleAxis = null;
+    private List<Object> angleAxis;
 
-    private List<Object> radiusAxis = null;
+    private List<Object> radiusAxis;
 
-    private List<XAxisOption> xAxis = null;
+    private List<XAxisOption> xAxis;
 
-    private List<YAxisOption> yAxis = null;
+    private List<YAxisOption> yAxis;
 
-    private List<Object> singleAxis = null;
+    private List<Object> singleAxis;
 
-    private List<Object> parallel = null;
+    private List<Object> parallel;
 
-    private List<Object> parallelAxis = null;
+    private List<Object> parallelAxis;
 
-    private List<Object> calendar = null;
+    private List<Object> calendar;
 
-    private List<Object> toolbox = null;
+    private List<Object> toolbox;
 
-    private List<TooltipOption> tooltip = null;
+    private List<TooltipOption> tooltip;
 
-    private List<Object> axisPointer = null;
+    private List<Object> axisPointer;
 
-    private List<Object> brush = null;
+    private List<Object> brush;
 
-    private List<LegendOption> legend = null;
+    private List<LegendOption> legend;
 
-    private List<Object> dataZoom = null;
+    private List<Object> dataZoom;
 
-    private List<Object> visualMap = null;
+    private List<Object> visualMap;
 
-    private List<Object> graphic = null;
+    private List<Object> graphic;
 
-    private List<SeriesOption> series = null;
+    private List<SeriesOption> series;
 
-    private Object baseOption = null;
+    private Object baseOption;
 
-    private Object options = null;
+    private Object options;
 
-    private Object media = null;
+    private Object media;
 
-    private List<ComponentOption> timeline = null;
+    private List<ComponentOption> timeline;
 
-    private String backgroundColor = null;
+    private String backgroundColor;
 
-    private String darkMode = null;
+    private String darkMode;
 
-    private Object textStyle = null;
+    private Object textStyle;
 
-    private Boolean useUTC = null;
+    private Boolean useUTC;
 
-    private AnimationOption stateAnimation = null;
+    private AnimationOption stateAnimation;
 
-    private String animation = null;
+    private String animation;
 
-    private Number animationThreshold = null;
+    private Number animationThreshold;
 
-    private Number animationDuration = null;
+    private Number animationDuration;
 
-    private String animationEasing = null;
+    private String animationEasing;
 
-    private Number animationDelay = null;
+    private Number animationDelay;
 
-    private Number animationDurationUpdate = null;
+    private Number animationDurationUpdate;
 
-    private String animationEasingUpdate = null;
+    private String animationEasingUpdate;
 
-    private Number animationDelayUpdate = null;
+    private Number animationDelayUpdate;
 
-    private List<String> color = null;
+    private List<String> color;
 
-    private List<List<String>> colorLayer = null;
+    private List<List<String>> colorLayer;
 }

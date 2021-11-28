@@ -8,31 +8,31 @@ import lombok.Data;
 
 @Data
 public class ToolboxSaveAsImageFeature implements ToolboxSaveAsImageFeatureOption {
-    private String type = null;
+    private String type;
 
-    private String backgroundColor = null;
+    private String backgroundColor;
 
-    private String connectedBackgroundColor = null;
+    private String connectedBackgroundColor;
 
-    private String name = null;
+    private String name;
 
-    private List<String> excludeComponents = null;
+    private List<String> excludeComponents;
 
-    private Number pixelRatio = null;
+    private Number pixelRatio;
 
-    private List<String> lang = null;
+    private List<String> lang;
 
-    private Boolean show = null;
+    private Boolean show;
 
-    private String title = null;
+    private String title;
 
-    private String icon = null;
+    private String icon;
 
-    private Object iconStyle = null;
+    private Object iconStyle;
 
-    private Object emphasis = null;
+    private Object emphasis;
 
-    private Object iconStatus = null;
+    private Object iconStatus;
 
-    private Object onclick = null;
+    private Object onclick;
 }

@@ -9,13 +9,13 @@ import lombok.Data;
 public class YAxis implements YAxisOption {
     private AxisBaseOption axisBaseOption;
 
-    private Number gridIndex = null;
+    private Number gridIndex;
 
-    private String gridId = null;
+    private String gridId;
 
-    private String position = null;
+    private String position;
 
-    private Number offset = null;
+    private Number offset;
 
-    private Object categorySortInfo = null;
+    private Object categorySortInfo;
 }

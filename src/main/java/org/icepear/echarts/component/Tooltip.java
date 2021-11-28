@@ -8,77 +8,77 @@ import lombok.Data;
 
 @Data
 public class Tooltip implements TooltipOption {
-    private Object axisPointer = null;
+    private Object axisPointer;
 
-    private Boolean showContent = null;
+    private Boolean showContent;
 
-    private String trigger = null;
+    private String trigger;
 
-    private String displayMode = null;
+    private String displayMode;
 
-    private String renderMode = null;
+    private String renderMode;
 
-    private Boolean appendToBody = null;
+    private Boolean appendToBody;
 
-    private String className = null;
+    private String className;
 
-    private Object order = null;
+    private Object order;
 
-    private Boolean show = null;
+    private Boolean show;
 
-    private String triggerOn = null;
+    private String triggerOn;
 
-    private Boolean alwaysShowContent = null;
+    private Boolean alwaysShowContent;
 
-    private String formatter = null;
+    private String formatter;
 
-    private Object position = null;
+    private Object position;
 
-    private Boolean confine = null;
+    private Boolean confine;
 
-    private Object align = null;
+    private Object align;
 
-    private Object verticalAlign = null;
+    private Object verticalAlign;
 
-    private Number showDelay = null;
+    private Number showDelay;
 
-    private Number hideDelay = null;
+    private Number hideDelay;
 
-    private Number transitionDuration = null;
+    private Number transitionDuration;
 
-    private Boolean enterable = null;
+    private Boolean enterable;
 
-    private String backgroundColor = null;
+    private String backgroundColor;
 
-    private String borderColor = null;
+    private String borderColor;
 
-    private Number borderRadius = null;
+    private Number borderRadius;
 
-    private Number borderWidth = null;
+    private Number borderWidth;
 
-    private Number shadowBlur = null;
+    private Number shadowBlur;
 
-    private String shadowColor = null;
+    private String shadowColor;
 
-    private Number shadowOffsetX = null;
+    private Number shadowOffsetX;
 
-    private Number shadowOffsetY = null;
+    private Number shadowOffsetY;
 
-    private List<Number> padding = null;
+    private List<Number> padding;
 
-    private String extraCssText = null;
+    private String extraCssText;
 
-    private Object textStyle = null;
+    private Object textStyle;
 
-    private String mainType = null;
+    private String mainType;
 
-    private String type = null;
+    private String type;
 
-    private String id = null;
+    private String id;
 
-    private String name = null;
+    private String name;
 
-    private Number z = null;
+    private Number z;
 
-    private Number zlevel = null;
+    private Number zlevel;
 }

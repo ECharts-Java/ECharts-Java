@@ -6,7 +6,7 @@ import lombok.Data;
 
 @Data
 public class AreaStyle implements AreaStyleOption {
-    private String color = null;
+    private String color;
 
-    private Number opacity = null;
+    private Number opacity;
 }
