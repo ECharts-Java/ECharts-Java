@@ -15,7 +15,7 @@ public interface BarSeriesOption extends BaseBarSeriesOption, BarStateOption, Se
 
     void setShowBackground(Boolean showBackground);
 
-    void setBackgroundStyle(Object backgroundStyle);
+    void setBackgroundStyle(BackgroundStyleOption backgroundStyle);
 
     void setRealtimeSort(Boolean realtimeSort);
 }

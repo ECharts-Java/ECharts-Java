@@ -3,6 +3,7 @@ package org.icepear.echarts.component;
 import java.util.List;
 import java.util.Map;
 
+import org.icepear.echarts.origin.chart.bar.BackgroundStyleOption;
 import org.icepear.echarts.origin.chart.bar.BarSeriesOption;
 import org.icepear.echarts.origin.util.EmphasisOption;
 
@@ -16,7 +17,7 @@ public class BarSeries implements BarSeriesOption {
 
     private Boolean showBackground;
 
-    private Object backgroundStyle;
+    private BackgroundStyleOption backgroundStyle;
 
     private Boolean realtimeSort;
 
