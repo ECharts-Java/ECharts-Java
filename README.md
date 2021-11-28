@@ -24,7 +24,7 @@ ECharts Java is a library for Java developers to use JavaScript library [Apache 
 ### [Bar](https://echarts.apache.org/examples/en/index.html#chart-type-bar)
 
 - [x] [Bar with Background](https://echarts.apache.org/examples/en/editor.html?c=bar-background)
-- [ ] [Basic Bar](https://echarts.apache.org/examples/en/editor.html?c=bar-simple)
+- [x] [Basic Bar](https://echarts.apache.org/examples/en/editor.html?c=bar-simple)
 - [ ] [Axis Align with Tick](https://echarts.apache.org/examples/en/editor.html?c=bar-tick-align)
 - [ ] [Set Style of Single Bar](https://echarts.apache.org/examples/en/editor.html?c=bar-data-color)
 - [ ] [Waterfall Chart](https://echarts.apache.org/examples/en/editor.html?c=bar-waterfall)
