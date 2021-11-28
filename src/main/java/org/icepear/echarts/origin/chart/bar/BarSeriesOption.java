@@ -1,7 +1,5 @@
 package org.icepear.echarts.origin.chart.bar;
 
-import java.util.List;
-
 import org.icepear.echarts.origin.util.SeriesEncodeOptionMixin;
 import org.icepear.echarts.origin.util.SeriesSamplingOptionMixin;
 import org.icepear.echarts.origin.util.SeriesStackOptionMixin;
@@ -11,18 +9,13 @@ import org.icepear.echarts.origin.util.SeriesStackOptionMixin;
  */
 public interface BarSeriesOption extends BaseBarSeriesOption, BarStateOption, SeriesStackOptionMixin,
         SeriesSamplingOptionMixin, SeriesEncodeOptionMixin {
-
-    void setCoordinateSystem(String coordinateSystem);
-
     void setClip(Boolean clip);
 
-    void setRoundGap(Boolean roundCap);
+    void setRoundCap(Boolean roundCap);
 
     void setShowBackground(Boolean showBackground);
 
     void setBackgroundStyle(Object backgroundStyle);
-
-    void setData(List<Object> data);
 
     void setRealtimeSort(Boolean realtimeSort);
 }

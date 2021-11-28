@@ -1,5 +1,6 @@
 package org.icepear.echarts.origin.util;
 
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -15,7 +16,7 @@ public interface SeriesOption
 
     void setDataGroupId(String dataGroupId);
 
-    void setData(Object data);
+    void setData(List<Object> data);
 
     void setColorBy(String colorBy);
 
