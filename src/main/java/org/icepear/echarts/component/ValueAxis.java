@@ -2,6 +2,7 @@ package org.icepear.echarts.component;
 
 import java.util.List;
 
+import org.icepear.echarts.origin.coord.AxisTickOption;
 import org.icepear.echarts.origin.coord.ValueAxisBaseOption;
 
 import lombok.Data;
@@ -46,7 +47,7 @@ public class ValueAxis implements ValueAxisBaseOption {
 
     private Object axisLine;
 
-    private Object axisTick;
+    private AxisTickOption axisTick;
 
     private Object minorTick;
 

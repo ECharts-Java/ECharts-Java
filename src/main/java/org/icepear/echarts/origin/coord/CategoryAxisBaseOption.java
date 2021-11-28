@@ -11,4 +11,6 @@ public interface CategoryAxisBaseOption extends AxisBaseOption, AxisBaseOptionCo
     void setData(List<Object> data);
 
     void setDeduplication(Boolean deduplication);
+
+    void setAxisTick(AxisTickOption axisTick);
 }

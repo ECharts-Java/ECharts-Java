@@ -6,6 +6,7 @@ import java.util.Map;
 import org.icepear.echarts.origin.chart.bar.BackgroundStyleOption;
 import org.icepear.echarts.origin.chart.bar.BarSeriesOption;
 import org.icepear.echarts.origin.util.EmphasisOption;
+import org.icepear.echarts.type.BoxLength;
 
 import lombok.Data;
 
@@ -21,15 +22,15 @@ public class BarSeries implements BarSeriesOption {
 
     private Boolean realtimeSort;
 
-    private Number barMinHeight;
+    private BoxLength<?> barMinHeight;
 
     private Number barMinAngle;
 
-    private Number barMaxWidth;
+    private BoxLength<?> barMaxWidth;
 
-    private Number barMinWidth;
+    private BoxLength<?> barMinWidth;
 
-    private Number barWidth;
+    private BoxLength<?> barWidth;
 
     private Number barGap;
 
