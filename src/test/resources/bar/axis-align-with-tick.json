@@ -1,42 +1,34 @@
 {
-    "grid": [
-        {
-            "containLabel": true,
-            "right": "4%",
-            "bottom": "3%",
-            "left": "3%"
-        }
-    ],
-    "xAxis": [
-        {
-            "data": [
-                "Mon",
-                "Tue",
-                "Wed",
-                "Thu",
-                "Fri",
-                "Sat",
-                "Sun"
-            ],
-            "axisTick": {
-                "alignWithLabel": true
-            },
-            "type": "category"
-        }
-    ],
-    "yAxis": [
-        {
-            "type": "value"
-        }
-    ],
-    "tooltip": [
-        {
-            "axisPointer": {
-                "type": "shadow"
-            },
-            "trigger": "axis"
-        }
-    ],
+    "grid": {
+        "containLabel": true,
+        "right": "4%",
+        "bottom": "3%",
+        "left": "3%"
+    },
+    "xAxis": {
+        "data": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri",
+            "Sat",
+            "Sun"
+        ],
+        "axisTick": {
+            "alignWithLabel": true
+        },
+        "type": "category"
+    },
+    "yAxis": {
+        "type": "value"
+    },
+    "tooltip": {
+        "axisPointer": {
+            "type": "shadow"
+        },
+        "trigger": "axis"
+    },
     "series": [
         {
             "barWidth": "60%",

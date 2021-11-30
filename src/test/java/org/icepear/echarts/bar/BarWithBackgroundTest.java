@@ -38,8 +38,8 @@ public class BarWithBackgroundTest {
                         .setColor("rgba(180, 180, 180, 0.2)"));
 
         Option option = new Option()
-                .setXAxis(Arrays.asList(xAxis))
-                .setYAxis(Arrays.asList(yAxis))
+                .setXAxis(xAxis)
+                .setYAxis(yAxis)
                 .setSeries(Arrays.asList(series));
 
         Reader reader = new InputStreamReader(

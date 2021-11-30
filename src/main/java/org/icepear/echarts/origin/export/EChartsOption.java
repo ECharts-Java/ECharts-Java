@@ -2,11 +2,12 @@ package org.icepear.echarts.origin.export;
 
 import java.util.List;
 
-import org.icepear.echarts.component.Grid;
 import org.icepear.echarts.origin.component.legend.LegendOption;
 import org.icepear.echarts.origin.component.title.TitleOption;
+import org.icepear.echarts.origin.component.toolbox.ToolboxOption;
 import org.icepear.echarts.origin.component.tooltip.TooltipOption;
 import org.icepear.echarts.origin.coord.cartesian.AxisOption;
+import org.icepear.echarts.origin.coord.cartesian.GridOption;
 import org.icepear.echarts.origin.util.ECBasicOption;
 import org.icepear.echarts.origin.util.SeriesOption;
 
@@ -18,9 +19,13 @@ public interface EChartsOption extends ECBasicOption {
 
     EChartsOption setAria(Object aria);
 
+    EChartsOption setTitle(TitleOption title);
+
     EChartsOption setTitle(List<TitleOption> title);
 
-    EChartsOption setGrid(List<Grid> grid);
+    EChartsOption setGrid(GridOption grid);
+
+    EChartsOption setGrid(List<GridOption> grid);
 
     EChartsOption setRadar(List<Object> radar);
 
@@ -32,7 +37,11 @@ public interface EChartsOption extends ECBasicOption {
 
     EChartsOption setRadiusAxis(List<Object> radiusAxis);
 
+    EChartsOption setXAxis(AxisOption xAxis);
+
     EChartsOption setXAxis(List<AxisOption> xAxis);
+
+    EChartsOption setYAxis(AxisOption yAxis);
 
     EChartsOption setYAxis(List<AxisOption> yAxis);
 
@@ -44,13 +53,19 @@ public interface EChartsOption extends ECBasicOption {
 
     EChartsOption setCalendar(List<Object> calendar);
 
-    EChartsOption setToolbox(List<Object> toolbox);
+    EChartsOption setToolbox(ToolboxOption toolbox);
+
+    EChartsOption setToolbox(List<ToolboxOption> toolbox);
+
+    EChartsOption setTooltip(TooltipOption tooltip);
 
     EChartsOption setTooltip(List<TooltipOption> tooltip);
 
     EChartsOption setAxisPointer(List<Object> axisPointer);
 
     EChartsOption setBrush(List<Object> brush);
+
+    EChartsOption setLegend(LegendOption legend);
 
     EChartsOption setLegend(List<LegendOption> legend);
 

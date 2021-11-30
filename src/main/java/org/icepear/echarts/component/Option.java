@@ -4,15 +4,19 @@ import java.util.List;
 
 import org.icepear.echarts.origin.component.legend.LegendOption;
 import org.icepear.echarts.origin.component.title.TitleOption;
+import org.icepear.echarts.origin.component.toolbox.ToolboxOption;
 import org.icepear.echarts.origin.component.tooltip.TooltipOption;
 import org.icepear.echarts.origin.coord.cartesian.AxisOption;
+import org.icepear.echarts.origin.coord.cartesian.GridOption;
 import org.icepear.echarts.origin.export.EChartsOption;
 import org.icepear.echarts.origin.util.AnimationOption;
 import org.icepear.echarts.origin.util.ComponentOption;
 import org.icepear.echarts.origin.util.SeriesOption;
 
 import lombok.experimental.Accessors;
+import lombok.AccessLevel;
 import lombok.Data;
+import lombok.Getter;
 
 @Accessors(chain=true)
 @Data
@@ -21,9 +25,31 @@ public class Option implements EChartsOption {
 
     private Object aria;
 
-    private List<TitleOption> title;
+    @Getter(AccessLevel.NONE)
+    private Object title;
 
-    private List<Grid> grid;
+    public Option setTitle(TitleOption title) {
+        this.title = title;
+        return this;
+    }
+
+    public Option setTitle(List<TitleOption> title) {
+        this.title = title;
+        return this;
+    }
+
+    @Getter(AccessLevel.NONE)
+    private Object grid;
+
+    public Option setGrid(GridOption grid) {
+        this.grid = grid;
+        return this;
+    }
+
+    public Option setGrid(List<GridOption> grid) {
+        this.grid = grid;
+        return this;
+    }
 
     private List<Object> radar;
 
@@ -35,9 +61,31 @@ public class Option implements EChartsOption {
 
     private List<Object> radiusAxis;
 
-    private List<AxisOption> xAxis;
+    @Getter(AccessLevel.NONE)
+    private Object xAxis;
 
-    private List<AxisOption> yAxis;
+    public Option setXAxis(AxisOption xAxis) {
+        this.xAxis = xAxis;
+        return this;
+    }
+
+    public Option setXAxis(List<AxisOption> xAxis) {
+        this.xAxis = xAxis;
+        return this;
+    }
+
+    @Getter(AccessLevel.NONE)
+    private Object yAxis;
+
+    public Option setYAxis(AxisOption yAxis) {
+        this.yAxis = yAxis;
+        return this;
+    }
+
+    public Option setYAxis(List<AxisOption> yAxis) {
+        this.yAxis = yAxis;
+        return this;
+    }
 
     private List<Object> singleAxis;
 
@@ -47,15 +95,48 @@ public class Option implements EChartsOption {
 
     private List<Object> calendar;
 
-    private List<Object> toolbox;
+    @Getter(AccessLevel.NONE)
+    private Object toolbox;
 
-    private List<TooltipOption> tooltip;
+    public Option setToolbox(ToolboxOption toolbox) {
+        this.toolbox = toolbox;
+        return this;
+    }
+
+    public Option setToolbox(List<ToolboxOption> toolbox) {
+        this.toolbox = toolbox;
+        return this;
+    }
+
+    @Getter(AccessLevel.NONE)
+    private Object tooltip;
+
+    public Option setTooltip(TooltipOption tooltip) {
+        this.tooltip = tooltip;
+        return this;
+    }
+
+    public Option setTooltip(List<TooltipOption> tooltip) {
+        this.tooltip = tooltip;
+        return this;
+    }
 
     private List<Object> axisPointer;
 
     private List<Object> brush;
 
-    private List<LegendOption> legend;
+    @Getter(AccessLevel.NONE)
+    private Object legend;
+
+    public Option setLegend(LegendOption legend) {
+        this.legend = legend;
+        return this;
+    }
+
+    public Option setLegend(List<LegendOption> legend) {
+        this.legend = legend;
+        return this;
+    }
 
     private List<Object> dataZoom;
 

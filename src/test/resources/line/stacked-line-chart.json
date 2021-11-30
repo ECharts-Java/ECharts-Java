@@ -1,60 +1,46 @@
 {
-    "title": [
-        {
-            "text": "Stacked Line"
+    "title": {
+        "text": "Stacked Line"
+    },
+    "grid": {
+        "containLabel": true,
+        "right": "4%",
+        "bottom": "3%",
+        "left": "3%"
+    },
+    "xAxis": {
+        "boundaryGap": false,
+        "data": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri",
+            "Sat",
+            "Sun"
+        ],
+        "type": "category"
+    },
+    "yAxis": {
+        "type": "value"
+    },
+    "toolbox": {
+        "feature": {
+            "saveAsImage": {}
         }
-    ],
-    "grid": [
-        {
-            "containLabel": true,
-            "right": "4%",
-            "bottom": "3%",
-            "left": "3%"
-        }
-    ],
-    "xAxis": [
-        {
-            "boundaryGap": false,
-            "data": [
-                "Mon",
-                "Tue",
-                "Wed",
-                "Thu",
-                "Fri",
-                "Sat",
-                "Sun"
-            ],
-            "type": "category"
-        }
-    ],
-    "yAxis": [
-        {
-            "type": "value"
-        }
-    ],
-    "toolbox": [
-        {
-            "feature": {
-                "saveAsImage": {}
-            }
-        }
-    ],
-    "tooltip": [
-        {
-            "trigger": "axis"
-        }
-    ],
-    "legend": [
-        {
-            "data": [
-                "Email",
-                "Union Ads",
-                "Video Ads",
-                "Direct",
-                "Search Engine"
-            ]
-        }
-    ],
+    },
+    "tooltip": {
+        "trigger": "axis"
+    },
+    "legend": {
+        "data": [
+            "Email",
+            "Union Ads",
+            "Video Ads",
+            "Direct",
+            "Search Engine"
+        ]
+    },
     "series": [
         {
             "data": [

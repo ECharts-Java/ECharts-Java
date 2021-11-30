@@ -34,8 +34,8 @@ public class BasicBarTest {
                 .setType("bar");
 
         Option option = new Option()
-                .setXAxis(Arrays.asList(xAxis))
-                .setYAxis(Arrays.asList(yAxis))
+                .setXAxis(xAxis)
+                .setYAxis(yAxis)
                 .setSeries(Arrays.asList(series));
 
         Reader reader = new InputStreamReader(

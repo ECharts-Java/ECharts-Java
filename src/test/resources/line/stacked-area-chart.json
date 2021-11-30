@@ -1,66 +1,52 @@
 {
-    "title": [
-        {
-            "text": "Stacked Area Chart"
+    "title": {
+        "text": "Stacked Area Chart"
+    },
+    "grid": {
+        "containLabel": true,
+        "right": "4%",
+        "bottom": "3%",
+        "left": "3%"
+    },
+    "xAxis": {
+        "boundaryGap": false,
+        "data": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri",
+            "Sat",
+            "Sun"
+        ],
+        "type": "category"
+    },
+    "yAxis": {
+        "type": "value"
+    },
+    "toolbox": {
+        "feature": {
+            "saveAsImage": {}
         }
-    ],
-    "grid": [
-        {
-            "containLabel": true,
-            "right": "4%",
-            "bottom": "3%",
-            "left": "3%"
-        }
-    ],
-    "xAxis": [
-        {
-            "boundaryGap": false,
-            "data": [
-                "Mon",
-                "Tue",
-                "Wed",
-                "Thu",
-                "Fri",
-                "Sat",
-                "Sun"
-            ],
-            "type": "category"
-        }
-    ],
-    "yAxis": [
-        {
-            "type": "value"
-        }
-    ],
-    "toolbox": [
-        {
-            "feature": {
-                "saveAsImage": {}
+    },
+    "tooltip": {
+        "axisPointer": {
+            "type": "cross",
+            "label": {
+                "backgroundColor": "#6a7985"
             }
-        }
-    ],
-    "tooltip": [
-        {
-            "axisPointer": {
-                "type": "cross",
-                "label": {
-                    "backgroundColor": "#6a7985"
-                }
-            },
-            "trigger": "axis"
-        }
-    ],
-    "legend": [
-        {
-            "data": [
-                "Email",
-                "Union Ads",
-                "Video Ads",
-                "Direct",
-                "Search Engine"
-            ]
-        }
-    ],
+        },
+        "trigger": "axis"
+    },
+    "legend": {
+        "data": [
+            "Email",
+            "Union Ads",
+            "Video Ads",
+            "Direct",
+            "Search Engine"
+        ]
+    },
     "series": [
         {
             "areaStyle": {},
