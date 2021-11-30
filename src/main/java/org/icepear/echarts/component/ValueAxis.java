@@ -5,8 +5,10 @@ import java.util.List;
 import org.icepear.echarts.origin.coord.AxisTickOption;
 import org.icepear.echarts.origin.coord.ValueAxisBaseOption;
 
+import lombok.experimental.Accessors;
 import lombok.Data;
 
+@Accessors(chain=true)
 @Data
 public class ValueAxis implements ValueAxisBaseOption {
     private Boolean scale;

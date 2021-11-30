@@ -11,7 +11,7 @@ import com.google.gson.JsonSerializer;
 
 import org.icepear.echarts.component.Axis;
 
-public class XAxisSerializer implements JsonSerializer<Axis> {
+public class AxisSerializer implements JsonSerializer<Axis> {
     @Override
     public JsonElement serialize(Axis src, Type typeOfSrc, JsonSerializationContext context) {
         JsonObject obj = new Gson().toJsonTree(src).getAsJsonObject();

@@ -8,8 +8,10 @@ import org.icepear.echarts.origin.util.AreaStyleOption;
 import org.icepear.echarts.origin.util.EmphasisOption;
 import org.icepear.echarts.origin.util.LabelOption;
 
+import lombok.experimental.Accessors;
 import lombok.Data;
 
+@Accessors(chain=true)
 @Data
 public class LineSeries implements LineSeriesOption {
     private Boolean clip;

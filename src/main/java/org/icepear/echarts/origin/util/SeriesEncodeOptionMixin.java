@@ -6,15 +6,16 @@ import java.util.List;
  * https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/util/types.ts#L1711
  */
 public interface SeriesEncodeOptionMixin {
-    void setDatasetIndex(Number datasetIndex);
+    SeriesEncodeOptionMixin setDatasetIndex(Number datasetIndex);
 
-    void setDatasetId(String datasetId);
+    SeriesEncodeOptionMixin setDatasetId(String datasetId);
 
-    void setSeriesLayoutBy(String seriesLayoutBy);
+    // Duplicated with SeriesOption.setSeriesLayoutBy(String)
+    // SeriesEncodeOptionMixin setSeriesLayoutBy(String seriesLayoutBy);
 
-    void setSourceHeader(String sourceHeader);
+    SeriesEncodeOptionMixin setSourceHeader(String sourceHeader);
 
-    void setDimensions(List<Object> dimensions);
+    SeriesEncodeOptionMixin setDimensions(List<Object> dimensions);
 
-    void setEncode(String encode);
+    SeriesEncodeOptionMixin setEncode(String encode);
 }

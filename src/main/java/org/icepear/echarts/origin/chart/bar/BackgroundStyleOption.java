@@ -5,5 +5,5 @@ import java.util.List;
 import org.icepear.echarts.origin.util.ItemStyleOption;
 
 public interface BackgroundStyleOption extends ItemStyleOption {
-    void setBorderRadius(List<Number> borderRadius);
+    BackgroundStyleOption setBorderRadius(List<Number> borderRadius);
 }

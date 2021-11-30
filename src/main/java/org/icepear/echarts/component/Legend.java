@@ -7,8 +7,10 @@ import org.icepear.echarts.origin.component.legend.LegendOption;
 import org.icepear.echarts.origin.component.tooltip.TooltipOption;
 import org.icepear.echarts.type.BoxLength;
 
+import lombok.experimental.Accessors;
 import lombok.Data;
 
+@Accessors(chain=true)
 @Data
 public class Legend implements LegendOption {
     private Boolean show;

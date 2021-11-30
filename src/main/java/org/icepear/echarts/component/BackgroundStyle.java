@@ -4,8 +4,10 @@ import java.util.List;
 
 import org.icepear.echarts.origin.chart.bar.BackgroundStyleOption;
 
+import lombok.experimental.Accessors;
 import lombok.Data;
 
+@Accessors(chain=true)
 @Data
 public class BackgroundStyle implements BackgroundStyleOption {
     private List<Number> borderRadius;

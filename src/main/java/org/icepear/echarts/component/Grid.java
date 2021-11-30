@@ -4,8 +4,10 @@ import org.icepear.echarts.origin.component.tooltip.TooltipOption;
 import org.icepear.echarts.origin.coord.cartesian.GridOption;
 import org.icepear.echarts.type.BoxLength;
 
+import lombok.experimental.Accessors;
 import lombok.Data;
 
+@Accessors(chain=true)
 @Data
 public class Grid implements GridOption {
     private Boolean show;

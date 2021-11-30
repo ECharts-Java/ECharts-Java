@@ -10,37 +10,37 @@ import org.icepear.echarts.origin.util.ComponentOption;
  * https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/component/title/install.ts#L42
  */
 public interface TitleOption extends ComponentOption, BoxLayoutOptionMixin, BorderOptionMixin {
-    void setShow(Boolean show);
+    TitleOption setShow(Boolean show);
 
-    void setText(String text);
+    TitleOption setText(String text);
 
-    void setLink(String link);
+    TitleOption setLink(String link);
 
-    void setTarget(String target);
+    TitleOption setTarget(String target);
 
-    void setSubtext(String subtext);
+    TitleOption setSubtext(String subtext);
 
-    void setSublink(String sublink);
+    TitleOption setSublink(String sublink);
 
-    void setSubtarget(String subtarget);
+    TitleOption setSubtarget(String subtarget);
 
-    void setTextAlign(Object textAlign);
+    TitleOption setTextAlign(Object textAlign);
 
-    void setTextVerticalAlign(Object textVerticalAlign);
+    TitleOption setTextVerticalAlign(Object textVerticalAlign);
 
-    void setTextBaseline(Object textBaseline);
+    TitleOption setTextBaseline(Object textBaseline);
 
-    void setBackgroundColor(String backgroundColor);
+    TitleOption setBackgroundColor(String backgroundColor);
 
-    void setPadding(List<Number> padding);
+    TitleOption setPadding(List<Number> padding);
 
-    void setItemGap(Number itemGap);
+    TitleOption setItemGap(Number itemGap);
 
-    void setTextStyle(Object textStyle);
+    TitleOption setTextStyle(Object textStyle);
 
-    void setSubtextStyle(Object subtextStyle);
+    TitleOption setSubtextStyle(Object subtextStyle);
 
-    void setTriggerEvent(Boolean triggerEvent);
+    TitleOption setTriggerEvent(Boolean triggerEvent);
 
-    void setBorderRadius(List<Number> borderRadius);
+    TitleOption setBorderRadius(List<Number> borderRadius);
 }

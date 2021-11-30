@@ -9,13 +9,13 @@ import org.icepear.echarts.origin.util.SeriesStackOptionMixin;
  */
 public interface BarSeriesOption extends BaseBarSeriesOption, BarStateOption, SeriesStackOptionMixin,
         SeriesSamplingOptionMixin, SeriesEncodeOptionMixin {
-    void setClip(Boolean clip);
+    BarSeriesOption setClip(Boolean clip);
 
-    void setRoundCap(Boolean roundCap);
+    BarSeriesOption setRoundCap(Boolean roundCap);
 
-    void setShowBackground(Boolean showBackground);
+    BarSeriesOption setShowBackground(Boolean showBackground);
 
-    void setBackgroundStyle(BackgroundStyleOption backgroundStyle);
+    BarSeriesOption setBackgroundStyle(BackgroundStyleOption backgroundStyle);
 
-    void setRealtimeSort(Boolean realtimeSort);
+    BarSeriesOption setRealtimeSort(Boolean realtimeSort);
 }

@@ -5,8 +5,10 @@ import java.util.List;
 import org.icepear.echarts.origin.component.title.TitleOption;
 import org.icepear.echarts.type.BoxLength;
 
+import lombok.experimental.Accessors;
 import lombok.Data;
 
+@Accessors(chain=true)
 @Data
 public class Title implements TitleOption {
     private Boolean show;

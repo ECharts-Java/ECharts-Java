@@ -8,41 +8,41 @@ import java.util.Map;
  */
 public interface SeriesOption
         extends ComponentOption, AnimationOptionMixin, ColorPaletteOptionMixin, StatesOptionMixin {
-    void setSilent(Boolean silent);
+    SeriesOption setSilent(Boolean silent);
 
-    void setBlendMode(String blendMode);
+    SeriesOption setBlendMode(String blendMode);
 
-    void setCursor(String cursor);
+    SeriesOption setCursor(String cursor);
 
-    void setDataGroupId(String dataGroupId);
+    SeriesOption setDataGroupId(String dataGroupId);
 
-    void setData(List<Object> data);
+    SeriesOption setData(List<Object> data);
 
-    void setColorBy(String colorBy);
+    SeriesOption setColorBy(String colorBy);
 
-    void setLegendHoverLink(Boolean legendHoverLink);
+    SeriesOption setLegendHoverLink(Boolean legendHoverLink);
 
-    void setProgressive(Number progressive);
+    SeriesOption setProgressive(Number progressive);
 
-    void setProgressiveThreshold(Number progressiveThreshold);
+    SeriesOption setProgressiveThreshold(Number progressiveThreshold);
 
-    void setProgressiveChunkMode(String progressiveChunkMode);
+    SeriesOption setProgressiveChunkMode(String progressiveChunkMode);
 
-    void setCoordinateSystem(String coordinateSystem);
+    SeriesOption setCoordinateSystem(String coordinateSystem);
 
-    void setHoverLayerThreshold(Number hoverLayerThreshold);
+    SeriesOption setHoverLayerThreshold(Number hoverLayerThreshold);
 
-    void setSeriesLayoutBy(String seriesLayoutBy);
+    SeriesOption setSeriesLayoutBy(String seriesLayoutBy);
 
-    void setLabelLine(Object labelLine);
+    SeriesOption setLabelLine(Object labelLine);
 
-    void setLabelLayout(Object labelLayout);
+    SeriesOption setLabelLayout(Object labelLayout);
 
-    void setStateAnimation(Object stateAnimation);
+    SeriesOption setStateAnimation(Object stateAnimation);
 
-    void setUniversalTransition(Object universalTransition);
+    SeriesOption setUniversalTransition(Object universalTransition);
 
-    void setSelectedMap(Map<String, Boolean> selectedMap);
+    SeriesOption setSelectedMap(Map<String, Boolean> selectedMap);
 
-    void setSelectedMode(String selectedMode);
+    SeriesOption setSelectedMode(String selectedMode);
 }

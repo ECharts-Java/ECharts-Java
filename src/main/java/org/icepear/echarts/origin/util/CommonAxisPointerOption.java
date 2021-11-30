@@ -6,37 +6,40 @@ import java.util.List;
  * https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/util/types.ts#L1408
  */
 public interface CommonAxisPointerOption {
-    void setShow(Boolean show);
+    CommonAxisPointerOption setShow(Boolean show);
 
-    void setZ(Number z);
+    // Duplicated with ComponentOption.setZ(Number)
+    // CommonAxisPointerOption setZ(Number z);
 
-    void setZlevel(Number zlevel);
+    // Duplicated with ComponentOption.setZlevel(Number)
+    // CommonAxisPointerOption setZlevel(Number zlevel);
 
-    void setTriggerOn(String triggerOn);
+    CommonAxisPointerOption setTriggerOn(String triggerOn);
 
-    void setType(String type);
+    // Duplicated with ComponentOption.setType(String)
+    // CommonAxisPointerOption setType(String type);
 
-    void setSnap(Boolean snap);
+    CommonAxisPointerOption setSnap(Boolean snap);
 
-    void setTriggerTooltip(Boolean triggerTooltip);
+    CommonAxisPointerOption setTriggerTooltip(Boolean triggerTooltip);
 
-    void setValue(Object value);
+    CommonAxisPointerOption setValue(Object value);
 
-    void setStatus(String status);
+    CommonAxisPointerOption setStatus(String status);
 
-    void setLabel(LabelOption label);
+    CommonAxisPointerOption setLabel(LabelOption label);
 
-    void setAnimation(String animation);
+    CommonAxisPointerOption setAnimation(String animation);
 
-    void setAnimationDurationUpdate(Number animationDurationUpdate);
+    CommonAxisPointerOption setAnimationDurationUpdate(Number animationDurationUpdate);
 
-    void setAnimationEasingUpdate(Object animationEasingUpdate);
+    CommonAxisPointerOption setAnimationEasingUpdate(Object animationEasingUpdate);
 
-    void setLineStyle(Object lineStyle);
+    CommonAxisPointerOption setLineStyle(Object lineStyle);
 
-    void setShadowStyle(Object shadowStyle);
+    CommonAxisPointerOption setShadowStyle(Object shadowStyle);
 
-    void setHandle(Object handle);
+    CommonAxisPointerOption setHandle(Object handle);
 
-    void setSeriesDataIndices(List<Object> seriesDataIndices);
+    CommonAxisPointerOption setSeriesDataIndices(List<Object> seriesDataIndices);
 }

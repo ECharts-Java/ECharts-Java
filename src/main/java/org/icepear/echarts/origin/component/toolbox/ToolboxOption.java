@@ -12,29 +12,29 @@ import org.icepear.echarts.origin.util.ComponentOption;
  * https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/component/toolbox/ToolboxModel.ts#L42
  */
 public interface ToolboxOption extends ComponentOption, BoxLayoutOptionMixin, BorderOptionMixin {
-    void setShow(Boolean show);
+    ToolboxOption setShow(Boolean show);
 
-    void setOrient(Object orient);
+    ToolboxOption setOrient(Object orient);
 
-    void setBackgroundColor(String backgroundColor);
+    ToolboxOption setBackgroundColor(String backgroundColor);
 
-    void setBorderRadius(List<Number> borderRadius);
+    ToolboxOption setBorderRadius(List<Number> borderRadius);
 
-    void setPadding(List<Number> padding);
+    ToolboxOption setPadding(List<Number> padding);
 
-    void setItemSize(Number itemSize);
+    ToolboxOption setItemSize(Number itemSize);
 
-    void setItemGap(Number itemGap);
+    ToolboxOption setItemGap(Number itemGap);
 
-    void setShowTitle(Boolean showTitle);
+    ToolboxOption setShowTitle(Boolean showTitle);
 
-    void setIconStyle(Object iconStyle);
+    ToolboxOption setIconStyle(Object iconStyle);
 
-    void setEmphasis(Object emphasis);
+    ToolboxOption setEmphasis(Object emphasis);
 
-    void setTextStyle(Object textStyle);
+    ToolboxOption setTextStyle(Object textStyle);
 
-    void setTooltip(TooltipOption tooltip);
+    ToolboxOption setTooltip(TooltipOption tooltip);
 
-    void setFeature(Map<String, ToolboxFeatureOption> feature);
+    ToolboxOption setFeature(Map<String, ToolboxFeatureOption> feature);
 }

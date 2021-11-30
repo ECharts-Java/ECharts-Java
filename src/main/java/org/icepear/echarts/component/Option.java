@@ -11,8 +11,10 @@ import org.icepear.echarts.origin.util.AnimationOption;
 import org.icepear.echarts.origin.util.ComponentOption;
 import org.icepear.echarts.origin.util.SeriesOption;
 
+import lombok.experimental.Accessors;
 import lombok.Data;
 
+@Accessors(chain=true)
 @Data
 public class Option implements EChartsOption {
     private List<Object> dataset;

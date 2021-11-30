@@ -5,8 +5,10 @@ import java.util.List;
 import org.icepear.echarts.origin.component.axisPointer.AxisPointerOption;
 import org.icepear.echarts.origin.component.tooltip.TooltipOption;
 
+import lombok.experimental.Accessors;
 import lombok.Data;
 
+@Accessors(chain=true)
 @Data
 public class Tooltip implements TooltipOption {
     private AxisPointerOption axisPointer;

@@ -7,43 +7,43 @@ import org.icepear.echarts.origin.util.ComponentOption;
  * https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/coord/axisCommonTypes.ts#L30
  */
 public interface AxisBaseOptionCommon extends ComponentOption, AnimationOptionMixin {
-    void setShow(Boolean show);
+    AxisBaseOptionCommon setShow(Boolean show);
 
-    void setInverse(Boolean inverse);
+    AxisBaseOptionCommon setInverse(Boolean inverse);
 
-    void setNameLocation(String nameLocation);
+    AxisBaseOptionCommon setNameLocation(String nameLocation);
 
-    void setNameRotate(Number nameRotate);
+    AxisBaseOptionCommon setNameRotate(Number nameRotate);
 
-    void setNameTruncate(Object nameTruncate);
+    AxisBaseOptionCommon setNameTruncate(Object nameTruncate);
 
-    void setNameTextStyle(Object nameTextStyle);
+    AxisBaseOptionCommon setNameTextStyle(Object nameTextStyle);
 
-    void setNameGap(Number nameGap);
+    AxisBaseOptionCommon setNameGap(Number nameGap);
 
-    void setSilent(Boolean silent);
+    AxisBaseOptionCommon setSilent(Boolean silent);
 
-    void setTriggerEvent(Boolean triggerEvent);
+    AxisBaseOptionCommon setTriggerEvent(Boolean triggerEvent);
 
-    void setTooltip(Object tooltip);
+    AxisBaseOptionCommon setTooltip(Object tooltip);
 
-    void setAxisLabel(Object axisLabel);
+    AxisBaseOptionCommon setAxisLabel(Object axisLabel);
 
-    void setAxisPointer(Object axisPointer);
+    AxisBaseOptionCommon setAxisPointer(Object axisPointer);
 
-    void setAxisLine(Object axisLine);
+    AxisBaseOptionCommon setAxisLine(Object axisLine);
 
-    void setAxisTick(AxisTickOption axisTick);
+    AxisBaseOptionCommon setAxisTick(AxisTickOption axisTick);
 
-    void setMinorTick(Object minorTick);
+    AxisBaseOptionCommon setMinorTick(Object minorTick);
 
-    void setSplitLine(Object splitLine);
+    AxisBaseOptionCommon setSplitLine(Object splitLine);
 
-    void setMinorSplitLine(Object minorSplitLine);
+    AxisBaseOptionCommon setMinorSplitLine(Object minorSplitLine);
 
-    void setSplitArea(Object splitArea);
+    AxisBaseOptionCommon setSplitArea(Object splitArea);
 
-    void setMin(Number min);
+    AxisBaseOptionCommon setMin(Number min);
 
-    void setMax(Number max);
+    AxisBaseOptionCommon setMax(Number max);
 }

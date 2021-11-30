@@ -6,13 +6,13 @@ import java.util.List;
  * https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/coord/axisCommonTypes.ts#L84
  */
 public interface NumericAxisBaseOptionCommon extends AxisBaseOptionCommon {
-    void setBoundaryGap(List<Number> boundaryGap);
+    NumericAxisBaseOptionCommon setBoundaryGap(List<Number> boundaryGap);
 
-    void setSplitNumber(Number splitNumber);
+    NumericAxisBaseOptionCommon setSplitNumber(Number splitNumber);
 
-    void setInterval(Number interval);
+    NumericAxisBaseOptionCommon setInterval(Number interval);
 
-    void setMinInterval(Number minInterval);
+    NumericAxisBaseOptionCommon setMinInterval(Number minInterval);
 
-    void setMaxInterval(Number maxInterval);
+    NumericAxisBaseOptionCommon setMaxInterval(Number maxInterval);
 }

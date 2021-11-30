@@ -15,23 +15,23 @@ import org.icepear.echarts.origin.util.SymbolOptionMixin;
 public interface LineSeriesOption
         extends SeriesOption, LineStateOption, SeriesOnCartesianOptionMixin, SeriesOnPolarOptionMixin,
         SeriesStackOptionMixin, SeriesSamplingOptionMixin, SymbolOptionMixin, SeriesEncodeOptionMixin {
-    void setClip(Boolean clip);
+    LineSeriesOption setClip(Boolean clip);
 
-    void setLineStyle(Object lineStyle);
+    LineSeriesOption setLineStyle(Object lineStyle);
 
-    void setAreaStyle(AreaStyleOption areaStyle);
+    LineSeriesOption setAreaStyle(AreaStyleOption areaStyle);
 
-    void setStep(String step);
+    LineSeriesOption setStep(String step);
 
-    void setSmooth(Boolean smooth);
+    LineSeriesOption setSmooth(Boolean smooth);
 
-    void setSmoothMonotone(String smoothMonotone);
+    LineSeriesOption setSmoothMonotone(String smoothMonotone);
 
-    void setConnectNulls(Boolean connectNulls);
+    LineSeriesOption setConnectNulls(Boolean connectNulls);
 
-    void setShowSymbol(Boolean showSymbol);
+    LineSeriesOption setShowSymbol(Boolean showSymbol);
 
-    void setShowAllSymbol(Boolean showAllSymbol);
+    LineSeriesOption setShowAllSymbol(Boolean showAllSymbol);
 
-    void setTriggerLineEvent(Boolean triggerLineEvent);
+    LineSeriesOption setTriggerLineEvent(Boolean triggerLineEvent);
 }

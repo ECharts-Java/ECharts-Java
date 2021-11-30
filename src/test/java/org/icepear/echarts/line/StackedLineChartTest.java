@@ -30,77 +30,73 @@ import org.junit.Test;
 public class StackedLineChartTest {
     @Test
     public void testStackedLineChart() {
-        Title title = new Title();
-        title.setText("Stacked Line");
+        Title title = new Title().setText("Stacked Line");
 
-        Tooltip tooltip = new Tooltip();
-        tooltip.setTrigger("axis");
+        Tooltip tooltip = new Tooltip().setTrigger("axis");
 
-        Legend legend = new Legend();
-        legend.setData(Arrays.asList("Email", "Union Ads", "Video Ads", "Direct", "Search Engine"));
+        Legend legend = new Legend()
+                .setData(Arrays.asList("Email", "Union Ads", "Video Ads", "Direct", "Search Engine"));
 
-        Grid grid = new Grid();
-        grid.setLeft(new BoxLength<String>("3%"));
-        grid.setRight(new BoxLength<String>("4%"));
-        grid.setBottom(new BoxLength<String>("3%"));
-        grid.setContainLabel(true);
+        Grid grid = new Grid()
+                .setLeft(new BoxLength<String>("3%"))
+                .setRight(new BoxLength<String>("4%"))
+                .setBottom(new BoxLength<String>("3%"))
+                .setContainLabel(true);
 
-        Toolbox toolbox = new Toolbox();
+        
         Map<String, ToolboxFeatureOption> feature = new HashMap<>();
         feature.put("saveAsImage", new ToolboxSaveAsImageFeature());
-        toolbox.setFeature(feature);
+        Toolbox toolbox = new Toolbox().setFeature(feature);
 
-        CategoryAxis xCategoryAxis = new CategoryAxis();
-        xCategoryAxis.setType("category");
-        xCategoryAxis.setBoundaryGap(false);
-        xCategoryAxis.setData(Arrays.asList("Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"));
-        Axis xAxis = new Axis();
-        xAxis.setAxisBaseOption(xCategoryAxis);
+        Axis xAxis = new Axis()
+                .setAxisBaseOption(new CategoryAxis()
+                        .setType("category")
+                        .setBoundaryGap(false)
+                        .setData(Arrays.asList("Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun")));
 
-        ValueAxis yValueAxis = new ValueAxis();
-        yValueAxis.setType("value");
-        Axis yAxis = new Axis();
-        yAxis.setAxisBaseOption(yValueAxis);
+        Axis yAxis = new Axis()
+                .setAxisBaseOption(new ValueAxis()
+                        .setType("value"));
 
-        LineSeries series1 = new LineSeries();
-        series1.setName("Email");
-        series1.setType("line");
-        series1.setStack("Total");
-        series1.setData(Arrays.asList(120, 132, 101, 134, 90, 230, 210));
+        LineSeries series1 = new LineSeries()
+                .setName("Email")
+                .setType("line")
+                .setStack("Total")
+                .setData(Arrays.asList(120, 132, 101, 134, 90, 230, 210));
 
-        LineSeries series2 = new LineSeries();
-        series2.setName("Union Ads");
-        series2.setType("line");
-        series2.setStack("Total");
-        series2.setData(Arrays.asList(220, 182, 191, 234, 290, 330, 310));
+        LineSeries series2 = new LineSeries().
+                setName("Union Ads")
+                .setType("line")
+                .setStack("Total")
+                .setData(Arrays.asList(220, 182, 191, 234, 290, 330, 310));
 
-        LineSeries series3 = new LineSeries();
-        series3.setName("Video Ads");
-        series3.setType("line");
-        series3.setStack("Total");
-        series3.setData(Arrays.asList(150, 232, 201, 154, 190, 330, 410));
+        LineSeries series3 = new LineSeries()
+                .setName("Video Ads")
+                .setType("line")
+                .setStack("Total")
+                .setData(Arrays.asList(150, 232, 201, 154, 190, 330, 410));
 
-        LineSeries series4 = new LineSeries();
-        series4.setName("Direct");
-        series4.setType("line");
-        series4.setStack("Total");
-        series4.setData(Arrays.asList(320, 332, 301, 334, 390, 330, 320));
+        LineSeries series4 = new LineSeries()
+                .setName("Direct")
+                .setType("line")
+                .setStack("Total")
+                .setData(Arrays.asList(320, 332, 301, 334, 390, 330, 320));
 
-        LineSeries series5 = new LineSeries();
-        series5.setName("Search Engine");
-        series5.setType("line");
-        series5.setStack("Total");
-        series5.setData(Arrays.asList(820, 932, 901, 934, 1290, 1330, 1320));
+        LineSeries series5 = new LineSeries()
+                .setName("Search Engine")
+                .setType("line")
+                .setStack("Total")
+                .setData(Arrays.asList(820, 932, 901, 934, 1290, 1330, 1320));
 
-        Option option = new Option();
-        option.setTitle(Arrays.asList(title));
-        option.setTooltip(Arrays.asList(tooltip));
-        option.setLegend(Arrays.asList(legend));
-        option.setGrid(Arrays.asList(grid));
-        option.setToolbox(Arrays.asList(toolbox));
-        option.setXAxis(Arrays.asList(xAxis));
-        option.setYAxis(Arrays.asList(yAxis));
-        option.setSeries(Arrays.asList(series1, series2, series3, series4, series5));
+        Option option = new Option()
+                .setTitle(Arrays.asList(title))
+                .setTooltip(Arrays.asList(tooltip))
+                .setLegend(Arrays.asList(legend))
+                .setGrid(Arrays.asList(grid))
+                .setToolbox(Arrays.asList(toolbox))
+                .setXAxis(Arrays.asList(xAxis))
+                .setYAxis(Arrays.asList(yAxis))
+                .setSeries(Arrays.asList(series1, series2, series3, series4, series5));
 
         Reader reader = new InputStreamReader(
                 this.getClass().getResourceAsStream("/line/stacked-line-chart.json"));

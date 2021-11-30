@@ -9,15 +9,15 @@ import org.icepear.echarts.origin.util.ShadowOptionMixin;
  * https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/coord/cartesian/GridModel.ts#L26
  */
 public interface GridOption extends ComponentOption, BoxLayoutOptionMixin, ShadowOptionMixin {
-    void setShow(Boolean show);
+    GridOption setShow(Boolean show);
 
-    void setContainLabel(Boolean containLabel);
+    GridOption setContainLabel(Boolean containLabel);
 
-    void setBackgroundColor(String backgroundColor);
+    GridOption setBackgroundColor(String backgroundColor);
 
-    void setBorderWidth(Number borderWidth);
+    GridOption setBorderWidth(Number borderWidth);
 
-    void setBorderColor(String borderColor);
+    GridOption setBorderColor(String borderColor);
 
-    void setTooltip(TooltipOption tooltip);
+    GridOption setTooltip(TooltipOption tooltip);
 }

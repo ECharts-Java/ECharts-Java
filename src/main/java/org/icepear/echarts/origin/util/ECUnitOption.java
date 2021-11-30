@@ -6,21 +6,21 @@ import java.util.List;
  * https://github.com/apache/echarts/blob/f3471f0a7080e68f8819f7b000d32d73fb0820fb/src/util/types.ts#L501
  */
 public interface ECUnitOption extends AnimationOptionMixin, ColorPaletteOptionMixin {
-    void setBaseOption(Object baseOption);
+    ECUnitOption setBaseOption(Object baseOption);
 
-    void setOptions(Object options);
+    ECUnitOption setOptions(Object options);
 
-    void setMedia(Object media);
+    ECUnitOption setMedia(Object media);
 
-    void setTimeline(List<ComponentOption> timeline);
+    ECUnitOption setTimeline(List<ComponentOption> timeline);
 
-    void setBackgroundColor(String backgroundColor);
+    ECUnitOption setBackgroundColor(String backgroundColor);
 
-    void setDarkMode(String darkMode);
+    ECUnitOption setDarkMode(String darkMode);
 
-    void setTextStyle(Object textStyle);
+    ECUnitOption setTextStyle(Object textStyle);
 
-    void setUseUTC(Boolean useUTC);
+    ECUnitOption setUseUTC(Boolean useUTC);
 
-    void setStateAnimation(AnimationOption stateAnimation);
+    ECUnitOption setStateAnimation(AnimationOption stateAnimation);
 }
