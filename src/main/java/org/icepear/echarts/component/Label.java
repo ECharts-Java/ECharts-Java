@@ -7,8 +7,10 @@ import org.icepear.echarts.origin.util.LabelOption;
 import org.icepear.echarts.origin.util.TextCommonOption;
 import org.icepear.echarts.type.BoxLength;
 
+import lombok.experimental.Accessors;
 import lombok.Data;
 
+@Accessors(chain=true)
 @Data
 public class Label implements LabelOption {
     private Boolean show;

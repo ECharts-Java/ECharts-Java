@@ -6,25 +6,25 @@ import java.util.Map;
  * https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/util/types.ts#L1090
  */
 public interface LabelOption extends TextCommonOption {
-    void setShow(Boolean show);
+    LabelOption setShow(Boolean show);
 
-    void setPosition(String position);
+    LabelOption setPosition(String position);
 
-    void setDistance(Number distance);
+    LabelOption setDistance(Number distance);
 
-    void setRotate(Number rotate);
+    LabelOption setRotate(Number rotate);
 
-    void setOffset(Number offset);
+    LabelOption setOffset(Number offset);
 
-    void setMinMargin(Number minMargin);
+    LabelOption setMinMargin(Number minMargin);
 
-    void setOverflow(Object overflow);
+    LabelOption setOverflow(Object overflow);
 
-    void setSilent(Boolean silent);
+    LabelOption setSilent(Boolean silent);
 
-    void setPrecision(String precision);
+    LabelOption setPrecision(String precision);
 
-    void setValueAnimation(Boolean valueAnimation);
+    LabelOption setValueAnimation(Boolean valueAnimation);
 
-    void setRich(Map<String, TextCommonOption> rich);
+    LabelOption setRich(Map<String, TextCommonOption> rich);
 }

@@ -4,8 +4,10 @@ import java.util.List;
 
 import org.icepear.echarts.origin.component.toolbox.feature.ToolboxSaveAsImageFeatureOption;
 
+import lombok.experimental.Accessors;
 import lombok.Data;
 
+@Accessors(chain=true)
 @Data
 public class ToolboxSaveAsImageFeature implements ToolboxSaveAsImageFeatureOption {
     private String type;

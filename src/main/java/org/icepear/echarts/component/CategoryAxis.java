@@ -5,8 +5,10 @@ import java.util.List;
 import org.icepear.echarts.origin.coord.AxisTickOption;
 import org.icepear.echarts.origin.coord.CategoryAxisBaseOption;
 
+import lombok.experimental.Accessors;
 import lombok.Data;
 
+@Accessors(chain=true)
 @Data
 public class CategoryAxis implements CategoryAxisBaseOption {
     private Boolean boundaryGap;

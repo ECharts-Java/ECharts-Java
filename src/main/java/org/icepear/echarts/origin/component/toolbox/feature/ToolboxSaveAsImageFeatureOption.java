@@ -5,17 +5,17 @@ import java.util.List;
 import org.icepear.echarts.origin.component.toolbox.ToolboxFeatureOption;
 
 public interface ToolboxSaveAsImageFeatureOption extends ToolboxFeatureOption {
-    void setType(String type);
+    ToolboxSaveAsImageFeatureOption setType(String type);
 
-    void setBackgroundColor(String backgroundColor);
+    ToolboxSaveAsImageFeatureOption setBackgroundColor(String backgroundColor);
 
-    void setConnectedBackgroundColor(String connectedBackgroundColor);
+    ToolboxSaveAsImageFeatureOption setConnectedBackgroundColor(String connectedBackgroundColor);
 
-    void setName(String name);
+    ToolboxSaveAsImageFeatureOption setName(String name);
 
-    void setExcludeComponents(List<String> excludeComponents);
+    ToolboxSaveAsImageFeatureOption setExcludeComponents(List<String> excludeComponents);
 
-    void setPixelRatio(Number pixelRatio);
+    ToolboxSaveAsImageFeatureOption setPixelRatio(Number pixelRatio);
 
-    void setLang(List<String> lang);
+    ToolboxSaveAsImageFeatureOption setLang(List<String> lang);
 }

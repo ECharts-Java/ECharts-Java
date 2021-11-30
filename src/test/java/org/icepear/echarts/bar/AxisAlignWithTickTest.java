@@ -25,45 +25,40 @@ import org.junit.Test;
 public class AxisAlignWithTickTest {
     @Test
     public void testAxisAlignWithTick() {
-        AxisPointer axisPointer = new AxisPointer();
-        axisPointer.setType("shadow");
-        Tooltip tooltip = new Tooltip();
-        tooltip.setTrigger("axis");
-        tooltip.setAxisPointer(axisPointer);
+        Tooltip tooltip = new Tooltip()
+                .setTrigger("axis")
+                .setAxisPointer(new AxisPointer()
+                        .setType("shadow"));
 
-        Grid grid = new Grid();
-        grid.setLeft(new BoxLength<String>("3%"));
-        grid.setRight(new BoxLength<String>("4%"));
-        grid.setBottom(new BoxLength<String>("3%"));
-        grid.setContainLabel(true);
+        Grid grid = new Grid()
+                .setLeft(new BoxLength<String>("3%"))
+                .setRight(new BoxLength<String>("4%"))
+                .setBottom(new BoxLength<String>("3%"))
+                .setContainLabel(true);
 
-        CategoryAxisTick axisTick = new CategoryAxisTick();
-        axisTick.setAlignWithLabel(true);
-        CategoryAxis xCategoryAxis = new CategoryAxis();
-        xCategoryAxis.setType("category");
-        xCategoryAxis.setData(Arrays.asList("Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"));
-        xCategoryAxis.setAxisTick(axisTick);
-        Axis xAxis = new Axis();
-        xAxis.setAxisBaseOption(xCategoryAxis);
+        Axis xAxis = new Axis()
+                .setAxisBaseOption(new CategoryAxis()
+                        .setType("category")
+                        .setData(Arrays.asList("Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"))
+                        .setAxisTick(new CategoryAxisTick()
+                                .setAlignWithLabel(true)));
 
-        ValueAxis yValueAxis = new ValueAxis();
-        yValueAxis.setType("value");
-        Axis yAxis = new Axis();
-        yAxis.setAxisBaseOption(yValueAxis);
+        Axis yAxis = new Axis()
+                .setAxisBaseOption(new ValueAxis()
+                        .setType("value"));
 
-        BarSeries series = new BarSeries();
-        series.setName("Direct");
-        series.setType("bar");
-        series.setBarWidth(new BoxLength<String>("60%"));
-        series.setData(Arrays.asList(10, 52, 200, 334, 390, 330, 220));
-        
+        BarSeries series = new BarSeries()
+                .setName("Direct")
+                .setType("bar")
+                .setBarWidth(new BoxLength<String>("60%"))
+                .setData(Arrays.asList(10, 52, 200, 334, 390, 330, 220));
 
-        Option option = new Option();
-        option.setTooltip(Arrays.asList(tooltip));
-        option.setGrid(Arrays.asList(grid));
-        option.setXAxis(Arrays.asList(xAxis));
-        option.setYAxis(Arrays.asList(yAxis));
-        option.setSeries(Arrays.asList(series));
+        Option option = new Option()
+                .setTooltip(Arrays.asList(tooltip))
+                .setGrid(Arrays.asList(grid))
+                .setXAxis(Arrays.asList(xAxis))
+                .setYAxis(Arrays.asList(yAxis))
+                .setSeries(Arrays.asList(series));
 
         Reader reader = new InputStreamReader(
                 this.getClass().getResourceAsStream("/bar/axis-align-with-tick.json"));

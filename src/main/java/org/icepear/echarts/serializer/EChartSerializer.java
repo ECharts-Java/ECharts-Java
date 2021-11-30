@@ -8,7 +8,7 @@ import org.icepear.echarts.component.Axis;
 import org.icepear.echarts.type.BoxLength;
 
 public class EChartSerializer {
-    private static final Gson gson = new GsonBuilder().registerTypeAdapter(Axis.class, new XAxisSerializer())
+    private static final Gson gson = new GsonBuilder().registerTypeAdapter(Axis.class, new AxisSerializer())
             .registerTypeAdapter(BoxLength.class, new BoxLengthSerializer<>()).create();
 
     public static String toJson(Object src) {

@@ -6,49 +6,49 @@ import java.util.List;
  * https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/util/types.ts#L1295
  */
 public interface CommonTooltipOption {
-    void setShow(Boolean show);
+    CommonTooltipOption setShow(Boolean show);
 
-    void setTriggerOn(String triggerOn);
+    CommonTooltipOption setTriggerOn(String triggerOn);
 
-    void setAlwaysShowContent(Boolean alwaysShowContent);
+    CommonTooltipOption setAlwaysShowContent(Boolean alwaysShowContent);
 
-    void setFormatter(String formatter);
+    CommonTooltipOption setFormatter(String formatter);
 
-    void setPosition(Object position);
+    CommonTooltipOption setPosition(Object position);
 
-    void setConfine(Boolean confine);
+    CommonTooltipOption setConfine(Boolean confine);
 
-    void setAlign(Object align);
+    CommonTooltipOption setAlign(Object align);
 
-    void setVerticalAlign(Object verticalAlign);
+    CommonTooltipOption setVerticalAlign(Object verticalAlign);
 
-    void setShowDelay(Number showDelay);
+    CommonTooltipOption setShowDelay(Number showDelay);
 
-    void setHideDelay(Number hideDelay);
+    CommonTooltipOption setHideDelay(Number hideDelay);
 
-    void setTransitionDuration(Number transitionDuration);
+    CommonTooltipOption setTransitionDuration(Number transitionDuration);
 
-    void setEnterable(Boolean enterable);
+    CommonTooltipOption setEnterable(Boolean enterable);
 
-    void setBackgroundColor(String backgroundColor);
+    CommonTooltipOption setBackgroundColor(String backgroundColor);
 
-    void setBorderColor(String borderColor);
+    CommonTooltipOption setBorderColor(String borderColor);
 
-    void setBorderRadius(Number borderRadius);
+    CommonTooltipOption setBorderRadius(Number borderRadius);
 
-    void setBorderWidth(Number borderWidth);
+    CommonTooltipOption setBorderWidth(Number borderWidth);
 
-    void setShadowBlur(Number shadowBlur);
+    CommonTooltipOption setShadowBlur(Number shadowBlur);
 
-    void setShadowColor(String shadowColor);
+    CommonTooltipOption setShadowColor(String shadowColor);
 
-    void setShadowOffsetX(Number shadowOffsetX);
+    CommonTooltipOption setShadowOffsetX(Number shadowOffsetX);
 
-    void setShadowOffsetY(Number shadowOffsetY);
+    CommonTooltipOption setShadowOffsetY(Number shadowOffsetY);
 
-    void setPadding(List<Number> padding);
+    CommonTooltipOption setPadding(List<Number> padding);
 
-    void setExtraCssText(String extraCssText);
+    CommonTooltipOption setExtraCssText(String extraCssText);
 
-    void setTextStyle(Object textStyle);
+    CommonTooltipOption setTextStyle(Object textStyle);
 }

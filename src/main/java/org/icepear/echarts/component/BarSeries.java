@@ -8,8 +8,10 @@ import org.icepear.echarts.origin.chart.bar.BarSeriesOption;
 import org.icepear.echarts.origin.util.EmphasisOption;
 import org.icepear.echarts.type.BoxLength;
 
+import lombok.experimental.Accessors;
 import lombok.Data;
 
+@Accessors(chain=true)
 @Data
 public class BarSeries implements BarSeriesOption {
     private Boolean clip;

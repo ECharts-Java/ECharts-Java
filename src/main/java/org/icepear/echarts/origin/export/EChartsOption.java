@@ -14,51 +14,51 @@ import org.icepear.echarts.origin.util.SeriesOption;
  * https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/export/option.ts#L246
  */
 public interface EChartsOption extends ECBasicOption {
-    void setDataset(List<Object> dataset);
+    EChartsOption setDataset(List<Object> dataset);
 
-    void setAria(Object aria);
+    EChartsOption setAria(Object aria);
 
-    void setTitle(List<TitleOption> title);
+    EChartsOption setTitle(List<TitleOption> title);
 
-    void setGrid(List<Grid> grid);
+    EChartsOption setGrid(List<Grid> grid);
 
-    void setRadar(List<Object> radar);
+    EChartsOption setRadar(List<Object> radar);
 
-    void setPolar(List<Object> polar);
+    EChartsOption setPolar(List<Object> polar);
 
-    void setGeo(List<Object> geo);
+    EChartsOption setGeo(List<Object> geo);
 
-    void setAngleAxis(List<Object> angleAxis);
+    EChartsOption setAngleAxis(List<Object> angleAxis);
 
-    void setRadiusAxis(List<Object> radiusAxis);
+    EChartsOption setRadiusAxis(List<Object> radiusAxis);
 
-    void setXAxis(List<AxisOption> xAxis);
+    EChartsOption setXAxis(List<AxisOption> xAxis);
 
-    void setYAxis(List<AxisOption> yAxis);
+    EChartsOption setYAxis(List<AxisOption> yAxis);
 
-    void setSingleAxis(List<Object> singleAxis);
+    EChartsOption setSingleAxis(List<Object> singleAxis);
 
-    void setParallel(List<Object> parallel);
+    EChartsOption setParallel(List<Object> parallel);
 
-    void setParallelAxis(List<Object> parallelAxis);
+    EChartsOption setParallelAxis(List<Object> parallelAxis);
 
-    void setCalendar(List<Object> calendar);
+    EChartsOption setCalendar(List<Object> calendar);
 
-    void setToolbox(List<Object> toolbox);
+    EChartsOption setToolbox(List<Object> toolbox);
 
-    void setTooltip(List<TooltipOption> tooltip);
+    EChartsOption setTooltip(List<TooltipOption> tooltip);
 
-    void setAxisPointer(List<Object> axisPointer);
+    EChartsOption setAxisPointer(List<Object> axisPointer);
 
-    void setBrush(List<Object> brush);
+    EChartsOption setBrush(List<Object> brush);
 
-    void setLegend(List<LegendOption> legend);
+    EChartsOption setLegend(List<LegendOption> legend);
 
-    void setDataZoom(List<Object> dataZoom);
+    EChartsOption setDataZoom(List<Object> dataZoom);
 
-    void setVisualMap(List<Object> visualMap);
+    EChartsOption setVisualMap(List<Object> visualMap);
 
-    void setGraphic(List<Object> graphic);
+    EChartsOption setGraphic(List<Object> graphic);
 
-    void setSeries(List<SeriesOption> series);
+    EChartsOption setSeries(List<SeriesOption> series);
 }

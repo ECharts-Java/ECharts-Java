@@ -5,8 +5,10 @@ import java.util.List;
 import org.icepear.echarts.origin.component.axisPointer.AxisPointerOption;
 import org.icepear.echarts.origin.util.LabelOption;
 
+import lombok.experimental.Accessors;
 import lombok.Data;
 
+@Accessors(chain=true)
 @Data
 public class AxisPointer implements AxisPointerOption {
     private List<Object> link;

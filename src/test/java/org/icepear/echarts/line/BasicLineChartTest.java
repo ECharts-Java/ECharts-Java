@@ -20,25 +20,23 @@ import org.junit.Test;
 public class BasicLineChartTest {
     @Test
     public void testBasicLineChart() {
-        CategoryAxis xCategoryAxis = new CategoryAxis();
-        xCategoryAxis.setType("category");
-        xCategoryAxis.setData(Arrays.asList("Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"));
-        Axis xAxis = new Axis();
-        xAxis.setAxisBaseOption(xCategoryAxis);
+        Axis xAxis = new Axis()
+                .setAxisBaseOption(new CategoryAxis()
+                        .setType("category")
+                        .setData(Arrays.asList("Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun")));
 
-        ValueAxis yValueAxis = new ValueAxis();
-        yValueAxis.setType("value");
-        Axis yAxis = new Axis();
-        yAxis.setAxisBaseOption(yValueAxis);
+        Axis yAxis = new Axis()
+                .setAxisBaseOption(new ValueAxis()
+                        .setType("value"));
 
-        LineSeries series = new LineSeries();
-        series.setData(Arrays.asList(150, 230, 224, 218, 135, 147, 260));
-        series.setType("line");
+        LineSeries series = new LineSeries()
+                .setData(Arrays.asList(150, 230, 224, 218, 135, 147, 260))
+                .setType("line");
 
-        Option option = new Option();
-        option.setXAxis(Arrays.asList(xAxis));
-        option.setYAxis(Arrays.asList(yAxis));
-        option.setSeries(Arrays.asList(series));
+        Option option = new Option()
+                .setXAxis(Arrays.asList(xAxis))
+                .setYAxis(Arrays.asList(yAxis))
+                .setSeries(Arrays.asList(series));
 
         Reader reader = new InputStreamReader(
                 this.getClass().getResourceAsStream("/line/basic-line-chart.json"));

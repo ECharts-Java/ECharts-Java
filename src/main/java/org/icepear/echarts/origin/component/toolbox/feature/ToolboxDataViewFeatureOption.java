@@ -3,23 +3,23 @@ package org.icepear.echarts.origin.component.toolbox.feature;
 import org.icepear.echarts.origin.component.toolbox.ToolboxFeatureOption;
 
 public interface ToolboxDataViewFeatureOption extends ToolboxFeatureOption {
-    void setReadOnly(Boolean readOnly);
+    ToolboxDataViewFeatureOption setReadOnly(Boolean readOnly);
 
-    void setOptionToContent(String optionToContent);
+    ToolboxDataViewFeatureOption setOptionToContent(String optionToContent);
 
-    void setContentToOption(Object contentToOption);
+    ToolboxDataViewFeatureOption setContentToOption(Object contentToOption);
 
-    void setLang(String lang);
+    ToolboxDataViewFeatureOption setLang(String lang);
 
-    void setBackgroundColor(String backgroundColor);
+    ToolboxDataViewFeatureOption setBackgroundColor(String backgroundColor);
 
-    void setTextColor(String textColor);
+    ToolboxDataViewFeatureOption setTextColor(String textColor);
 
-    void setTextareaColor(String textareaColor);
+    ToolboxDataViewFeatureOption setTextareaColor(String textareaColor);
 
-    void setTextareaBorderColor(String textareaBorderColor);
+    ToolboxDataViewFeatureOption setTextareaBorderColor(String textareaBorderColor);
 
-    void setButtonColor(String buttonColor);
+    ToolboxDataViewFeatureOption setButtonColor(String buttonColor);
     
-    void setButtonTextColor(String buttonTextColor);
+    ToolboxDataViewFeatureOption setButtonTextColor(String buttonTextColor);
 }
