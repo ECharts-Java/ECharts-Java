@@ -54,10 +54,10 @@ public class AxisAlignWithTickTest {
                 .setData(Arrays.asList(10, 52, 200, 334, 390, 330, 220));
 
         Option option = new Option()
-                .setTooltip(Arrays.asList(tooltip))
-                .setGrid(Arrays.asList(grid))
-                .setXAxis(Arrays.asList(xAxis))
-                .setYAxis(Arrays.asList(yAxis))
+                .setTooltip(tooltip)
+                .setGrid(grid)
+                .setXAxis(xAxis)
+                .setYAxis(yAxis)
                 .setSeries(Arrays.asList(series));
 
         Reader reader = new InputStreamReader(

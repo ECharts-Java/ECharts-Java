@@ -112,13 +112,13 @@ public class StackedAreaChartTest {
                 .setData(Arrays.asList(820, 932, 901, 934, 1290, 1330, 1320));
 
         Option option = new Option()
-                .setTitle(Arrays.asList(title))
-                .setTooltip(Arrays.asList(tooltip))
-                .setLegend(Arrays.asList(legend))
-                .setGrid(Arrays.asList(grid))
-                .setToolbox(Arrays.asList(toolbox))
-                .setXAxis(Arrays.asList(xAxis))
-                .setYAxis(Arrays.asList(yAxis))
+                .setTitle(title)
+                .setTooltip(tooltip)
+                .setLegend(legend)
+                .setGrid(grid)
+                .setToolbox(toolbox)
+                .setXAxis(xAxis)
+                .setYAxis(yAxis)
                 .setSeries(Arrays.asList(series1, series2, series3, series4, series5));
 
         Reader reader = new InputStreamReader(

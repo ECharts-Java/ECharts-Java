@@ -1,23 +1,19 @@
 {
-    "xAxis": [
-        {
-            "data": [
-                "Mon",
-                "Tue",
-                "Wed",
-                "Thu",
-                "Fri",
-                "Sat",
-                "Sun"
-            ],
-            "type": "category"
-        }
-    ],
-    "yAxis": [
-        {
-            "type": "value"
-        }
-    ],
+    "xAxis": {
+        "data": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri",
+            "Sat",
+            "Sun"
+        ],
+        "type": "category"
+    },
+    "yAxis": {
+        "type": "value"
+    },
     "series": [
         {
             "data": [
