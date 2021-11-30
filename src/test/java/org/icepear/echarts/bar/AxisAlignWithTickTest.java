@@ -17,8 +17,7 @@ import org.icepear.echarts.component.Grid;
 import org.icepear.echarts.component.Option;
 import org.icepear.echarts.component.Tooltip;
 import org.icepear.echarts.component.ValueAxis;
-import org.icepear.echarts.component.XAxis;
-import org.icepear.echarts.component.YAxis;
+import org.icepear.echarts.component.Axis;
 import org.icepear.echarts.serializer.EChartSerializer;
 import org.icepear.echarts.type.BoxLength;
 import org.junit.Test;
@@ -44,12 +43,12 @@ public class AxisAlignWithTickTest {
         xCategoryAxis.setType("category");
         xCategoryAxis.setData(Arrays.asList("Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"));
         xCategoryAxis.setAxisTick(axisTick);
-        XAxis xAxis = new XAxis();
+        Axis xAxis = new Axis();
         xAxis.setAxisBaseOption(xCategoryAxis);
 
         ValueAxis yValueAxis = new ValueAxis();
         yValueAxis.setType("value");
-        YAxis yAxis = new YAxis();
+        Axis yAxis = new Axis();
         yAxis.setAxisBaseOption(yValueAxis);
 
         BarSeries series = new BarSeries();

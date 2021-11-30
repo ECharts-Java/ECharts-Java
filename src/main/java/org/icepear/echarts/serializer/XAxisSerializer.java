@@ -9,11 +9,11 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonSerializationContext;
 import com.google.gson.JsonSerializer;
 
-import org.icepear.echarts.component.XAxis;
+import org.icepear.echarts.component.Axis;
 
-public class XAxisSerializer implements JsonSerializer<XAxis> {
+public class XAxisSerializer implements JsonSerializer<Axis> {
     @Override
-    public JsonElement serialize(XAxis src, Type typeOfSrc, JsonSerializationContext context) {
+    public JsonElement serialize(Axis src, Type typeOfSrc, JsonSerializationContext context) {
         JsonObject obj = new Gson().toJsonTree(src).getAsJsonObject();
         obj.remove("axisBaseOption");
         JsonObject stateObj = context.serialize(src.getAxisBaseOption()).getAsJsonObject();

@@ -13,8 +13,7 @@ import org.icepear.echarts.component.CategoryAxis;
 import org.icepear.echarts.component.LineSeries;
 import org.icepear.echarts.component.Option;
 import org.icepear.echarts.component.ValueAxis;
-import org.icepear.echarts.component.XAxis;
-import org.icepear.echarts.component.YAxis;
+import org.icepear.echarts.component.Axis;
 import org.icepear.echarts.serializer.EChartSerializer;
 import org.junit.Test;
 
@@ -24,12 +23,12 @@ public class SmoothedLineChartTest {
         CategoryAxis xCategoryAxis = new CategoryAxis();
         xCategoryAxis.setType("category");
         xCategoryAxis.setData(Arrays.asList("Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"));
-        XAxis xAxis = new XAxis();
+        Axis xAxis = new Axis();
         xAxis.setAxisBaseOption(xCategoryAxis);
 
         ValueAxis yValueAxis = new ValueAxis();
         yValueAxis.setType("value");
-        YAxis yAxis = new YAxis();
+        Axis yAxis = new Axis();
         yAxis.setAxisBaseOption(yValueAxis);
 
         LineSeries series = new LineSeries();
