@@ -5,8 +5,7 @@ import java.util.List;
 import org.icepear.echarts.origin.component.legend.LegendOption;
 import org.icepear.echarts.origin.component.title.TitleOption;
 import org.icepear.echarts.origin.component.tooltip.TooltipOption;
-import org.icepear.echarts.origin.coord.cartesian.XAxisOption;
-import org.icepear.echarts.origin.coord.cartesian.YAxisOption;
+import org.icepear.echarts.origin.coord.cartesian.AxisOption;
 import org.icepear.echarts.origin.export.EChartsOption;
 import org.icepear.echarts.origin.util.AnimationOption;
 import org.icepear.echarts.origin.util.ComponentOption;
@@ -34,9 +33,9 @@ public class Option implements EChartsOption {
 
     private List<Object> radiusAxis;
 
-    private List<XAxisOption> xAxis;
+    private List<AxisOption> xAxis;
 
-    private List<YAxisOption> yAxis;
+    private List<AxisOption> yAxis;
 
     private List<Object> singleAxis;
 

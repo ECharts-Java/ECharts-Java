@@ -1,12 +1,12 @@
 package org.icepear.echarts.component;
 
 import org.icepear.echarts.origin.coord.AxisBaseOption;
-import org.icepear.echarts.origin.coord.cartesian.YAxisOption;
+import org.icepear.echarts.origin.coord.cartesian.AxisOption;
 
 import lombok.Data;
 
 @Data
-public class YAxis implements YAxisOption {
+public class Axis implements AxisOption {
     private AxisBaseOption axisBaseOption;
 
     private Number gridIndex;

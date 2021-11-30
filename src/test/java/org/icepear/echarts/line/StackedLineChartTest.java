@@ -21,8 +21,7 @@ import org.icepear.echarts.component.Toolbox;
 import org.icepear.echarts.component.ToolboxSaveAsImageFeature;
 import org.icepear.echarts.component.Tooltip;
 import org.icepear.echarts.component.ValueAxis;
-import org.icepear.echarts.component.XAxis;
-import org.icepear.echarts.component.YAxis;
+import org.icepear.echarts.component.Axis;
 import org.icepear.echarts.origin.component.toolbox.ToolboxFeatureOption;
 import org.icepear.echarts.serializer.EChartSerializer;
 import org.icepear.echarts.type.BoxLength;
@@ -55,12 +54,12 @@ public class StackedLineChartTest {
         xCategoryAxis.setType("category");
         xCategoryAxis.setBoundaryGap(false);
         xCategoryAxis.setData(Arrays.asList("Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"));
-        XAxis xAxis = new XAxis();
+        Axis xAxis = new Axis();
         xAxis.setAxisBaseOption(xCategoryAxis);
 
         ValueAxis yValueAxis = new ValueAxis();
         yValueAxis.setType("value");
-        YAxis yAxis = new YAxis();
+        Axis yAxis = new Axis();
         yAxis.setAxisBaseOption(yValueAxis);
 
         LineSeries series1 = new LineSeries();

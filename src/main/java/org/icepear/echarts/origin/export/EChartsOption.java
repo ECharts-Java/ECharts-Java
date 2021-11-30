@@ -6,8 +6,7 @@ import org.icepear.echarts.component.Grid;
 import org.icepear.echarts.origin.component.legend.LegendOption;
 import org.icepear.echarts.origin.component.title.TitleOption;
 import org.icepear.echarts.origin.component.tooltip.TooltipOption;
-import org.icepear.echarts.origin.coord.cartesian.XAxisOption;
-import org.icepear.echarts.origin.coord.cartesian.YAxisOption;
+import org.icepear.echarts.origin.coord.cartesian.AxisOption;
 import org.icepear.echarts.origin.util.ECBasicOption;
 import org.icepear.echarts.origin.util.SeriesOption;
 
@@ -33,9 +32,9 @@ public interface EChartsOption extends ECBasicOption {
 
     void setRadiusAxis(List<Object> radiusAxis);
 
-    void setXAxis(List<XAxisOption> xAxis);
+    void setXAxis(List<AxisOption> xAxis);
 
-    void setYAxis(List<YAxisOption> yAxis);
+    void setYAxis(List<AxisOption> yAxis);
 
     void setSingleAxis(List<Object> singleAxis);
 
