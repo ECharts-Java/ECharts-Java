@@ -16,7 +16,7 @@ import org.icepear.echarts.origin.util.SeriesOption;
 import lombok.experimental.Accessors;
 import lombok.AccessLevel;
 import lombok.Data;
-import lombok.Getter;
+import lombok.Setter;
 
 @Accessors(chain=true)
 @Data
@@ -25,7 +25,7 @@ public class Option implements EChartsOption {
 
     private Object aria;
 
-    @Getter(AccessLevel.NONE)
+    @Setter(AccessLevel.NONE)
     private Object title;
 
     public Option setTitle(TitleOption title) {
@@ -38,7 +38,7 @@ public class Option implements EChartsOption {
         return this;
     }
 
-    @Getter(AccessLevel.NONE)
+    @Setter(AccessLevel.NONE)
     private Object grid;
 
     public Option setGrid(GridOption grid) {
@@ -61,7 +61,7 @@ public class Option implements EChartsOption {
 
     private List<Object> radiusAxis;
 
-    @Getter(AccessLevel.NONE)
+    @Setter(AccessLevel.NONE)
     private Object xAxis;
 
     public Option setXAxis(AxisOption xAxis) {
@@ -74,7 +74,7 @@ public class Option implements EChartsOption {
         return this;
     }
 
-    @Getter(AccessLevel.NONE)
+    @Setter(AccessLevel.NONE)
     private Object yAxis;
 
     public Option setYAxis(AxisOption yAxis) {
@@ -95,7 +95,7 @@ public class Option implements EChartsOption {
 
     private List<Object> calendar;
 
-    @Getter(AccessLevel.NONE)
+    @Setter(AccessLevel.NONE)
     private Object toolbox;
 
     public Option setToolbox(ToolboxOption toolbox) {
@@ -108,7 +108,7 @@ public class Option implements EChartsOption {
         return this;
     }
 
-    @Getter(AccessLevel.NONE)
+    @Setter(AccessLevel.NONE)
     private Object tooltip;
 
     public Option setTooltip(TooltipOption tooltip) {
@@ -125,7 +125,7 @@ public class Option implements EChartsOption {
 
     private List<Object> brush;
 
-    @Getter(AccessLevel.NONE)
+    @Setter(AccessLevel.NONE)
     private Object legend;
 
     public Option setLegend(LegendOption legend) {
