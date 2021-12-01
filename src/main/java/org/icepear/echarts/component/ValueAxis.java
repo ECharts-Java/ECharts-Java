@@ -4,13 +4,24 @@ import java.util.List;
 
 import org.icepear.echarts.origin.coord.AxisTickOption;
 import org.icepear.echarts.origin.coord.ValueAxisBaseOption;
+import org.icepear.echarts.origin.coord.cartesian.AxisOption;
 
 import lombok.experimental.Accessors;
 import lombok.Data;
 
 @Accessors(chain=true)
 @Data
-public class ValueAxis implements ValueAxisBaseOption {
+public class ValueAxis implements AxisOption, ValueAxisBaseOption {
+    private Number gridIndex;
+
+    private String gridId;
+
+    private String position;
+
+    private Number offset;
+
+    private Object categorySortInfo;
+    
     private Boolean scale;
 
     private List<Number> boundaryGap;
