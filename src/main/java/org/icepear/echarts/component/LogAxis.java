@@ -3,7 +3,7 @@ package org.icepear.echarts.component;
 import java.util.List;
 
 import org.icepear.echarts.origin.coord.AxisTickOption;
-import org.icepear.echarts.origin.coord.CategoryAxisBaseOption;
+import org.icepear.echarts.origin.coord.LogAxisBaseOption;
 import org.icepear.echarts.origin.coord.MinorSplitLineOption;
 import org.icepear.echarts.origin.coord.SplitLineOption;
 import org.icepear.echarts.origin.coord.cartesian.AxisOption;
@@ -13,7 +13,7 @@ import lombok.Data;
 
 @Accessors(chain=true)
 @Data
-public class CategoryAxis implements AxisOption, CategoryAxisBaseOption {
+public class LogAxis implements AxisOption, LogAxisBaseOption {
     private Number gridIndex;
 
     private String gridId;
@@ -24,11 +24,17 @@ public class CategoryAxis implements AxisOption, CategoryAxisBaseOption {
 
     private Object categorySortInfo;
 
-    private Boolean boundaryGap;
+    private Number logBase;
 
-    private List<Object> data;
+    private List<Number> boundaryGap;
 
-    private Boolean deduplication;
+    private Number splitNumber;
+
+    private Number interval;
+
+    private Number minInterval;
+
+    private Number maxInterval;
 
     private Boolean show;
 
