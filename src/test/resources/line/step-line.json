@@ -1,0 +1,85 @@
+{
+    "title": {
+        "text": "Step Line"
+    },
+    "grid": {
+        "containLabel": true,
+        "right": "4%",
+        "bottom": "3%",
+        "left": "3%"
+    },
+    "xAxis": {
+        "data": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri",
+            "Sat",
+            "Sun"
+        ],
+        "type": "category"
+    },
+    "yAxis": {
+        "type": "value"
+    },
+    "toolbox": {
+        "feature": {
+            "saveAsImage": {}
+        }
+    },
+    "tooltip": {
+        "trigger": "axis"
+    },
+    "legend": {
+        "data": [
+            "Step Start",
+            "Step Middle",
+            "Step End"
+        ]
+    },
+    "series": [
+        {
+            "step": "start",
+            "data": [
+                120,
+                132,
+                101,
+                134,
+                90,
+                230,
+                210
+            ],
+            "type": "line",
+            "name": "Step Start"
+        },
+        {
+            "data": [
+                220,
+                282,
+                201,
+                234,
+                290,
+                430,
+                410
+            ],
+            "type": "line",
+            "name": "Step Middle",
+            "stack": "middle"
+        },
+        {
+            "data": [
+                450,
+                432,
+                401,
+                454,
+                590,
+                530,
+                510
+            ],
+            "type": "line",
+            "name": "Step End",
+            "stack": "end"
+        }
+    ]
+}

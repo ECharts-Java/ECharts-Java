@@ -2,7 +2,7 @@
 
 ![example workflow](https://github.com/IcePear-Jzx/ECharts-Java/actions/workflows/maven.yml/badge.svg)
 
-ECharts Java is a library for Java developers to use JavaScript library [Apache ECharts](https://echarts.apache.org/en/index.html). Specifically, this library helps developers create an `Option` object in Java and convert it into its JSON representation.
+ECharts Java is a library for Java developers to use JavaScript visualization library [Apache ECharts](https://echarts.apache.org/en/index.html). Specifically, this library helps developers create an `Option` object in Java and convert it into its JSON representation.
 
 ## Supported Examples
 
@@ -33,7 +33,7 @@ ECharts Java is a library for Java developers to use JavaScript library [Apache 
 - [ ] [Line Style and Item Style](https://echarts.apache.org/examples/en/editor.html?c=line-style)
 - [ ] [Line Chart in Cartesian Coordinate System](https://echarts.apache.org/examples/en/editor.html?c=line-in-cartesian-coordinate-system)
 - [x] [Log Axis](https://echarts.apache.org/examples/en/editor.html?c=line-log)
-- [ ] [Step Line](https://echarts.apache.org/examples/en/editor.html?c=line-step)
+- [x] [Step Line](https://echarts.apache.org/examples/en/editor.html?c=line-step)
 - [ ] [Line Easing Visualizing](https://echarts.apache.org/examples/en/editor.html?c=line-easing)
 - [x] [Line Y Category](https://echarts.apache.org/examples/en/editor.html?c=line-y-category)
 - [ ] [Custom Graphic Component](https://echarts.apache.org/examples/en/editor.html?c=line-graphic)
