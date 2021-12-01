@@ -27,11 +27,11 @@ public interface AxisBaseOptionCommon extends ComponentOption, AnimationOptionMi
 
     AxisBaseOptionCommon setTooltip(Object tooltip);
 
-    AxisBaseOptionCommon setAxisLabel(Object axisLabel);
+    AxisBaseOptionCommon setAxisLabel(AxisLabelBaseOption axisLabel);
 
     AxisBaseOptionCommon setAxisPointer(Object axisPointer);
 
-    AxisBaseOptionCommon setAxisLine(Object axisLine);
+    AxisBaseOptionCommon setAxisLine(AxisLineOption axisLine);
 
     AxisBaseOptionCommon setAxisTick(AxisTickOption axisTick);
 

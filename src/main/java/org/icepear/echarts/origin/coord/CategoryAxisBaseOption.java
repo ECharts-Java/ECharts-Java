@@ -8,6 +8,9 @@ import java.util.List;
 public interface CategoryAxisBaseOption extends AxisBaseOption, AxisBaseOptionCommon {
     CategoryAxisBaseOption setBoundaryGap(Boolean boundaryGap);
 
+    // TODO: Override AxisBaseOptionCommon.setAxisLabel(AxisLabelBaseOption)
+    // CategoryAxisBaseOption setAxisLabel(CategoryAxisLabelOption axisLabel);
+
     CategoryAxisBaseOption setData(List<Object> data);
 
     CategoryAxisBaseOption setDeduplication(Boolean deduplication);
