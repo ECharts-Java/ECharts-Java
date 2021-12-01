@@ -20,13 +20,13 @@ ECharts Java is a library for Java developers to use JavaScript visualization li
 - [ ] [Line Gradient](https://echarts.apache.org/examples/en/editor.html?c=line-gradient)
 - [ ] [Distribution of Electricity](https://echarts.apache.org/examples/en/editor.html?c=line-sections)
 - [ ] [Large Scale Area Chart](https://echarts.apache.org/examples/en/editor.html?c=area-simple)
-- [ ] [Confidence Band](https://echarts.apache.org/examples/en/editor.html?c=confidence-band)
+- [ ] ~~[Confidence Band](https://echarts.apache.org/examples/en/editor.html?c=confidence-band)~~
 - [ ] [Rainfall vs Evaporation (Line)](https://echarts.apache.org/examples/en/editor.html?c=grid-multiple)
 - [ ] [Beijing AQI](https://echarts.apache.org/examples/en/editor.html?c=line-aqi)
-- [ ] [Multiple X Axes](https://echarts.apache.org/examples/en/editor.html?c=multiple-x-axis)
+- [ ] ~~[Multiple X Axes](https://echarts.apache.org/examples/en/editor.html?c=multiple-x-axis)~~
 - [ ] [Rainfall](https://echarts.apache.org/examples/en/editor.html?c=area-rainfall)
 - [ ] [Area Chart with Time Axis](https://echarts.apache.org/examples/en/editor.html?c=area-time-axis)
-- [ ] [Dynamic Data + Time Axis](https://echarts.apache.org/examples/en/editor.html?c=dynamic-data2)
+- [ ] ~~[Dynamic Data + Time Axis](https://echarts.apache.org/examples/en/editor.html?c=dynamic-data2)~~
 - [ ] [Function Plot](https://echarts.apache.org/examples/en/editor.html?c=line-function)
 - [ ] [Line Race](https://echarts.apache.org/examples/en/editor.html?c=line-race)
 - [ ] [Line with Marklines](https://echarts.apache.org/examples/en/editor.html?c=line-markline)
@@ -37,11 +37,11 @@ ECharts Java is a library for Java developers to use JavaScript visualization li
 - [ ] [Line Easing Visualizing](https://echarts.apache.org/examples/en/editor.html?c=line-easing)
 - [x] [Line Y Category](https://echarts.apache.org/examples/en/editor.html?c=line-y-category)
 - [ ] [Custom Graphic Component](https://echarts.apache.org/examples/en/editor.html?c=line-graphic)
-- [ ] [Click to Add Points](https://echarts.apache.org/examples/en/editor.html?c=line-pen)
-- [ ] [Try Dragging these Points](https://echarts.apache.org/examples/en/editor.html?c=line-draggable)
+- [ ] ~~[Click to Add Points](https://echarts.apache.org/examples/en/editor.html?c=line-pen)~~
+- [ ] ~~[Try Dragging these Points](https://echarts.apache.org/examples/en/editor.html?c=line-draggable)~~
 - [ ] [Two Value-Axes in Polar](https://echarts.apache.org/examples/en/editor.html?c=line-polar)
 - [ ] [Two Value-Axes in Polar](https://echarts.apache.org/examples/en/editor.html?c=line-polar2)
-- [ ] [Tooltip and DataZoom on Mobile](https://echarts.apache.org/examples/en/editor.html?c=line-tooltip-touch)
+- [ ] ~~[Tooltip and DataZoom on Mobile](https://echarts.apache.org/examples/en/editor.html?c=line-tooltip-touch)~~
 - [ ] [Share Dataset](https://echarts.apache.org/examples/en/editor.html?c=dataset-link)
 
 ### [Bar](https://echarts.apache.org/examples/en/index.html#chart-type-bar)
