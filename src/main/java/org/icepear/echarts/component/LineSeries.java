@@ -7,6 +7,7 @@ import org.icepear.echarts.origin.chart.line.LineSeriesOption;
 import org.icepear.echarts.origin.util.AreaStyleOption;
 import org.icepear.echarts.origin.util.EmphasisOption;
 import org.icepear.echarts.origin.util.LabelOption;
+import org.icepear.echarts.origin.util.LineStyleOption;
 
 import lombok.experimental.Accessors;
 import lombok.Data;
@@ -16,7 +17,7 @@ import lombok.Data;
 public class LineSeries implements LineSeriesOption {
     private Boolean clip;
 
-    private Object lineStyle;
+    private LineStyleOption lineStyle;
 
     private AreaStyleOption areaStyle;
 

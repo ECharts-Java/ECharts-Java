@@ -1,6 +1,8 @@
 package org.icepear.echarts.component;
 
 import org.icepear.echarts.origin.coord.AxisBaseOptionCommon;
+import org.icepear.echarts.origin.coord.AxisLabelBaseOption;
+import org.icepear.echarts.origin.coord.AxisLineOption;
 import org.icepear.echarts.origin.coord.AxisTickOption;
 import org.icepear.echarts.origin.coord.MinorSplitLineOption;
 import org.icepear.echarts.origin.coord.SplitLineOption;
@@ -42,11 +44,11 @@ public class Axis implements AxisOption, AxisBaseOptionCommon {
 
     private Object tooltip;
 
-    private Object axisLabel;
+    private AxisLabelBaseOption axisLabel;
 
     private Object axisPointer;
 
-    private Object axisLine;
+    private AxisLineOption axisLine;
 
     private AxisTickOption axisTick;
 

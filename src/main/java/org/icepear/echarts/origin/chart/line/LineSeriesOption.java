@@ -1,6 +1,7 @@
 package org.icepear.echarts.origin.chart.line;
 
 import org.icepear.echarts.origin.util.AreaStyleOption;
+import org.icepear.echarts.origin.util.LineStyleOption;
 import org.icepear.echarts.origin.util.SeriesEncodeOptionMixin;
 import org.icepear.echarts.origin.util.SeriesOnCartesianOptionMixin;
 import org.icepear.echarts.origin.util.SeriesOnPolarOptionMixin;
@@ -17,7 +18,7 @@ public interface LineSeriesOption
         SeriesStackOptionMixin, SeriesSamplingOptionMixin, SymbolOptionMixin, SeriesEncodeOptionMixin {
     LineSeriesOption setClip(Boolean clip);
 
-    LineSeriesOption setLineStyle(Object lineStyle);
+    LineSeriesOption setLineStyle(LineStyleOption lineStyle);
 
     LineSeriesOption setAreaStyle(AreaStyleOption areaStyle);
 

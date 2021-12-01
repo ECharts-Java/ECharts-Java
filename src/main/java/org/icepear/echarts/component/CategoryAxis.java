@@ -2,8 +2,11 @@ package org.icepear.echarts.component;
 
 import java.util.List;
 
+import org.icepear.echarts.origin.coord.AxisLabelBaseOption;
+import org.icepear.echarts.origin.coord.AxisLineOption;
 import org.icepear.echarts.origin.coord.AxisTickOption;
 import org.icepear.echarts.origin.coord.CategoryAxisBaseOption;
+// import org.icepear.echarts.origin.coord.CategoryAxisLabelOption;
 import org.icepear.echarts.origin.coord.MinorSplitLineOption;
 import org.icepear.echarts.origin.coord.SplitLineOption;
 import org.icepear.echarts.origin.coord.cartesian.AxisOption;
@@ -25,6 +28,9 @@ public class CategoryAxis implements AxisOption, CategoryAxisBaseOption {
     private Object categorySortInfo;
 
     private Boolean boundaryGap;
+
+    // Duplicated with AxisBaseOptionCommon.setAxisLabel(AxisLabelBaseOption)
+    // private CategoryAxisLabelOption axisLabel;
 
     private List<Object> data;
 
@@ -50,11 +56,11 @@ public class CategoryAxis implements AxisOption, CategoryAxisBaseOption {
 
     private Object tooltip;
 
-    private Object axisLabel;
+    private AxisLabelBaseOption axisLabel;
 
     private Object axisPointer;
 
-    private Object axisLine;
+    private AxisLineOption axisLine;
 
     private AxisTickOption axisTick;
 

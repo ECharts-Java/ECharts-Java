@@ -2,6 +2,8 @@ package org.icepear.echarts.component;
 
 import java.util.List;
 
+import org.icepear.echarts.origin.coord.AxisLabelBaseOption;
+import org.icepear.echarts.origin.coord.AxisLineOption;
 import org.icepear.echarts.origin.coord.AxisTickOption;
 import org.icepear.echarts.origin.coord.LogAxisBaseOption;
 import org.icepear.echarts.origin.coord.MinorSplitLineOption;
@@ -56,11 +58,11 @@ public class LogAxis implements AxisOption, LogAxisBaseOption {
 
     private Object tooltip;
 
-    private Object axisLabel;
+    private AxisLabelBaseOption axisLabel;
 
     private Object axisPointer;
 
-    private Object axisLine;
+    private AxisLineOption axisLine;
 
     private AxisTickOption axisTick;
 
