@@ -15,9 +15,9 @@ import org.icepear.echarts.component.Option;
 import org.icepear.echarts.serializer.EChartSerializer;
 import org.junit.Test;
 
-public class LineYCategoryTest {
+public class LineChartInCartesianCoordinateSystemTest {
     @Test
-    public void testLineYCategory() {
+    public void testLineChartInCartesianCoordinateSystem() {
         Axis xAxis = new Axis();
 
         Axis yAxis = new Axis();
@@ -35,7 +35,7 @@ public class LineYCategoryTest {
                 .setSeries(Arrays.asList(series));
 
         Reader reader = new InputStreamReader(
-                this.getClass().getResourceAsStream("/line/line-y-category.json"));
+                this.getClass().getResourceAsStream("/line/line-chart-in-cartesian-coordinate-system.json"));
         JsonElement expected = JsonParser.parseReader(reader);
         JsonElement actual = EChartSerializer.toJsonTree(option);
         assertEquals(expected, actual);
