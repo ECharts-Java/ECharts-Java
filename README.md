@@ -35,7 +35,7 @@ ECharts Java is a library for Java developers to use JavaScript library [Apache 
 - [x] [Log Axis](https://echarts.apache.org/examples/en/editor.html?c=line-log)
 - [ ] [Step Line](https://echarts.apache.org/examples/en/editor.html?c=line-step)
 - [ ] [Line Easing Visualizing](https://echarts.apache.org/examples/en/editor.html?c=line-easing)
-- [ ] [Line Y Category](https://echarts.apache.org/examples/en/editor.html?c=line-y-category)
+- [x] [Line Y Category](https://echarts.apache.org/examples/en/editor.html?c=line-y-category)
 - [ ] [Custom Graphic Component](https://echarts.apache.org/examples/en/editor.html?c=line-graphic)
 - [ ] [Click to Add Points](https://echarts.apache.org/examples/en/editor.html?c=line-pen)
 - [ ] [Try Dragging these Points](https://echarts.apache.org/examples/en/editor.html?c=line-draggable)
