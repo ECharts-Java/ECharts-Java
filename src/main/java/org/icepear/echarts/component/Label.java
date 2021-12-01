@@ -70,9 +70,9 @@ public class Label implements LabelOption {
 
     private Number padding;
 
-    private BoxLength<?> width;
+    private BoxLength width;
 
-    private BoxLength<?> height;
+    private BoxLength height;
 
     private String textBorderColor;
 

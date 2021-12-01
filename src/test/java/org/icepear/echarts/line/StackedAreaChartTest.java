@@ -51,9 +51,9 @@ public class StackedAreaChartTest {
         Toolbox toolbox = new Toolbox().setFeature(feature);
 
         Grid grid = new Grid()
-                .setLeft(new BoxLength<String>("3%"))
-                .setRight(new BoxLength<String>("4%"))
-                .setBottom(new BoxLength<String>("3%"))
+                .setLeft(new BoxLength("3%"))
+                .setRight(new BoxLength("4%"))
+                .setBottom(new BoxLength("3%"))
                 .setContainLabel(true);
 
         Axis xAxis = new Axis()

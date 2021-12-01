@@ -9,15 +9,15 @@ import org.icepear.echarts.type.BoxLength;
  * https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/chart/bar/BaseBarSeries.ts#L34
  */
 public interface BaseBarSeriesOption extends SeriesOption, SeriesOnCartesianOptionMixin, SeriesOnPolarOptionMixin {
-    BaseBarSeriesOption setBarMinHeight(BoxLength<?> barMinHeight);
+    BaseBarSeriesOption setBarMinHeight(BoxLength barMinHeight);
 
     BaseBarSeriesOption setBarMinAngle(Number barMinAngle);
 
-    BaseBarSeriesOption setBarMaxWidth(BoxLength<?> barMaxWidth);
+    BaseBarSeriesOption setBarMaxWidth(BoxLength barMaxWidth);
 
-    BaseBarSeriesOption setBarMinWidth(BoxLength<?> barMinWidth);
+    BaseBarSeriesOption setBarMinWidth(BoxLength barMinWidth);
 
-    BaseBarSeriesOption setBarWidth(BoxLength<?> barWidth);
+    BaseBarSeriesOption setBarWidth(BoxLength barWidth);
 
     BaseBarSeriesOption setBarGap(Number barGap);
 

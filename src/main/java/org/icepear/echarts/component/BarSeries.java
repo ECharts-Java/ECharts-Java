@@ -24,15 +24,15 @@ public class BarSeries implements BarSeriesOption {
 
     private Boolean realtimeSort;
 
-    private BoxLength<?> barMinHeight;
+    private BoxLength barMinHeight;
 
     private Number barMinAngle;
 
-    private BoxLength<?> barMaxWidth;
+    private BoxLength barMaxWidth;
 
-    private BoxLength<?> barMinWidth;
+    private BoxLength barMinWidth;
 
-    private BoxLength<?> barWidth;
+    private BoxLength barWidth;
 
     private Number barGap;
 

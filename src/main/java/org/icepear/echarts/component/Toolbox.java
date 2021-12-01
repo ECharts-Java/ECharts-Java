@@ -52,17 +52,17 @@ public class Toolbox implements ToolboxOption {
 
     private Number zlevel;
 
-    private BoxLength<?> width;
+    private BoxLength width;
 
-    private BoxLength<?> height;
+    private BoxLength height;
 
-    private BoxLength<?> top;
+    private BoxLength top;
 
-    private BoxLength<?> right;
+    private BoxLength right;
 
-    private BoxLength<?> bottom;
+    private BoxLength bottom;
 
-    private BoxLength<?> left;
+    private BoxLength left;
 
     private String borderColor;
 

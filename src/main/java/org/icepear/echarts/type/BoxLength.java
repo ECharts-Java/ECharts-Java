@@ -1,14 +1,19 @@
 package org.icepear.echarts.type;
 
-import lombok.Getter;
+import lombok.AccessLevel;
+import lombok.Data;
 import lombok.Setter;
 
-@Getter
-@Setter
-public class BoxLength<T> {
-    private T value;
+@Data
+public class BoxLength {
+    @Setter(AccessLevel.NONE)
+    private Object value;
 
-    public BoxLength(T value) {
+    public BoxLength(Number value) {
+        this.value = value;
+    }
+
+    public BoxLength(String value) {
         this.value = value;
     }
 }

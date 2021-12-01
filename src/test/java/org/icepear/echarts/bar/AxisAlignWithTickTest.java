@@ -31,9 +31,9 @@ public class AxisAlignWithTickTest {
                         .setType("shadow"));
 
         Grid grid = new Grid()
-                .setLeft(new BoxLength<String>("3%"))
-                .setRight(new BoxLength<String>("4%"))
-                .setBottom(new BoxLength<String>("3%"))
+                .setLeft(new BoxLength("3%"))
+                .setRight(new BoxLength("4%"))
+                .setBottom(new BoxLength("3%"))
                 .setContainLabel(true);
 
         Axis xAxis = new Axis()
@@ -50,7 +50,7 @@ public class AxisAlignWithTickTest {
         BarSeries series = new BarSeries()
                 .setName("Direct")
                 .setType("bar")
-                .setBarWidth(new BoxLength<String>("60%"))
+                .setBarWidth(new BoxLength("60%"))
                 .setData(Arrays.asList(10, 52, 200, 334, 390, 330, 220));
 
         Option option = new Option()
