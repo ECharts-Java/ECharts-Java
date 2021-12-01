@@ -10,9 +10,9 @@ import com.google.gson.JsonSerializer;
 
 import org.icepear.echarts.type.BoxLength;
 
-public class BoxLengthSerializer<T> implements JsonSerializer<BoxLength<T>> {
+public class BoxLengthSerializer implements JsonSerializer<BoxLength> {
     @Override
-    public JsonElement serialize(BoxLength<T> src, Type typeOfSrc, JsonSerializationContext context) {
+    public JsonElement serialize(BoxLength src, Type typeOfSrc, JsonSerializationContext context) {
         JsonObject obj = new Gson().toJsonTree(src).getAsJsonObject();
         return obj.get("value");
     }

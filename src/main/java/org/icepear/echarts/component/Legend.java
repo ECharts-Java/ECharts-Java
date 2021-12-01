@@ -84,17 +84,17 @@ public class Legend implements LegendOption {
     @Deprecated
     private Boolean symbolKeepAspect;
 
-    private BoxLength<?> width;
+    private BoxLength width;
 
-    private BoxLength<?> height;
+    private BoxLength height;
 
-    private BoxLength<?> top;
+    private BoxLength top;
 
-    private BoxLength<?> right;
+    private BoxLength right;
 
-    private BoxLength<?> bottom;
+    private BoxLength bottom;
 
-    private BoxLength<?> left;
+    private BoxLength left;
 
     private String borderColor;
 

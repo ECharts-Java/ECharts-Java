@@ -38,9 +38,9 @@ public class StackedLineChartTest {
                 .setData(Arrays.asList("Email", "Union Ads", "Video Ads", "Direct", "Search Engine"));
 
         Grid grid = new Grid()
-                .setLeft(new BoxLength<String>("3%"))
-                .setRight(new BoxLength<String>("4%"))
-                .setBottom(new BoxLength<String>("3%"))
+                .setLeft(new BoxLength("3%"))
+                .setRight(new BoxLength("4%"))
+                .setBottom(new BoxLength("3%"))
                 .setContainLabel(true);
 
         

@@ -43,9 +43,9 @@ public interface TextCommonOption extends ShadowOptionMixin {
 
     TextCommonOption setPadding(Number padding);
 
-    TextCommonOption setWidth(BoxLength<?> width);
+    TextCommonOption setWidth(BoxLength width);
 
-    TextCommonOption setHeight(BoxLength<?> height);
+    TextCommonOption setHeight(BoxLength height);
 
     TextCommonOption setTextBorderColor(String textBorderColor);
 
