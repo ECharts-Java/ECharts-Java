@@ -3,6 +3,8 @@ package org.icepear.echarts.component;
 import java.util.List;
 
 import org.icepear.echarts.origin.coord.AxisTickOption;
+import org.icepear.echarts.origin.coord.MinorSplitLineOption;
+import org.icepear.echarts.origin.coord.SplitLineOption;
 import org.icepear.echarts.origin.coord.ValueAxisBaseOption;
 import org.icepear.echarts.origin.coord.cartesian.AxisOption;
 
@@ -21,7 +23,7 @@ public class ValueAxis implements AxisOption, ValueAxisBaseOption {
     private Number offset;
 
     private Object categorySortInfo;
-    
+
     private Boolean scale;
 
     private List<Number> boundaryGap;
@@ -64,9 +66,9 @@ public class ValueAxis implements AxisOption, ValueAxisBaseOption {
 
     private Object minorTick;
 
-    private Object splitLine;
+    private SplitLineOption splitLine;
 
-    private Object minorSplitLine;
+    private MinorSplitLineOption minorSplitLine;
 
     private Object splitArea;
 

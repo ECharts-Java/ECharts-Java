@@ -8,6 +8,7 @@ import org.icepear.echarts.type.BoxLength;
 
 public class EChartSerializer {
     private static final Gson gson = new GsonBuilder()
+            .disableHtmlEscaping()
             .registerTypeAdapter(BoxLength.class, new BoxLengthSerializer())
             .create();
 

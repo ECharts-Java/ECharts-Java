@@ -37,9 +37,9 @@ public interface AxisBaseOptionCommon extends ComponentOption, AnimationOptionMi
 
     AxisBaseOptionCommon setMinorTick(Object minorTick);
 
-    AxisBaseOptionCommon setSplitLine(Object splitLine);
+    AxisBaseOptionCommon setSplitLine(SplitLineOption splitLine);
 
-    AxisBaseOptionCommon setMinorSplitLine(Object minorSplitLine);
+    AxisBaseOptionCommon setMinorSplitLine(MinorSplitLineOption minorSplitLine);
 
     AxisBaseOptionCommon setSplitArea(Object splitArea);
 

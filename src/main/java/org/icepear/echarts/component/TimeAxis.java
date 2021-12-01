@@ -3,9 +3,9 @@ package org.icepear.echarts.component;
 import java.util.List;
 
 import org.icepear.echarts.origin.coord.AxisTickOption;
-import org.icepear.echarts.origin.coord.CategoryAxisBaseOption;
 import org.icepear.echarts.origin.coord.MinorSplitLineOption;
 import org.icepear.echarts.origin.coord.SplitLineOption;
+import org.icepear.echarts.origin.coord.TimeAxisBaseOption;
 import org.icepear.echarts.origin.coord.cartesian.AxisOption;
 
 import lombok.experimental.Accessors;
@@ -13,7 +13,7 @@ import lombok.Data;
 
 @Accessors(chain=true)
 @Data
-public class CategoryAxis implements AxisOption, CategoryAxisBaseOption {
+public class TimeAxis implements AxisOption, TimeAxisBaseOption {
     private Number gridIndex;
 
     private String gridId;
@@ -24,11 +24,15 @@ public class CategoryAxis implements AxisOption, CategoryAxisBaseOption {
 
     private Object categorySortInfo;
 
-    private Boolean boundaryGap;
+    private List<Number> boundaryGap;
 
-    private List<Object> data;
+    private Number splitNumber;
 
-    private Boolean deduplication;
+    private Number interval;
+
+    private Number minInterval;
+
+    private Number maxInterval;
 
     private Boolean show;
 
