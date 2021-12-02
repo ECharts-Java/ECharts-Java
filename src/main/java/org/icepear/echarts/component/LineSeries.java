@@ -4,6 +4,9 @@ import java.util.List;
 import java.util.Map;
 
 import org.icepear.echarts.origin.chart.line.LineSeriesOption;
+import org.icepear.echarts.origin.component.marker.MarkAreaOption;
+import org.icepear.echarts.origin.component.marker.MarkLineOption;
+import org.icepear.echarts.origin.component.marker.MarkPointOption;
 import org.icepear.echarts.origin.util.AreaStyleOption;
 import org.icepear.echarts.origin.util.EmphasisOption;
 import org.icepear.echarts.origin.util.LabelOption;
@@ -153,11 +156,11 @@ public class LineSeries implements LineSeriesOption {
 
     private String encode;
 
-    private Object markArea;
+    private MarkAreaOption markArea;
 
-    private Object markLine;
+    private MarkLineOption markLine;
 
-    private Object markPoint;
+    private MarkPointOption markPoint;
 
     private Object tooltip;
 }
