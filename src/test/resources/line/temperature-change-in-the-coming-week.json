@@ -1,0 +1,129 @@
+{
+    "title": {
+        "text": "Temperature Change in the Coming Week"
+    },
+    "xAxis": {
+        "boundaryGap": false,
+        "data": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri",
+            "Sat",
+            "Sun"
+        ],
+        "type": "category"
+    },
+    "yAxis": {
+        "axisLabel": {
+            "formatter": "{value} °C"
+        },
+        "type": "value"
+    },
+    "toolbox": {
+        "show": true,
+        "feature": {
+            "saveAsImage": {},
+            "restore": {},
+            "dataZoom": {
+                "yAxisIndex": "none"
+            },
+            "magicType": {
+                "type": [
+                    "line",
+                    "bar"
+                ]
+            },
+            "dataView": {
+                "readOnly": false
+            }
+        }
+    },
+    "tooltip": {
+        "trigger": "axis"
+    },
+    "legend": {},
+    "series": [
+        {
+            "data": [
+                10,
+                11,
+                13,
+                11,
+                12,
+                12,
+                9
+            ],
+            "type": "line",
+            "name": "Highest",
+            "markLine": {
+                "data": [
+                    {
+                        "type": "average",
+                        "name": "Avg"
+                    }
+                ]
+            },
+            "markPoint": {
+                "data": [
+                    {
+                        "name": "Max",
+                        "type": "max"
+                    },
+                    {
+                        "name": "Min",
+                        "type": "min"
+                    }
+                ]
+            }
+        },
+        {
+            "data": [
+                1,
+                -2,
+                2,
+                5,
+                3,
+                2,
+                0
+            ],
+            "type": "line",
+            "name": "Lowest",
+            "markLine": {
+                "data": [
+                    {
+                        "type": "average",
+                        "name": "Avg"
+                    },
+                    {
+                        "startPoint": {
+                            "symbol": "none",
+                            "x": "90%",
+                            "yAxis": "max"
+                        },
+                        "endPoint": {
+                            "name": "最高点",
+                            "label": {
+                                "formatter": "Max",
+                                "position": "start"
+                            },
+                            "symbol": "circle",
+                            "type": "max"
+                        }
+                    }
+                ]
+            },
+            "markPoint": {
+                "data": [
+                    {
+                        "name": "周最低",
+                        "xAxis": 1,
+                        "yAxis": -1.5,
+                        "value": -2
+                    }
+                ]
+            }
+        }
+    ]
+}

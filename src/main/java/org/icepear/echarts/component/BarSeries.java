@@ -5,6 +5,9 @@ import java.util.Map;
 
 import org.icepear.echarts.origin.chart.bar.BackgroundStyleOption;
 import org.icepear.echarts.origin.chart.bar.BarSeriesOption;
+import org.icepear.echarts.origin.component.marker.MarkAreaOption;
+import org.icepear.echarts.origin.component.marker.MarkLineOption;
+import org.icepear.echarts.origin.component.marker.MarkPointOption;
 import org.icepear.echarts.origin.util.EmphasisOption;
 import org.icepear.echarts.type.BoxLength;
 
@@ -148,11 +151,11 @@ public class BarSeries implements BarSeriesOption {
 
     private String encode;
 
-    private Object markArea;
+    private MarkAreaOption markArea;
 
-    private Object markLine;
+    private MarkLineOption markLine;
 
-    private Object markPoint;
+    private MarkPointOption markPoint;
 
     private Object tooltip;
 }
