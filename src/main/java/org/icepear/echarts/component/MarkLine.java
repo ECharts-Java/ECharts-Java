@@ -6,6 +6,7 @@ import org.icepear.echarts.origin.component.marker.MarkLineOption;
 import org.icepear.echarts.origin.component.marker.MarkerTooltipOption;
 import org.icepear.echarts.origin.util.EmphasisOption;
 import org.icepear.echarts.origin.util.LineStyleOption;
+import org.icepear.echarts.origin.util.SeriesLineLabelOption;
 
 import lombok.experimental.Accessors;
 import lombok.Data;
@@ -59,7 +60,7 @@ public class MarkLine implements MarkLineOption {
 
     private Object itemStyle;
 
-    private Object label;
+    private SeriesLineLabelOption label;
 
     private EmphasisOption emphasis;
 

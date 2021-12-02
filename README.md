@@ -14,7 +14,7 @@ ECharts Java is a library for Java developers to use JavaScript visualization li
 - [x] [Stacked Line Chart](https://echarts.apache.org/examples/en/editor.html?c=line-stack)
 - [x] [Stacked Area Chart](https://echarts.apache.org/examples/en/editor.html?c=area-stack)
 - [ ] [Gradient Stacked Area](https://echarts.apache.org/examples/en/editor.html?c=area-stack-gradient)
-- [ ] [Temperature Change in the Coming Week](https://echarts.apache.org/examples/en/editor.html?c=line-marker)
+- [x] [Temperature Change in the Coming Week](https://echarts.apache.org/examples/en/editor.html?c=line-marker)
 - [ ] [Area Pieces](https://echarts.apache.org/examples/en/editor.html?c=area-pieces)
 - [ ] [Data Transform Fitler](https://echarts.apache.org/examples/en/editor.html?c=data-transform-filter)
 - [ ] [Line Gradient](https://echarts.apache.org/examples/en/editor.html?c=line-gradient)
