@@ -147,4 +147,12 @@ public class BarSeries implements BarSeriesOption {
     private List<Object> dimensions;
 
     private String encode;
+
+    private Object markArea;
+
+    private Object markLine;
+
+    private Object markPoint;
+
+    private Object tooltip;
 }
