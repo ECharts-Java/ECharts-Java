@@ -16,7 +16,7 @@ public interface SeriesOption
 
     SeriesOption setDataGroupId(String dataGroupId);
 
-    SeriesOption setData(List<Object> data);
+    SeriesOption setData(List<?> data);
 
     SeriesOption setColorBy(String colorBy);
 

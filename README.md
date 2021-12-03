@@ -39,8 +39,8 @@ ECharts Java is a library for Java developers to use JavaScript visualization li
 - [ ] [Custom Graphic Component](https://echarts.apache.org/examples/en/editor.html?c=line-graphic)
 - [ ] ~~[Click to Add Points](https://echarts.apache.org/examples/en/editor.html?c=line-pen)~~
 - [ ] ~~[Try Dragging these Points](https://echarts.apache.org/examples/en/editor.html?c=line-draggable)~~
-- [ ] [Two Value-Axes in Polar](https://echarts.apache.org/examples/en/editor.html?c=line-polar)
-- [ ] [Two Value-Axes in Polar](https://echarts.apache.org/examples/en/editor.html?c=line-polar2)
+- [x] [Two Value-Axes in Polar 1](https://echarts.apache.org/examples/en/editor.html?c=line-polar)
+- [ ] [Two Value-Axes in Polar 2](https://echarts.apache.org/examples/en/editor.html?c=line-polar2)
 - [ ] ~~[Tooltip and DataZoom on Mobile](https://echarts.apache.org/examples/en/editor.html?c=line-tooltip-touch)~~
 - [ ] [Share Dataset](https://echarts.apache.org/examples/en/editor.html?c=dataset-link)
 

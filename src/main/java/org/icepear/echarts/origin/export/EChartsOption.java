@@ -8,6 +8,9 @@ import org.icepear.echarts.origin.component.toolbox.ToolboxOption;
 import org.icepear.echarts.origin.component.tooltip.TooltipOption;
 import org.icepear.echarts.origin.coord.cartesian.AxisOption;
 import org.icepear.echarts.origin.coord.cartesian.GridOption;
+import org.icepear.echarts.origin.coord.polar.AngleAxisOption;
+import org.icepear.echarts.origin.coord.polar.PolarOption;
+import org.icepear.echarts.origin.coord.polar.RadiusAxisOption;
 import org.icepear.echarts.origin.util.ECBasicOption;
 import org.icepear.echarts.origin.util.SeriesOption;
 
@@ -29,13 +32,19 @@ public interface EChartsOption extends ECBasicOption {
 
     EChartsOption setRadar(List<Object> radar);
 
-    EChartsOption setPolar(List<Object> polar);
+    EChartsOption setPolar(PolarOption polar);
+
+    EChartsOption setPolar(List<PolarOption> polar);
 
     EChartsOption setGeo(List<Object> geo);
 
-    EChartsOption setAngleAxis(List<Object> angleAxis);
+    EChartsOption setAngleAxis(AngleAxisOption angleAxis);
 
-    EChartsOption setRadiusAxis(List<Object> radiusAxis);
+    EChartsOption setAngleAxis(List<AngleAxisOption> angleAxis);
+
+    EChartsOption setRadiusAxis(RadiusAxisOption radiusAxis);
+
+    EChartsOption setRadiusAxis(List<RadiusAxisOption> radiusAxis);
 
     EChartsOption setXAxis(AxisOption xAxis);
 
