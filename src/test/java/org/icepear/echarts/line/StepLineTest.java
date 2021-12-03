@@ -5,8 +5,6 @@ import static org.junit.Assert.assertEquals;
 import java.io.InputStreamReader;
 import java.io.Reader;
 import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
 
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
@@ -18,10 +16,10 @@ import org.icepear.echarts.component.LineSeries;
 import org.icepear.echarts.component.Option;
 import org.icepear.echarts.component.Title;
 import org.icepear.echarts.component.Toolbox;
+import org.icepear.echarts.component.ToolboxFeatureMap;
 import org.icepear.echarts.component.ToolboxSaveAsImageFeature;
 import org.icepear.echarts.component.Tooltip;
 import org.icepear.echarts.component.ValueAxis;
-import org.icepear.echarts.origin.component.toolbox.ToolboxFeatureOption;
 import org.icepear.echarts.serializer.EChartSerializer;
 import org.icepear.echarts.type.BoxLength;
 import org.junit.Test;
@@ -42,9 +40,9 @@ public class StepLineTest {
                 .setBottom(new BoxLength("3%"))
                 .setContainLabel(true);
 
-        Map<String, ToolboxFeatureOption> feature = new HashMap<>();
-        feature.put("saveAsImage", new ToolboxSaveAsImageFeature());
-        Toolbox toolbox = new Toolbox().setFeature(feature);
+        Toolbox toolbox = new Toolbox()
+                .setFeature(new ToolboxFeatureMap()
+                        .setSaveAsImage(new ToolboxSaveAsImageFeature()));
 
         CategoryAxis xAxis = new CategoryAxis()
                 .setType("category")
@@ -58,8 +56,7 @@ public class StepLineTest {
                 .setStep("start")
                 .setData(Arrays.asList(120, 132, 101, 134, 90, 230, 210));
 
-        LineSeries series2 = new LineSeries().
-                setName("Step Middle")
+        LineSeries series2 = new LineSeries().setName("Step Middle")
                 .setType("line")
                 .setStack("middle")
                 .setData(Arrays.asList(220, 282, 201, 234, 290, 430, 410));

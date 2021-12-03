@@ -5,8 +5,6 @@ import static org.junit.Assert.assertEquals;
 import java.io.InputStreamReader;
 import java.io.Reader;
 import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
 
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
@@ -26,13 +24,13 @@ import org.icepear.echarts.component.Title;
 import org.icepear.echarts.component.Toolbox;
 import org.icepear.echarts.component.ToolboxDataViewFeature;
 import org.icepear.echarts.component.ToolboxDataZoomFeature;
+import org.icepear.echarts.component.ToolboxFeatureMap;
 import org.icepear.echarts.component.ToolboxMagicTypeFeature;
 import org.icepear.echarts.component.ToolboxRestoreFeature;
 import org.icepear.echarts.component.ToolboxSaveAsImageFeature;
 import org.icepear.echarts.component.Tooltip;
 import org.icepear.echarts.component.ValueAxis;
 import org.icepear.echarts.component.ValueAxisLabel;
-import org.icepear.echarts.origin.component.toolbox.ToolboxFeatureOption;
 import org.icepear.echarts.serializer.EChartSerializer;
 import org.icepear.echarts.type.AxisIndex;
 import org.icepear.echarts.type.EChartsNumber;
@@ -47,15 +45,14 @@ public class TemperatureChangeInTheComingWeekTest {
 
         Legend legend = new Legend();
 
-        Map<String, ToolboxFeatureOption> feature = new HashMap<>();
-        feature.put("dataZoom", new ToolboxDataZoomFeature().setYAxisIndex(new AxisIndex("none")));
-        feature.put("dataView", new ToolboxDataViewFeature().setReadOnly(false));
-        feature.put("magicType", new ToolboxMagicTypeFeature().setType(Arrays.asList("line", "bar")));
-        feature.put("restore", new ToolboxRestoreFeature());
-        feature.put("saveAsImage", new ToolboxSaveAsImageFeature());
         Toolbox toolbox = new Toolbox()
                 .setShow(true)
-                .setFeature(feature);
+                .setFeature(new ToolboxFeatureMap()
+                        .setDataZoom(new ToolboxDataZoomFeature().setYAxisIndex(new AxisIndex("none")))
+                        .setDataView(new ToolboxDataViewFeature().setReadOnly(false))
+                        .setMagicType(new ToolboxMagicTypeFeature().setType(Arrays.asList("line", "bar")))
+                        .setRestore(new ToolboxRestoreFeature())
+                        .setSaveAsImage(new ToolboxSaveAsImageFeature()));
 
         CategoryAxis xAxis = new CategoryAxis()
                 .setType("category")
