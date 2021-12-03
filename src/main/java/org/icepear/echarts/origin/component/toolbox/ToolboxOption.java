@@ -1,7 +1,6 @@
 package org.icepear.echarts.origin.component.toolbox;
 
 import java.util.List;
-import java.util.Map;
 
 import org.icepear.echarts.origin.component.tooltip.TooltipOption;
 import org.icepear.echarts.origin.util.BorderOptionMixin;
@@ -36,5 +35,5 @@ public interface ToolboxOption extends ComponentOption, BoxLayoutOptionMixin, Bo
 
     ToolboxOption setTooltip(TooltipOption tooltip);
 
-    ToolboxOption setFeature(Map<String, ToolboxFeatureOption> feature);
+    ToolboxOption setFeature(ToolboxFeatureMapOption feature);
 }

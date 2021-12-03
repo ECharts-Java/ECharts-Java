@@ -1,9 +1,8 @@
 package org.icepear.echarts.component;
 
 import java.util.List;
-import java.util.Map;
 
-import org.icepear.echarts.origin.component.toolbox.ToolboxFeatureOption;
+import org.icepear.echarts.origin.component.toolbox.ToolboxFeatureMapOption;
 import org.icepear.echarts.origin.component.toolbox.ToolboxOption;
 import org.icepear.echarts.origin.component.tooltip.TooltipOption;
 import org.icepear.echarts.type.BoxLength;
@@ -38,7 +37,7 @@ public class Toolbox implements ToolboxOption {
 
     private TooltipOption tooltip;
 
-    private Map<String, ToolboxFeatureOption> feature;
+    private ToolboxFeatureMapOption feature;
 
     private String mainType;
 
