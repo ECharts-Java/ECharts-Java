@@ -1,7 +1,10 @@
 package org.icepear.echarts.component;
 
 import org.icepear.echarts.origin.chart.line.LineEmphasisOption;
+import org.icepear.echarts.origin.util.AreaStyleOption;
+import org.icepear.echarts.origin.util.ItemStyleOption;
 import org.icepear.echarts.origin.util.LabelOption;
+import org.icepear.echarts.origin.util.LineStyleOption;
 
 import lombok.experimental.Accessors;
 import lombok.Data;
@@ -13,13 +16,13 @@ public class LineEmphasis implements LineEmphasisOption {
 
     private Boolean scale;
 
-    private Object lineStyle;
+    private LineStyleOption lineStyle;
 
-    private Object areaStyle;
+    private AreaStyleOption areaStyle;
 
     private Object blurScope;
 
-    private Object itemStyle;
+    private ItemStyleOption itemStyle;
 
     private LabelOption label;
 
