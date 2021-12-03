@@ -85,6 +85,25 @@ ECharts Java is a library for Java developers to use JavaScript visualization li
 - [ ] [Simple Example of Dataset](https://echarts.apache.org/examples/en/editor.html?c=dataset-simple0)
 - [ ] [Dataset in Object Array](https://echarts.apache.org/examples/en/editor.html?c=dataset-simple1)
 
+### [Pie](https://echarts.apache.org/examples/en/index.html#chart-type-pie)
+
+- [ ] [Referer of a Website](https://echarts.apache.org/examples/en/editor.html?c=pie-simple)
+- [ ] [Doughnut Chart with Rounded Corner](https://echarts.apache.org/examples/en/editor.html?c=pie-borderRadius)
+- [ ] [Doughnut Chart](https://echarts.apache.org/examples/en/editor.html?c=pie-doughnut)
+- [ ] ~~[Customized Pie](https://echarts.apache.org/examples/en/editor.html?c=pie-custom)~~
+- [ ] ~~[Texture on Pie Chart](https://echarts.apache.org/examples/en/editor.html?c=pie-pattern)~~
+- [ ] [Nightingale Chart (Fake Data)](https://echarts.apache.org/examples/en/editor.html?c=pie-roseType)
+- [ ] [Nightingale Chart](https://echarts.apache.org/examples/en/editor.html?c=pie-roseType-simple)
+- [ ] [Pie Label Align](https://echarts.apache.org/examples/en/editor.html?c=pie-alignTo)
+- [ ] ~~[Label Line Adjust](https://echarts.apache.org/examples/en/editor.html?c=pie-labelLine-adjust)~~
+- [ ] [Pie with Scrollable Legend](https://echarts.apache.org/examples/en/editor.html?c=pie-legend)
+- [ ] [Pie Special Label](https://echarts.apache.org/examples/en/editor.html?c=pie-rich-text)
+- [ ] [Nested Pies](https://echarts.apache.org/examples/en/editor.html?c=pie-nest)
+- [ ] [Partition Data to Pies](https://echarts.apache.org/examples/en/editor.html?c=data-transform-multiple-pie)
+- [ ] [Default Arrangement](https://echarts.apache.org/examples/en/editor.html?c=dataset-default)
+- [ ] ~~[Calendar Pie](https://echarts.apache.org/examples/en/editor.html?c=calendar-pie)~~
+- [ ] [Share Dataset](https://echarts.apache.org/examples/en/editor.html?c=dataset-link) (Duplicated)
+
 ## License
 
 ECharts Java is available under the [Apache License V2](LICENSE).
