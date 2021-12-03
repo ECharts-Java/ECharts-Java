@@ -53,7 +53,7 @@ public class BarSeries implements BarSeriesOption {
 
     private String dataGroupId;
 
-    private List<Object> data;
+    private List<?> data;
 
     private String colorBy;
 
