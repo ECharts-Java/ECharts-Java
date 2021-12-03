@@ -1,5 +1,7 @@
 package org.icepear.echarts.component;
 
+import java.util.List;
+
 import org.icepear.echarts.origin.coord.polar.PolarOption;
 import org.icepear.echarts.type.EChartsNumber;
 
@@ -21,7 +23,7 @@ public class Polar implements PolarOption {
 
     private Number zlevel;
 
-    private EChartsNumber center;
+    private List<EChartsNumber>  center;
 
-    private EChartsNumber radius;
+    private List<EChartsNumber>  radius;
 }
