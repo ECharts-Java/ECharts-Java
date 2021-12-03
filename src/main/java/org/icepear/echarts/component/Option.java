@@ -8,6 +8,9 @@ import org.icepear.echarts.origin.component.toolbox.ToolboxOption;
 import org.icepear.echarts.origin.component.tooltip.TooltipOption;
 import org.icepear.echarts.origin.coord.cartesian.AxisOption;
 import org.icepear.echarts.origin.coord.cartesian.GridOption;
+import org.icepear.echarts.origin.coord.polar.AngleAxisOption;
+import org.icepear.echarts.origin.coord.polar.PolarOption;
+import org.icepear.echarts.origin.coord.polar.RadiusAxisOption;
 import org.icepear.echarts.origin.export.EChartsOption;
 import org.icepear.echarts.origin.util.AnimationOption;
 import org.icepear.echarts.origin.util.ComponentOption;
@@ -53,13 +56,46 @@ public class Option implements EChartsOption {
 
     private List<Object> radar;
 
-    private List<Object> polar;
+    @Setter(AccessLevel.NONE)
+    private Object polar;
+
+    public Option setPolar(PolarOption polar) {
+        this.polar = polar;
+        return this;
+    }
+
+    public Option setPolar(List<PolarOption> polar) {
+        this.polar = polar;
+        return this;
+    }
 
     private List<Object> geo;
 
-    private List<Object> angleAxis;
+    @Setter(AccessLevel.NONE)
+    private Object angleAxis;
 
-    private List<Object> radiusAxis;
+    public Option setAngleAxis(AngleAxisOption angleAxis) {
+        this.angleAxis = angleAxis;
+        return this;
+    }
+
+    public Option setAngleAxis(List<AngleAxisOption> angleAxis) {
+        this.angleAxis = angleAxis;
+        return this;
+    }
+
+    @Setter(AccessLevel.NONE)
+    private Object radiusAxis;
+
+    public Option setRadiusAxis(RadiusAxisOption radiusAxis) {
+        this.radiusAxis = radiusAxis;
+        return this;
+    }
+
+    public Option setRadiusAxis(List<RadiusAxisOption> radiusAxis) {
+        this.radiusAxis = radiusAxis;
+        return this;
+    }
 
     @Setter(AccessLevel.NONE)
     private Object xAxis;

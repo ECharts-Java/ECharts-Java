@@ -47,7 +47,7 @@ public class LineSeries implements LineSeriesOption {
 
     private String dataGroupId;
 
-    private List<Object> data;
+    private List<?> data;
 
     private String colorBy;
 
