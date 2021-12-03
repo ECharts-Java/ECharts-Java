@@ -30,7 +30,7 @@ ECharts Java is a library for Java developers to use JavaScript visualization li
 - [ ] [Function Plot](https://echarts.apache.org/examples/en/editor.html?c=line-function)
 - [ ] [Line Race](https://echarts.apache.org/examples/en/editor.html?c=line-race)
 - [ ] [Line with Marklines](https://echarts.apache.org/examples/en/editor.html?c=line-markline)
-- [ ] [Line Style and Item Style](https://echarts.apache.org/examples/en/editor.html?c=line-style)
+- [x] [Line Style and Item Style](https://echarts.apache.org/examples/en/editor.html?c=line-style)
 - [x] [Line Chart in Cartesian Coordinate System](https://echarts.apache.org/examples/en/editor.html?c=line-in-cartesian-coordinate-system)
 - [x] [Log Axis](https://echarts.apache.org/examples/en/editor.html?c=line-log)
 - [x] [Step Line](https://echarts.apache.org/examples/en/editor.html?c=line-step)

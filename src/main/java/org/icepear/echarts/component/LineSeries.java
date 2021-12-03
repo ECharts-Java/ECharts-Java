@@ -9,6 +9,7 @@ import org.icepear.echarts.origin.component.marker.MarkLineOption;
 import org.icepear.echarts.origin.component.marker.MarkPointOption;
 import org.icepear.echarts.origin.util.AreaStyleOption;
 import org.icepear.echarts.origin.util.EmphasisOption;
+import org.icepear.echarts.origin.util.ItemStyleOption;
 import org.icepear.echarts.origin.util.LabelOption;
 import org.icepear.echarts.origin.util.LineStyleOption;
 
@@ -114,7 +115,7 @@ public class LineSeries implements LineSeriesOption {
 
     private Object blur;
 
-    private Object itemStyle;
+    private ItemStyleOption itemStyle;
 
     private LabelOption label;
 
