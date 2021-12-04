@@ -3,10 +3,12 @@ package org.icepear.echarts.component;
 import java.util.List;
 import java.util.Map;
 
+import org.icepear.echarts.origin.chart.pie.PieItemStyleOption;
 import org.icepear.echarts.origin.chart.pie.PieSeriesOption;
 import org.icepear.echarts.origin.util.EmphasisOption;
 import org.icepear.echarts.type.BoxLength;
 import org.icepear.echarts.type.EChartsNumber;
+import org.icepear.echarts.type.EChartsRadius;
 
 import lombok.experimental.Accessors;
 import lombok.Data;
@@ -116,13 +118,13 @@ public class PieSeries implements PieSeriesOption {
 
     private Object blur;
 
-    private Object itemStyle;
+    private PieItemStyleOption itemStyle;
     
     private Object label;
 
     private List<EChartsNumber> center;
 
-    private List<EChartsNumber>  radius;
+    private EChartsRadius radius;
 
     private BoxLength width;
 

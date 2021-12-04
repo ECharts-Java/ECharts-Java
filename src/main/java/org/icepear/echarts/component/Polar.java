@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.icepear.echarts.origin.coord.polar.PolarOption;
 import org.icepear.echarts.type.EChartsNumber;
+import org.icepear.echarts.type.EChartsRadius;
 
 import lombok.experimental.Accessors;
 import lombok.Data;
@@ -25,5 +26,5 @@ public class Polar implements PolarOption {
 
     private List<EChartsNumber>  center;
 
-    private List<EChartsNumber>  radius;
+    private EChartsRadius  radius;
 }
