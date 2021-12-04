@@ -14,7 +14,7 @@ import org.icepear.echarts.origin.util.ComponentOption;
 public interface LegendOption extends ComponentOption, LegendStyleOption, BoxLayoutOptionMixin, BorderOptionMixin {
     LegendOption setShow(Boolean show);
 
-    LegendOption setOrient(Object orient);
+    LegendOption setOrient(String orient);
 
     LegendOption setAlign(String align);
 
