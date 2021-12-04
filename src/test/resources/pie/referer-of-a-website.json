@@ -1,0 +1,50 @@
+{
+    "title": {
+        "text": "Referer of a Website",
+        "subtext": "Fake Data",
+        "left": "center"
+    },
+    "tooltip": {
+        "trigger": "item"
+    },
+    "legend": {
+        "orient": "vertical",
+        "left": "left"
+    },
+    "series": [
+        {
+            "data": [
+                {
+                    "name": "Search Engine",
+                    "value": 1048
+                },
+                {
+                    "name": "Direct",
+                    "value": 735
+                },
+                {
+                    "name": "Email",
+                    "value": 580
+                },
+                {
+                    "name": "Union Ads",
+                    "value": 484
+                },
+                {
+                    "name": "Video Ads",
+                    "value": 300
+                }
+            ],
+            "type": "pie",
+            "name": "Access From",
+            "emphasis": {
+                "itemStyle": {
+                    "shadowBlur": 10,
+                    "shadowColor": "rgba(0, 0, 0, 0.5)",
+                    "shadowOffsetX": 0
+                }
+            },
+            "radius": "50%"
+        }
+    ]
+}

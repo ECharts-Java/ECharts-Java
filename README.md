@@ -87,7 +87,7 @@ ECharts Java is a library for Java developers to use JavaScript visualization li
 
 ### [Pie](https://echarts.apache.org/examples/en/index.html#chart-type-pie)
 
-- [ ] [Referer of a Website](https://echarts.apache.org/examples/en/editor.html?c=pie-simple)
+- [x] [Referer of a Website](https://echarts.apache.org/examples/en/editor.html?c=pie-simple)
 - [ ] [Doughnut Chart with Rounded Corner](https://echarts.apache.org/examples/en/editor.html?c=pie-borderRadius)
 - [ ] [Doughnut Chart](https://echarts.apache.org/examples/en/editor.html?c=pie-doughnut)
 - [ ] ~~[Customized Pie](https://echarts.apache.org/examples/en/editor.html?c=pie-custom)~~
