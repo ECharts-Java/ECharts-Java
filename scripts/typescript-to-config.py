@@ -54,11 +54,10 @@ def convert(file):
             field_type = field_types[j]
             if "[]" in field_type:
                 field_java_types.add("List<{}>".format(
-                    convert_single_type(field_type.replace("[]", ""))))
+                    convert_single_type(field_type.replace("(", "").replace(")", "").replace("[]", ""))))
             elif "(" in field_type:
                 multitypes = set()
                 while ")[]" not in field_types[j]:
-                    print(field_types[j])
                     field_type = field_types[j].replace("(", "")
                     multitypes.add(convert_single_type(field_type))
                     j += 1
