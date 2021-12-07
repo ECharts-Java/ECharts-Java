@@ -34,3 +34,7 @@ target/
 .factorypath
 
 .DS_Store
+
+scripts/java
+scripts/*.ts
+scripts/*.json
