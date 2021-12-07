@@ -6,6 +6,12 @@ config_dir = "config"
 java_dir = "java"
 
 symbol_table = {
+    "?": {
+        "path": None,
+        "import": None,
+        "builtin": True,
+        "obj": None
+    },
     "Object": {
         "path": None,
         "import": None,
@@ -172,7 +178,8 @@ def generate_interface_start_line(obj, lines):
 
 def merge_fields(src, dst):
     for field in src:
-        dst[field] |= src[field]
+        if field not in dst:
+            dst[field] = src[field]
 
 
 def get_all_fields(obj):
@@ -197,17 +204,27 @@ def get_fields_dfs(obj):
 
 def eliminate_fields_conflicts(fields):
     for name, types in fields.items():
+        # List<String> & List<Number> -> List<?>
         cnt = 0
         for type in types:
             if "List" == type[:4]:
                 cnt += 1
         if cnt > 1:
-            new_types = []
+            new_types = set()
             for type in types:
                 if "List" != type[:4]:
-                    new_types.append(type)
-            new_types.append("List<?>")
+                    new_types.add(type)
+            new_types.add("List<?>")
             fields[name] = new_types
+        types = fields[name]
+        # Unknown Class -> Object
+        new_types = set()
+        for type in types:
+            if type.replace("List<", "").replace(">", "") in symbol_table:
+                new_types.add(type)
+            else:
+                new_types.add("Object")
+        fields[name] = new_types
 
 
 def generate_class_body_lines(obj, fields, lines):
