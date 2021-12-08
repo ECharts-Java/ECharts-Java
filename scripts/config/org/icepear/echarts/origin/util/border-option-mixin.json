@@ -1,60 +1,52 @@
 {
-    "name": "LineStyleOption",
+    "name": "BorderOptionMixin",
     "type": "interface",
-    "extends": [
-        "ShadowOptionMixin"
-    ],
+    "extends": [],
     "fields": [
         {
-            "name": "width",
-            "types": [
-                "Number"
-            ]
-        },
-        {
-            "name": "color",
+            "name": "borderColor",
             "types": [
                 "String"
             ]
         },
         {
-            "name": "opacity",
+            "name": "borderWidth",
             "types": [
                 "Number"
             ]
         },
         {
-            "name": "type",
+            "name": "borderType",
+            "types": [
+                "String"
+            ]
+        },
+        {
+            "name": "borderCap",
             "types": [
                 "Object"
             ]
         },
         {
-            "name": "cap",
+            "name": "borderJoin",
             "types": [
                 "Object"
             ]
         },
         {
-            "name": "join",
-            "types": [
-                "Object"
-            ]
-        },
-        {
-            "name": "dashOffset",
+            "name": "borderDashOffset",
             "types": [
                 "Number"
             ]
         },
         {
-            "name": "miterLimit",
+            "name": "borderMiterLimit",
             "types": [
                 "Number"
             ]
         }
     ],
     "comments": [
-        "https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/util/types.ts#L982"
+        "https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/util/types.ts#L848"
     ]
 }

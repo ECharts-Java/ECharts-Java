@@ -1,0 +1,105 @@
+{
+    "name": "RadarOption",
+    "type": "interface",
+    "extends": [
+        "ComponentOption",
+        "CircleLayoutOptionMixin"
+    ],
+    "fields": [
+        {
+            "name": "mainType",
+            "types": [
+                "String"
+            ]
+        },
+        {
+            "name": "startAngle",
+            "types": [
+                "Number"
+            ]
+        },
+        {
+            "name": "shape",
+            "types": [
+                "String"
+            ]
+        },
+        {
+            "name": "axisLine",
+            "types": [
+                "AxisLineOption"
+            ]
+        },
+        {
+            "name": "axisTick",
+            "types": [
+                "AxisTickOption"
+            ]
+        },
+        {
+            "name": "axisLabel",
+            "types": [
+                "AxisLabelBaseOption"
+            ]
+        },
+        {
+            "name": "splitLine",
+            "types": [
+                "SplitLineOption"
+            ]
+        },
+        {
+            "name": "splitArea",
+            "types": [
+                "SplitAreaOption"
+            ]
+        },
+        {
+            "name": "axisName",
+            "types": [
+                "Object"
+            ]
+        },
+        {
+            "name": "axisNameGap",
+            "types": [
+                "Number"
+            ]
+        },
+        {
+            "name": "triggerEvent",
+            "types": [
+                "Boolean"
+            ]
+        },
+        {
+            "name": "scale",
+            "types": [
+                "Boolean"
+            ]
+        },
+        {
+            "name": "splitNumber",
+            "types": [
+                "Number"
+            ]
+        },
+        {
+            "name": "boundaryGap",
+            "types": [
+                "Boolean",
+                "String[]",
+                "Number[]"
+            ]
+        },
+        {
+            "name": "indicator",
+            "types": [
+                "RadarIndicatorOption[]"
+            ]
+        }
+    ],
+    "comments": [
+        "https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/coord/radar/RadarModel.ts#L54"
+    ]
+}
