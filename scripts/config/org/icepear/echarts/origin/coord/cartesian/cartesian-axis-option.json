@@ -1,0 +1,40 @@
+{
+    "name": "CartesianAxisOption",
+    "type": "interface",
+    "extends": [],
+    "fields": [
+        {
+            "name": "gridIndex",
+            "types": [
+                "Number"
+            ]
+        },
+        {
+            "name": "gridId",
+            "types": [
+                "String"
+            ]
+        },
+        {
+            "name": "position",
+            "types": [
+                "String"
+            ]
+        },
+        {
+            "name": "offset",
+            "types": [
+                "Number"
+            ]
+        },
+        {
+            "name": "categorySortInfo",
+            "types": [
+                "OrdinalSortInfo"
+            ]
+        }
+    ],
+    "comments": [
+        "https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/coord/cartesian/AxisModel.ts#L33"
+    ]
+}

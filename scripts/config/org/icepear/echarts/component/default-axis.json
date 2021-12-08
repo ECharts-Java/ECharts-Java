@@ -1,0 +1,7 @@
+{
+    "name": "DefaultAxis",
+    "type": "class",
+    "implements": [
+        "DefaultAxisOption"
+    ]
+}

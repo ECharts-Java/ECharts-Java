@@ -25,22 +25,22 @@
         {
             "name": "symbol",
             "types": [
-                "List<String>",
+                "String[]",
                 "String"
             ]
         },
         {
             "name": "symbolSize",
             "types": [
-                "List<Number>"
+                "Number[]"
             ]
         },
         {
             "name": "symbolOffset",
             "types": [
-                "List<String>",
+                "String[]",
                 "Number",
-                "List<Number>",
+                "Number[]",
                 "String"
             ]
         },
@@ -51,5 +51,7 @@
             ]
         }
     ],
-    "comments": ["https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/coord/axisCommonTypes.ts#L161"]
+    "comments": [
+        "https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/coord/axisCommonTypes.ts#L161"
+    ]
 }
