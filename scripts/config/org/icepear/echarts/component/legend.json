@@ -1,0 +1,7 @@
+{
+    "name": "Legend",
+    "type": "class",
+    "implements": [
+        "LegendOption"
+    ]
+}

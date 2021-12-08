@@ -1,0 +1,7 @@
+{
+    "name": "DefaultAngleAxis",
+    "type": "class",
+    "implements": [
+        "DefaultAngleAxisOption"
+    ]
+}
