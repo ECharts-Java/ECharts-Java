@@ -1,0 +1,100 @@
+{
+    "name": "ToolboxOption",
+    "type": "interface",
+    "extends": [
+        "ComponentOption",
+        "BoxLayoutOptionMixin",
+        "BorderOptionMixin"
+    ],
+    "fields": [
+        {
+            "name": "mainType",
+            "types": [
+                "String"
+            ]
+        },
+        {
+            "name": "show",
+            "types": [
+                "Boolean"
+            ]
+        },
+        {
+            "name": "orient",
+            "types": [
+                "LayoutOrient"
+            ]
+        },
+        {
+            "name": "backgroundColor",
+            "types": [
+                "String"
+            ]
+        },
+        {
+            "name": "borderRadius",
+            "types": [
+                "Number",
+                "Number[]"
+            ]
+        },
+        {
+            "name": "padding",
+            "types": [
+                "Number",
+                "Number[]"
+            ]
+        },
+        {
+            "name": "itemSize",
+            "types": [
+                "Number"
+            ]
+        },
+        {
+            "name": "itemGap",
+            "types": [
+                "Number"
+            ]
+        },
+        {
+            "name": "showTitle",
+            "types": [
+                "Boolean"
+            ]
+        },
+        {
+            "name": "iconStyle",
+            "types": [
+                "ItemStyleOption"
+            ]
+        },
+        {
+            "name": "emphasis",
+            "types": [
+                "Object"
+            ]
+        },
+        {
+            "name": "textStyle",
+            "types": [
+                "LabelOption"
+            ]
+        },
+        {
+            "name": "tooltip",
+            "types": [
+                "CommonTooltipOption"
+            ]
+        },
+        {
+            "name": "feature",
+            "types": [
+                "Object"
+            ]
+        }
+    ],
+    "comments": [
+        "https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/component/toolbox/ToolboxModel.ts#L42"
+    ]
+}

@@ -1,0 +1,62 @@
+{
+    "name": "AnimationOptionMixin",
+    "type": "interface",
+    "extends": [],
+    "fields": [
+        {
+            "name": "animation",
+            "types": [
+                "Boolean"
+            ]
+        },
+        {
+            "name": "animationThreshold",
+            "types": [
+                "Number"
+            ]
+        },
+        {
+            "name": "animationDuration",
+            "types": [
+                "AnimationDurationCallback",
+                "Number"
+            ]
+        },
+        {
+            "name": "animationEasing",
+            "types": [
+                "AnimationEasing"
+            ]
+        },
+        {
+            "name": "animationDelay",
+            "types": [
+                "Number",
+                "AnimationDelayCallback"
+            ]
+        },
+        {
+            "name": "animationDurationUpdate",
+            "types": [
+                "AnimationDurationCallback",
+                "Number"
+            ]
+        },
+        {
+            "name": "animationEasingUpdate",
+            "types": [
+                "AnimationEasing"
+            ]
+        },
+        {
+            "name": "animationDelayUpdate",
+            "types": [
+                "Number",
+                "AnimationDelayCallback"
+            ]
+        }
+    ],
+    "comments": [
+        "https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/util/types.ts#L880"
+    ]
+}
