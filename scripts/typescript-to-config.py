@@ -1,4 +1,3 @@
-import os
 import json
 
 typescript_dir = "typescript"
@@ -53,7 +52,7 @@ def convert(file):
         while j < len(field_types):
             field_type = field_types[j]
             if "[]" in field_type:
-                field_java_types.add("List<{}>".format(
+                field_java_types.add("{}[]".format(
                     convert_single_type(field_type.replace("(", "").replace(")", "").replace("[]", ""))))
             elif "(" in field_type:
                 multitypes = set()
@@ -64,9 +63,9 @@ def convert(file):
                 field_type = field_types[j].replace(")[]", "")
                 multitypes.add(convert_single_type(field_type))
                 for singletype in multitypes:
-                    field_java_types.add("List<{}>".format(singletype))
+                    field_java_types.add("{}[]".format(singletype))
             elif "[" in field_type:
-                field_java_types.add("List<{}>".format(
+                field_java_types.add("{}[]".format(
                     convert_single_type(field_type.replace("[", ""))))
                 while "]" not in field_types[j]:
                     j += 1

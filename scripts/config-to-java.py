@@ -91,15 +91,19 @@ def build_symbol_table():
 def get_symbols(type):
     type = type.replace("<", " ")
     type = type.replace(">", " ")
+    type = type.replace("[]", " ")
+    type = type.replace(",", " ")
     return set(type.split())
 
 
-def get_all_symbols(obj):
+def get_all_symbols(obj, include_inheritance=True):
     symbols = set()
     if obj["type"] == "class":
-        symbols |= set(obj["implements"])
+        if include_inheritance:
+            symbols |= set(obj["implements"])
     elif obj["type"] == "interface":
-        symbols |= set(obj["extends"])
+        if include_inheritance:
+            symbols |= set(obj["extends"])
         for field in obj["fields"]:
             for type in field["types"]:
                 symbols |= get_symbols(type)
@@ -107,21 +111,24 @@ def get_all_symbols(obj):
 
 
 def get_symbols_dfs(obj):
-    symbols = get_all_symbols(obj)
+    symbols = set()
     if obj["type"] == "class":
+        symbols = get_all_symbols(obj)
         for implement in obj["implements"]:
             symbols |= get_symbols_dfs(symbol_table[implement]["obj"])
     elif obj["type"] == "interface":
+        symbols =  get_all_symbols(obj, include_inheritance=False)
         for extend in obj["extends"]:
             symbols |= get_symbols_dfs(symbol_table[extend]["obj"])
     return symbols
 
 
 def generate_package_line(info, lines):
-    lines.append("package {};\n".format(info["import"].replace(".{}".format(info["obj"]["name"]), "")))
+    lines.append("package {};\n".format(
+        info["import"].replace(".{}".format(info["obj"]["name"]), "")))
 
 
-def generate_import_lines(symbols, fields, lines):
+def generate_import_lines(info, symbols, fields, lines):
     symbol_links = []
     for types in fields.values():
         if len(types) > 1:
@@ -131,7 +138,8 @@ def generate_import_lines(symbols, fields, lines):
     for symbol in symbols:
         if symbol in symbol_table:
             if symbol_table[symbol]["import"] != None:
-                symbol_links.append(symbol_table[symbol]["import"])
+                if symbol_table[symbol]["import"].split(".")[:-1] != info["import"].split(".")[:-1]:
+                    symbol_links.append(symbol_table[symbol]["import"])
         else:
             print("Warning: symbol {} not defined".format(symbol))
     symbol_links.sort()
@@ -178,14 +186,14 @@ def generate_interface_start_line(obj, lines):
 
 def merge_fields(src, dst):
     for field in src:
-        if field not in dst:
-            dst[field] = src[field]
+        dst[field] |= src[field]
 
 
 def get_all_fields(obj):
     fields = defaultdict(set)
     for field in obj["fields"]:
-        fields[field["name"]] |= set(field["types"])
+        if "ignore" not in field or field["ignore"] == False:
+            fields[field["name"]] |= set(field["types"])
     return fields
 
 
@@ -204,30 +212,20 @@ def get_fields_dfs(obj):
 
 def eliminate_fields_conflicts(fields):
     for name, types in fields.items():
-        # List<String> & List<Number> -> List<?>
-        cnt = 0
-        for type in types:
-            if "List" == type[:4]:
-                cnt += 1
-        if cnt > 1:
-            new_types = set()
-            for type in types:
-                if "List" != type[:4]:
-                    new_types.add(type)
-            new_types.add("List<?>")
-            fields[name] = new_types
-        types = fields[name]
         # Unknown Class -> Object
         new_types = set()
         for type in types:
-            if type.replace("List<", "").replace(">", "") in symbol_table:
-                new_types.add(type)
-            else:
-                new_types.add("Object")
+            for symbol in get_symbols(type):
+                if symbol not in symbol_table:
+                    type = type.replace(symbol, "Object")
+                    break
+            new_types.add(type)
         fields[name] = new_types
 
 
 def generate_class_body_lines(obj, fields, lines):
+    if len(fields) == 0:
+        lines.append("\n")
     for name, types in fields.items():
         if len(types) == 1:
             lines.append("\n\tprivate {} {};\n".format(list(types)[0], name))
@@ -243,6 +241,8 @@ def generate_class_body_lines(obj, fields, lines):
 
 
 def generate_interface_body_lines(obj, fields, lines):
+    if len(fields) == 0:
+        lines.append("\n")
     for name, types in fields.items():
         for type in types:
             lines.append("\n\t{} set{}({} {});\n".format(
@@ -268,7 +268,7 @@ def generate_class(info):
     symbols |= {"Accessors", "Data"}
     lines = []
     generate_package_line(info, lines)
-    generate_import_lines(symbols, fields, lines)
+    generate_import_lines(info, symbols, fields, lines)
     generate_annotation_lines(lines)
     generate_class_start_line(obj, lines)
     generate_class_body_lines(obj, fields, lines)
@@ -283,7 +283,7 @@ def generate_interface(info):
     eliminate_fields_conflicts(fields)
     lines = []
     generate_package_line(info, lines)
-    generate_import_lines(symbols, {}, lines)
+    generate_import_lines(info, symbols, {}, lines)
     generate_comment_lines(obj, lines)
     generate_interface_start_line(obj, lines)
     generate_interface_body_lines(obj, fields, lines)
