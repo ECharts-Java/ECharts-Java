@@ -129,12 +129,14 @@
         {
             "name": "min",
             "types": [
+                "Number",
                 "String"
             ]
         },
         {
             "name": "max",
             "types": [
+                "Number",
                 "String"
             ]
         }

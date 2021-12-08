@@ -1,0 +1,141 @@
+{
+    "name": "LegendOption",
+    "type": "interface",
+    "extends": [
+        "ComponentOption",
+        "LegendStyleOption",
+        "BoxLayoutOptionMixin",
+        "BorderOptionMixin"
+    ],
+    "fields": [
+        {
+            "name": "mainType",
+            "types": [
+                "String"
+            ]
+        },
+        {
+            "name": "show",
+            "types": [
+                "Boolean"
+            ]
+        },
+        {
+            "name": "orient",
+            "types": [
+                "LayoutOrient"
+            ]
+        },
+        {
+            "name": "align",
+            "types": [
+                "String"
+            ]
+        },
+        {
+            "name": "backgroundColor",
+            "types": [
+                "String"
+            ]
+        },
+        {
+            "name": "borderRadius",
+            "types": [
+                "Number[]",
+                "Number"
+            ]
+        },
+        {
+            "name": "padding",
+            "types": [
+                "Number[]",
+                "Number"
+            ]
+        },
+        {
+            "name": "itemGap",
+            "types": [
+                "Number"
+            ]
+        },
+        {
+            "name": "itemWidth",
+            "types": [
+                "Number"
+            ]
+        },
+        {
+            "name": "itemHeight",
+            "types": [
+                "Number"
+            ]
+        },
+        {
+            "name": "selectedMode",
+            "types": [
+                "Boolean",
+                "String"
+            ]
+        },
+        {
+            "name": "selected",
+            "types": [
+                "Map<String, Boolean>"
+            ]
+        },
+        {
+            "name": "selector",
+            "types": [
+                "SelectorType[]",
+                "LegendSelectorButtonOption[]",
+                "Boolean"
+            ]
+        },
+        {
+            "name": "selectorLabel",
+            "types": [
+                "LabelOption"
+            ]
+        },
+        {
+            "name": "emphasis",
+            "types": [
+                "Object"
+            ]
+        },
+        {
+            "name": "selectorPosition",
+            "types": [
+                "String"
+            ]
+        },
+        {
+            "name": "selectorItemGap",
+            "types": [
+                "Number"
+            ]
+        },
+        {
+            "name": "selectorButtonGap",
+            "types": [
+                "Number"
+            ]
+        },
+        {
+            "name": "data",
+            "types": [
+                "String[]",
+                "DataItem[]"
+            ]
+        },
+        {
+            "name": "tooltip",
+            "types": [
+                "Object"
+            ]
+        }
+    ],
+    "comments": [
+        "https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/component/legend/LegendModel.ts#L159"
+    ]
+}
