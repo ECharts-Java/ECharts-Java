@@ -1,0 +1,7 @@
+{
+    "name": "Toolbox",
+    "type": "class",
+    "implements": [
+        "ToolboxOption"
+    ]
+}

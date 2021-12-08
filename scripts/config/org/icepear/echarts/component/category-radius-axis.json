@@ -1,0 +1,7 @@
+{
+    "name": "CategoryRadiusAxis",
+    "type": "class",
+    "implements": [
+        "CategoryRadiusAxisOption"
+    ]
+}

@@ -1,0 +1,29 @@
+{
+    "name": "RadiusAxisOption",
+    "type": "interface",
+    "extends": [],
+    "fields": [
+        {
+            "name": "mainType",
+            "types": [
+                "String"
+            ],
+            "ignore": true
+        },
+        {
+            "name": "polarIndex",
+            "types": [
+                "Number"
+            ]
+        },
+        {
+            "name": "polarId",
+            "types": [
+                "String"
+            ]
+        }
+    ],
+    "comments": [
+        "https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/coord/polar/AxisModel.ts#L47"
+    ]
+}

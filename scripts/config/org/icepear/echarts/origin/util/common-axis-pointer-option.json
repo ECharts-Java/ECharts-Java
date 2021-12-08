@@ -1,0 +1,116 @@
+{
+    "name": "CommonAxisPointerOption",
+    "type": "interface",
+    "extends": [],
+    "fields": [
+        {
+            "name": "show",
+            "types": [
+                "String",
+                "Boolean"
+            ]
+        },
+        {
+            "name": "z",
+            "types": [
+                "Number"
+            ],
+            "ignore": true
+        },
+        {
+            "name": "zlevel",
+            "types": [
+                "Number"
+            ],
+            "ignore": true
+        },
+        {
+            "name": "triggerOn",
+            "types": [
+                "String"
+            ]
+        },
+        {
+            "name": "type",
+            "types": [
+                "String"
+            ]
+        },
+        {
+            "name": "snap",
+            "types": [
+                "Boolean"
+            ]
+        },
+        {
+            "name": "triggerTooltip",
+            "types": [
+                "Boolean"
+            ]
+        },
+        {
+            "name": "value",
+            "types": [
+                "ScaleDataValue"
+            ]
+        },
+        {
+            "name": "status",
+            "types": [
+                "String"
+            ]
+        },
+        {
+            "name": "label",
+            "types": [
+                "Object"
+            ]
+        },
+        {
+            "name": "animation",
+            "types": [
+                "String",
+                "Boolean"
+            ]
+        },
+        {
+            "name": "animationDurationUpdate",
+            "types": [
+                "Number"
+            ]
+        },
+        {
+            "name": "animationEasingUpdate",
+            "types": [
+                "ZREasing"
+            ]
+        },
+        {
+            "name": "lineStyle",
+            "types": [
+                "LineStyleOption"
+            ]
+        },
+        {
+            "name": "shadowStyle",
+            "types": [
+                "AreaStyleOption"
+            ]
+        },
+        {
+            "name": "handle",
+            "types": [
+                "Object"
+            ]
+        },
+        {
+            "name": "seriesDataIndices",
+            "types": [
+                "Object[]"
+            ]
+        }
+    ],
+    "comments": [
+        "https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/util/types.ts#L1408"
+    ]
+}
