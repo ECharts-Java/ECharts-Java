@@ -90,7 +90,7 @@
         {
             "name": "feature",
             "types": [
-                "Object"
+                "Map<String, ToolboxFeatureOption>"
             ]
         }
     ],

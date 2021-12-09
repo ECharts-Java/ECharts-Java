@@ -63,7 +63,7 @@
         {
             "name": "label",
             "types": [
-                "Object"
+                "CommonAxisPointerLabelOption"
             ]
         },
         {

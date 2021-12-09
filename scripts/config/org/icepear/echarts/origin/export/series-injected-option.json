@@ -1,0 +1,34 @@
+{
+    "name": "SeriesInjectedOption",
+    "type": "interface",
+    "extends": [],
+    "fields": [
+        {
+            "name": "markArea",
+            "types": [
+                "MarkAreaComponentOption"
+            ]
+        },
+        {
+            "name": "markLine",
+            "types": [
+                "MarkLineComponentOption"
+            ]
+        },
+        {
+            "name": "markPoint",
+            "types": [
+                "MarkPointComponentOption"
+            ]
+        },
+        {
+            "name": "tooltip",
+            "types": [
+                "SeriesTooltipOption"
+            ]
+        }
+    ],
+    "comments": [
+        "https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/export/option.ts#L173"
+    ]
+}

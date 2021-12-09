@@ -1,0 +1,7 @@
+{
+    "name": "ToolboxMagicTypeFeature",
+    "type": "class",
+    "implements": [
+        "ToolboxMagicTypeFeatureOption"
+    ]
+}

@@ -1,0 +1,7 @@
+{
+    "name": "LogAxisLabel",
+    "type": "class",
+    "implements": [
+        "LogAxisLabelOption"
+    ]
+}

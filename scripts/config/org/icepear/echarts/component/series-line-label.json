@@ -1,0 +1,7 @@
+{
+    "name": "SeriesLineLabel",
+    "type": "class",
+    "implements": [
+        "SeriesLineLabelOption"
+    ]
+}

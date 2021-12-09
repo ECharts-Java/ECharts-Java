@@ -1,0 +1,7 @@
+{
+    "name": "MarkLine2DDataItemDim",
+    "type": "class",
+    "implements": [
+        "MarkLine2DDataItemDimOption"
+    ]
+}
