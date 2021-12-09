@@ -4,46 +4,44 @@ import static org.junit.Assert.assertEquals;
 
 import java.io.InputStreamReader;
 import java.io.Reader;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
 
-import org.icepear.echarts.component.AxisPointer;
 import org.icepear.echarts.component.Legend;
 import org.icepear.echarts.component.LineSeries;
 import org.icepear.echarts.component.Option;
 import org.icepear.echarts.component.Polar;
 import org.icepear.echarts.component.Title;
 import org.icepear.echarts.component.Tooltip;
+import org.icepear.echarts.component.TooltipAxisPointer;
 import org.icepear.echarts.component.ValueAngleAxis;
 import org.icepear.echarts.component.ValueRadiusAxis;
+import org.icepear.echarts.origin.util.SeriesOption;
 import org.icepear.echarts.serializer.EChartSerializer;
-import org.icepear.echarts.type.EChartsNumber;
 import org.junit.Test;
 
 public class TwoValueAxesInPolar2Test {
     @Test
     public void testTwoValueAxesInPolar2() {
-        List<List<Number>> data = new ArrayList<>();
+        Number[][] data = new Number[361][2];
         for (int i = 0; i <= 360; i++) {
             Double t = (i / 180.0) * Math.PI;
             Double r = Math.sin(2 * t) * Math.cos(2 * t);
-            data.add(Arrays.asList(r, i));
+            data[i][0] = r;
+            data[i][1] = i;
         }
 
         Title title = new Title().setText("Two Value-Axes in Polar");
 
-        Legend legend = new Legend().setData(Arrays.asList("line"));
+        Legend legend = new Legend().setData(new String[] { "line" });
 
         Polar polar = new Polar()
-                .setCenter(Arrays.asList(new EChartsNumber("50%"), new EChartsNumber("54%")));
+                .setCenter(new String[] { "50%", "54%" });
 
         Tooltip tooltip = new Tooltip()
                 .setTrigger("axis")
-                .setAxisPointer(new AxisPointer().setType("cross"));
+                .setAxisPointer(new TooltipAxisPointer().setType("cross"));
 
         ValueAngleAxis angleAxis = new ValueAngleAxis()
                 .setType("value")
@@ -66,7 +64,7 @@ public class TwoValueAxesInPolar2Test {
                 .setTooltip(tooltip)
                 .setAngleAxis(angleAxis)
                 .setRadiusAxis(radiusAxis)
-                .setSeries(Arrays.asList(series))
+                .setSeries(new SeriesOption[] { series })
                 .setAnimationDuration(2000);
 
         Reader reader = new InputStreamReader(

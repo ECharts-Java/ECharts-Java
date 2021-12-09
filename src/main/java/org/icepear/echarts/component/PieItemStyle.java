@@ -1,41 +1,75 @@
 package org.icepear.echarts.component;
 
-import org.icepear.echarts.origin.chart.pie.PieItemStyleOption;
-import org.icepear.echarts.type.EChartsRadius;
-
-import lombok.experimental.Accessors;
+import lombok.AccessLevel;
 import lombok.Data;
+import lombok.Setter;
+import lombok.experimental.Accessors;
 
-@Accessors(chain = true)
+import org.icepear.echarts.origin.chart.pie.PieItemStyleOption;
+
+@Accessors(chain=true)
 @Data
 public class PieItemStyle implements PieItemStyleOption {
-    private EChartsRadius borderRadius;
 
-    private String color;
+	private Number shadowBlur;
 
-    private Number opacity;
+	private String shadowColor;
 
-    private Object decal;
+	private Number shadowOffsetX;
 
-    private Number shadowBlur;
+	private Number shadowOffsetY;
 
-    private String shadowColor;
+	private String borderColor;
 
-    private Number shadowOffsetX;
+	private Number borderWidth;
 
-    private Number shadowOffsetY;
+	private String borderType;
 
-    private String borderColor;
+	private Object borderCap;
 
-    private Number borderWidth;
+	private Object borderJoin;
 
-    private String borderType;
+	private Number borderDashOffset;
 
-    private Object borderCap;
+	private Number borderMiterLimit;
 
-    private Object borderJoin;
+	private String color;
 
-    private Number borderDashOffset;
+	private Number opacity;
 
-    private Number borderMiterLimit;
+	@Setter(AccessLevel.NONE)
+	private Object decal;
+
+	public PieItemStyle setDecal(String decal) {
+		this.decal = decal;
+		return this;
+	}
+
+	public PieItemStyle setDecal(Object decal) {
+		this.decal = decal;
+		return this;
+	}
+
+	@Setter(AccessLevel.NONE)
+	private Object borderRadius;
+
+	public PieItemStyle setBorderRadius(String[] borderRadius) {
+		this.borderRadius = borderRadius;
+		return this;
+	}
+
+	public PieItemStyle setBorderRadius(Number[] borderRadius) {
+		this.borderRadius = borderRadius;
+		return this;
+	}
+
+	public PieItemStyle setBorderRadius(String borderRadius) {
+		this.borderRadius = borderRadius;
+		return this;
+	}
+
+	public PieItemStyle setBorderRadius(Number borderRadius) {
+		this.borderRadius = borderRadius;
+		return this;
+	}
 }

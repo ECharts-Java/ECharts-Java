@@ -4,7 +4,6 @@ import static org.junit.Assert.assertEquals;
 
 import java.io.InputStreamReader;
 import java.io.Reader;
-import java.util.Arrays;
 
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
@@ -15,6 +14,7 @@ import org.icepear.echarts.component.LineSeries;
 import org.icepear.echarts.component.LineStyle;
 import org.icepear.echarts.component.Option;
 import org.icepear.echarts.component.ValueAxis;
+import org.icepear.echarts.origin.util.SeriesOption;
 import org.icepear.echarts.serializer.EChartSerializer;
 import org.junit.Test;
 
@@ -23,12 +23,12 @@ public class LineStyleAndItemStyleTest {
     public void testLineStyleAndItemStyle() {
         CategoryAxis xAxis = new CategoryAxis()
                 .setType("category")
-                .setData(Arrays.asList("Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"));
+                .setData(new String[] { "Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun" });
 
         ValueAxis yAxis = new ValueAxis().setType("value");
 
         LineSeries series = new LineSeries()
-                .setData(Arrays.asList(120, 200, 150, 80, 70, 110, 130))
+                .setData(new Number[] { 120, 200, 150, 80, 70, 110, 130 })
                 .setType("line")
                 .setSymbol("triangle")
                 .setSymbolSize(20)
@@ -44,7 +44,7 @@ public class LineStyleAndItemStyleTest {
         Option option = new Option()
                 .setXAxis(xAxis)
                 .setYAxis(yAxis)
-                .setSeries(Arrays.asList(series));
+                .setSeries(new SeriesOption[] { series });
 
         Reader reader = new InputStreamReader(
                 this.getClass().getResourceAsStream("/line/line-style-and-item-style.json"));

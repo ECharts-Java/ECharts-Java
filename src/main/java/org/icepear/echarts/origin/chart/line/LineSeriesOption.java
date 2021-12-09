@@ -1,9 +1,8 @@
 package org.icepear.echarts.origin.chart.line;
 
-import org.icepear.echarts.origin.export.SeriesInjectedOption;
-import org.icepear.echarts.origin.util.AreaStyleOption;
 import org.icepear.echarts.origin.util.LineStyleOption;
 import org.icepear.echarts.origin.util.SeriesEncodeOptionMixin;
+import org.icepear.echarts.origin.util.SeriesLabelOption;
 import org.icepear.echarts.origin.util.SeriesOnCartesianOptionMixin;
 import org.icepear.echarts.origin.util.SeriesOnPolarOptionMixin;
 import org.icepear.echarts.origin.util.SeriesOption;
@@ -13,29 +12,42 @@ import org.icepear.echarts.origin.util.SymbolOptionMixin;
 
 /**
  * https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/chart/line/LineSeries.ts#L73
- * https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/export/option.ts#L181
  */
-public interface LineSeriesOption
-        extends SeriesOption, LineStateOption, SeriesOnCartesianOptionMixin, SeriesOnPolarOptionMixin,
-        SeriesStackOptionMixin, SeriesSamplingOptionMixin, SymbolOptionMixin, SeriesEncodeOptionMixin,
-        SeriesInjectedOption {
-    LineSeriesOption setClip(Boolean clip);
+public interface LineSeriesOption extends SeriesOption, LineStateOption, SeriesOnCartesianOptionMixin, SeriesOnPolarOptionMixin, SeriesStackOptionMixin, SeriesSamplingOptionMixin, SymbolOptionMixin, SeriesEncodeOptionMixin {
 
-    LineSeriesOption setLineStyle(LineStyleOption lineStyle);
+	LineSeriesOption setType(String type);
 
-    LineSeriesOption setAreaStyle(AreaStyleOption areaStyle);
+	LineSeriesOption setCoordinateSystem(String coordinateSystem);
 
-    LineSeriesOption setStep(String step);
+	LineSeriesOption setClip(Boolean clip);
 
-    LineSeriesOption setSmooth(Boolean smooth);
+	LineSeriesOption setLabel(SeriesLabelOption label);
 
-    LineSeriesOption setSmoothMonotone(String smoothMonotone);
+	LineSeriesOption setEndLabel(Object endLabel);
 
-    LineSeriesOption setConnectNulls(Boolean connectNulls);
+	LineSeriesOption setLineStyle(LineStyleOption lineStyle);
 
-    LineSeriesOption setShowSymbol(Boolean showSymbol);
+	LineSeriesOption setAreaStyle(Object areaStyle);
 
-    LineSeriesOption setShowAllSymbol(Boolean showAllSymbol);
+	LineSeriesOption setStep(String step);
 
-    LineSeriesOption setTriggerLineEvent(Boolean triggerLineEvent);
+	LineSeriesOption setStep(Boolean step);
+
+	LineSeriesOption setSmooth(Number smooth);
+
+	LineSeriesOption setSmooth(Boolean smooth);
+
+	LineSeriesOption setSmoothMonotone(String smoothMonotone);
+
+	LineSeriesOption setConnectNulls(Boolean connectNulls);
+
+	LineSeriesOption setShowSymbol(Boolean showSymbol);
+
+	LineSeriesOption setShowAllSymbol(String showAllSymbol);
+
+	LineSeriesOption setShowAllSymbol(Boolean showAllSymbol);
+
+	LineSeriesOption setData(Object[] data);
+
+	LineSeriesOption setTriggerLineEvent(Boolean triggerLineEvent);
 }

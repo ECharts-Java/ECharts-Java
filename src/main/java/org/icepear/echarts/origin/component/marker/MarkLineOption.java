@@ -4,14 +4,33 @@ import org.icepear.echarts.origin.util.StatesOptionMixin;
 
 /**
  * https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/component/marker/MarkLineModel.ts#L83
+ * https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/component/marker/MarkLineModel.ts#L76
  */
 public interface MarkLineOption extends MarkerOption, MarkLineStateOption, StatesOptionMixin {
-    // TODO: We can simply extends SymbolOptionMixin just like SymbolOptionMixin
-    MarkLineOption setSymbol(String symbol);
 
-    MarkLineOption setSymbolSize(Number symbolSize);
+	MarkLineOption setMainType(String mainType);
 
-    MarkLineOption setSymbolRotate(Number symbolRotate);
+	MarkLineOption setSymbol(String[] symbol);
 
-    MarkLineOption setSymbolOffset(Number symbolOffset);
+	MarkLineOption setSymbol(String symbol);
+
+	MarkLineOption setSymbolSize(Number[] symbolSize);
+
+	MarkLineOption setSymbolSize(Number symbolSize);
+
+	MarkLineOption setSymbolRotate(Number[] symbolRotate);
+
+	MarkLineOption setSymbolRotate(Number symbolRotate);
+
+	MarkLineOption setSymbolOffset(String[] symbolOffset);
+
+	MarkLineOption setSymbolOffset(Number[] symbolOffset);
+
+	MarkLineOption setSymbolOffset(String symbolOffset);
+
+	MarkLineOption setSymbolOffset(Number symbolOffset);
+
+	MarkLineOption setPrecision(Number precision);
+
+	MarkLineOption setData(MarkLineDataItemOption[] data);
 }

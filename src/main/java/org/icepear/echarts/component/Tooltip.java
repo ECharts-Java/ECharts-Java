@@ -1,87 +1,147 @@
 package org.icepear.echarts.component;
 
-import java.util.List;
-
-import org.icepear.echarts.origin.component.axisPointer.AxisPointerOption;
-import org.icepear.echarts.origin.component.tooltip.TooltipOption;
-
-import lombok.experimental.Accessors;
+import lombok.AccessLevel;
 import lombok.Data;
+import lombok.Setter;
+import lombok.experimental.Accessors;
+
+import org.icepear.echarts.origin.component.tooltip.TooltipOption;
 
 @Accessors(chain=true)
 @Data
 public class Tooltip implements TooltipOption {
-    private AxisPointerOption axisPointer;
 
-    private Boolean showContent;
+	private Boolean show;
 
-    private String trigger;
+	private String triggerOn;
 
-    private String displayMode;
+	private Boolean alwaysShowContent;
 
-    private String renderMode;
+	@Setter(AccessLevel.NONE)
+	private Object formatter;
 
-    private Boolean appendToBody;
+	public Tooltip setFormatter(String formatter) {
+		this.formatter = formatter;
+		return this;
+	}
 
-    private String className;
+	public Tooltip setFormatter(Object formatter) {
+		this.formatter = formatter;
+		return this;
+	}
 
-    private Object order;
+	@Setter(AccessLevel.NONE)
+	private Object position;
 
-    private Boolean show;
+	public Tooltip setPosition(String[] position) {
+		this.position = position;
+		return this;
+	}
 
-    private String triggerOn;
+	public Tooltip setPosition(Number[] position) {
+		this.position = position;
+		return this;
+	}
 
-    private Boolean alwaysShowContent;
+	public Tooltip setPosition(Object position) {
+		this.position = position;
+		return this;
+	}
 
-    private String formatter;
+	private Boolean confine;
 
-    private Object position;
+	private String align;
 
-    private Boolean confine;
+	private String verticalAlign;
 
-    private Object align;
+	private Number showDelay;
 
-    private Object verticalAlign;
+	private Number hideDelay;
 
-    private Number showDelay;
+	private Number transitionDuration;
 
-    private Number hideDelay;
+	private Boolean enterable;
 
-    private Number transitionDuration;
+	private String backgroundColor;
 
-    private Boolean enterable;
+	private String borderColor;
 
-    private String backgroundColor;
+	private Number borderRadius;
 
-    private String borderColor;
+	private Number borderWidth;
 
-    private Number borderRadius;
+	private Number shadowBlur;
 
-    private Number borderWidth;
+	private String shadowColor;
 
-    private Number shadowBlur;
+	private Number shadowOffsetX;
 
-    private String shadowColor;
+	private Number shadowOffsetY;
 
-    private Number shadowOffsetX;
+	@Setter(AccessLevel.NONE)
+	private Object padding;
 
-    private Number shadowOffsetY;
+	public Tooltip setPadding(Number[] padding) {
+		this.padding = padding;
+		return this;
+	}
 
-    private List<Number> padding;
+	public Tooltip setPadding(Number padding) {
+		this.padding = padding;
+		return this;
+	}
 
-    private String extraCssText;
+	private String extraCssText;
 
-    private Object textStyle;
+	private Object textStyle;
 
-    private String mainType;
+	private String mainType;
 
-    private String type;
+	private String type;
 
-    private String id;
+	@Setter(AccessLevel.NONE)
+	private Object id;
 
-    private String name;
+	public Tooltip setId(String id) {
+		this.id = id;
+		return this;
+	}
 
-    private Number z;
+	public Tooltip setId(Number id) {
+		this.id = id;
+		return this;
+	}
 
-    private Number zlevel;
+	@Setter(AccessLevel.NONE)
+	private Object name;
+
+	public Tooltip setName(String name) {
+		this.name = name;
+		return this;
+	}
+
+	public Tooltip setName(Number name) {
+		this.name = name;
+		return this;
+	}
+
+	private Number z;
+
+	private Number zlevel;
+
+	private TooltipAxisPointer axisPointer;
+
+	private Boolean showContent;
+
+	private String trigger;
+
+	private String displayMode;
+
+	private String renderMode;
+
+	private Boolean appendToBody;
+
+	private String className;
+
+	private String order;
 }

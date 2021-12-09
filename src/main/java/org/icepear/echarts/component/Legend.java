@@ -1,112 +1,277 @@
 package org.icepear.echarts.component;
 
-import java.util.List;
 import java.util.Map;
 
-import org.icepear.echarts.origin.component.legend.LegendOption;
-import org.icepear.echarts.origin.component.tooltip.TooltipOption;
-import org.icepear.echarts.type.BoxLength;
-
-import lombok.experimental.Accessors;
+import lombok.AccessLevel;
 import lombok.Data;
+import lombok.Setter;
+import lombok.experimental.Accessors;
+
+import org.icepear.echarts.origin.component.legend.LegendOption;
+import org.icepear.echarts.origin.util.LabelOption;
 
 @Accessors(chain=true)
 @Data
 public class Legend implements LegendOption {
-    private Boolean show;
 
-    private String orient;
+	private String mainType;
 
-    private String align;
+	private String type;
 
-    private String backgroundColor;
+	@Setter(AccessLevel.NONE)
+	private Object id;
 
-    private List<Number> borderRadius;
+	public Legend setId(String id) {
+		this.id = id;
+		return this;
+	}
 
-    private List<Number> padding;
+	public Legend setId(Number id) {
+		this.id = id;
+		return this;
+	}
 
-    private Number itemGap;
+	@Setter(AccessLevel.NONE)
+	private Object name;
 
-    private Number itemWidth;
+	public Legend setName(String name) {
+		this.name = name;
+		return this;
+	}
 
-    private Number itemHeight;
+	public Legend setName(Number name) {
+		this.name = name;
+		return this;
+	}
 
-    private String selectedMode;
+	private Number z;
 
-    private Map<String, Boolean> selected;
+	private Number zlevel;
 
-    private Object selector;
+	private String icon;
 
-    private Object selectorLabel;
+	private String inactiveColor;
 
-    private Object emphasis;
+	private String inactiveBorderColor;
 
-    private String selectorPosition;
+	@Setter(AccessLevel.NONE)
+	private Object inactiveBorderWidth;
 
-    private Number selectorItemGap;
+	public Legend setInactiveBorderWidth(String inactiveBorderWidth) {
+		this.inactiveBorderWidth = inactiveBorderWidth;
+		return this;
+	}
 
-    private Number selectorButtonGap;
+	public Legend setInactiveBorderWidth(Number inactiveBorderWidth) {
+		this.inactiveBorderWidth = inactiveBorderWidth;
+		return this;
+	}
 
-    private List<Object> data;
+	private String formatter;
 
-    private TooltipOption tooltip;
+	private Object itemStyle;
 
-    private String mainType;
+	private Object lineStyle;
 
-    private String type;
+	private LabelOption textStyle;
 
-    private String id;
+	@Setter(AccessLevel.NONE)
+	private Object symbolRotate;
 
-    private String name;
+	public Legend setSymbolRotate(String symbolRotate) {
+		this.symbolRotate = symbolRotate;
+		return this;
+	}
 
-    private Number z;
+	public Legend setSymbolRotate(Number symbolRotate) {
+		this.symbolRotate = symbolRotate;
+		return this;
+	}
 
-    private Number zlevel;
+	private Boolean symbolKeepAspect;
 
-    private String icon;
+	@Setter(AccessLevel.NONE)
+	private Object width;
 
-    private String inactiveColor;
+	public Legend setWidth(String width) {
+		this.width = width;
+		return this;
+	}
 
-    private String inactiveBorderColor;
+	public Legend setWidth(Number width) {
+		this.width = width;
+		return this;
+	}
 
-    private Number inactiveBorderWidth;
+	@Setter(AccessLevel.NONE)
+	private Object height;
 
-    private String formatter;
+	public Legend setHeight(String height) {
+		this.height = height;
+		return this;
+	}
 
-    private Object itemStyle;
+	public Legend setHeight(Number height) {
+		this.height = height;
+		return this;
+	}
 
-    private Object lineStyle;
+	@Setter(AccessLevel.NONE)
+	private Object top;
 
-    private Object textStyle;
+	public Legend setTop(String top) {
+		this.top = top;
+		return this;
+	}
 
-    private String symbolRotate;
+	public Legend setTop(Number top) {
+		this.top = top;
+		return this;
+	}
 
-    @Deprecated
-    private Boolean symbolKeepAspect;
+	@Setter(AccessLevel.NONE)
+	private Object right;
 
-    private BoxLength width;
+	public Legend setRight(String right) {
+		this.right = right;
+		return this;
+	}
 
-    private BoxLength height;
+	public Legend setRight(Number right) {
+		this.right = right;
+		return this;
+	}
 
-    private BoxLength top;
+	@Setter(AccessLevel.NONE)
+	private Object bottom;
 
-    private BoxLength right;
+	public Legend setBottom(String bottom) {
+		this.bottom = bottom;
+		return this;
+	}
 
-    private BoxLength bottom;
+	public Legend setBottom(Number bottom) {
+		this.bottom = bottom;
+		return this;
+	}
 
-    private BoxLength left;
+	@Setter(AccessLevel.NONE)
+	private Object left;
 
-    private String borderColor;
+	public Legend setLeft(String left) {
+		this.left = left;
+		return this;
+	}
 
-    private Number borderWidth;
+	public Legend setLeft(Number left) {
+		this.left = left;
+		return this;
+	}
 
-    private String borderType;
+	private String borderColor;
 
-    private Object borderCap;
+	private Number borderWidth;
 
-    private Object borderJoin;
+	private String borderType;
 
-    private Number borderDashOffset;
+	private Object borderCap;
 
-    private Number borderMiterLimit;
+	private Object borderJoin;
+
+	private Number borderDashOffset;
+
+	private Number borderMiterLimit;
+
+	private Boolean show;
+
+	private Object orient;
+
+	private String align;
+
+	private String backgroundColor;
+
+	@Setter(AccessLevel.NONE)
+	private Object borderRadius;
+
+	public Legend setBorderRadius(Number[] borderRadius) {
+		this.borderRadius = borderRadius;
+		return this;
+	}
+
+	public Legend setBorderRadius(Number borderRadius) {
+		this.borderRadius = borderRadius;
+		return this;
+	}
+
+	@Setter(AccessLevel.NONE)
+	private Object padding;
+
+	public Legend setPadding(Number[] padding) {
+		this.padding = padding;
+		return this;
+	}
+
+	public Legend setPadding(Number padding) {
+		this.padding = padding;
+		return this;
+	}
+
+	private Number itemGap;
+
+	private Number itemWidth;
+
+	private Number itemHeight;
+
+	@Setter(AccessLevel.NONE)
+	private Object selectedMode;
+
+	public Legend setSelectedMode(String selectedMode) {
+		this.selectedMode = selectedMode;
+		return this;
+	}
+
+	public Legend setSelectedMode(Boolean selectedMode) {
+		this.selectedMode = selectedMode;
+		return this;
+	}
+
+	private Map<String, Boolean> selected;
+
+	@Setter(AccessLevel.NONE)
+	private Object selector;
+
+	public Legend setSelector(Boolean selector) {
+		this.selector = selector;
+		return this;
+	}
+
+	public Legend setSelector(Object[] selector) {
+		this.selector = selector;
+		return this;
+	}
+
+	private LabelOption selectorLabel;
+
+	private Object emphasis;
+
+	private String selectorPosition;
+
+	private Number selectorItemGap;
+
+	private Number selectorButtonGap;
+
+	@Setter(AccessLevel.NONE)
+	private Object data;
+
+	public Legend setData(String[] data) {
+		this.data = data;
+		return this;
+	}
+
+	public Legend setData(Object[] data) {
+		this.data = data;
+		return this;
+	}
+
+	private Object tooltip;
 }

@@ -3,27 +3,33 @@ package org.icepear.echarts.origin.chart.bar;
 import org.icepear.echarts.origin.util.SeriesOnCartesianOptionMixin;
 import org.icepear.echarts.origin.util.SeriesOnPolarOptionMixin;
 import org.icepear.echarts.origin.util.SeriesOption;
-import org.icepear.echarts.type.BoxLength;
 
 /**
  * https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/chart/bar/BaseBarSeries.ts#L34
  */
 public interface BaseBarSeriesOption extends SeriesOption, SeriesOnCartesianOptionMixin, SeriesOnPolarOptionMixin {
-    BaseBarSeriesOption setBarMinHeight(BoxLength barMinHeight);
 
-    BaseBarSeriesOption setBarMinAngle(Number barMinAngle);
+	BaseBarSeriesOption setBarMinHeight(Number barMinHeight);
 
-    BaseBarSeriesOption setBarMaxWidth(BoxLength barMaxWidth);
+	BaseBarSeriesOption setBarMinAngle(Number barMinAngle);
 
-    BaseBarSeriesOption setBarMinWidth(BoxLength barMinWidth);
+	BaseBarSeriesOption setBarMaxWidth(Number barMaxWidth);
 
-    BaseBarSeriesOption setBarWidth(BoxLength barWidth);
+	BaseBarSeriesOption setBarMinWidth(Number barMinWidth);
 
-    BaseBarSeriesOption setBarGap(Number barGap);
+	BaseBarSeriesOption setBarWidth(String barWidth);
 
-    BaseBarSeriesOption setBarCategoryGap(Number barCategoryGap);
+	BaseBarSeriesOption setBarWidth(Number barWidth);
 
-    BaseBarSeriesOption setLarge(Boolean large);
-    
-    BaseBarSeriesOption setLargeThreshold(Number largeThreshold);
+	BaseBarSeriesOption setBarGap(String barGap);
+
+	BaseBarSeriesOption setBarGap(Number barGap);
+
+	BaseBarSeriesOption setBarCategoryGap(String barCategoryGap);
+
+	BaseBarSeriesOption setBarCategoryGap(Number barCategoryGap);
+
+	BaseBarSeriesOption setLarge(Boolean large);
+
+	BaseBarSeriesOption setLargeThreshold(Number largeThreshold);
 }

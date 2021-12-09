@@ -4,7 +4,7 @@ import static org.junit.Assert.assertEquals;
 
 import java.io.InputStreamReader;
 import java.io.Reader;
-import java.util.Arrays;
+import java.util.HashMap;
 
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
@@ -24,16 +24,16 @@ import org.icepear.echarts.component.Title;
 import org.icepear.echarts.component.Toolbox;
 import org.icepear.echarts.component.ToolboxDataViewFeature;
 import org.icepear.echarts.component.ToolboxDataZoomFeature;
-import org.icepear.echarts.component.ToolboxFeatureMap;
 import org.icepear.echarts.component.ToolboxMagicTypeFeature;
 import org.icepear.echarts.component.ToolboxRestoreFeature;
 import org.icepear.echarts.component.ToolboxSaveAsImageFeature;
 import org.icepear.echarts.component.Tooltip;
 import org.icepear.echarts.component.ValueAxis;
 import org.icepear.echarts.component.ValueAxisLabel;
+import org.icepear.echarts.origin.component.marker.MarkLineDataItemOption;
+import org.icepear.echarts.origin.component.toolbox.ToolboxFeatureOption;
+import org.icepear.echarts.origin.util.SeriesOption;
 import org.icepear.echarts.serializer.EChartSerializer;
-import org.icepear.echarts.type.AxisIndex;
-import org.icepear.echarts.type.EChartsNumber;
 import org.junit.Test;
 
 public class TemperatureChangeInTheComingWeekTest {
@@ -47,17 +47,20 @@ public class TemperatureChangeInTheComingWeekTest {
 
         Toolbox toolbox = new Toolbox()
                 .setShow(true)
-                .setFeature(new ToolboxFeatureMap()
-                        .setDataZoom(new ToolboxDataZoomFeature().setYAxisIndex(new AxisIndex("none")))
-                        .setDataView(new ToolboxDataViewFeature().setReadOnly(false))
-                        .setMagicType(new ToolboxMagicTypeFeature().setType(Arrays.asList("line", "bar")))
-                        .setRestore(new ToolboxRestoreFeature())
-                        .setSaveAsImage(new ToolboxSaveAsImageFeature()));
+                .setFeature(new HashMap<String, ToolboxFeatureOption>() {
+                    {
+                        put("dataZoom", new ToolboxDataZoomFeature().setYAxisIndex("none"));
+                        put("dataView", new ToolboxDataViewFeature().setReadOnly(false));
+                        put("magicType", new ToolboxMagicTypeFeature().setType(new String[] { "line", "bar" }));
+                        put("restore", new ToolboxRestoreFeature());
+                        put("saveAsImage", new ToolboxSaveAsImageFeature());
+                    }
+                });
 
         CategoryAxis xAxis = new CategoryAxis()
                 .setType("category")
                 .setBoundaryGap(false)
-                .setData(Arrays.asList("Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"));
+                .setData(new String[] { "Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun" });
 
         ValueAxis yAxis = new ValueAxis()
                 .setType("value")
@@ -66,48 +69,49 @@ public class TemperatureChangeInTheComingWeekTest {
         LineSeries series1 = new LineSeries()
                 .setName("Highest")
                 .setType("line")
-                .setData(Arrays.asList(10, 11, 13, 11, 12, 12, 9))
+                .setData(new Number[] { 10, 11, 13, 11, 12, 12, 9 })
                 .setMarkPoint(new MarkPoint()
-                        .setData(Arrays.asList(
+                        .setData(new MarkPointDataItem[] {
                                 new MarkPointDataItem()
                                         .setType("max")
                                         .setName("Max"),
                                 new MarkPointDataItem()
                                         .setType("min")
-                                        .setName("Min"))))
+                                        .setName("Min") }))
                 .setMarkLine(new MarkLine()
-                        .setData(Arrays.asList(
+                        .setData(new MarkLine1DDataItem[] {
                                 new MarkLine1DDataItem()
                                         .setType("average")
-                                        .setName("Avg"))));
+                                        .setName("Avg") }));
 
         LineSeries series2 = new LineSeries()
                 .setName("Lowest")
                 .setType("line")
-                .setData(Arrays.asList(1, -2, 2, 5, 3, 2, 0))
+                .setData(new Number[] { 1, -2, 2, 5, 3, 2, 0 })
                 .setMarkPoint(new MarkPoint()
-                        .setData(Arrays.asList(new MarkPointDataItem()
-                                .setName("周最低")
-                                .setValue(-2)
-                                .setXAxis(new EChartsNumber(1))
-                                .setYAxis(new EChartsNumber(-1.5)))))
+                        .setData(new MarkPointDataItem[] {
+                                new MarkPointDataItem()
+                                        .setName("周最低")
+                                        .setValue(-2)
+                                        .setXAxis(1)
+                                        .setYAxis(-1.5) }))
                 .setMarkLine(new MarkLine()
-                        .setData(Arrays.asList(
+                        .setData(new MarkLineDataItemOption[] {
                                 new MarkLine1DDataItem()
                                         .setType("average")
                                         .setName("Avg"),
                                 new MarkLine2DDataItem()
                                         .setStartPoint(new MarkLine2DDataItemDim()
                                                 .setSymbol("none")
-                                                .setX(new EChartsNumber("90%"))
-                                                .setYAxis(new EChartsNumber("max")))
+                                                .setX("90%")
+                                                .setYAxis("max"))
                                         .setEndPoint(new MarkLine2DDataItemDim()
                                                 .setSymbol("circle")
                                                 .setLabel(new SeriesLineLabel()
                                                         .setPosition("start")
                                                         .setFormatter("Max"))
                                                 .setType("max")
-                                                .setName("最高点")))));
+                                                .setName("最高点")) }));
 
         Option option = new Option()
                 .setTitle(title)
@@ -116,7 +120,7 @@ public class TemperatureChangeInTheComingWeekTest {
                 .setToolbox(toolbox)
                 .setXAxis(xAxis)
                 .setYAxis(yAxis)
-                .setSeries(Arrays.asList(series1, series2));
+                .setSeries(new SeriesOption[] { series1, series2 });
 
         Reader reader = new InputStreamReader(
                 this.getClass().getResourceAsStream("/line/temperature-change-in-the-coming-week.json"));

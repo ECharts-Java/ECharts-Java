@@ -4,44 +4,43 @@ import static org.junit.Assert.assertEquals;
 
 import java.io.InputStreamReader;
 import java.io.Reader;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
 
-import org.icepear.echarts.component.AxisPointer;
 import org.icepear.echarts.component.Legend;
 import org.icepear.echarts.component.LineSeries;
 import org.icepear.echarts.component.Option;
 import org.icepear.echarts.component.Polar;
 import org.icepear.echarts.component.Title;
 import org.icepear.echarts.component.Tooltip;
+import org.icepear.echarts.component.TooltipAxisPointer;
 import org.icepear.echarts.component.ValueAngleAxis;
 import org.icepear.echarts.component.ValueRadiusAxis;
+import org.icepear.echarts.origin.util.SeriesOption;
 import org.icepear.echarts.serializer.EChartSerializer;
 import org.junit.Test;
 
 public class TwoValueAxesInPolar1Test {
     @Test
     public void testTwoValueAxesInPolar1() {
-        List<List<Double>> data = new ArrayList<>();
+        Number[][] data = new Number[101][2];
         for (int i = 0; i <= 100; i++) {
             Double theta = (i / 100.0) * 360;
             Double r = 5 * (1 + Math.sin((theta / 180) * Math.PI));
-            data.add(Arrays.asList(r, theta));
+            data[i][0] = r;
+            data[i][1] = theta;
         }
 
         Title title = new Title().setText("Two Value-Axes in Polar");
 
-        Legend legend = new Legend().setData(Arrays.asList("line"));
+        Legend legend = new Legend().setData(new String[] { "line" });
 
         Polar polar = new Polar();
 
         Tooltip tooltip = new Tooltip()
                 .setTrigger("axis")
-                .setAxisPointer(new AxisPointer().setType("cross"));
+                .setAxisPointer(new TooltipAxisPointer().setType("cross"));
 
         ValueAngleAxis angleAxis = new ValueAngleAxis()
                 .setType("value")
@@ -62,7 +61,7 @@ public class TwoValueAxesInPolar1Test {
                 .setTooltip(tooltip)
                 .setAngleAxis(angleAxis)
                 .setRadiusAxis(radiusAxis)
-                .setSeries(Arrays.asList(series));
+                .setSeries(new SeriesOption[] { series });
 
         Reader reader = new InputStreamReader(
                 this.getClass().getResourceAsStream("/line/two-value-axes-in-polar-1.json"));

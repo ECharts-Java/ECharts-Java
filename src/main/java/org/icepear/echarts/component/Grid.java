@@ -1,56 +1,145 @@
 package org.icepear.echarts.component;
 
-import org.icepear.echarts.origin.component.tooltip.TooltipOption;
-import org.icepear.echarts.origin.coord.cartesian.GridOption;
-import org.icepear.echarts.type.BoxLength;
-
-import lombok.experimental.Accessors;
+import lombok.AccessLevel;
 import lombok.Data;
+import lombok.Setter;
+import lombok.experimental.Accessors;
+
+import org.icepear.echarts.origin.coord.cartesian.GridOption;
 
 @Accessors(chain=true)
 @Data
 public class Grid implements GridOption {
-    private Boolean show;
 
-    private Boolean containLabel;
+	private String mainType;
 
-    private String backgroundColor;
+	private String type;
 
-    private Number borderWidth;
+	@Setter(AccessLevel.NONE)
+	private Object id;
 
-    private String borderColor;
+	public Grid setId(String id) {
+		this.id = id;
+		return this;
+	}
 
-    private TooltipOption tooltip;
+	public Grid setId(Number id) {
+		this.id = id;
+		return this;
+	}
 
-    private String mainType;
+	@Setter(AccessLevel.NONE)
+	private Object name;
 
-    private String type;
+	public Grid setName(String name) {
+		this.name = name;
+		return this;
+	}
 
-    private String id;
+	public Grid setName(Number name) {
+		this.name = name;
+		return this;
+	}
 
-    private String name;
+	private Number z;
 
-    private Number z;
+	private Number zlevel;
 
-    private Number zlevel;
+	@Setter(AccessLevel.NONE)
+	private Object width;
 
-    private BoxLength width;
+	public Grid setWidth(String width) {
+		this.width = width;
+		return this;
+	}
 
-    private BoxLength height;
+	public Grid setWidth(Number width) {
+		this.width = width;
+		return this;
+	}
 
-    private BoxLength top;
+	@Setter(AccessLevel.NONE)
+	private Object height;
 
-    private BoxLength right;
+	public Grid setHeight(String height) {
+		this.height = height;
+		return this;
+	}
 
-    private BoxLength bottom;
+	public Grid setHeight(Number height) {
+		this.height = height;
+		return this;
+	}
 
-    private BoxLength left;
+	@Setter(AccessLevel.NONE)
+	private Object top;
 
-    private Number shadowBlur;
+	public Grid setTop(String top) {
+		this.top = top;
+		return this;
+	}
 
-    private String shadowColor;
+	public Grid setTop(Number top) {
+		this.top = top;
+		return this;
+	}
 
-    private Number shadowOffsetX;
+	@Setter(AccessLevel.NONE)
+	private Object right;
 
-    private Number shadowOffsetY;
+	public Grid setRight(String right) {
+		this.right = right;
+		return this;
+	}
+
+	public Grid setRight(Number right) {
+		this.right = right;
+		return this;
+	}
+
+	@Setter(AccessLevel.NONE)
+	private Object bottom;
+
+	public Grid setBottom(String bottom) {
+		this.bottom = bottom;
+		return this;
+	}
+
+	public Grid setBottom(Number bottom) {
+		this.bottom = bottom;
+		return this;
+	}
+
+	@Setter(AccessLevel.NONE)
+	private Object left;
+
+	public Grid setLeft(String left) {
+		this.left = left;
+		return this;
+	}
+
+	public Grid setLeft(Number left) {
+		this.left = left;
+		return this;
+	}
+
+	private Number shadowBlur;
+
+	private String shadowColor;
+
+	private Number shadowOffsetX;
+
+	private Number shadowOffsetY;
+
+	private Boolean show;
+
+	private Boolean containLabel;
+
+	private String backgroundColor;
+
+	private Number borderWidth;
+
+	private String borderColor;
+
+	private Object tooltip;
 }

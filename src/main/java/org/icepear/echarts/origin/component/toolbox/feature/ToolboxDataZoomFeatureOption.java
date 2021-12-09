@@ -1,25 +1,28 @@
 package org.icepear.echarts.origin.component.toolbox.feature;
 
-import java.util.List;
-
 import org.icepear.echarts.origin.component.toolbox.ToolboxFeatureOption;
-import org.icepear.echarts.type.AxisIndex;
+import org.icepear.echarts.origin.util.ItemStyleOption;
 
 /**
  * https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/component/toolbox/feature/DataZoom.ts#L57
  */
 public interface ToolboxDataZoomFeatureOption extends ToolboxFeatureOption {
-    ToolboxDataZoomFeatureOption setType(List<String> type);
 
-    ToolboxDataZoomFeatureOption setFilterMode(Object filterMode);
+	ToolboxDataZoomFeatureOption setType(Object[] type);
 
-    ToolboxDataZoomFeatureOption setXAxisIndex(AxisIndex xAxisIndex);
+	ToolboxDataZoomFeatureOption setIcon(String icon);
 
-    ToolboxDataZoomFeatureOption setYAxisIndex(AxisIndex yAxisIndex);
+	ToolboxDataZoomFeatureOption setTitle(String title);
 
-    ToolboxDataZoomFeatureOption setXAxisId(Object xAxisId);
+	ToolboxDataZoomFeatureOption setFilterMode(String filterMode);
 
-    ToolboxDataZoomFeatureOption setYAxisId(Object yAxisId);
+	ToolboxDataZoomFeatureOption setXAxisIndex(Object xAxisIndex);
 
-    ToolboxDataZoomFeatureOption setBrushStyle(Object brushStyle);
+	ToolboxDataZoomFeatureOption setYAxisIndex(Object yAxisIndex);
+
+	ToolboxDataZoomFeatureOption setXAxisId(Object xAxisId);
+
+	ToolboxDataZoomFeatureOption setYAxisId(Object yAxisId);
+
+	ToolboxDataZoomFeatureOption setBrushStyle(ItemStyleOption brushStyle);
 }

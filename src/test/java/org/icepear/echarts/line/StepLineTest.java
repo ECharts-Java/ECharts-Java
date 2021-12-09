@@ -4,7 +4,7 @@ import static org.junit.Assert.assertEquals;
 
 import java.io.InputStreamReader;
 import java.io.Reader;
-import java.util.Arrays;
+import java.util.HashMap;
 
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
@@ -16,12 +16,12 @@ import org.icepear.echarts.component.LineSeries;
 import org.icepear.echarts.component.Option;
 import org.icepear.echarts.component.Title;
 import org.icepear.echarts.component.Toolbox;
-import org.icepear.echarts.component.ToolboxFeatureMap;
 import org.icepear.echarts.component.ToolboxSaveAsImageFeature;
 import org.icepear.echarts.component.Tooltip;
 import org.icepear.echarts.component.ValueAxis;
+import org.icepear.echarts.origin.component.toolbox.ToolboxFeatureOption;
+import org.icepear.echarts.origin.util.SeriesOption;
 import org.icepear.echarts.serializer.EChartSerializer;
-import org.icepear.echarts.type.BoxLength;
 import org.junit.Test;
 
 public class StepLineTest {
@@ -32,21 +32,24 @@ public class StepLineTest {
         Tooltip tooltip = new Tooltip().setTrigger("axis");
 
         Legend legend = new Legend()
-                .setData(Arrays.asList("Step Start", "Step Middle", "Step End"));
+                .setData(new String[] { "Step Start", "Step Middle", "Step End" });
 
         Grid grid = new Grid()
-                .setLeft(new BoxLength("3%"))
-                .setRight(new BoxLength("4%"))
-                .setBottom(new BoxLength("3%"))
+                .setLeft("3%")
+                .setRight("4%")
+                .setBottom("3%")
                 .setContainLabel(true);
 
         Toolbox toolbox = new Toolbox()
-                .setFeature(new ToolboxFeatureMap()
-                        .setSaveAsImage(new ToolboxSaveAsImageFeature()));
+                .setFeature(new HashMap<String, ToolboxFeatureOption>() {
+                    {
+                        put("saveAsImage", new ToolboxSaveAsImageFeature());
+                    }
+                });
 
         CategoryAxis xAxis = new CategoryAxis()
                 .setType("category")
-                .setData(Arrays.asList("Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"));
+                .setData(new String[] { "Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun" });
 
         ValueAxis yAxis = new ValueAxis().setType("value");
 
@@ -54,18 +57,18 @@ public class StepLineTest {
                 .setName("Step Start")
                 .setType("line")
                 .setStep("start")
-                .setData(Arrays.asList(120, 132, 101, 134, 90, 230, 210));
+                .setData(new Number[] { 120, 132, 101, 134, 90, 230, 210 });
 
         LineSeries series2 = new LineSeries().setName("Step Middle")
                 .setType("line")
                 .setStack("middle")
-                .setData(Arrays.asList(220, 282, 201, 234, 290, 430, 410));
+                .setData(new Number[] { 220, 282, 201, 234, 290, 430, 410 });
 
         LineSeries series3 = new LineSeries()
                 .setName("Step End")
                 .setType("line")
                 .setStack("end")
-                .setData(Arrays.asList(450, 432, 401, 454, 590, 530, 510));
+                .setData(new Number[] { 450, 432, 401, 454, 590, 530, 510 });
 
         Option option = new Option()
                 .setTitle(title)
@@ -75,7 +78,7 @@ public class StepLineTest {
                 .setToolbox(toolbox)
                 .setXAxis(xAxis)
                 .setYAxis(yAxis)
-                .setSeries(Arrays.asList(series1, series2, series3));
+                .setSeries(new SeriesOption[] { series1, series2, series3 });
 
         Reader reader = new InputStreamReader(
                 this.getClass().getResourceAsStream("/line/step-line.json"));

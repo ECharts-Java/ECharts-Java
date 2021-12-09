@@ -6,23 +6,28 @@ import org.icepear.echarts.origin.component.toolbox.ToolboxFeatureOption;
  * https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/component/toolbox/feature/DataView.ts#L296
  */
 public interface ToolboxDataViewFeatureOption extends ToolboxFeatureOption {
-    ToolboxDataViewFeatureOption setReadOnly(Boolean readOnly);
 
-    ToolboxDataViewFeatureOption setOptionToContent(String optionToContent);
+	ToolboxDataViewFeatureOption setReadOnly(Boolean readOnly);
 
-    ToolboxDataViewFeatureOption setContentToOption(Object contentToOption);
+	ToolboxDataViewFeatureOption setOptionToContent(Object optionToContent);
 
-    ToolboxDataViewFeatureOption setLang(String lang);
+	ToolboxDataViewFeatureOption setContentToOption(Object contentToOption);
 
-    ToolboxDataViewFeatureOption setBackgroundColor(String backgroundColor);
+	ToolboxDataViewFeatureOption setIcon(String icon);
 
-    ToolboxDataViewFeatureOption setTextColor(String textColor);
+	ToolboxDataViewFeatureOption setTitle(String title);
 
-    ToolboxDataViewFeatureOption setTextareaColor(String textareaColor);
+	ToolboxDataViewFeatureOption setLang(String[] lang);
 
-    ToolboxDataViewFeatureOption setTextareaBorderColor(String textareaBorderColor);
+	ToolboxDataViewFeatureOption setBackgroundColor(String backgroundColor);
 
-    ToolboxDataViewFeatureOption setButtonColor(String buttonColor);
-    
-    ToolboxDataViewFeatureOption setButtonTextColor(String buttonTextColor);
+	ToolboxDataViewFeatureOption setTextColor(String textColor);
+
+	ToolboxDataViewFeatureOption setTextareaColor(String textareaColor);
+
+	ToolboxDataViewFeatureOption setTextareaBorderColor(String textareaBorderColor);
+
+	ToolboxDataViewFeatureOption setButtonColor(String buttonColor);
+
+	ToolboxDataViewFeatureOption setButtonTextColor(String buttonTextColor);
 }

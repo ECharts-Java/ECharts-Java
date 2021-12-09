@@ -1,24 +1,27 @@
 package org.icepear.echarts.origin.component.toolbox.feature;
 
-import java.util.List;
-
 import org.icepear.echarts.origin.component.toolbox.ToolboxFeatureOption;
 
 /**
  * https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/component/toolbox/feature/SaveAsImage.ts#L28
  */
 public interface ToolboxSaveAsImageFeatureOption extends ToolboxFeatureOption {
-    ToolboxSaveAsImageFeatureOption setType(String type);
 
-    ToolboxSaveAsImageFeatureOption setBackgroundColor(String backgroundColor);
+	ToolboxSaveAsImageFeatureOption setIcon(String icon);
 
-    ToolboxSaveAsImageFeatureOption setConnectedBackgroundColor(String connectedBackgroundColor);
+	ToolboxSaveAsImageFeatureOption setTitle(String title);
 
-    ToolboxSaveAsImageFeatureOption setName(String name);
+	ToolboxSaveAsImageFeatureOption setType(String type);
 
-    ToolboxSaveAsImageFeatureOption setExcludeComponents(List<String> excludeComponents);
+	ToolboxSaveAsImageFeatureOption setBackgroundColor(String backgroundColor);
 
-    ToolboxSaveAsImageFeatureOption setPixelRatio(Number pixelRatio);
+	ToolboxSaveAsImageFeatureOption setConnectedBackgroundColor(String connectedBackgroundColor);
 
-    ToolboxSaveAsImageFeatureOption setLang(List<String> lang);
+	ToolboxSaveAsImageFeatureOption setName(String name);
+
+	ToolboxSaveAsImageFeatureOption setExcludeComponents(String[] excludeComponents);
+
+	ToolboxSaveAsImageFeatureOption setPixelRatio(Number pixelRatio);
+
+	ToolboxSaveAsImageFeatureOption setLang(String[] lang);
 }

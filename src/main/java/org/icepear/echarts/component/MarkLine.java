@@ -1,70 +1,204 @@
 package org.icepear.echarts.component;
 
-import java.util.List;
+import lombok.AccessLevel;
+import lombok.Data;
+import lombok.Setter;
+import lombok.experimental.Accessors;
 
+import org.icepear.echarts.origin.component.marker.MarkLineDataItemOption;
 import org.icepear.echarts.origin.component.marker.MarkLineOption;
-import org.icepear.echarts.origin.component.marker.MarkerTooltipOption;
-import org.icepear.echarts.origin.util.EmphasisOption;
+import org.icepear.echarts.origin.util.ItemStyleOption;
 import org.icepear.echarts.origin.util.LineStyleOption;
 import org.icepear.echarts.origin.util.SeriesLineLabelOption;
-
-import lombok.experimental.Accessors;
-import lombok.Data;
 
 @Accessors(chain=true)
 @Data
 public class MarkLine implements MarkLineOption {
-    private String symbol;
 
-    private Number symbolSize;
+	private String mainType;
 
-    private Number symbolRotate;
+	private String type;
 
-    private Number symbolOffset;
+	@Setter(AccessLevel.NONE)
+	private Object id;
 
-    private Boolean silent;
+	public MarkLine setId(String id) {
+		this.id = id;
+		return this;
+	}
 
-    private List<Object> data;
+	public MarkLine setId(Number id) {
+		this.id = id;
+		return this;
+	}
 
-    private MarkerTooltipOption tooltip;
+	@Setter(AccessLevel.NONE)
+	private Object name;
 
-    private String mainType;
+	public MarkLine setName(String name) {
+		this.name = name;
+		return this;
+	}
 
-    private String type;
+	public MarkLine setName(Number name) {
+		this.name = name;
+		return this;
+	}
 
-    private String id;
+	private Number z;
 
-    private String name;
+	private Number zlevel;
 
-    private Number z;
+	private Boolean animation;
 
-    private Number zlevel;
+	private Number animationThreshold;
 
-    private String animation;
+	@Setter(AccessLevel.NONE)
+	private Object animationDuration;
 
-    private Number animationThreshold;
+	public MarkLine setAnimationDuration(Number animationDuration) {
+		this.animationDuration = animationDuration;
+		return this;
+	}
 
-    private Number animationDuration;
+	public MarkLine setAnimationDuration(Object animationDuration) {
+		this.animationDuration = animationDuration;
+		return this;
+	}
 
-    private String animationEasing;
+	private Object animationEasing;
 
-    private Number animationDelay;
+	@Setter(AccessLevel.NONE)
+	private Object animationDelay;
 
-    private Number animationDurationUpdate;
+	public MarkLine setAnimationDelay(Number animationDelay) {
+		this.animationDelay = animationDelay;
+		return this;
+	}
 
-    private String animationEasingUpdate;
+	public MarkLine setAnimationDelay(Object animationDelay) {
+		this.animationDelay = animationDelay;
+		return this;
+	}
 
-    private Number animationDelayUpdate;
+	@Setter(AccessLevel.NONE)
+	private Object animationDurationUpdate;
 
-    private LineStyleOption lineStyle;
+	public MarkLine setAnimationDurationUpdate(Number animationDurationUpdate) {
+		this.animationDurationUpdate = animationDurationUpdate;
+		return this;
+	}
 
-    private Object itemStyle;
+	public MarkLine setAnimationDurationUpdate(Object animationDurationUpdate) {
+		this.animationDurationUpdate = animationDurationUpdate;
+		return this;
+	}
 
-    private SeriesLineLabelOption label;
+	private Object animationEasingUpdate;
 
-    private EmphasisOption emphasis;
+	@Setter(AccessLevel.NONE)
+	private Object animationDelayUpdate;
 
-    private Object select;
+	public MarkLine setAnimationDelayUpdate(Number animationDelayUpdate) {
+		this.animationDelayUpdate = animationDelayUpdate;
+		return this;
+	}
 
-    private Object blur;
+	public MarkLine setAnimationDelayUpdate(Object animationDelayUpdate) {
+		this.animationDelayUpdate = animationDelayUpdate;
+		return this;
+	}
+
+	private Boolean silent;
+
+	@Setter(AccessLevel.NONE)
+	private Object data;
+
+	public MarkLine setData(Object[] data) {
+		this.data = data;
+		return this;
+	}
+
+	public MarkLine setData(MarkLineDataItemOption[] data) {
+		this.data = data;
+		return this;
+	}
+
+	private Object tooltip;
+
+	private LineStyleOption lineStyle;
+
+	private ItemStyleOption itemStyle;
+
+	private SeriesLineLabelOption label;
+
+	private Object emphasis;
+
+	private Object select;
+
+	private Object blur;
+
+	@Setter(AccessLevel.NONE)
+	private Object symbol;
+
+	public MarkLine setSymbol(String[] symbol) {
+		this.symbol = symbol;
+		return this;
+	}
+
+	public MarkLine setSymbol(String symbol) {
+		this.symbol = symbol;
+		return this;
+	}
+
+	@Setter(AccessLevel.NONE)
+	private Object symbolSize;
+
+	public MarkLine setSymbolSize(Number[] symbolSize) {
+		this.symbolSize = symbolSize;
+		return this;
+	}
+
+	public MarkLine setSymbolSize(Number symbolSize) {
+		this.symbolSize = symbolSize;
+		return this;
+	}
+
+	@Setter(AccessLevel.NONE)
+	private Object symbolRotate;
+
+	public MarkLine setSymbolRotate(Number[] symbolRotate) {
+		this.symbolRotate = symbolRotate;
+		return this;
+	}
+
+	public MarkLine setSymbolRotate(Number symbolRotate) {
+		this.symbolRotate = symbolRotate;
+		return this;
+	}
+
+	@Setter(AccessLevel.NONE)
+	private Object symbolOffset;
+
+	public MarkLine setSymbolOffset(String[] symbolOffset) {
+		this.symbolOffset = symbolOffset;
+		return this;
+	}
+
+	public MarkLine setSymbolOffset(Number[] symbolOffset) {
+		this.symbolOffset = symbolOffset;
+		return this;
+	}
+
+	public MarkLine setSymbolOffset(String symbolOffset) {
+		this.symbolOffset = symbolOffset;
+		return this;
+	}
+
+	public MarkLine setSymbolOffset(Number symbolOffset) {
+		this.symbolOffset = symbolOffset;
+		return this;
+	}
+
+	private Number precision;
 }

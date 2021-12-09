@@ -1,48 +1,60 @@
 package org.icepear.echarts.origin.util;
 
-import java.util.List;
 import java.util.Map;
+
+import org.icepear.echarts.origin.export.SeriesInjectedOption;
 
 /**
  * https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/util/types.ts#L1587
+ * https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/export/option.ts#L181
  */
-public interface SeriesOption
-        extends ComponentOption, AnimationOptionMixin, ColorPaletteOptionMixin, StatesOptionMixin {
-    SeriesOption setSilent(Boolean silent);
+public interface SeriesOption extends ComponentOption, AnimationOptionMixin, ColorPaletteOptionMixin, StatesOptionMixin, SeriesInjectedOption {
 
-    SeriesOption setBlendMode(String blendMode);
+	SeriesOption setMainType(String mainType);
 
-    SeriesOption setCursor(String cursor);
+	SeriesOption setSilent(Boolean silent);
 
-    SeriesOption setDataGroupId(String dataGroupId);
+	SeriesOption setBlendMode(String blendMode);
 
-    SeriesOption setData(List<?> data);
+	SeriesOption setCursor(String cursor);
 
-    SeriesOption setColorBy(String colorBy);
+	SeriesOption setDataGroupId(String dataGroupId);
 
-    SeriesOption setLegendHoverLink(Boolean legendHoverLink);
+	SeriesOption setDataGroupId(Number dataGroupId);
 
-    SeriesOption setProgressive(Number progressive);
+	SeriesOption setData(Object data);
 
-    SeriesOption setProgressiveThreshold(Number progressiveThreshold);
+	SeriesOption setColorBy(Object colorBy);
 
-    SeriesOption setProgressiveChunkMode(String progressiveChunkMode);
+	SeriesOption setLegendHoverLink(Boolean legendHoverLink);
 
-    SeriesOption setCoordinateSystem(String coordinateSystem);
+	SeriesOption setProgressive(Number progressive);
 
-    SeriesOption setHoverLayerThreshold(Number hoverLayerThreshold);
+	SeriesOption setProgressive(Boolean progressive);
 
-    SeriesOption setSeriesLayoutBy(String seriesLayoutBy);
+	SeriesOption setProgressiveThreshold(Number progressiveThreshold);
 
-    SeriesOption setLabelLine(Object labelLine);
+	SeriesOption setProgressiveChunkMode(String progressiveChunkMode);
 
-    SeriesOption setLabelLayout(Object labelLayout);
+	SeriesOption setCoordinateSystem(String coordinateSystem);
 
-    SeriesOption setStateAnimation(Object stateAnimation);
+	SeriesOption setHoverLayerThreshold(Number hoverLayerThreshold);
 
-    SeriesOption setUniversalTransition(Object universalTransition);
+	SeriesOption setSeriesLayoutBy(String seriesLayoutBy);
 
-    SeriesOption setSelectedMap(Map<String, Boolean> selectedMap);
+	SeriesOption setLabelLine(Object labelLine);
 
-    SeriesOption setSelectedMode(String selectedMode);
+	SeriesOption setLabelLayout(Object labelLayout);
+
+	SeriesOption setStateAnimation(Object stateAnimation);
+
+	SeriesOption setUniversalTransition(Boolean universalTransition);
+
+	SeriesOption setUniversalTransition(Object universalTransition);
+
+	SeriesOption setSelectedMap(Map<String, Boolean> selectedMap);
+
+	SeriesOption setSelectedMode(String selectedMode);
+
+	SeriesOption setSelectedMode(Boolean selectedMode);
 }

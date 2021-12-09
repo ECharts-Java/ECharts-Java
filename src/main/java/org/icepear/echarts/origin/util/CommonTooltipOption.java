@@ -1,54 +1,61 @@
 package org.icepear.echarts.origin.util;
 
-import java.util.List;
-
 /**
  * https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/util/types.ts#L1295
  */
 public interface CommonTooltipOption {
-    CommonTooltipOption setShow(Boolean show);
 
-    CommonTooltipOption setTriggerOn(String triggerOn);
+	CommonTooltipOption setShow(Boolean show);
 
-    CommonTooltipOption setAlwaysShowContent(Boolean alwaysShowContent);
+	CommonTooltipOption setTriggerOn(String triggerOn);
 
-    CommonTooltipOption setFormatter(String formatter);
+	CommonTooltipOption setAlwaysShowContent(Boolean alwaysShowContent);
 
-    CommonTooltipOption setPosition(Object position);
+	CommonTooltipOption setFormatter(String formatter);
 
-    CommonTooltipOption setConfine(Boolean confine);
+	CommonTooltipOption setFormatter(Object formatter);
 
-    CommonTooltipOption setAlign(Object align);
+	CommonTooltipOption setPosition(String[] position);
 
-    CommonTooltipOption setVerticalAlign(Object verticalAlign);
+	CommonTooltipOption setPosition(Number[] position);
 
-    CommonTooltipOption setShowDelay(Number showDelay);
+	CommonTooltipOption setPosition(Object position);
 
-    CommonTooltipOption setHideDelay(Number hideDelay);
+	CommonTooltipOption setConfine(Boolean confine);
 
-    CommonTooltipOption setTransitionDuration(Number transitionDuration);
+	CommonTooltipOption setAlign(String align);
 
-    CommonTooltipOption setEnterable(Boolean enterable);
+	CommonTooltipOption setVerticalAlign(String verticalAlign);
 
-    CommonTooltipOption setBackgroundColor(String backgroundColor);
+	CommonTooltipOption setShowDelay(Number showDelay);
 
-    CommonTooltipOption setBorderColor(String borderColor);
+	CommonTooltipOption setHideDelay(Number hideDelay);
 
-    CommonTooltipOption setBorderRadius(Number borderRadius);
+	CommonTooltipOption setTransitionDuration(Number transitionDuration);
 
-    CommonTooltipOption setBorderWidth(Number borderWidth);
+	CommonTooltipOption setEnterable(Boolean enterable);
 
-    CommonTooltipOption setShadowBlur(Number shadowBlur);
+	CommonTooltipOption setBackgroundColor(String backgroundColor);
 
-    CommonTooltipOption setShadowColor(String shadowColor);
+	CommonTooltipOption setBorderColor(String borderColor);
 
-    CommonTooltipOption setShadowOffsetX(Number shadowOffsetX);
+	CommonTooltipOption setBorderRadius(Number borderRadius);
 
-    CommonTooltipOption setShadowOffsetY(Number shadowOffsetY);
+	CommonTooltipOption setBorderWidth(Number borderWidth);
 
-    CommonTooltipOption setPadding(List<Number> padding);
+	CommonTooltipOption setShadowBlur(Number shadowBlur);
 
-    CommonTooltipOption setExtraCssText(String extraCssText);
+	CommonTooltipOption setShadowColor(String shadowColor);
 
-    CommonTooltipOption setTextStyle(Object textStyle);
+	CommonTooltipOption setShadowOffsetX(Number shadowOffsetX);
+
+	CommonTooltipOption setShadowOffsetY(Number shadowOffsetY);
+
+	CommonTooltipOption setPadding(Number[] padding);
+
+	CommonTooltipOption setPadding(Number padding);
+
+	CommonTooltipOption setExtraCssText(String extraCssText);
+
+	CommonTooltipOption setTextStyle(Object textStyle);
 }

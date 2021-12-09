@@ -1,16 +1,21 @@
 package org.icepear.echarts.origin.util;
 
 /**
- * https://github.com/apache/echarts/blob/56fbf07640a25bbd3e710094da824f5bed6c647d/src/util/types.ts#L615
+ * https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/util/types.ts#L615
  */
 public interface OptionDataItemObject {
-    OptionDataItemObject setId(String id);
-    
-    OptionDataItemObject setName(String name);
-    
-    OptionDataItemObject setGroupId(String groupId);
-    
-    OptionDataItemObject setValue(Object value);
-    
-    OptionDataItemObject setSelected(Boolean selected);
+
+	OptionDataItemObject setId(String id);
+
+	OptionDataItemObject setId(Number id);
+
+	OptionDataItemObject setName(String name);
+
+	OptionDataItemObject setName(Number name);
+
+	OptionDataItemObject setGroupId(String groupId);
+
+	OptionDataItemObject setGroupId(Number groupId);
+
+	OptionDataItemObject setSelected(Boolean selected);
 }
