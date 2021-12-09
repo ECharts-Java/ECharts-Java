@@ -1,0 +1,7 @@
+{
+    "name": "PieLabel",
+    "type": "class",
+    "implements": [
+        "PieLabelOption"
+    ]
+}

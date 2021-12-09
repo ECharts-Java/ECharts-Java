@@ -1,0 +1,7 @@
+{
+    "name": "PieItemStyle",
+    "type": "class",
+    "implements": [
+        "PieItemStyleOption"
+    ]
+}
