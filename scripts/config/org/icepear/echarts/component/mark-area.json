@@ -1,0 +1,7 @@
+{
+    "name": "MarkArea",
+    "type": "class",
+    "implements": [
+        "MarkAreaOption"
+    ]
+}

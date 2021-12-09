@@ -1,0 +1,7 @@
+{
+    "name": "ToolboxBrushFeature",
+    "type": "class",
+    "implements": [
+        "ToolboxBrushFeatureOption"
+    ]
+}

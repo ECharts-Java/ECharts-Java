@@ -40,7 +40,7 @@ def convert(file):
     while i < len(lines):
         line = lines[i]
         i += 1
-        if "//" in line or "}" == line.strip() or "*" in line or line.strip() == "":
+        if "//" in line or "}" == line.strip() or "};" == line.strip() or "*" in line or line.strip() == "":
             continue
         line = line.replace("?:", " ")
         line = line.replace(";", " ")
