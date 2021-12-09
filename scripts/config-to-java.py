@@ -80,9 +80,10 @@ def build_symbol_table():
         for file in files:
             path = os.path.join(root, file)
             obj = json.load(open(path))
-            symbol_table[obj["name"]] = {
-                "path": os.path.join(root.replace(config_dir, java_dir), "{}.java".format(obj["name"])),
-                "import": "{}.{}".format(".".join(root.replace(config_dir + "/", "").split("/")), obj["name"]),
+            name = obj["name"].split("<")[0]
+            symbol_table[name] = {
+                "path": os.path.join(root.replace(config_dir, java_dir), "{}.java".format(name)),
+                "import": "{}.{}".format(".".join(root.replace(config_dir + "/", "").split("/")), name),
                 "builtin": False,
                 "obj": obj
             }
@@ -100,10 +101,12 @@ def get_all_symbols(obj, include_inheritance=True):
     symbols = set()
     if obj["type"] == "class":
         if include_inheritance:
-            symbols |= set(obj["implements"])
+            for implement in obj["implements"]:
+                symbols |= get_symbols(implement)
     elif obj["type"] == "interface":
         if include_inheritance:
-            symbols |= set(obj["extends"])
+            for extend in obj["extends"]:
+                symbols |= get_symbols(extend)
         for field in obj["fields"]:
             for type in field["types"]:
                 symbols |= get_symbols(type)
@@ -115,17 +118,20 @@ def get_symbols_dfs(obj):
     if obj["type"] == "class":
         symbols = get_all_symbols(obj)
         for implement in obj["implements"]:
+            implement = implement.split("<")[0]
             symbols |= get_symbols_dfs(symbol_table[implement]["obj"])
     elif obj["type"] == "interface":
         symbols =  get_all_symbols(obj, include_inheritance=False)
         for extend in obj["extends"]:
+            extend = extend.split("<")[0]
             symbols |= get_symbols_dfs(symbol_table[extend]["obj"])
     return symbols
 
 
 def generate_package_line(info, lines):
+    name = info["obj"]["name"].split("<")[0]
     lines.append("package {};\n".format(
-        info["import"].replace(".{}".format(info["obj"]["name"]), "")))
+        info["import"].replace(".{}".format(name), "")))
 
 
 def generate_import_lines(info, symbols, fields, lines):
@@ -208,6 +214,7 @@ def get_fields_dfs(obj):
                 symbol_table[implement]["obj"]), fields)
     elif obj["type"] == "interface":
         for extend in obj["extends"]:
+            extend = extend.split("<")[0]
             merge_fields(get_fields_dfs(symbol_table[extend]["obj"]), fields)
         merge_fields(get_all_fields(obj), fields)
     return fields
