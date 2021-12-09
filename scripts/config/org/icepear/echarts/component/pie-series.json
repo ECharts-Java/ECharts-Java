@@ -1,0 +1,7 @@
+{
+    "name": "PieSeries",
+    "type": "class",
+    "implements": [
+        "PieSeriesOption"
+    ]
+}
