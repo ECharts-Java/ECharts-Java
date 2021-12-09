@@ -1,22 +1,48 @@
 package org.icepear.echarts.component;
 
-import org.icepear.echarts.origin.coord.CategoryAxisTickOption;
-
-import lombok.experimental.Accessors;
+import lombok.AccessLevel;
 import lombok.Data;
+import lombok.Setter;
+import lombok.experimental.Accessors;
+
+import org.icepear.echarts.origin.coord.CategoryAxisTickOption;
+import org.icepear.echarts.origin.util.LineStyleOption;
 
 @Accessors(chain=true)
 @Data
-public class CategoryAxisTick implements CategoryAxisTickOption {    
-    private Boolean alignWithLabel;
-    
-    private Number interval;
+public class CategoryAxisTick implements CategoryAxisTickOption {
 
-    private Boolean show;
+	@Setter(AccessLevel.NONE)
+	private Object show;
 
-    private Boolean inside;
+	public CategoryAxisTick setShow(String show) {
+		this.show = show;
+		return this;
+	}
 
-    private Number length;
+	public CategoryAxisTick setShow(Boolean show) {
+		this.show = show;
+		return this;
+	}
 
-    private Object lineStyle;
+	private Boolean inside;
+
+	private Number length;
+
+	private LineStyleOption lineStyle;
+
+	private Boolean alignWithLabel;
+
+	@Setter(AccessLevel.NONE)
+	private Object interval;
+
+	public CategoryAxisTick setInterval(String interval) {
+		this.interval = interval;
+		return this;
+	}
+
+	public CategoryAxisTick setInterval(Number interval) {
+		this.interval = interval;
+		return this;
+	}
 }

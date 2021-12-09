@@ -4,7 +4,6 @@ import static org.junit.Assert.assertEquals;
 
 import java.io.InputStreamReader;
 import java.io.Reader;
-import java.util.Arrays;
 
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
@@ -20,24 +19,24 @@ import org.icepear.echarts.component.Option;
 import org.icepear.echarts.component.Tooltip;
 import org.icepear.echarts.component.ValueAxis;
 import org.icepear.echarts.component.ValueAxisLabel;
+import org.icepear.echarts.origin.util.SeriesOption;
 import org.icepear.echarts.serializer.EChartSerializer;
-import org.icepear.echarts.type.BoxLength;
 import org.junit.Test;
 
 public class LineYCategoryTest {
     @Test
     public void testLineYCategory() {
         Legend legend = new Legend()
-                .setData(Arrays.asList("Altitude (km) vs. temperature (°C)"));
+                .setData(new String[] { "Altitude (km) vs. temperature (°C)" });
 
         Tooltip tooltip = new Tooltip()
                 .setTrigger("axis")
                 .setFormatter("Temperature : <br/>{b}km : {c}°C");
 
         Grid grid = new Grid()
-                .setLeft(new BoxLength("3%"))
-                .setRight(new BoxLength("4%"))
-                .setBottom(new BoxLength("3%"))
+                .setLeft("3%")
+                .setRight("4%")
+                .setBottom("3%")
                 .setContainLabel(true);
 
         ValueAxis xAxis = new ValueAxis()
@@ -50,7 +49,7 @@ public class LineYCategoryTest {
                 .setAxisLine(new AxisLine().setOnZero(false))
                 .setAxisLabel(new CategoryAxisLabel().setFormatter("{value} km"))
                 .setBoundaryGap(false)
-                .setData(Arrays.asList("0", "10", "20", "30", "40", "50", "60", "70", "80"));
+                .setData(new String[] { "0", "10", "20", "30", "40", "50", "60", "70", "80" });
 
         LineSeries series = new LineSeries()
                 .setName("Altitude (km) vs. temperature (°C)")
@@ -63,7 +62,7 @@ public class LineYCategoryTest {
                     .setShadowColor("rgba(0,0,0,0.3)")
                     .setShadowBlur(10)
                     .setShadowOffsetY(8))
-                .setData(Arrays.asList(15, -50, -56.5, -46.5, -22.1, -2.5, -27.7, -55.7, -76.5));
+                .setData(new Number[] { 15, -50, -56.5, -46.5, -22.1, -2.5, -27.7, -55.7, -76.5 });
 
         Option option = new Option()
                 .setTooltip(tooltip)
@@ -71,7 +70,7 @@ public class LineYCategoryTest {
                 .setGrid(grid)
                 .setXAxis(xAxis)
                 .setYAxis(yAxis)
-                .setSeries(Arrays.asList(series));
+                .setSeries(new SeriesOption[] { series });
 
         Reader reader = new InputStreamReader(
                 this.getClass().getResourceAsStream("/line/line-y-category.json"));

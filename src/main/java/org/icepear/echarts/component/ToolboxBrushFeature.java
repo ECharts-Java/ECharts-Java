@@ -1,28 +1,53 @@
 package org.icepear.echarts.component;
 
-import java.util.List;
+import java.util.Map;
+
+import lombok.AccessLevel;
+import lombok.Data;
+import lombok.Setter;
+import lombok.experimental.Accessors;
 
 import org.icepear.echarts.origin.component.toolbox.feature.ToolboxBrushFeatureOption;
 
-import lombok.experimental.Accessors;
-import lombok.Data;
-
 @Accessors(chain=true)
 @Data
-public class ToolboxBrushFeature implements ToolboxBrushFeatureOption{
-    private List<String> type;
+public class ToolboxBrushFeature implements ToolboxBrushFeatureOption {
 
-    private Boolean show;
+	private Boolean show;
 
-    private String title;
+	@Setter(AccessLevel.NONE)
+	private Object title;
 
-    private String icon;
+	public ToolboxBrushFeature setTitle(String title) {
+		this.title = title;
+		return this;
+	}
 
-    private Object iconStyle;
+	public ToolboxBrushFeature setTitle(Map<String, String> title) {
+		this.title = title;
+		return this;
+	}
 
-    private Object emphasis;
+	@Setter(AccessLevel.NONE)
+	private Object icon;
 
-    private Object iconStatus;
+	public ToolboxBrushFeature setIcon(String icon) {
+		this.icon = icon;
+		return this;
+	}
 
-    private Object onclick;
+	public ToolboxBrushFeature setIcon(Map<String, String> icon) {
+		this.icon = icon;
+		return this;
+	}
+
+	private Object iconStyle;
+
+	private Object emphasis;
+
+	private Map<String, Object> iconStatus;
+
+	private Object onclick;
+
+	private Object[] type;
 }

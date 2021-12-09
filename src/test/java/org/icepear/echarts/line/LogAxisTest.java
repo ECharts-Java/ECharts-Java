@@ -4,7 +4,6 @@ import static org.junit.Assert.assertEquals;
 
 import java.io.InputStreamReader;
 import java.io.Reader;
-import java.util.Arrays;
 
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
@@ -19,8 +18,8 @@ import org.icepear.echarts.component.Option;
 import org.icepear.echarts.component.SplitLine;
 import org.icepear.echarts.component.Title;
 import org.icepear.echarts.component.Tooltip;
+import org.icepear.echarts.origin.util.SeriesOption;
 import org.icepear.echarts.serializer.EChartSerializer;
-import org.icepear.echarts.type.BoxLength;
 import org.junit.Test;
 
 public class LogAxisTest {
@@ -28,24 +27,24 @@ public class LogAxisTest {
     public void testLogAxis() {
         Title title = new Title()
                 .setText("Log Axis")
-                .setLeft(new BoxLength("center"));
+                .setLeft("center");
 
         Tooltip tooltip = new Tooltip()
                 .setTrigger("item")
                 .setFormatter("{a} <br/>{b} : {c}");
 
-        Legend legend = new Legend().setLeft(new BoxLength("left"));
+        Legend legend = new Legend().setLeft("left");
 
         CategoryAxis xAxis = new CategoryAxis()
                 .setType("category")
                 .setName("x")
                 .setSplitLine(new SplitLine().setShow(false))
-                .setData(Arrays.asList("A", "B", "C", "D", "E", "F", "G", "H", "I"));
+                .setData(new String[] { "A", "B", "C", "D", "E", "F", "G", "H", "I" });
 
         Grid grid = new Grid()
-                .setLeft(new BoxLength("3%"))
-                .setRight(new BoxLength("4%"))
-                .setBottom(new BoxLength("3%"))
+                .setLeft("3%")
+                .setRight("4%")
+                .setBottom("3%")
                 .setContainLabel(true);
 
         LogAxis yAxis = new LogAxis()
@@ -56,17 +55,17 @@ public class LogAxisTest {
         LineSeries series1 = new LineSeries()
                 .setName("Log2")
                 .setType("line")
-                .setData(Arrays.asList(1, 3, 9, 27, 81, 247, 741, 2223, 6669));
+                .setData(new Number[] { 1, 3, 9, 27, 81, 247, 741, 2223, 6669 });
 
         LineSeries series2 = new LineSeries()
                 .setName("Log3")
                 .setType("line")
-                .setData(Arrays.asList(1, 2, 4, 8, 16, 32, 64, 128, 256));
+                .setData(new Number[] { 1, 2, 4, 8, 16, 32, 64, 128, 256 });
 
         LineSeries series3 = new LineSeries()
                 .setName("Log1/2")
                 .setType("line")
-                .setData(Arrays.asList(
+                .setData(new Number[] {
                         1.0 / 2,
                         1.0 / 4,
                         1.0 / 8,
@@ -75,7 +74,7 @@ public class LogAxisTest {
                         1.0 / 64,
                         1.0 / 128,
                         1.0 / 256,
-                        1.0 / 512));
+                        1.0 / 512 });
 
         Option option = new Option()
                 .setTitle(title)
@@ -84,7 +83,7 @@ public class LogAxisTest {
                 .setXAxis(xAxis)
                 .setGrid(grid)
                 .setYAxis(yAxis)
-                .setSeries(Arrays.asList(series1, series2, series3));
+                .setSeries(new SeriesOption[] { series1, series2, series3 });
 
         Reader reader = new InputStreamReader(
                 this.getClass().getResourceAsStream("/line/log-axis.json"));

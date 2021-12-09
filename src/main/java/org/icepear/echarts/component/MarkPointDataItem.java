@@ -1,58 +1,124 @@
 package org.icepear.echarts.component;
 
-import java.util.List;
+import lombok.AccessLevel;
+import lombok.Data;
+import lombok.Setter;
+import lombok.experimental.Accessors;
 
 import org.icepear.echarts.origin.component.marker.MarkPointDataItemOption;
-import org.icepear.echarts.origin.util.EmphasisOption;
-import org.icepear.echarts.type.EChartsNumber;
-
-import lombok.experimental.Accessors;
-import lombok.Data;
+import org.icepear.echarts.origin.util.ItemStyleOption;
+import org.icepear.echarts.origin.util.SeriesLabelOption;
 
 @Accessors(chain=true)
 @Data
 public class MarkPointDataItem implements MarkPointDataItemOption {
-    private String name;
 
-    private Object itemStyle;
+	private ItemStyleOption itemStyle;
 
-    private Object label;
+	private SeriesLabelOption label;
 
-    private EmphasisOption emphasis;
+	private Object emphasis;
 
-    private Object select;
+	private Object select;
 
-    private Object blur;
+	private Object blur;
 
-    private String symbol;
+	private String symbol;
 
-    private Number symbolSize;
+	@Setter(AccessLevel.NONE)
+	private Object symbolSize;
 
-    private Number symbolRotate;
+	public MarkPointDataItem setSymbolSize(Number[] symbolSize) {
+		this.symbolSize = symbolSize;
+		return this;
+	}
 
-    private Boolean symbolKeepAspect;
+	public MarkPointDataItem setSymbolSize(Number symbolSize) {
+		this.symbolSize = symbolSize;
+		return this;
+	}
 
-    private Number symbolOffset;
+	private Number symbolRotate;
 
-    private EChartsNumber x;
+	private Boolean symbolKeepAspect;
 
-    private EChartsNumber y;
+	@Setter(AccessLevel.NONE)
+	private Object symbolOffset;
 
-    private List<Object> coord;
+	public MarkPointDataItem setSymbolOffset(String[] symbolOffset) {
+		this.symbolOffset = symbolOffset;
+		return this;
+	}
 
-    private EChartsNumber xAxis;
+	public MarkPointDataItem setSymbolOffset(Number[] symbolOffset) {
+		this.symbolOffset = symbolOffset;
+		return this;
+	}
 
-    private EChartsNumber yAxis;
+	public MarkPointDataItem setSymbolOffset(String symbolOffset) {
+		this.symbolOffset = symbolOffset;
+		return this;
+	}
 
-    private Object radiusAxis;
+	public MarkPointDataItem setSymbolOffset(Number symbolOffset) {
+		this.symbolOffset = symbolOffset;
+		return this;
+	}
 
-    private Object angleAxis;
+	@Setter(AccessLevel.NONE)
+	private Object x;
 
-    private String type;
+	public MarkPointDataItem setX(String x) {
+		this.x = x;
+		return this;
+	}
 
-    private Number valueIndex;
+	public MarkPointDataItem setX(Number x) {
+		this.x = x;
+		return this;
+	}
 
-    private String valueDim;
+	@Setter(AccessLevel.NONE)
+	private Object y;
 
-    private Number value;
+	public MarkPointDataItem setY(String y) {
+		this.y = y;
+		return this;
+	}
+
+	public MarkPointDataItem setY(Number y) {
+		this.y = y;
+		return this;
+	}
+
+	private Object[] coord;
+
+	private Object xAxis;
+
+	private Object yAxis;
+
+	private Object radiusAxis;
+
+	private Object angleAxis;
+
+	private Object type;
+
+	private Number valueIndex;
+
+	private String valueDim;
+
+	@Setter(AccessLevel.NONE)
+	private Object value;
+
+	public MarkPointDataItem setValue(String value) {
+		this.value = value;
+		return this;
+	}
+
+	public MarkPointDataItem setValue(Number value) {
+		this.value = value;
+		return this;
+	}
+
+	private String name;
 }

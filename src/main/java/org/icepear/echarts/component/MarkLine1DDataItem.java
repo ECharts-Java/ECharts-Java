@@ -1,45 +1,124 @@
 package org.icepear.echarts.component;
 
+import lombok.AccessLevel;
+import lombok.Data;
+import lombok.Setter;
+import lombok.experimental.Accessors;
+
 import org.icepear.echarts.origin.component.marker.MarkLine1DDataItemOption;
-import org.icepear.echarts.origin.util.EmphasisOption;
+import org.icepear.echarts.origin.util.ItemStyleOption;
 import org.icepear.echarts.origin.util.LineStyleOption;
 import org.icepear.echarts.origin.util.SeriesLineLabelOption;
-
-import lombok.experimental.Accessors;
-import lombok.Data;
 
 @Accessors(chain=true)
 @Data
 public class MarkLine1DDataItem implements MarkLine1DDataItemOption {
-    private Number xAxis;
 
-    private Number yAxis;
+	private LineStyleOption lineStyle;
 
-    private String type;
+	private ItemStyleOption itemStyle;
 
-    private Number valueIndex;
+	private SeriesLineLabelOption label;
 
-    private String valueDim;
+	private Object emphasis;
 
-    private String symbol;
+	private Object select;
 
-    private Number symbolSize;
+	private Object blur;
 
-    private Number symbolRotate;
+	private String name;
 
-    private Number symbolOffset;
+	@Setter(AccessLevel.NONE)
+	private Object xAxis;
 
-    private String name;
+	public MarkLine1DDataItem setXAxis(String xAxis) {
+		this.xAxis = xAxis;
+		return this;
+	}
 
-    private LineStyleOption lineStyle;
+	public MarkLine1DDataItem setXAxis(Number xAxis) {
+		this.xAxis = xAxis;
+		return this;
+	}
 
-    private Object itemStyle;
+	@Setter(AccessLevel.NONE)
+	private Object yAxis;
 
-    private SeriesLineLabelOption label;
+	public MarkLine1DDataItem setYAxis(String yAxis) {
+		this.yAxis = yAxis;
+		return this;
+	}
 
-    private EmphasisOption emphasis;
+	public MarkLine1DDataItem setYAxis(Number yAxis) {
+		this.yAxis = yAxis;
+		return this;
+	}
 
-    private Object select;
+	private Object type;
 
-    private Object blur;
+	private Number valueIndex;
+
+	private String valueDim;
+
+	@Setter(AccessLevel.NONE)
+	private Object symbol;
+
+	public MarkLine1DDataItem setSymbol(String[] symbol) {
+		this.symbol = symbol;
+		return this;
+	}
+
+	public MarkLine1DDataItem setSymbol(String symbol) {
+		this.symbol = symbol;
+		return this;
+	}
+
+	@Setter(AccessLevel.NONE)
+	private Object symbolSize;
+
+	public MarkLine1DDataItem setSymbolSize(Number[] symbolSize) {
+		this.symbolSize = symbolSize;
+		return this;
+	}
+
+	public MarkLine1DDataItem setSymbolSize(Number symbolSize) {
+		this.symbolSize = symbolSize;
+		return this;
+	}
+
+	@Setter(AccessLevel.NONE)
+	private Object symbolRotate;
+
+	public MarkLine1DDataItem setSymbolRotate(Number[] symbolRotate) {
+		this.symbolRotate = symbolRotate;
+		return this;
+	}
+
+	public MarkLine1DDataItem setSymbolRotate(Number symbolRotate) {
+		this.symbolRotate = symbolRotate;
+		return this;
+	}
+
+	@Setter(AccessLevel.NONE)
+	private Object symbolOffset;
+
+	public MarkLine1DDataItem setSymbolOffset(String[] symbolOffset) {
+		this.symbolOffset = symbolOffset;
+		return this;
+	}
+
+	public MarkLine1DDataItem setSymbolOffset(Number[] symbolOffset) {
+		this.symbolOffset = symbolOffset;
+		return this;
+	}
+
+	public MarkLine1DDataItem setSymbolOffset(String symbolOffset) {
+		this.symbolOffset = symbolOffset;
+		return this;
+	}
+
+	public MarkLine1DDataItem setSymbolOffset(Number symbolOffset) {
+		this.symbolOffset = symbolOffset;
+		return this;
+	}
 }

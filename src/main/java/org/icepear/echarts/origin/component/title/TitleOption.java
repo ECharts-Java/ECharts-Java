@@ -1,46 +1,52 @@
 package org.icepear.echarts.origin.component.title;
 
-import java.util.List;
-
 import org.icepear.echarts.origin.util.BorderOptionMixin;
 import org.icepear.echarts.origin.util.BoxLayoutOptionMixin;
 import org.icepear.echarts.origin.util.ComponentOption;
+import org.icepear.echarts.origin.util.LabelOption;
 
 /**
  * https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/component/title/install.ts#L42
  */
 public interface TitleOption extends ComponentOption, BoxLayoutOptionMixin, BorderOptionMixin {
-    TitleOption setShow(Boolean show);
 
-    TitleOption setText(String text);
+	TitleOption setMainType(String mainType);
 
-    TitleOption setLink(String link);
+	TitleOption setShow(Boolean show);
 
-    TitleOption setTarget(String target);
+	TitleOption setText(String text);
 
-    TitleOption setSubtext(String subtext);
+	TitleOption setLink(String link);
 
-    TitleOption setSublink(String sublink);
+	TitleOption setTarget(String target);
 
-    TitleOption setSubtarget(String subtarget);
+	TitleOption setSubtext(String subtext);
 
-    TitleOption setTextAlign(Object textAlign);
+	TitleOption setSublink(String sublink);
 
-    TitleOption setTextVerticalAlign(Object textVerticalAlign);
+	TitleOption setSubtarget(String subtarget);
 
-    TitleOption setTextBaseline(Object textBaseline);
+	TitleOption setTextAlign(Object textAlign);
 
-    TitleOption setBackgroundColor(String backgroundColor);
+	TitleOption setTextVerticalAlign(Object textVerticalAlign);
 
-    TitleOption setPadding(List<Number> padding);
+	TitleOption setTextBaseline(Object textBaseline);
 
-    TitleOption setItemGap(Number itemGap);
+	TitleOption setBackgroundColor(String backgroundColor);
 
-    TitleOption setTextStyle(Object textStyle);
+	TitleOption setPadding(Number[] padding);
 
-    TitleOption setSubtextStyle(Object subtextStyle);
+	TitleOption setPadding(Number padding);
 
-    TitleOption setTriggerEvent(Boolean triggerEvent);
+	TitleOption setItemGap(Number itemGap);
 
-    TitleOption setBorderRadius(List<Number> borderRadius);
+	TitleOption setTextStyle(LabelOption textStyle);
+
+	TitleOption setSubtextStyle(LabelOption subtextStyle);
+
+	TitleOption setTriggerEvent(Boolean triggerEvent);
+
+	TitleOption setBorderRadius(Number[] borderRadius);
+
+	TitleOption setBorderRadius(Number borderRadius);
 }

@@ -1,85 +1,196 @@
 package org.icepear.echarts.component;
 
-import java.util.List;
+import lombok.AccessLevel;
+import lombok.Data;
+import lombok.Setter;
+import lombok.experimental.Accessors;
 
 import org.icepear.echarts.origin.component.title.TitleOption;
-import org.icepear.echarts.type.BoxLength;
-
-import lombok.experimental.Accessors;
-import lombok.Data;
+import org.icepear.echarts.origin.util.LabelOption;
 
 @Accessors(chain=true)
 @Data
 public class Title implements TitleOption {
-    private Boolean show;
 
-    private String text;
+	private String mainType;
 
-    private String link;
+	private String type;
 
-    private String target;
+	@Setter(AccessLevel.NONE)
+	private Object id;
 
-    private String subtext;
+	public Title setId(String id) {
+		this.id = id;
+		return this;
+	}
 
-    private String sublink;
+	public Title setId(Number id) {
+		this.id = id;
+		return this;
+	}
 
-    private String subtarget;
+	@Setter(AccessLevel.NONE)
+	private Object name;
 
-    private Object textAlign;
+	public Title setName(String name) {
+		this.name = name;
+		return this;
+	}
 
-    private Object textVerticalAlign;
+	public Title setName(Number name) {
+		this.name = name;
+		return this;
+	}
 
-    private Object textBaseline;
+	private Number z;
 
-    private String backgroundColor;
+	private Number zlevel;
 
-    private List<Number> padding;
+	@Setter(AccessLevel.NONE)
+	private Object width;
 
-    private Number itemGap;
+	public Title setWidth(String width) {
+		this.width = width;
+		return this;
+	}
 
-    private Object textStyle;
+	public Title setWidth(Number width) {
+		this.width = width;
+		return this;
+	}
 
-    private Object subtextStyle;
+	@Setter(AccessLevel.NONE)
+	private Object height;
 
-    private Boolean triggerEvent;
+	public Title setHeight(String height) {
+		this.height = height;
+		return this;
+	}
 
-    private List<Number> borderRadius;
+	public Title setHeight(Number height) {
+		this.height = height;
+		return this;
+	}
 
-    private String mainType;
+	@Setter(AccessLevel.NONE)
+	private Object top;
 
-    private String type;
+	public Title setTop(String top) {
+		this.top = top;
+		return this;
+	}
 
-    private String id;
+	public Title setTop(Number top) {
+		this.top = top;
+		return this;
+	}
 
-    private String name;
+	@Setter(AccessLevel.NONE)
+	private Object right;
 
-    private Number z;
+	public Title setRight(String right) {
+		this.right = right;
+		return this;
+	}
 
-    private Number zlevel;
+	public Title setRight(Number right) {
+		this.right = right;
+		return this;
+	}
 
-    private BoxLength width;
+	@Setter(AccessLevel.NONE)
+	private Object bottom;
 
-    private BoxLength height;
+	public Title setBottom(String bottom) {
+		this.bottom = bottom;
+		return this;
+	}
 
-    private BoxLength top;
+	public Title setBottom(Number bottom) {
+		this.bottom = bottom;
+		return this;
+	}
 
-    private BoxLength right;
+	@Setter(AccessLevel.NONE)
+	private Object left;
 
-    private BoxLength bottom;
+	public Title setLeft(String left) {
+		this.left = left;
+		return this;
+	}
 
-    private BoxLength left;
+	public Title setLeft(Number left) {
+		this.left = left;
+		return this;
+	}
 
-    private String borderColor;
+	private String borderColor;
 
-    private Number borderWidth;
+	private Number borderWidth;
 
-    private String borderType;
+	private String borderType;
 
-    private Object borderCap;
+	private Object borderCap;
 
-    private Object borderJoin;
+	private Object borderJoin;
 
-    private Number borderDashOffset;
+	private Number borderDashOffset;
 
-    private Number borderMiterLimit;
+	private Number borderMiterLimit;
+
+	private Boolean show;
+
+	private String text;
+
+	private String link;
+
+	private String target;
+
+	private String subtext;
+
+	private String sublink;
+
+	private String subtarget;
+
+	private Object textAlign;
+
+	private Object textVerticalAlign;
+
+	private Object textBaseline;
+
+	private String backgroundColor;
+
+	@Setter(AccessLevel.NONE)
+	private Object padding;
+
+	public Title setPadding(Number[] padding) {
+		this.padding = padding;
+		return this;
+	}
+
+	public Title setPadding(Number padding) {
+		this.padding = padding;
+		return this;
+	}
+
+	private Number itemGap;
+
+	private LabelOption textStyle;
+
+	private LabelOption subtextStyle;
+
+	private Boolean triggerEvent;
+
+	@Setter(AccessLevel.NONE)
+	private Object borderRadius;
+
+	public Title setBorderRadius(Number[] borderRadius) {
+		this.borderRadius = borderRadius;
+		return this;
+	}
+
+	public Title setBorderRadius(Number borderRadius) {
+		this.borderRadius = borderRadius;
+		return this;
+	}
 }

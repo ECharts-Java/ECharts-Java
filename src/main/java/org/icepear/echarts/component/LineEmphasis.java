@@ -1,30 +1,44 @@
 package org.icepear.echarts.component;
 
+import lombok.AccessLevel;
+import lombok.Data;
+import lombok.Setter;
+import lombok.experimental.Accessors;
+
 import org.icepear.echarts.origin.chart.line.LineEmphasisOption;
 import org.icepear.echarts.origin.util.AreaStyleOption;
 import org.icepear.echarts.origin.util.ItemStyleOption;
-import org.icepear.echarts.origin.util.LabelOption;
 import org.icepear.echarts.origin.util.LineStyleOption;
-
-import lombok.experimental.Accessors;
-import lombok.Data;
+import org.icepear.echarts.origin.util.SeriesLabelOption;
 
 @Accessors(chain=true)
 @Data
 public class LineEmphasis implements LineEmphasisOption {
-    private String focus;
 
-    private Boolean scale;
+	private ItemStyleOption itemStyle;
 
-    private LineStyleOption lineStyle;
+	private SeriesLabelOption label;
 
-    private AreaStyleOption areaStyle;
+	private Object endLabel;
 
-    private Object blurScope;
+	private Object blurScope;
 
-    private ItemStyleOption itemStyle;
+	@Setter(AccessLevel.NONE)
+	private Object lineStyle;
 
-    private LabelOption label;
+	public LineEmphasis setLineStyle(LineStyleOption lineStyle) {
+		this.lineStyle = lineStyle;
+		return this;
+	}
 
-    private LabelOption endLabel;
+	public LineEmphasis setLineStyle(Object lineStyle) {
+		this.lineStyle = lineStyle;
+		return this;
+	}
+
+	private AreaStyleOption areaStyle;
+
+	private Object focus;
+
+	private Boolean scale;
 }

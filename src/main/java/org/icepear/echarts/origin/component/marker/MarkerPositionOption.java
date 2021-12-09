@@ -1,32 +1,35 @@
 package org.icepear.echarts.origin.component.marker;
 
-import java.util.List;
-
-import org.icepear.echarts.type.EChartsNumber;
-
 /**
  * https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/component/marker/MarkerModel.ts#L48
  */
 public interface MarkerPositionOption {
-    MarkerPositionOption setX(EChartsNumber x);
 
-    MarkerPositionOption setY(EChartsNumber y);
+	MarkerPositionOption setX(String x);
 
-    MarkerPositionOption setCoord(List<Object> coord);
+	MarkerPositionOption setX(Number x);
 
-    MarkerPositionOption setXAxis(EChartsNumber xAxis);
+	MarkerPositionOption setY(String y);
 
-    MarkerPositionOption setYAxis(EChartsNumber yAxis);
+	MarkerPositionOption setY(Number y);
 
-    MarkerPositionOption setRadiusAxis(Object radiusAxis);
+	MarkerPositionOption setCoord(Object[] coord);
 
-    MarkerPositionOption setAngleAxis(Object angleAxis);
+	MarkerPositionOption setXAxis(Object xAxis);
 
-    MarkerPositionOption setType(String type);
+	MarkerPositionOption setYAxis(Object yAxis);
 
-    MarkerPositionOption setValueIndex(Number valueIndex);
+	MarkerPositionOption setRadiusAxis(Object radiusAxis);
 
-    MarkerPositionOption setValueDim(String valueDim);
+	MarkerPositionOption setAngleAxis(Object angleAxis);
 
-    MarkerPositionOption setValue(Number value);
+	MarkerPositionOption setType(Object type);
+
+	MarkerPositionOption setValueIndex(Number valueIndex);
+
+	MarkerPositionOption setValueDim(String valueDim);
+
+	MarkerPositionOption setValue(String value);
+
+	MarkerPositionOption setValue(Number value);
 }

@@ -1,27 +1,71 @@
 package org.icepear.echarts.component;
 
-import java.util.List;
+import lombok.AccessLevel;
+import lombok.Data;
+import lombok.Setter;
+import lombok.experimental.Accessors;
 
 import org.icepear.echarts.origin.coord.AxisLineOption;
 import org.icepear.echarts.origin.util.LineStyleOption;
 
-import lombok.experimental.Accessors;
-import lombok.Data;
-
 @Accessors(chain=true)
 @Data
 public class AxisLine implements AxisLineOption {
-    private Boolean show;
 
-    private Boolean onZero;
+	@Setter(AccessLevel.NONE)
+	private Object show;
 
-    private Number onZeroAxisIndex;
+	public AxisLine setShow(String show) {
+		this.show = show;
+		return this;
+	}
 
-    private String symbol;
+	public AxisLine setShow(Boolean show) {
+		this.show = show;
+		return this;
+	}
 
-    private List<Number> symbolSize;
+	private Boolean onZero;
 
-    private Number symbolOffset;
+	private Number onZeroAxisIndex;
 
-    private LineStyleOption lineStyle;
+	@Setter(AccessLevel.NONE)
+	private Object symbol;
+
+	public AxisLine setSymbol(String[] symbol) {
+		this.symbol = symbol;
+		return this;
+	}
+
+	public AxisLine setSymbol(String symbol) {
+		this.symbol = symbol;
+		return this;
+	}
+
+	private Number[] symbolSize;
+
+	@Setter(AccessLevel.NONE)
+	private Object symbolOffset;
+
+	public AxisLine setSymbolOffset(String[] symbolOffset) {
+		this.symbolOffset = symbolOffset;
+		return this;
+	}
+
+	public AxisLine setSymbolOffset(Number[] symbolOffset) {
+		this.symbolOffset = symbolOffset;
+		return this;
+	}
+
+	public AxisLine setSymbolOffset(String symbolOffset) {
+		this.symbolOffset = symbolOffset;
+		return this;
+	}
+
+	public AxisLine setSymbolOffset(Number symbolOffset) {
+		this.symbolOffset = symbolOffset;
+		return this;
+	}
+
+	private LineStyleOption lineStyle;
 }

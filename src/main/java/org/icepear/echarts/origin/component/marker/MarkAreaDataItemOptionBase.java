@@ -6,5 +6,6 @@ import org.icepear.echarts.origin.util.StatesOptionMixin;
  * https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/component/marker/MarkAreaModel.ts#L30
  */
 public interface MarkAreaDataItemOptionBase extends MarkAreaStateOption, StatesOptionMixin {
-    MarkAreaDataItemOptionBase setName(String name);
+
+	MarkAreaDataItemOptionBase setName(String name);
 }

@@ -1,24 +1,51 @@
 package org.icepear.echarts.component;
 
-import org.icepear.echarts.origin.component.toolbox.feature.ToolboxRestoreFeatureOption;
+import java.util.Map;
 
-import lombok.experimental.Accessors;
+import lombok.AccessLevel;
 import lombok.Data;
+import lombok.Setter;
+import lombok.experimental.Accessors;
+
+import org.icepear.echarts.origin.component.toolbox.feature.ToolboxRestoreFeatureOption;
 
 @Accessors(chain=true)
 @Data
 public class ToolboxRestoreFeature implements ToolboxRestoreFeatureOption {
-    private Boolean show;
 
-    private String title;
+	private Boolean show;
 
-    private String icon;
+	@Setter(AccessLevel.NONE)
+	private Object title;
 
-    private Object iconStyle;
+	public ToolboxRestoreFeature setTitle(String title) {
+		this.title = title;
+		return this;
+	}
 
-    private Object emphasis;
+	public ToolboxRestoreFeature setTitle(Map<String, String> title) {
+		this.title = title;
+		return this;
+	}
 
-    private Object iconStatus;
+	@Setter(AccessLevel.NONE)
+	private Object icon;
 
-    private Object onclick;
+	public ToolboxRestoreFeature setIcon(String icon) {
+		this.icon = icon;
+		return this;
+	}
+
+	public ToolboxRestoreFeature setIcon(Map<String, String> icon) {
+		this.icon = icon;
+		return this;
+	}
+
+	private Object iconStyle;
+
+	private Object emphasis;
+
+	private Map<String, Object> iconStatus;
+
+	private Object onclick;
 }

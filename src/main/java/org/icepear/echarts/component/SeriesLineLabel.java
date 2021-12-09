@@ -1,104 +1,192 @@
 package org.icepear.echarts.component;
 
-import java.util.List;
 import java.util.Map;
+
+import lombok.AccessLevel;
+import lombok.Data;
+import lombok.Setter;
+import lombok.experimental.Accessors;
 
 import org.icepear.echarts.origin.util.SeriesLineLabelOption;
 import org.icepear.echarts.origin.util.TextCommonOption;
-import org.icepear.echarts.type.BoxLength;
-
-import lombok.experimental.Accessors;
-import lombok.Data;
 
 @Accessors(chain=true)
 @Data
 public class SeriesLineLabel implements SeriesLineLabelOption {
-    private String formatter;
 
-    private Boolean show;
+	private Number shadowBlur;
 
-    private String position;
+	private String shadowColor;
 
-    private Number distance;
+	private Number shadowOffsetX;
 
-    private Number rotate;
+	private Number shadowOffsetY;
 
-    private Number offset;
+	private String color;
 
-    private Number minMargin;
+	private String fontStyle;
 
-    private Object overflow;
+	private String fontWeight;
 
-    private Boolean silent;
+	private String fontFamily;
 
-    private String precision;
+	@Setter(AccessLevel.NONE)
+	private Object fontSize;
 
-    private Boolean valueAnimation;
+	public SeriesLineLabel setFontSize(String fontSize) {
+		this.fontSize = fontSize;
+		return this;
+	}
 
-    private Map<String, TextCommonOption> rich;
+	public SeriesLineLabel setFontSize(Number fontSize) {
+		this.fontSize = fontSize;
+		return this;
+	}
 
-    private String color;
+	private String align;
 
-    private Object fontStyle;
+	private String verticalAlign;
 
-    private Object fontWeight;
+	private String baseline;
 
-    private String fontFamily;
+	private Number opacity;
 
-    private Number fontSize;
+	private Number lineHeight;
 
-    private Object align;
+	@Setter(AccessLevel.NONE)
+	private Object backgroundColor;
 
-    private Object verticalAlign;
+	public SeriesLineLabel setBackgroundColor(String backgroundColor) {
+		this.backgroundColor = backgroundColor;
+		return this;
+	}
 
-    @Deprecated
-    private Object baseline;
+	public SeriesLineLabel setBackgroundColor(Object backgroundColor) {
+		this.backgroundColor = backgroundColor;
+		return this;
+	}
 
-    private Number opacity;
+	private String borderColor;
 
-    private Number lineHeight;
+	private Number borderWidth;
 
-    private String backgroundColor;
+	private String borderType;
 
-    private String borderColor;
+	private Number borderDashOffset;
 
-    private Number borderWidth;
+	@Setter(AccessLevel.NONE)
+	private Object borderRadius;
 
-    private String borderType;
+	public SeriesLineLabel setBorderRadius(Number[] borderRadius) {
+		this.borderRadius = borderRadius;
+		return this;
+	}
 
-    private Number borderDashOffset;
+	public SeriesLineLabel setBorderRadius(Number borderRadius) {
+		this.borderRadius = borderRadius;
+		return this;
+	}
 
-    private List<Number> borderRadius;    
+	@Setter(AccessLevel.NONE)
+	private Object padding;
 
-    private Number padding;
+	public SeriesLineLabel setPadding(Number[] padding) {
+		this.padding = padding;
+		return this;
+	}
 
-    private BoxLength width;
+	public SeriesLineLabel setPadding(Number padding) {
+		this.padding = padding;
+		return this;
+	}
 
-    private BoxLength height;
+	@Setter(AccessLevel.NONE)
+	private Object width;
 
-    private String textBorderColor;
+	public SeriesLineLabel setWidth(String width) {
+		this.width = width;
+		return this;
+	}
 
-    private Number textBorderWidth;
+	public SeriesLineLabel setWidth(Number width) {
+		this.width = width;
+		return this;
+	}
 
-    private String textBorderType;
+	private Number height;
 
-    private Number textBorderDashOffset;
+	private String textBorderColor;
 
-    private Number textShadowBlur;
+	private Number textBorderWidth;
 
-    private String textShadowColor;
+	private String textBorderType;
 
-    private Number textShadowOffsetX;
+	private Number textBorderDashOffset;
 
-    private Number textShadowOffsetY;
+	private Number textShadowBlur;
 
-    private String tag;
+	private String textShadowColor;
 
-    private Number shadowBlur;
+	private Number textShadowOffsetX;
 
-    private String shadowColor;
+	private Number textShadowOffsetY;
 
-    private Number shadowOffsetX;
+	private String tag;
 
-    private Number shadowOffsetY;
+	private Boolean show;
+
+	@Setter(AccessLevel.NONE)
+	private Object position;
+
+	public SeriesLineLabel setPosition(String position) {
+		this.position = position;
+		return this;
+	}
+
+	public SeriesLineLabel setPosition(Object position) {
+		this.position = position;
+		return this;
+	}
+
+	@Setter(AccessLevel.NONE)
+	private Object distance;
+
+	public SeriesLineLabel setDistance(Number[] distance) {
+		this.distance = distance;
+		return this;
+	}
+
+	public SeriesLineLabel setDistance(Number distance) {
+		this.distance = distance;
+		return this;
+	}
+
+	private Number rotate;
+
+	private Number[] offset;
+
+	private Number minMargin;
+
+	private Object overflow;
+
+	private Boolean silent;
+
+	@Setter(AccessLevel.NONE)
+	private Object precision;
+
+	public SeriesLineLabel setPrecision(String precision) {
+		this.precision = precision;
+		return this;
+	}
+
+	public SeriesLineLabel setPrecision(Number precision) {
+		this.precision = precision;
+		return this;
+	}
+
+	private Boolean valueAnimation;
+
+	private Map<String, TextCommonOption> rich;
+
+	private String formatter;
 }

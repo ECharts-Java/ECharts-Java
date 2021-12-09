@@ -1,34 +1,35 @@
 package org.icepear.echarts.component;
 
-import org.icepear.echarts.origin.util.LineStyleOption;
-
-import lombok.experimental.Accessors;
 import lombok.Data;
+import lombok.experimental.Accessors;
+
+import org.icepear.echarts.origin.util.LineStyleOption;
 
 @Accessors(chain=true)
 @Data
 public class LineStyle implements LineStyleOption {
-    private Number width;
 
-    private String color;
+	private Number shadowBlur;
 
-    private Number opacity;
+	private String shadowColor;
 
-    private String type;
+	private Number shadowOffsetX;
 
-    private Object cap;
+	private Number shadowOffsetY;
 
-    private Object join;
+	private Number width;
 
-    private Number dashOffset;
+	private String color;
 
-    private Number miterLimit;
+	private Number opacity;
 
-    private Number shadowBlur;
+	private String type;
 
-    private String shadowColor;
+	private Object cap;
 
-    private Number shadowOffsetX;
+	private Object join;
 
-    private Number shadowOffsetY;
+	private Number dashOffset;
+
+	private Number miterLimit;
 }

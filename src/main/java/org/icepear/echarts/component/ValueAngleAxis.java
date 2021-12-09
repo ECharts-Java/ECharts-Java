@@ -1,106 +1,219 @@
 package org.icepear.echarts.component;
 
-import java.util.List;
+import lombok.AccessLevel;
+import lombok.Data;
+import lombok.Setter;
+import lombok.experimental.Accessors;
 
 import org.icepear.echarts.origin.coord.AxisLabelBaseOption;
 import org.icepear.echarts.origin.coord.AxisLineOption;
 import org.icepear.echarts.origin.coord.AxisTickOption;
 import org.icepear.echarts.origin.coord.MinorSplitLineOption;
+import org.icepear.echarts.origin.coord.MinorTickOption;
+import org.icepear.echarts.origin.coord.SplitAreaOption;
 import org.icepear.echarts.origin.coord.SplitLineOption;
-import org.icepear.echarts.origin.coord.ValueAxisBaseOption;
-import org.icepear.echarts.origin.coord.polar.AngleAxisOption;
-
-import lombok.experimental.Accessors;
-import lombok.Data;
+import org.icepear.echarts.origin.coord.polar.ValueAngleAxisOption;
+import org.icepear.echarts.origin.util.CommonAxisPointerOption;
 
 @Accessors(chain=true)
 @Data
-public class ValueAngleAxis implements AngleAxisOption, ValueAxisBaseOption {
-    private Number polarIndex;
+public class ValueAngleAxis implements ValueAngleAxisOption {
 
-    private String polarId;
+	private Number polarIndex;
 
-    private Number startAngle;
+	private String polarId;
 
-    private Boolean clockwise;
+	private Number startAngle;
 
-    private Boolean scale;
+	private Boolean clockwise;
 
-    private List<Number> boundaryGap;
+	private String mainType;
 
-    private Number splitNumber;
+	private String type;
 
-    private Number interval;
+	@Setter(AccessLevel.NONE)
+	private Object id;
 
-    private Number minInterval;
+	public ValueAngleAxis setId(String id) {
+		this.id = id;
+		return this;
+	}
 
-    private Number maxInterval;
+	public ValueAngleAxis setId(Number id) {
+		this.id = id;
+		return this;
+	}
 
-    private Boolean show;
+	@Setter(AccessLevel.NONE)
+	private Object name;
 
-    private Boolean inverse;
+	public ValueAngleAxis setName(String name) {
+		this.name = name;
+		return this;
+	}
 
-    private String nameLocation;
+	public ValueAngleAxis setName(Number name) {
+		this.name = name;
+		return this;
+	}
 
-    private Number nameRotate;
+	private Number z;
 
-    private Object nameTruncate;
+	private Number zlevel;
 
-    private Object nameTextStyle;
+	private Boolean animation;
 
-    private Number nameGap;
+	private Number animationThreshold;
 
-    private Boolean silent;
+	@Setter(AccessLevel.NONE)
+	private Object animationDuration;
 
-    private Boolean triggerEvent;
+	public ValueAngleAxis setAnimationDuration(Number animationDuration) {
+		this.animationDuration = animationDuration;
+		return this;
+	}
 
-    private Object tooltip;
+	public ValueAngleAxis setAnimationDuration(Object animationDuration) {
+		this.animationDuration = animationDuration;
+		return this;
+	}
 
-    private AxisLabelBaseOption axisLabel;
+	private Object animationEasing;
 
-    private Object axisPointer;
+	@Setter(AccessLevel.NONE)
+	private Object animationDelay;
 
-    private AxisLineOption axisLine;
+	public ValueAngleAxis setAnimationDelay(Number animationDelay) {
+		this.animationDelay = animationDelay;
+		return this;
+	}
 
-    private AxisTickOption axisTick;
+	public ValueAngleAxis setAnimationDelay(Object animationDelay) {
+		this.animationDelay = animationDelay;
+		return this;
+	}
 
-    private Object minorTick;
+	@Setter(AccessLevel.NONE)
+	private Object animationDurationUpdate;
 
-    private SplitLineOption splitLine;
+	public ValueAngleAxis setAnimationDurationUpdate(Number animationDurationUpdate) {
+		this.animationDurationUpdate = animationDurationUpdate;
+		return this;
+	}
 
-    private MinorSplitLineOption minorSplitLine;
+	public ValueAngleAxis setAnimationDurationUpdate(Object animationDurationUpdate) {
+		this.animationDurationUpdate = animationDurationUpdate;
+		return this;
+	}
 
-    private Object splitArea;
+	private Object animationEasingUpdate;
 
-    private Number min;
+	@Setter(AccessLevel.NONE)
+	private Object animationDelayUpdate;
 
-    private Number max;
+	public ValueAngleAxis setAnimationDelayUpdate(Number animationDelayUpdate) {
+		this.animationDelayUpdate = animationDelayUpdate;
+		return this;
+	}
 
-    private String mainType;
+	public ValueAngleAxis setAnimationDelayUpdate(Object animationDelayUpdate) {
+		this.animationDelayUpdate = animationDelayUpdate;
+		return this;
+	}
 
-    private String type;
+	private Boolean show;
 
-    private String id;
+	private Boolean inverse;
 
-    private String name;
+	private String nameLocation;
 
-    private Number z;
+	private Number nameRotate;
 
-    private Number zlevel;
+	private Object nameTruncate;
 
-    private String animation;
+	private Object nameTextStyle;
 
-    private Number animationThreshold;
+	private Number nameGap;
 
-    private Number animationDuration;
+	private Boolean silent;
 
-    private String animationEasing;
+	private Boolean triggerEvent;
 
-    private Number animationDelay;
+	private Object tooltip;
 
-    private Number animationDurationUpdate;
+	@Setter(AccessLevel.NONE)
+	private Object axisLabel;
 
-    private String animationEasingUpdate;
+	public ValueAngleAxis setAxisLabel(AxisLabelBaseOption axisLabel) {
+		this.axisLabel = axisLabel;
+		return this;
+	}
 
-    private Number animationDelayUpdate;
+	public ValueAngleAxis setAxisLabel(Object axisLabel) {
+		this.axisLabel = axisLabel;
+		return this;
+	}
+
+	private CommonAxisPointerOption axisPointer;
+
+	private AxisLineOption axisLine;
+
+	private AxisTickOption axisTick;
+
+	private MinorTickOption minorTick;
+
+	private SplitLineOption splitLine;
+
+	private MinorSplitLineOption minorSplitLine;
+
+	private SplitAreaOption splitArea;
+
+	@Setter(AccessLevel.NONE)
+	private Object min;
+
+	public ValueAngleAxis setMin(String min) {
+		this.min = min;
+		return this;
+	}
+
+	public ValueAngleAxis setMin(Number min) {
+		this.min = min;
+		return this;
+	}
+
+	@Setter(AccessLevel.NONE)
+	private Object max;
+
+	public ValueAngleAxis setMax(String max) {
+		this.max = max;
+		return this;
+	}
+
+	public ValueAngleAxis setMax(Number max) {
+		this.max = max;
+		return this;
+	}
+
+	@Setter(AccessLevel.NONE)
+	private Object boundaryGap;
+
+	public ValueAngleAxis setBoundaryGap(String[] boundaryGap) {
+		this.boundaryGap = boundaryGap;
+		return this;
+	}
+
+	public ValueAngleAxis setBoundaryGap(Number[] boundaryGap) {
+		this.boundaryGap = boundaryGap;
+		return this;
+	}
+
+	private Number splitNumber;
+
+	private Number interval;
+
+	private Number minInterval;
+
+	private Number maxInterval;
+
+	private Boolean scale;
 }

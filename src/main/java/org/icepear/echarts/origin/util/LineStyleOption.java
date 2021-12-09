@@ -4,19 +4,20 @@ package org.icepear.echarts.origin.util;
  * https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/util/types.ts#L982
  */
 public interface LineStyleOption extends ShadowOptionMixin {
-    LineStyleOption setWidth(Number width);
 
-    LineStyleOption setColor(String color);
+	LineStyleOption setWidth(Number width);
 
-    LineStyleOption setOpacity(Number opacity);
+	LineStyleOption setColor(String color);
 
-    LineStyleOption setType(String type);
+	LineStyleOption setOpacity(Number opacity);
 
-    LineStyleOption setCap(Object cap);
+	LineStyleOption setType(String type);
 
-    LineStyleOption setJoin(Object join);
+	LineStyleOption setCap(Object cap);
 
-    LineStyleOption setDashOffset(Number dashOffset);
+	LineStyleOption setJoin(Object join);
 
-    LineStyleOption setMiterLimit(Number miterLimit);
+	LineStyleOption setDashOffset(Number dashOffset);
+
+	LineStyleOption setMiterLimit(Number miterLimit);
 }

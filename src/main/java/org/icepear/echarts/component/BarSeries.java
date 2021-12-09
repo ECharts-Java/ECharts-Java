@@ -1,161 +1,350 @@
 package org.icepear.echarts.component;
 
-import java.util.List;
 import java.util.Map;
 
-import org.icepear.echarts.origin.chart.bar.BackgroundStyleOption;
-import org.icepear.echarts.origin.chart.bar.BarSeriesOption;
-import org.icepear.echarts.origin.component.marker.MarkAreaOption;
-import org.icepear.echarts.origin.component.marker.MarkLineOption;
-import org.icepear.echarts.origin.component.marker.MarkPointOption;
-import org.icepear.echarts.origin.util.EmphasisOption;
-import org.icepear.echarts.type.BoxLength;
-
-import lombok.experimental.Accessors;
+import lombok.AccessLevel;
 import lombok.Data;
+import lombok.Setter;
+import lombok.experimental.Accessors;
+
+import org.icepear.echarts.origin.chart.bar.BarBackgroundStyleOption;
+import org.icepear.echarts.origin.chart.bar.BarSeriesOption;
 
 @Accessors(chain=true)
 @Data
 public class BarSeries implements BarSeriesOption {
-    private Boolean clip;
 
-    private Boolean roundCap;
+	private String mainType;
 
-    private Boolean showBackground;
+	private String type;
 
-    private BackgroundStyleOption backgroundStyle;
+	@Setter(AccessLevel.NONE)
+	private Object id;
 
-    private Boolean realtimeSort;
+	public BarSeries setId(String id) {
+		this.id = id;
+		return this;
+	}
 
-    private BoxLength barMinHeight;
+	public BarSeries setId(Number id) {
+		this.id = id;
+		return this;
+	}
 
-    private Number barMinAngle;
+	@Setter(AccessLevel.NONE)
+	private Object name;
 
-    private BoxLength barMaxWidth;
+	public BarSeries setName(String name) {
+		this.name = name;
+		return this;
+	}
 
-    private BoxLength barMinWidth;
+	public BarSeries setName(Number name) {
+		this.name = name;
+		return this;
+	}
 
-    private BoxLength barWidth;
+	private Number z;
 
-    private Number barGap;
+	private Number zlevel;
 
-    private Number barCategoryGap;
+	private Boolean animation;
 
-    private Boolean large;
-    
-    private Number largeThreshold;
+	private Number animationThreshold;
 
-    private Boolean silent;
+	@Setter(AccessLevel.NONE)
+	private Object animationDuration;
 
-    private String blendMode;
+	public BarSeries setAnimationDuration(Number animationDuration) {
+		this.animationDuration = animationDuration;
+		return this;
+	}
 
-    private String cursor;
+	public BarSeries setAnimationDuration(Object animationDuration) {
+		this.animationDuration = animationDuration;
+		return this;
+	}
 
-    private String dataGroupId;
+	private Object animationEasing;
 
-    private List<?> data;
+	@Setter(AccessLevel.NONE)
+	private Object animationDelay;
 
-    private String colorBy;
+	public BarSeries setAnimationDelay(Number animationDelay) {
+		this.animationDelay = animationDelay;
+		return this;
+	}
 
-    private Boolean legendHoverLink;
+	public BarSeries setAnimationDelay(Object animationDelay) {
+		this.animationDelay = animationDelay;
+		return this;
+	}
 
-    private Number progressive;
+	@Setter(AccessLevel.NONE)
+	private Object animationDurationUpdate;
 
-    private Number progressiveThreshold;
+	public BarSeries setAnimationDurationUpdate(Number animationDurationUpdate) {
+		this.animationDurationUpdate = animationDurationUpdate;
+		return this;
+	}
 
-    private String progressiveChunkMode;
+	public BarSeries setAnimationDurationUpdate(Object animationDurationUpdate) {
+		this.animationDurationUpdate = animationDurationUpdate;
+		return this;
+	}
 
-    private String coordinateSystem;
+	private Object animationEasingUpdate;
 
-    private Number hoverLayerThreshold;
+	@Setter(AccessLevel.NONE)
+	private Object animationDelayUpdate;
 
-    private String seriesLayoutBy;
+	public BarSeries setAnimationDelayUpdate(Number animationDelayUpdate) {
+		this.animationDelayUpdate = animationDelayUpdate;
+		return this;
+	}
 
-    private Object labelLine;
+	public BarSeries setAnimationDelayUpdate(Object animationDelayUpdate) {
+		this.animationDelayUpdate = animationDelayUpdate;
+		return this;
+	}
 
-    private Object labelLayout;
+	@Setter(AccessLevel.NONE)
+	private Object color;
 
-    private Object stateAnimation;
+	public BarSeries setColor(String[] color) {
+		this.color = color;
+		return this;
+	}
 
-    private Object universalTransition;
+	public BarSeries setColor(String color) {
+		this.color = color;
+		return this;
+	}
 
-    private Map<String, Boolean> selectedMap;
+	private String[][] colorLayer;
 
-    private String selectedMode;
+	private Object emphasis;
 
-    private String mainType;
+	private Object select;
 
-    private String type;
+	private Object blur;
 
-    private String id;
+	private Object markArea;
 
-    private String name;
+	private Object markLine;
 
-    private Number z;
+	private Object markPoint;
 
-    private Number zlevel;
+	private Object tooltip;
 
-    private String animation;
+	private Boolean silent;
 
-    private Number animationThreshold;
+	private String blendMode;
 
-    private Number animationDuration;
+	private String cursor;
 
-    private String animationEasing;
+	@Setter(AccessLevel.NONE)
+	private Object dataGroupId;
 
-    private Number animationDelay;
+	public BarSeries setDataGroupId(String dataGroupId) {
+		this.dataGroupId = dataGroupId;
+		return this;
+	}
 
-    private Number animationDurationUpdate;
+	public BarSeries setDataGroupId(Number dataGroupId) {
+		this.dataGroupId = dataGroupId;
+		return this;
+	}
 
-    private String animationEasingUpdate;
+	@Setter(AccessLevel.NONE)
+	private Object data;
 
-    private Number animationDelayUpdate;
+	public BarSeries setData(Object data) {
+		this.data = data;
+		return this;
+	}
 
-    private List<String> color;
+	public BarSeries setData(Object[] data) {
+		this.data = data;
+		return this;
+	}
 
-    private List<List<String>> colorLayer;
+	public BarSeries setData(Object[][] data) {
+		this.data = data;
+		return this;
+	}
 
-    private EmphasisOption emphasis;
+	private Object colorBy;
 
-    private Object select;
+	private Boolean legendHoverLink;
 
-    private Object blur;
+	@Setter(AccessLevel.NONE)
+	private Object progressive;
 
-    private Number xAxisIndex;
+	public BarSeries setProgressive(Number progressive) {
+		this.progressive = progressive;
+		return this;
+	}
 
-    private Number yAxisIndex;
+	public BarSeries setProgressive(Boolean progressive) {
+		this.progressive = progressive;
+		return this;
+	}
 
-    private String xAxisId;
+	private Number progressiveThreshold;
 
-    private String yAxisId;
+	private String progressiveChunkMode;
 
-    private Number polarIndex;
+	private String coordinateSystem;
 
-    private String polarId;
+	private Number hoverLayerThreshold;
 
-    private Object itemStyle;
-    
-    private Object label;
+	@Setter(AccessLevel.NONE)
+	private Object seriesLayoutBy;
 
-    private String stack;
+	public BarSeries setSeriesLayoutBy(String seriesLayoutBy) {
+		this.seriesLayoutBy = seriesLayoutBy;
+		return this;
+	}
 
-    private String sampling;
+	public BarSeries setSeriesLayoutBy(Object seriesLayoutBy) {
+		this.seriesLayoutBy = seriesLayoutBy;
+		return this;
+	}
 
-    private Number datasetIndex;
+	private Object labelLine;
 
-    private String datasetId;
+	private Object labelLayout;
 
-    private String sourceHeader;
+	private Object stateAnimation;
 
-    private List<Object> dimensions;
+	@Setter(AccessLevel.NONE)
+	private Object universalTransition;
 
-    private String encode;
+	public BarSeries setUniversalTransition(Boolean universalTransition) {
+		this.universalTransition = universalTransition;
+		return this;
+	}
 
-    private MarkAreaOption markArea;
+	public BarSeries setUniversalTransition(Object universalTransition) {
+		this.universalTransition = universalTransition;
+		return this;
+	}
 
-    private MarkLineOption markLine;
+	private Map<String, Boolean> selectedMap;
 
-    private MarkPointOption markPoint;
+	@Setter(AccessLevel.NONE)
+	private Object selectedMode;
 
-    private Object tooltip;
+	public BarSeries setSelectedMode(String selectedMode) {
+		this.selectedMode = selectedMode;
+		return this;
+	}
+
+	public BarSeries setSelectedMode(Boolean selectedMode) {
+		this.selectedMode = selectedMode;
+		return this;
+	}
+
+	private Number xAxisIndex;
+
+	private Number yAxisIndex;
+
+	private String xAxisId;
+
+	private String yAxisId;
+
+	private Number polarIndex;
+
+	private String polarId;
+
+	private Number barMinHeight;
+
+	private Number barMinAngle;
+
+	private Number barMaxWidth;
+
+	private Number barMinWidth;
+
+	@Setter(AccessLevel.NONE)
+	private Object barWidth;
+
+	public BarSeries setBarWidth(String barWidth) {
+		this.barWidth = barWidth;
+		return this;
+	}
+
+	public BarSeries setBarWidth(Number barWidth) {
+		this.barWidth = barWidth;
+		return this;
+	}
+
+	@Setter(AccessLevel.NONE)
+	private Object barGap;
+
+	public BarSeries setBarGap(String barGap) {
+		this.barGap = barGap;
+		return this;
+	}
+
+	public BarSeries setBarGap(Number barGap) {
+		this.barGap = barGap;
+		return this;
+	}
+
+	@Setter(AccessLevel.NONE)
+	private Object barCategoryGap;
+
+	public BarSeries setBarCategoryGap(String barCategoryGap) {
+		this.barCategoryGap = barCategoryGap;
+		return this;
+	}
+
+	public BarSeries setBarCategoryGap(Number barCategoryGap) {
+		this.barCategoryGap = barCategoryGap;
+		return this;
+	}
+
+	private Boolean large;
+
+	private Number largeThreshold;
+
+	private Object itemStyle;
+
+	private Object label;
+
+	private String stack;
+
+	private String sampling;
+
+	private Number datasetIndex;
+
+	@Setter(AccessLevel.NONE)
+	private Object datasetId;
+
+	public BarSeries setDatasetId(String datasetId) {
+		this.datasetId = datasetId;
+		return this;
+	}
+
+	public BarSeries setDatasetId(Number datasetId) {
+		this.datasetId = datasetId;
+		return this;
+	}
+
+	private Object sourceHeader;
+
+	private Object[] dimensions;
+
+	private Object encode;
+
+	private Boolean clip;
+
+	private Boolean roundCap;
+
+	private Boolean showBackground;
+
+	private BarBackgroundStyleOption backgroundStyle;
+
+	private Boolean realtimeSort;
 }

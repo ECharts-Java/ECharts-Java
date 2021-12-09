@@ -1,7 +1,6 @@
 package org.icepear.echarts.origin.export;
 
-import java.util.List;
-
+import org.icepear.echarts.origin.component.axisPointer.AxisPointerOption;
 import org.icepear.echarts.origin.component.legend.LegendOption;
 import org.icepear.echarts.origin.component.title.TitleOption;
 import org.icepear.echarts.origin.component.toolbox.ToolboxOption;
@@ -11,6 +10,7 @@ import org.icepear.echarts.origin.coord.cartesian.GridOption;
 import org.icepear.echarts.origin.coord.polar.AngleAxisOption;
 import org.icepear.echarts.origin.coord.polar.PolarOption;
 import org.icepear.echarts.origin.coord.polar.RadiusAxisOption;
+import org.icepear.echarts.origin.coord.radar.RadarOption;
 import org.icepear.echarts.origin.util.ECBasicOption;
 import org.icepear.echarts.origin.util.SeriesOption;
 
@@ -18,71 +18,104 @@ import org.icepear.echarts.origin.util.SeriesOption;
  * https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/export/option.ts#L246
  */
 public interface EChartsOption extends ECBasicOption {
-    EChartsOption setDataset(List<Object> dataset);
 
-    EChartsOption setAria(Object aria);
+	EChartsOption setDataset(Object[] dataset);
 
-    EChartsOption setTitle(TitleOption title);
+	EChartsOption setDataset(Object dataset);
 
-    EChartsOption setTitle(List<TitleOption> title);
+	EChartsOption setAria(Object aria);
 
-    EChartsOption setGrid(GridOption grid);
+	EChartsOption setTitle(TitleOption title);
 
-    EChartsOption setGrid(List<GridOption> grid);
+	EChartsOption setTitle(TitleOption[] title);
 
-    EChartsOption setRadar(List<Object> radar);
+	EChartsOption setGrid(GridOption[] grid);
 
-    EChartsOption setPolar(PolarOption polar);
+	EChartsOption setGrid(GridOption grid);
 
-    EChartsOption setPolar(List<PolarOption> polar);
+	EChartsOption setRadar(RadarOption[] radar);
 
-    EChartsOption setGeo(List<Object> geo);
+	EChartsOption setRadar(RadarOption radar);
 
-    EChartsOption setAngleAxis(AngleAxisOption angleAxis);
+	EChartsOption setPolar(PolarOption[] polar);
 
-    EChartsOption setAngleAxis(List<AngleAxisOption> angleAxis);
+	EChartsOption setPolar(PolarOption polar);
 
-    EChartsOption setRadiusAxis(RadiusAxisOption radiusAxis);
+	EChartsOption setGeo(Object[] geo);
 
-    EChartsOption setRadiusAxis(List<RadiusAxisOption> radiusAxis);
+	EChartsOption setGeo(Object geo);
 
-    EChartsOption setXAxis(AxisOption xAxis);
+	EChartsOption setAngleAxis(AngleAxisOption[] angleAxis);
 
-    EChartsOption setXAxis(List<AxisOption> xAxis);
+	EChartsOption setAngleAxis(AngleAxisOption angleAxis);
 
-    EChartsOption setYAxis(AxisOption yAxis);
+	EChartsOption setRadiusAxis(RadiusAxisOption radiusAxis);
 
-    EChartsOption setYAxis(List<AxisOption> yAxis);
+	EChartsOption setRadiusAxis(RadiusAxisOption[] radiusAxis);
 
-    EChartsOption setSingleAxis(List<Object> singleAxis);
+	EChartsOption setXAxis(AxisOption xAxis);
 
-    EChartsOption setParallel(List<Object> parallel);
+	EChartsOption setXAxis(AxisOption[] xAxis);
 
-    EChartsOption setParallelAxis(List<Object> parallelAxis);
+	EChartsOption setYAxis(Object[] yAxis);
 
-    EChartsOption setCalendar(List<Object> calendar);
+	EChartsOption setYAxis(Object yAxis);
 
-    EChartsOption setToolbox(ToolboxOption toolbox);
+	EChartsOption setSingleAxis(Object[] singleAxis);
 
-    EChartsOption setToolbox(List<ToolboxOption> toolbox);
+	EChartsOption setSingleAxis(Object singleAxis);
 
-    EChartsOption setTooltip(TooltipOption tooltip);
+	EChartsOption setParallel(Object[] parallel);
 
-    EChartsOption setTooltip(List<TooltipOption> tooltip);
+	EChartsOption setParallel(Object parallel);
 
-    EChartsOption setAxisPointer(List<Object> axisPointer);
+	EChartsOption setParallelAxis(Object[] parallelAxis);
 
-    EChartsOption setBrush(List<Object> brush);
+	EChartsOption setParallelAxis(Object parallelAxis);
 
-    EChartsOption setLegend(LegendOption legend);
+	EChartsOption setCalendar(Object[] calendar);
 
-    EChartsOption setLegend(List<LegendOption> legend);
+	EChartsOption setCalendar(Object calendar);
 
-    EChartsOption setDataZoom(List<Object> dataZoom);
+	EChartsOption setToolbox(ToolboxOption toolbox);
 
-    EChartsOption setVisualMap(List<Object> visualMap);
+	EChartsOption setToolbox(ToolboxOption[] toolbox);
 
-    EChartsOption setGraphic(List<Object> graphic);
+	EChartsOption setTooltip(TooltipOption tooltip);
 
-    EChartsOption setSeries(List<SeriesOption> series);
+	EChartsOption setTooltip(TooltipOption[] tooltip);
+
+	EChartsOption setAxisPointer(AxisPointerOption[] axisPointer);
+
+	EChartsOption setAxisPointer(AxisPointerOption axisPointer);
+
+	EChartsOption setBrush(Object[] brush);
+
+	EChartsOption setBrush(Object brush);
+
+	EChartsOption setTimeline(Object timeline);
+
+	EChartsOption setLegend(LegendOption legend);
+
+	EChartsOption setLegend(LegendOption[] legend);
+
+	EChartsOption setDataZoom(Object[] dataZoom);
+
+	EChartsOption setDataZoom(Object dataZoom);
+
+	EChartsOption setVisualMap(Object[] visualMap);
+
+	EChartsOption setVisualMap(Object visualMap);
+
+	EChartsOption setGraphic(Object[] graphic);
+
+	EChartsOption setGraphic(Object graphic);
+
+	EChartsOption setSeries(SeriesOption[] series);
+
+	EChartsOption setSeries(SeriesOption series);
+
+	EChartsOption setOptions(EChartsOption[] options);
+
+	EChartsOption setBaseOption(EChartsOption baseOption);
 }

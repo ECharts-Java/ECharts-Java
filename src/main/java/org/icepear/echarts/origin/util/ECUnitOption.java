@@ -1,26 +1,29 @@
 package org.icepear.echarts.origin.util;
 
-import java.util.List;
-
 /**
- * https://github.com/apache/echarts/blob/f3471f0a7080e68f8819f7b000d32d73fb0820fb/src/util/types.ts#L501
+ * https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/util/types.ts#L519
  */
 public interface ECUnitOption extends AnimationOptionMixin, ColorPaletteOptionMixin {
-    ECUnitOption setBaseOption(Object baseOption);
 
-    ECUnitOption setOptions(Object options);
+	ECUnitOption setBaseOption(Object baseOption);
 
-    ECUnitOption setMedia(Object media);
+	ECUnitOption setOptions(Object options);
 
-    ECUnitOption setTimeline(List<ComponentOption> timeline);
+	ECUnitOption setMedia(Object media);
 
-    ECUnitOption setBackgroundColor(String backgroundColor);
+	ECUnitOption setTimeline(ComponentOption[] timeline);
 
-    ECUnitOption setDarkMode(String darkMode);
+	ECUnitOption setTimeline(ComponentOption timeline);
 
-    ECUnitOption setTextStyle(Object textStyle);
+	ECUnitOption setBackgroundColor(String backgroundColor);
 
-    ECUnitOption setUseUTC(Boolean useUTC);
+	ECUnitOption setDarkMode(String darkMode);
 
-    ECUnitOption setStateAnimation(AnimationOption stateAnimation);
+	ECUnitOption setDarkMode(Boolean darkMode);
+
+	ECUnitOption setTextStyle(Object textStyle);
+
+	ECUnitOption setUseUTC(Boolean useUTC);
+
+	ECUnitOption setStateAnimation(Object stateAnimation);
 }

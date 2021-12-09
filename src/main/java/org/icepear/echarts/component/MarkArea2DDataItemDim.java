@@ -1,48 +1,82 @@
 package org.icepear.echarts.component;
 
-import java.util.List;
+import lombok.AccessLevel;
+import lombok.Data;
+import lombok.Setter;
+import lombok.experimental.Accessors;
 
 import org.icepear.echarts.origin.component.marker.MarkArea2DDataItemDimOption;
-import org.icepear.echarts.origin.util.EmphasisOption;
-import org.icepear.echarts.type.EChartsNumber;
-
-import lombok.experimental.Accessors;
-import lombok.Data;
+import org.icepear.echarts.origin.util.ItemStyleOption;
+import org.icepear.echarts.origin.util.SeriesLabelOption;
 
 @Accessors(chain=true)
 @Data
 public class MarkArea2DDataItemDim implements MarkArea2DDataItemDimOption {
-    private String name;
 
-    private Object itemStyle;
+	private ItemStyleOption itemStyle;
 
-    private Object label;
+	private SeriesLabelOption label;
 
-    private EmphasisOption emphasis;
+	private Object emphasis;
 
-    private Object select;
+	private Object select;
 
-    private Object blur;
+	private Object blur;
 
-    private EChartsNumber x;
+	private String name;
 
-    private EChartsNumber y;
+	@Setter(AccessLevel.NONE)
+	private Object x;
 
-    private List<Object> coord;
+	public MarkArea2DDataItemDim setX(String x) {
+		this.x = x;
+		return this;
+	}
 
-    private EChartsNumber xAxis;
+	public MarkArea2DDataItemDim setX(Number x) {
+		this.x = x;
+		return this;
+	}
 
-    private EChartsNumber yAxis;
+	@Setter(AccessLevel.NONE)
+	private Object y;
 
-    private Object radiusAxis;
+	public MarkArea2DDataItemDim setY(String y) {
+		this.y = y;
+		return this;
+	}
 
-    private Object angleAxis;
+	public MarkArea2DDataItemDim setY(Number y) {
+		this.y = y;
+		return this;
+	}
 
-    private String type;
+	private Object[] coord;
 
-    private Number valueIndex;
+	private Object xAxis;
 
-    private String valueDim;
+	private Object yAxis;
 
-    private Number value;
+	private Object radiusAxis;
+
+	private Object angleAxis;
+
+	private Object type;
+
+	private Number valueIndex;
+
+	private String valueDim;
+
+	@Setter(AccessLevel.NONE)
+	private Object value;
+
+	public MarkArea2DDataItemDim setValue(String value) {
+		this.value = value;
+		return this;
+	}
+
+	public MarkArea2DDataItemDim setValue(Number value) {
+		this.value = value;
+		return this;
+	}
 }

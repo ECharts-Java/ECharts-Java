@@ -1,6 +1,5 @@
 package org.icepear.echarts.origin.coord.cartesian;
 
-import org.icepear.echarts.origin.component.tooltip.TooltipOption;
 import org.icepear.echarts.origin.util.BoxLayoutOptionMixin;
 import org.icepear.echarts.origin.util.ComponentOption;
 import org.icepear.echarts.origin.util.ShadowOptionMixin;
@@ -9,15 +8,18 @@ import org.icepear.echarts.origin.util.ShadowOptionMixin;
  * https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/coord/cartesian/GridModel.ts#L26
  */
 public interface GridOption extends ComponentOption, BoxLayoutOptionMixin, ShadowOptionMixin {
-    GridOption setShow(Boolean show);
 
-    GridOption setContainLabel(Boolean containLabel);
+	GridOption setMainType(String mainType);
 
-    GridOption setBackgroundColor(String backgroundColor);
+	GridOption setShow(Boolean show);
 
-    GridOption setBorderWidth(Number borderWidth);
+	GridOption setContainLabel(Boolean containLabel);
 
-    GridOption setBorderColor(String borderColor);
+	GridOption setBackgroundColor(String backgroundColor);
 
-    GridOption setTooltip(TooltipOption tooltip);
+	GridOption setBorderWidth(Number borderWidth);
+
+	GridOption setBorderColor(String borderColor);
+
+	GridOption setTooltip(Object tooltip);
 }

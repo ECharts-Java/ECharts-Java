@@ -1,49 +1,59 @@
 package org.icepear.echarts.origin.coord;
 
 import org.icepear.echarts.origin.util.AnimationOptionMixin;
+import org.icepear.echarts.origin.util.CommonAxisPointerOption;
 import org.icepear.echarts.origin.util.ComponentOption;
 
 /**
  * https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/coord/axisCommonTypes.ts#L30
  */
 public interface AxisBaseOptionCommon extends ComponentOption, AnimationOptionMixin {
-    AxisBaseOptionCommon setShow(Boolean show);
 
-    AxisBaseOptionCommon setInverse(Boolean inverse);
+	AxisBaseOptionCommon setType(String type);
 
-    AxisBaseOptionCommon setNameLocation(String nameLocation);
+	AxisBaseOptionCommon setShow(Boolean show);
 
-    AxisBaseOptionCommon setNameRotate(Number nameRotate);
+	AxisBaseOptionCommon setInverse(Boolean inverse);
 
-    AxisBaseOptionCommon setNameTruncate(Object nameTruncate);
+	AxisBaseOptionCommon setName(String name);
 
-    AxisBaseOptionCommon setNameTextStyle(Object nameTextStyle);
+	AxisBaseOptionCommon setNameLocation(String nameLocation);
 
-    AxisBaseOptionCommon setNameGap(Number nameGap);
+	AxisBaseOptionCommon setNameRotate(Number nameRotate);
 
-    AxisBaseOptionCommon setSilent(Boolean silent);
+	AxisBaseOptionCommon setNameTruncate(Object nameTruncate);
 
-    AxisBaseOptionCommon setTriggerEvent(Boolean triggerEvent);
+	AxisBaseOptionCommon setNameTextStyle(Object nameTextStyle);
 
-    AxisBaseOptionCommon setTooltip(Object tooltip);
+	AxisBaseOptionCommon setNameGap(Number nameGap);
 
-    AxisBaseOptionCommon setAxisLabel(AxisLabelBaseOption axisLabel);
+	AxisBaseOptionCommon setSilent(Boolean silent);
 
-    AxisBaseOptionCommon setAxisPointer(Object axisPointer);
+	AxisBaseOptionCommon setTriggerEvent(Boolean triggerEvent);
 
-    AxisBaseOptionCommon setAxisLine(AxisLineOption axisLine);
+	AxisBaseOptionCommon setTooltip(Object tooltip);
 
-    AxisBaseOptionCommon setAxisTick(AxisTickOption axisTick);
+	AxisBaseOptionCommon setAxisLabel(AxisLabelBaseOption axisLabel);
 
-    AxisBaseOptionCommon setMinorTick(Object minorTick);
+	AxisBaseOptionCommon setAxisPointer(CommonAxisPointerOption axisPointer);
 
-    AxisBaseOptionCommon setSplitLine(SplitLineOption splitLine);
+	AxisBaseOptionCommon setAxisLine(AxisLineOption axisLine);
 
-    AxisBaseOptionCommon setMinorSplitLine(MinorSplitLineOption minorSplitLine);
+	AxisBaseOptionCommon setAxisTick(AxisTickOption axisTick);
 
-    AxisBaseOptionCommon setSplitArea(Object splitArea);
+	AxisBaseOptionCommon setMinorTick(MinorTickOption minorTick);
 
-    AxisBaseOptionCommon setMin(Number min);
+	AxisBaseOptionCommon setSplitLine(SplitLineOption splitLine);
 
-    AxisBaseOptionCommon setMax(Number max);
+	AxisBaseOptionCommon setMinorSplitLine(MinorSplitLineOption minorSplitLine);
+
+	AxisBaseOptionCommon setSplitArea(SplitAreaOption splitArea);
+
+	AxisBaseOptionCommon setMin(String min);
+
+	AxisBaseOptionCommon setMin(Number min);
+
+	AxisBaseOptionCommon setMax(String max);
+
+	AxisBaseOptionCommon setMax(Number max);
 }

@@ -1,106 +1,215 @@
 package org.icepear.echarts.component;
 
-import java.util.List;
+import lombok.AccessLevel;
+import lombok.Data;
+import lombok.Setter;
+import lombok.experimental.Accessors;
 
 import org.icepear.echarts.origin.coord.AxisLabelBaseOption;
 import org.icepear.echarts.origin.coord.AxisLineOption;
 import org.icepear.echarts.origin.coord.AxisTickOption;
-import org.icepear.echarts.origin.coord.CategoryAxisBaseOption;
-// import org.icepear.echarts.origin.coord.CategoryAxisLabelOption;
 import org.icepear.echarts.origin.coord.MinorSplitLineOption;
+import org.icepear.echarts.origin.coord.MinorTickOption;
+import org.icepear.echarts.origin.coord.SplitAreaOption;
 import org.icepear.echarts.origin.coord.SplitLineOption;
-import org.icepear.echarts.origin.coord.cartesian.AxisOption;
-
-import lombok.experimental.Accessors;
-import lombok.Data;
+import org.icepear.echarts.origin.coord.cartesian.CategoryAxisOption;
+import org.icepear.echarts.origin.util.CommonAxisPointerOption;
 
 @Accessors(chain=true)
 @Data
-public class CategoryAxis implements AxisOption, CategoryAxisBaseOption {
-    private Number gridIndex;
+public class CategoryAxis implements CategoryAxisOption {
 
-    private String gridId;
+	private Number gridIndex;
 
-    private String position;
+	private String gridId;
 
-    private Number offset;
+	private String position;
 
-    private Object categorySortInfo;
+	private Number offset;
 
-    private Boolean boundaryGap;
+	private Object categorySortInfo;
 
-    // Duplicated with AxisBaseOptionCommon.setAxisLabel(AxisLabelBaseOption)
-    // private CategoryAxisLabelOption axisLabel;
+	private String mainType;
 
-    private List<Object> data;
+	private String type;
 
-    private Boolean deduplication;
+	@Setter(AccessLevel.NONE)
+	private Object id;
 
-    private Boolean show;
+	public CategoryAxis setId(String id) {
+		this.id = id;
+		return this;
+	}
 
-    private Boolean inverse;
+	public CategoryAxis setId(Number id) {
+		this.id = id;
+		return this;
+	}
 
-    private String nameLocation;
+	@Setter(AccessLevel.NONE)
+	private Object name;
 
-    private Number nameRotate;
+	public CategoryAxis setName(String name) {
+		this.name = name;
+		return this;
+	}
 
-    private Object nameTruncate;
+	public CategoryAxis setName(Number name) {
+		this.name = name;
+		return this;
+	}
 
-    private Object nameTextStyle;
+	private Number z;
 
-    private Number nameGap;
+	private Number zlevel;
 
-    private Boolean silent;
+	private Boolean animation;
 
-    private Boolean triggerEvent;
+	private Number animationThreshold;
 
-    private Object tooltip;
+	@Setter(AccessLevel.NONE)
+	private Object animationDuration;
 
-    private AxisLabelBaseOption axisLabel;
+	public CategoryAxis setAnimationDuration(Number animationDuration) {
+		this.animationDuration = animationDuration;
+		return this;
+	}
 
-    private Object axisPointer;
+	public CategoryAxis setAnimationDuration(Object animationDuration) {
+		this.animationDuration = animationDuration;
+		return this;
+	}
 
-    private AxisLineOption axisLine;
+	private Object animationEasing;
 
-    private AxisTickOption axisTick;
+	@Setter(AccessLevel.NONE)
+	private Object animationDelay;
 
-    private Object minorTick;
+	public CategoryAxis setAnimationDelay(Number animationDelay) {
+		this.animationDelay = animationDelay;
+		return this;
+	}
 
-    private SplitLineOption splitLine;
+	public CategoryAxis setAnimationDelay(Object animationDelay) {
+		this.animationDelay = animationDelay;
+		return this;
+	}
 
-    private MinorSplitLineOption minorSplitLine;
+	@Setter(AccessLevel.NONE)
+	private Object animationDurationUpdate;
 
-    private Object splitArea;
+	public CategoryAxis setAnimationDurationUpdate(Number animationDurationUpdate) {
+		this.animationDurationUpdate = animationDurationUpdate;
+		return this;
+	}
 
-    private Number min;
+	public CategoryAxis setAnimationDurationUpdate(Object animationDurationUpdate) {
+		this.animationDurationUpdate = animationDurationUpdate;
+		return this;
+	}
 
-    private Number max;
+	private Object animationEasingUpdate;
 
-    private String mainType;
+	@Setter(AccessLevel.NONE)
+	private Object animationDelayUpdate;
 
-    private String type;
+	public CategoryAxis setAnimationDelayUpdate(Number animationDelayUpdate) {
+		this.animationDelayUpdate = animationDelayUpdate;
+		return this;
+	}
 
-    private String id;
+	public CategoryAxis setAnimationDelayUpdate(Object animationDelayUpdate) {
+		this.animationDelayUpdate = animationDelayUpdate;
+		return this;
+	}
 
-    private String name;
+	private Boolean show;
 
-    private Number z;
+	private Boolean inverse;
 
-    private Number zlevel;
+	private String nameLocation;
 
-    private String animation;
+	private Number nameRotate;
 
-    private Number animationThreshold;
+	private Object nameTruncate;
 
-    private Number animationDuration;
+	private Object nameTextStyle;
 
-    private String animationEasing;
+	private Number nameGap;
 
-    private Number animationDelay;
+	private Boolean silent;
 
-    private Number animationDurationUpdate;
+	private Boolean triggerEvent;
 
-    private String animationEasingUpdate;
+	private Object tooltip;
 
-    private Number animationDelayUpdate;
+	@Setter(AccessLevel.NONE)
+	private Object axisLabel;
+
+	public CategoryAxis setAxisLabel(AxisLabelBaseOption axisLabel) {
+		this.axisLabel = axisLabel;
+		return this;
+	}
+
+	public CategoryAxis setAxisLabel(Object axisLabel) {
+		this.axisLabel = axisLabel;
+		return this;
+	}
+
+	private CommonAxisPointerOption axisPointer;
+
+	private AxisLineOption axisLine;
+
+	@Setter(AccessLevel.NONE)
+	private Object axisTick;
+
+	public CategoryAxis setAxisTick(AxisTickOption axisTick) {
+		this.axisTick = axisTick;
+		return this;
+	}
+
+	public CategoryAxis setAxisTick(Object axisTick) {
+		this.axisTick = axisTick;
+		return this;
+	}
+
+	private MinorTickOption minorTick;
+
+	private SplitLineOption splitLine;
+
+	private MinorSplitLineOption minorSplitLine;
+
+	private SplitAreaOption splitArea;
+
+	@Setter(AccessLevel.NONE)
+	private Object min;
+
+	public CategoryAxis setMin(String min) {
+		this.min = min;
+		return this;
+	}
+
+	public CategoryAxis setMin(Number min) {
+		this.min = min;
+		return this;
+	}
+
+	@Setter(AccessLevel.NONE)
+	private Object max;
+
+	public CategoryAxis setMax(String max) {
+		this.max = max;
+		return this;
+	}
+
+	public CategoryAxis setMax(Number max) {
+		this.max = max;
+		return this;
+	}
+
+	private Boolean boundaryGap;
+
+	private Object[] data;
+
+	private Boolean deduplication;
 }

@@ -1,39 +1,48 @@
 package org.icepear.echarts.origin.component.toolbox;
 
-import java.util.List;
+import java.util.Map;
 
-import org.icepear.echarts.origin.component.tooltip.TooltipOption;
 import org.icepear.echarts.origin.util.BorderOptionMixin;
 import org.icepear.echarts.origin.util.BoxLayoutOptionMixin;
+import org.icepear.echarts.origin.util.CommonTooltipOption;
 import org.icepear.echarts.origin.util.ComponentOption;
+import org.icepear.echarts.origin.util.ItemStyleOption;
+import org.icepear.echarts.origin.util.LabelOption;
 
 /**
  * https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/component/toolbox/ToolboxModel.ts#L42
  */
 public interface ToolboxOption extends ComponentOption, BoxLayoutOptionMixin, BorderOptionMixin {
-    ToolboxOption setShow(Boolean show);
 
-    ToolboxOption setOrient(Object orient);
+	ToolboxOption setMainType(String mainType);
 
-    ToolboxOption setBackgroundColor(String backgroundColor);
+	ToolboxOption setShow(Boolean show);
 
-    ToolboxOption setBorderRadius(List<Number> borderRadius);
+	ToolboxOption setOrient(Object orient);
 
-    ToolboxOption setPadding(List<Number> padding);
+	ToolboxOption setBackgroundColor(String backgroundColor);
 
-    ToolboxOption setItemSize(Number itemSize);
+	ToolboxOption setBorderRadius(Number[] borderRadius);
 
-    ToolboxOption setItemGap(Number itemGap);
+	ToolboxOption setBorderRadius(Number borderRadius);
 
-    ToolboxOption setShowTitle(Boolean showTitle);
+	ToolboxOption setPadding(Number[] padding);
 
-    ToolboxOption setIconStyle(Object iconStyle);
+	ToolboxOption setPadding(Number padding);
 
-    ToolboxOption setEmphasis(Object emphasis);
+	ToolboxOption setItemSize(Number itemSize);
 
-    ToolboxOption setTextStyle(Object textStyle);
+	ToolboxOption setItemGap(Number itemGap);
 
-    ToolboxOption setTooltip(TooltipOption tooltip);
+	ToolboxOption setShowTitle(Boolean showTitle);
 
-    ToolboxOption setFeature(ToolboxFeatureMapOption feature);
+	ToolboxOption setIconStyle(ItemStyleOption iconStyle);
+
+	ToolboxOption setEmphasis(Object emphasis);
+
+	ToolboxOption setTextStyle(LabelOption textStyle);
+
+	ToolboxOption setTooltip(CommonTooltipOption tooltip);
+
+	ToolboxOption setFeature(Map<String, ToolboxFeatureOption> feature);
 }

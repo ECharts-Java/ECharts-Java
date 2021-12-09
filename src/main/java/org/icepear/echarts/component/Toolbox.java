@@ -1,79 +1,193 @@
 package org.icepear.echarts.component;
 
-import java.util.List;
+import java.util.Map;
 
-import org.icepear.echarts.origin.component.toolbox.ToolboxFeatureMapOption;
-import org.icepear.echarts.origin.component.toolbox.ToolboxOption;
-import org.icepear.echarts.origin.component.tooltip.TooltipOption;
-import org.icepear.echarts.type.BoxLength;
-
-import lombok.experimental.Accessors;
+import lombok.AccessLevel;
 import lombok.Data;
+import lombok.Setter;
+import lombok.experimental.Accessors;
+
+import org.icepear.echarts.origin.component.toolbox.ToolboxFeatureOption;
+import org.icepear.echarts.origin.component.toolbox.ToolboxOption;
+import org.icepear.echarts.origin.util.CommonTooltipOption;
+import org.icepear.echarts.origin.util.ItemStyleOption;
+import org.icepear.echarts.origin.util.LabelOption;
 
 @Accessors(chain=true)
 @Data
 public class Toolbox implements ToolboxOption {
-    private Boolean show;
 
-    private Object orient;
+	private String mainType;
 
-    private String backgroundColor;
+	private String type;
 
-    private List<Number> borderRadius;
+	@Setter(AccessLevel.NONE)
+	private Object id;
 
-    private List<Number> padding;
+	public Toolbox setId(String id) {
+		this.id = id;
+		return this;
+	}
 
-    private Number itemSize;
+	public Toolbox setId(Number id) {
+		this.id = id;
+		return this;
+	}
 
-    private Number itemGap;
+	@Setter(AccessLevel.NONE)
+	private Object name;
 
-    private Boolean showTitle;
+	public Toolbox setName(String name) {
+		this.name = name;
+		return this;
+	}
 
-    private Object iconStyle;
+	public Toolbox setName(Number name) {
+		this.name = name;
+		return this;
+	}
 
-    private Object emphasis;
+	private Number z;
 
-    private Object textStyle;
+	private Number zlevel;
 
-    private TooltipOption tooltip;
+	@Setter(AccessLevel.NONE)
+	private Object width;
 
-    private ToolboxFeatureMapOption feature;
+	public Toolbox setWidth(String width) {
+		this.width = width;
+		return this;
+	}
 
-    private String mainType;
+	public Toolbox setWidth(Number width) {
+		this.width = width;
+		return this;
+	}
 
-    private String type;
+	@Setter(AccessLevel.NONE)
+	private Object height;
 
-    private String id;
+	public Toolbox setHeight(String height) {
+		this.height = height;
+		return this;
+	}
 
-    private String name;
+	public Toolbox setHeight(Number height) {
+		this.height = height;
+		return this;
+	}
 
-    private Number z;
+	@Setter(AccessLevel.NONE)
+	private Object top;
 
-    private Number zlevel;
+	public Toolbox setTop(String top) {
+		this.top = top;
+		return this;
+	}
 
-    private BoxLength width;
+	public Toolbox setTop(Number top) {
+		this.top = top;
+		return this;
+	}
 
-    private BoxLength height;
+	@Setter(AccessLevel.NONE)
+	private Object right;
 
-    private BoxLength top;
+	public Toolbox setRight(String right) {
+		this.right = right;
+		return this;
+	}
 
-    private BoxLength right;
+	public Toolbox setRight(Number right) {
+		this.right = right;
+		return this;
+	}
 
-    private BoxLength bottom;
+	@Setter(AccessLevel.NONE)
+	private Object bottom;
 
-    private BoxLength left;
+	public Toolbox setBottom(String bottom) {
+		this.bottom = bottom;
+		return this;
+	}
 
-    private String borderColor;
+	public Toolbox setBottom(Number bottom) {
+		this.bottom = bottom;
+		return this;
+	}
 
-    private Number borderWidth;
+	@Setter(AccessLevel.NONE)
+	private Object left;
 
-    private String borderType;
+	public Toolbox setLeft(String left) {
+		this.left = left;
+		return this;
+	}
 
-    private Object borderCap;
+	public Toolbox setLeft(Number left) {
+		this.left = left;
+		return this;
+	}
 
-    private Object borderJoin;
+	private String borderColor;
 
-    private Number borderDashOffset;
+	private Number borderWidth;
 
-    private Number borderMiterLimit;
+	private String borderType;
+
+	private Object borderCap;
+
+	private Object borderJoin;
+
+	private Number borderDashOffset;
+
+	private Number borderMiterLimit;
+
+	private Boolean show;
+
+	private Object orient;
+
+	private String backgroundColor;
+
+	@Setter(AccessLevel.NONE)
+	private Object borderRadius;
+
+	public Toolbox setBorderRadius(Number[] borderRadius) {
+		this.borderRadius = borderRadius;
+		return this;
+	}
+
+	public Toolbox setBorderRadius(Number borderRadius) {
+		this.borderRadius = borderRadius;
+		return this;
+	}
+
+	@Setter(AccessLevel.NONE)
+	private Object padding;
+
+	public Toolbox setPadding(Number[] padding) {
+		this.padding = padding;
+		return this;
+	}
+
+	public Toolbox setPadding(Number padding) {
+		this.padding = padding;
+		return this;
+	}
+
+	private Number itemSize;
+
+	private Number itemGap;
+
+	private Boolean showTitle;
+
+	private ItemStyleOption iconStyle;
+
+	private Object emphasis;
+
+	private LabelOption textStyle;
+
+	private CommonTooltipOption tooltip;
+
+	private Map<String, ToolboxFeatureOption> feature;
 }
