@@ -1,0 +1,7 @@
+{
+    "name": "LineEmphasis",
+    "type": "class",
+    "implements": [
+        "LineEmphasisOption"
+    ]
+}

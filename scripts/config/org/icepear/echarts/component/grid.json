@@ -1,0 +1,7 @@
+{
+    "name": "Grid",
+    "type": "class",
+    "implements": [
+        "GridOption"
+    ]
+}

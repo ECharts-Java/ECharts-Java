@@ -1,0 +1,7 @@
+{
+    "name": "ToolboxDataViewFeature",
+    "type": "class",
+    "implements": [
+        "ToolboxDataViewFeatureOption"
+    ]
+}

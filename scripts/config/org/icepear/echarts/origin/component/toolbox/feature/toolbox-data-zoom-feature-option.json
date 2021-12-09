@@ -1,0 +1,66 @@
+{
+    "name": "ToolboxDataZoomFeatureOption",
+    "type": "interface",
+    "extends": [
+        "ToolboxFeatureOption"
+    ],
+    "fields": [
+        {
+            "name": "type",
+            "types": [
+                "IconType[]"
+            ]
+        },
+        {
+            "name": "icon",
+            "types": [
+                "String"
+            ]
+        },
+        {
+            "name": "title",
+            "types": [
+                "String"
+            ]
+        },
+        {
+            "name": "filterMode",
+            "types": [
+                "String"
+            ]
+        },
+        {
+            "name": "xAxisIndex",
+            "types": [
+                "ModelFinderIndexQuery"
+            ]
+        },
+        {
+            "name": "yAxisIndex",
+            "types": [
+                "ModelFinderIndexQuery"
+            ]
+        },
+        {
+            "name": "xAxisId",
+            "types": [
+                "ModelFinderIdQuery"
+            ]
+        },
+        {
+            "name": "yAxisId",
+            "types": [
+                "ModelFinderIdQuery"
+            ]
+        },
+        {
+            "name": "brushStyle",
+            "types": [
+                "ItemStyleOption"
+            ]
+        }
+    ],
+    "comments": [
+        "https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/component/toolbox/feature/DataZoom.ts#L57"
+    ]
+}

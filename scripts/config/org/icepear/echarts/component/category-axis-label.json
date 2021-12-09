@@ -1,0 +1,7 @@
+{
+    "name": "CategoryAxisLabel",
+    "type": "class",
+    "implements": [
+        "CategoryAxisLabelOption"
+    ]
+}

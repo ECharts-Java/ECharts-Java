@@ -184,9 +184,12 @@ def generate_interface_start_line(obj, lines):
             obj["name"], ", ".join(obj["extends"])))
 
 
-def merge_fields(src, dst):
+def merge_fields(src, dst, override=False):
     for field in src:
-        dst[field] |= src[field]
+        if override:
+            dst[field] = src[field]
+        else:
+            dst[field] |= src[field]
 
 
 def get_all_fields(obj):
@@ -204,9 +207,9 @@ def get_fields_dfs(obj):
             merge_fields(get_fields_dfs(
                 symbol_table[implement]["obj"]), fields)
     elif obj["type"] == "interface":
-        merge_fields(get_all_fields(obj), fields)
         for extend in obj["extends"]:
             merge_fields(get_fields_dfs(symbol_table[extend]["obj"]), fields)
+        merge_fields(get_all_fields(obj), fields)
     return fields
 
 
@@ -218,7 +221,6 @@ def eliminate_fields_conflicts(fields):
             for symbol in get_symbols(type):
                 if symbol not in symbol_table:
                     type = type.replace(symbol, "Object")
-                    break
             new_types.add(type)
         fields[name] = new_types
 

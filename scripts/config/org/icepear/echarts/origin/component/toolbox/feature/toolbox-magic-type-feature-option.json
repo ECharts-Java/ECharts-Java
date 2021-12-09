@@ -1,0 +1,42 @@
+{
+    "name": "ToolboxMagicTypeFeatureOption",
+    "type": "interface",
+    "extends": [
+        "ToolboxFeatureOption"
+    ],
+    "fields": [
+        {
+            "name": "type",
+            "types": [
+                "IconType[]"
+            ]
+        },
+        {
+            "name": "icon",
+            "types": [
+                "String"
+            ]
+        },
+        {
+            "name": "title",
+            "types": [
+                "String"
+            ]
+        },
+        {
+            "name": "option",
+            "types": [
+                "String"
+            ]
+        },
+        {
+            "name": "seriesIndex",
+            "types": [
+                "Object"
+            ]
+        }
+    ],
+    "comments": [
+        "https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/component/toolbox/feature/MagicType.ts#L43"
+    ]
+}

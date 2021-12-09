@@ -1,0 +1,7 @@
+{
+    "name": "LineStyle",
+    "type": "class",
+    "implements": [
+        "LineStyleOption"
+    ]
+}
