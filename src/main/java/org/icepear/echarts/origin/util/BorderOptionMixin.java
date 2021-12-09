@@ -4,17 +4,18 @@ package org.icepear.echarts.origin.util;
  * https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/util/types.ts#L848
  */
 public interface BorderOptionMixin {
-    BorderOptionMixin setBorderColor(String borderColor);
 
-    BorderOptionMixin setBorderWidth(Number borderWidth);
+	BorderOptionMixin setBorderColor(String borderColor);
 
-    BorderOptionMixin setBorderType(String borderType);
+	BorderOptionMixin setBorderWidth(Number borderWidth);
 
-    BorderOptionMixin setBorderCap(Object borderCap);
+	BorderOptionMixin setBorderType(String borderType);
 
-    BorderOptionMixin setBorderJoin(Object borderJoin);
+	BorderOptionMixin setBorderCap(Object borderCap);
 
-    BorderOptionMixin setBorderDashOffset(Number borderDashOffset);
+	BorderOptionMixin setBorderJoin(Object borderJoin);
 
-    BorderOptionMixin setBorderMiterLimit(Number borderMiterLimit);
+	BorderOptionMixin setBorderDashOffset(Number borderDashOffset);
+
+	BorderOptionMixin setBorderMiterLimit(Number borderMiterLimit);
 }

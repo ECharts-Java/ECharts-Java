@@ -1,23 +1,23 @@
 package org.icepear.echarts.component;
 
+import lombok.Data;
+import lombok.experimental.Accessors;
+
 import org.icepear.echarts.origin.chart.pie.PieEmphasisOption;
 import org.icepear.echarts.origin.chart.pie.PieItemStyleOption;
+import org.icepear.echarts.origin.chart.pie.PieLabelOption;
 
-import lombok.experimental.Accessors;
-import lombok.Data;
-
-@Accessors(chain = true)
+@Accessors(chain=true)
 @Data
 public class PieEmphasis implements PieEmphasisOption {
-    private String focus;
 
-    private Boolean scale;
+	private PieItemStyleOption itemStyle;
 
-    private Number scaleSize;
+	private PieLabelOption label;
 
-    private Object blurScope;
+	private Object focus;
 
-    private PieItemStyleOption itemStyle;
+	private Boolean scale;
 
-    private Object label;
+	private Number scaleSize;
 }

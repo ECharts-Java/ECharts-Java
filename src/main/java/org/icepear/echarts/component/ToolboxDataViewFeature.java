@@ -1,45 +1,71 @@
 package org.icepear.echarts.component;
 
+import java.util.Map;
+
+import lombok.AccessLevel;
+import lombok.Data;
+import lombok.Setter;
 import lombok.experimental.Accessors;
 
 import org.icepear.echarts.origin.component.toolbox.feature.ToolboxDataViewFeatureOption;
 
-import lombok.Data;
-
 @Accessors(chain=true)
 @Data
 public class ToolboxDataViewFeature implements ToolboxDataViewFeatureOption {
-    private Boolean readOnly;
 
-    private String optionToContent;
+	private Boolean show;
 
-    private Object contentToOption;
+	@Setter(AccessLevel.NONE)
+	private Object title;
 
-    private String lang;
+	public ToolboxDataViewFeature setTitle(String title) {
+		this.title = title;
+		return this;
+	}
 
-    private String backgroundColor;
+	public ToolboxDataViewFeature setTitle(Map<String, String> title) {
+		this.title = title;
+		return this;
+	}
 
-    private String textColor;
+	@Setter(AccessLevel.NONE)
+	private Object icon;
 
-    private String textareaColor;
+	public ToolboxDataViewFeature setIcon(String icon) {
+		this.icon = icon;
+		return this;
+	}
 
-    private String textareaBorderColor;
+	public ToolboxDataViewFeature setIcon(Map<String, String> icon) {
+		this.icon = icon;
+		return this;
+	}
 
-    private String buttonColor;
-    
-    private String buttonTextColor;
+	private Object iconStyle;
 
-    private Boolean show;
+	private Object emphasis;
 
-    private String title;
+	private Map<String, Object> iconStatus;
 
-    private String icon;
+	private Object onclick;
 
-    private Object iconStyle;
+	private Boolean readOnly;
 
-    private Object emphasis;
+	private Object optionToContent;
 
-    private Object iconStatus;
+	private Object contentToOption;
 
-    private Object onclick;
+	private String[] lang;
+
+	private String backgroundColor;
+
+	private String textColor;
+
+	private String textareaColor;
+
+	private String textareaBorderColor;
+
+	private String buttonColor;
+
+	private String buttonTextColor;
 }

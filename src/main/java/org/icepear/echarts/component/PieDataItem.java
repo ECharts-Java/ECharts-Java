@@ -1,34 +1,91 @@
 package org.icepear.echarts.component;
 
+import lombok.AccessLevel;
+import lombok.Data;
+import lombok.Setter;
+import lombok.experimental.Accessors;
+
 import org.icepear.echarts.origin.chart.pie.PieDataItemOption;
 import org.icepear.echarts.origin.chart.pie.PieItemStyleOption;
-import org.icepear.echarts.origin.util.EmphasisOption;
+import org.icepear.echarts.origin.chart.pie.PieLabelOption;
 
-import lombok.experimental.Accessors;
-import lombok.Data;
-
-@Accessors(chain = true)
+@Accessors(chain=true)
 @Data
 public class PieDataItem implements PieDataItemOption {
-    private String cursor;
 
-    private String id;
+	@Setter(AccessLevel.NONE)
+	private Object id;
 
-    private String name;
+	public PieDataItem setId(String id) {
+		this.id = id;
+		return this;
+	}
 
-    private String groupId;
+	public PieDataItem setId(Number id) {
+		this.id = id;
+		return this;
+	}
 
-    private Object value;
+	@Setter(AccessLevel.NONE)
+	private Object name;
 
-    private Boolean selected;
+	public PieDataItem setName(String name) {
+		this.name = name;
+		return this;
+	}
 
-    private PieItemStyleOption itemStyle;
+	public PieDataItem setName(Number name) {
+		this.name = name;
+		return this;
+	}
 
-    private Object label;
+	@Setter(AccessLevel.NONE)
+	private Object groupId;
 
-    private EmphasisOption emphasis;
+	public PieDataItem setGroupId(String groupId) {
+		this.groupId = groupId;
+		return this;
+	}
 
-    private Object select;
+	public PieDataItem setGroupId(Number groupId) {
+		this.groupId = groupId;
+		return this;
+	}
 
-    private Object blur;
+	private Boolean selected;
+
+	@Setter(AccessLevel.NONE)
+	private Object value;
+
+	public PieDataItem setValue(String[] value) {
+		this.value = value;
+		return this;
+	}
+
+	public PieDataItem setValue(Number[] value) {
+		this.value = value;
+		return this;
+	}
+
+	public PieDataItem setValue(String value) {
+		this.value = value;
+		return this;
+	}
+
+	public PieDataItem setValue(Number value) {
+		this.value = value;
+		return this;
+	}
+
+	private PieItemStyleOption itemStyle;
+
+	private PieLabelOption label;
+
+	private Object emphasis;
+
+	private Object select;
+
+	private Object blur;
+
+	private String cursor;
 }

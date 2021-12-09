@@ -1,34 +1,35 @@
 package org.icepear.echarts.component;
 
+import lombok.Data;
 import lombok.experimental.Accessors;
 
 import org.icepear.echarts.origin.component.marker.MarkArea1DDataItemOption;
-import org.icepear.echarts.origin.util.EmphasisOption;
-
-import lombok.Data;
+import org.icepear.echarts.origin.util.ItemStyleOption;
+import org.icepear.echarts.origin.util.SeriesLabelOption;
 
 @Accessors(chain=true)
 @Data
 public class MarkArea1DDataItem implements MarkArea1DDataItemOption {
-    private Number xAxis;
 
-    private Number yAxis;
+	private ItemStyleOption itemStyle;
 
-    private Object type;
+	private SeriesLabelOption label;
 
-    private Number valueIndex;
+	private Object emphasis;
 
-    private String valueDim;
+	private Object select;
 
-    private String name;
+	private Object blur;
 
-    private Object itemStyle;
+	private String name;
 
-    private Object label;
+	private Number xAxis;
 
-    private EmphasisOption emphasis;
+	private Number yAxis;
 
-    private Object select;
+	private Object type;
 
-    private Object blur;
+	private Number valueIndex;
+
+	private String valueDim;
 }

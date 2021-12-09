@@ -1,41 +1,66 @@
 package org.icepear.echarts.component;
 
-import java.util.List;
+import java.util.Map;
+
+import lombok.AccessLevel;
+import lombok.Data;
+import lombok.Setter;
+import lombok.experimental.Accessors;
 
 import org.icepear.echarts.origin.component.toolbox.feature.ToolboxDataZoomFeatureOption;
-import org.icepear.echarts.type.AxisIndex;
-
-import lombok.experimental.Accessors;
-import lombok.Data;
+import org.icepear.echarts.origin.util.ItemStyleOption;
 
 @Accessors(chain=true)
 @Data
 public class ToolboxDataZoomFeature implements ToolboxDataZoomFeatureOption {
-    private List<String> type;
 
-    private Object filterMode;
+	private Boolean show;
 
-    private AxisIndex xAxisIndex;
+	@Setter(AccessLevel.NONE)
+	private Object title;
 
-    private AxisIndex yAxisIndex;
+	public ToolboxDataZoomFeature setTitle(String title) {
+		this.title = title;
+		return this;
+	}
 
-    private Object xAxisId;
+	public ToolboxDataZoomFeature setTitle(Map<String, String> title) {
+		this.title = title;
+		return this;
+	}
 
-    private Object yAxisId;
+	@Setter(AccessLevel.NONE)
+	private Object icon;
 
-    private Object brushStyle;
+	public ToolboxDataZoomFeature setIcon(String icon) {
+		this.icon = icon;
+		return this;
+	}
 
-    private Boolean show;
+	public ToolboxDataZoomFeature setIcon(Map<String, String> icon) {
+		this.icon = icon;
+		return this;
+	}
 
-    private String title;
+	private Object iconStyle;
 
-    private String icon;
+	private Object emphasis;
 
-    private Object iconStyle;
+	private Map<String, Object> iconStatus;
 
-    private Object emphasis;
+	private Object onclick;
 
-    private Object iconStatus;
+	private Object[] type;
 
-    private Object onclick;
+	private String filterMode;
+
+	private Object xAxisIndex;
+
+	private Object yAxisIndex;
+
+	private Object xAxisId;
+
+	private Object yAxisId;
+
+	private ItemStyleOption brushStyle;
 }

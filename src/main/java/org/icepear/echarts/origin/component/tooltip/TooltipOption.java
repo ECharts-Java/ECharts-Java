@@ -1,6 +1,6 @@
 package org.icepear.echarts.origin.component.tooltip;
 
-import org.icepear.echarts.origin.component.axisPointer.AxisPointerOption;
+import org.icepear.echarts.component.TooltipAxisPointer;
 import org.icepear.echarts.origin.util.CommonTooltipOption;
 import org.icepear.echarts.origin.util.ComponentOption;
 
@@ -8,19 +8,22 @@ import org.icepear.echarts.origin.util.ComponentOption;
  * https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/component/tooltip/TooltipModel.ts#L35
  */
 public interface TooltipOption extends CommonTooltipOption, ComponentOption {
-    TooltipOption setAxisPointer(AxisPointerOption axisPointer);
 
-    TooltipOption setShowContent(Boolean showContent);
+	TooltipOption setMainType(String mainType);
 
-    TooltipOption setTrigger(String trigger);
+	TooltipOption setAxisPointer(TooltipAxisPointer axisPointer);
 
-    TooltipOption setDisplayMode(String displayMode);
+	TooltipOption setShowContent(Boolean showContent);
 
-    TooltipOption setRenderMode(String renderMode);
+	TooltipOption setTrigger(String trigger);
 
-    TooltipOption setAppendToBody(Boolean appendToBody);
+	TooltipOption setDisplayMode(String displayMode);
 
-    TooltipOption setClassName(String className);
+	TooltipOption setRenderMode(String renderMode);
 
-    TooltipOption setOrder(Object order);
+	TooltipOption setAppendToBody(Boolean appendToBody);
+
+	TooltipOption setClassName(String className);
+
+	TooltipOption setOrder(String order);
 }

@@ -4,19 +4,28 @@ package org.icepear.echarts.origin.util;
  * https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/util/types.ts#L880
  */
 public interface AnimationOptionMixin {
-    AnimationOptionMixin setAnimation(String animation);
 
-    AnimationOptionMixin setAnimationThreshold(Number animationThreshold);
+	AnimationOptionMixin setAnimation(Boolean animation);
 
-    AnimationOptionMixin setAnimationDuration(Number animationDuration);
+	AnimationOptionMixin setAnimationThreshold(Number animationThreshold);
 
-    AnimationOptionMixin setAnimationEasing(String animationEasing);
+	AnimationOptionMixin setAnimationDuration(Number animationDuration);
 
-    AnimationOptionMixin setAnimationDelay(Number animationDelay);
+	AnimationOptionMixin setAnimationDuration(Object animationDuration);
 
-    AnimationOptionMixin setAnimationDurationUpdate(Number animationDurationUpdate);
+	AnimationOptionMixin setAnimationEasing(Object animationEasing);
 
-    AnimationOptionMixin setAnimationEasingUpdate(String animationEasingUpdate);
+	AnimationOptionMixin setAnimationDelay(Number animationDelay);
 
-    AnimationOptionMixin setAnimationDelayUpdate(Number animationDelayUpdate);
+	AnimationOptionMixin setAnimationDelay(Object animationDelay);
+
+	AnimationOptionMixin setAnimationDurationUpdate(Number animationDurationUpdate);
+
+	AnimationOptionMixin setAnimationDurationUpdate(Object animationDurationUpdate);
+
+	AnimationOptionMixin setAnimationEasingUpdate(Object animationEasingUpdate);
+
+	AnimationOptionMixin setAnimationDelayUpdate(Number animationDelayUpdate);
+
+	AnimationOptionMixin setAnimationDelayUpdate(Object animationDelayUpdate);
 }

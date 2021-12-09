@@ -1,52 +1,64 @@
 package org.icepear.echarts.origin.component.legend;
 
-import java.util.List;
 import java.util.Map;
 
-import org.icepear.echarts.origin.component.tooltip.TooltipOption;
 import org.icepear.echarts.origin.util.BorderOptionMixin;
 import org.icepear.echarts.origin.util.BoxLayoutOptionMixin;
 import org.icepear.echarts.origin.util.ComponentOption;
+import org.icepear.echarts.origin.util.LabelOption;
 
 /**
  * https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/component/legend/LegendModel.ts#L159
  */
 public interface LegendOption extends ComponentOption, LegendStyleOption, BoxLayoutOptionMixin, BorderOptionMixin {
-    LegendOption setShow(Boolean show);
 
-    LegendOption setOrient(String orient);
+	LegendOption setMainType(String mainType);
 
-    LegendOption setAlign(String align);
+	LegendOption setShow(Boolean show);
 
-    LegendOption setBackgroundColor(String backgroundColor);
+	LegendOption setOrient(Object orient);
 
-    LegendOption setBorderRadius(List<Number> borderRadius);
+	LegendOption setAlign(String align);
 
-    LegendOption setPadding(List<Number> padding);
+	LegendOption setBackgroundColor(String backgroundColor);
 
-    LegendOption setItemGap(Number itemGap);
+	LegendOption setBorderRadius(Number[] borderRadius);
 
-    LegendOption setItemWidth(Number itemWidth);
+	LegendOption setBorderRadius(Number borderRadius);
 
-    LegendOption setItemHeight(Number itemHeight);
+	LegendOption setPadding(Number[] padding);
 
-    LegendOption setSelectedMode(String selectedMode);
+	LegendOption setPadding(Number padding);
 
-    LegendOption setSelected(Map<String, Boolean> selected);
+	LegendOption setItemGap(Number itemGap);
 
-    LegendOption setSelector(Object selector);
+	LegendOption setItemWidth(Number itemWidth);
 
-    LegendOption setSelectorLabel(Object selectorLabel);
+	LegendOption setItemHeight(Number itemHeight);
 
-    LegendOption setEmphasis(Object emphasis);
+	LegendOption setSelectedMode(String selectedMode);
 
-    LegendOption setSelectorPosition(String selectorPosition);
+	LegendOption setSelectedMode(Boolean selectedMode);
 
-    LegendOption setSelectorItemGap(Number selectorItemGap);
+	LegendOption setSelected(Map<String, Boolean> selected);
 
-    LegendOption setSelectorButtonGap(Number selectorButtonGap);
+	LegendOption setSelector(Boolean selector);
 
-    LegendOption setData(List<Object> data);
+	LegendOption setSelector(Object[] selector);
 
-    LegendOption setTooltip(TooltipOption tooltip);
+	LegendOption setSelectorLabel(LabelOption selectorLabel);
+
+	LegendOption setEmphasis(Object emphasis);
+
+	LegendOption setSelectorPosition(String selectorPosition);
+
+	LegendOption setSelectorItemGap(Number selectorItemGap);
+
+	LegendOption setSelectorButtonGap(Number selectorButtonGap);
+
+	LegendOption setData(String[] data);
+
+	LegendOption setData(Object[] data);
+
+	LegendOption setTooltip(Object tooltip);
 }

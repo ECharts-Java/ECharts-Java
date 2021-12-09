@@ -1,11 +1,17 @@
 package org.icepear.echarts.origin.chart.pie;
 
 import org.icepear.echarts.origin.util.ItemStyleOption;
-import org.icepear.echarts.type.EChartsRadius;
 
 /**
- * https://github.com/apache/echarts/blob/56fbf07640a25bbd3e710094da824f5bed6c647d/src/chart/pie/PieSeries.ts#L43
+ * https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/chart/pie/PieSeries.ts#L43
  */
 public interface PieItemStyleOption extends ItemStyleOption {
-    PieItemStyleOption setBorderRadius(EChartsRadius borderRadius);
+
+	PieItemStyleOption setBorderRadius(String[] borderRadius);
+
+	PieItemStyleOption setBorderRadius(Number[] borderRadius);
+
+	PieItemStyleOption setBorderRadius(String borderRadius);
+
+	PieItemStyleOption setBorderRadius(Number borderRadius);
 }

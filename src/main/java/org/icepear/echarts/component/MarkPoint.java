@@ -1,70 +1,181 @@
 package org.icepear.echarts.component;
 
-import java.util.List;
-
-import org.icepear.echarts.origin.component.marker.MarkPointOption;
-import org.icepear.echarts.origin.component.marker.MarkerTooltipOption;
-import org.icepear.echarts.origin.util.EmphasisOption;
-
-import lombok.experimental.Accessors;
+import lombok.AccessLevel;
 import lombok.Data;
+import lombok.Setter;
+import lombok.experimental.Accessors;
+
+import org.icepear.echarts.origin.component.marker.MarkPointDataItemOption;
+import org.icepear.echarts.origin.component.marker.MarkPointOption;
+import org.icepear.echarts.origin.util.ItemStyleOption;
+import org.icepear.echarts.origin.util.SeriesLabelOption;
 
 @Accessors(chain=true)
 @Data
 public class MarkPoint implements MarkPointOption {
-    private Number precision;
 
-    private Boolean silent;
+	private String mainType;
 
-    private List<Object> data;
+	private String type;
 
-    private MarkerTooltipOption tooltip;
+	@Setter(AccessLevel.NONE)
+	private Object id;
 
-    private String mainType;
+	public MarkPoint setId(String id) {
+		this.id = id;
+		return this;
+	}
 
-    private String type;
+	public MarkPoint setId(Number id) {
+		this.id = id;
+		return this;
+	}
 
-    private String id;
+	@Setter(AccessLevel.NONE)
+	private Object name;
 
-    private String name;
+	public MarkPoint setName(String name) {
+		this.name = name;
+		return this;
+	}
 
-    private Number z;
+	public MarkPoint setName(Number name) {
+		this.name = name;
+		return this;
+	}
 
-    private Number zlevel;
+	private Number z;
 
-    private String animation;
+	private Number zlevel;
 
-    private Number animationThreshold;
+	private Boolean animation;
 
-    private Number animationDuration;
+	private Number animationThreshold;
 
-    private String animationEasing;
+	@Setter(AccessLevel.NONE)
+	private Object animationDuration;
 
-    private Number animationDelay;
+	public MarkPoint setAnimationDuration(Number animationDuration) {
+		this.animationDuration = animationDuration;
+		return this;
+	}
 
-    private Number animationDurationUpdate;
+	public MarkPoint setAnimationDuration(Object animationDuration) {
+		this.animationDuration = animationDuration;
+		return this;
+	}
 
-    private String animationEasingUpdate;
+	private Object animationEasing;
 
-    private Number animationDelayUpdate;
+	@Setter(AccessLevel.NONE)
+	private Object animationDelay;
 
-    private String symbol;
+	public MarkPoint setAnimationDelay(Number animationDelay) {
+		this.animationDelay = animationDelay;
+		return this;
+	}
 
-    private Number symbolSize;
+	public MarkPoint setAnimationDelay(Object animationDelay) {
+		this.animationDelay = animationDelay;
+		return this;
+	}
 
-    private Number symbolRotate;
+	@Setter(AccessLevel.NONE)
+	private Object animationDurationUpdate;
 
-    private Boolean symbolKeepAspect;
+	public MarkPoint setAnimationDurationUpdate(Number animationDurationUpdate) {
+		this.animationDurationUpdate = animationDurationUpdate;
+		return this;
+	}
 
-    private Number symbolOffset;
+	public MarkPoint setAnimationDurationUpdate(Object animationDurationUpdate) {
+		this.animationDurationUpdate = animationDurationUpdate;
+		return this;
+	}
 
-    private EmphasisOption emphasis;
+	private Object animationEasingUpdate;
 
-    private Object select;
+	@Setter(AccessLevel.NONE)
+	private Object animationDelayUpdate;
 
-    private Object blur;
+	public MarkPoint setAnimationDelayUpdate(Number animationDelayUpdate) {
+		this.animationDelayUpdate = animationDelayUpdate;
+		return this;
+	}
 
-    private Object itemStyle;
+	public MarkPoint setAnimationDelayUpdate(Object animationDelayUpdate) {
+		this.animationDelayUpdate = animationDelayUpdate;
+		return this;
+	}
 
-    private Object label;
+	private Boolean silent;
+
+	@Setter(AccessLevel.NONE)
+	private Object data;
+
+	public MarkPoint setData(MarkPointDataItemOption[] data) {
+		this.data = data;
+		return this;
+	}
+
+	public MarkPoint setData(Object[] data) {
+		this.data = data;
+		return this;
+	}
+
+	private Object tooltip;
+
+	private String symbol;
+
+	@Setter(AccessLevel.NONE)
+	private Object symbolSize;
+
+	public MarkPoint setSymbolSize(Number[] symbolSize) {
+		this.symbolSize = symbolSize;
+		return this;
+	}
+
+	public MarkPoint setSymbolSize(Number symbolSize) {
+		this.symbolSize = symbolSize;
+		return this;
+	}
+
+	private Number symbolRotate;
+
+	private Boolean symbolKeepAspect;
+
+	@Setter(AccessLevel.NONE)
+	private Object symbolOffset;
+
+	public MarkPoint setSymbolOffset(String[] symbolOffset) {
+		this.symbolOffset = symbolOffset;
+		return this;
+	}
+
+	public MarkPoint setSymbolOffset(Number[] symbolOffset) {
+		this.symbolOffset = symbolOffset;
+		return this;
+	}
+
+	public MarkPoint setSymbolOffset(String symbolOffset) {
+		this.symbolOffset = symbolOffset;
+		return this;
+	}
+
+	public MarkPoint setSymbolOffset(Number symbolOffset) {
+		this.symbolOffset = symbolOffset;
+		return this;
+	}
+
+	private Object emphasis;
+
+	private Object select;
+
+	private Object blur;
+
+	private ItemStyleOption itemStyle;
+
+	private SeriesLabelOption label;
+
+	private Number precision;
 }

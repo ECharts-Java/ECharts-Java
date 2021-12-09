@@ -1,100 +1,164 @@
 package org.icepear.echarts.component;
 
-import java.util.List;
 import java.util.Map;
+
+import lombok.AccessLevel;
+import lombok.Data;
+import lombok.Setter;
+import lombok.experimental.Accessors;
 
 import org.icepear.echarts.origin.coord.CategoryAxisLabelOption;
 import org.icepear.echarts.origin.util.TextCommonOption;
-import org.icepear.echarts.type.BoxLength;
-
-import lombok.experimental.Accessors;
-import lombok.Data;
 
 @Accessors(chain=true)
 @Data
 public class CategoryAxisLabel implements CategoryAxisLabelOption {
-    private String formatter;
 
-    private Object interval;
+	private Number shadowBlur;
 
-    private Boolean show;
+	private String shadowColor;
 
-    private Boolean inside;
+	private Number shadowOffsetX;
 
-    private Number rotate;
+	private Number shadowOffsetY;
 
-    private Boolean showMinLabel;
+	private String color;
 
-    private Boolean showMaxLabel;
+	private String fontStyle;
 
-    private Number margin;
+	private String fontWeight;
 
-    private Map<String, TextCommonOption> rich;
+	private String fontFamily;
 
-    private Boolean hideOverlap;
+	@Setter(AccessLevel.NONE)
+	private Object fontSize;
 
-    private String color;
+	public CategoryAxisLabel setFontSize(String fontSize) {
+		this.fontSize = fontSize;
+		return this;
+	}
 
-    private Object fontStyle;
+	public CategoryAxisLabel setFontSize(Number fontSize) {
+		this.fontSize = fontSize;
+		return this;
+	}
 
-    private Object fontWeight;
+	private String align;
 
-    private String fontFamily;
+	private String verticalAlign;
 
-    private Number fontSize;
+	private String baseline;
 
-    private Object align;
+	private Number opacity;
 
-    private Object verticalAlign;
+	private Number lineHeight;
 
-    @Deprecated
-    private Object baseline;
+	@Setter(AccessLevel.NONE)
+	private Object backgroundColor;
 
-    private Number opacity;
+	public CategoryAxisLabel setBackgroundColor(String backgroundColor) {
+		this.backgroundColor = backgroundColor;
+		return this;
+	}
 
-    private Number lineHeight;
+	public CategoryAxisLabel setBackgroundColor(Object backgroundColor) {
+		this.backgroundColor = backgroundColor;
+		return this;
+	}
 
-    private String backgroundColor;
+	private String borderColor;
 
-    private String borderColor;
+	private Number borderWidth;
 
-    private Number borderWidth;
+	private String borderType;
 
-    private String borderType;
+	private Number borderDashOffset;
 
-    private Number borderDashOffset;
+	@Setter(AccessLevel.NONE)
+	private Object borderRadius;
 
-    private List<Number> borderRadius;    
+	public CategoryAxisLabel setBorderRadius(Number[] borderRadius) {
+		this.borderRadius = borderRadius;
+		return this;
+	}
 
-    private Number padding;
+	public CategoryAxisLabel setBorderRadius(Number borderRadius) {
+		this.borderRadius = borderRadius;
+		return this;
+	}
 
-    private BoxLength width;
+	@Setter(AccessLevel.NONE)
+	private Object padding;
 
-    private BoxLength height;
+	public CategoryAxisLabel setPadding(Number[] padding) {
+		this.padding = padding;
+		return this;
+	}
 
-    private String textBorderColor;
+	public CategoryAxisLabel setPadding(Number padding) {
+		this.padding = padding;
+		return this;
+	}
 
-    private Number textBorderWidth;
+	@Setter(AccessLevel.NONE)
+	private Object width;
 
-    private String textBorderType;
+	public CategoryAxisLabel setWidth(String width) {
+		this.width = width;
+		return this;
+	}
 
-    private Number textBorderDashOffset;
+	public CategoryAxisLabel setWidth(Number width) {
+		this.width = width;
+		return this;
+	}
 
-    private Number textShadowBlur;
+	private Number height;
 
-    private String textShadowColor;
+	private String textBorderColor;
 
-    private Number textShadowOffsetX;
+	private Number textBorderWidth;
 
-    private Number textShadowOffsetY;
+	private String textBorderType;
 
-    private String tag;
+	private Number textBorderDashOffset;
 
-    private Number shadowBlur;
+	private Number textShadowBlur;
 
-    private String shadowColor;
+	private String textShadowColor;
 
-    private Number shadowOffsetX;
+	private Number textShadowOffsetX;
 
-    private Number shadowOffsetY;
+	private Number textShadowOffsetY;
+
+	private String tag;
+
+	private Boolean show;
+
+	private Boolean inside;
+
+	private Number rotate;
+
+	private Boolean showMinLabel;
+
+	private Boolean showMaxLabel;
+
+	private Number margin;
+
+	private Map<String, TextCommonOption> rich;
+
+	private Boolean hideOverlap;
+
+	@Setter(AccessLevel.NONE)
+	private Object formatter;
+
+	public CategoryAxisLabel setFormatter(String formatter) {
+		this.formatter = formatter;
+		return this;
+	}
+
+	public CategoryAxisLabel setFormatter(Object formatter) {
+		this.formatter = formatter;
+		return this;
+	}
 }

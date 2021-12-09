@@ -1,30 +1,83 @@
 package org.icepear.echarts.component;
 
-import java.util.List;
+import lombok.AccessLevel;
+import lombok.Data;
+import lombok.Setter;
+import lombok.experimental.Accessors;
 
 import org.icepear.echarts.origin.coord.polar.PolarOption;
-import org.icepear.echarts.type.EChartsNumber;
-import org.icepear.echarts.type.EChartsRadius;
-
-import lombok.experimental.Accessors;
-import lombok.Data;
 
 @Accessors(chain=true)
 @Data
 public class Polar implements PolarOption {
-    private String mainType;
 
-    private String type;
+	private String mainType;
 
-    private String id;
+	private String type;
 
-    private String name;
+	@Setter(AccessLevel.NONE)
+	private Object id;
 
-    private Number z;
+	public Polar setId(String id) {
+		this.id = id;
+		return this;
+	}
 
-    private Number zlevel;
+	public Polar setId(Number id) {
+		this.id = id;
+		return this;
+	}
 
-    private List<EChartsNumber>  center;
+	@Setter(AccessLevel.NONE)
+	private Object name;
 
-    private EChartsRadius  radius;
+	public Polar setName(String name) {
+		this.name = name;
+		return this;
+	}
+
+	public Polar setName(Number name) {
+		this.name = name;
+		return this;
+	}
+
+	private Number z;
+
+	private Number zlevel;
+
+	@Setter(AccessLevel.NONE)
+	private Object center;
+
+	public Polar setCenter(String[] center) {
+		this.center = center;
+		return this;
+	}
+
+	public Polar setCenter(Number[] center) {
+		this.center = center;
+		return this;
+	}
+
+	@Setter(AccessLevel.NONE)
+	private Object radius;
+
+	public Polar setRadius(String[] radius) {
+		this.radius = radius;
+		return this;
+	}
+
+	public Polar setRadius(Number[] radius) {
+		this.radius = radius;
+		return this;
+	}
+
+	public Polar setRadius(String radius) {
+		this.radius = radius;
+		return this;
+	}
+
+	public Polar setRadius(Number radius) {
+		this.radius = radius;
+		return this;
+	}
 }

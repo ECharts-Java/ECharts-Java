@@ -8,19 +8,22 @@ import org.icepear.echarts.origin.util.TextCommonOption;
  * https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/coord/axisCommonTypes.ts#L208
  */
 public interface AxisLabelBaseOption extends TextCommonOption {
-    AxisLabelBaseOption setShow(Boolean show);
 
-    AxisLabelBaseOption setInside(Boolean inside);
+	AxisLabelBaseOption setShow(Boolean show);
 
-    AxisLabelBaseOption setRotate(Number rotate);
+	AxisLabelBaseOption setInside(Boolean inside);
 
-    AxisLabelBaseOption setShowMinLabel(Boolean showMinLabel);
+	AxisLabelBaseOption setRotate(Number rotate);
 
-    AxisLabelBaseOption setShowMaxLabel(Boolean showMaxLabel);
+	AxisLabelBaseOption setShowMinLabel(Boolean showMinLabel);
 
-    AxisLabelBaseOption setMargin(Number margin);
+	AxisLabelBaseOption setShowMaxLabel(Boolean showMaxLabel);
 
-    AxisLabelBaseOption setRich(Map<String, TextCommonOption> rich);
+	AxisLabelBaseOption setMargin(Number margin);
 
-    AxisLabelBaseOption setHideOverlap(Boolean hideOverlap);
+	AxisLabelBaseOption setRich(Map<String, TextCommonOption> rich);
+
+	AxisLabelBaseOption setHideOverlap(Boolean hideOverlap);
+
+	AxisLabelBaseOption setColor(String color);
 }

@@ -1,13 +1,11 @@
 package org.icepear.echarts.origin.chart.pie;
 
 /**
- * https://github.com/apache/echarts/blob/56fbf07640a25bbd3e710094da824f5bed6c647d/src/chart/pie/PieSeries.ts#L59
+ * https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/chart/pie/PieSeries.ts#L59
  */
 public interface PieStateOption {
-    PieStateOption setItemStyle(PieItemStyleOption itemStyle);
-    
-    PieStateOption setLabel(Object label);
-    
-    // Duplicated with SeriesOption.setLabelLine(Object)
-    // PieStateOption setLabelLine(Object labelLine);
+
+	PieStateOption setItemStyle(PieItemStyleOption itemStyle);
+
+	PieStateOption setLabel(PieLabelOption label);
 }

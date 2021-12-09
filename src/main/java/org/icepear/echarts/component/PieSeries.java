@@ -1,150 +1,420 @@
 package org.icepear.echarts.component;
 
-import java.util.List;
 import java.util.Map;
 
-import org.icepear.echarts.origin.chart.pie.PieItemStyleOption;
-import org.icepear.echarts.origin.chart.pie.PieSeriesOption;
-import org.icepear.echarts.origin.util.EmphasisOption;
-import org.icepear.echarts.type.BoxLength;
-import org.icepear.echarts.type.EChartsNumber;
-import org.icepear.echarts.type.EChartsRadius;
-
-import lombok.experimental.Accessors;
+import lombok.AccessLevel;
 import lombok.Data;
+import lombok.Setter;
+import lombok.experimental.Accessors;
+
+import org.icepear.echarts.origin.chart.pie.PieDataItemOption;
+import org.icepear.echarts.origin.chart.pie.PieItemStyleOption;
+import org.icepear.echarts.origin.chart.pie.PieLabelOption;
+import org.icepear.echarts.origin.chart.pie.PieSeriesOption;
 
 @Accessors(chain=true)
 @Data
 public class PieSeries implements PieSeriesOption {
-    private String roseType;
 
-    private Boolean clockwise;
+	private String mainType;
 
-    private Number startAngle;
+	private String type;
 
-    private Number minAngle;
+	@Setter(AccessLevel.NONE)
+	private Object id;
 
-    private Number minShowLabelAngle;
+	public PieSeries setId(String id) {
+		this.id = id;
+		return this;
+	}
 
-    private Number selectedOffset;
+	public PieSeries setId(Number id) {
+		this.id = id;
+		return this;
+	}
 
-    private Boolean avoidLabelOverlap;
+	@Setter(AccessLevel.NONE)
+	private Object name;
 
-    private Number percentPrecision;
+	public PieSeries setName(String name) {
+		this.name = name;
+		return this;
+	}
 
-    private Boolean stillShowZeroSum;
+	public PieSeries setName(Number name) {
+		this.name = name;
+		return this;
+	}
 
-    private String animationType;
+	private Number z;
 
-    private String animationTypeUpdate;
+	private Number zlevel;
 
-    private Boolean showEmptyCircle;
+	private Boolean animation;
 
-    private Object emptyCircleStyle;
+	private Number animationThreshold;
 
-    private Boolean silent;
+	@Setter(AccessLevel.NONE)
+	private Object animationDuration;
 
-    private String blendMode;
+	public PieSeries setAnimationDuration(Number animationDuration) {
+		this.animationDuration = animationDuration;
+		return this;
+	}
 
-    private String cursor;
+	public PieSeries setAnimationDuration(Object animationDuration) {
+		this.animationDuration = animationDuration;
+		return this;
+	}
 
-    private String dataGroupId;
+	private Object animationEasing;
 
-    private List<?> data;
+	@Setter(AccessLevel.NONE)
+	private Object animationDelay;
 
-    private String colorBy;
+	public PieSeries setAnimationDelay(Number animationDelay) {
+		this.animationDelay = animationDelay;
+		return this;
+	}
 
-    private Boolean legendHoverLink;
+	public PieSeries setAnimationDelay(Object animationDelay) {
+		this.animationDelay = animationDelay;
+		return this;
+	}
 
-    private Number progressive;
+	@Setter(AccessLevel.NONE)
+	private Object animationDurationUpdate;
 
-    private Number progressiveThreshold;
+	public PieSeries setAnimationDurationUpdate(Number animationDurationUpdate) {
+		this.animationDurationUpdate = animationDurationUpdate;
+		return this;
+	}
 
-    private String progressiveChunkMode;
+	public PieSeries setAnimationDurationUpdate(Object animationDurationUpdate) {
+		this.animationDurationUpdate = animationDurationUpdate;
+		return this;
+	}
 
-    private String coordinateSystem;
+	private Object animationEasingUpdate;
 
-    private Number hoverLayerThreshold;
+	@Setter(AccessLevel.NONE)
+	private Object animationDelayUpdate;
 
-    private String seriesLayoutBy;
+	public PieSeries setAnimationDelayUpdate(Number animationDelayUpdate) {
+		this.animationDelayUpdate = animationDelayUpdate;
+		return this;
+	}
 
-    private Object labelLine;
+	public PieSeries setAnimationDelayUpdate(Object animationDelayUpdate) {
+		this.animationDelayUpdate = animationDelayUpdate;
+		return this;
+	}
 
-    private Object labelLayout;
+	@Setter(AccessLevel.NONE)
+	private Object color;
 
-    private Object stateAnimation;
+	public PieSeries setColor(String[] color) {
+		this.color = color;
+		return this;
+	}
 
-    private Object universalTransition;
+	public PieSeries setColor(String color) {
+		this.color = color;
+		return this;
+	}
 
-    private Map<String, Boolean> selectedMap;
+	private String[][] colorLayer;
 
-    private String selectedMode;
+	private Object emphasis;
 
-    private String mainType;
+	private Object select;
 
-    private String type;
+	private Object blur;
 
-    private String id;
+	private Object markArea;
 
-    private String name;
+	private Object markLine;
 
-    private Number z;
+	private Object markPoint;
 
-    private Number zlevel;
+	private Object tooltip;
 
-    private String animation;
+	private Boolean silent;
 
-    private Number animationThreshold;
+	private String blendMode;
 
-    private Number animationDuration;
+	private String cursor;
 
-    private String animationEasing;
+	@Setter(AccessLevel.NONE)
+	private Object dataGroupId;
 
-    private Number animationDelay;
+	public PieSeries setDataGroupId(String dataGroupId) {
+		this.dataGroupId = dataGroupId;
+		return this;
+	}
 
-    private Number animationDurationUpdate;
+	public PieSeries setDataGroupId(Number dataGroupId) {
+		this.dataGroupId = dataGroupId;
+		return this;
+	}
 
-    private String animationEasingUpdate;
+	@Setter(AccessLevel.NONE)
+	private Object data;
 
-    private Number animationDelayUpdate;
+	public PieSeries setData(Object data) {
+		this.data = data;
+		return this;
+	}
 
-    private List<String> color;
+	public PieSeries setData(PieDataItemOption[] data) {
+		this.data = data;
+		return this;
+	}
 
-    private List<List<String>> colorLayer;
+	public PieSeries setData(Object[] data) {
+		this.data = data;
+		return this;
+	}
 
-    private EmphasisOption emphasis;
+	public PieSeries setData(Object[][] data) {
+		this.data = data;
+		return this;
+	}
 
-    private Object select;
+	private Object colorBy;
 
-    private Object blur;
+	private Boolean legendHoverLink;
 
-    private PieItemStyleOption itemStyle;
-    
-    private Object label;
+	@Setter(AccessLevel.NONE)
+	private Object progressive;
 
-    private List<EChartsNumber> center;
+	public PieSeries setProgressive(Number progressive) {
+		this.progressive = progressive;
+		return this;
+	}
 
-    private EChartsRadius radius;
+	public PieSeries setProgressive(Boolean progressive) {
+		this.progressive = progressive;
+		return this;
+	}
 
-    private BoxLength width;
+	private Number progressiveThreshold;
 
-    private BoxLength height;
+	private String progressiveChunkMode;
 
-    private BoxLength top;
+	private String coordinateSystem;
 
-    private BoxLength right;
+	private Number hoverLayerThreshold;
 
-    private BoxLength bottom;
+	@Setter(AccessLevel.NONE)
+	private Object seriesLayoutBy;
 
-    private BoxLength left;
+	public PieSeries setSeriesLayoutBy(String seriesLayoutBy) {
+		this.seriesLayoutBy = seriesLayoutBy;
+		return this;
+	}
 
-    private Number datasetIndex;
+	public PieSeries setSeriesLayoutBy(Object seriesLayoutBy) {
+		this.seriesLayoutBy = seriesLayoutBy;
+		return this;
+	}
 
-    private String datasetId;
+	private Object labelLine;
 
-    private String sourceHeader;
+	private Object labelLayout;
 
-    private List<Object> dimensions;
+	private Object stateAnimation;
 
-    private String encode;
+	@Setter(AccessLevel.NONE)
+	private Object universalTransition;
+
+	public PieSeries setUniversalTransition(Boolean universalTransition) {
+		this.universalTransition = universalTransition;
+		return this;
+	}
+
+	public PieSeries setUniversalTransition(Object universalTransition) {
+		this.universalTransition = universalTransition;
+		return this;
+	}
+
+	private Map<String, Boolean> selectedMap;
+
+	@Setter(AccessLevel.NONE)
+	private Object selectedMode;
+
+	public PieSeries setSelectedMode(String selectedMode) {
+		this.selectedMode = selectedMode;
+		return this;
+	}
+
+	public PieSeries setSelectedMode(Boolean selectedMode) {
+		this.selectedMode = selectedMode;
+		return this;
+	}
+
+	private PieItemStyleOption itemStyle;
+
+	private PieLabelOption label;
+
+	@Setter(AccessLevel.NONE)
+	private Object center;
+
+	public PieSeries setCenter(String[] center) {
+		this.center = center;
+		return this;
+	}
+
+	public PieSeries setCenter(Number[] center) {
+		this.center = center;
+		return this;
+	}
+
+	@Setter(AccessLevel.NONE)
+	private Object radius;
+
+	public PieSeries setRadius(String[] radius) {
+		this.radius = radius;
+		return this;
+	}
+
+	public PieSeries setRadius(Number[] radius) {
+		this.radius = radius;
+		return this;
+	}
+
+	public PieSeries setRadius(String radius) {
+		this.radius = radius;
+		return this;
+	}
+
+	public PieSeries setRadius(Number radius) {
+		this.radius = radius;
+		return this;
+	}
+
+	@Setter(AccessLevel.NONE)
+	private Object width;
+
+	public PieSeries setWidth(String width) {
+		this.width = width;
+		return this;
+	}
+
+	public PieSeries setWidth(Number width) {
+		this.width = width;
+		return this;
+	}
+
+	@Setter(AccessLevel.NONE)
+	private Object height;
+
+	public PieSeries setHeight(String height) {
+		this.height = height;
+		return this;
+	}
+
+	public PieSeries setHeight(Number height) {
+		this.height = height;
+		return this;
+	}
+
+	@Setter(AccessLevel.NONE)
+	private Object top;
+
+	public PieSeries setTop(String top) {
+		this.top = top;
+		return this;
+	}
+
+	public PieSeries setTop(Number top) {
+		this.top = top;
+		return this;
+	}
+
+	@Setter(AccessLevel.NONE)
+	private Object right;
+
+	public PieSeries setRight(String right) {
+		this.right = right;
+		return this;
+	}
+
+	public PieSeries setRight(Number right) {
+		this.right = right;
+		return this;
+	}
+
+	@Setter(AccessLevel.NONE)
+	private Object bottom;
+
+	public PieSeries setBottom(String bottom) {
+		this.bottom = bottom;
+		return this;
+	}
+
+	public PieSeries setBottom(Number bottom) {
+		this.bottom = bottom;
+		return this;
+	}
+
+	@Setter(AccessLevel.NONE)
+	private Object left;
+
+	public PieSeries setLeft(String left) {
+		this.left = left;
+		return this;
+	}
+
+	public PieSeries setLeft(Number left) {
+		this.left = left;
+		return this;
+	}
+
+	private Number datasetIndex;
+
+	@Setter(AccessLevel.NONE)
+	private Object datasetId;
+
+	public PieSeries setDatasetId(String datasetId) {
+		this.datasetId = datasetId;
+		return this;
+	}
+
+	public PieSeries setDatasetId(Number datasetId) {
+		this.datasetId = datasetId;
+		return this;
+	}
+
+	private Object sourceHeader;
+
+	private Object[] dimensions;
+
+	private Object encode;
+
+	private String roseType;
+
+	private Boolean clockwise;
+
+	private Number startAngle;
+
+	private Number minAngle;
+
+	private Number minShowLabelAngle;
+
+	private Number selectedOffset;
+
+	private Boolean avoidLabelOverlap;
+
+	private Number percentPrecision;
+
+	private Boolean stillShowZeroSum;
+
+	private String animationType;
+
+	private String animationTypeUpdate;
+
+	private Boolean showEmptyCircle;
+
+	private PieItemStyleOption emptyCircleStyle;
 }

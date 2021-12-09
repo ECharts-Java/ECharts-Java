@@ -1,40 +1,65 @@
 package org.icepear.echarts.component;
 
-import java.util.List;
+import java.util.Map;
+
+import lombok.AccessLevel;
+import lombok.Data;
+import lombok.Setter;
+import lombok.experimental.Accessors;
 
 import org.icepear.echarts.origin.component.toolbox.feature.ToolboxSaveAsImageFeatureOption;
-
-import lombok.experimental.Accessors;
-import lombok.Data;
 
 @Accessors(chain=true)
 @Data
 public class ToolboxSaveAsImageFeature implements ToolboxSaveAsImageFeatureOption {
-    private String type;
 
-    private String backgroundColor;
+	private Boolean show;
 
-    private String connectedBackgroundColor;
+	@Setter(AccessLevel.NONE)
+	private Object title;
 
-    private String name;
+	public ToolboxSaveAsImageFeature setTitle(String title) {
+		this.title = title;
+		return this;
+	}
 
-    private List<String> excludeComponents;
+	public ToolboxSaveAsImageFeature setTitle(Map<String, String> title) {
+		this.title = title;
+		return this;
+	}
 
-    private Number pixelRatio;
+	@Setter(AccessLevel.NONE)
+	private Object icon;
 
-    private List<String> lang;
+	public ToolboxSaveAsImageFeature setIcon(String icon) {
+		this.icon = icon;
+		return this;
+	}
 
-    private Boolean show;
+	public ToolboxSaveAsImageFeature setIcon(Map<String, String> icon) {
+		this.icon = icon;
+		return this;
+	}
 
-    private String title;
+	private Object iconStyle;
 
-    private String icon;
+	private Object emphasis;
 
-    private Object iconStyle;
+	private Map<String, Object> iconStatus;
 
-    private Object emphasis;
+	private Object onclick;
 
-    private Object iconStatus;
+	private String type;
 
-    private Object onclick;
+	private String backgroundColor;
+
+	private String connectedBackgroundColor;
+
+	private String name;
+
+	private String[] excludeComponents;
+
+	private Number pixelRatio;
+
+	private String[] lang;
 }

@@ -6,33 +6,41 @@ import org.icepear.echarts.origin.util.SeriesEncodeOptionMixin;
 import org.icepear.echarts.origin.util.SeriesOption;
 
 /**
- * https://github.com/apache/echarts/blob/56fbf07640a25bbd3e710094da824f5bed6c647d/src/chart/pie/PieSeries.ts#L100
+ * https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/chart/pie/PieSeries.ts#L100
  */
-public interface PieSeriesOption
-        extends SeriesOption, PieStateOption, CircleLayoutOptionMixin, BoxLayoutOptionMixin, SeriesEncodeOptionMixin {
-    PieSeriesOption setRoseType(String roseType);
+public interface PieSeriesOption extends SeriesOption, PieStateOption, CircleLayoutOptionMixin, BoxLayoutOptionMixin, SeriesEncodeOptionMixin {
 
-    PieSeriesOption setClockwise(Boolean clockwise);
+	PieSeriesOption setType(String type);
 
-    PieSeriesOption setStartAngle(Number startAngle);
+	PieSeriesOption setRoseType(String roseType);
 
-    PieSeriesOption setMinAngle(Number minAngle);
+	PieSeriesOption setClockwise(Boolean clockwise);
 
-    PieSeriesOption setMinShowLabelAngle(Number minShowLabelAngle);
+	PieSeriesOption setStartAngle(Number startAngle);
 
-    PieSeriesOption setSelectedOffset(Number selectedOffset);
+	PieSeriesOption setMinAngle(Number minAngle);
 
-    PieSeriesOption setAvoidLabelOverlap(Boolean avoidLabelOverlap);
+	PieSeriesOption setMinShowLabelAngle(Number minShowLabelAngle);
 
-    PieSeriesOption setPercentPrecision(Number percentPrecision);
+	PieSeriesOption setSelectedOffset(Number selectedOffset);
 
-    PieSeriesOption setStillShowZeroSum(Boolean stillShowZeroSum);
+	PieSeriesOption setAvoidLabelOverlap(Boolean avoidLabelOverlap);
 
-    PieSeriesOption setAnimationType(String animationType);
+	PieSeriesOption setPercentPrecision(Number percentPrecision);
 
-    PieSeriesOption setAnimationTypeUpdate(String animationTypeUpdate);
+	PieSeriesOption setStillShowZeroSum(Boolean stillShowZeroSum);
 
-    PieSeriesOption setShowEmptyCircle(Boolean showEmptyCircle);
+	PieSeriesOption setAnimationType(String animationType);
 
-    PieSeriesOption setEmptyCircleStyle(Object emptyCircleStyle);
+	PieSeriesOption setAnimationTypeUpdate(String animationTypeUpdate);
+
+	PieSeriesOption setShowEmptyCircle(Boolean showEmptyCircle);
+
+	PieSeriesOption setEmptyCircleStyle(PieItemStyleOption emptyCircleStyle);
+
+	PieSeriesOption setData(PieDataItemOption[] data);
+
+	PieSeriesOption setData(Object[] data);
+
+	PieSeriesOption setData(Object[][] data);
 }

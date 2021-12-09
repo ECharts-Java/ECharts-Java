@@ -1,167 +1,383 @@
 package org.icepear.echarts.component;
 
-import java.util.List;
 import java.util.Map;
 
-import org.icepear.echarts.origin.chart.line.LineSeriesOption;
-import org.icepear.echarts.origin.component.marker.MarkAreaOption;
-import org.icepear.echarts.origin.component.marker.MarkLineOption;
-import org.icepear.echarts.origin.component.marker.MarkPointOption;
-import org.icepear.echarts.origin.util.AreaStyleOption;
-import org.icepear.echarts.origin.util.EmphasisOption;
-import org.icepear.echarts.origin.util.ItemStyleOption;
-import org.icepear.echarts.origin.util.LabelOption;
-import org.icepear.echarts.origin.util.LineStyleOption;
-
-import lombok.experimental.Accessors;
+import lombok.AccessLevel;
 import lombok.Data;
+import lombok.Setter;
+import lombok.experimental.Accessors;
+
+import org.icepear.echarts.origin.chart.line.LineSeriesOption;
+import org.icepear.echarts.origin.util.ItemStyleOption;
+import org.icepear.echarts.origin.util.LineStyleOption;
+import org.icepear.echarts.origin.util.SeriesLabelOption;
 
 @Accessors(chain=true)
 @Data
 public class LineSeries implements LineSeriesOption {
-    private Boolean clip;
 
-    private LineStyleOption lineStyle;
+	private String mainType;
 
-    private AreaStyleOption areaStyle;
+	private String type;
 
-    private String step;
+	@Setter(AccessLevel.NONE)
+	private Object id;
 
-    private Boolean smooth;
+	public LineSeries setId(String id) {
+		this.id = id;
+		return this;
+	}
 
-    private String smoothMonotone;
+	public LineSeries setId(Number id) {
+		this.id = id;
+		return this;
+	}
 
-    private Boolean connectNulls;
+	@Setter(AccessLevel.NONE)
+	private Object name;
 
-    private Boolean showSymbol;
+	public LineSeries setName(String name) {
+		this.name = name;
+		return this;
+	}
 
-    private Boolean showAllSymbol;
+	public LineSeries setName(Number name) {
+		this.name = name;
+		return this;
+	}
 
-    private Boolean triggerLineEvent;
+	private Number z;
 
-    private Boolean silent;
+	private Number zlevel;
 
-    private String blendMode;
+	private Boolean animation;
 
-    private String cursor;
+	private Number animationThreshold;
 
-    private String dataGroupId;
+	@Setter(AccessLevel.NONE)
+	private Object animationDuration;
 
-    private List<?> data;
+	public LineSeries setAnimationDuration(Number animationDuration) {
+		this.animationDuration = animationDuration;
+		return this;
+	}
 
-    private String colorBy;
+	public LineSeries setAnimationDuration(Object animationDuration) {
+		this.animationDuration = animationDuration;
+		return this;
+	}
 
-    private Boolean legendHoverLink;
+	private Object animationEasing;
 
-    private Number progressive;
+	@Setter(AccessLevel.NONE)
+	private Object animationDelay;
 
-    private Number progressiveThreshold;
+	public LineSeries setAnimationDelay(Number animationDelay) {
+		this.animationDelay = animationDelay;
+		return this;
+	}
 
-    private String progressiveChunkMode;
+	public LineSeries setAnimationDelay(Object animationDelay) {
+		this.animationDelay = animationDelay;
+		return this;
+	}
 
-    private String coordinateSystem;
+	@Setter(AccessLevel.NONE)
+	private Object animationDurationUpdate;
 
-    private Number hoverLayerThreshold;
+	public LineSeries setAnimationDurationUpdate(Number animationDurationUpdate) {
+		this.animationDurationUpdate = animationDurationUpdate;
+		return this;
+	}
 
-    private String seriesLayoutBy;
+	public LineSeries setAnimationDurationUpdate(Object animationDurationUpdate) {
+		this.animationDurationUpdate = animationDurationUpdate;
+		return this;
+	}
 
-    private Object labelLine;
+	private Object animationEasingUpdate;
 
-    private Object labelLayout;
+	@Setter(AccessLevel.NONE)
+	private Object animationDelayUpdate;
 
-    private Object stateAnimation;
+	public LineSeries setAnimationDelayUpdate(Number animationDelayUpdate) {
+		this.animationDelayUpdate = animationDelayUpdate;
+		return this;
+	}
 
-    private Object universalTransition;
+	public LineSeries setAnimationDelayUpdate(Object animationDelayUpdate) {
+		this.animationDelayUpdate = animationDelayUpdate;
+		return this;
+	}
 
-    private Map<String, Boolean> selectedMap;
+	@Setter(AccessLevel.NONE)
+	private Object color;
 
-    private String selectedMode;
+	public LineSeries setColor(String[] color) {
+		this.color = color;
+		return this;
+	}
 
-    private String mainType;
+	public LineSeries setColor(String color) {
+		this.color = color;
+		return this;
+	}
 
-    private String type;
+	private String[][] colorLayer;
 
-    private String id;
+	private Object emphasis;
 
-    private String name;
+	private Object select;
 
-    private Number z;
+	private Object blur;
 
-    private Number zlevel;
+	private Object markArea;
 
-    private String animation;
+	private Object markLine;
 
-    private Number animationThreshold;
+	private Object markPoint;
 
-    private Number animationDuration;
+	private Object tooltip;
 
-    private String animationEasing;
+	private Boolean silent;
 
-    private Number animationDelay;
+	private String blendMode;
 
-    private Number animationDurationUpdate;
+	private String cursor;
 
-    private String animationEasingUpdate;
+	@Setter(AccessLevel.NONE)
+	private Object dataGroupId;
 
-    private Number animationDelayUpdate;
+	public LineSeries setDataGroupId(String dataGroupId) {
+		this.dataGroupId = dataGroupId;
+		return this;
+	}
 
-    private List<String> color;
+	public LineSeries setDataGroupId(Number dataGroupId) {
+		this.dataGroupId = dataGroupId;
+		return this;
+	}
 
-    private List<List<String>> colorLayer;
+	@Setter(AccessLevel.NONE)
+	private Object data;
 
-    private EmphasisOption emphasis;
+	public LineSeries setData(Object[] data) {
+		this.data = data;
+		return this;
+	}
 
-    private Object select;
+	public LineSeries setData(Object data) {
+		this.data = data;
+		return this;
+	}
 
-    private Object blur;
+	private Object colorBy;
 
-    private ItemStyleOption itemStyle;
+	private Boolean legendHoverLink;
 
-    private LabelOption label;
+	@Setter(AccessLevel.NONE)
+	private Object progressive;
 
-    private LabelOption endLabel;
+	public LineSeries setProgressive(Number progressive) {
+		this.progressive = progressive;
+		return this;
+	}
 
-    private Number xAxisIndex;
+	public LineSeries setProgressive(Boolean progressive) {
+		this.progressive = progressive;
+		return this;
+	}
 
-    private Number yAxisIndex;
+	private Number progressiveThreshold;
 
-    private String xAxisId;
+	private String progressiveChunkMode;
 
-    private String yAxisId;
+	private String coordinateSystem;
 
-    private Number polarIndex;
+	private Number hoverLayerThreshold;
 
-    private String polarId;
+	@Setter(AccessLevel.NONE)
+	private Object seriesLayoutBy;
 
-    private String stack;
+	public LineSeries setSeriesLayoutBy(String seriesLayoutBy) {
+		this.seriesLayoutBy = seriesLayoutBy;
+		return this;
+	}
 
-    private String sampling;
+	public LineSeries setSeriesLayoutBy(Object seriesLayoutBy) {
+		this.seriesLayoutBy = seriesLayoutBy;
+		return this;
+	}
 
-    private String symbol;
+	private Object labelLine;
 
-    private Number symbolSize;
+	private Object labelLayout;
 
-    private Number symbolRotate;
+	private Object stateAnimation;
 
-    private Boolean symbolKeepAspect;
+	@Setter(AccessLevel.NONE)
+	private Object universalTransition;
 
-    private Number symbolOffset;
+	public LineSeries setUniversalTransition(Boolean universalTransition) {
+		this.universalTransition = universalTransition;
+		return this;
+	}
 
-    private Number datasetIndex;
+	public LineSeries setUniversalTransition(Object universalTransition) {
+		this.universalTransition = universalTransition;
+		return this;
+	}
 
-    private String datasetId;
+	private Map<String, Boolean> selectedMap;
 
-    private String sourceHeader;
+	@Setter(AccessLevel.NONE)
+	private Object selectedMode;
 
-    private List<Object> dimensions;
+	public LineSeries setSelectedMode(String selectedMode) {
+		this.selectedMode = selectedMode;
+		return this;
+	}
 
-    private String encode;
+	public LineSeries setSelectedMode(Boolean selectedMode) {
+		this.selectedMode = selectedMode;
+		return this;
+	}
 
-    private MarkAreaOption markArea;
+	private ItemStyleOption itemStyle;
 
-    private MarkLineOption markLine;
+	private SeriesLabelOption label;
 
-    private MarkPointOption markPoint;
+	private Object endLabel;
 
-    private Object tooltip;
+	private Number xAxisIndex;
+
+	private Number yAxisIndex;
+
+	private String xAxisId;
+
+	private String yAxisId;
+
+	private Number polarIndex;
+
+	private String polarId;
+
+	private String stack;
+
+	private String sampling;
+
+	private String symbol;
+
+	@Setter(AccessLevel.NONE)
+	private Object symbolSize;
+
+	public LineSeries setSymbolSize(Number[] symbolSize) {
+		this.symbolSize = symbolSize;
+		return this;
+	}
+
+	public LineSeries setSymbolSize(Number symbolSize) {
+		this.symbolSize = symbolSize;
+		return this;
+	}
+
+	private Number symbolRotate;
+
+	private Boolean symbolKeepAspect;
+
+	@Setter(AccessLevel.NONE)
+	private Object symbolOffset;
+
+	public LineSeries setSymbolOffset(String[] symbolOffset) {
+		this.symbolOffset = symbolOffset;
+		return this;
+	}
+
+	public LineSeries setSymbolOffset(Number[] symbolOffset) {
+		this.symbolOffset = symbolOffset;
+		return this;
+	}
+
+	public LineSeries setSymbolOffset(String symbolOffset) {
+		this.symbolOffset = symbolOffset;
+		return this;
+	}
+
+	public LineSeries setSymbolOffset(Number symbolOffset) {
+		this.symbolOffset = symbolOffset;
+		return this;
+	}
+
+	private Number datasetIndex;
+
+	@Setter(AccessLevel.NONE)
+	private Object datasetId;
+
+	public LineSeries setDatasetId(String datasetId) {
+		this.datasetId = datasetId;
+		return this;
+	}
+
+	public LineSeries setDatasetId(Number datasetId) {
+		this.datasetId = datasetId;
+		return this;
+	}
+
+	private Object sourceHeader;
+
+	private Object[] dimensions;
+
+	private Object encode;
+
+	private Boolean clip;
+
+	private LineStyleOption lineStyle;
+
+	private Object areaStyle;
+
+	@Setter(AccessLevel.NONE)
+	private Object step;
+
+	public LineSeries setStep(String step) {
+		this.step = step;
+		return this;
+	}
+
+	public LineSeries setStep(Boolean step) {
+		this.step = step;
+		return this;
+	}
+
+	@Setter(AccessLevel.NONE)
+	private Object smooth;
+
+	public LineSeries setSmooth(Number smooth) {
+		this.smooth = smooth;
+		return this;
+	}
+
+	public LineSeries setSmooth(Boolean smooth) {
+		this.smooth = smooth;
+		return this;
+	}
+
+	private String smoothMonotone;
+
+	private Boolean connectNulls;
+
+	private Boolean showSymbol;
+
+	@Setter(AccessLevel.NONE)
+	private Object showAllSymbol;
+
+	public LineSeries setShowAllSymbol(String showAllSymbol) {
+		this.showAllSymbol = showAllSymbol;
+		return this;
+	}
+
+	public LineSeries setShowAllSymbol(Boolean showAllSymbol) {
+		this.showAllSymbol = showAllSymbol;
+		return this;
+	}
+
+	private Boolean triggerLineEvent;
 }
