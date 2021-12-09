@@ -1,0 +1,71 @@
+{
+    "name": "BaseBarSeriesOption",
+    "type": "interface",
+    "extends": [
+        "SeriesOption",
+        "SeriesOnCartesianOptionMixin",
+        "SeriesOnPolarOptionMixin"
+    ],
+    "fields": [
+        {
+            "name": "barMinHeight",
+            "types": [
+                "Number"
+            ]
+        },
+        {
+            "name": "barMinAngle",
+            "types": [
+                "Number"
+            ]
+        },
+        {
+            "name": "barMaxWidth",
+            "types": [
+                "Number"
+            ]
+        },
+        {
+            "name": "barMinWidth",
+            "types": [
+                "Number"
+            ]
+        },
+        {
+            "name": "barWidth",
+            "types": [
+                "Number",
+                "String"
+            ]
+        },
+        {
+            "name": "barGap",
+            "types": [
+                "String",
+                "Number"
+            ]
+        },
+        {
+            "name": "barCategoryGap",
+            "types": [
+                "String",
+                "Number"
+            ]
+        },
+        {
+            "name": "large",
+            "types": [
+                "Boolean"
+            ]
+        },
+        {
+            "name": "largeThreshold",
+            "types": [
+                "Number"
+            ]
+        }
+    ],
+    "comments": [
+        "https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/chart/bar/BaseBarSeries.ts#L34"
+    ]
+}
