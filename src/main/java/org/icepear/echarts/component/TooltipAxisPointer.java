@@ -20,12 +20,12 @@ public class TooltipAxisPointer implements TooltipAxisPointerOption {
 	@Setter(AccessLevel.NONE)
 	private Object id;
 
-	public TooltipAxisPointer setId(String id) {
+	public TooltipAxisPointer setId(Number id) {
 		this.id = id;
 		return this;
 	}
 
-	public TooltipAxisPointer setId(Number id) {
+	public TooltipAxisPointer setId(String id) {
 		this.id = id;
 		return this;
 	}
@@ -33,12 +33,12 @@ public class TooltipAxisPointer implements TooltipAxisPointerOption {
 	@Setter(AccessLevel.NONE)
 	private Object name;
 
-	public TooltipAxisPointer setName(String name) {
+	public TooltipAxisPointer setName(Number name) {
 		this.name = name;
 		return this;
 	}
 
-	public TooltipAxisPointer setName(Number name) {
+	public TooltipAxisPointer setName(String name) {
 		this.name = name;
 		return this;
 	}
@@ -50,12 +50,12 @@ public class TooltipAxisPointer implements TooltipAxisPointerOption {
 	@Setter(AccessLevel.NONE)
 	private Object show;
 
-	public TooltipAxisPointer setShow(String show) {
+	public TooltipAxisPointer setShow(Boolean show) {
 		this.show = show;
 		return this;
 	}
 
-	public TooltipAxisPointer setShow(Boolean show) {
+	public TooltipAxisPointer setShow(String show) {
 		this.show = show;
 		return this;
 	}
@@ -75,12 +75,12 @@ public class TooltipAxisPointer implements TooltipAxisPointerOption {
 	@Setter(AccessLevel.NONE)
 	private Object animation;
 
-	public TooltipAxisPointer setAnimation(String animation) {
+	public TooltipAxisPointer setAnimation(Boolean animation) {
 		this.animation = animation;
 		return this;
 	}
 
-	public TooltipAxisPointer setAnimation(Boolean animation) {
+	public TooltipAxisPointer setAnimation(String animation) {
 		this.animation = animation;
 		return this;
 	}

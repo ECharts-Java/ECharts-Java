@@ -7,9 +7,9 @@ public interface ECBasicOption extends ECUnitOption {
 
 	ECBasicOption setBaseOption(ECUnitOption baseOption);
 
-	ECBasicOption setTimeline(ComponentOption[] timeline);
-
 	ECBasicOption setTimeline(ComponentOption timeline);
+
+	ECBasicOption setTimeline(ComponentOption[] timeline);
 
 	ECBasicOption setOptions(ECUnitOption[] options);
 

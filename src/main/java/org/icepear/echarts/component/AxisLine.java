@@ -15,12 +15,12 @@ public class AxisLine implements AxisLineOption {
 	@Setter(AccessLevel.NONE)
 	private Object show;
 
-	public AxisLine setShow(String show) {
+	public AxisLine setShow(Boolean show) {
 		this.show = show;
 		return this;
 	}
 
-	public AxisLine setShow(Boolean show) {
+	public AxisLine setShow(String show) {
 		this.show = show;
 		return this;
 	}
@@ -52,7 +52,7 @@ public class AxisLine implements AxisLineOption {
 		return this;
 	}
 
-	public AxisLine setSymbolOffset(Number[] symbolOffset) {
+	public AxisLine setSymbolOffset(Number symbolOffset) {
 		this.symbolOffset = symbolOffset;
 		return this;
 	}
@@ -62,7 +62,7 @@ public class AxisLine implements AxisLineOption {
 		return this;
 	}
 
-	public AxisLine setSymbolOffset(Number symbolOffset) {
+	public AxisLine setSymbolOffset(Number[] symbolOffset) {
 		this.symbolOffset = symbolOffset;
 		return this;
 	}

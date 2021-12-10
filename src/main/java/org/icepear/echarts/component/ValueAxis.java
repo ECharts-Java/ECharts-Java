@@ -36,12 +36,12 @@ public class ValueAxis implements ValueAxisOption {
 	@Setter(AccessLevel.NONE)
 	private Object id;
 
-	public ValueAxis setId(String id) {
+	public ValueAxis setId(Number id) {
 		this.id = id;
 		return this;
 	}
 
-	public ValueAxis setId(Number id) {
+	public ValueAxis setId(String id) {
 		this.id = id;
 		return this;
 	}
@@ -49,12 +49,12 @@ public class ValueAxis implements ValueAxisOption {
 	@Setter(AccessLevel.NONE)
 	private Object name;
 
-	public ValueAxis setName(String name) {
+	public ValueAxis setName(Number name) {
 		this.name = name;
 		return this;
 	}
 
-	public ValueAxis setName(Number name) {
+	public ValueAxis setName(String name) {
 		this.name = name;
 		return this;
 	}
@@ -173,12 +173,12 @@ public class ValueAxis implements ValueAxisOption {
 	@Setter(AccessLevel.NONE)
 	private Object min;
 
-	public ValueAxis setMin(String min) {
+	public ValueAxis setMin(Number min) {
 		this.min = min;
 		return this;
 	}
 
-	public ValueAxis setMin(Number min) {
+	public ValueAxis setMin(String min) {
 		this.min = min;
 		return this;
 	}
@@ -186,12 +186,12 @@ public class ValueAxis implements ValueAxisOption {
 	@Setter(AccessLevel.NONE)
 	private Object max;
 
-	public ValueAxis setMax(String max) {
+	public ValueAxis setMax(Number max) {
 		this.max = max;
 		return this;
 	}
 
-	public ValueAxis setMax(Number max) {
+	public ValueAxis setMax(String max) {
 		this.max = max;
 		return this;
 	}

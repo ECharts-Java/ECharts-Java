@@ -33,12 +33,12 @@ public class PieLabel implements PieLabelOption {
 	@Setter(AccessLevel.NONE)
 	private Object fontSize;
 
-	public PieLabel setFontSize(String fontSize) {
+	public PieLabel setFontSize(Number fontSize) {
 		this.fontSize = fontSize;
 		return this;
 	}
 
-	public PieLabel setFontSize(Number fontSize) {
+	public PieLabel setFontSize(String fontSize) {
 		this.fontSize = fontSize;
 		return this;
 	}
@@ -77,12 +77,12 @@ public class PieLabel implements PieLabelOption {
 	@Setter(AccessLevel.NONE)
 	private Object borderRadius;
 
-	public PieLabel setBorderRadius(Number[] borderRadius) {
+	public PieLabel setBorderRadius(Number borderRadius) {
 		this.borderRadius = borderRadius;
 		return this;
 	}
 
-	public PieLabel setBorderRadius(Number borderRadius) {
+	public PieLabel setBorderRadius(Number[] borderRadius) {
 		this.borderRadius = borderRadius;
 		return this;
 	}
@@ -90,12 +90,12 @@ public class PieLabel implements PieLabelOption {
 	@Setter(AccessLevel.NONE)
 	private Object padding;
 
-	public PieLabel setPadding(Number[] padding) {
+	public PieLabel setPadding(Number padding) {
 		this.padding = padding;
 		return this;
 	}
 
-	public PieLabel setPadding(Number padding) {
+	public PieLabel setPadding(Number[] padding) {
 		this.padding = padding;
 		return this;
 	}
@@ -103,12 +103,12 @@ public class PieLabel implements PieLabelOption {
 	@Setter(AccessLevel.NONE)
 	private Object width;
 
-	public PieLabel setWidth(String width) {
+	public PieLabel setWidth(Number width) {
 		this.width = width;
 		return this;
 	}
 
-	public PieLabel setWidth(Number width) {
+	public PieLabel setWidth(String width) {
 		this.width = width;
 		return this;
 	}
@@ -153,17 +153,17 @@ public class PieLabel implements PieLabelOption {
 	@Setter(AccessLevel.NONE)
 	private Object rotate;
 
-	public PieLabel setRotate(String rotate) {
-		this.rotate = rotate;
-		return this;
-	}
-
 	public PieLabel setRotate(Number rotate) {
 		this.rotate = rotate;
 		return this;
 	}
 
 	public PieLabel setRotate(Boolean rotate) {
+		this.rotate = rotate;
+		return this;
+	}
+
+	public PieLabel setRotate(String rotate) {
 		this.rotate = rotate;
 		return this;
 	}
@@ -179,12 +179,12 @@ public class PieLabel implements PieLabelOption {
 	@Setter(AccessLevel.NONE)
 	private Object precision;
 
-	public PieLabel setPrecision(String precision) {
+	public PieLabel setPrecision(Number precision) {
 		this.precision = precision;
 		return this;
 	}
 
-	public PieLabel setPrecision(Number precision) {
+	public PieLabel setPrecision(String precision) {
 		this.precision = precision;
 		return this;
 	}
@@ -200,12 +200,12 @@ public class PieLabel implements PieLabelOption {
 	@Setter(AccessLevel.NONE)
 	private Object edgeDistance;
 
-	public PieLabel setEdgeDistance(String edgeDistance) {
+	public PieLabel setEdgeDistance(Number edgeDistance) {
 		this.edgeDistance = edgeDistance;
 		return this;
 	}
 
-	public PieLabel setEdgeDistance(Number edgeDistance) {
+	public PieLabel setEdgeDistance(String edgeDistance) {
 		this.edgeDistance = edgeDistance;
 		return this;
 	}
@@ -213,12 +213,12 @@ public class PieLabel implements PieLabelOption {
 	@Setter(AccessLevel.NONE)
 	private Object margin;
 
-	public PieLabel setMargin(String margin) {
+	public PieLabel setMargin(Number margin) {
 		this.margin = margin;
 		return this;
 	}
 
-	public PieLabel setMargin(Number margin) {
+	public PieLabel setMargin(String margin) {
 		this.margin = margin;
 		return this;
 	}

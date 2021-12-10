@@ -22,13 +22,13 @@ public interface LegendOption extends ComponentOption, LegendStyleOption, BoxLay
 
 	LegendOption setBackgroundColor(String backgroundColor);
 
-	LegendOption setBorderRadius(Number[] borderRadius);
-
 	LegendOption setBorderRadius(Number borderRadius);
 
-	LegendOption setPadding(Number[] padding);
+	LegendOption setBorderRadius(Number[] borderRadius);
 
 	LegendOption setPadding(Number padding);
+
+	LegendOption setPadding(Number[] padding);
 
 	LegendOption setItemGap(Number itemGap);
 
@@ -36,9 +36,9 @@ public interface LegendOption extends ComponentOption, LegendStyleOption, BoxLay
 
 	LegendOption setItemHeight(Number itemHeight);
 
-	LegendOption setSelectedMode(String selectedMode);
-
 	LegendOption setSelectedMode(Boolean selectedMode);
+
+	LegendOption setSelectedMode(String selectedMode);
 
 	LegendOption setSelected(Map<String, Boolean> selected);
 

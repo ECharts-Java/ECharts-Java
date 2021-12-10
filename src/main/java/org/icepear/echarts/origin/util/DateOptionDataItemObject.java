@@ -8,13 +8,13 @@ public interface DateOptionDataItemObject extends OptionDataItemObject {
 
 	DateOptionDataItemObject setValue(Number[] value);
 
+	DateOptionDataItemObject setValue(Number value);
+
+	DateOptionDataItemObject setValue(String value);
+
 	DateOptionDataItemObject setValue(Object[] value);
 
 	DateOptionDataItemObject setValue(Object value);
 
 	DateOptionDataItemObject setValue(String[] value);
-
-	DateOptionDataItemObject setValue(String value);
-
-	DateOptionDataItemObject setValue(Number value);
 }

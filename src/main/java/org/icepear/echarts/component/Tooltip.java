@@ -81,12 +81,12 @@ public class Tooltip implements TooltipOption {
 	@Setter(AccessLevel.NONE)
 	private Object padding;
 
-	public Tooltip setPadding(Number[] padding) {
+	public Tooltip setPadding(Number padding) {
 		this.padding = padding;
 		return this;
 	}
 
-	public Tooltip setPadding(Number padding) {
+	public Tooltip setPadding(Number[] padding) {
 		this.padding = padding;
 		return this;
 	}
@@ -102,12 +102,12 @@ public class Tooltip implements TooltipOption {
 	@Setter(AccessLevel.NONE)
 	private Object id;
 
-	public Tooltip setId(String id) {
+	public Tooltip setId(Number id) {
 		this.id = id;
 		return this;
 	}
 
-	public Tooltip setId(Number id) {
+	public Tooltip setId(String id) {
 		this.id = id;
 		return this;
 	}
@@ -115,12 +115,12 @@ public class Tooltip implements TooltipOption {
 	@Setter(AccessLevel.NONE)
 	private Object name;
 
-	public Tooltip setName(String name) {
+	public Tooltip setName(Number name) {
 		this.name = name;
 		return this;
 	}
 
-	public Tooltip setName(Number name) {
+	public Tooltip setName(String name) {
 		this.name = name;
 		return this;
 	}

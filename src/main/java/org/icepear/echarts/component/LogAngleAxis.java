@@ -34,12 +34,12 @@ public class LogAngleAxis implements LogAngleAxisOption {
 	@Setter(AccessLevel.NONE)
 	private Object id;
 
-	public LogAngleAxis setId(String id) {
+	public LogAngleAxis setId(Number id) {
 		this.id = id;
 		return this;
 	}
 
-	public LogAngleAxis setId(Number id) {
+	public LogAngleAxis setId(String id) {
 		this.id = id;
 		return this;
 	}
@@ -47,12 +47,12 @@ public class LogAngleAxis implements LogAngleAxisOption {
 	@Setter(AccessLevel.NONE)
 	private Object name;
 
-	public LogAngleAxis setName(String name) {
+	public LogAngleAxis setName(Number name) {
 		this.name = name;
 		return this;
 	}
 
-	public LogAngleAxis setName(Number name) {
+	public LogAngleAxis setName(String name) {
 		this.name = name;
 		return this;
 	}
@@ -171,12 +171,12 @@ public class LogAngleAxis implements LogAngleAxisOption {
 	@Setter(AccessLevel.NONE)
 	private Object min;
 
-	public LogAngleAxis setMin(String min) {
+	public LogAngleAxis setMin(Number min) {
 		this.min = min;
 		return this;
 	}
 
-	public LogAngleAxis setMin(Number min) {
+	public LogAngleAxis setMin(String min) {
 		this.min = min;
 		return this;
 	}
@@ -184,12 +184,12 @@ public class LogAngleAxis implements LogAngleAxisOption {
 	@Setter(AccessLevel.NONE)
 	private Object max;
 
-	public LogAngleAxis setMax(String max) {
+	public LogAngleAxis setMax(Number max) {
 		this.max = max;
 		return this;
 	}
 
-	public LogAngleAxis setMax(Number max) {
+	public LogAngleAxis setMax(String max) {
 		this.max = max;
 		return this;
 	}

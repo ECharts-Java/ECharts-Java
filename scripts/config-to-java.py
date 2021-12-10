@@ -108,8 +108,9 @@ def get_all_symbols(obj, include_inheritance=True):
             for extend in obj["extends"]:
                 symbols |= get_symbols(extend)
         for field in obj["fields"]:
-            for type in field["types"]:
-                symbols |= get_symbols(type)
+            if "ignore" not in field or field["ignore"] == False:
+                for type in field["types"]:
+                    symbols |= get_symbols(type)
     return symbols
 
 

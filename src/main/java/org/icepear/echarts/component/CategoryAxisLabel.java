@@ -33,12 +33,12 @@ public class CategoryAxisLabel implements CategoryAxisLabelOption {
 	@Setter(AccessLevel.NONE)
 	private Object fontSize;
 
-	public CategoryAxisLabel setFontSize(String fontSize) {
+	public CategoryAxisLabel setFontSize(Number fontSize) {
 		this.fontSize = fontSize;
 		return this;
 	}
 
-	public CategoryAxisLabel setFontSize(Number fontSize) {
+	public CategoryAxisLabel setFontSize(String fontSize) {
 		this.fontSize = fontSize;
 		return this;
 	}
@@ -77,12 +77,12 @@ public class CategoryAxisLabel implements CategoryAxisLabelOption {
 	@Setter(AccessLevel.NONE)
 	private Object borderRadius;
 
-	public CategoryAxisLabel setBorderRadius(Number[] borderRadius) {
+	public CategoryAxisLabel setBorderRadius(Number borderRadius) {
 		this.borderRadius = borderRadius;
 		return this;
 	}
 
-	public CategoryAxisLabel setBorderRadius(Number borderRadius) {
+	public CategoryAxisLabel setBorderRadius(Number[] borderRadius) {
 		this.borderRadius = borderRadius;
 		return this;
 	}
@@ -90,12 +90,12 @@ public class CategoryAxisLabel implements CategoryAxisLabelOption {
 	@Setter(AccessLevel.NONE)
 	private Object padding;
 
-	public CategoryAxisLabel setPadding(Number[] padding) {
+	public CategoryAxisLabel setPadding(Number padding) {
 		this.padding = padding;
 		return this;
 	}
 
-	public CategoryAxisLabel setPadding(Number padding) {
+	public CategoryAxisLabel setPadding(Number[] padding) {
 		this.padding = padding;
 		return this;
 	}
@@ -103,12 +103,12 @@ public class CategoryAxisLabel implements CategoryAxisLabelOption {
 	@Setter(AccessLevel.NONE)
 	private Object width;
 
-	public CategoryAxisLabel setWidth(String width) {
+	public CategoryAxisLabel setWidth(Number width) {
 		this.width = width;
 		return this;
 	}
 
-	public CategoryAxisLabel setWidth(Number width) {
+	public CategoryAxisLabel setWidth(String width) {
 		this.width = width;
 		return this;
 	}

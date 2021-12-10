@@ -30,12 +30,12 @@ public class ValueRadiusAxis implements ValueRadiusAxisOption {
 	@Setter(AccessLevel.NONE)
 	private Object id;
 
-	public ValueRadiusAxis setId(String id) {
+	public ValueRadiusAxis setId(Number id) {
 		this.id = id;
 		return this;
 	}
 
-	public ValueRadiusAxis setId(Number id) {
+	public ValueRadiusAxis setId(String id) {
 		this.id = id;
 		return this;
 	}
@@ -43,12 +43,12 @@ public class ValueRadiusAxis implements ValueRadiusAxisOption {
 	@Setter(AccessLevel.NONE)
 	private Object name;
 
-	public ValueRadiusAxis setName(String name) {
+	public ValueRadiusAxis setName(Number name) {
 		this.name = name;
 		return this;
 	}
 
-	public ValueRadiusAxis setName(Number name) {
+	public ValueRadiusAxis setName(String name) {
 		this.name = name;
 		return this;
 	}
@@ -167,12 +167,12 @@ public class ValueRadiusAxis implements ValueRadiusAxisOption {
 	@Setter(AccessLevel.NONE)
 	private Object min;
 
-	public ValueRadiusAxis setMin(String min) {
+	public ValueRadiusAxis setMin(Number min) {
 		this.min = min;
 		return this;
 	}
 
-	public ValueRadiusAxis setMin(Number min) {
+	public ValueRadiusAxis setMin(String min) {
 		this.min = min;
 		return this;
 	}
@@ -180,12 +180,12 @@ public class ValueRadiusAxis implements ValueRadiusAxisOption {
 	@Setter(AccessLevel.NONE)
 	private Object max;
 
-	public ValueRadiusAxis setMax(String max) {
+	public ValueRadiusAxis setMax(Number max) {
 		this.max = max;
 		return this;
 	}
 
-	public ValueRadiusAxis setMax(Number max) {
+	public ValueRadiusAxis setMax(String max) {
 		this.max = max;
 		return this;
 	}

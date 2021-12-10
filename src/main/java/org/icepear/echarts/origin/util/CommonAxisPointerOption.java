@@ -5,9 +5,9 @@ package org.icepear.echarts.origin.util;
  */
 public interface CommonAxisPointerOption {
 
-	CommonAxisPointerOption setShow(String show);
-
 	CommonAxisPointerOption setShow(Boolean show);
+
+	CommonAxisPointerOption setShow(String show);
 
 	CommonAxisPointerOption setTriggerOn(String triggerOn);
 
@@ -23,9 +23,9 @@ public interface CommonAxisPointerOption {
 
 	CommonAxisPointerOption setLabel(Object label);
 
-	CommonAxisPointerOption setAnimation(String animation);
-
 	CommonAxisPointerOption setAnimation(Boolean animation);
+
+	CommonAxisPointerOption setAnimation(String animation);
 
 	CommonAxisPointerOption setAnimationDurationUpdate(Number animationDurationUpdate);
 

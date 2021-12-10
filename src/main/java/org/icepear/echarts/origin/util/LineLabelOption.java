@@ -7,7 +7,7 @@ public interface LineLabelOption extends LabelOption {
 
 	LineLabelOption setPosition(String position);
 
-	LineLabelOption setDistance(Number[] distance);
-
 	LineLabelOption setDistance(Number distance);
+
+	LineLabelOption setDistance(Number[] distance);
 }

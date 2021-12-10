@@ -40,7 +40,9 @@ public interface PieSeriesOption extends SeriesOption, PieStateOption, CircleLay
 
 	PieSeriesOption setData(PieDataItemOption[] data);
 
+	PieSeriesOption setData(Object[][] data);
+
 	PieSeriesOption setData(Object[] data);
 
-	PieSeriesOption setData(Object[][] data);
+	PieSeriesOption setEmphasis(PieEmphasisOption emphasis);
 }

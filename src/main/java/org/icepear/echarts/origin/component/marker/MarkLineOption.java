@@ -14,21 +14,21 @@ public interface MarkLineOption extends MarkerOption, MarkLineStateOption, State
 
 	MarkLineOption setSymbol(String symbol);
 
+	MarkLineOption setSymbolSize(Number symbolSize);
+
 	MarkLineOption setSymbolSize(Number[] symbolSize);
 
-	MarkLineOption setSymbolSize(Number symbolSize);
+	MarkLineOption setSymbolRotate(Number symbolRotate);
 
 	MarkLineOption setSymbolRotate(Number[] symbolRotate);
 
-	MarkLineOption setSymbolRotate(Number symbolRotate);
+	MarkLineOption setSymbolOffset(Number symbolOffset);
+
+	MarkLineOption setSymbolOffset(String symbolOffset);
 
 	MarkLineOption setSymbolOffset(String[] symbolOffset);
 
 	MarkLineOption setSymbolOffset(Number[] symbolOffset);
-
-	MarkLineOption setSymbolOffset(String symbolOffset);
-
-	MarkLineOption setSymbolOffset(Number symbolOffset);
 
 	MarkLineOption setPrecision(Number precision);
 

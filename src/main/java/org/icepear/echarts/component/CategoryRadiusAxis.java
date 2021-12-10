@@ -30,12 +30,12 @@ public class CategoryRadiusAxis implements CategoryRadiusAxisOption {
 	@Setter(AccessLevel.NONE)
 	private Object id;
 
-	public CategoryRadiusAxis setId(String id) {
+	public CategoryRadiusAxis setId(Number id) {
 		this.id = id;
 		return this;
 	}
 
-	public CategoryRadiusAxis setId(Number id) {
+	public CategoryRadiusAxis setId(String id) {
 		this.id = id;
 		return this;
 	}
@@ -43,12 +43,12 @@ public class CategoryRadiusAxis implements CategoryRadiusAxisOption {
 	@Setter(AccessLevel.NONE)
 	private Object name;
 
-	public CategoryRadiusAxis setName(String name) {
+	public CategoryRadiusAxis setName(Number name) {
 		this.name = name;
 		return this;
 	}
 
-	public CategoryRadiusAxis setName(Number name) {
+	public CategoryRadiusAxis setName(String name) {
 		this.name = name;
 		return this;
 	}
@@ -178,12 +178,12 @@ public class CategoryRadiusAxis implements CategoryRadiusAxisOption {
 	@Setter(AccessLevel.NONE)
 	private Object min;
 
-	public CategoryRadiusAxis setMin(String min) {
+	public CategoryRadiusAxis setMin(Number min) {
 		this.min = min;
 		return this;
 	}
 
-	public CategoryRadiusAxis setMin(Number min) {
+	public CategoryRadiusAxis setMin(String min) {
 		this.min = min;
 		return this;
 	}
@@ -191,12 +191,12 @@ public class CategoryRadiusAxis implements CategoryRadiusAxisOption {
 	@Setter(AccessLevel.NONE)
 	private Object max;
 
-	public CategoryRadiusAxis setMax(String max) {
+	public CategoryRadiusAxis setMax(Number max) {
 		this.max = max;
 		return this;
 	}
 
-	public CategoryRadiusAxis setMax(Number max) {
+	public CategoryRadiusAxis setMax(String max) {
 		this.max = max;
 		return this;
 	}

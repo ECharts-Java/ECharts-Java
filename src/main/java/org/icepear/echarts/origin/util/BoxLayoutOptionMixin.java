@@ -5,27 +5,27 @@ package org.icepear.echarts.origin.util;
  */
 public interface BoxLayoutOptionMixin {
 
-	BoxLayoutOptionMixin setWidth(String width);
-
 	BoxLayoutOptionMixin setWidth(Number width);
 
-	BoxLayoutOptionMixin setHeight(String height);
+	BoxLayoutOptionMixin setWidth(String width);
 
 	BoxLayoutOptionMixin setHeight(Number height);
 
-	BoxLayoutOptionMixin setTop(String top);
+	BoxLayoutOptionMixin setHeight(String height);
 
 	BoxLayoutOptionMixin setTop(Number top);
 
-	BoxLayoutOptionMixin setRight(String right);
+	BoxLayoutOptionMixin setTop(String top);
 
 	BoxLayoutOptionMixin setRight(Number right);
 
-	BoxLayoutOptionMixin setBottom(String bottom);
+	BoxLayoutOptionMixin setRight(String right);
 
 	BoxLayoutOptionMixin setBottom(Number bottom);
 
-	BoxLayoutOptionMixin setLeft(String left);
+	BoxLayoutOptionMixin setBottom(String bottom);
 
 	BoxLayoutOptionMixin setLeft(Number left);
+
+	BoxLayoutOptionMixin setLeft(String left);
 }

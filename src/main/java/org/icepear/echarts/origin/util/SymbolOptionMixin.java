@@ -7,19 +7,19 @@ public interface SymbolOptionMixin {
 
 	SymbolOptionMixin setSymbol(String symbol);
 
-	SymbolOptionMixin setSymbolSize(Number[] symbolSize);
-
 	SymbolOptionMixin setSymbolSize(Number symbolSize);
+
+	SymbolOptionMixin setSymbolSize(Number[] symbolSize);
 
 	SymbolOptionMixin setSymbolRotate(Number symbolRotate);
 
 	SymbolOptionMixin setSymbolKeepAspect(Boolean symbolKeepAspect);
 
-	SymbolOptionMixin setSymbolOffset(String[] symbolOffset);
-
-	SymbolOptionMixin setSymbolOffset(Number[] symbolOffset);
+	SymbolOptionMixin setSymbolOffset(Number symbolOffset);
 
 	SymbolOptionMixin setSymbolOffset(String symbolOffset);
 
-	SymbolOptionMixin setSymbolOffset(Number symbolOffset);
+	SymbolOptionMixin setSymbolOffset(String[] symbolOffset);
+
+	SymbolOptionMixin setSymbolOffset(Number[] symbolOffset);
 }

@@ -30,12 +30,12 @@ public class LogRadiusAxis implements LogRadiusAxisOption {
 	@Setter(AccessLevel.NONE)
 	private Object id;
 
-	public LogRadiusAxis setId(String id) {
+	public LogRadiusAxis setId(Number id) {
 		this.id = id;
 		return this;
 	}
 
-	public LogRadiusAxis setId(Number id) {
+	public LogRadiusAxis setId(String id) {
 		this.id = id;
 		return this;
 	}
@@ -43,12 +43,12 @@ public class LogRadiusAxis implements LogRadiusAxisOption {
 	@Setter(AccessLevel.NONE)
 	private Object name;
 
-	public LogRadiusAxis setName(String name) {
+	public LogRadiusAxis setName(Number name) {
 		this.name = name;
 		return this;
 	}
 
-	public LogRadiusAxis setName(Number name) {
+	public LogRadiusAxis setName(String name) {
 		this.name = name;
 		return this;
 	}
@@ -167,12 +167,12 @@ public class LogRadiusAxis implements LogRadiusAxisOption {
 	@Setter(AccessLevel.NONE)
 	private Object min;
 
-	public LogRadiusAxis setMin(String min) {
+	public LogRadiusAxis setMin(Number min) {
 		this.min = min;
 		return this;
 	}
 
-	public LogRadiusAxis setMin(Number min) {
+	public LogRadiusAxis setMin(String min) {
 		this.min = min;
 		return this;
 	}
@@ -180,12 +180,12 @@ public class LogRadiusAxis implements LogRadiusAxisOption {
 	@Setter(AccessLevel.NONE)
 	private Object max;
 
-	public LogRadiusAxis setMax(String max) {
+	public LogRadiusAxis setMax(Number max) {
 		this.max = max;
 		return this;
 	}
 
-	public LogRadiusAxis setMax(Number max) {
+	public LogRadiusAxis setMax(String max) {
 		this.max = max;
 		return this;
 	}

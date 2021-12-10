@@ -34,12 +34,12 @@ public class CategoryAngleAxis implements CategoryAngleAxisOption {
 	@Setter(AccessLevel.NONE)
 	private Object id;
 
-	public CategoryAngleAxis setId(String id) {
+	public CategoryAngleAxis setId(Number id) {
 		this.id = id;
 		return this;
 	}
 
-	public CategoryAngleAxis setId(Number id) {
+	public CategoryAngleAxis setId(String id) {
 		this.id = id;
 		return this;
 	}
@@ -47,12 +47,12 @@ public class CategoryAngleAxis implements CategoryAngleAxisOption {
 	@Setter(AccessLevel.NONE)
 	private Object name;
 
-	public CategoryAngleAxis setName(String name) {
+	public CategoryAngleAxis setName(Number name) {
 		this.name = name;
 		return this;
 	}
 
-	public CategoryAngleAxis setName(Number name) {
+	public CategoryAngleAxis setName(String name) {
 		this.name = name;
 		return this;
 	}
@@ -182,12 +182,12 @@ public class CategoryAngleAxis implements CategoryAngleAxisOption {
 	@Setter(AccessLevel.NONE)
 	private Object min;
 
-	public CategoryAngleAxis setMin(String min) {
+	public CategoryAngleAxis setMin(Number min) {
 		this.min = min;
 		return this;
 	}
 
-	public CategoryAngleAxis setMin(Number min) {
+	public CategoryAngleAxis setMin(String min) {
 		this.min = min;
 		return this;
 	}
@@ -195,12 +195,12 @@ public class CategoryAngleAxis implements CategoryAngleAxisOption {
 	@Setter(AccessLevel.NONE)
 	private Object max;
 
-	public CategoryAngleAxis setMax(String max) {
+	public CategoryAngleAxis setMax(Number max) {
 		this.max = max;
 		return this;
 	}
 
-	public CategoryAngleAxis setMax(Number max) {
+	public CategoryAngleAxis setMax(String max) {
 		this.max = max;
 		return this;
 	}

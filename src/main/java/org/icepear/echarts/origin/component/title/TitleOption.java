@@ -34,9 +34,9 @@ public interface TitleOption extends ComponentOption, BoxLayoutOptionMixin, Bord
 
 	TitleOption setBackgroundColor(String backgroundColor);
 
-	TitleOption setPadding(Number[] padding);
-
 	TitleOption setPadding(Number padding);
+
+	TitleOption setPadding(Number[] padding);
 
 	TitleOption setItemGap(Number itemGap);
 
@@ -46,7 +46,7 @@ public interface TitleOption extends ComponentOption, BoxLayoutOptionMixin, Bord
 
 	TitleOption setTriggerEvent(Boolean triggerEvent);
 
-	TitleOption setBorderRadius(Number[] borderRadius);
-
 	TitleOption setBorderRadius(Number borderRadius);
+
+	TitleOption setBorderRadius(Number[] borderRadius);
 }

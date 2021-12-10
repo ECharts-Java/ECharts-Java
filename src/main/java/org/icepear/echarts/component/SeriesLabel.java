@@ -33,12 +33,12 @@ public class SeriesLabel implements SeriesLabelOption {
 	@Setter(AccessLevel.NONE)
 	private Object fontSize;
 
-	public SeriesLabel setFontSize(String fontSize) {
+	public SeriesLabel setFontSize(Number fontSize) {
 		this.fontSize = fontSize;
 		return this;
 	}
 
-	public SeriesLabel setFontSize(Number fontSize) {
+	public SeriesLabel setFontSize(String fontSize) {
 		this.fontSize = fontSize;
 		return this;
 	}
@@ -77,12 +77,12 @@ public class SeriesLabel implements SeriesLabelOption {
 	@Setter(AccessLevel.NONE)
 	private Object borderRadius;
 
-	public SeriesLabel setBorderRadius(Number[] borderRadius) {
+	public SeriesLabel setBorderRadius(Number borderRadius) {
 		this.borderRadius = borderRadius;
 		return this;
 	}
 
-	public SeriesLabel setBorderRadius(Number borderRadius) {
+	public SeriesLabel setBorderRadius(Number[] borderRadius) {
 		this.borderRadius = borderRadius;
 		return this;
 	}
@@ -90,12 +90,12 @@ public class SeriesLabel implements SeriesLabelOption {
 	@Setter(AccessLevel.NONE)
 	private Object padding;
 
-	public SeriesLabel setPadding(Number[] padding) {
+	public SeriesLabel setPadding(Number padding) {
 		this.padding = padding;
 		return this;
 	}
 
-	public SeriesLabel setPadding(Number padding) {
+	public SeriesLabel setPadding(Number[] padding) {
 		this.padding = padding;
 		return this;
 	}
@@ -103,12 +103,12 @@ public class SeriesLabel implements SeriesLabelOption {
 	@Setter(AccessLevel.NONE)
 	private Object width;
 
-	public SeriesLabel setWidth(String width) {
+	public SeriesLabel setWidth(Number width) {
 		this.width = width;
 		return this;
 	}
 
-	public SeriesLabel setWidth(Number width) {
+	public SeriesLabel setWidth(String width) {
 		this.width = width;
 		return this;
 	}
@@ -152,12 +152,12 @@ public class SeriesLabel implements SeriesLabelOption {
 	@Setter(AccessLevel.NONE)
 	private Object precision;
 
-	public SeriesLabel setPrecision(String precision) {
+	public SeriesLabel setPrecision(Number precision) {
 		this.precision = precision;
 		return this;
 	}
 
-	public SeriesLabel setPrecision(Number precision) {
+	public SeriesLabel setPrecision(String precision) {
 		this.precision = precision;
 		return this;
 	}

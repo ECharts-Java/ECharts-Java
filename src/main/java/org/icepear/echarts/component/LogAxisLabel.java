@@ -33,12 +33,12 @@ public class LogAxisLabel implements LogAxisLabelOption {
 	@Setter(AccessLevel.NONE)
 	private Object fontSize;
 
-	public LogAxisLabel setFontSize(String fontSize) {
+	public LogAxisLabel setFontSize(Number fontSize) {
 		this.fontSize = fontSize;
 		return this;
 	}
 
-	public LogAxisLabel setFontSize(Number fontSize) {
+	public LogAxisLabel setFontSize(String fontSize) {
 		this.fontSize = fontSize;
 		return this;
 	}
@@ -77,12 +77,12 @@ public class LogAxisLabel implements LogAxisLabelOption {
 	@Setter(AccessLevel.NONE)
 	private Object borderRadius;
 
-	public LogAxisLabel setBorderRadius(Number[] borderRadius) {
+	public LogAxisLabel setBorderRadius(Number borderRadius) {
 		this.borderRadius = borderRadius;
 		return this;
 	}
 
-	public LogAxisLabel setBorderRadius(Number borderRadius) {
+	public LogAxisLabel setBorderRadius(Number[] borderRadius) {
 		this.borderRadius = borderRadius;
 		return this;
 	}
@@ -90,12 +90,12 @@ public class LogAxisLabel implements LogAxisLabelOption {
 	@Setter(AccessLevel.NONE)
 	private Object padding;
 
-	public LogAxisLabel setPadding(Number[] padding) {
+	public LogAxisLabel setPadding(Number padding) {
 		this.padding = padding;
 		return this;
 	}
 
-	public LogAxisLabel setPadding(Number padding) {
+	public LogAxisLabel setPadding(Number[] padding) {
 		this.padding = padding;
 		return this;
 	}
@@ -103,12 +103,12 @@ public class LogAxisLabel implements LogAxisLabelOption {
 	@Setter(AccessLevel.NONE)
 	private Object width;
 
-	public LogAxisLabel setWidth(String width) {
+	public LogAxisLabel setWidth(Number width) {
 		this.width = width;
 		return this;
 	}
 
-	public LogAxisLabel setWidth(Number width) {
+	public LogAxisLabel setWidth(String width) {
 		this.width = width;
 		return this;
 	}

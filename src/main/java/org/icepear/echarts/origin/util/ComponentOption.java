@@ -9,13 +9,13 @@ public interface ComponentOption {
 
 	ComponentOption setType(String type);
 
-	ComponentOption setId(String id);
-
 	ComponentOption setId(Number id);
 
-	ComponentOption setName(String name);
+	ComponentOption setId(String id);
 
 	ComponentOption setName(Number name);
+
+	ComponentOption setName(String name);
 
 	ComponentOption setZ(Number z);
 

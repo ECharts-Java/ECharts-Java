@@ -9,9 +9,9 @@ public interface SplitAreaOption {
 
 	SplitAreaOption setShow(Boolean show);
 
-	SplitAreaOption setInterval(String interval);
-
 	SplitAreaOption setInterval(Number interval);
+
+	SplitAreaOption setInterval(String interval);
 
 	SplitAreaOption setAreaStyle(AreaStyleOption areaStyle);
 }

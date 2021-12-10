@@ -51,9 +51,9 @@ public interface CommonTooltipOption {
 
 	CommonTooltipOption setShadowOffsetY(Number shadowOffsetY);
 
-	CommonTooltipOption setPadding(Number[] padding);
-
 	CommonTooltipOption setPadding(Number padding);
+
+	CommonTooltipOption setPadding(Number[] padding);
 
 	CommonTooltipOption setExtraCssText(String extraCssText);
 

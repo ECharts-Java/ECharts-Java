@@ -34,12 +34,12 @@ public class TimeAngleAxis implements TimeAngleAxisOption {
 	@Setter(AccessLevel.NONE)
 	private Object id;
 
-	public TimeAngleAxis setId(String id) {
+	public TimeAngleAxis setId(Number id) {
 		this.id = id;
 		return this;
 	}
 
-	public TimeAngleAxis setId(Number id) {
+	public TimeAngleAxis setId(String id) {
 		this.id = id;
 		return this;
 	}
@@ -47,12 +47,12 @@ public class TimeAngleAxis implements TimeAngleAxisOption {
 	@Setter(AccessLevel.NONE)
 	private Object name;
 
-	public TimeAngleAxis setName(String name) {
+	public TimeAngleAxis setName(Number name) {
 		this.name = name;
 		return this;
 	}
 
-	public TimeAngleAxis setName(Number name) {
+	public TimeAngleAxis setName(String name) {
 		this.name = name;
 		return this;
 	}
@@ -171,12 +171,12 @@ public class TimeAngleAxis implements TimeAngleAxisOption {
 	@Setter(AccessLevel.NONE)
 	private Object min;
 
-	public TimeAngleAxis setMin(String min) {
+	public TimeAngleAxis setMin(Number min) {
 		this.min = min;
 		return this;
 	}
 
-	public TimeAngleAxis setMin(Number min) {
+	public TimeAngleAxis setMin(String min) {
 		this.min = min;
 		return this;
 	}
@@ -184,12 +184,12 @@ public class TimeAngleAxis implements TimeAngleAxisOption {
 	@Setter(AccessLevel.NONE)
 	private Object max;
 
-	public TimeAngleAxis setMax(String max) {
+	public TimeAngleAxis setMax(Number max) {
 		this.max = max;
 		return this;
 	}
 
-	public TimeAngleAxis setMax(Number max) {
+	public TimeAngleAxis setMax(String max) {
 		this.max = max;
 		return this;
 	}
