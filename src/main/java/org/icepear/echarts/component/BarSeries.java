@@ -9,6 +9,7 @@ import lombok.experimental.Accessors;
 
 import org.icepear.echarts.origin.chart.bar.BarBackgroundStyleOption;
 import org.icepear.echarts.origin.chart.bar.BarSeriesOption;
+import org.icepear.echarts.origin.util.LabelLineOption;
 
 @Accessors(chain=true)
 @Data
@@ -21,12 +22,12 @@ public class BarSeries implements BarSeriesOption {
 	@Setter(AccessLevel.NONE)
 	private Object id;
 
-	public BarSeries setId(String id) {
+	public BarSeries setId(Number id) {
 		this.id = id;
 		return this;
 	}
 
-	public BarSeries setId(Number id) {
+	public BarSeries setId(String id) {
 		this.id = id;
 		return this;
 	}
@@ -34,12 +35,12 @@ public class BarSeries implements BarSeriesOption {
 	@Setter(AccessLevel.NONE)
 	private Object name;
 
-	public BarSeries setName(String name) {
+	public BarSeries setName(Number name) {
 		this.name = name;
 		return this;
 	}
 
-	public BarSeries setName(Number name) {
+	public BarSeries setName(String name) {
 		this.name = name;
 		return this;
 	}
@@ -146,12 +147,12 @@ public class BarSeries implements BarSeriesOption {
 	@Setter(AccessLevel.NONE)
 	private Object dataGroupId;
 
-	public BarSeries setDataGroupId(String dataGroupId) {
+	public BarSeries setDataGroupId(Number dataGroupId) {
 		this.dataGroupId = dataGroupId;
 		return this;
 	}
 
-	public BarSeries setDataGroupId(Number dataGroupId) {
+	public BarSeries setDataGroupId(String dataGroupId) {
 		this.dataGroupId = dataGroupId;
 		return this;
 	}
@@ -159,7 +160,7 @@ public class BarSeries implements BarSeriesOption {
 	@Setter(AccessLevel.NONE)
 	private Object data;
 
-	public BarSeries setData(Object data) {
+	public BarSeries setData(Object[][] data) {
 		this.data = data;
 		return this;
 	}
@@ -169,7 +170,7 @@ public class BarSeries implements BarSeriesOption {
 		return this;
 	}
 
-	public BarSeries setData(Object[][] data) {
+	public BarSeries setData(Object data) {
 		this.data = data;
 		return this;
 	}
@@ -212,7 +213,7 @@ public class BarSeries implements BarSeriesOption {
 		return this;
 	}
 
-	private Object labelLine;
+	private LabelLineOption labelLine;
 
 	private Object labelLayout;
 
@@ -236,12 +237,12 @@ public class BarSeries implements BarSeriesOption {
 	@Setter(AccessLevel.NONE)
 	private Object selectedMode;
 
-	public BarSeries setSelectedMode(String selectedMode) {
+	public BarSeries setSelectedMode(Boolean selectedMode) {
 		this.selectedMode = selectedMode;
 		return this;
 	}
 
-	public BarSeries setSelectedMode(Boolean selectedMode) {
+	public BarSeries setSelectedMode(String selectedMode) {
 		this.selectedMode = selectedMode;
 		return this;
 	}
@@ -269,12 +270,12 @@ public class BarSeries implements BarSeriesOption {
 	@Setter(AccessLevel.NONE)
 	private Object barWidth;
 
-	public BarSeries setBarWidth(String barWidth) {
+	public BarSeries setBarWidth(Number barWidth) {
 		this.barWidth = barWidth;
 		return this;
 	}
 
-	public BarSeries setBarWidth(Number barWidth) {
+	public BarSeries setBarWidth(String barWidth) {
 		this.barWidth = barWidth;
 		return this;
 	}
@@ -282,12 +283,12 @@ public class BarSeries implements BarSeriesOption {
 	@Setter(AccessLevel.NONE)
 	private Object barGap;
 
-	public BarSeries setBarGap(String barGap) {
+	public BarSeries setBarGap(Number barGap) {
 		this.barGap = barGap;
 		return this;
 	}
 
-	public BarSeries setBarGap(Number barGap) {
+	public BarSeries setBarGap(String barGap) {
 		this.barGap = barGap;
 		return this;
 	}
@@ -295,12 +296,12 @@ public class BarSeries implements BarSeriesOption {
 	@Setter(AccessLevel.NONE)
 	private Object barCategoryGap;
 
-	public BarSeries setBarCategoryGap(String barCategoryGap) {
+	public BarSeries setBarCategoryGap(Number barCategoryGap) {
 		this.barCategoryGap = barCategoryGap;
 		return this;
 	}
 
-	public BarSeries setBarCategoryGap(Number barCategoryGap) {
+	public BarSeries setBarCategoryGap(String barCategoryGap) {
 		this.barCategoryGap = barCategoryGap;
 		return this;
 	}
@@ -322,12 +323,12 @@ public class BarSeries implements BarSeriesOption {
 	@Setter(AccessLevel.NONE)
 	private Object datasetId;
 
-	public BarSeries setDatasetId(String datasetId) {
+	public BarSeries setDatasetId(Number datasetId) {
 		this.datasetId = datasetId;
 		return this;
 	}
 
-	public BarSeries setDatasetId(Number datasetId) {
+	public BarSeries setDatasetId(String datasetId) {
 		this.datasetId = datasetId;
 		return this;
 	}

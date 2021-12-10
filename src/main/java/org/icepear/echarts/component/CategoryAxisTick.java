@@ -15,12 +15,12 @@ public class CategoryAxisTick implements CategoryAxisTickOption {
 	@Setter(AccessLevel.NONE)
 	private Object show;
 
-	public CategoryAxisTick setShow(String show) {
+	public CategoryAxisTick setShow(Boolean show) {
 		this.show = show;
 		return this;
 	}
 
-	public CategoryAxisTick setShow(Boolean show) {
+	public CategoryAxisTick setShow(String show) {
 		this.show = show;
 		return this;
 	}
@@ -36,12 +36,12 @@ public class CategoryAxisTick implements CategoryAxisTickOption {
 	@Setter(AccessLevel.NONE)
 	private Object interval;
 
-	public CategoryAxisTick setInterval(String interval) {
+	public CategoryAxisTick setInterval(Number interval) {
 		this.interval = interval;
 		return this;
 	}
 
-	public CategoryAxisTick setInterval(Number interval) {
+	public CategoryAxisTick setInterval(String interval) {
 		this.interval = interval;
 		return this;
 	}

@@ -24,12 +24,12 @@ public class Toolbox implements ToolboxOption {
 	@Setter(AccessLevel.NONE)
 	private Object id;
 
-	public Toolbox setId(String id) {
+	public Toolbox setId(Number id) {
 		this.id = id;
 		return this;
 	}
 
-	public Toolbox setId(Number id) {
+	public Toolbox setId(String id) {
 		this.id = id;
 		return this;
 	}
@@ -37,12 +37,12 @@ public class Toolbox implements ToolboxOption {
 	@Setter(AccessLevel.NONE)
 	private Object name;
 
-	public Toolbox setName(String name) {
+	public Toolbox setName(Number name) {
 		this.name = name;
 		return this;
 	}
 
-	public Toolbox setName(Number name) {
+	public Toolbox setName(String name) {
 		this.name = name;
 		return this;
 	}
@@ -54,12 +54,12 @@ public class Toolbox implements ToolboxOption {
 	@Setter(AccessLevel.NONE)
 	private Object width;
 
-	public Toolbox setWidth(String width) {
+	public Toolbox setWidth(Number width) {
 		this.width = width;
 		return this;
 	}
 
-	public Toolbox setWidth(Number width) {
+	public Toolbox setWidth(String width) {
 		this.width = width;
 		return this;
 	}
@@ -67,12 +67,12 @@ public class Toolbox implements ToolboxOption {
 	@Setter(AccessLevel.NONE)
 	private Object height;
 
-	public Toolbox setHeight(String height) {
+	public Toolbox setHeight(Number height) {
 		this.height = height;
 		return this;
 	}
 
-	public Toolbox setHeight(Number height) {
+	public Toolbox setHeight(String height) {
 		this.height = height;
 		return this;
 	}
@@ -80,12 +80,12 @@ public class Toolbox implements ToolboxOption {
 	@Setter(AccessLevel.NONE)
 	private Object top;
 
-	public Toolbox setTop(String top) {
+	public Toolbox setTop(Number top) {
 		this.top = top;
 		return this;
 	}
 
-	public Toolbox setTop(Number top) {
+	public Toolbox setTop(String top) {
 		this.top = top;
 		return this;
 	}
@@ -93,12 +93,12 @@ public class Toolbox implements ToolboxOption {
 	@Setter(AccessLevel.NONE)
 	private Object right;
 
-	public Toolbox setRight(String right) {
+	public Toolbox setRight(Number right) {
 		this.right = right;
 		return this;
 	}
 
-	public Toolbox setRight(Number right) {
+	public Toolbox setRight(String right) {
 		this.right = right;
 		return this;
 	}
@@ -106,12 +106,12 @@ public class Toolbox implements ToolboxOption {
 	@Setter(AccessLevel.NONE)
 	private Object bottom;
 
-	public Toolbox setBottom(String bottom) {
+	public Toolbox setBottom(Number bottom) {
 		this.bottom = bottom;
 		return this;
 	}
 
-	public Toolbox setBottom(Number bottom) {
+	public Toolbox setBottom(String bottom) {
 		this.bottom = bottom;
 		return this;
 	}
@@ -119,12 +119,12 @@ public class Toolbox implements ToolboxOption {
 	@Setter(AccessLevel.NONE)
 	private Object left;
 
-	public Toolbox setLeft(String left) {
+	public Toolbox setLeft(Number left) {
 		this.left = left;
 		return this;
 	}
 
-	public Toolbox setLeft(Number left) {
+	public Toolbox setLeft(String left) {
 		this.left = left;
 		return this;
 	}
@@ -152,12 +152,12 @@ public class Toolbox implements ToolboxOption {
 	@Setter(AccessLevel.NONE)
 	private Object borderRadius;
 
-	public Toolbox setBorderRadius(Number[] borderRadius) {
+	public Toolbox setBorderRadius(Number borderRadius) {
 		this.borderRadius = borderRadius;
 		return this;
 	}
 
-	public Toolbox setBorderRadius(Number borderRadius) {
+	public Toolbox setBorderRadius(Number[] borderRadius) {
 		this.borderRadius = borderRadius;
 		return this;
 	}
@@ -165,12 +165,12 @@ public class Toolbox implements ToolboxOption {
 	@Setter(AccessLevel.NONE)
 	private Object padding;
 
-	public Toolbox setPadding(Number[] padding) {
+	public Toolbox setPadding(Number padding) {
 		this.padding = padding;
 		return this;
 	}
 
-	public Toolbox setPadding(Number padding) {
+	public Toolbox setPadding(Number[] padding) {
 		this.padding = padding;
 		return this;
 	}

@@ -22,13 +22,13 @@ public interface ToolboxOption extends ComponentOption, BoxLayoutOptionMixin, Bo
 
 	ToolboxOption setBackgroundColor(String backgroundColor);
 
-	ToolboxOption setBorderRadius(Number[] borderRadius);
-
 	ToolboxOption setBorderRadius(Number borderRadius);
 
-	ToolboxOption setPadding(Number[] padding);
+	ToolboxOption setBorderRadius(Number[] borderRadius);
 
 	ToolboxOption setPadding(Number padding);
+
+	ToolboxOption setPadding(Number[] padding);
 
 	ToolboxOption setItemSize(Number itemSize);
 

@@ -17,12 +17,12 @@ public class SplitArea implements SplitAreaOption {
 	@Setter(AccessLevel.NONE)
 	private Object interval;
 
-	public SplitArea setInterval(String interval) {
+	public SplitArea setInterval(Number interval) {
 		this.interval = interval;
 		return this;
 	}
 
-	public SplitArea setInterval(Number interval) {
+	public SplitArea setInterval(String interval) {
 		this.interval = interval;
 		return this;
 	}

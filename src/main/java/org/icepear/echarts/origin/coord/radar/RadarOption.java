@@ -41,9 +41,9 @@ public interface RadarOption extends ComponentOption, CircleLayoutOptionMixin {
 
 	RadarOption setBoundaryGap(String[] boundaryGap);
 
-	RadarOption setBoundaryGap(Number[] boundaryGap);
-
 	RadarOption setBoundaryGap(Boolean boundaryGap);
+
+	RadarOption setBoundaryGap(Number[] boundaryGap);
 
 	RadarOption setIndicator(Object[] indicator);
 }

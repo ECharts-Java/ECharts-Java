@@ -5,13 +5,13 @@ package org.icepear.echarts.origin.component.marker;
  */
 public interface MarkerPositionOption {
 
-	MarkerPositionOption setX(String x);
-
 	MarkerPositionOption setX(Number x);
 
-	MarkerPositionOption setY(String y);
+	MarkerPositionOption setX(String x);
 
 	MarkerPositionOption setY(Number y);
+
+	MarkerPositionOption setY(String y);
 
 	MarkerPositionOption setCoord(Object[] coord);
 
@@ -29,7 +29,7 @@ public interface MarkerPositionOption {
 
 	MarkerPositionOption setValueDim(String valueDim);
 
-	MarkerPositionOption setValue(String value);
-
 	MarkerPositionOption setValue(Number value);
+
+	MarkerPositionOption setValue(String value);
 }

@@ -21,12 +21,12 @@ public class MarkArea implements MarkAreaOption {
 	@Setter(AccessLevel.NONE)
 	private Object id;
 
-	public MarkArea setId(String id) {
+	public MarkArea setId(Number id) {
 		this.id = id;
 		return this;
 	}
 
-	public MarkArea setId(Number id) {
+	public MarkArea setId(String id) {
 		this.id = id;
 		return this;
 	}
@@ -34,12 +34,12 @@ public class MarkArea implements MarkAreaOption {
 	@Setter(AccessLevel.NONE)
 	private Object name;
 
-	public MarkArea setName(String name) {
+	public MarkArea setName(Number name) {
 		this.name = name;
 		return this;
 	}
 
-	public MarkArea setName(Number name) {
+	public MarkArea setName(String name) {
 		this.name = name;
 		return this;
 	}
@@ -113,12 +113,12 @@ public class MarkArea implements MarkAreaOption {
 	@Setter(AccessLevel.NONE)
 	private Object data;
 
-	public MarkArea setData(MarkAreaDataItemOption[] data) {
+	public MarkArea setData(Object[] data) {
 		this.data = data;
 		return this;
 	}
 
-	public MarkArea setData(Object[] data) {
+	public MarkArea setData(MarkAreaDataItemOption[] data) {
 		this.data = data;
 		return this;
 	}

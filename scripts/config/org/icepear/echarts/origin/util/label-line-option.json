@@ -1,0 +1,53 @@
+{
+    "name": "LabelLineOption",
+    "type": "interface",
+    "extends": [],
+    "fields": [
+        {
+            "name": "show",
+            "types": [
+                "Boolean"
+            ]
+        },
+        {
+            "name": "showAbove",
+            "types": [
+                "Boolean"
+            ]
+        },
+        {
+            "name": "length",
+            "types": [
+                "Number"
+            ]
+        },
+        {
+            "name": "length2",
+            "types": [
+                "Number"
+            ]
+        },
+        {
+            "name": "smooth",
+            "types": [
+                "Number",
+                "Boolean"
+            ]
+        },
+        {
+            "name": "minTurnAngle",
+            "types": [
+                "Number"
+            ]
+        },
+        {
+            "name": "lineStyle",
+            "types": [
+                "LineStyleOption"
+            ]
+        }
+    ],
+    "comments": [
+        "https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/util/types.ts#L1147"
+    ]
+}

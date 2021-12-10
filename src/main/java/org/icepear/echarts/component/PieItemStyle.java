@@ -53,12 +53,7 @@ public class PieItemStyle implements PieItemStyleOption {
 	@Setter(AccessLevel.NONE)
 	private Object borderRadius;
 
-	public PieItemStyle setBorderRadius(String[] borderRadius) {
-		this.borderRadius = borderRadius;
-		return this;
-	}
-
-	public PieItemStyle setBorderRadius(Number[] borderRadius) {
+	public PieItemStyle setBorderRadius(Number borderRadius) {
 		this.borderRadius = borderRadius;
 		return this;
 	}
@@ -68,7 +63,12 @@ public class PieItemStyle implements PieItemStyleOption {
 		return this;
 	}
 
-	public PieItemStyle setBorderRadius(Number borderRadius) {
+	public PieItemStyle setBorderRadius(String[] borderRadius) {
+		this.borderRadius = borderRadius;
+		return this;
+	}
+
+	public PieItemStyle setBorderRadius(Number[] borderRadius) {
 		this.borderRadius = borderRadius;
 		return this;
 	}

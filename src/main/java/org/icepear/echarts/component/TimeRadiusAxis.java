@@ -30,12 +30,12 @@ public class TimeRadiusAxis implements TimeRadiusAxisOption {
 	@Setter(AccessLevel.NONE)
 	private Object id;
 
-	public TimeRadiusAxis setId(String id) {
+	public TimeRadiusAxis setId(Number id) {
 		this.id = id;
 		return this;
 	}
 
-	public TimeRadiusAxis setId(Number id) {
+	public TimeRadiusAxis setId(String id) {
 		this.id = id;
 		return this;
 	}
@@ -43,12 +43,12 @@ public class TimeRadiusAxis implements TimeRadiusAxisOption {
 	@Setter(AccessLevel.NONE)
 	private Object name;
 
-	public TimeRadiusAxis setName(String name) {
+	public TimeRadiusAxis setName(Number name) {
 		this.name = name;
 		return this;
 	}
 
-	public TimeRadiusAxis setName(Number name) {
+	public TimeRadiusAxis setName(String name) {
 		this.name = name;
 		return this;
 	}
@@ -167,12 +167,12 @@ public class TimeRadiusAxis implements TimeRadiusAxisOption {
 	@Setter(AccessLevel.NONE)
 	private Object min;
 
-	public TimeRadiusAxis setMin(String min) {
+	public TimeRadiusAxis setMin(Number min) {
 		this.min = min;
 		return this;
 	}
 
-	public TimeRadiusAxis setMin(Number min) {
+	public TimeRadiusAxis setMin(String min) {
 		this.min = min;
 		return this;
 	}
@@ -180,12 +180,12 @@ public class TimeRadiusAxis implements TimeRadiusAxisOption {
 	@Setter(AccessLevel.NONE)
 	private Object max;
 
-	public TimeRadiusAxis setMax(String max) {
+	public TimeRadiusAxis setMax(Number max) {
 		this.max = max;
 		return this;
 	}
 
-	public TimeRadiusAxis setMax(Number max) {
+	public TimeRadiusAxis setMax(String max) {
 		this.max = max;
 		return this;
 	}

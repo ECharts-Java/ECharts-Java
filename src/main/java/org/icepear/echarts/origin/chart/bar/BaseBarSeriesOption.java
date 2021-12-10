@@ -17,17 +17,17 @@ public interface BaseBarSeriesOption extends SeriesOption, SeriesOnCartesianOpti
 
 	BaseBarSeriesOption setBarMinWidth(Number barMinWidth);
 
-	BaseBarSeriesOption setBarWidth(String barWidth);
-
 	BaseBarSeriesOption setBarWidth(Number barWidth);
 
-	BaseBarSeriesOption setBarGap(String barGap);
+	BaseBarSeriesOption setBarWidth(String barWidth);
 
 	BaseBarSeriesOption setBarGap(Number barGap);
 
-	BaseBarSeriesOption setBarCategoryGap(String barCategoryGap);
+	BaseBarSeriesOption setBarGap(String barGap);
 
 	BaseBarSeriesOption setBarCategoryGap(Number barCategoryGap);
+
+	BaseBarSeriesOption setBarCategoryGap(String barCategoryGap);
 
 	BaseBarSeriesOption setLarge(Boolean large);
 

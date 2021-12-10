@@ -17,12 +17,12 @@ public class SplitLine implements SplitLineOption {
 	@Setter(AccessLevel.NONE)
 	private Object interval;
 
-	public SplitLine setInterval(String interval) {
+	public SplitLine setInterval(Number interval) {
 		this.interval = interval;
 		return this;
 	}
 
-	public SplitLine setInterval(Number interval) {
+	public SplitLine setInterval(String interval) {
 		this.interval = interval;
 		return this;
 	}

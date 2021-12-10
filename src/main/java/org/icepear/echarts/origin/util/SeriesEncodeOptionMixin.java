@@ -7,9 +7,9 @@ public interface SeriesEncodeOptionMixin {
 
 	SeriesEncodeOptionMixin setDatasetIndex(Number datasetIndex);
 
-	SeriesEncodeOptionMixin setDatasetId(String datasetId);
-
 	SeriesEncodeOptionMixin setDatasetId(Number datasetId);
+
+	SeriesEncodeOptionMixin setDatasetId(String datasetId);
 
 	SeriesEncodeOptionMixin setSeriesLayoutBy(Object seriesLayoutBy);
 

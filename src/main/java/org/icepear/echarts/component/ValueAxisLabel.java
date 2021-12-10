@@ -33,12 +33,12 @@ public class ValueAxisLabel implements ValueAxisLabelOption {
 	@Setter(AccessLevel.NONE)
 	private Object fontSize;
 
-	public ValueAxisLabel setFontSize(String fontSize) {
+	public ValueAxisLabel setFontSize(Number fontSize) {
 		this.fontSize = fontSize;
 		return this;
 	}
 
-	public ValueAxisLabel setFontSize(Number fontSize) {
+	public ValueAxisLabel setFontSize(String fontSize) {
 		this.fontSize = fontSize;
 		return this;
 	}
@@ -77,12 +77,12 @@ public class ValueAxisLabel implements ValueAxisLabelOption {
 	@Setter(AccessLevel.NONE)
 	private Object borderRadius;
 
-	public ValueAxisLabel setBorderRadius(Number[] borderRadius) {
+	public ValueAxisLabel setBorderRadius(Number borderRadius) {
 		this.borderRadius = borderRadius;
 		return this;
 	}
 
-	public ValueAxisLabel setBorderRadius(Number borderRadius) {
+	public ValueAxisLabel setBorderRadius(Number[] borderRadius) {
 		this.borderRadius = borderRadius;
 		return this;
 	}
@@ -90,12 +90,12 @@ public class ValueAxisLabel implements ValueAxisLabelOption {
 	@Setter(AccessLevel.NONE)
 	private Object padding;
 
-	public ValueAxisLabel setPadding(Number[] padding) {
+	public ValueAxisLabel setPadding(Number padding) {
 		this.padding = padding;
 		return this;
 	}
 
-	public ValueAxisLabel setPadding(Number padding) {
+	public ValueAxisLabel setPadding(Number[] padding) {
 		this.padding = padding;
 		return this;
 	}
@@ -103,12 +103,12 @@ public class ValueAxisLabel implements ValueAxisLabelOption {
 	@Setter(AccessLevel.NONE)
 	private Object width;
 
-	public ValueAxisLabel setWidth(String width) {
+	public ValueAxisLabel setWidth(Number width) {
 		this.width = width;
 		return this;
 	}
 
-	public ValueAxisLabel setWidth(Number width) {
+	public ValueAxisLabel setWidth(String width) {
 		this.width = width;
 		return this;
 	}

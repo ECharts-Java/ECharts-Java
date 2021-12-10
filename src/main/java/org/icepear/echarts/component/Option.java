@@ -126,12 +126,12 @@ public class Option implements EChartsOption {
 		return this;
 	}
 
-	public Option setOptions(EChartsOption[] options) {
+	public Option setOptions(Object options) {
 		this.options = options;
 		return this;
 	}
 
-	public Option setOptions(Object options) {
+	public Option setOptions(EChartsOption[] options) {
 		this.options = options;
 		return this;
 	}
@@ -152,12 +152,12 @@ public class Option implements EChartsOption {
 	@Setter(AccessLevel.NONE)
 	private Object timeline;
 
-	public Option setTimeline(ComponentOption[] timeline) {
+	public Option setTimeline(ComponentOption timeline) {
 		this.timeline = timeline;
 		return this;
 	}
 
-	public Option setTimeline(ComponentOption timeline) {
+	public Option setTimeline(ComponentOption[] timeline) {
 		this.timeline = timeline;
 		return this;
 	}
@@ -172,12 +172,12 @@ public class Option implements EChartsOption {
 	@Setter(AccessLevel.NONE)
 	private Object darkMode;
 
-	public Option setDarkMode(String darkMode) {
+	public Option setDarkMode(Boolean darkMode) {
 		this.darkMode = darkMode;
 		return this;
 	}
 
-	public Option setDarkMode(Boolean darkMode) {
+	public Option setDarkMode(String darkMode) {
 		this.darkMode = darkMode;
 		return this;
 	}
@@ -219,12 +219,12 @@ public class Option implements EChartsOption {
 	@Setter(AccessLevel.NONE)
 	private Object grid;
 
-	public Option setGrid(GridOption[] grid) {
+	public Option setGrid(GridOption grid) {
 		this.grid = grid;
 		return this;
 	}
 
-	public Option setGrid(GridOption grid) {
+	public Option setGrid(GridOption[] grid) {
 		this.grid = grid;
 		return this;
 	}
@@ -245,12 +245,12 @@ public class Option implements EChartsOption {
 	@Setter(AccessLevel.NONE)
 	private Object polar;
 
-	public Option setPolar(PolarOption[] polar) {
+	public Option setPolar(PolarOption polar) {
 		this.polar = polar;
 		return this;
 	}
 
-	public Option setPolar(PolarOption polar) {
+	public Option setPolar(PolarOption[] polar) {
 		this.polar = polar;
 		return this;
 	}
@@ -284,12 +284,12 @@ public class Option implements EChartsOption {
 	@Setter(AccessLevel.NONE)
 	private Object radiusAxis;
 
-	public Option setRadiusAxis(RadiusAxisOption radiusAxis) {
+	public Option setRadiusAxis(RadiusAxisOption[] radiusAxis) {
 		this.radiusAxis = radiusAxis;
 		return this;
 	}
 
-	public Option setRadiusAxis(RadiusAxisOption[] radiusAxis) {
+	public Option setRadiusAxis(RadiusAxisOption radiusAxis) {
 		this.radiusAxis = radiusAxis;
 		return this;
 	}
@@ -297,12 +297,12 @@ public class Option implements EChartsOption {
 	@Setter(AccessLevel.NONE)
 	private Object xAxis;
 
-	public Option setXAxis(AxisOption xAxis) {
+	public Option setXAxis(AxisOption[] xAxis) {
 		this.xAxis = xAxis;
 		return this;
 	}
 
-	public Option setXAxis(AxisOption[] xAxis) {
+	public Option setXAxis(AxisOption xAxis) {
 		this.xAxis = xAxis;
 		return this;
 	}
@@ -388,12 +388,12 @@ public class Option implements EChartsOption {
 	@Setter(AccessLevel.NONE)
 	private Object tooltip;
 
-	public Option setTooltip(TooltipOption tooltip) {
+	public Option setTooltip(TooltipOption[] tooltip) {
 		this.tooltip = tooltip;
 		return this;
 	}
 
-	public Option setTooltip(TooltipOption[] tooltip) {
+	public Option setTooltip(TooltipOption tooltip) {
 		this.tooltip = tooltip;
 		return this;
 	}

@@ -33,12 +33,12 @@ public class MarkLine2DDataItemDim implements MarkLine2DDataItemDimOption {
 	@Setter(AccessLevel.NONE)
 	private Object symbolSize;
 
-	public MarkLine2DDataItemDim setSymbolSize(Number[] symbolSize) {
+	public MarkLine2DDataItemDim setSymbolSize(Number symbolSize) {
 		this.symbolSize = symbolSize;
 		return this;
 	}
 
-	public MarkLine2DDataItemDim setSymbolSize(Number symbolSize) {
+	public MarkLine2DDataItemDim setSymbolSize(Number[] symbolSize) {
 		this.symbolSize = symbolSize;
 		return this;
 	}
@@ -50,6 +50,16 @@ public class MarkLine2DDataItemDim implements MarkLine2DDataItemDimOption {
 	@Setter(AccessLevel.NONE)
 	private Object symbolOffset;
 
+	public MarkLine2DDataItemDim setSymbolOffset(Number symbolOffset) {
+		this.symbolOffset = symbolOffset;
+		return this;
+	}
+
+	public MarkLine2DDataItemDim setSymbolOffset(String symbolOffset) {
+		this.symbolOffset = symbolOffset;
+		return this;
+	}
+
 	public MarkLine2DDataItemDim setSymbolOffset(String[] symbolOffset) {
 		this.symbolOffset = symbolOffset;
 		return this;
@@ -60,25 +70,15 @@ public class MarkLine2DDataItemDim implements MarkLine2DDataItemDimOption {
 		return this;
 	}
 
-	public MarkLine2DDataItemDim setSymbolOffset(String symbolOffset) {
-		this.symbolOffset = symbolOffset;
-		return this;
-	}
-
-	public MarkLine2DDataItemDim setSymbolOffset(Number symbolOffset) {
-		this.symbolOffset = symbolOffset;
-		return this;
-	}
-
 	@Setter(AccessLevel.NONE)
 	private Object x;
 
-	public MarkLine2DDataItemDim setX(String x) {
+	public MarkLine2DDataItemDim setX(Number x) {
 		this.x = x;
 		return this;
 	}
 
-	public MarkLine2DDataItemDim setX(Number x) {
+	public MarkLine2DDataItemDim setX(String x) {
 		this.x = x;
 		return this;
 	}
@@ -86,12 +86,12 @@ public class MarkLine2DDataItemDim implements MarkLine2DDataItemDimOption {
 	@Setter(AccessLevel.NONE)
 	private Object y;
 
-	public MarkLine2DDataItemDim setY(String y) {
+	public MarkLine2DDataItemDim setY(Number y) {
 		this.y = y;
 		return this;
 	}
 
-	public MarkLine2DDataItemDim setY(Number y) {
+	public MarkLine2DDataItemDim setY(String y) {
 		this.y = y;
 		return this;
 	}
@@ -115,12 +115,12 @@ public class MarkLine2DDataItemDim implements MarkLine2DDataItemDimOption {
 	@Setter(AccessLevel.NONE)
 	private Object value;
 
-	public MarkLine2DDataItemDim setValue(String value) {
+	public MarkLine2DDataItemDim setValue(Number value) {
 		this.value = value;
 		return this;
 	}
 
-	public MarkLine2DDataItemDim setValue(Number value) {
+	public MarkLine2DDataItemDim setValue(String value) {
 		this.value = value;
 		return this;
 	}

@@ -7,9 +7,9 @@ import org.icepear.echarts.origin.util.LineStyleOption;
  */
 public interface AxisLineOption {
 
-	AxisLineOption setShow(String show);
-
 	AxisLineOption setShow(Boolean show);
+
+	AxisLineOption setShow(String show);
 
 	AxisLineOption setOnZero(Boolean onZero);
 
@@ -23,11 +23,11 @@ public interface AxisLineOption {
 
 	AxisLineOption setSymbolOffset(String[] symbolOffset);
 
-	AxisLineOption setSymbolOffset(Number[] symbolOffset);
+	AxisLineOption setSymbolOffset(Number symbolOffset);
 
 	AxisLineOption setSymbolOffset(String symbolOffset);
 
-	AxisLineOption setSymbolOffset(Number symbolOffset);
+	AxisLineOption setSymbolOffset(Number[] symbolOffset);
 
 	AxisLineOption setLineStyle(LineStyleOption lineStyle);
 }

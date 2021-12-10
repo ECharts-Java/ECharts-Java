@@ -18,12 +18,12 @@ public class Grid implements GridOption {
 	@Setter(AccessLevel.NONE)
 	private Object id;
 
-	public Grid setId(String id) {
+	public Grid setId(Number id) {
 		this.id = id;
 		return this;
 	}
 
-	public Grid setId(Number id) {
+	public Grid setId(String id) {
 		this.id = id;
 		return this;
 	}
@@ -31,12 +31,12 @@ public class Grid implements GridOption {
 	@Setter(AccessLevel.NONE)
 	private Object name;
 
-	public Grid setName(String name) {
+	public Grid setName(Number name) {
 		this.name = name;
 		return this;
 	}
 
-	public Grid setName(Number name) {
+	public Grid setName(String name) {
 		this.name = name;
 		return this;
 	}
@@ -48,12 +48,12 @@ public class Grid implements GridOption {
 	@Setter(AccessLevel.NONE)
 	private Object width;
 
-	public Grid setWidth(String width) {
+	public Grid setWidth(Number width) {
 		this.width = width;
 		return this;
 	}
 
-	public Grid setWidth(Number width) {
+	public Grid setWidth(String width) {
 		this.width = width;
 		return this;
 	}
@@ -61,12 +61,12 @@ public class Grid implements GridOption {
 	@Setter(AccessLevel.NONE)
 	private Object height;
 
-	public Grid setHeight(String height) {
+	public Grid setHeight(Number height) {
 		this.height = height;
 		return this;
 	}
 
-	public Grid setHeight(Number height) {
+	public Grid setHeight(String height) {
 		this.height = height;
 		return this;
 	}
@@ -74,12 +74,12 @@ public class Grid implements GridOption {
 	@Setter(AccessLevel.NONE)
 	private Object top;
 
-	public Grid setTop(String top) {
+	public Grid setTop(Number top) {
 		this.top = top;
 		return this;
 	}
 
-	public Grid setTop(Number top) {
+	public Grid setTop(String top) {
 		this.top = top;
 		return this;
 	}
@@ -87,12 +87,12 @@ public class Grid implements GridOption {
 	@Setter(AccessLevel.NONE)
 	private Object right;
 
-	public Grid setRight(String right) {
+	public Grid setRight(Number right) {
 		this.right = right;
 		return this;
 	}
 
-	public Grid setRight(Number right) {
+	public Grid setRight(String right) {
 		this.right = right;
 		return this;
 	}
@@ -100,12 +100,12 @@ public class Grid implements GridOption {
 	@Setter(AccessLevel.NONE)
 	private Object bottom;
 
-	public Grid setBottom(String bottom) {
+	public Grid setBottom(Number bottom) {
 		this.bottom = bottom;
 		return this;
 	}
 
-	public Grid setBottom(Number bottom) {
+	public Grid setBottom(String bottom) {
 		this.bottom = bottom;
 		return this;
 	}
@@ -113,12 +113,12 @@ public class Grid implements GridOption {
 	@Setter(AccessLevel.NONE)
 	private Object left;
 
-	public Grid setLeft(String left) {
+	public Grid setLeft(Number left) {
 		this.left = left;
 		return this;
 	}
 
-	public Grid setLeft(Number left) {
+	public Grid setLeft(String left) {
 		this.left = left;
 		return this;
 	}

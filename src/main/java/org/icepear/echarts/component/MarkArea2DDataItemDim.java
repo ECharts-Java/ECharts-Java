@@ -28,12 +28,12 @@ public class MarkArea2DDataItemDim implements MarkArea2DDataItemDimOption {
 	@Setter(AccessLevel.NONE)
 	private Object x;
 
-	public MarkArea2DDataItemDim setX(String x) {
+	public MarkArea2DDataItemDim setX(Number x) {
 		this.x = x;
 		return this;
 	}
 
-	public MarkArea2DDataItemDim setX(Number x) {
+	public MarkArea2DDataItemDim setX(String x) {
 		this.x = x;
 		return this;
 	}
@@ -41,12 +41,12 @@ public class MarkArea2DDataItemDim implements MarkArea2DDataItemDimOption {
 	@Setter(AccessLevel.NONE)
 	private Object y;
 
-	public MarkArea2DDataItemDim setY(String y) {
+	public MarkArea2DDataItemDim setY(Number y) {
 		this.y = y;
 		return this;
 	}
 
-	public MarkArea2DDataItemDim setY(Number y) {
+	public MarkArea2DDataItemDim setY(String y) {
 		this.y = y;
 		return this;
 	}
@@ -70,12 +70,12 @@ public class MarkArea2DDataItemDim implements MarkArea2DDataItemDimOption {
 	@Setter(AccessLevel.NONE)
 	private Object value;
 
-	public MarkArea2DDataItemDim setValue(String value) {
+	public MarkArea2DDataItemDim setValue(Number value) {
 		this.value = value;
 		return this;
 	}
 
-	public MarkArea2DDataItemDim setValue(Number value) {
+	public MarkArea2DDataItemDim setValue(String value) {
 		this.value = value;
 		return this;
 	}

@@ -29,17 +29,17 @@ public interface EChartsOption extends ECBasicOption {
 
 	EChartsOption setTitle(TitleOption[] title);
 
-	EChartsOption setGrid(GridOption[] grid);
-
 	EChartsOption setGrid(GridOption grid);
+
+	EChartsOption setGrid(GridOption[] grid);
 
 	EChartsOption setRadar(RadarOption[] radar);
 
 	EChartsOption setRadar(RadarOption radar);
 
-	EChartsOption setPolar(PolarOption[] polar);
-
 	EChartsOption setPolar(PolarOption polar);
+
+	EChartsOption setPolar(PolarOption[] polar);
 
 	EChartsOption setGeo(Object[] geo);
 
@@ -49,13 +49,13 @@ public interface EChartsOption extends ECBasicOption {
 
 	EChartsOption setAngleAxis(AngleAxisOption angleAxis);
 
-	EChartsOption setRadiusAxis(RadiusAxisOption radiusAxis);
-
 	EChartsOption setRadiusAxis(RadiusAxisOption[] radiusAxis);
 
-	EChartsOption setXAxis(AxisOption xAxis);
+	EChartsOption setRadiusAxis(RadiusAxisOption radiusAxis);
 
 	EChartsOption setXAxis(AxisOption[] xAxis);
+
+	EChartsOption setXAxis(AxisOption xAxis);
 
 	EChartsOption setYAxis(Object[] yAxis);
 
@@ -81,9 +81,9 @@ public interface EChartsOption extends ECBasicOption {
 
 	EChartsOption setToolbox(ToolboxOption[] toolbox);
 
-	EChartsOption setTooltip(TooltipOption tooltip);
-
 	EChartsOption setTooltip(TooltipOption[] tooltip);
+
+	EChartsOption setTooltip(TooltipOption tooltip);
 
 	EChartsOption setAxisPointer(AxisPointerOption[] axisPointer);
 

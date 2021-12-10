@@ -31,12 +31,12 @@ public class MarkLine1DDataItem implements MarkLine1DDataItemOption {
 	@Setter(AccessLevel.NONE)
 	private Object xAxis;
 
-	public MarkLine1DDataItem setXAxis(String xAxis) {
+	public MarkLine1DDataItem setXAxis(Number xAxis) {
 		this.xAxis = xAxis;
 		return this;
 	}
 
-	public MarkLine1DDataItem setXAxis(Number xAxis) {
+	public MarkLine1DDataItem setXAxis(String xAxis) {
 		this.xAxis = xAxis;
 		return this;
 	}
@@ -44,12 +44,12 @@ public class MarkLine1DDataItem implements MarkLine1DDataItemOption {
 	@Setter(AccessLevel.NONE)
 	private Object yAxis;
 
-	public MarkLine1DDataItem setYAxis(String yAxis) {
+	public MarkLine1DDataItem setYAxis(Number yAxis) {
 		this.yAxis = yAxis;
 		return this;
 	}
 
-	public MarkLine1DDataItem setYAxis(Number yAxis) {
+	public MarkLine1DDataItem setYAxis(String yAxis) {
 		this.yAxis = yAxis;
 		return this;
 	}
@@ -76,12 +76,12 @@ public class MarkLine1DDataItem implements MarkLine1DDataItemOption {
 	@Setter(AccessLevel.NONE)
 	private Object symbolSize;
 
-	public MarkLine1DDataItem setSymbolSize(Number[] symbolSize) {
+	public MarkLine1DDataItem setSymbolSize(Number symbolSize) {
 		this.symbolSize = symbolSize;
 		return this;
 	}
 
-	public MarkLine1DDataItem setSymbolSize(Number symbolSize) {
+	public MarkLine1DDataItem setSymbolSize(Number[] symbolSize) {
 		this.symbolSize = symbolSize;
 		return this;
 	}
@@ -89,12 +89,12 @@ public class MarkLine1DDataItem implements MarkLine1DDataItemOption {
 	@Setter(AccessLevel.NONE)
 	private Object symbolRotate;
 
-	public MarkLine1DDataItem setSymbolRotate(Number[] symbolRotate) {
+	public MarkLine1DDataItem setSymbolRotate(Number symbolRotate) {
 		this.symbolRotate = symbolRotate;
 		return this;
 	}
 
-	public MarkLine1DDataItem setSymbolRotate(Number symbolRotate) {
+	public MarkLine1DDataItem setSymbolRotate(Number[] symbolRotate) {
 		this.symbolRotate = symbolRotate;
 		return this;
 	}
@@ -107,17 +107,17 @@ public class MarkLine1DDataItem implements MarkLine1DDataItemOption {
 		return this;
 	}
 
-	public MarkLine1DDataItem setSymbolOffset(Number[] symbolOffset) {
-		this.symbolOffset = symbolOffset;
-		return this;
-	}
-
 	public MarkLine1DDataItem setSymbolOffset(String symbolOffset) {
 		this.symbolOffset = symbolOffset;
 		return this;
 	}
 
 	public MarkLine1DDataItem setSymbolOffset(Number symbolOffset) {
+		this.symbolOffset = symbolOffset;
+		return this;
+	}
+
+	public MarkLine1DDataItem setSymbolOffset(Number[] symbolOffset) {
 		this.symbolOffset = symbolOffset;
 		return this;
 	}

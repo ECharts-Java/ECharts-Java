@@ -9,6 +9,7 @@ import lombok.experimental.Accessors;
 
 import org.icepear.echarts.origin.chart.line.LineSeriesOption;
 import org.icepear.echarts.origin.util.ItemStyleOption;
+import org.icepear.echarts.origin.util.LabelLineOption;
 import org.icepear.echarts.origin.util.LineStyleOption;
 import org.icepear.echarts.origin.util.SeriesLabelOption;
 
@@ -23,12 +24,12 @@ public class LineSeries implements LineSeriesOption {
 	@Setter(AccessLevel.NONE)
 	private Object id;
 
-	public LineSeries setId(String id) {
+	public LineSeries setId(Number id) {
 		this.id = id;
 		return this;
 	}
 
-	public LineSeries setId(Number id) {
+	public LineSeries setId(String id) {
 		this.id = id;
 		return this;
 	}
@@ -36,12 +37,12 @@ public class LineSeries implements LineSeriesOption {
 	@Setter(AccessLevel.NONE)
 	private Object name;
 
-	public LineSeries setName(String name) {
+	public LineSeries setName(Number name) {
 		this.name = name;
 		return this;
 	}
 
-	public LineSeries setName(Number name) {
+	public LineSeries setName(String name) {
 		this.name = name;
 		return this;
 	}
@@ -148,12 +149,12 @@ public class LineSeries implements LineSeriesOption {
 	@Setter(AccessLevel.NONE)
 	private Object dataGroupId;
 
-	public LineSeries setDataGroupId(String dataGroupId) {
+	public LineSeries setDataGroupId(Number dataGroupId) {
 		this.dataGroupId = dataGroupId;
 		return this;
 	}
 
-	public LineSeries setDataGroupId(Number dataGroupId) {
+	public LineSeries setDataGroupId(String dataGroupId) {
 		this.dataGroupId = dataGroupId;
 		return this;
 	}
@@ -209,7 +210,7 @@ public class LineSeries implements LineSeriesOption {
 		return this;
 	}
 
-	private Object labelLine;
+	private LabelLineOption labelLine;
 
 	private Object labelLayout;
 
@@ -233,12 +234,12 @@ public class LineSeries implements LineSeriesOption {
 	@Setter(AccessLevel.NONE)
 	private Object selectedMode;
 
-	public LineSeries setSelectedMode(String selectedMode) {
+	public LineSeries setSelectedMode(Boolean selectedMode) {
 		this.selectedMode = selectedMode;
 		return this;
 	}
 
-	public LineSeries setSelectedMode(Boolean selectedMode) {
+	public LineSeries setSelectedMode(String selectedMode) {
 		this.selectedMode = selectedMode;
 		return this;
 	}
@@ -270,12 +271,12 @@ public class LineSeries implements LineSeriesOption {
 	@Setter(AccessLevel.NONE)
 	private Object symbolSize;
 
-	public LineSeries setSymbolSize(Number[] symbolSize) {
+	public LineSeries setSymbolSize(Number symbolSize) {
 		this.symbolSize = symbolSize;
 		return this;
 	}
 
-	public LineSeries setSymbolSize(Number symbolSize) {
+	public LineSeries setSymbolSize(Number[] symbolSize) {
 		this.symbolSize = symbolSize;
 		return this;
 	}
@@ -287,6 +288,16 @@ public class LineSeries implements LineSeriesOption {
 	@Setter(AccessLevel.NONE)
 	private Object symbolOffset;
 
+	public LineSeries setSymbolOffset(Number symbolOffset) {
+		this.symbolOffset = symbolOffset;
+		return this;
+	}
+
+	public LineSeries setSymbolOffset(String symbolOffset) {
+		this.symbolOffset = symbolOffset;
+		return this;
+	}
+
 	public LineSeries setSymbolOffset(String[] symbolOffset) {
 		this.symbolOffset = symbolOffset;
 		return this;
@@ -297,27 +308,17 @@ public class LineSeries implements LineSeriesOption {
 		return this;
 	}
 
-	public LineSeries setSymbolOffset(String symbolOffset) {
-		this.symbolOffset = symbolOffset;
-		return this;
-	}
-
-	public LineSeries setSymbolOffset(Number symbolOffset) {
-		this.symbolOffset = symbolOffset;
-		return this;
-	}
-
 	private Number datasetIndex;
 
 	@Setter(AccessLevel.NONE)
 	private Object datasetId;
 
-	public LineSeries setDatasetId(String datasetId) {
+	public LineSeries setDatasetId(Number datasetId) {
 		this.datasetId = datasetId;
 		return this;
 	}
 
-	public LineSeries setDatasetId(Number datasetId) {
+	public LineSeries setDatasetId(String datasetId) {
 		this.datasetId = datasetId;
 		return this;
 	}
@@ -337,12 +338,12 @@ public class LineSeries implements LineSeriesOption {
 	@Setter(AccessLevel.NONE)
 	private Object step;
 
-	public LineSeries setStep(String step) {
+	public LineSeries setStep(Boolean step) {
 		this.step = step;
 		return this;
 	}
 
-	public LineSeries setStep(Boolean step) {
+	public LineSeries setStep(String step) {
 		this.step = step;
 		return this;
 	}
@@ -369,12 +370,12 @@ public class LineSeries implements LineSeriesOption {
 	@Setter(AccessLevel.NONE)
 	private Object showAllSymbol;
 
-	public LineSeries setShowAllSymbol(String showAllSymbol) {
+	public LineSeries setShowAllSymbol(Boolean showAllSymbol) {
 		this.showAllSymbol = showAllSymbol;
 		return this;
 	}
 
-	public LineSeries setShowAllSymbol(Boolean showAllSymbol) {
+	public LineSeries setShowAllSymbol(String showAllSymbol) {
 		this.showAllSymbol = showAllSymbol;
 		return this;
 	}

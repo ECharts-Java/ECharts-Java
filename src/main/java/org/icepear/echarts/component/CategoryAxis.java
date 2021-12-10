@@ -36,12 +36,12 @@ public class CategoryAxis implements CategoryAxisOption {
 	@Setter(AccessLevel.NONE)
 	private Object id;
 
-	public CategoryAxis setId(String id) {
+	public CategoryAxis setId(Number id) {
 		this.id = id;
 		return this;
 	}
 
-	public CategoryAxis setId(Number id) {
+	public CategoryAxis setId(String id) {
 		this.id = id;
 		return this;
 	}
@@ -49,12 +49,12 @@ public class CategoryAxis implements CategoryAxisOption {
 	@Setter(AccessLevel.NONE)
 	private Object name;
 
-	public CategoryAxis setName(String name) {
+	public CategoryAxis setName(Number name) {
 		this.name = name;
 		return this;
 	}
 
-	public CategoryAxis setName(Number name) {
+	public CategoryAxis setName(String name) {
 		this.name = name;
 		return this;
 	}
@@ -184,12 +184,12 @@ public class CategoryAxis implements CategoryAxisOption {
 	@Setter(AccessLevel.NONE)
 	private Object min;
 
-	public CategoryAxis setMin(String min) {
+	public CategoryAxis setMin(Number min) {
 		this.min = min;
 		return this;
 	}
 
-	public CategoryAxis setMin(Number min) {
+	public CategoryAxis setMin(String min) {
 		this.min = min;
 		return this;
 	}
@@ -197,12 +197,12 @@ public class CategoryAxis implements CategoryAxisOption {
 	@Setter(AccessLevel.NONE)
 	private Object max;
 
-	public CategoryAxis setMax(String max) {
+	public CategoryAxis setMax(Number max) {
 		this.max = max;
 		return this;
 	}
 
-	public CategoryAxis setMax(Number max) {
+	public CategoryAxis setMax(String max) {
 		this.max = max;
 		return this;
 	}

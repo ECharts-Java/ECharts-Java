@@ -11,15 +11,15 @@ public interface ECUnitOption extends AnimationOptionMixin, ColorPaletteOptionMi
 
 	ECUnitOption setMedia(Object media);
 
-	ECUnitOption setTimeline(ComponentOption[] timeline);
-
 	ECUnitOption setTimeline(ComponentOption timeline);
+
+	ECUnitOption setTimeline(ComponentOption[] timeline);
 
 	ECUnitOption setBackgroundColor(String backgroundColor);
 
-	ECUnitOption setDarkMode(String darkMode);
-
 	ECUnitOption setDarkMode(Boolean darkMode);
+
+	ECUnitOption setDarkMode(String darkMode);
 
 	ECUnitOption setTextStyle(Object textStyle);
 

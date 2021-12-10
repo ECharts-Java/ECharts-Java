@@ -49,11 +49,11 @@ public interface AxisBaseOptionCommon extends ComponentOption, AnimationOptionMi
 
 	AxisBaseOptionCommon setSplitArea(SplitAreaOption splitArea);
 
-	AxisBaseOptionCommon setMin(String min);
-
 	AxisBaseOptionCommon setMin(Number min);
 
-	AxisBaseOptionCommon setMax(String max);
+	AxisBaseOptionCommon setMin(String min);
 
 	AxisBaseOptionCommon setMax(Number max);
+
+	AxisBaseOptionCommon setMax(String max);
 }

@@ -13,9 +13,9 @@ public interface TextCommonOption extends ShadowOptionMixin {
 
 	TextCommonOption setFontFamily(String fontFamily);
 
-	TextCommonOption setFontSize(String fontSize);
-
 	TextCommonOption setFontSize(Number fontSize);
+
+	TextCommonOption setFontSize(String fontSize);
 
 	TextCommonOption setAlign(String align);
 
@@ -39,17 +39,17 @@ public interface TextCommonOption extends ShadowOptionMixin {
 
 	TextCommonOption setBorderDashOffset(Number borderDashOffset);
 
-	TextCommonOption setBorderRadius(Number[] borderRadius);
-
 	TextCommonOption setBorderRadius(Number borderRadius);
 
-	TextCommonOption setPadding(Number[] padding);
+	TextCommonOption setBorderRadius(Number[] borderRadius);
 
 	TextCommonOption setPadding(Number padding);
 
-	TextCommonOption setWidth(String width);
+	TextCommonOption setPadding(Number[] padding);
 
 	TextCommonOption setWidth(Number width);
+
+	TextCommonOption setWidth(String width);
 
 	TextCommonOption setHeight(Number height);
 

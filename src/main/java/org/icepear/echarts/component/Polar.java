@@ -18,12 +18,12 @@ public class Polar implements PolarOption {
 	@Setter(AccessLevel.NONE)
 	private Object id;
 
-	public Polar setId(String id) {
+	public Polar setId(Number id) {
 		this.id = id;
 		return this;
 	}
 
-	public Polar setId(Number id) {
+	public Polar setId(String id) {
 		this.id = id;
 		return this;
 	}
@@ -31,12 +31,12 @@ public class Polar implements PolarOption {
 	@Setter(AccessLevel.NONE)
 	private Object name;
 
-	public Polar setName(String name) {
+	public Polar setName(Number name) {
 		this.name = name;
 		return this;
 	}
 
-	public Polar setName(Number name) {
+	public Polar setName(String name) {
 		this.name = name;
 		return this;
 	}
@@ -61,12 +61,7 @@ public class Polar implements PolarOption {
 	@Setter(AccessLevel.NONE)
 	private Object radius;
 
-	public Polar setRadius(String[] radius) {
-		this.radius = radius;
-		return this;
-	}
-
-	public Polar setRadius(Number[] radius) {
+	public Polar setRadius(Number radius) {
 		this.radius = radius;
 		return this;
 	}
@@ -76,7 +71,12 @@ public class Polar implements PolarOption {
 		return this;
 	}
 
-	public Polar setRadius(Number radius) {
+	public Polar setRadius(String[] radius) {
+		this.radius = radius;
+		return this;
+	}
+
+	public Polar setRadius(Number[] radius) {
 		this.radius = radius;
 		return this;
 	}

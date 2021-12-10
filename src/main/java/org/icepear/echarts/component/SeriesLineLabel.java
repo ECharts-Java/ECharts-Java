@@ -33,12 +33,12 @@ public class SeriesLineLabel implements SeriesLineLabelOption {
 	@Setter(AccessLevel.NONE)
 	private Object fontSize;
 
-	public SeriesLineLabel setFontSize(String fontSize) {
+	public SeriesLineLabel setFontSize(Number fontSize) {
 		this.fontSize = fontSize;
 		return this;
 	}
 
-	public SeriesLineLabel setFontSize(Number fontSize) {
+	public SeriesLineLabel setFontSize(String fontSize) {
 		this.fontSize = fontSize;
 		return this;
 	}
@@ -77,12 +77,12 @@ public class SeriesLineLabel implements SeriesLineLabelOption {
 	@Setter(AccessLevel.NONE)
 	private Object borderRadius;
 
-	public SeriesLineLabel setBorderRadius(Number[] borderRadius) {
+	public SeriesLineLabel setBorderRadius(Number borderRadius) {
 		this.borderRadius = borderRadius;
 		return this;
 	}
 
-	public SeriesLineLabel setBorderRadius(Number borderRadius) {
+	public SeriesLineLabel setBorderRadius(Number[] borderRadius) {
 		this.borderRadius = borderRadius;
 		return this;
 	}
@@ -90,12 +90,12 @@ public class SeriesLineLabel implements SeriesLineLabelOption {
 	@Setter(AccessLevel.NONE)
 	private Object padding;
 
-	public SeriesLineLabel setPadding(Number[] padding) {
+	public SeriesLineLabel setPadding(Number padding) {
 		this.padding = padding;
 		return this;
 	}
 
-	public SeriesLineLabel setPadding(Number padding) {
+	public SeriesLineLabel setPadding(Number[] padding) {
 		this.padding = padding;
 		return this;
 	}
@@ -103,12 +103,12 @@ public class SeriesLineLabel implements SeriesLineLabelOption {
 	@Setter(AccessLevel.NONE)
 	private Object width;
 
-	public SeriesLineLabel setWidth(String width) {
+	public SeriesLineLabel setWidth(Number width) {
 		this.width = width;
 		return this;
 	}
 
-	public SeriesLineLabel setWidth(Number width) {
+	public SeriesLineLabel setWidth(String width) {
 		this.width = width;
 		return this;
 	}
@@ -151,12 +151,12 @@ public class SeriesLineLabel implements SeriesLineLabelOption {
 	@Setter(AccessLevel.NONE)
 	private Object distance;
 
-	public SeriesLineLabel setDistance(Number[] distance) {
+	public SeriesLineLabel setDistance(Number distance) {
 		this.distance = distance;
 		return this;
 	}
 
-	public SeriesLineLabel setDistance(Number distance) {
+	public SeriesLineLabel setDistance(Number[] distance) {
 		this.distance = distance;
 		return this;
 	}
@@ -174,12 +174,12 @@ public class SeriesLineLabel implements SeriesLineLabelOption {
 	@Setter(AccessLevel.NONE)
 	private Object precision;
 
-	public SeriesLineLabel setPrecision(String precision) {
+	public SeriesLineLabel setPrecision(Number precision) {
 		this.precision = precision;
 		return this;
 	}
 
-	public SeriesLineLabel setPrecision(Number precision) {
+	public SeriesLineLabel setPrecision(String precision) {
 		this.precision = precision;
 		return this;
 	}
