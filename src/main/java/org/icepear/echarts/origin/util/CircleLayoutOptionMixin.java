@@ -5,15 +5,15 @@ package org.icepear.echarts.origin.util;
  */
 public interface CircleLayoutOptionMixin {
 
-	CircleLayoutOptionMixin setCenter(String[] center);
-
 	CircleLayoutOptionMixin setCenter(Number[] center);
 
+	CircleLayoutOptionMixin setCenter(String[] center);
+
 	CircleLayoutOptionMixin setRadius(Number radius);
+
+	CircleLayoutOptionMixin setRadius(Number[] radius);
 
 	CircleLayoutOptionMixin setRadius(String radius);
 
 	CircleLayoutOptionMixin setRadius(String[] radius);
-
-	CircleLayoutOptionMixin setRadius(Number[] radius);
 }

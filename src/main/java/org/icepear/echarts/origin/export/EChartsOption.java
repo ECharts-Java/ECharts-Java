@@ -19,9 +19,9 @@ import org.icepear.echarts.origin.util.SeriesOption;
  */
 public interface EChartsOption extends ECBasicOption {
 
-	EChartsOption setDataset(Object[] dataset);
-
 	EChartsOption setDataset(Object dataset);
+
+	EChartsOption setDataset(Object[] dataset);
 
 	EChartsOption setAria(Object aria);
 
@@ -33,65 +33,65 @@ public interface EChartsOption extends ECBasicOption {
 
 	EChartsOption setGrid(GridOption[] grid);
 
-	EChartsOption setRadar(RadarOption[] radar);
-
 	EChartsOption setRadar(RadarOption radar);
+
+	EChartsOption setRadar(RadarOption[] radar);
 
 	EChartsOption setPolar(PolarOption polar);
 
 	EChartsOption setPolar(PolarOption[] polar);
 
-	EChartsOption setGeo(Object[] geo);
-
 	EChartsOption setGeo(Object geo);
 
-	EChartsOption setAngleAxis(AngleAxisOption[] angleAxis);
+	EChartsOption setGeo(Object[] geo);
 
 	EChartsOption setAngleAxis(AngleAxisOption angleAxis);
 
-	EChartsOption setRadiusAxis(RadiusAxisOption[] radiusAxis);
+	EChartsOption setAngleAxis(AngleAxisOption[] angleAxis);
 
 	EChartsOption setRadiusAxis(RadiusAxisOption radiusAxis);
 
-	EChartsOption setXAxis(AxisOption[] xAxis);
+	EChartsOption setRadiusAxis(RadiusAxisOption[] radiusAxis);
 
 	EChartsOption setXAxis(AxisOption xAxis);
 
-	EChartsOption setYAxis(Object[] yAxis);
+	EChartsOption setXAxis(AxisOption[] xAxis);
 
 	EChartsOption setYAxis(Object yAxis);
 
-	EChartsOption setSingleAxis(Object[] singleAxis);
+	EChartsOption setYAxis(Object[] yAxis);
 
 	EChartsOption setSingleAxis(Object singleAxis);
 
-	EChartsOption setParallel(Object[] parallel);
+	EChartsOption setSingleAxis(Object[] singleAxis);
 
 	EChartsOption setParallel(Object parallel);
 
-	EChartsOption setParallelAxis(Object[] parallelAxis);
+	EChartsOption setParallel(Object[] parallel);
 
 	EChartsOption setParallelAxis(Object parallelAxis);
 
-	EChartsOption setCalendar(Object[] calendar);
+	EChartsOption setParallelAxis(Object[] parallelAxis);
 
 	EChartsOption setCalendar(Object calendar);
+
+	EChartsOption setCalendar(Object[] calendar);
 
 	EChartsOption setToolbox(ToolboxOption toolbox);
 
 	EChartsOption setToolbox(ToolboxOption[] toolbox);
 
-	EChartsOption setTooltip(TooltipOption[] tooltip);
-
 	EChartsOption setTooltip(TooltipOption tooltip);
 
-	EChartsOption setAxisPointer(AxisPointerOption[] axisPointer);
+	EChartsOption setTooltip(TooltipOption[] tooltip);
 
 	EChartsOption setAxisPointer(AxisPointerOption axisPointer);
 
-	EChartsOption setBrush(Object[] brush);
+	EChartsOption setAxisPointer(AxisPointerOption[] axisPointer);
 
 	EChartsOption setBrush(Object brush);
+
+	EChartsOption setBrush(Object[] brush);
 
 	EChartsOption setTimeline(Object timeline);
 
@@ -99,21 +99,21 @@ public interface EChartsOption extends ECBasicOption {
 
 	EChartsOption setLegend(LegendOption[] legend);
 
-	EChartsOption setDataZoom(Object[] dataZoom);
-
 	EChartsOption setDataZoom(Object dataZoom);
 
-	EChartsOption setVisualMap(Object[] visualMap);
+	EChartsOption setDataZoom(Object[] dataZoom);
 
 	EChartsOption setVisualMap(Object visualMap);
 
-	EChartsOption setGraphic(Object[] graphic);
+	EChartsOption setVisualMap(Object[] visualMap);
 
 	EChartsOption setGraphic(Object graphic);
 
-	EChartsOption setSeries(SeriesOption[] series);
+	EChartsOption setGraphic(Object[] graphic);
 
 	EChartsOption setSeries(SeriesOption series);
+
+	EChartsOption setSeries(SeriesOption[] series);
 
 	EChartsOption setOptions(EChartsOption[] options);
 

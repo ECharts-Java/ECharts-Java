@@ -88,12 +88,12 @@ public class Option implements EChartsOption {
 	@Setter(AccessLevel.NONE)
 	private Object color;
 
-	public Option setColor(String[] color) {
+	public Option setColor(String color) {
 		this.color = color;
 		return this;
 	}
 
-	public Option setColor(String color) {
+	public Option setColor(String[] color) {
 		this.color = color;
 		return this;
 	}
@@ -103,12 +103,12 @@ public class Option implements EChartsOption {
 	@Setter(AccessLevel.NONE)
 	private Object baseOption;
 
-	public Option setBaseOption(EChartsOption baseOption) {
+	public Option setBaseOption(ECUnitOption baseOption) {
 		this.baseOption = baseOption;
 		return this;
 	}
 
-	public Option setBaseOption(ECUnitOption baseOption) {
+	public Option setBaseOption(EChartsOption baseOption) {
 		this.baseOption = baseOption;
 		return this;
 	}
@@ -126,12 +126,12 @@ public class Option implements EChartsOption {
 		return this;
 	}
 
-	public Option setOptions(Object options) {
+	public Option setOptions(EChartsOption[] options) {
 		this.options = options;
 		return this;
 	}
 
-	public Option setOptions(EChartsOption[] options) {
+	public Option setOptions(Object options) {
 		this.options = options;
 		return this;
 	}
@@ -139,12 +139,12 @@ public class Option implements EChartsOption {
 	@Setter(AccessLevel.NONE)
 	private Object media;
 
-	public Option setMedia(Object[] media) {
+	public Option setMedia(Object media) {
 		this.media = media;
 		return this;
 	}
 
-	public Option setMedia(Object media) {
+	public Option setMedia(Object[] media) {
 		this.media = media;
 		return this;
 	}
@@ -191,12 +191,12 @@ public class Option implements EChartsOption {
 	@Setter(AccessLevel.NONE)
 	private Object dataset;
 
-	public Option setDataset(Object[] dataset) {
+	public Option setDataset(Object dataset) {
 		this.dataset = dataset;
 		return this;
 	}
 
-	public Option setDataset(Object dataset) {
+	public Option setDataset(Object[] dataset) {
 		this.dataset = dataset;
 		return this;
 	}
@@ -232,12 +232,12 @@ public class Option implements EChartsOption {
 	@Setter(AccessLevel.NONE)
 	private Object radar;
 
-	public Option setRadar(RadarOption[] radar) {
+	public Option setRadar(RadarOption radar) {
 		this.radar = radar;
 		return this;
 	}
 
-	public Option setRadar(RadarOption radar) {
+	public Option setRadar(RadarOption[] radar) {
 		this.radar = radar;
 		return this;
 	}
@@ -258,12 +258,12 @@ public class Option implements EChartsOption {
 	@Setter(AccessLevel.NONE)
 	private Object geo;
 
-	public Option setGeo(Object[] geo) {
+	public Option setGeo(Object geo) {
 		this.geo = geo;
 		return this;
 	}
 
-	public Option setGeo(Object geo) {
+	public Option setGeo(Object[] geo) {
 		this.geo = geo;
 		return this;
 	}
@@ -271,12 +271,12 @@ public class Option implements EChartsOption {
 	@Setter(AccessLevel.NONE)
 	private Object angleAxis;
 
-	public Option setAngleAxis(AngleAxisOption[] angleAxis) {
+	public Option setAngleAxis(AngleAxisOption angleAxis) {
 		this.angleAxis = angleAxis;
 		return this;
 	}
 
-	public Option setAngleAxis(AngleAxisOption angleAxis) {
+	public Option setAngleAxis(AngleAxisOption[] angleAxis) {
 		this.angleAxis = angleAxis;
 		return this;
 	}
@@ -284,12 +284,12 @@ public class Option implements EChartsOption {
 	@Setter(AccessLevel.NONE)
 	private Object radiusAxis;
 
-	public Option setRadiusAxis(RadiusAxisOption[] radiusAxis) {
+	public Option setRadiusAxis(RadiusAxisOption radiusAxis) {
 		this.radiusAxis = radiusAxis;
 		return this;
 	}
 
-	public Option setRadiusAxis(RadiusAxisOption radiusAxis) {
+	public Option setRadiusAxis(RadiusAxisOption[] radiusAxis) {
 		this.radiusAxis = radiusAxis;
 		return this;
 	}
@@ -297,12 +297,12 @@ public class Option implements EChartsOption {
 	@Setter(AccessLevel.NONE)
 	private Object xAxis;
 
-	public Option setXAxis(AxisOption[] xAxis) {
+	public Option setXAxis(AxisOption xAxis) {
 		this.xAxis = xAxis;
 		return this;
 	}
 
-	public Option setXAxis(AxisOption xAxis) {
+	public Option setXAxis(AxisOption[] xAxis) {
 		this.xAxis = xAxis;
 		return this;
 	}
@@ -310,12 +310,12 @@ public class Option implements EChartsOption {
 	@Setter(AccessLevel.NONE)
 	private Object yAxis;
 
-	public Option setYAxis(Object[] yAxis) {
+	public Option setYAxis(Object yAxis) {
 		this.yAxis = yAxis;
 		return this;
 	}
 
-	public Option setYAxis(Object yAxis) {
+	public Option setYAxis(Object[] yAxis) {
 		this.yAxis = yAxis;
 		return this;
 	}
@@ -323,12 +323,12 @@ public class Option implements EChartsOption {
 	@Setter(AccessLevel.NONE)
 	private Object singleAxis;
 
-	public Option setSingleAxis(Object[] singleAxis) {
+	public Option setSingleAxis(Object singleAxis) {
 		this.singleAxis = singleAxis;
 		return this;
 	}
 
-	public Option setSingleAxis(Object singleAxis) {
+	public Option setSingleAxis(Object[] singleAxis) {
 		this.singleAxis = singleAxis;
 		return this;
 	}
@@ -336,12 +336,12 @@ public class Option implements EChartsOption {
 	@Setter(AccessLevel.NONE)
 	private Object parallel;
 
-	public Option setParallel(Object[] parallel) {
+	public Option setParallel(Object parallel) {
 		this.parallel = parallel;
 		return this;
 	}
 
-	public Option setParallel(Object parallel) {
+	public Option setParallel(Object[] parallel) {
 		this.parallel = parallel;
 		return this;
 	}
@@ -349,12 +349,12 @@ public class Option implements EChartsOption {
 	@Setter(AccessLevel.NONE)
 	private Object parallelAxis;
 
-	public Option setParallelAxis(Object[] parallelAxis) {
+	public Option setParallelAxis(Object parallelAxis) {
 		this.parallelAxis = parallelAxis;
 		return this;
 	}
 
-	public Option setParallelAxis(Object parallelAxis) {
+	public Option setParallelAxis(Object[] parallelAxis) {
 		this.parallelAxis = parallelAxis;
 		return this;
 	}
@@ -362,12 +362,12 @@ public class Option implements EChartsOption {
 	@Setter(AccessLevel.NONE)
 	private Object calendar;
 
-	public Option setCalendar(Object[] calendar) {
+	public Option setCalendar(Object calendar) {
 		this.calendar = calendar;
 		return this;
 	}
 
-	public Option setCalendar(Object calendar) {
+	public Option setCalendar(Object[] calendar) {
 		this.calendar = calendar;
 		return this;
 	}
@@ -388,12 +388,12 @@ public class Option implements EChartsOption {
 	@Setter(AccessLevel.NONE)
 	private Object tooltip;
 
-	public Option setTooltip(TooltipOption[] tooltip) {
+	public Option setTooltip(TooltipOption tooltip) {
 		this.tooltip = tooltip;
 		return this;
 	}
 
-	public Option setTooltip(TooltipOption tooltip) {
+	public Option setTooltip(TooltipOption[] tooltip) {
 		this.tooltip = tooltip;
 		return this;
 	}
@@ -401,12 +401,12 @@ public class Option implements EChartsOption {
 	@Setter(AccessLevel.NONE)
 	private Object axisPointer;
 
-	public Option setAxisPointer(AxisPointerOption[] axisPointer) {
+	public Option setAxisPointer(AxisPointerOption axisPointer) {
 		this.axisPointer = axisPointer;
 		return this;
 	}
 
-	public Option setAxisPointer(AxisPointerOption axisPointer) {
+	public Option setAxisPointer(AxisPointerOption[] axisPointer) {
 		this.axisPointer = axisPointer;
 		return this;
 	}
@@ -414,12 +414,12 @@ public class Option implements EChartsOption {
 	@Setter(AccessLevel.NONE)
 	private Object brush;
 
-	public Option setBrush(Object[] brush) {
+	public Option setBrush(Object brush) {
 		this.brush = brush;
 		return this;
 	}
 
-	public Option setBrush(Object brush) {
+	public Option setBrush(Object[] brush) {
 		this.brush = brush;
 		return this;
 	}
@@ -440,12 +440,12 @@ public class Option implements EChartsOption {
 	@Setter(AccessLevel.NONE)
 	private Object dataZoom;
 
-	public Option setDataZoom(Object[] dataZoom) {
+	public Option setDataZoom(Object dataZoom) {
 		this.dataZoom = dataZoom;
 		return this;
 	}
 
-	public Option setDataZoom(Object dataZoom) {
+	public Option setDataZoom(Object[] dataZoom) {
 		this.dataZoom = dataZoom;
 		return this;
 	}
@@ -453,12 +453,12 @@ public class Option implements EChartsOption {
 	@Setter(AccessLevel.NONE)
 	private Object visualMap;
 
-	public Option setVisualMap(Object[] visualMap) {
+	public Option setVisualMap(Object visualMap) {
 		this.visualMap = visualMap;
 		return this;
 	}
 
-	public Option setVisualMap(Object visualMap) {
+	public Option setVisualMap(Object[] visualMap) {
 		this.visualMap = visualMap;
 		return this;
 	}
@@ -466,12 +466,12 @@ public class Option implements EChartsOption {
 	@Setter(AccessLevel.NONE)
 	private Object graphic;
 
-	public Option setGraphic(Object[] graphic) {
+	public Option setGraphic(Object graphic) {
 		this.graphic = graphic;
 		return this;
 	}
 
-	public Option setGraphic(Object graphic) {
+	public Option setGraphic(Object[] graphic) {
 		this.graphic = graphic;
 		return this;
 	}
@@ -479,12 +479,12 @@ public class Option implements EChartsOption {
 	@Setter(AccessLevel.NONE)
 	private Object series;
 
-	public Option setSeries(SeriesOption[] series) {
+	public Option setSeries(SeriesOption series) {
 		this.series = series;
 		return this;
 	}
 
-	public Option setSeries(SeriesOption series) {
+	public Option setSeries(SeriesOption[] series) {
 		this.series = series;
 		return this;
 	}

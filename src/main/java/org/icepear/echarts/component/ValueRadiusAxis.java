@@ -193,12 +193,12 @@ public class ValueRadiusAxis implements ValueRadiusAxisOption {
 	@Setter(AccessLevel.NONE)
 	private Object boundaryGap;
 
-	public ValueRadiusAxis setBoundaryGap(String[] boundaryGap) {
+	public ValueRadiusAxis setBoundaryGap(Number[] boundaryGap) {
 		this.boundaryGap = boundaryGap;
 		return this;
 	}
 
-	public ValueRadiusAxis setBoundaryGap(Number[] boundaryGap) {
+	public ValueRadiusAxis setBoundaryGap(String[] boundaryGap) {
 		this.boundaryGap = boundaryGap;
 		return this;
 	}

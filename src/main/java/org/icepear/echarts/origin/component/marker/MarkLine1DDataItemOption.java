@@ -19,9 +19,9 @@ public interface MarkLine1DDataItemOption extends MarkLineDataItemOptionBase, Ma
 
 	MarkLine1DDataItemOption setValueDim(String valueDim);
 
-	MarkLine1DDataItemOption setSymbol(String[] symbol);
-
 	MarkLine1DDataItemOption setSymbol(String symbol);
+
+	MarkLine1DDataItemOption setSymbol(String[] symbol);
 
 	MarkLine1DDataItemOption setSymbolSize(Number symbolSize);
 
@@ -31,11 +31,11 @@ public interface MarkLine1DDataItemOption extends MarkLineDataItemOptionBase, Ma
 
 	MarkLine1DDataItemOption setSymbolRotate(Number[] symbolRotate);
 
-	MarkLine1DDataItemOption setSymbolOffset(String[] symbolOffset);
-
-	MarkLine1DDataItemOption setSymbolOffset(String symbolOffset);
-
 	MarkLine1DDataItemOption setSymbolOffset(Number symbolOffset);
 
 	MarkLine1DDataItemOption setSymbolOffset(Number[] symbolOffset);
+
+	MarkLine1DDataItemOption setSymbolOffset(String symbolOffset);
+
+	MarkLine1DDataItemOption setSymbolOffset(String[] symbolOffset);
 }

@@ -19,12 +19,12 @@ public class ToolboxDataZoomFeature implements ToolboxDataZoomFeatureOption {
 	@Setter(AccessLevel.NONE)
 	private Object title;
 
-	public ToolboxDataZoomFeature setTitle(String title) {
+	public ToolboxDataZoomFeature setTitle(Map<String, String> title) {
 		this.title = title;
 		return this;
 	}
 
-	public ToolboxDataZoomFeature setTitle(Map<String, String> title) {
+	public ToolboxDataZoomFeature setTitle(String title) {
 		this.title = title;
 		return this;
 	}
@@ -32,12 +32,12 @@ public class ToolboxDataZoomFeature implements ToolboxDataZoomFeatureOption {
 	@Setter(AccessLevel.NONE)
 	private Object icon;
 
-	public ToolboxDataZoomFeature setIcon(String icon) {
+	public ToolboxDataZoomFeature setIcon(Map<String, String> icon) {
 		this.icon = icon;
 		return this;
 	}
 
-	public ToolboxDataZoomFeature setIcon(Map<String, String> icon) {
+	public ToolboxDataZoomFeature setIcon(String icon) {
 		this.icon = icon;
 		return this;
 	}

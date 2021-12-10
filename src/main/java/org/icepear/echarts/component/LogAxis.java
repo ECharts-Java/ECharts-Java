@@ -199,12 +199,12 @@ public class LogAxis implements LogAxisOption {
 	@Setter(AccessLevel.NONE)
 	private Object boundaryGap;
 
-	public LogAxis setBoundaryGap(String[] boundaryGap) {
+	public LogAxis setBoundaryGap(Number[] boundaryGap) {
 		this.boundaryGap = boundaryGap;
 		return this;
 	}
 
-	public LogAxis setBoundaryGap(Number[] boundaryGap) {
+	public LogAxis setBoundaryGap(String[] boundaryGap) {
 		this.boundaryGap = boundaryGap;
 		return this;
 	}

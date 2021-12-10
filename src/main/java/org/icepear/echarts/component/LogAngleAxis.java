@@ -197,12 +197,12 @@ public class LogAngleAxis implements LogAngleAxisOption {
 	@Setter(AccessLevel.NONE)
 	private Object boundaryGap;
 
-	public LogAngleAxis setBoundaryGap(String[] boundaryGap) {
+	public LogAngleAxis setBoundaryGap(Number[] boundaryGap) {
 		this.boundaryGap = boundaryGap;
 		return this;
 	}
 
-	public LogAngleAxis setBoundaryGap(Number[] boundaryGap) {
+	public LogAngleAxis setBoundaryGap(String[] boundaryGap) {
 		this.boundaryGap = boundaryGap;
 		return this;
 	}

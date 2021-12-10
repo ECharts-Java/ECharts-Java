@@ -56,12 +56,12 @@ public class AxisPointerLabel implements AxisPointerLabelOption {
 	@Setter(AccessLevel.NONE)
 	private Object backgroundColor;
 
-	public AxisPointerLabel setBackgroundColor(String backgroundColor) {
+	public AxisPointerLabel setBackgroundColor(Object backgroundColor) {
 		this.backgroundColor = backgroundColor;
 		return this;
 	}
 
-	public AxisPointerLabel setBackgroundColor(Object backgroundColor) {
+	public AxisPointerLabel setBackgroundColor(String backgroundColor) {
 		this.backgroundColor = backgroundColor;
 		return this;
 	}

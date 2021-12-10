@@ -17,9 +17,9 @@ public interface SymbolOptionMixin {
 
 	SymbolOptionMixin setSymbolOffset(Number symbolOffset);
 
+	SymbolOptionMixin setSymbolOffset(Number[] symbolOffset);
+
 	SymbolOptionMixin setSymbolOffset(String symbolOffset);
 
 	SymbolOptionMixin setSymbolOffset(String[] symbolOffset);
-
-	SymbolOptionMixin setSymbolOffset(Number[] symbolOffset);
 }

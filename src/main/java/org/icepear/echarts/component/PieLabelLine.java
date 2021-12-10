@@ -23,12 +23,12 @@ public class PieLabelLine implements PieLabelLineOption {
 	@Setter(AccessLevel.NONE)
 	private Object smooth;
 
-	public PieLabelLine setSmooth(Number smooth) {
+	public PieLabelLine setSmooth(Boolean smooth) {
 		this.smooth = smooth;
 		return this;
 	}
 
-	public PieLabelLine setSmooth(Boolean smooth) {
+	public PieLabelLine setSmooth(Number smooth) {
 		this.smooth = smooth;
 		return this;
 	}

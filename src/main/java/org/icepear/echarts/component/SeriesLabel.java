@@ -56,12 +56,12 @@ public class SeriesLabel implements SeriesLabelOption {
 	@Setter(AccessLevel.NONE)
 	private Object backgroundColor;
 
-	public SeriesLabel setBackgroundColor(String backgroundColor) {
+	public SeriesLabel setBackgroundColor(Object backgroundColor) {
 		this.backgroundColor = backgroundColor;
 		return this;
 	}
 
-	public SeriesLabel setBackgroundColor(Object backgroundColor) {
+	public SeriesLabel setBackgroundColor(String backgroundColor) {
 		this.backgroundColor = backgroundColor;
 		return this;
 	}

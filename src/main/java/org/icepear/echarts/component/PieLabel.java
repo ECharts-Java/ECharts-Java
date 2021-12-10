@@ -56,12 +56,12 @@ public class PieLabel implements PieLabelOption {
 	@Setter(AccessLevel.NONE)
 	private Object backgroundColor;
 
-	public PieLabel setBackgroundColor(String backgroundColor) {
+	public PieLabel setBackgroundColor(Object backgroundColor) {
 		this.backgroundColor = backgroundColor;
 		return this;
 	}
 
-	public PieLabel setBackgroundColor(Object backgroundColor) {
+	public PieLabel setBackgroundColor(String backgroundColor) {
 		this.backgroundColor = backgroundColor;
 		return this;
 	}
@@ -138,12 +138,12 @@ public class PieLabel implements PieLabelOption {
 	@Setter(AccessLevel.NONE)
 	private Object position;
 
-	public PieLabel setPosition(String position) {
+	public PieLabel setPosition(Object position) {
 		this.position = position;
 		return this;
 	}
 
-	public PieLabel setPosition(Object position) {
+	public PieLabel setPosition(String position) {
 		this.position = position;
 		return this;
 	}
@@ -153,12 +153,12 @@ public class PieLabel implements PieLabelOption {
 	@Setter(AccessLevel.NONE)
 	private Object rotate;
 
-	public PieLabel setRotate(Number rotate) {
+	public PieLabel setRotate(Boolean rotate) {
 		this.rotate = rotate;
 		return this;
 	}
 
-	public PieLabel setRotate(Boolean rotate) {
+	public PieLabel setRotate(Number rotate) {
 		this.rotate = rotate;
 		return this;
 	}

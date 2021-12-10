@@ -56,12 +56,12 @@ public class TimeAxisLabel implements TimeAxisLabelOption {
 	@Setter(AccessLevel.NONE)
 	private Object backgroundColor;
 
-	public TimeAxisLabel setBackgroundColor(String backgroundColor) {
+	public TimeAxisLabel setBackgroundColor(Object backgroundColor) {
 		this.backgroundColor = backgroundColor;
 		return this;
 	}
 
-	public TimeAxisLabel setBackgroundColor(Object backgroundColor) {
+	public TimeAxisLabel setBackgroundColor(String backgroundColor) {
 		this.backgroundColor = backgroundColor;
 		return this;
 	}
@@ -152,12 +152,12 @@ public class TimeAxisLabel implements TimeAxisLabelOption {
 	@Setter(AccessLevel.NONE)
 	private Object formatter;
 
-	public TimeAxisLabel setFormatter(String formatter) {
+	public TimeAxisLabel setFormatter(Object formatter) {
 		this.formatter = formatter;
 		return this;
 	}
 
-	public TimeAxisLabel setFormatter(Object formatter) {
+	public TimeAxisLabel setFormatter(String formatter) {
 		this.formatter = formatter;
 		return this;
 	}

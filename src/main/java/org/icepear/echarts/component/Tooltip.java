@@ -20,12 +20,12 @@ public class Tooltip implements TooltipOption {
 	@Setter(AccessLevel.NONE)
 	private Object formatter;
 
-	public Tooltip setFormatter(String formatter) {
+	public Tooltip setFormatter(Object formatter) {
 		this.formatter = formatter;
 		return this;
 	}
 
-	public Tooltip setFormatter(Object formatter) {
+	public Tooltip setFormatter(String formatter) {
 		this.formatter = formatter;
 		return this;
 	}
@@ -33,17 +33,17 @@ public class Tooltip implements TooltipOption {
 	@Setter(AccessLevel.NONE)
 	private Object position;
 
-	public Tooltip setPosition(String[] position) {
-		this.position = position;
-		return this;
-	}
-
 	public Tooltip setPosition(Number[] position) {
 		this.position = position;
 		return this;
 	}
 
 	public Tooltip setPosition(Object position) {
+		this.position = position;
+		return this;
+	}
+
+	public Tooltip setPosition(String[] position) {
 		this.position = position;
 		return this;
 	}

@@ -193,12 +193,12 @@ public class LogRadiusAxis implements LogRadiusAxisOption {
 	@Setter(AccessLevel.NONE)
 	private Object boundaryGap;
 
-	public LogRadiusAxis setBoundaryGap(String[] boundaryGap) {
+	public LogRadiusAxis setBoundaryGap(Number[] boundaryGap) {
 		this.boundaryGap = boundaryGap;
 		return this;
 	}
 
-	public LogRadiusAxis setBoundaryGap(Number[] boundaryGap) {
+	public LogRadiusAxis setBoundaryGap(String[] boundaryGap) {
 		this.boundaryGap = boundaryGap;
 		return this;
 	}

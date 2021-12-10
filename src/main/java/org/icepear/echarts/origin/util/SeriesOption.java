@@ -28,9 +28,9 @@ public interface SeriesOption extends ComponentOption, AnimationOptionMixin, Col
 
 	SeriesOption setLegendHoverLink(Boolean legendHoverLink);
 
-	SeriesOption setProgressive(Number progressive);
-
 	SeriesOption setProgressive(Boolean progressive);
+
+	SeriesOption setProgressive(Number progressive);
 
 	SeriesOption setProgressiveThreshold(Number progressiveThreshold);
 

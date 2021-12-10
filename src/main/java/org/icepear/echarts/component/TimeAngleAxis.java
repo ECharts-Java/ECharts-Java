@@ -197,12 +197,12 @@ public class TimeAngleAxis implements TimeAngleAxisOption {
 	@Setter(AccessLevel.NONE)
 	private Object boundaryGap;
 
-	public TimeAngleAxis setBoundaryGap(String[] boundaryGap) {
+	public TimeAngleAxis setBoundaryGap(Number[] boundaryGap) {
 		this.boundaryGap = boundaryGap;
 		return this;
 	}
 
-	public TimeAngleAxis setBoundaryGap(Number[] boundaryGap) {
+	public TimeAngleAxis setBoundaryGap(String[] boundaryGap) {
 		this.boundaryGap = boundaryGap;
 		return this;
 	}

@@ -40,12 +40,12 @@ public class BarBackgroundStyle implements BarBackgroundStyleOption {
 	@Setter(AccessLevel.NONE)
 	private Object decal;
 
-	public BarBackgroundStyle setDecal(String decal) {
+	public BarBackgroundStyle setDecal(Object decal) {
 		this.decal = decal;
 		return this;
 	}
 
-	public BarBackgroundStyle setDecal(Object decal) {
+	public BarBackgroundStyle setDecal(String decal) {
 		this.decal = decal;
 		return this;
 	}

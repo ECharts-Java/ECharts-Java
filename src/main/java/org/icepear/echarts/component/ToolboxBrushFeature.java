@@ -18,12 +18,12 @@ public class ToolboxBrushFeature implements ToolboxBrushFeatureOption {
 	@Setter(AccessLevel.NONE)
 	private Object title;
 
-	public ToolboxBrushFeature setTitle(String title) {
+	public ToolboxBrushFeature setTitle(Map<String, String> title) {
 		this.title = title;
 		return this;
 	}
 
-	public ToolboxBrushFeature setTitle(Map<String, String> title) {
+	public ToolboxBrushFeature setTitle(String title) {
 		this.title = title;
 		return this;
 	}
@@ -31,12 +31,12 @@ public class ToolboxBrushFeature implements ToolboxBrushFeatureOption {
 	@Setter(AccessLevel.NONE)
 	private Object icon;
 
-	public ToolboxBrushFeature setIcon(String icon) {
+	public ToolboxBrushFeature setIcon(Map<String, String> icon) {
 		this.icon = icon;
 		return this;
 	}
 
-	public ToolboxBrushFeature setIcon(Map<String, String> icon) {
+	public ToolboxBrushFeature setIcon(String icon) {
 		this.icon = icon;
 		return this;
 	}

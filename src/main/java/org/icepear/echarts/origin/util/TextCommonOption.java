@@ -27,9 +27,9 @@ public interface TextCommonOption extends ShadowOptionMixin {
 
 	TextCommonOption setLineHeight(Number lineHeight);
 
-	TextCommonOption setBackgroundColor(String backgroundColor);
-
 	TextCommonOption setBackgroundColor(Object backgroundColor);
+
+	TextCommonOption setBackgroundColor(String backgroundColor);
 
 	TextCommonOption setBorderColor(String borderColor);
 

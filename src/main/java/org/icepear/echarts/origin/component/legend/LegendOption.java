@@ -56,9 +56,9 @@ public interface LegendOption extends ComponentOption, LegendStyleOption, BoxLay
 
 	LegendOption setSelectorButtonGap(Number selectorButtonGap);
 
-	LegendOption setData(String[] data);
-
 	LegendOption setData(Object[] data);
+
+	LegendOption setData(String[] data);
 
 	LegendOption setTooltip(Object tooltip);
 }

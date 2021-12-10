@@ -56,12 +56,12 @@ public class CategoryAxisLabel implements CategoryAxisLabelOption {
 	@Setter(AccessLevel.NONE)
 	private Object backgroundColor;
 
-	public CategoryAxisLabel setBackgroundColor(String backgroundColor) {
+	public CategoryAxisLabel setBackgroundColor(Object backgroundColor) {
 		this.backgroundColor = backgroundColor;
 		return this;
 	}
 
-	public CategoryAxisLabel setBackgroundColor(Object backgroundColor) {
+	public CategoryAxisLabel setBackgroundColor(String backgroundColor) {
 		this.backgroundColor = backgroundColor;
 		return this;
 	}
@@ -152,12 +152,12 @@ public class CategoryAxisLabel implements CategoryAxisLabelOption {
 	@Setter(AccessLevel.NONE)
 	private Object formatter;
 
-	public CategoryAxisLabel setFormatter(String formatter) {
+	public CategoryAxisLabel setFormatter(Object formatter) {
 		this.formatter = formatter;
 		return this;
 	}
 
-	public CategoryAxisLabel setFormatter(Object formatter) {
+	public CategoryAxisLabel setFormatter(String formatter) {
 		this.formatter = formatter;
 		return this;
 	}

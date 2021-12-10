@@ -40,12 +40,12 @@ public class ItemStyle implements ItemStyleOption {
 	@Setter(AccessLevel.NONE)
 	private Object decal;
 
-	public ItemStyle setDecal(String decal) {
+	public ItemStyle setDecal(Object decal) {
 		this.decal = decal;
 		return this;
 	}
 
-	public ItemStyle setDecal(Object decal) {
+	public ItemStyle setDecal(String decal) {
 		this.decal = decal;
 		return this;
 	}

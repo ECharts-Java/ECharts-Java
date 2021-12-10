@@ -63,12 +63,12 @@ public class MarkLine1DDataItem implements MarkLine1DDataItemOption {
 	@Setter(AccessLevel.NONE)
 	private Object symbol;
 
-	public MarkLine1DDataItem setSymbol(String[] symbol) {
+	public MarkLine1DDataItem setSymbol(String symbol) {
 		this.symbol = symbol;
 		return this;
 	}
 
-	public MarkLine1DDataItem setSymbol(String symbol) {
+	public MarkLine1DDataItem setSymbol(String[] symbol) {
 		this.symbol = symbol;
 		return this;
 	}
@@ -102,7 +102,12 @@ public class MarkLine1DDataItem implements MarkLine1DDataItemOption {
 	@Setter(AccessLevel.NONE)
 	private Object symbolOffset;
 
-	public MarkLine1DDataItem setSymbolOffset(String[] symbolOffset) {
+	public MarkLine1DDataItem setSymbolOffset(Number symbolOffset) {
+		this.symbolOffset = symbolOffset;
+		return this;
+	}
+
+	public MarkLine1DDataItem setSymbolOffset(Number[] symbolOffset) {
 		this.symbolOffset = symbolOffset;
 		return this;
 	}
@@ -112,12 +117,7 @@ public class MarkLine1DDataItem implements MarkLine1DDataItemOption {
 		return this;
 	}
 
-	public MarkLine1DDataItem setSymbolOffset(Number symbolOffset) {
-		this.symbolOffset = symbolOffset;
-		return this;
-	}
-
-	public MarkLine1DDataItem setSymbolOffset(Number[] symbolOffset) {
+	public MarkLine1DDataItem setSymbolOffset(String[] symbolOffset) {
 		this.symbolOffset = symbolOffset;
 		return this;
 	}
