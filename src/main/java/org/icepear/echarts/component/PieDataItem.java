@@ -62,17 +62,17 @@ public class PieDataItem implements PieDataItemOption {
 		return this;
 	}
 
+	public PieDataItem setValue(Number[] value) {
+		this.value = value;
+		return this;
+	}
+
 	public PieDataItem setValue(String value) {
 		this.value = value;
 		return this;
 	}
 
 	public PieDataItem setValue(String[] value) {
-		this.value = value;
-		return this;
-	}
-
-	public PieDataItem setValue(Number[] value) {
 		this.value = value;
 		return this;
 	}

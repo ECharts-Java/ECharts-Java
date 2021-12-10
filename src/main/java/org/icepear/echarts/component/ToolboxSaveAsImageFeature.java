@@ -18,12 +18,12 @@ public class ToolboxSaveAsImageFeature implements ToolboxSaveAsImageFeatureOptio
 	@Setter(AccessLevel.NONE)
 	private Object title;
 
-	public ToolboxSaveAsImageFeature setTitle(String title) {
+	public ToolboxSaveAsImageFeature setTitle(Map<String, String> title) {
 		this.title = title;
 		return this;
 	}
 
-	public ToolboxSaveAsImageFeature setTitle(Map<String, String> title) {
+	public ToolboxSaveAsImageFeature setTitle(String title) {
 		this.title = title;
 		return this;
 	}
@@ -31,12 +31,12 @@ public class ToolboxSaveAsImageFeature implements ToolboxSaveAsImageFeatureOptio
 	@Setter(AccessLevel.NONE)
 	private Object icon;
 
-	public ToolboxSaveAsImageFeature setIcon(String icon) {
+	public ToolboxSaveAsImageFeature setIcon(Map<String, String> icon) {
 		this.icon = icon;
 		return this;
 	}
 
-	public ToolboxSaveAsImageFeature setIcon(Map<String, String> icon) {
+	public ToolboxSaveAsImageFeature setIcon(String icon) {
 		this.icon = icon;
 		return this;
 	}

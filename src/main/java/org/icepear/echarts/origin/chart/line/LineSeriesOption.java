@@ -33,9 +33,9 @@ public interface LineSeriesOption extends SeriesOption, LineStateOption, SeriesO
 
 	LineSeriesOption setStep(String step);
 
-	LineSeriesOption setSmooth(Number smooth);
-
 	LineSeriesOption setSmooth(Boolean smooth);
+
+	LineSeriesOption setSmooth(Number smooth);
 
 	LineSeriesOption setSmoothMonotone(String smoothMonotone);
 

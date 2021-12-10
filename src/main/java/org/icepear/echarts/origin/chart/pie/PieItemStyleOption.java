@@ -9,9 +9,9 @@ public interface PieItemStyleOption extends ItemStyleOption {
 
 	PieItemStyleOption setBorderRadius(Number borderRadius);
 
+	PieItemStyleOption setBorderRadius(Number[] borderRadius);
+
 	PieItemStyleOption setBorderRadius(String borderRadius);
 
 	PieItemStyleOption setBorderRadius(String[] borderRadius);
-
-	PieItemStyleOption setBorderRadius(Number[] borderRadius);
 }

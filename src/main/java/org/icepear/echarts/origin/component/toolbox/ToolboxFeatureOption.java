@@ -9,13 +9,13 @@ public interface ToolboxFeatureOption {
 
 	ToolboxFeatureOption setShow(Boolean show);
 
-	ToolboxFeatureOption setTitle(String title);
-
 	ToolboxFeatureOption setTitle(Map<String, String> title);
 
-	ToolboxFeatureOption setIcon(String icon);
+	ToolboxFeatureOption setTitle(String title);
 
 	ToolboxFeatureOption setIcon(Map<String, String> icon);
+
+	ToolboxFeatureOption setIcon(String icon);
 
 	ToolboxFeatureOption setIconStyle(Object iconStyle);
 

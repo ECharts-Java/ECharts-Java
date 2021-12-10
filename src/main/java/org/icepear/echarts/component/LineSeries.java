@@ -114,12 +114,12 @@ public class LineSeries implements LineSeriesOption {
 	@Setter(AccessLevel.NONE)
 	private Object color;
 
-	public LineSeries setColor(String[] color) {
+	public LineSeries setColor(String color) {
 		this.color = color;
 		return this;
 	}
 
-	public LineSeries setColor(String color) {
+	public LineSeries setColor(String[] color) {
 		this.color = color;
 		return this;
 	}
@@ -162,12 +162,12 @@ public class LineSeries implements LineSeriesOption {
 	@Setter(AccessLevel.NONE)
 	private Object data;
 
-	public LineSeries setData(Object[] data) {
+	public LineSeries setData(Object data) {
 		this.data = data;
 		return this;
 	}
 
-	public LineSeries setData(Object data) {
+	public LineSeries setData(Object[] data) {
 		this.data = data;
 		return this;
 	}
@@ -179,12 +179,12 @@ public class LineSeries implements LineSeriesOption {
 	@Setter(AccessLevel.NONE)
 	private Object progressive;
 
-	public LineSeries setProgressive(Number progressive) {
+	public LineSeries setProgressive(Boolean progressive) {
 		this.progressive = progressive;
 		return this;
 	}
 
-	public LineSeries setProgressive(Boolean progressive) {
+	public LineSeries setProgressive(Number progressive) {
 		this.progressive = progressive;
 		return this;
 	}
@@ -200,12 +200,12 @@ public class LineSeries implements LineSeriesOption {
 	@Setter(AccessLevel.NONE)
 	private Object seriesLayoutBy;
 
-	public LineSeries setSeriesLayoutBy(String seriesLayoutBy) {
+	public LineSeries setSeriesLayoutBy(Object seriesLayoutBy) {
 		this.seriesLayoutBy = seriesLayoutBy;
 		return this;
 	}
 
-	public LineSeries setSeriesLayoutBy(Object seriesLayoutBy) {
+	public LineSeries setSeriesLayoutBy(String seriesLayoutBy) {
 		this.seriesLayoutBy = seriesLayoutBy;
 		return this;
 	}
@@ -293,17 +293,17 @@ public class LineSeries implements LineSeriesOption {
 		return this;
 	}
 
+	public LineSeries setSymbolOffset(Number[] symbolOffset) {
+		this.symbolOffset = symbolOffset;
+		return this;
+	}
+
 	public LineSeries setSymbolOffset(String symbolOffset) {
 		this.symbolOffset = symbolOffset;
 		return this;
 	}
 
 	public LineSeries setSymbolOffset(String[] symbolOffset) {
-		this.symbolOffset = symbolOffset;
-		return this;
-	}
-
-	public LineSeries setSymbolOffset(Number[] symbolOffset) {
 		this.symbolOffset = symbolOffset;
 		return this;
 	}
@@ -351,12 +351,12 @@ public class LineSeries implements LineSeriesOption {
 	@Setter(AccessLevel.NONE)
 	private Object smooth;
 
-	public LineSeries setSmooth(Number smooth) {
+	public LineSeries setSmooth(Boolean smooth) {
 		this.smooth = smooth;
 		return this;
 	}
 
-	public LineSeries setSmooth(Boolean smooth) {
+	public LineSeries setSmooth(Number smooth) {
 		this.smooth = smooth;
 		return this;
 	}

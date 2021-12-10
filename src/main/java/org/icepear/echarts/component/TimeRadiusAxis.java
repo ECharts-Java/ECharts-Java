@@ -193,12 +193,12 @@ public class TimeRadiusAxis implements TimeRadiusAxisOption {
 	@Setter(AccessLevel.NONE)
 	private Object boundaryGap;
 
-	public TimeRadiusAxis setBoundaryGap(String[] boundaryGap) {
+	public TimeRadiusAxis setBoundaryGap(Number[] boundaryGap) {
 		this.boundaryGap = boundaryGap;
 		return this;
 	}
 
-	public TimeRadiusAxis setBoundaryGap(Number[] boundaryGap) {
+	public TimeRadiusAxis setBoundaryGap(String[] boundaryGap) {
 		this.boundaryGap = boundaryGap;
 		return this;
 	}

@@ -199,12 +199,12 @@ public class ValueAxis implements ValueAxisOption {
 	@Setter(AccessLevel.NONE)
 	private Object boundaryGap;
 
-	public ValueAxis setBoundaryGap(String[] boundaryGap) {
+	public ValueAxis setBoundaryGap(Number[] boundaryGap) {
 		this.boundaryGap = boundaryGap;
 		return this;
 	}
 
-	public ValueAxis setBoundaryGap(Number[] boundaryGap) {
+	public ValueAxis setBoundaryGap(String[] boundaryGap) {
 		this.boundaryGap = boundaryGap;
 		return this;
 	}

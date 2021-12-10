@@ -6,7 +6,7 @@ package org.icepear.echarts.origin.coord;
  */
 public interface TimeAxisLabelOption extends AxisLabelBaseOption {
 
-	TimeAxisLabelOption setFormatter(String formatter);
-
 	TimeAxisLabelOption setFormatter(Object formatter);
+
+	TimeAxisLabelOption setFormatter(String formatter);
 }

@@ -48,12 +48,12 @@ public class Polar implements PolarOption {
 	@Setter(AccessLevel.NONE)
 	private Object center;
 
-	public Polar setCenter(String[] center) {
+	public Polar setCenter(Number[] center) {
 		this.center = center;
 		return this;
 	}
 
-	public Polar setCenter(Number[] center) {
+	public Polar setCenter(String[] center) {
 		this.center = center;
 		return this;
 	}
@@ -66,17 +66,17 @@ public class Polar implements PolarOption {
 		return this;
 	}
 
+	public Polar setRadius(Number[] radius) {
+		this.radius = radius;
+		return this;
+	}
+
 	public Polar setRadius(String radius) {
 		this.radius = radius;
 		return this;
 	}
 
 	public Polar setRadius(String[] radius) {
-		this.radius = radius;
-		return this;
-	}
-
-	public Polar setRadius(Number[] radius) {
 		this.radius = radius;
 		return this;
 	}

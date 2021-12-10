@@ -199,12 +199,12 @@ public class TimeAxis implements TimeAxisOption {
 	@Setter(AccessLevel.NONE)
 	private Object boundaryGap;
 
-	public TimeAxis setBoundaryGap(String[] boundaryGap) {
+	public TimeAxis setBoundaryGap(Number[] boundaryGap) {
 		this.boundaryGap = boundaryGap;
 		return this;
 	}
 
-	public TimeAxis setBoundaryGap(Number[] boundaryGap) {
+	public TimeAxis setBoundaryGap(String[] boundaryGap) {
 		this.boundaryGap = boundaryGap;
 		return this;
 	}

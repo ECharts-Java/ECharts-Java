@@ -50,17 +50,17 @@ public class MarkPointDataItem implements MarkPointDataItemOption {
 		return this;
 	}
 
+	public MarkPointDataItem setSymbolOffset(Number[] symbolOffset) {
+		this.symbolOffset = symbolOffset;
+		return this;
+	}
+
 	public MarkPointDataItem setSymbolOffset(String symbolOffset) {
 		this.symbolOffset = symbolOffset;
 		return this;
 	}
 
 	public MarkPointDataItem setSymbolOffset(String[] symbolOffset) {
-		this.symbolOffset = symbolOffset;
-		return this;
-	}
-
-	public MarkPointDataItem setSymbolOffset(Number[] symbolOffset) {
 		this.symbolOffset = symbolOffset;
 		return this;
 	}

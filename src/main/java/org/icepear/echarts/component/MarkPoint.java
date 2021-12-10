@@ -113,12 +113,12 @@ public class MarkPoint implements MarkPointOption {
 	@Setter(AccessLevel.NONE)
 	private Object data;
 
-	public MarkPoint setData(Object[] data) {
+	public MarkPoint setData(MarkPointDataItemOption[] data) {
 		this.data = data;
 		return this;
 	}
 
-	public MarkPoint setData(MarkPointDataItemOption[] data) {
+	public MarkPoint setData(Object[] data) {
 		this.data = data;
 		return this;
 	}
@@ -152,17 +152,17 @@ public class MarkPoint implements MarkPointOption {
 		return this;
 	}
 
+	public MarkPoint setSymbolOffset(Number[] symbolOffset) {
+		this.symbolOffset = symbolOffset;
+		return this;
+	}
+
 	public MarkPoint setSymbolOffset(String symbolOffset) {
 		this.symbolOffset = symbolOffset;
 		return this;
 	}
 
 	public MarkPoint setSymbolOffset(String[] symbolOffset) {
-		this.symbolOffset = symbolOffset;
-		return this;
-	}
-
-	public MarkPoint setSymbolOffset(Number[] symbolOffset) {
 		this.symbolOffset = symbolOffset;
 		return this;
 	}

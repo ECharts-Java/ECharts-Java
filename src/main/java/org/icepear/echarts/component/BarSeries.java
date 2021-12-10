@@ -112,12 +112,12 @@ public class BarSeries implements BarSeriesOption {
 	@Setter(AccessLevel.NONE)
 	private Object color;
 
-	public BarSeries setColor(String[] color) {
+	public BarSeries setColor(String color) {
 		this.color = color;
 		return this;
 	}
 
-	public BarSeries setColor(String color) {
+	public BarSeries setColor(String[] color) {
 		this.color = color;
 		return this;
 	}
@@ -160,7 +160,7 @@ public class BarSeries implements BarSeriesOption {
 	@Setter(AccessLevel.NONE)
 	private Object data;
 
-	public BarSeries setData(Object[][] data) {
+	public BarSeries setData(Object data) {
 		this.data = data;
 		return this;
 	}
@@ -170,7 +170,7 @@ public class BarSeries implements BarSeriesOption {
 		return this;
 	}
 
-	public BarSeries setData(Object data) {
+	public BarSeries setData(Object[][] data) {
 		this.data = data;
 		return this;
 	}
@@ -182,12 +182,12 @@ public class BarSeries implements BarSeriesOption {
 	@Setter(AccessLevel.NONE)
 	private Object progressive;
 
-	public BarSeries setProgressive(Number progressive) {
+	public BarSeries setProgressive(Boolean progressive) {
 		this.progressive = progressive;
 		return this;
 	}
 
-	public BarSeries setProgressive(Boolean progressive) {
+	public BarSeries setProgressive(Number progressive) {
 		this.progressive = progressive;
 		return this;
 	}
@@ -203,12 +203,12 @@ public class BarSeries implements BarSeriesOption {
 	@Setter(AccessLevel.NONE)
 	private Object seriesLayoutBy;
 
-	public BarSeries setSeriesLayoutBy(String seriesLayoutBy) {
+	public BarSeries setSeriesLayoutBy(Object seriesLayoutBy) {
 		this.seriesLayoutBy = seriesLayoutBy;
 		return this;
 	}
 
-	public BarSeries setSeriesLayoutBy(Object seriesLayoutBy) {
+	public BarSeries setSeriesLayoutBy(String seriesLayoutBy) {
 		this.seriesLayoutBy = seriesLayoutBy;
 		return this;
 	}

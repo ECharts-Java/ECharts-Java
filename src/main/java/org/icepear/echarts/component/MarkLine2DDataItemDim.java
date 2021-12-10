@@ -55,17 +55,17 @@ public class MarkLine2DDataItemDim implements MarkLine2DDataItemDimOption {
 		return this;
 	}
 
+	public MarkLine2DDataItemDim setSymbolOffset(Number[] symbolOffset) {
+		this.symbolOffset = symbolOffset;
+		return this;
+	}
+
 	public MarkLine2DDataItemDim setSymbolOffset(String symbolOffset) {
 		this.symbolOffset = symbolOffset;
 		return this;
 	}
 
 	public MarkLine2DDataItemDim setSymbolOffset(String[] symbolOffset) {
-		this.symbolOffset = symbolOffset;
-		return this;
-	}
-
-	public MarkLine2DDataItemDim setSymbolOffset(Number[] symbolOffset) {
 		this.symbolOffset = symbolOffset;
 		return this;
 	}

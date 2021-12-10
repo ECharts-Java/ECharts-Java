@@ -11,15 +11,15 @@ public interface CommonTooltipOption {
 
 	CommonTooltipOption setAlwaysShowContent(Boolean alwaysShowContent);
 
-	CommonTooltipOption setFormatter(String formatter);
-
 	CommonTooltipOption setFormatter(Object formatter);
 
-	CommonTooltipOption setPosition(String[] position);
+	CommonTooltipOption setFormatter(String formatter);
 
 	CommonTooltipOption setPosition(Number[] position);
 
 	CommonTooltipOption setPosition(Object position);
+
+	CommonTooltipOption setPosition(String[] position);
 
 	CommonTooltipOption setConfine(Boolean confine);
 

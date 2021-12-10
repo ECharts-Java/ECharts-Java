@@ -5,9 +5,9 @@ package org.icepear.echarts.origin.coord;
  */
 public interface NumericAxisBaseOptionCommon extends AxisBaseOptionCommon {
 
-	NumericAxisBaseOptionCommon setBoundaryGap(String[] boundaryGap);
-
 	NumericAxisBaseOptionCommon setBoundaryGap(Number[] boundaryGap);
+
+	NumericAxisBaseOptionCommon setBoundaryGap(String[] boundaryGap);
 
 	NumericAxisBaseOptionCommon setSplitNumber(Number splitNumber);
 

@@ -56,12 +56,12 @@ public class LogAxisLabel implements LogAxisLabelOption {
 	@Setter(AccessLevel.NONE)
 	private Object backgroundColor;
 
-	public LogAxisLabel setBackgroundColor(String backgroundColor) {
+	public LogAxisLabel setBackgroundColor(Object backgroundColor) {
 		this.backgroundColor = backgroundColor;
 		return this;
 	}
 
-	public LogAxisLabel setBackgroundColor(Object backgroundColor) {
+	public LogAxisLabel setBackgroundColor(String backgroundColor) {
 		this.backgroundColor = backgroundColor;
 		return this;
 	}
@@ -152,12 +152,12 @@ public class LogAxisLabel implements LogAxisLabelOption {
 	@Setter(AccessLevel.NONE)
 	private Object formatter;
 
-	public LogAxisLabel setFormatter(String formatter) {
+	public LogAxisLabel setFormatter(Object formatter) {
 		this.formatter = formatter;
 		return this;
 	}
 
-	public LogAxisLabel setFormatter(Object formatter) {
+	public LogAxisLabel setFormatter(String formatter) {
 		this.formatter = formatter;
 		return this;
 	}
