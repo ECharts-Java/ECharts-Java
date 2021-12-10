@@ -22,12 +22,12 @@ public class MarkLine implements MarkLineOption {
 	@Setter(AccessLevel.NONE)
 	private Object id;
 
-	public MarkLine setId(String id) {
+	public MarkLine setId(Number id) {
 		this.id = id;
 		return this;
 	}
 
-	public MarkLine setId(Number id) {
+	public MarkLine setId(String id) {
 		this.id = id;
 		return this;
 	}
@@ -35,12 +35,12 @@ public class MarkLine implements MarkLineOption {
 	@Setter(AccessLevel.NONE)
 	private Object name;
 
-	public MarkLine setName(String name) {
+	public MarkLine setName(Number name) {
 		this.name = name;
 		return this;
 	}
 
-	public MarkLine setName(Number name) {
+	public MarkLine setName(String name) {
 		this.name = name;
 		return this;
 	}
@@ -154,12 +154,12 @@ public class MarkLine implements MarkLineOption {
 	@Setter(AccessLevel.NONE)
 	private Object symbolSize;
 
-	public MarkLine setSymbolSize(Number[] symbolSize) {
+	public MarkLine setSymbolSize(Number symbolSize) {
 		this.symbolSize = symbolSize;
 		return this;
 	}
 
-	public MarkLine setSymbolSize(Number symbolSize) {
+	public MarkLine setSymbolSize(Number[] symbolSize) {
 		this.symbolSize = symbolSize;
 		return this;
 	}
@@ -167,12 +167,12 @@ public class MarkLine implements MarkLineOption {
 	@Setter(AccessLevel.NONE)
 	private Object symbolRotate;
 
-	public MarkLine setSymbolRotate(Number[] symbolRotate) {
+	public MarkLine setSymbolRotate(Number symbolRotate) {
 		this.symbolRotate = symbolRotate;
 		return this;
 	}
 
-	public MarkLine setSymbolRotate(Number symbolRotate) {
+	public MarkLine setSymbolRotate(Number[] symbolRotate) {
 		this.symbolRotate = symbolRotate;
 		return this;
 	}
@@ -180,12 +180,7 @@ public class MarkLine implements MarkLineOption {
 	@Setter(AccessLevel.NONE)
 	private Object symbolOffset;
 
-	public MarkLine setSymbolOffset(String[] symbolOffset) {
-		this.symbolOffset = symbolOffset;
-		return this;
-	}
-
-	public MarkLine setSymbolOffset(Number[] symbolOffset) {
+	public MarkLine setSymbolOffset(Number symbolOffset) {
 		this.symbolOffset = symbolOffset;
 		return this;
 	}
@@ -195,7 +190,12 @@ public class MarkLine implements MarkLineOption {
 		return this;
 	}
 
-	public MarkLine setSymbolOffset(Number symbolOffset) {
+	public MarkLine setSymbolOffset(String[] symbolOffset) {
+		this.symbolOffset = symbolOffset;
+		return this;
+	}
+
+	public MarkLine setSymbolOffset(Number[] symbolOffset) {
 		this.symbolOffset = symbolOffset;
 		return this;
 	}

@@ -34,12 +34,12 @@ public class DefaultAngleAxis implements DefaultAngleAxisOption {
 	@Setter(AccessLevel.NONE)
 	private Object id;
 
-	public DefaultAngleAxis setId(String id) {
+	public DefaultAngleAxis setId(Number id) {
 		this.id = id;
 		return this;
 	}
 
-	public DefaultAngleAxis setId(Number id) {
+	public DefaultAngleAxis setId(String id) {
 		this.id = id;
 		return this;
 	}
@@ -47,12 +47,12 @@ public class DefaultAngleAxis implements DefaultAngleAxisOption {
 	@Setter(AccessLevel.NONE)
 	private Object name;
 
-	public DefaultAngleAxis setName(String name) {
+	public DefaultAngleAxis setName(Number name) {
 		this.name = name;
 		return this;
 	}
 
-	public DefaultAngleAxis setName(Number name) {
+	public DefaultAngleAxis setName(String name) {
 		this.name = name;
 		return this;
 	}
@@ -160,12 +160,12 @@ public class DefaultAngleAxis implements DefaultAngleAxisOption {
 	@Setter(AccessLevel.NONE)
 	private Object min;
 
-	public DefaultAngleAxis setMin(String min) {
+	public DefaultAngleAxis setMin(Number min) {
 		this.min = min;
 		return this;
 	}
 
-	public DefaultAngleAxis setMin(Number min) {
+	public DefaultAngleAxis setMin(String min) {
 		this.min = min;
 		return this;
 	}
@@ -173,12 +173,12 @@ public class DefaultAngleAxis implements DefaultAngleAxisOption {
 	@Setter(AccessLevel.NONE)
 	private Object max;
 
-	public DefaultAngleAxis setMax(String max) {
+	public DefaultAngleAxis setMax(Number max) {
 		this.max = max;
 		return this;
 	}
 
-	public DefaultAngleAxis setMax(Number max) {
+	public DefaultAngleAxis setMax(String max) {
 		this.max = max;
 		return this;
 	}

@@ -19,12 +19,12 @@ public class Title implements TitleOption {
 	@Setter(AccessLevel.NONE)
 	private Object id;
 
-	public Title setId(String id) {
+	public Title setId(Number id) {
 		this.id = id;
 		return this;
 	}
 
-	public Title setId(Number id) {
+	public Title setId(String id) {
 		this.id = id;
 		return this;
 	}
@@ -32,12 +32,12 @@ public class Title implements TitleOption {
 	@Setter(AccessLevel.NONE)
 	private Object name;
 
-	public Title setName(String name) {
+	public Title setName(Number name) {
 		this.name = name;
 		return this;
 	}
 
-	public Title setName(Number name) {
+	public Title setName(String name) {
 		this.name = name;
 		return this;
 	}
@@ -49,12 +49,12 @@ public class Title implements TitleOption {
 	@Setter(AccessLevel.NONE)
 	private Object width;
 
-	public Title setWidth(String width) {
+	public Title setWidth(Number width) {
 		this.width = width;
 		return this;
 	}
 
-	public Title setWidth(Number width) {
+	public Title setWidth(String width) {
 		this.width = width;
 		return this;
 	}
@@ -62,12 +62,12 @@ public class Title implements TitleOption {
 	@Setter(AccessLevel.NONE)
 	private Object height;
 
-	public Title setHeight(String height) {
+	public Title setHeight(Number height) {
 		this.height = height;
 		return this;
 	}
 
-	public Title setHeight(Number height) {
+	public Title setHeight(String height) {
 		this.height = height;
 		return this;
 	}
@@ -75,12 +75,12 @@ public class Title implements TitleOption {
 	@Setter(AccessLevel.NONE)
 	private Object top;
 
-	public Title setTop(String top) {
+	public Title setTop(Number top) {
 		this.top = top;
 		return this;
 	}
 
-	public Title setTop(Number top) {
+	public Title setTop(String top) {
 		this.top = top;
 		return this;
 	}
@@ -88,12 +88,12 @@ public class Title implements TitleOption {
 	@Setter(AccessLevel.NONE)
 	private Object right;
 
-	public Title setRight(String right) {
+	public Title setRight(Number right) {
 		this.right = right;
 		return this;
 	}
 
-	public Title setRight(Number right) {
+	public Title setRight(String right) {
 		this.right = right;
 		return this;
 	}
@@ -101,12 +101,12 @@ public class Title implements TitleOption {
 	@Setter(AccessLevel.NONE)
 	private Object bottom;
 
-	public Title setBottom(String bottom) {
+	public Title setBottom(Number bottom) {
 		this.bottom = bottom;
 		return this;
 	}
 
-	public Title setBottom(Number bottom) {
+	public Title setBottom(String bottom) {
 		this.bottom = bottom;
 		return this;
 	}
@@ -114,12 +114,12 @@ public class Title implements TitleOption {
 	@Setter(AccessLevel.NONE)
 	private Object left;
 
-	public Title setLeft(String left) {
+	public Title setLeft(Number left) {
 		this.left = left;
 		return this;
 	}
 
-	public Title setLeft(Number left) {
+	public Title setLeft(String left) {
 		this.left = left;
 		return this;
 	}
@@ -163,12 +163,12 @@ public class Title implements TitleOption {
 	@Setter(AccessLevel.NONE)
 	private Object padding;
 
-	public Title setPadding(Number[] padding) {
+	public Title setPadding(Number padding) {
 		this.padding = padding;
 		return this;
 	}
 
-	public Title setPadding(Number padding) {
+	public Title setPadding(Number[] padding) {
 		this.padding = padding;
 		return this;
 	}
@@ -184,12 +184,12 @@ public class Title implements TitleOption {
 	@Setter(AccessLevel.NONE)
 	private Object borderRadius;
 
-	public Title setBorderRadius(Number[] borderRadius) {
+	public Title setBorderRadius(Number borderRadius) {
 		this.borderRadius = borderRadius;
 		return this;
 	}
 
-	public Title setBorderRadius(Number borderRadius) {
+	public Title setBorderRadius(Number[] borderRadius) {
 		this.borderRadius = borderRadius;
 		return this;
 	}

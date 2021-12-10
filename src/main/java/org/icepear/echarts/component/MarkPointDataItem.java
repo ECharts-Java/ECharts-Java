@@ -28,12 +28,12 @@ public class MarkPointDataItem implements MarkPointDataItemOption {
 	@Setter(AccessLevel.NONE)
 	private Object symbolSize;
 
-	public MarkPointDataItem setSymbolSize(Number[] symbolSize) {
+	public MarkPointDataItem setSymbolSize(Number symbolSize) {
 		this.symbolSize = symbolSize;
 		return this;
 	}
 
-	public MarkPointDataItem setSymbolSize(Number symbolSize) {
+	public MarkPointDataItem setSymbolSize(Number[] symbolSize) {
 		this.symbolSize = symbolSize;
 		return this;
 	}
@@ -45,6 +45,16 @@ public class MarkPointDataItem implements MarkPointDataItemOption {
 	@Setter(AccessLevel.NONE)
 	private Object symbolOffset;
 
+	public MarkPointDataItem setSymbolOffset(Number symbolOffset) {
+		this.symbolOffset = symbolOffset;
+		return this;
+	}
+
+	public MarkPointDataItem setSymbolOffset(String symbolOffset) {
+		this.symbolOffset = symbolOffset;
+		return this;
+	}
+
 	public MarkPointDataItem setSymbolOffset(String[] symbolOffset) {
 		this.symbolOffset = symbolOffset;
 		return this;
@@ -55,25 +65,15 @@ public class MarkPointDataItem implements MarkPointDataItemOption {
 		return this;
 	}
 
-	public MarkPointDataItem setSymbolOffset(String symbolOffset) {
-		this.symbolOffset = symbolOffset;
-		return this;
-	}
-
-	public MarkPointDataItem setSymbolOffset(Number symbolOffset) {
-		this.symbolOffset = symbolOffset;
-		return this;
-	}
-
 	@Setter(AccessLevel.NONE)
 	private Object x;
 
-	public MarkPointDataItem setX(String x) {
+	public MarkPointDataItem setX(Number x) {
 		this.x = x;
 		return this;
 	}
 
-	public MarkPointDataItem setX(Number x) {
+	public MarkPointDataItem setX(String x) {
 		this.x = x;
 		return this;
 	}
@@ -81,12 +81,12 @@ public class MarkPointDataItem implements MarkPointDataItemOption {
 	@Setter(AccessLevel.NONE)
 	private Object y;
 
-	public MarkPointDataItem setY(String y) {
+	public MarkPointDataItem setY(Number y) {
 		this.y = y;
 		return this;
 	}
 
-	public MarkPointDataItem setY(Number y) {
+	public MarkPointDataItem setY(String y) {
 		this.y = y;
 		return this;
 	}
@@ -110,12 +110,12 @@ public class MarkPointDataItem implements MarkPointDataItemOption {
 	@Setter(AccessLevel.NONE)
 	private Object value;
 
-	public MarkPointDataItem setValue(String value) {
+	public MarkPointDataItem setValue(Number value) {
 		this.value = value;
 		return this;
 	}
 
-	public MarkPointDataItem setValue(Number value) {
+	public MarkPointDataItem setValue(String value) {
 		this.value = value;
 		return this;
 	}

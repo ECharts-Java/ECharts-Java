@@ -21,12 +21,12 @@ public class Legend implements LegendOption {
 	@Setter(AccessLevel.NONE)
 	private Object id;
 
-	public Legend setId(String id) {
+	public Legend setId(Number id) {
 		this.id = id;
 		return this;
 	}
 
-	public Legend setId(Number id) {
+	public Legend setId(String id) {
 		this.id = id;
 		return this;
 	}
@@ -34,12 +34,12 @@ public class Legend implements LegendOption {
 	@Setter(AccessLevel.NONE)
 	private Object name;
 
-	public Legend setName(String name) {
+	public Legend setName(Number name) {
 		this.name = name;
 		return this;
 	}
 
-	public Legend setName(Number name) {
+	public Legend setName(String name) {
 		this.name = name;
 		return this;
 	}
@@ -57,12 +57,12 @@ public class Legend implements LegendOption {
 	@Setter(AccessLevel.NONE)
 	private Object inactiveBorderWidth;
 
-	public Legend setInactiveBorderWidth(String inactiveBorderWidth) {
+	public Legend setInactiveBorderWidth(Number inactiveBorderWidth) {
 		this.inactiveBorderWidth = inactiveBorderWidth;
 		return this;
 	}
 
-	public Legend setInactiveBorderWidth(Number inactiveBorderWidth) {
+	public Legend setInactiveBorderWidth(String inactiveBorderWidth) {
 		this.inactiveBorderWidth = inactiveBorderWidth;
 		return this;
 	}
@@ -78,12 +78,12 @@ public class Legend implements LegendOption {
 	@Setter(AccessLevel.NONE)
 	private Object symbolRotate;
 
-	public Legend setSymbolRotate(String symbolRotate) {
+	public Legend setSymbolRotate(Number symbolRotate) {
 		this.symbolRotate = symbolRotate;
 		return this;
 	}
 
-	public Legend setSymbolRotate(Number symbolRotate) {
+	public Legend setSymbolRotate(String symbolRotate) {
 		this.symbolRotate = symbolRotate;
 		return this;
 	}
@@ -93,12 +93,12 @@ public class Legend implements LegendOption {
 	@Setter(AccessLevel.NONE)
 	private Object width;
 
-	public Legend setWidth(String width) {
+	public Legend setWidth(Number width) {
 		this.width = width;
 		return this;
 	}
 
-	public Legend setWidth(Number width) {
+	public Legend setWidth(String width) {
 		this.width = width;
 		return this;
 	}
@@ -106,12 +106,12 @@ public class Legend implements LegendOption {
 	@Setter(AccessLevel.NONE)
 	private Object height;
 
-	public Legend setHeight(String height) {
+	public Legend setHeight(Number height) {
 		this.height = height;
 		return this;
 	}
 
-	public Legend setHeight(Number height) {
+	public Legend setHeight(String height) {
 		this.height = height;
 		return this;
 	}
@@ -119,12 +119,12 @@ public class Legend implements LegendOption {
 	@Setter(AccessLevel.NONE)
 	private Object top;
 
-	public Legend setTop(String top) {
+	public Legend setTop(Number top) {
 		this.top = top;
 		return this;
 	}
 
-	public Legend setTop(Number top) {
+	public Legend setTop(String top) {
 		this.top = top;
 		return this;
 	}
@@ -132,12 +132,12 @@ public class Legend implements LegendOption {
 	@Setter(AccessLevel.NONE)
 	private Object right;
 
-	public Legend setRight(String right) {
+	public Legend setRight(Number right) {
 		this.right = right;
 		return this;
 	}
 
-	public Legend setRight(Number right) {
+	public Legend setRight(String right) {
 		this.right = right;
 		return this;
 	}
@@ -145,12 +145,12 @@ public class Legend implements LegendOption {
 	@Setter(AccessLevel.NONE)
 	private Object bottom;
 
-	public Legend setBottom(String bottom) {
+	public Legend setBottom(Number bottom) {
 		this.bottom = bottom;
 		return this;
 	}
 
-	public Legend setBottom(Number bottom) {
+	public Legend setBottom(String bottom) {
 		this.bottom = bottom;
 		return this;
 	}
@@ -158,12 +158,12 @@ public class Legend implements LegendOption {
 	@Setter(AccessLevel.NONE)
 	private Object left;
 
-	public Legend setLeft(String left) {
+	public Legend setLeft(Number left) {
 		this.left = left;
 		return this;
 	}
 
-	public Legend setLeft(Number left) {
+	public Legend setLeft(String left) {
 		this.left = left;
 		return this;
 	}
@@ -193,12 +193,12 @@ public class Legend implements LegendOption {
 	@Setter(AccessLevel.NONE)
 	private Object borderRadius;
 
-	public Legend setBorderRadius(Number[] borderRadius) {
+	public Legend setBorderRadius(Number borderRadius) {
 		this.borderRadius = borderRadius;
 		return this;
 	}
 
-	public Legend setBorderRadius(Number borderRadius) {
+	public Legend setBorderRadius(Number[] borderRadius) {
 		this.borderRadius = borderRadius;
 		return this;
 	}
@@ -206,12 +206,12 @@ public class Legend implements LegendOption {
 	@Setter(AccessLevel.NONE)
 	private Object padding;
 
-	public Legend setPadding(Number[] padding) {
+	public Legend setPadding(Number padding) {
 		this.padding = padding;
 		return this;
 	}
 
-	public Legend setPadding(Number padding) {
+	public Legend setPadding(Number[] padding) {
 		this.padding = padding;
 		return this;
 	}
@@ -225,12 +225,12 @@ public class Legend implements LegendOption {
 	@Setter(AccessLevel.NONE)
 	private Object selectedMode;
 
-	public Legend setSelectedMode(String selectedMode) {
+	public Legend setSelectedMode(Boolean selectedMode) {
 		this.selectedMode = selectedMode;
 		return this;
 	}
 
-	public Legend setSelectedMode(Boolean selectedMode) {
+	public Legend setSelectedMode(String selectedMode) {
 		this.selectedMode = selectedMode;
 		return this;
 	}

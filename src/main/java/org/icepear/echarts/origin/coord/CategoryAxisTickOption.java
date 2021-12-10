@@ -7,7 +7,7 @@ public interface CategoryAxisTickOption extends AxisTickOption {
 
 	CategoryAxisTickOption setAlignWithLabel(Boolean alignWithLabel);
 
-	CategoryAxisTickOption setInterval(String interval);
-
 	CategoryAxisTickOption setInterval(Number interval);
+
+	CategoryAxisTickOption setInterval(String interval);
 }

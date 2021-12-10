@@ -13,9 +13,9 @@ public interface LegendStyleOption {
 
 	LegendStyleOption setInactiveBorderColor(String inactiveBorderColor);
 
-	LegendStyleOption setInactiveBorderWidth(String inactiveBorderWidth);
-
 	LegendStyleOption setInactiveBorderWidth(Number inactiveBorderWidth);
+
+	LegendStyleOption setInactiveBorderWidth(String inactiveBorderWidth);
 
 	LegendStyleOption setFormatter(String formatter);
 
@@ -25,9 +25,9 @@ public interface LegendStyleOption {
 
 	LegendStyleOption setTextStyle(LabelOption textStyle);
 
-	LegendStyleOption setSymbolRotate(String symbolRotate);
-
 	LegendStyleOption setSymbolRotate(Number symbolRotate);
+
+	LegendStyleOption setSymbolRotate(String symbolRotate);
 
 	LegendStyleOption setSymbolKeepAspect(Boolean symbolKeepAspect);
 }

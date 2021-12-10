@@ -33,12 +33,12 @@ public class AxisPointerLabel implements AxisPointerLabelOption {
 	@Setter(AccessLevel.NONE)
 	private Object fontSize;
 
-	public AxisPointerLabel setFontSize(String fontSize) {
+	public AxisPointerLabel setFontSize(Number fontSize) {
 		this.fontSize = fontSize;
 		return this;
 	}
 
-	public AxisPointerLabel setFontSize(Number fontSize) {
+	public AxisPointerLabel setFontSize(String fontSize) {
 		this.fontSize = fontSize;
 		return this;
 	}
@@ -77,12 +77,12 @@ public class AxisPointerLabel implements AxisPointerLabelOption {
 	@Setter(AccessLevel.NONE)
 	private Object borderRadius;
 
-	public AxisPointerLabel setBorderRadius(Number[] borderRadius) {
+	public AxisPointerLabel setBorderRadius(Number borderRadius) {
 		this.borderRadius = borderRadius;
 		return this;
 	}
 
-	public AxisPointerLabel setBorderRadius(Number borderRadius) {
+	public AxisPointerLabel setBorderRadius(Number[] borderRadius) {
 		this.borderRadius = borderRadius;
 		return this;
 	}
@@ -90,12 +90,12 @@ public class AxisPointerLabel implements AxisPointerLabelOption {
 	@Setter(AccessLevel.NONE)
 	private Object padding;
 
-	public AxisPointerLabel setPadding(Number[] padding) {
+	public AxisPointerLabel setPadding(Number padding) {
 		this.padding = padding;
 		return this;
 	}
 
-	public AxisPointerLabel setPadding(Number padding) {
+	public AxisPointerLabel setPadding(Number[] padding) {
 		this.padding = padding;
 		return this;
 	}
@@ -103,12 +103,12 @@ public class AxisPointerLabel implements AxisPointerLabelOption {
 	@Setter(AccessLevel.NONE)
 	private Object width;
 
-	public AxisPointerLabel setWidth(String width) {
+	public AxisPointerLabel setWidth(Number width) {
 		this.width = width;
 		return this;
 	}
 
-	public AxisPointerLabel setWidth(Number width) {
+	public AxisPointerLabel setWidth(String width) {
 		this.width = width;
 		return this;
 	}
@@ -152,12 +152,12 @@ public class AxisPointerLabel implements AxisPointerLabelOption {
 	@Setter(AccessLevel.NONE)
 	private Object precision;
 
-	public AxisPointerLabel setPrecision(String precision) {
+	public AxisPointerLabel setPrecision(Number precision) {
 		this.precision = precision;
 		return this;
 	}
 
-	public AxisPointerLabel setPrecision(Number precision) {
+	public AxisPointerLabel setPrecision(String precision) {
 		this.precision = precision;
 		return this;
 	}

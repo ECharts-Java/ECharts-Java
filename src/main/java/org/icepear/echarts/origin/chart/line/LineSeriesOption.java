@@ -29,9 +29,9 @@ public interface LineSeriesOption extends SeriesOption, LineStateOption, SeriesO
 
 	LineSeriesOption setAreaStyle(Object areaStyle);
 
-	LineSeriesOption setStep(String step);
-
 	LineSeriesOption setStep(Boolean step);
+
+	LineSeriesOption setStep(String step);
 
 	LineSeriesOption setSmooth(Number smooth);
 
@@ -43,9 +43,9 @@ public interface LineSeriesOption extends SeriesOption, LineStateOption, SeriesO
 
 	LineSeriesOption setShowSymbol(Boolean showSymbol);
 
-	LineSeriesOption setShowAllSymbol(String showAllSymbol);
-
 	LineSeriesOption setShowAllSymbol(Boolean showAllSymbol);
+
+	LineSeriesOption setShowAllSymbol(String showAllSymbol);
 
 	LineSeriesOption setData(Object[] data);
 

@@ -53,12 +53,12 @@ public class BarBackgroundStyle implements BarBackgroundStyleOption {
 	@Setter(AccessLevel.NONE)
 	private Object borderRadius;
 
-	public BarBackgroundStyle setBorderRadius(Number[] borderRadius) {
+	public BarBackgroundStyle setBorderRadius(Number borderRadius) {
 		this.borderRadius = borderRadius;
 		return this;
 	}
 
-	public BarBackgroundStyle setBorderRadius(Number borderRadius) {
+	public BarBackgroundStyle setBorderRadius(Number[] borderRadius) {
 		this.borderRadius = borderRadius;
 		return this;
 	}

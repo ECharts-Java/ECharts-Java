@@ -23,9 +23,9 @@ public interface LabelOption extends TextCommonOption {
 
 	LabelOption setSilent(Boolean silent);
 
-	LabelOption setPrecision(String precision);
-
 	LabelOption setPrecision(Number precision);
+
+	LabelOption setPrecision(String precision);
 
 	LabelOption setValueAnimation(Boolean valueAnimation);
 

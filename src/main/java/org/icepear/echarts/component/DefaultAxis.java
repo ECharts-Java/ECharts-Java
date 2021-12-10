@@ -36,12 +36,12 @@ public class DefaultAxis implements DefaultAxisOption {
 	@Setter(AccessLevel.NONE)
 	private Object id;
 
-	public DefaultAxis setId(String id) {
+	public DefaultAxis setId(Number id) {
 		this.id = id;
 		return this;
 	}
 
-	public DefaultAxis setId(Number id) {
+	public DefaultAxis setId(String id) {
 		this.id = id;
 		return this;
 	}
@@ -49,12 +49,12 @@ public class DefaultAxis implements DefaultAxisOption {
 	@Setter(AccessLevel.NONE)
 	private Object name;
 
-	public DefaultAxis setName(String name) {
+	public DefaultAxis setName(Number name) {
 		this.name = name;
 		return this;
 	}
 
-	public DefaultAxis setName(Number name) {
+	public DefaultAxis setName(String name) {
 		this.name = name;
 		return this;
 	}
@@ -162,12 +162,12 @@ public class DefaultAxis implements DefaultAxisOption {
 	@Setter(AccessLevel.NONE)
 	private Object min;
 
-	public DefaultAxis setMin(String min) {
+	public DefaultAxis setMin(Number min) {
 		this.min = min;
 		return this;
 	}
 
-	public DefaultAxis setMin(Number min) {
+	public DefaultAxis setMin(String min) {
 		this.min = min;
 		return this;
 	}
@@ -175,12 +175,12 @@ public class DefaultAxis implements DefaultAxisOption {
 	@Setter(AccessLevel.NONE)
 	private Object max;
 
-	public DefaultAxis setMax(String max) {
+	public DefaultAxis setMax(Number max) {
 		this.max = max;
 		return this;
 	}
 
-	public DefaultAxis setMax(Number max) {
+	public DefaultAxis setMax(String max) {
 		this.max = max;
 		return this;
 	}

@@ -9,11 +9,11 @@ public interface CircleLayoutOptionMixin {
 
 	CircleLayoutOptionMixin setCenter(Number[] center);
 
-	CircleLayoutOptionMixin setRadius(String[] radius);
-
-	CircleLayoutOptionMixin setRadius(Number[] radius);
+	CircleLayoutOptionMixin setRadius(Number radius);
 
 	CircleLayoutOptionMixin setRadius(String radius);
 
-	CircleLayoutOptionMixin setRadius(Number radius);
+	CircleLayoutOptionMixin setRadius(String[] radius);
+
+	CircleLayoutOptionMixin setRadius(Number[] radius);
 }

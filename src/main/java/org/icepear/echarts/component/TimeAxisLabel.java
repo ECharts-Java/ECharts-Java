@@ -33,12 +33,12 @@ public class TimeAxisLabel implements TimeAxisLabelOption {
 	@Setter(AccessLevel.NONE)
 	private Object fontSize;
 
-	public TimeAxisLabel setFontSize(String fontSize) {
+	public TimeAxisLabel setFontSize(Number fontSize) {
 		this.fontSize = fontSize;
 		return this;
 	}
 
-	public TimeAxisLabel setFontSize(Number fontSize) {
+	public TimeAxisLabel setFontSize(String fontSize) {
 		this.fontSize = fontSize;
 		return this;
 	}
@@ -77,12 +77,12 @@ public class TimeAxisLabel implements TimeAxisLabelOption {
 	@Setter(AccessLevel.NONE)
 	private Object borderRadius;
 
-	public TimeAxisLabel setBorderRadius(Number[] borderRadius) {
+	public TimeAxisLabel setBorderRadius(Number borderRadius) {
 		this.borderRadius = borderRadius;
 		return this;
 	}
 
-	public TimeAxisLabel setBorderRadius(Number borderRadius) {
+	public TimeAxisLabel setBorderRadius(Number[] borderRadius) {
 		this.borderRadius = borderRadius;
 		return this;
 	}
@@ -90,12 +90,12 @@ public class TimeAxisLabel implements TimeAxisLabelOption {
 	@Setter(AccessLevel.NONE)
 	private Object padding;
 
-	public TimeAxisLabel setPadding(Number[] padding) {
+	public TimeAxisLabel setPadding(Number padding) {
 		this.padding = padding;
 		return this;
 	}
 
-	public TimeAxisLabel setPadding(Number padding) {
+	public TimeAxisLabel setPadding(Number[] padding) {
 		this.padding = padding;
 		return this;
 	}
@@ -103,12 +103,12 @@ public class TimeAxisLabel implements TimeAxisLabelOption {
 	@Setter(AccessLevel.NONE)
 	private Object width;
 
-	public TimeAxisLabel setWidth(String width) {
+	public TimeAxisLabel setWidth(Number width) {
 		this.width = width;
 		return this;
 	}
 
-	public TimeAxisLabel setWidth(Number width) {
+	public TimeAxisLabel setWidth(String width) {
 		this.width = width;
 		return this;
 	}

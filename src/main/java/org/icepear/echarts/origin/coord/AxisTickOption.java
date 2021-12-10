@@ -7,9 +7,9 @@ import org.icepear.echarts.origin.util.LineStyleOption;
  */
 public interface AxisTickOption {
 
-	AxisTickOption setShow(String show);
-
 	AxisTickOption setShow(Boolean show);
+
+	AxisTickOption setShow(String show);
 
 	AxisTickOption setInside(Boolean inside);
 

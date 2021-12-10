@@ -36,12 +36,12 @@ public class LogAxis implements LogAxisOption {
 	@Setter(AccessLevel.NONE)
 	private Object id;
 
-	public LogAxis setId(String id) {
+	public LogAxis setId(Number id) {
 		this.id = id;
 		return this;
 	}
 
-	public LogAxis setId(Number id) {
+	public LogAxis setId(String id) {
 		this.id = id;
 		return this;
 	}
@@ -49,12 +49,12 @@ public class LogAxis implements LogAxisOption {
 	@Setter(AccessLevel.NONE)
 	private Object name;
 
-	public LogAxis setName(String name) {
+	public LogAxis setName(Number name) {
 		this.name = name;
 		return this;
 	}
 
-	public LogAxis setName(Number name) {
+	public LogAxis setName(String name) {
 		this.name = name;
 		return this;
 	}
@@ -173,12 +173,12 @@ public class LogAxis implements LogAxisOption {
 	@Setter(AccessLevel.NONE)
 	private Object min;
 
-	public LogAxis setMin(String min) {
+	public LogAxis setMin(Number min) {
 		this.min = min;
 		return this;
 	}
 
-	public LogAxis setMin(Number min) {
+	public LogAxis setMin(String min) {
 		this.min = min;
 		return this;
 	}
@@ -186,12 +186,12 @@ public class LogAxis implements LogAxisOption {
 	@Setter(AccessLevel.NONE)
 	private Object max;
 
-	public LogAxis setMax(String max) {
+	public LogAxis setMax(Number max) {
 		this.max = max;
 		return this;
 	}
 
-	public LogAxis setMax(Number max) {
+	public LogAxis setMax(String max) {
 		this.max = max;
 		return this;
 	}

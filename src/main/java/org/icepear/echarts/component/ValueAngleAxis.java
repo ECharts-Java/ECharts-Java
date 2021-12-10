@@ -34,12 +34,12 @@ public class ValueAngleAxis implements ValueAngleAxisOption {
 	@Setter(AccessLevel.NONE)
 	private Object id;
 
-	public ValueAngleAxis setId(String id) {
+	public ValueAngleAxis setId(Number id) {
 		this.id = id;
 		return this;
 	}
 
-	public ValueAngleAxis setId(Number id) {
+	public ValueAngleAxis setId(String id) {
 		this.id = id;
 		return this;
 	}
@@ -47,12 +47,12 @@ public class ValueAngleAxis implements ValueAngleAxisOption {
 	@Setter(AccessLevel.NONE)
 	private Object name;
 
-	public ValueAngleAxis setName(String name) {
+	public ValueAngleAxis setName(Number name) {
 		this.name = name;
 		return this;
 	}
 
-	public ValueAngleAxis setName(Number name) {
+	public ValueAngleAxis setName(String name) {
 		this.name = name;
 		return this;
 	}
@@ -171,12 +171,12 @@ public class ValueAngleAxis implements ValueAngleAxisOption {
 	@Setter(AccessLevel.NONE)
 	private Object min;
 
-	public ValueAngleAxis setMin(String min) {
+	public ValueAngleAxis setMin(Number min) {
 		this.min = min;
 		return this;
 	}
 
-	public ValueAngleAxis setMin(Number min) {
+	public ValueAngleAxis setMin(String min) {
 		this.min = min;
 		return this;
 	}
@@ -184,12 +184,12 @@ public class ValueAngleAxis implements ValueAngleAxisOption {
 	@Setter(AccessLevel.NONE)
 	private Object max;
 
-	public ValueAngleAxis setMax(String max) {
+	public ValueAngleAxis setMax(Number max) {
 		this.max = max;
 		return this;
 	}
 
-	public ValueAngleAxis setMax(Number max) {
+	public ValueAngleAxis setMax(String max) {
 		this.max = max;
 		return this;
 	}

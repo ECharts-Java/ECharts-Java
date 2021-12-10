@@ -16,12 +16,12 @@ public class PieDataItem implements PieDataItemOption {
 	@Setter(AccessLevel.NONE)
 	private Object id;
 
-	public PieDataItem setId(String id) {
+	public PieDataItem setId(Number id) {
 		this.id = id;
 		return this;
 	}
 
-	public PieDataItem setId(Number id) {
+	public PieDataItem setId(String id) {
 		this.id = id;
 		return this;
 	}
@@ -29,12 +29,12 @@ public class PieDataItem implements PieDataItemOption {
 	@Setter(AccessLevel.NONE)
 	private Object name;
 
-	public PieDataItem setName(String name) {
+	public PieDataItem setName(Number name) {
 		this.name = name;
 		return this;
 	}
 
-	public PieDataItem setName(Number name) {
+	public PieDataItem setName(String name) {
 		this.name = name;
 		return this;
 	}
@@ -42,12 +42,12 @@ public class PieDataItem implements PieDataItemOption {
 	@Setter(AccessLevel.NONE)
 	private Object groupId;
 
-	public PieDataItem setGroupId(String groupId) {
+	public PieDataItem setGroupId(Number groupId) {
 		this.groupId = groupId;
 		return this;
 	}
 
-	public PieDataItem setGroupId(Number groupId) {
+	public PieDataItem setGroupId(String groupId) {
 		this.groupId = groupId;
 		return this;
 	}
@@ -57,12 +57,7 @@ public class PieDataItem implements PieDataItemOption {
 	@Setter(AccessLevel.NONE)
 	private Object value;
 
-	public PieDataItem setValue(String[] value) {
-		this.value = value;
-		return this;
-	}
-
-	public PieDataItem setValue(Number[] value) {
+	public PieDataItem setValue(Number value) {
 		this.value = value;
 		return this;
 	}
@@ -72,7 +67,12 @@ public class PieDataItem implements PieDataItemOption {
 		return this;
 	}
 
-	public PieDataItem setValue(Number value) {
+	public PieDataItem setValue(String[] value) {
+		this.value = value;
+		return this;
+	}
+
+	public PieDataItem setValue(Number[] value) {
 		this.value = value;
 		return this;
 	}

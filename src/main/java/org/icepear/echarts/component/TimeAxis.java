@@ -36,12 +36,12 @@ public class TimeAxis implements TimeAxisOption {
 	@Setter(AccessLevel.NONE)
 	private Object id;
 
-	public TimeAxis setId(String id) {
+	public TimeAxis setId(Number id) {
 		this.id = id;
 		return this;
 	}
 
-	public TimeAxis setId(Number id) {
+	public TimeAxis setId(String id) {
 		this.id = id;
 		return this;
 	}
@@ -49,12 +49,12 @@ public class TimeAxis implements TimeAxisOption {
 	@Setter(AccessLevel.NONE)
 	private Object name;
 
-	public TimeAxis setName(String name) {
+	public TimeAxis setName(Number name) {
 		this.name = name;
 		return this;
 	}
 
-	public TimeAxis setName(Number name) {
+	public TimeAxis setName(String name) {
 		this.name = name;
 		return this;
 	}
@@ -173,12 +173,12 @@ public class TimeAxis implements TimeAxisOption {
 	@Setter(AccessLevel.NONE)
 	private Object min;
 
-	public TimeAxis setMin(String min) {
+	public TimeAxis setMin(Number min) {
 		this.min = min;
 		return this;
 	}
 
-	public TimeAxis setMin(Number min) {
+	public TimeAxis setMin(String min) {
 		this.min = min;
 		return this;
 	}
@@ -186,12 +186,12 @@ public class TimeAxis implements TimeAxisOption {
 	@Setter(AccessLevel.NONE)
 	private Object max;
 
-	public TimeAxis setMax(String max) {
+	public TimeAxis setMax(Number max) {
 		this.max = max;
 		return this;
 	}
 
-	public TimeAxis setMax(Number max) {
+	public TimeAxis setMax(String max) {
 		this.max = max;
 		return this;
 	}

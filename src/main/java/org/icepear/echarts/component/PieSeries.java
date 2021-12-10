@@ -8,9 +8,11 @@ import lombok.Setter;
 import lombok.experimental.Accessors;
 
 import org.icepear.echarts.origin.chart.pie.PieDataItemOption;
+import org.icepear.echarts.origin.chart.pie.PieEmphasisOption;
 import org.icepear.echarts.origin.chart.pie.PieItemStyleOption;
 import org.icepear.echarts.origin.chart.pie.PieLabelOption;
 import org.icepear.echarts.origin.chart.pie.PieSeriesOption;
+import org.icepear.echarts.origin.util.LabelLineOption;
 
 @Accessors(chain=true)
 @Data
@@ -23,12 +25,12 @@ public class PieSeries implements PieSeriesOption {
 	@Setter(AccessLevel.NONE)
 	private Object id;
 
-	public PieSeries setId(String id) {
+	public PieSeries setId(Number id) {
 		this.id = id;
 		return this;
 	}
 
-	public PieSeries setId(Number id) {
+	public PieSeries setId(String id) {
 		this.id = id;
 		return this;
 	}
@@ -36,12 +38,12 @@ public class PieSeries implements PieSeriesOption {
 	@Setter(AccessLevel.NONE)
 	private Object name;
 
-	public PieSeries setName(String name) {
+	public PieSeries setName(Number name) {
 		this.name = name;
 		return this;
 	}
 
-	public PieSeries setName(Number name) {
+	public PieSeries setName(String name) {
 		this.name = name;
 		return this;
 	}
@@ -125,7 +127,18 @@ public class PieSeries implements PieSeriesOption {
 
 	private String[][] colorLayer;
 
+	@Setter(AccessLevel.NONE)
 	private Object emphasis;
+
+	public PieSeries setEmphasis(PieEmphasisOption emphasis) {
+		this.emphasis = emphasis;
+		return this;
+	}
+
+	public PieSeries setEmphasis(Object emphasis) {
+		this.emphasis = emphasis;
+		return this;
+	}
 
 	private Object select;
 
@@ -148,12 +161,12 @@ public class PieSeries implements PieSeriesOption {
 	@Setter(AccessLevel.NONE)
 	private Object dataGroupId;
 
-	public PieSeries setDataGroupId(String dataGroupId) {
+	public PieSeries setDataGroupId(Number dataGroupId) {
 		this.dataGroupId = dataGroupId;
 		return this;
 	}
 
-	public PieSeries setDataGroupId(Number dataGroupId) {
+	public PieSeries setDataGroupId(String dataGroupId) {
 		this.dataGroupId = dataGroupId;
 		return this;
 	}
@@ -161,12 +174,12 @@ public class PieSeries implements PieSeriesOption {
 	@Setter(AccessLevel.NONE)
 	private Object data;
 
-	public PieSeries setData(Object data) {
+	public PieSeries setData(PieDataItemOption[] data) {
 		this.data = data;
 		return this;
 	}
 
-	public PieSeries setData(PieDataItemOption[] data) {
+	public PieSeries setData(Object[][] data) {
 		this.data = data;
 		return this;
 	}
@@ -176,7 +189,7 @@ public class PieSeries implements PieSeriesOption {
 		return this;
 	}
 
-	public PieSeries setData(Object[][] data) {
+	public PieSeries setData(Object data) {
 		this.data = data;
 		return this;
 	}
@@ -219,7 +232,7 @@ public class PieSeries implements PieSeriesOption {
 		return this;
 	}
 
-	private Object labelLine;
+	private LabelLineOption labelLine;
 
 	private Object labelLayout;
 
@@ -243,12 +256,12 @@ public class PieSeries implements PieSeriesOption {
 	@Setter(AccessLevel.NONE)
 	private Object selectedMode;
 
-	public PieSeries setSelectedMode(String selectedMode) {
+	public PieSeries setSelectedMode(Boolean selectedMode) {
 		this.selectedMode = selectedMode;
 		return this;
 	}
 
-	public PieSeries setSelectedMode(Boolean selectedMode) {
+	public PieSeries setSelectedMode(String selectedMode) {
 		this.selectedMode = selectedMode;
 		return this;
 	}
@@ -273,6 +286,16 @@ public class PieSeries implements PieSeriesOption {
 	@Setter(AccessLevel.NONE)
 	private Object radius;
 
+	public PieSeries setRadius(Number radius) {
+		this.radius = radius;
+		return this;
+	}
+
+	public PieSeries setRadius(String radius) {
+		this.radius = radius;
+		return this;
+	}
+
 	public PieSeries setRadius(String[] radius) {
 		this.radius = radius;
 		return this;
@@ -283,25 +306,15 @@ public class PieSeries implements PieSeriesOption {
 		return this;
 	}
 
-	public PieSeries setRadius(String radius) {
-		this.radius = radius;
-		return this;
-	}
-
-	public PieSeries setRadius(Number radius) {
-		this.radius = radius;
-		return this;
-	}
-
 	@Setter(AccessLevel.NONE)
 	private Object width;
 
-	public PieSeries setWidth(String width) {
+	public PieSeries setWidth(Number width) {
 		this.width = width;
 		return this;
 	}
 
-	public PieSeries setWidth(Number width) {
+	public PieSeries setWidth(String width) {
 		this.width = width;
 		return this;
 	}
@@ -309,12 +322,12 @@ public class PieSeries implements PieSeriesOption {
 	@Setter(AccessLevel.NONE)
 	private Object height;
 
-	public PieSeries setHeight(String height) {
+	public PieSeries setHeight(Number height) {
 		this.height = height;
 		return this;
 	}
 
-	public PieSeries setHeight(Number height) {
+	public PieSeries setHeight(String height) {
 		this.height = height;
 		return this;
 	}
@@ -322,12 +335,12 @@ public class PieSeries implements PieSeriesOption {
 	@Setter(AccessLevel.NONE)
 	private Object top;
 
-	public PieSeries setTop(String top) {
+	public PieSeries setTop(Number top) {
 		this.top = top;
 		return this;
 	}
 
-	public PieSeries setTop(Number top) {
+	public PieSeries setTop(String top) {
 		this.top = top;
 		return this;
 	}
@@ -335,12 +348,12 @@ public class PieSeries implements PieSeriesOption {
 	@Setter(AccessLevel.NONE)
 	private Object right;
 
-	public PieSeries setRight(String right) {
+	public PieSeries setRight(Number right) {
 		this.right = right;
 		return this;
 	}
 
-	public PieSeries setRight(Number right) {
+	public PieSeries setRight(String right) {
 		this.right = right;
 		return this;
 	}
@@ -348,12 +361,12 @@ public class PieSeries implements PieSeriesOption {
 	@Setter(AccessLevel.NONE)
 	private Object bottom;
 
-	public PieSeries setBottom(String bottom) {
+	public PieSeries setBottom(Number bottom) {
 		this.bottom = bottom;
 		return this;
 	}
 
-	public PieSeries setBottom(Number bottom) {
+	public PieSeries setBottom(String bottom) {
 		this.bottom = bottom;
 		return this;
 	}
@@ -361,12 +374,12 @@ public class PieSeries implements PieSeriesOption {
 	@Setter(AccessLevel.NONE)
 	private Object left;
 
-	public PieSeries setLeft(String left) {
+	public PieSeries setLeft(Number left) {
 		this.left = left;
 		return this;
 	}
 
-	public PieSeries setLeft(Number left) {
+	public PieSeries setLeft(String left) {
 		this.left = left;
 		return this;
 	}
@@ -376,12 +389,12 @@ public class PieSeries implements PieSeriesOption {
 	@Setter(AccessLevel.NONE)
 	private Object datasetId;
 
-	public PieSeries setDatasetId(String datasetId) {
+	public PieSeries setDatasetId(Number datasetId) {
 		this.datasetId = datasetId;
 		return this;
 	}
 
-	public PieSeries setDatasetId(Number datasetId) {
+	public PieSeries setDatasetId(String datasetId) {
 		this.datasetId = datasetId;
 		return this;
 	}

@@ -18,9 +18,9 @@ public interface SeriesOption extends ComponentOption, AnimationOptionMixin, Col
 
 	SeriesOption setCursor(String cursor);
 
-	SeriesOption setDataGroupId(String dataGroupId);
-
 	SeriesOption setDataGroupId(Number dataGroupId);
+
+	SeriesOption setDataGroupId(String dataGroupId);
 
 	SeriesOption setData(Object data);
 
@@ -42,7 +42,7 @@ public interface SeriesOption extends ComponentOption, AnimationOptionMixin, Col
 
 	SeriesOption setSeriesLayoutBy(String seriesLayoutBy);
 
-	SeriesOption setLabelLine(Object labelLine);
+	SeriesOption setLabelLine(LabelLineOption labelLine);
 
 	SeriesOption setLabelLayout(Object labelLayout);
 
@@ -54,7 +54,7 @@ public interface SeriesOption extends ComponentOption, AnimationOptionMixin, Col
 
 	SeriesOption setSelectedMap(Map<String, Boolean> selectedMap);
 
-	SeriesOption setSelectedMode(String selectedMode);
-
 	SeriesOption setSelectedMode(Boolean selectedMode);
+
+	SeriesOption setSelectedMode(String selectedMode);
 }

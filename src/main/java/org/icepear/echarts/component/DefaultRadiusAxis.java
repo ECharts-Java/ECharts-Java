@@ -30,12 +30,12 @@ public class DefaultRadiusAxis implements DefaultRadiusAxisOption {
 	@Setter(AccessLevel.NONE)
 	private Object id;
 
-	public DefaultRadiusAxis setId(String id) {
+	public DefaultRadiusAxis setId(Number id) {
 		this.id = id;
 		return this;
 	}
 
-	public DefaultRadiusAxis setId(Number id) {
+	public DefaultRadiusAxis setId(String id) {
 		this.id = id;
 		return this;
 	}
@@ -43,12 +43,12 @@ public class DefaultRadiusAxis implements DefaultRadiusAxisOption {
 	@Setter(AccessLevel.NONE)
 	private Object name;
 
-	public DefaultRadiusAxis setName(String name) {
+	public DefaultRadiusAxis setName(Number name) {
 		this.name = name;
 		return this;
 	}
 
-	public DefaultRadiusAxis setName(Number name) {
+	public DefaultRadiusAxis setName(String name) {
 		this.name = name;
 		return this;
 	}
@@ -156,12 +156,12 @@ public class DefaultRadiusAxis implements DefaultRadiusAxisOption {
 	@Setter(AccessLevel.NONE)
 	private Object min;
 
-	public DefaultRadiusAxis setMin(String min) {
+	public DefaultRadiusAxis setMin(Number min) {
 		this.min = min;
 		return this;
 	}
 
-	public DefaultRadiusAxis setMin(Number min) {
+	public DefaultRadiusAxis setMin(String min) {
 		this.min = min;
 		return this;
 	}
@@ -169,12 +169,12 @@ public class DefaultRadiusAxis implements DefaultRadiusAxisOption {
 	@Setter(AccessLevel.NONE)
 	private Object max;
 
-	public DefaultRadiusAxis setMax(String max) {
+	public DefaultRadiusAxis setMax(Number max) {
 		this.max = max;
 		return this;
 	}
 
-	public DefaultRadiusAxis setMax(Number max) {
+	public DefaultRadiusAxis setMax(String max) {
 		this.max = max;
 		return this;
 	}
