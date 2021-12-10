@@ -242,7 +242,7 @@ def generate_class_body_lines(obj, fields, lines):
         else:
             lines.append("\n\t@Setter(AccessLevel.NONE)\n")
             lines.append("\tprivate Object {};\n".format(name))
-            for type in types:
+            for type in sorted(list(types)):
                 lines.append("\n\tpublic {} set{}({} {}) {{\n".format(
                     obj["name"], name[0].upper() + name[1:], type, name))
                 lines.append("\t\tthis.{} = {};\n".format(name, name))
@@ -254,7 +254,7 @@ def generate_interface_body_lines(obj, fields, lines):
     if len(fields) == 0:
         lines.append("\n")
     for name, types in fields.items():
-        for type in types:
+        for type in sorted(list(types)):
             lines.append("\n\t{} set{}({} {});\n".format(
                 obj["name"], name[0].upper() + name[1:], type, name))
 
