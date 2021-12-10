@@ -113,12 +113,12 @@ public class MarkArea implements MarkAreaOption {
 	@Setter(AccessLevel.NONE)
 	private Object data;
 
-	public MarkArea setData(Object[] data) {
+	public MarkArea setData(MarkAreaDataItemOption[] data) {
 		this.data = data;
 		return this;
 	}
 
-	public MarkArea setData(MarkAreaDataItemOption[] data) {
+	public MarkArea setData(Object[] data) {
 		this.data = data;
 		return this;
 	}

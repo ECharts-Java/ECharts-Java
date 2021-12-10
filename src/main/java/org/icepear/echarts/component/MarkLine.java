@@ -114,12 +114,12 @@ public class MarkLine implements MarkLineOption {
 	@Setter(AccessLevel.NONE)
 	private Object data;
 
-	public MarkLine setData(Object[] data) {
+	public MarkLine setData(MarkLineDataItemOption[] data) {
 		this.data = data;
 		return this;
 	}
 
-	public MarkLine setData(MarkLineDataItemOption[] data) {
+	public MarkLine setData(Object[] data) {
 		this.data = data;
 		return this;
 	}
@@ -141,12 +141,12 @@ public class MarkLine implements MarkLineOption {
 	@Setter(AccessLevel.NONE)
 	private Object symbol;
 
-	public MarkLine setSymbol(String[] symbol) {
+	public MarkLine setSymbol(String symbol) {
 		this.symbol = symbol;
 		return this;
 	}
 
-	public MarkLine setSymbol(String symbol) {
+	public MarkLine setSymbol(String[] symbol) {
 		this.symbol = symbol;
 		return this;
 	}
@@ -185,17 +185,17 @@ public class MarkLine implements MarkLineOption {
 		return this;
 	}
 
+	public MarkLine setSymbolOffset(Number[] symbolOffset) {
+		this.symbolOffset = symbolOffset;
+		return this;
+	}
+
 	public MarkLine setSymbolOffset(String symbolOffset) {
 		this.symbolOffset = symbolOffset;
 		return this;
 	}
 
 	public MarkLine setSymbolOffset(String[] symbolOffset) {
-		this.symbolOffset = symbolOffset;
-		return this;
-	}
-
-	public MarkLine setSymbolOffset(Number[] symbolOffset) {
 		this.symbolOffset = symbolOffset;
 		return this;
 	}

@@ -18,12 +18,12 @@ public class ToolboxMagicTypeFeature implements ToolboxMagicTypeFeatureOption {
 	@Setter(AccessLevel.NONE)
 	private Object title;
 
-	public ToolboxMagicTypeFeature setTitle(String title) {
+	public ToolboxMagicTypeFeature setTitle(Map<String, String> title) {
 		this.title = title;
 		return this;
 	}
 
-	public ToolboxMagicTypeFeature setTitle(Map<String, String> title) {
+	public ToolboxMagicTypeFeature setTitle(String title) {
 		this.title = title;
 		return this;
 	}
@@ -31,12 +31,12 @@ public class ToolboxMagicTypeFeature implements ToolboxMagicTypeFeatureOption {
 	@Setter(AccessLevel.NONE)
 	private Object icon;
 
-	public ToolboxMagicTypeFeature setIcon(String icon) {
+	public ToolboxMagicTypeFeature setIcon(Map<String, String> icon) {
 		this.icon = icon;
 		return this;
 	}
 
-	public ToolboxMagicTypeFeature setIcon(Map<String, String> icon) {
+	public ToolboxMagicTypeFeature setIcon(String icon) {
 		this.icon = icon;
 		return this;
 	}

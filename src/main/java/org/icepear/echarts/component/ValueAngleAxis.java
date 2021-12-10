@@ -197,12 +197,12 @@ public class ValueAngleAxis implements ValueAngleAxisOption {
 	@Setter(AccessLevel.NONE)
 	private Object boundaryGap;
 
-	public ValueAngleAxis setBoundaryGap(String[] boundaryGap) {
+	public ValueAngleAxis setBoundaryGap(Number[] boundaryGap) {
 		this.boundaryGap = boundaryGap;
 		return this;
 	}
 
-	public ValueAngleAxis setBoundaryGap(Number[] boundaryGap) {
+	public ValueAngleAxis setBoundaryGap(String[] boundaryGap) {
 		this.boundaryGap = boundaryGap;
 		return this;
 	}

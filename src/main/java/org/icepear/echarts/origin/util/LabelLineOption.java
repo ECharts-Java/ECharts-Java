@@ -13,9 +13,9 @@ public interface LabelLineOption {
 
 	LabelLineOption setLength2(Number length2);
 
-	LabelLineOption setSmooth(Number smooth);
-
 	LabelLineOption setSmooth(Boolean smooth);
+
+	LabelLineOption setSmooth(Number smooth);
 
 	LabelLineOption setMinTurnAngle(Number minTurnAngle);
 

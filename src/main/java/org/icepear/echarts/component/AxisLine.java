@@ -32,12 +32,12 @@ public class AxisLine implements AxisLineOption {
 	@Setter(AccessLevel.NONE)
 	private Object symbol;
 
-	public AxisLine setSymbol(String[] symbol) {
+	public AxisLine setSymbol(String symbol) {
 		this.symbol = symbol;
 		return this;
 	}
 
-	public AxisLine setSymbol(String symbol) {
+	public AxisLine setSymbol(String[] symbol) {
 		this.symbol = symbol;
 		return this;
 	}
@@ -47,12 +47,12 @@ public class AxisLine implements AxisLineOption {
 	@Setter(AccessLevel.NONE)
 	private Object symbolOffset;
 
-	public AxisLine setSymbolOffset(String[] symbolOffset) {
+	public AxisLine setSymbolOffset(Number symbolOffset) {
 		this.symbolOffset = symbolOffset;
 		return this;
 	}
 
-	public AxisLine setSymbolOffset(Number symbolOffset) {
+	public AxisLine setSymbolOffset(Number[] symbolOffset) {
 		this.symbolOffset = symbolOffset;
 		return this;
 	}
@@ -62,7 +62,7 @@ public class AxisLine implements AxisLineOption {
 		return this;
 	}
 
-	public AxisLine setSymbolOffset(Number[] symbolOffset) {
+	public AxisLine setSymbolOffset(String[] symbolOffset) {
 		this.symbolOffset = symbolOffset;
 		return this;
 	}

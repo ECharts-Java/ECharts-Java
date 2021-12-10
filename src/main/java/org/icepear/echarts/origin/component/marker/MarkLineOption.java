@@ -10,9 +10,9 @@ public interface MarkLineOption extends MarkerOption, MarkLineStateOption, State
 
 	MarkLineOption setMainType(String mainType);
 
-	MarkLineOption setSymbol(String[] symbol);
-
 	MarkLineOption setSymbol(String symbol);
+
+	MarkLineOption setSymbol(String[] symbol);
 
 	MarkLineOption setSymbolSize(Number symbolSize);
 
@@ -24,11 +24,11 @@ public interface MarkLineOption extends MarkerOption, MarkLineStateOption, State
 
 	MarkLineOption setSymbolOffset(Number symbolOffset);
 
+	MarkLineOption setSymbolOffset(Number[] symbolOffset);
+
 	MarkLineOption setSymbolOffset(String symbolOffset);
 
 	MarkLineOption setSymbolOffset(String[] symbolOffset);
-
-	MarkLineOption setSymbolOffset(Number[] symbolOffset);
 
 	MarkLineOption setPrecision(Number precision);
 

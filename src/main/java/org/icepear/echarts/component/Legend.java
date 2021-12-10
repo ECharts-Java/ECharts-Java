@@ -263,12 +263,12 @@ public class Legend implements LegendOption {
 	@Setter(AccessLevel.NONE)
 	private Object data;
 
-	public Legend setData(String[] data) {
+	public Legend setData(Object[] data) {
 		this.data = data;
 		return this;
 	}
 
-	public Legend setData(Object[] data) {
+	public Legend setData(String[] data) {
 		this.data = data;
 		return this;
 	}

@@ -115,12 +115,12 @@ public class PieSeries implements PieSeriesOption {
 	@Setter(AccessLevel.NONE)
 	private Object color;
 
-	public PieSeries setColor(String[] color) {
+	public PieSeries setColor(String color) {
 		this.color = color;
 		return this;
 	}
 
-	public PieSeries setColor(String color) {
+	public PieSeries setColor(String[] color) {
 		this.color = color;
 		return this;
 	}
@@ -130,12 +130,12 @@ public class PieSeries implements PieSeriesOption {
 	@Setter(AccessLevel.NONE)
 	private Object emphasis;
 
-	public PieSeries setEmphasis(PieEmphasisOption emphasis) {
+	public PieSeries setEmphasis(Object emphasis) {
 		this.emphasis = emphasis;
 		return this;
 	}
 
-	public PieSeries setEmphasis(Object emphasis) {
+	public PieSeries setEmphasis(PieEmphasisOption emphasis) {
 		this.emphasis = emphasis;
 		return this;
 	}
@@ -174,12 +174,7 @@ public class PieSeries implements PieSeriesOption {
 	@Setter(AccessLevel.NONE)
 	private Object data;
 
-	public PieSeries setData(PieDataItemOption[] data) {
-		this.data = data;
-		return this;
-	}
-
-	public PieSeries setData(Object[][] data) {
+	public PieSeries setData(Object data) {
 		this.data = data;
 		return this;
 	}
@@ -189,7 +184,12 @@ public class PieSeries implements PieSeriesOption {
 		return this;
 	}
 
-	public PieSeries setData(Object data) {
+	public PieSeries setData(Object[][] data) {
+		this.data = data;
+		return this;
+	}
+
+	public PieSeries setData(PieDataItemOption[] data) {
 		this.data = data;
 		return this;
 	}
@@ -201,12 +201,12 @@ public class PieSeries implements PieSeriesOption {
 	@Setter(AccessLevel.NONE)
 	private Object progressive;
 
-	public PieSeries setProgressive(Number progressive) {
+	public PieSeries setProgressive(Boolean progressive) {
 		this.progressive = progressive;
 		return this;
 	}
 
-	public PieSeries setProgressive(Boolean progressive) {
+	public PieSeries setProgressive(Number progressive) {
 		this.progressive = progressive;
 		return this;
 	}
@@ -222,12 +222,12 @@ public class PieSeries implements PieSeriesOption {
 	@Setter(AccessLevel.NONE)
 	private Object seriesLayoutBy;
 
-	public PieSeries setSeriesLayoutBy(String seriesLayoutBy) {
+	public PieSeries setSeriesLayoutBy(Object seriesLayoutBy) {
 		this.seriesLayoutBy = seriesLayoutBy;
 		return this;
 	}
 
-	public PieSeries setSeriesLayoutBy(Object seriesLayoutBy) {
+	public PieSeries setSeriesLayoutBy(String seriesLayoutBy) {
 		this.seriesLayoutBy = seriesLayoutBy;
 		return this;
 	}
@@ -273,12 +273,12 @@ public class PieSeries implements PieSeriesOption {
 	@Setter(AccessLevel.NONE)
 	private Object center;
 
-	public PieSeries setCenter(String[] center) {
+	public PieSeries setCenter(Number[] center) {
 		this.center = center;
 		return this;
 	}
 
-	public PieSeries setCenter(Number[] center) {
+	public PieSeries setCenter(String[] center) {
 		this.center = center;
 		return this;
 	}
@@ -291,17 +291,17 @@ public class PieSeries implements PieSeriesOption {
 		return this;
 	}
 
+	public PieSeries setRadius(Number[] radius) {
+		this.radius = radius;
+		return this;
+	}
+
 	public PieSeries setRadius(String radius) {
 		this.radius = radius;
 		return this;
 	}
 
 	public PieSeries setRadius(String[] radius) {
-		this.radius = radius;
-		return this;
-	}
-
-	public PieSeries setRadius(Number[] radius) {
 		this.radius = radius;
 		return this;
 	}

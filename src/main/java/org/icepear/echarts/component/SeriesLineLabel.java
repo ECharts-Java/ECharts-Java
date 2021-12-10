@@ -56,12 +56,12 @@ public class SeriesLineLabel implements SeriesLineLabelOption {
 	@Setter(AccessLevel.NONE)
 	private Object backgroundColor;
 
-	public SeriesLineLabel setBackgroundColor(String backgroundColor) {
+	public SeriesLineLabel setBackgroundColor(Object backgroundColor) {
 		this.backgroundColor = backgroundColor;
 		return this;
 	}
 
-	public SeriesLineLabel setBackgroundColor(Object backgroundColor) {
+	public SeriesLineLabel setBackgroundColor(String backgroundColor) {
 		this.backgroundColor = backgroundColor;
 		return this;
 	}
@@ -138,12 +138,12 @@ public class SeriesLineLabel implements SeriesLineLabelOption {
 	@Setter(AccessLevel.NONE)
 	private Object position;
 
-	public SeriesLineLabel setPosition(String position) {
+	public SeriesLineLabel setPosition(Object position) {
 		this.position = position;
 		return this;
 	}
 
-	public SeriesLineLabel setPosition(Object position) {
+	public SeriesLineLabel setPosition(String position) {
 		this.position = position;
 		return this;
 	}

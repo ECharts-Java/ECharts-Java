@@ -56,12 +56,12 @@ public class ValueAxisLabel implements ValueAxisLabelOption {
 	@Setter(AccessLevel.NONE)
 	private Object backgroundColor;
 
-	public ValueAxisLabel setBackgroundColor(String backgroundColor) {
+	public ValueAxisLabel setBackgroundColor(Object backgroundColor) {
 		this.backgroundColor = backgroundColor;
 		return this;
 	}
 
-	public ValueAxisLabel setBackgroundColor(Object backgroundColor) {
+	public ValueAxisLabel setBackgroundColor(String backgroundColor) {
 		this.backgroundColor = backgroundColor;
 		return this;
 	}
@@ -152,12 +152,12 @@ public class ValueAxisLabel implements ValueAxisLabelOption {
 	@Setter(AccessLevel.NONE)
 	private Object formatter;
 
-	public ValueAxisLabel setFormatter(String formatter) {
+	public ValueAxisLabel setFormatter(Object formatter) {
 		this.formatter = formatter;
 		return this;
 	}
 
-	public ValueAxisLabel setFormatter(Object formatter) {
+	public ValueAxisLabel setFormatter(String formatter) {
 		this.formatter = formatter;
 		return this;
 	}

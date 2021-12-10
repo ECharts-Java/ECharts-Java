@@ -40,12 +40,12 @@ public class PieItemStyle implements PieItemStyleOption {
 	@Setter(AccessLevel.NONE)
 	private Object decal;
 
-	public PieItemStyle setDecal(String decal) {
+	public PieItemStyle setDecal(Object decal) {
 		this.decal = decal;
 		return this;
 	}
 
-	public PieItemStyle setDecal(Object decal) {
+	public PieItemStyle setDecal(String decal) {
 		this.decal = decal;
 		return this;
 	}
@@ -58,17 +58,17 @@ public class PieItemStyle implements PieItemStyleOption {
 		return this;
 	}
 
+	public PieItemStyle setBorderRadius(Number[] borderRadius) {
+		this.borderRadius = borderRadius;
+		return this;
+	}
+
 	public PieItemStyle setBorderRadius(String borderRadius) {
 		this.borderRadius = borderRadius;
 		return this;
 	}
 
 	public PieItemStyle setBorderRadius(String[] borderRadius) {
-		this.borderRadius = borderRadius;
-		return this;
-	}
-
-	public PieItemStyle setBorderRadius(Number[] borderRadius) {
 		this.borderRadius = borderRadius;
 		return this;
 	}

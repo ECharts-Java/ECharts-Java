@@ -18,12 +18,12 @@ public class ToolboxRestoreFeature implements ToolboxRestoreFeatureOption {
 	@Setter(AccessLevel.NONE)
 	private Object title;
 
-	public ToolboxRestoreFeature setTitle(String title) {
+	public ToolboxRestoreFeature setTitle(Map<String, String> title) {
 		this.title = title;
 		return this;
 	}
 
-	public ToolboxRestoreFeature setTitle(Map<String, String> title) {
+	public ToolboxRestoreFeature setTitle(String title) {
 		this.title = title;
 		return this;
 	}
@@ -31,12 +31,12 @@ public class ToolboxRestoreFeature implements ToolboxRestoreFeatureOption {
 	@Setter(AccessLevel.NONE)
 	private Object icon;
 
-	public ToolboxRestoreFeature setIcon(String icon) {
+	public ToolboxRestoreFeature setIcon(Map<String, String> icon) {
 		this.icon = icon;
 		return this;
 	}
 
-	public ToolboxRestoreFeature setIcon(Map<String, String> icon) {
+	public ToolboxRestoreFeature setIcon(String icon) {
 		this.icon = icon;
 		return this;
 	}

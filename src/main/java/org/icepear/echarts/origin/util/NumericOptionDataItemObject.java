@@ -8,9 +8,9 @@ public interface NumericOptionDataItemObject extends OptionDataItemObject {
 
 	NumericOptionDataItemObject setValue(Number value);
 
+	NumericOptionDataItemObject setValue(Number[] value);
+
 	NumericOptionDataItemObject setValue(String value);
 
 	NumericOptionDataItemObject setValue(String[] value);
-
-	NumericOptionDataItemObject setValue(Number[] value);
 }

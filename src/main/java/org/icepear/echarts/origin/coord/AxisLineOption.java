@@ -15,19 +15,19 @@ public interface AxisLineOption {
 
 	AxisLineOption setOnZeroAxisIndex(Number onZeroAxisIndex);
 
-	AxisLineOption setSymbol(String[] symbol);
-
 	AxisLineOption setSymbol(String symbol);
+
+	AxisLineOption setSymbol(String[] symbol);
 
 	AxisLineOption setSymbolSize(Number[] symbolSize);
 
-	AxisLineOption setSymbolOffset(String[] symbolOffset);
-
 	AxisLineOption setSymbolOffset(Number symbolOffset);
+
+	AxisLineOption setSymbolOffset(Number[] symbolOffset);
 
 	AxisLineOption setSymbolOffset(String symbolOffset);
 
-	AxisLineOption setSymbolOffset(Number[] symbolOffset);
+	AxisLineOption setSymbolOffset(String[] symbolOffset);
 
 	AxisLineOption setLineStyle(LineStyleOption lineStyle);
 }

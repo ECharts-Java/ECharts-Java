@@ -18,12 +18,12 @@ public class ToolboxDataViewFeature implements ToolboxDataViewFeatureOption {
 	@Setter(AccessLevel.NONE)
 	private Object title;
 
-	public ToolboxDataViewFeature setTitle(String title) {
+	public ToolboxDataViewFeature setTitle(Map<String, String> title) {
 		this.title = title;
 		return this;
 	}
 
-	public ToolboxDataViewFeature setTitle(Map<String, String> title) {
+	public ToolboxDataViewFeature setTitle(String title) {
 		this.title = title;
 		return this;
 	}
@@ -31,12 +31,12 @@ public class ToolboxDataViewFeature implements ToolboxDataViewFeatureOption {
 	@Setter(AccessLevel.NONE)
 	private Object icon;
 
-	public ToolboxDataViewFeature setIcon(String icon) {
+	public ToolboxDataViewFeature setIcon(Map<String, String> icon) {
 		this.icon = icon;
 		return this;
 	}
 
-	public ToolboxDataViewFeature setIcon(Map<String, String> icon) {
+	public ToolboxDataViewFeature setIcon(String icon) {
 		this.icon = icon;
 		return this;
 	}
