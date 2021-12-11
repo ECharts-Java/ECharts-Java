@@ -18,7 +18,7 @@ public interface ToolboxOption extends ComponentOption, BoxLayoutOptionMixin, Bo
 
 	ToolboxOption setShow(Boolean show);
 
-	ToolboxOption setOrient(Object orient);
+	ToolboxOption setOrient(String orient);
 
 	ToolboxOption setBackgroundColor(String backgroundColor);
 

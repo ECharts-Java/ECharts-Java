@@ -13,6 +13,8 @@ public interface CircleLayoutOptionMixin {
 
 	CircleLayoutOptionMixin setRadius(Number[] radius);
 
+	CircleLayoutOptionMixin setRadius(Object[] radius);
+
 	CircleLayoutOptionMixin setRadius(String radius);
 
 	CircleLayoutOptionMixin setRadius(String[] radius);

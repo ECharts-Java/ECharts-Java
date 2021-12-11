@@ -296,6 +296,11 @@ public class PieSeries implements PieSeriesOption {
 		return this;
 	}
 
+	public PieSeries setRadius(Object[] radius) {
+		this.radius = radius;
+		return this;
+	}
+
 	public PieSeries setRadius(String radius) {
 		this.radius = radius;
 		return this;
