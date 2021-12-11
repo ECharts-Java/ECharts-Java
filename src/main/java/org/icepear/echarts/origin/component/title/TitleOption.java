@@ -26,11 +26,11 @@ public interface TitleOption extends ComponentOption, BoxLayoutOptionMixin, Bord
 
 	TitleOption setSubtarget(String subtarget);
 
-	TitleOption setTextAlign(Object textAlign);
+	TitleOption setTextAlign(String textAlign);
 
-	TitleOption setTextVerticalAlign(Object textVerticalAlign);
+	TitleOption setTextVerticalAlign(String textVerticalAlign);
 
-	TitleOption setTextBaseline(Object textBaseline);
+	TitleOption setTextBaseline(String textBaseline);
 
 	TitleOption setBackgroundColor(String backgroundColor);
 
