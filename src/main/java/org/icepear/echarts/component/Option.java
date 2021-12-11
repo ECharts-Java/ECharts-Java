@@ -6,6 +6,7 @@ import lombok.Setter;
 import lombok.experimental.Accessors;
 
 import org.icepear.echarts.origin.component.axisPointer.AxisPointerOption;
+import org.icepear.echarts.origin.component.dataset.DatasetOption;
 import org.icepear.echarts.origin.component.legend.LegendOption;
 import org.icepear.echarts.origin.component.title.TitleOption;
 import org.icepear.echarts.origin.component.toolbox.ToolboxOption;
@@ -19,6 +20,7 @@ import org.icepear.echarts.origin.coord.radar.RadarOption;
 import org.icepear.echarts.origin.export.EChartsOption;
 import org.icepear.echarts.origin.util.ComponentOption;
 import org.icepear.echarts.origin.util.ECUnitOption;
+import org.icepear.echarts.origin.util.MediaUnitOption;
 import org.icepear.echarts.origin.util.SeriesOption;
 
 @Accessors(chain=true)
@@ -139,12 +141,12 @@ public class Option implements EChartsOption {
 	@Setter(AccessLevel.NONE)
 	private Object media;
 
-	public Option setMedia(Object media) {
+	public Option setMedia(MediaUnitOption[] media) {
 		this.media = media;
 		return this;
 	}
 
-	public Option setMedia(Object[] media) {
+	public Option setMedia(Object media) {
 		this.media = media;
 		return this;
 	}
@@ -191,12 +193,12 @@ public class Option implements EChartsOption {
 	@Setter(AccessLevel.NONE)
 	private Object dataset;
 
-	public Option setDataset(Object dataset) {
+	public Option setDataset(DatasetOption dataset) {
 		this.dataset = dataset;
 		return this;
 	}
 
-	public Option setDataset(Object[] dataset) {
+	public Option setDataset(DatasetOption[] dataset) {
 		this.dataset = dataset;
 		return this;
 	}
