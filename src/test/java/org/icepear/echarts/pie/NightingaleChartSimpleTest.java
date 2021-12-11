@@ -27,16 +27,18 @@ public class NightingaleChartSimpleTest {
     @Test
     public void testNightingaleChartSimple() {
         Legend legend = new Legend().setTop("bottom");
-        
+
         Toolbox toolbox = new Toolbox()
                 .setShow(true)
-                .setFeature(new HashMap<>() {{
-                    put("mark", new ToolboxDefaultFeature().setShow(true));
-                    put("dataView", new ToolboxDataViewFeature().setShow(true).setReadOnly(false));
-                    put("restore", new ToolboxRestoreFeature().setShow(true));
-                    put("saveAsImage", new ToolboxSaveAsImageFeature().setShow(true));
-                }});
-        
+                .setFeature(new HashMap<>() {
+                    {
+                        put("mark", new ToolboxDefaultFeature().setShow(true));
+                        put("dataView", new ToolboxDataViewFeature().setShow(true).setReadOnly(false));
+                        put("restore", new ToolboxRestoreFeature().setShow(true));
+                        put("saveAsImage", new ToolboxSaveAsImageFeature().setShow(true));
+                    }
+                });
+
         PieSeries series = new PieSeries()
                 .setName("Nightingale Chart")
                 .setType("pie")
@@ -45,16 +47,16 @@ public class NightingaleChartSimpleTest {
                 .setRoseType("area")
                 .setItemStyle(new PieItemStyle().setBorderRadius(8))
                 .setData(new PieDataItem[] {
-                    new PieDataItem().setValue(40).setName("rose 1"),
-                    new PieDataItem().setValue(38).setName("rose 2"),
-                    new PieDataItem().setValue(32).setName("rose 3"),
-                    new PieDataItem().setValue(30).setName("rose 4"),
-                    new PieDataItem().setValue(28).setName("rose 5"),
-                    new PieDataItem().setValue(26).setName("rose 6"),
-                    new PieDataItem().setValue(22).setName("rose 7"),
-                    new PieDataItem().setValue(18).setName("rose 8")
+                        new PieDataItem().setValue(40).setName("rose 1"),
+                        new PieDataItem().setValue(38).setName("rose 2"),
+                        new PieDataItem().setValue(32).setName("rose 3"),
+                        new PieDataItem().setValue(30).setName("rose 4"),
+                        new PieDataItem().setValue(28).setName("rose 5"),
+                        new PieDataItem().setValue(26).setName("rose 6"),
+                        new PieDataItem().setValue(22).setName("rose 7"),
+                        new PieDataItem().setValue(18).setName("rose 8")
                 });
-        
+
         Option option = new Option()
                 .setLegend(legend)
                 .setToolbox(toolbox)
