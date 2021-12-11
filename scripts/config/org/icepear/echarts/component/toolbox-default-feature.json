@@ -1,0 +1,7 @@
+{
+    "name": "ToolboxDefaultFeature",
+    "type": "class",
+    "implements": [
+        "ToolboxFeatureOption"
+    ]
+}
