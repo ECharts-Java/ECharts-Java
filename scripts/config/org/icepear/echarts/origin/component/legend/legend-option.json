@@ -23,7 +23,7 @@
         {
             "name": "orient",
             "types": [
-                "LayoutOrient"
+                "String"
             ]
         },
         {
