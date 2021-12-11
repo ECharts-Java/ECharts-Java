@@ -42,7 +42,7 @@ ECharts Java is a library for Java developers to use JavaScript visualization li
 - [x] [Two Value-Axes in Polar 1](https://echarts.apache.org/examples/en/editor.html?c=line-polar)
 - [x] [Two Value-Axes in Polar 2](https://echarts.apache.org/examples/en/editor.html?c=line-polar2)
 - [ ] ~~[Tooltip and DataZoom on Mobile](https://echarts.apache.org/examples/en/editor.html?c=line-tooltip-touch)~~
-- [ ] [Share Dataset](https://echarts.apache.org/examples/en/editor.html?c=dataset-link)
+- [ ] ~~[Share Dataset](https://echarts.apache.org/examples/en/editor.html?c=dataset-link)~~
 
 ### [Bar](https://echarts.apache.org/examples/en/index.html#chart-type-bar)
 
@@ -102,7 +102,7 @@ ECharts Java is a library for Java developers to use JavaScript visualization li
 - [ ] [Partition Data to Pies](https://echarts.apache.org/examples/en/editor.html?c=data-transform-multiple-pie)
 - [ ] [Default Arrangement](https://echarts.apache.org/examples/en/editor.html?c=dataset-default)
 - [ ] ~~[Calendar Pie](https://echarts.apache.org/examples/en/editor.html?c=calendar-pie)~~
-- [ ] [Share Dataset](https://echarts.apache.org/examples/en/editor.html?c=dataset-link) (Duplicated)
+- [ ] ~~[Share Dataset](https://echarts.apache.org/examples/en/editor.html?c=dataset-link)~~ (Duplicated)
 
 ## License
 
