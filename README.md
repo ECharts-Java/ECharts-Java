@@ -92,8 +92,8 @@ ECharts Java is a library for Java developers to use JavaScript visualization li
 - [x] [Doughnut Chart](https://echarts.apache.org/examples/en/editor.html?c=pie-doughnut)
 - [ ] ~~[Customized Pie](https://echarts.apache.org/examples/en/editor.html?c=pie-custom)~~
 - [ ] ~~[Texture on Pie Chart](https://echarts.apache.org/examples/en/editor.html?c=pie-pattern)~~
-- [ ] [Nightingale Chart (Fake Data)](https://echarts.apache.org/examples/en/editor.html?c=pie-roseType)
-- [ ] [Nightingale Chart](https://echarts.apache.org/examples/en/editor.html?c=pie-roseType-simple)
+- [x] [Nightingale Chart](https://echarts.apache.org/examples/en/editor.html?c=pie-roseType)
+- [x] [Nightingale Chart (Simple)](https://echarts.apache.org/examples/en/editor.html?c=pie-roseType-simple)
 - [ ] [Pie Label Align](https://echarts.apache.org/examples/en/editor.html?c=pie-alignTo)
 - [ ] ~~[Label Line Adjust](https://echarts.apache.org/examples/en/editor.html?c=pie-labelLine-adjust)~~
 - [ ] [Pie with Scrollable Legend](https://echarts.apache.org/examples/en/editor.html?c=pie-legend)
