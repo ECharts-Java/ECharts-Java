@@ -1,7 +1,5 @@
 {
-    "name": "MediaQuery",
-    "type": "class",
-    "implements": [
-        "MediaQueryOption"
-    ]
+  "name": "MediaQuery",
+  "type": "class",
+  "implements": ["MediaQueryOption"]
 }

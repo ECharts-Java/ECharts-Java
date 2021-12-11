@@ -1,7 +1,5 @@
 {
-    "name": "PieEmphasis",
-    "type": "class",
-    "implements": [
-        "PieEmphasisOption"
-    ]
+  "name": "PieEmphasis",
+  "type": "class",
+  "implements": ["PieEmphasisOption"]
 }

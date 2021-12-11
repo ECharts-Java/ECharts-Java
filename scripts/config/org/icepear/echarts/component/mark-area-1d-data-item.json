@@ -1,7 +1,5 @@
 {
-    "name": "MarkArea1DDataItem",
-    "type": "class",
-    "implements": [
-        "MarkArea1DDataItemOption"
-    ]
+  "name": "MarkArea1DDataItem",
+  "type": "class",
+  "implements": ["MarkArea1DDataItemOption"]
 }

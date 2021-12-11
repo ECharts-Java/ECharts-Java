@@ -1,7 +1,5 @@
 {
-    "name": "PieLabel",
-    "type": "class",
-    "implements": [
-        "PieLabelOption"
-    ]
+  "name": "PieLabel",
+  "type": "class",
+  "implements": ["PieLabelOption"]
 }

@@ -1,74 +1,56 @@
 {
-    "name": "DatasetOption",
-    "type": "interface",
-    "extends": [
-        "ComponentOption",
-        "SeriesEncodeOptionMixin"
-    ],
-    "fields": [
-        {
-            "name": "mainType",
-            "types": [
-                "String"
-            ]
-        },
-        {
-            "name": "seriesLayoutBy",
-            "types": [
-                "SeriesLayoutBy"
-            ]
-        },
-        {
-            "name": "sourceHeader",
-            "types": [
-                "OptionSourceHeader"
-            ]
-        },
-        {
-            "name": "source",
-            "types": [
-                "String[]",
-                "Number[]",
-                "Date[]",
-                "String[][]",
-                "Number[][]",
-                "Date[][]",
-                "OptionDataItemObject[]",
-                "Map<String, Object>[]",
-                "String[][][]",
-                "Number[][][]",
-                "Date[][][]",
-                "Map<String, Object[]>"
-            ]
-        },
-        {
-            "name": "fromDatasetIndex",
-            "types": [
-                "Number"
-            ]
-        },
-        {
-            "name": "fromDatasetId",
-            "types": [
-                "String"
-            ]
-        },
-        {
-            "name": "transform",
-            "types": [
-                "DataTransformOption[]",
-                "DataTransformOption"
-            ]
-        },
-        {
-            "name": "fromTransformResult",
-            "types": [
-                "Number"
-            ]
-        }
-    ],
-    "comments": [
-        "https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/component/dataset/install.ts#L42",
-        "https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/util/types.ts#L583"
-    ]
+  "name": "DatasetOption",
+  "type": "interface",
+  "extends": ["ComponentOption", "SeriesEncodeOptionMixin"],
+  "fields": [
+    {
+      "name": "mainType",
+      "types": ["String"]
+    },
+    {
+      "name": "seriesLayoutBy",
+      "types": ["SeriesLayoutBy"]
+    },
+    {
+      "name": "sourceHeader",
+      "types": ["OptionSourceHeader"]
+    },
+    {
+      "name": "source",
+      "types": [
+        "String[]",
+        "Number[]",
+        "Date[]",
+        "String[][]",
+        "Number[][]",
+        "Date[][]",
+        "OptionDataItemObject[]",
+        "Map<String, Object>[]",
+        "String[][][]",
+        "Number[][][]",
+        "Date[][][]",
+        "Map<String, Object[]>"
+      ]
+    },
+    {
+      "name": "fromDatasetIndex",
+      "types": ["Number"]
+    },
+    {
+      "name": "fromDatasetId",
+      "types": ["String"]
+    },
+    {
+      "name": "transform",
+      "types": ["DataTransformOption[]", "DataTransformOption"]
+    },
+    {
+      "name": "fromTransformResult",
+      "types": ["Number"]
+    }
+  ],
+  "comments": [
+    "https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/component/dataset/install.ts#L42",
+    "https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/util/types.ts#L583"
+  ]
 }

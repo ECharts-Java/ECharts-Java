@@ -1,7 +1,5 @@
 {
-    "name": "PieSeries",
-    "type": "class",
-    "implements": [
-        "PieSeriesOption"
-    ]
+  "name": "PieSeries",
+  "type": "class",
+  "implements": ["PieSeriesOption"]
 }

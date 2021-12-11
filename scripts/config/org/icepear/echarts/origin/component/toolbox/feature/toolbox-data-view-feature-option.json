@@ -1,85 +1,58 @@
 {
-    "name": "ToolboxDataViewFeatureOption",
-    "type": "interface",
-    "extends": [
-        "ToolboxFeatureOption"
-    ],
-    "fields": [
-        {
-            "name": "readOnly",
-            "types": [
-                "Boolean"
-            ]
-        },
-        {
-            "name": "optionToContent",
-            "types": [
-                "HTMLElement",
-                "Object"
-            ]
-        },
-        {
-            "name": "contentToOption",
-            "types": [
-                "Object"
-            ]
-        },
-        {
-            "name": "icon",
-            "types": [
-                "String"
-            ]
-        },
-        {
-            "name": "title",
-            "types": [
-                "String"
-            ]
-        },
-        {
-            "name": "lang",
-            "types": [
-                "String[]"
-            ]
-        },
-        {
-            "name": "backgroundColor",
-            "types": [
-                "String"
-            ]
-        },
-        {
-            "name": "textColor",
-            "types": [
-                "String"
-            ]
-        },
-        {
-            "name": "textareaColor",
-            "types": [
-                "String"
-            ]
-        },
-        {
-            "name": "textareaBorderColor",
-            "types": [
-                "String"
-            ]
-        },
-        {
-            "name": "buttonColor",
-            "types": [
-                "String"
-            ]
-        },
-        {
-            "name": "buttonTextColor",
-            "types": [
-                "String"
-            ]
-        }
-    ],
-    "comments": [
-        "https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/component/toolbox/feature/DataView.ts#L296"
-    ]
+  "name": "ToolboxDataViewFeatureOption",
+  "type": "interface",
+  "extends": ["ToolboxFeatureOption"],
+  "fields": [
+    {
+      "name": "readOnly",
+      "types": ["Boolean"]
+    },
+    {
+      "name": "optionToContent",
+      "types": ["HTMLElement", "Object"]
+    },
+    {
+      "name": "contentToOption",
+      "types": ["Object"]
+    },
+    {
+      "name": "icon",
+      "types": ["String"]
+    },
+    {
+      "name": "title",
+      "types": ["String"]
+    },
+    {
+      "name": "lang",
+      "types": ["String[]"]
+    },
+    {
+      "name": "backgroundColor",
+      "types": ["String"]
+    },
+    {
+      "name": "textColor",
+      "types": ["String"]
+    },
+    {
+      "name": "textareaColor",
+      "types": ["String"]
+    },
+    {
+      "name": "textareaBorderColor",
+      "types": ["String"]
+    },
+    {
+      "name": "buttonColor",
+      "types": ["String"]
+    },
+    {
+      "name": "buttonTextColor",
+      "types": ["String"]
+    }
+  ],
+  "comments": [
+    "https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/component/toolbox/feature/DataView.ts#L296"
+  ]
 }

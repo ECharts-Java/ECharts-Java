@@ -1,70 +1,48 @@
 {
-    "grid": {
-        "containLabel": true,
-        "right": "4%",
-        "bottom": "3%",
-        "left": "3%"
+  "grid": {
+    "containLabel": true,
+    "right": "4%",
+    "bottom": "3%",
+    "left": "3%"
+  },
+  "xAxis": {
+    "axisLabel": {
+      "formatter": "{value} °C"
     },
-    "xAxis": {
-        "axisLabel": {
-            "formatter": "{value} °C"
-        },
-        "type": "value"
+    "type": "value"
+  },
+  "yAxis": {
+    "boundaryGap": false,
+    "data": ["0", "10", "20", "30", "40", "50", "60", "70", "80"],
+    "axisLabel": {
+      "formatter": "{value} km"
     },
-    "yAxis": {
-        "boundaryGap": false,
-        "data": [
-            "0",
-            "10",
-            "20",
-            "30",
-            "40",
-            "50",
-            "60",
-            "70",
-            "80"
-        ],
-        "axisLabel": {
-            "formatter": "{value} km"
-        },
-        "axisLine": {
-            "onZero": false
-        },
-        "type": "category"
+    "axisLine": {
+      "onZero": false
     },
-    "tooltip": {
-        "trigger": "axis",
-        "formatter": "Temperature : <br/>{b}km : {c}°C"
-    },
-    "legend": {
-        "data": [
-            "Altitude (km) vs. temperature (°C)"
-        ]
-    },
-    "series": [
-        {
-            "lineStyle": {
-                "width": 3,
-                "shadowBlur": 10,
-                "shadowColor": "rgba(0,0,0,0.3)",
-                "shadowOffsetY": 8
-            },
-            "smooth": true,
-            "data": [
-                15,
-                -50,
-                -56.5,
-                -46.5,
-                -22.1,
-                -2.5,
-                -27.7,
-                -55.7,
-                -76.5
-            ],
-            "type": "line",
-            "name": "Altitude (km) vs. temperature (°C)",
-            "symbol": "circle",
-            "symbolSize": 10
-        }
-    ]
+    "type": "category"
+  },
+  "tooltip": {
+    "trigger": "axis",
+    "formatter": "Temperature : <br/>{b}km : {c}°C"
+  },
+  "legend": {
+    "data": ["Altitude (km) vs. temperature (°C)"]
+  },
+  "series": [
+    {
+      "lineStyle": {
+        "width": 3,
+        "shadowBlur": 10,
+        "shadowColor": "rgba(0,0,0,0.3)",
+        "shadowOffsetY": 8
+      },
+      "smooth": true,
+      "data": [15, -50, -56.5, -46.5, -22.1, -2.5, -27.7, -55.7, -76.5],
+      "type": "line",
+      "name": "Altitude (km) vs. temperature (°C)",
+      "symbol": "circle",
+      "symbolSize": 10
+    }
+  ]
 }

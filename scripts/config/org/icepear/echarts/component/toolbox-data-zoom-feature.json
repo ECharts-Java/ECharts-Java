@@ -1,7 +1,5 @@
 {
-    "name": "ToolboxDataZoomFeature",
-    "type": "class",
-    "implements": [
-        "ToolboxDataZoomFeatureOption"
-    ]
+  "name": "ToolboxDataZoomFeature",
+  "type": "class",
+  "implements": ["ToolboxDataZoomFeatureOption"]
 }

@@ -1,52 +1,38 @@
 {
-    "name": "BorderOptionMixin",
-    "type": "interface",
-    "extends": [],
-    "fields": [
-        {
-            "name": "borderColor",
-            "types": [
-                "String"
-            ]
-        },
-        {
-            "name": "borderWidth",
-            "types": [
-                "Number"
-            ]
-        },
-        {
-            "name": "borderType",
-            "types": [
-                "String"
-            ]
-        },
-        {
-            "name": "borderCap",
-            "types": [
-                "Object"
-            ]
-        },
-        {
-            "name": "borderJoin",
-            "types": [
-                "Object"
-            ]
-        },
-        {
-            "name": "borderDashOffset",
-            "types": [
-                "Number"
-            ]
-        },
-        {
-            "name": "borderMiterLimit",
-            "types": [
-                "Number"
-            ]
-        }
-    ],
-    "comments": [
-        "https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/util/types.ts#L848"
-    ]
+  "name": "BorderOptionMixin",
+  "type": "interface",
+  "extends": [],
+  "fields": [
+    {
+      "name": "borderColor",
+      "types": ["String"]
+    },
+    {
+      "name": "borderWidth",
+      "types": ["Number"]
+    },
+    {
+      "name": "borderType",
+      "types": ["String"]
+    },
+    {
+      "name": "borderCap",
+      "types": ["Object"]
+    },
+    {
+      "name": "borderJoin",
+      "types": ["Object"]
+    },
+    {
+      "name": "borderDashOffset",
+      "types": ["Number"]
+    },
+    {
+      "name": "borderMiterLimit",
+      "types": ["Number"]
+    }
+  ],
+  "comments": [
+    "https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/util/types.ts#L848"
+  ]
 }

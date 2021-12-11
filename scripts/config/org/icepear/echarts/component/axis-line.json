@@ -1,7 +1,5 @@
 {
-    "name": "AxisLine",
-    "type": "class",
-    "implements": [
-        "AxisLineOption"
-    ]
+  "name": "AxisLine",
+  "type": "class",
+  "implements": ["AxisLineOption"]
 }

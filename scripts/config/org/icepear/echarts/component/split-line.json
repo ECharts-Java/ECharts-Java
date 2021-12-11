@@ -1,7 +1,5 @@
 {
-    "name": "SplitLine",
-    "type": "class",
-    "implements": [
-        "SplitLineOption"
-    ]
+  "name": "SplitLine",
+  "type": "class",
+  "implements": ["SplitLineOption"]
 }

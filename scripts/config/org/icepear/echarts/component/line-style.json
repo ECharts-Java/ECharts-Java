@@ -1,7 +1,5 @@
 {
-    "name": "LineStyle",
-    "type": "class",
-    "implements": [
-        "LineStyleOption"
-    ]
+  "name": "LineStyle",
+  "type": "class",
+  "implements": ["LineStyleOption"]
 }

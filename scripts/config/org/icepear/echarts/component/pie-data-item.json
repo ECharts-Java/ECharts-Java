@@ -1,7 +1,5 @@
 {
-    "name": "PieDataItem",
-    "type": "class",
-    "implements": [
-        "PieDataItemOption"
-    ]
+  "name": "PieDataItem",
+  "type": "class",
+  "implements": ["PieDataItemOption"]
 }

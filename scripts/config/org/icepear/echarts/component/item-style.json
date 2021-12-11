@@ -1,7 +1,5 @@
 {
-    "name": "ItemStyle",
-    "type": "class",
-    "implements": [
-        "ItemStyleOption"
-    ]
+  "name": "ItemStyle",
+  "type": "class",
+  "implements": ["ItemStyleOption"]
 }

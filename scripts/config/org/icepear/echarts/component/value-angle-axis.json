@@ -1,7 +1,5 @@
 {
-    "name": "ValueAngleAxis",
-    "type": "class",
-    "implements": [
-        "ValueAngleAxisOption"
-    ]
+  "name": "ValueAngleAxis",
+  "type": "class",
+  "implements": ["ValueAngleAxisOption"]
 }

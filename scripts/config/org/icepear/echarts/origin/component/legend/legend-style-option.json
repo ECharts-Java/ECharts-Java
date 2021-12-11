@@ -1,72 +1,50 @@
 {
-    "name": "LegendStyleOption",
-    "type": "interface",
-    "extends": [],
-    "fields": [
-        {
-            "name": "icon",
-            "types": [
-                "String"
-            ]
-        },
-        {
-            "name": "inactiveColor",
-            "types": [
-                "String"
-            ]
-        },
-        {
-            "name": "inactiveBorderColor",
-            "types": [
-                "String"
-            ]
-        },
-        {
-            "name": "inactiveBorderWidth",
-            "types": [
-                "Number",
-                "String"
-            ]
-        },
-        {
-            "name": "formatter",
-            "types": [
-                "String"
-            ]
-        },
-        {
-            "name": "itemStyle",
-            "types": [
-                "LegendItemStyleOption"
-            ]
-        },
-        {
-            "name": "lineStyle",
-            "types": [
-                "LegendLineStyleOption"
-            ]
-        },
-        {
-            "name": "textStyle",
-            "types": [
-                "LabelOption"
-            ]
-        },
-        {
-            "name": "symbolRotate",
-            "types": [
-                "Number",
-                "String"
-            ]
-        },
-        {
-            "name": "symbolKeepAspect",
-            "types": [
-                "Boolean"
-            ]
-        }
-    ],
-    "comments": [
-        "https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/component/legend/LegendModel.ts#L86"
-    ]
+  "name": "LegendStyleOption",
+  "type": "interface",
+  "extends": [],
+  "fields": [
+    {
+      "name": "icon",
+      "types": ["String"]
+    },
+    {
+      "name": "inactiveColor",
+      "types": ["String"]
+    },
+    {
+      "name": "inactiveBorderColor",
+      "types": ["String"]
+    },
+    {
+      "name": "inactiveBorderWidth",
+      "types": ["Number", "String"]
+    },
+    {
+      "name": "formatter",
+      "types": ["String"]
+    },
+    {
+      "name": "itemStyle",
+      "types": ["LegendItemStyleOption"]
+    },
+    {
+      "name": "lineStyle",
+      "types": ["LegendLineStyleOption"]
+    },
+    {
+      "name": "textStyle",
+      "types": ["LabelOption"]
+    },
+    {
+      "name": "symbolRotate",
+      "types": ["Number", "String"]
+    },
+    {
+      "name": "symbolKeepAspect",
+      "types": ["Boolean"]
+    }
+  ],
+  "comments": [
+    "https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/component/legend/LegendModel.ts#L86"
+  ]
 }
