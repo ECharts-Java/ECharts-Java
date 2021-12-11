@@ -1,6 +1,7 @@
 package org.icepear.echarts.origin.export;
 
 import org.icepear.echarts.origin.component.axisPointer.AxisPointerOption;
+import org.icepear.echarts.origin.component.dataset.DatasetOption;
 import org.icepear.echarts.origin.component.legend.LegendOption;
 import org.icepear.echarts.origin.component.title.TitleOption;
 import org.icepear.echarts.origin.component.toolbox.ToolboxOption;
@@ -19,9 +20,9 @@ import org.icepear.echarts.origin.util.SeriesOption;
  */
 public interface EChartsOption extends ECBasicOption {
 
-	EChartsOption setDataset(Object dataset);
+	EChartsOption setDataset(DatasetOption dataset);
 
-	EChartsOption setDataset(Object[] dataset);
+	EChartsOption setDataset(DatasetOption[] dataset);
 
 	EChartsOption setAria(Object aria);
 

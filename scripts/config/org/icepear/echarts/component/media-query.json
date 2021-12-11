@@ -1,0 +1,7 @@
+{
+    "name": "MediaQuery",
+    "type": "class",
+    "implements": [
+        "MediaQueryOption"
+    ]
+}

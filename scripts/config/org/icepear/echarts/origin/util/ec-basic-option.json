@@ -27,7 +27,7 @@
         {
             "name": "media",
             "types": [
-                "MediaUnit[]"
+                "MediaUnitOption[]"
             ]
         }
     ],
