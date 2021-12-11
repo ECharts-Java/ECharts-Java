@@ -145,7 +145,7 @@ public class Toolbox implements ToolboxOption {
 
 	private Boolean show;
 
-	private Object orient;
+	private String orient;
 
 	private String backgroundColor;
 

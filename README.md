@@ -96,9 +96,9 @@ ECharts Java is a library for Java developers to use JavaScript visualization li
 - [x] [Nightingale Chart (Simple)](https://echarts.apache.org/examples/en/editor.html?c=pie-roseType-simple)
 - [x] [Pie Label Align](https://echarts.apache.org/examples/en/editor.html?c=pie-alignTo)
 - [ ] ~~[Label Line Adjust](https://echarts.apache.org/examples/en/editor.html?c=pie-labelLine-adjust)~~
-- [ ] [Pie with Scrollable Legend](https://echarts.apache.org/examples/en/editor.html?c=pie-legend)
-- [ ] [Pie Special Label](https://echarts.apache.org/examples/en/editor.html?c=pie-rich-text)
-- [ ] [Nested Pies](https://echarts.apache.org/examples/en/editor.html?c=pie-nest)
+- [x] [Pie with Scrollable Legend](https://echarts.apache.org/examples/en/editor.html?c=pie-legend) (Not Tested)
+- [x] [Pie Special Label](https://echarts.apache.org/examples/en/editor.html?c=pie-rich-text) (Not Tested)
+- [x] [Nested Pies](https://echarts.apache.org/examples/en/editor.html?c=pie-nest)
 - [ ] [Partition Data to Pies](https://echarts.apache.org/examples/en/editor.html?c=data-transform-multiple-pie)
 - [ ] [Default Arrangement](https://echarts.apache.org/examples/en/editor.html?c=dataset-default)
 - [ ] ~~[Calendar Pie](https://echarts.apache.org/examples/en/editor.html?c=calendar-pie)~~

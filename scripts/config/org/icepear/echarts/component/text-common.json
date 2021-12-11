@@ -1,0 +1,7 @@
+{
+    "name": "Text",
+    "type": "class",
+    "implements": [
+        "TextCommonOption"
+    ]
+}
