@@ -34,33 +34,35 @@ public class NightingaleChartTest {
                 .setText("Nightingale Chart")
                 .setSubtext("Fake Data")
                 .setLeft("center");
-        
+
         Tooltip tooltip = new Tooltip()
                 .setTrigger("item")
                 .setFormatter("{a} <br/>{b} : {c} ({d}%)");
-        
+
         Legend legend = new Legend()
                 .setLeft("center")
                 .setTop("bottom")
                 .setData(new String[] {
-                    "rose1",
-                    "rose2",
-                    "rose3",
-                    "rose4",
-                    "rose5",
-                    "rose6",
-                    "rose7",
-                    "rose8" });
-        
+                        "rose1",
+                        "rose2",
+                        "rose3",
+                        "rose4",
+                        "rose5",
+                        "rose6",
+                        "rose7",
+                        "rose8" });
+
         Toolbox toolbox = new Toolbox()
                 .setShow(true)
-                .setFeature(new HashMap<>() {{
-                    put("mark", new ToolboxDefaultFeature().setShow(true));
-                    put("dataView", new ToolboxDataViewFeature().setShow(true).setReadOnly(false));
-                    put("restore", new ToolboxRestoreFeature().setShow(true));
-                    put("saveAsImage", new ToolboxSaveAsImageFeature().setShow(true));
-                }});
-        
+                .setFeature(new HashMap<>() {
+                    {
+                        put("mark", new ToolboxDefaultFeature().setShow(true));
+                        put("dataView", new ToolboxDataViewFeature().setShow(true).setReadOnly(false));
+                        put("restore", new ToolboxRestoreFeature().setShow(true));
+                        put("saveAsImage", new ToolboxSaveAsImageFeature().setShow(true));
+                    }
+                });
+
         PieSeries series1 = new PieSeries()
                 .setName("Radius Mode")
                 .setType("pie")
@@ -72,16 +74,16 @@ public class NightingaleChartTest {
                 .setEmphasis(new PieEmphasis()
                         .setLabel(new PieLabel().setShow(true)))
                 .setData(new PieDataItem[] {
-                    new PieDataItem().setValue(40).setName("rose 1"),
-                    new PieDataItem().setValue(33).setName("rose 2"),
-                    new PieDataItem().setValue(28).setName("rose 3"),
-                    new PieDataItem().setValue(22).setName("rose 4"),
-                    new PieDataItem().setValue(20).setName("rose 5"),
-                    new PieDataItem().setValue(15).setName("rose 6"),
-                    new PieDataItem().setValue(12).setName("rose 7"),
-                    new PieDataItem().setValue(10).setName("rose 8")
+                        new PieDataItem().setValue(40).setName("rose 1"),
+                        new PieDataItem().setValue(33).setName("rose 2"),
+                        new PieDataItem().setValue(28).setName("rose 3"),
+                        new PieDataItem().setValue(22).setName("rose 4"),
+                        new PieDataItem().setValue(20).setName("rose 5"),
+                        new PieDataItem().setValue(15).setName("rose 6"),
+                        new PieDataItem().setValue(12).setName("rose 7"),
+                        new PieDataItem().setValue(10).setName("rose 8")
                 });
-        
+
         PieSeries series2 = new PieSeries()
                 .setName("Area Mode")
                 .setType("pie")
@@ -90,16 +92,16 @@ public class NightingaleChartTest {
                 .setRoseType("area")
                 .setItemStyle(new PieItemStyle().setBorderRadius(5))
                 .setData(new PieDataItem[] {
-                    new PieDataItem().setValue(30).setName("rose 1"),
-                    new PieDataItem().setValue(28).setName("rose 2"),
-                    new PieDataItem().setValue(26).setName("rose 3"),
-                    new PieDataItem().setValue(24).setName("rose 4"),
-                    new PieDataItem().setValue(22).setName("rose 5"),
-                    new PieDataItem().setValue(20).setName("rose 6"),
-                    new PieDataItem().setValue(18).setName("rose 7"),
-                    new PieDataItem().setValue(16).setName("rose 8")
+                        new PieDataItem().setValue(30).setName("rose 1"),
+                        new PieDataItem().setValue(28).setName("rose 2"),
+                        new PieDataItem().setValue(26).setName("rose 3"),
+                        new PieDataItem().setValue(24).setName("rose 4"),
+                        new PieDataItem().setValue(22).setName("rose 5"),
+                        new PieDataItem().setValue(20).setName("rose 6"),
+                        new PieDataItem().setValue(18).setName("rose 7"),
+                        new PieDataItem().setValue(16).setName("rose 8")
                 });
-        
+
         Option option = new Option()
                 .setTitle(title)
                 .setTooltip(tooltip)
