@@ -152,11 +152,11 @@ public class Title implements TitleOption {
 
 	private String subtarget;
 
-	private Object textAlign;
+	private String textAlign;
 
-	private Object textVerticalAlign;
+	private String textVerticalAlign;
 
-	private Object textBaseline;
+	private String textBaseline;
 
 	private String backgroundColor;
 

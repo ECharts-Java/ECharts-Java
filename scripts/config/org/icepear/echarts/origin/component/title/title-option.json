@@ -58,19 +58,19 @@
         {
             "name": "textAlign",
             "types": [
-                "Object"
+                "String"
             ]
         },
         {
             "name": "textVerticalAlign",
             "types": [
-                "Object"
+                "String"
             ]
         },
         {
             "name": "textBaseline",
             "types": [
-                "Object"
+                "String"
             ]
         },
         {
