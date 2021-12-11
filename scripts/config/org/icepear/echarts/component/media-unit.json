@@ -1,0 +1,7 @@
+{
+    "name": "MediaUnit",
+    "type": "class",
+    "implements": [
+        "MediaUnitOption"
+    ]
+}

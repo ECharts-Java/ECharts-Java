@@ -13,5 +13,5 @@ public interface ECBasicOption extends ECUnitOption {
 
 	ECBasicOption setOptions(ECUnitOption[] options);
 
-	ECBasicOption setMedia(Object[] media);
+	ECBasicOption setMedia(MediaUnitOption[] media);
 }
