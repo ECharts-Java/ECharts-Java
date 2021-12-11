@@ -1,153 +1,141 @@
 {
-    "title": {
-        "left": "center",
-        "text": "Nightingale Chart",
-        "subtext": "Fake Data"
-    },
-    "toolbox": {
+  "title": {
+    "left": "center",
+    "text": "Nightingale Chart",
+    "subtext": "Fake Data"
+  },
+  "toolbox": {
+    "show": true,
+    "feature": {
+      "saveAsImage": {
+        "show": true
+      },
+      "restore": {
+        "show": true
+      },
+      "dataView": {
         "show": true,
-        "feature": {
-            "saveAsImage": {
-                "show": true
-            },
-            "restore": {
-                "show": true
-            },
-            "dataView": {
-                "show": true,
-                "readOnly": false
-            },
-            "mark": {
-                "show": true
-            }
+        "readOnly": false
+      },
+      "mark": {
+        "show": true
+      }
+    }
+  },
+  "tooltip": {
+    "formatter": "{a} <br/>{b} : {c} ({d}%)",
+    "trigger": "item"
+  },
+  "legend": {
+    "top": "bottom",
+    "left": "center",
+    "data": [
+      "rose1",
+      "rose2",
+      "rose3",
+      "rose4",
+      "rose5",
+      "rose6",
+      "rose7",
+      "rose8"
+    ]
+  },
+  "series": [
+    {
+      "type": "pie",
+      "name": "Radius Mode",
+      "emphasis": {
+        "label": {
+          "show": true
         }
-    },
-    "tooltip": {
-        "formatter": "{a} <br/>{b} : {c} ({d}%)",
-        "trigger": "item"
-    },
-    "legend": {
-        "top": "bottom",
-        "left": "center",
-        "data": [
-            "rose1",
-            "rose2",
-            "rose3",
-            "rose4",
-            "rose5",
-            "rose6",
-            "rose7",
-            "rose8"
-        ]
-    },
-    "series": [
+      },
+      "data": [
         {
-            "type": "pie",
-            "name": "Radius Mode",
-            "emphasis": {
-                "label": {
-                    "show": true
-                }
-            },
-            "data": [
-                {
-                    "name": "rose 1",
-                    "value": 40
-                },
-                {
-                    "name": "rose 2",
-                    "value": 33
-                },
-                {
-                    "name": "rose 3",
-                    "value": 28
-                },
-                {
-                    "name": "rose 4",
-                    "value": 22
-                },
-                {
-                    "name": "rose 5",
-                    "value": 20
-                },
-                {
-                    "name": "rose 6",
-                    "value": 15
-                },
-                {
-                    "name": "rose 7",
-                    "value": 12
-                },
-                {
-                    "name": "rose 8",
-                    "value": 10
-                }
-            ],
-            "itemStyle": {
-                "borderRadius": 5
-            },
-            "label": {
-                "show": false
-            },
-            "center": [
-                "25%",
-                "50%"
-            ],
-            "radius": [
-                20,
-                140
-            ],
-            "roseType": "radius"
+          "name": "rose 1",
+          "value": 40
         },
         {
-            "type": "pie",
-            "name": "Area Mode",
-            "data": [
-                {
-                    "name": "rose 1",
-                    "value": 30
-                },
-                {
-                    "name": "rose 2",
-                    "value": 28
-                },
-                {
-                    "name": "rose 3",
-                    "value": 26
-                },
-                {
-                    "name": "rose 4",
-                    "value": 24
-                },
-                {
-                    "name": "rose 5",
-                    "value": 22
-                },
-                {
-                    "name": "rose 6",
-                    "value": 20
-                },
-                {
-                    "name": "rose 7",
-                    "value": 18
-                },
-                {
-                    "name": "rose 8",
-                    "value": 16
-                }
-            ],
-            "itemStyle": {
-                "borderRadius": 5
-            },
-            "center": [
-                "75%",
-                "50%"
-            ],
-            "radius": [
-                20,
-                140
-            ],
-            "roseType": "area"
+          "name": "rose 2",
+          "value": 33
+        },
+        {
+          "name": "rose 3",
+          "value": 28
+        },
+        {
+          "name": "rose 4",
+          "value": 22
+        },
+        {
+          "name": "rose 5",
+          "value": 20
+        },
+        {
+          "name": "rose 6",
+          "value": 15
+        },
+        {
+          "name": "rose 7",
+          "value": 12
+        },
+        {
+          "name": "rose 8",
+          "value": 10
         }
-    ]
+      ],
+      "itemStyle": {
+        "borderRadius": 5
+      },
+      "label": {
+        "show": false
+      },
+      "center": ["25%", "50%"],
+      "radius": [20, 140],
+      "roseType": "radius"
+    },
+    {
+      "type": "pie",
+      "name": "Area Mode",
+      "data": [
+        {
+          "name": "rose 1",
+          "value": 30
+        },
+        {
+          "name": "rose 2",
+          "value": 28
+        },
+        {
+          "name": "rose 3",
+          "value": 26
+        },
+        {
+          "name": "rose 4",
+          "value": 24
+        },
+        {
+          "name": "rose 5",
+          "value": 22
+        },
+        {
+          "name": "rose 6",
+          "value": 20
+        },
+        {
+          "name": "rose 7",
+          "value": 18
+        },
+        {
+          "name": "rose 8",
+          "value": 16
+        }
+      ],
+      "itemStyle": {
+        "borderRadius": 5
+      },
+      "center": ["75%", "50%"],
+      "radius": [20, 140],
+      "roseType": "area"
+    }
+  ]
 }

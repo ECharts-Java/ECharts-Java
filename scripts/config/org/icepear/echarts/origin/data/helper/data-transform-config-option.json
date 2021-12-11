@@ -1,24 +1,18 @@
 {
-    "name": "DataTransformConfigOption",
-    "type": "interface",
-    "extends": [],
-    "fields": [
-        {
-            "name": "dimension",
-            "types": [
-                "String"
-            ]
-        },
-        {
-            "name": "value",
-            "types": [
-                "Number",
-                "String",
-                "Date"
-            ]
-        }
-    ],
-    "comments": [
-        "https://echarts.apache.org/examples/en/editor.html?c=data-transform-multiple-pie"
-    ]
+  "name": "DataTransformConfigOption",
+  "type": "interface",
+  "extends": [],
+  "fields": [
+    {
+      "name": "dimension",
+      "types": ["String"]
+    },
+    {
+      "name": "value",
+      "types": ["Number", "String", "Date"]
+    }
+  ],
+  "comments": [
+    "https://echarts.apache.org/examples/en/editor.html?c=data-transform-multiple-pie"
+  ]
 }

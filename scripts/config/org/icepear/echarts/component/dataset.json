@@ -1,7 +1,5 @@
 {
-    "name": "Dataset",
-    "type": "class",
-    "implements": [
-        "DatasetOption"
-    ]
+  "name": "Dataset",
+  "type": "class",
+  "implements": ["DatasetOption"]
 }

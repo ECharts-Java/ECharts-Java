@@ -1,7 +1,5 @@
 {
-    "name": "LineEmphasis",
-    "type": "class",
-    "implements": [
-        "LineEmphasisOption"
-    ]
+  "name": "LineEmphasis",
+  "type": "class",
+  "implements": ["LineEmphasisOption"]
 }

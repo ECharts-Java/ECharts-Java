@@ -1,7 +1,5 @@
 {
-    "name": "ToolboxDefaultFeature",
-    "type": "class",
-    "implements": [
-        "ToolboxFeatureOption"
-    ]
+  "name": "ToolboxDefaultFeature",
+  "type": "class",
+  "implements": ["ToolboxFeatureOption"]
 }

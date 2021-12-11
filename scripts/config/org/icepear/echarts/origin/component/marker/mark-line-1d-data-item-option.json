@@ -1,75 +1,46 @@
 {
-    "name": "MarkLine1DDataItemOption",
-    "type": "interface",
-    "extends": [
-        "MarkLineDataItemOptionBase",
-        "MarkLineDataItemOption"
-    ],
-    "fields": [
-        {
-            "name": "xAxis",
-            "types": [
-                "String",
-                "Number"
-            ]
-        },
-        {
-            "name": "yAxis",
-            "types": [
-                "String",
-                "Number"
-            ]
-        },
-        {
-            "name": "type",
-            "types": [
-                "MarkerStatisticType"
-            ]
-        },
-        {
-            "name": "valueIndex",
-            "types": [
-                "Number"
-            ]
-        },
-        {
-            "name": "valueDim",
-            "types": [
-                "String"
-            ]
-        },
-        {
-            "name": "symbol",
-            "types": [
-                "String[]",
-                "String"
-            ]
-        },
-        {
-            "name": "symbolSize",
-            "types": [
-                "Number[]",
-                "Number"
-            ]
-        },
-        {
-            "name": "symbolRotate",
-            "types": [
-                "Number[]",
-                "Number"
-            ]
-        },
-        {
-            "name": "symbolOffset",
-            "types": [
-                "Number[]",
-                "String",
-                "String[]",
-                "Number"
-            ]
-        }
-    ],
-    "comments": [
-        "https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/component/marker/MarkLineModel.ts#L45"
-    ]
+  "name": "MarkLine1DDataItemOption",
+  "type": "interface",
+  "extends": ["MarkLineDataItemOptionBase", "MarkLineDataItemOption"],
+  "fields": [
+    {
+      "name": "xAxis",
+      "types": ["String", "Number"]
+    },
+    {
+      "name": "yAxis",
+      "types": ["String", "Number"]
+    },
+    {
+      "name": "type",
+      "types": ["MarkerStatisticType"]
+    },
+    {
+      "name": "valueIndex",
+      "types": ["Number"]
+    },
+    {
+      "name": "valueDim",
+      "types": ["String"]
+    },
+    {
+      "name": "symbol",
+      "types": ["String[]", "String"]
+    },
+    {
+      "name": "symbolSize",
+      "types": ["Number[]", "Number"]
+    },
+    {
+      "name": "symbolRotate",
+      "types": ["Number[]", "Number"]
+    },
+    {
+      "name": "symbolOffset",
+      "types": ["Number[]", "String", "String[]", "Number"]
+    }
+  ],
+  "comments": [
+    "https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/component/marker/MarkLineModel.ts#L45"
+  ]
 }

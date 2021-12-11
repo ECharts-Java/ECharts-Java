@@ -1,79 +1,54 @@
 {
-    "name": "LabelOption",
-    "type": "interface",
-    "extends": [
-        "TextCommonOption"
-    ],
-    "fields": [
-        {
-            "name": "show",
-            "types": [
-                "Boolean"
-            ]
-        },
-        {
-            "name": "position",
-            "types": [
-                "Object"
-            ]
-        },
-        {
-            "name": "distance",
-            "types": [
-                "Number"
-            ]
-        },
-        {
-            "name": "rotate",
-            "types": [
-                "Number"
-            ]
-        },
-        {
-            "name": "offset",
-            "types": [
-                "Number[]"
-            ]
-        },
-        {
-            "name": "minMargin",
-            "types": [
-                "Number"
-            ]
-        },
-        {
-            "name": "overflow",
-            "types": [
-                "Object"
-            ]
-        },
-        {
-            "name": "silent",
-            "types": [
-                "Boolean"
-            ]
-        },
-        {
-            "name": "precision",
-            "types": [
-                "String",
-                "Number"
-            ]
-        },
-        {
-            "name": "valueAnimation",
-            "types": [
-                "Boolean"
-            ]
-        },
-        {
-            "name": "rich",
-            "types": [
-                "Map<String, TextCommonOption>"
-            ]
-        }
-    ],
-    "comments": [
-        "https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/util/types.ts#L1090"
-    ]
+  "name": "LabelOption",
+  "type": "interface",
+  "extends": ["TextCommonOption"],
+  "fields": [
+    {
+      "name": "show",
+      "types": ["Boolean"]
+    },
+    {
+      "name": "position",
+      "types": ["Object"]
+    },
+    {
+      "name": "distance",
+      "types": ["Number"]
+    },
+    {
+      "name": "rotate",
+      "types": ["Number"]
+    },
+    {
+      "name": "offset",
+      "types": ["Number[]"]
+    },
+    {
+      "name": "minMargin",
+      "types": ["Number"]
+    },
+    {
+      "name": "overflow",
+      "types": ["Object"]
+    },
+    {
+      "name": "silent",
+      "types": ["Boolean"]
+    },
+    {
+      "name": "precision",
+      "types": ["String", "Number"]
+    },
+    {
+      "name": "valueAnimation",
+      "types": ["Boolean"]
+    },
+    {
+      "name": "rich",
+      "types": ["Map<String, TextCommonOption>"]
+    }
+  ],
+  "comments": [
+    "https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/util/types.ts#L1090"
+  ]
 }

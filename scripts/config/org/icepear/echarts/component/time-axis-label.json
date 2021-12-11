@@ -1,7 +1,5 @@
 {
-    "name": "TimeAxisLabel",
-    "type": "class",
-    "implements": [
-        "TimeAxisLabelOption"
-    ]
+  "name": "TimeAxisLabel",
+  "type": "class",
+  "implements": ["TimeAxisLabelOption"]
 }

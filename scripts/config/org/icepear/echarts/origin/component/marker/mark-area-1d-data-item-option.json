@@ -1,43 +1,30 @@
 {
-    "name": "MarkArea1DDataItemOption",
-    "type": "interface",
-    "extends": [
-        "MarkAreaDataItemOptionBase",
-        "MarkAreaDataItemOption"
-    ],
-    "fields": [
-        {
-            "name": "xAxis",
-            "types": [
-                "Number"
-            ]
-        },
-        {
-            "name": "yAxis",
-            "types": [
-                "Number"
-            ]
-        },
-        {
-            "name": "type",
-            "types": [
-                "MarkerStatisticType"
-            ]
-        },
-        {
-            "name": "valueIndex",
-            "types": [
-                "Number"
-            ]
-        },
-        {
-            "name": "valueDim",
-            "types": [
-                "String"
-            ]
-        }
-    ],
-    "comments": [
-        "https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/component/marker/MarkAreaModel.ts#L36"
-    ]
+  "name": "MarkArea1DDataItemOption",
+  "type": "interface",
+  "extends": ["MarkAreaDataItemOptionBase", "MarkAreaDataItemOption"],
+  "fields": [
+    {
+      "name": "xAxis",
+      "types": ["Number"]
+    },
+    {
+      "name": "yAxis",
+      "types": ["Number"]
+    },
+    {
+      "name": "type",
+      "types": ["MarkerStatisticType"]
+    },
+    {
+      "name": "valueIndex",
+      "types": ["Number"]
+    },
+    {
+      "name": "valueDim",
+      "types": ["String"]
+    }
+  ],
+  "comments": [
+    "https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/component/marker/MarkAreaModel.ts#L36"
+  ]
 }

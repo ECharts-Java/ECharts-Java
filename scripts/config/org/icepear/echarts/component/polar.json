@@ -1,7 +1,5 @@
 {
-    "name": "Polar",
-    "type": "class",
-    "implements": [
-        "PolarOption"
-    ]
+  "name": "Polar",
+  "type": "class",
+  "implements": ["PolarOption"]
 }

@@ -1,66 +1,46 @@
 {
-    "name": "AxisLabelBaseOption",
-    "type": "interface",
-    "extends": [
-        "TextCommonOption"
-    ],
-    "fields": [
-        {
-            "name": "show",
-            "types": [
-                "Boolean"
-            ]
-        },
-        {
-            "name": "inside",
-            "types": [
-                "Boolean"
-            ]
-        },
-        {
-            "name": "rotate",
-            "types": [
-                "Number"
-            ]
-        },
-        {
-            "name": "showMinLabel",
-            "types": [
-                "Boolean"
-            ]
-        },
-        {
-            "name": "showMaxLabel",
-            "types": [
-                "Boolean"
-            ]
-        },
-        {
-            "name": "margin",
-            "types": [
-                "Number"
-            ]
-        },
-        {
-            "name": "rich",
-            "types": [
-                "Map<String, TextCommonOption>"
-            ]
-        },
-        {
-            "name": "hideOverlap",
-            "types": [
-                "Boolean"
-            ]
-        },
-        {
-            "name": "color",
-            "types": [
-                "String"
-            ]
-        }
-    ],
-    "comments": [
-        "https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/coord/axisCommonTypes.ts#L208"
-    ]
+  "name": "AxisLabelBaseOption",
+  "type": "interface",
+  "extends": ["TextCommonOption"],
+  "fields": [
+    {
+      "name": "show",
+      "types": ["Boolean"]
+    },
+    {
+      "name": "inside",
+      "types": ["Boolean"]
+    },
+    {
+      "name": "rotate",
+      "types": ["Number"]
+    },
+    {
+      "name": "showMinLabel",
+      "types": ["Boolean"]
+    },
+    {
+      "name": "showMaxLabel",
+      "types": ["Boolean"]
+    },
+    {
+      "name": "margin",
+      "types": ["Number"]
+    },
+    {
+      "name": "rich",
+      "types": ["Map<String, TextCommonOption>"]
+    },
+    {
+      "name": "hideOverlap",
+      "types": ["Boolean"]
+    },
+    {
+      "name": "color",
+      "types": ["String"]
+    }
+  ],
+  "comments": [
+    "https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/coord/axisCommonTypes.ts#L208"
+  ]
 }

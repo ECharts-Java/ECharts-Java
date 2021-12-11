@@ -1,59 +1,38 @@
 {
-    "name": "PieLabelOption",
-    "type": "interface",
-    "extends": [
-        "SeriesLabelOption"
-    ],
-    "fields": [
-        {
-            "name": "rotate",
-            "types": [
-                "Number",
-                "Boolean",
-                "String"
-            ]
-        },
-        {
-            "name": "alignTo",
-            "types": [
-                "String"
-            ]
-        },
-        {
-            "name": "edgeDistance",
-            "types": [
-                "Number",
-                "String"
-            ]
-        },
-        {
-            "name": "margin",
-            "types": [
-                "Number",
-                "String"
-            ]
-        },
-        {
-            "name": "bleedMargin",
-            "types": [
-                "Number"
-            ]
-        },
-        {
-            "name": "distanceToLabelLine",
-            "types": [
-                "Number"
-            ]
-        },
-        {
-            "name": "position",
-            "types": [
-                "Object",
-                "String"
-            ]
-        }
-    ],
-    "comments": [
-        "https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/chart/pie/PieSeries.ts#L59"
-    ]
+  "name": "PieLabelOption",
+  "type": "interface",
+  "extends": ["SeriesLabelOption"],
+  "fields": [
+    {
+      "name": "rotate",
+      "types": ["Number", "Boolean", "String"]
+    },
+    {
+      "name": "alignTo",
+      "types": ["String"]
+    },
+    {
+      "name": "edgeDistance",
+      "types": ["Number", "String"]
+    },
+    {
+      "name": "margin",
+      "types": ["Number", "String"]
+    },
+    {
+      "name": "bleedMargin",
+      "types": ["Number"]
+    },
+    {
+      "name": "distanceToLabelLine",
+      "types": ["Number"]
+    },
+    {
+      "name": "position",
+      "types": ["Object", "String"]
+    }
+  ],
+  "comments": [
+    "https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/chart/pie/PieSeries.ts#L59"
+  ]
 }

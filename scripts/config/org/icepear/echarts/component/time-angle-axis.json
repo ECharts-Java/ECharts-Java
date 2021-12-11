@@ -1,7 +1,5 @@
 {
-    "name": "TimeAngleAxis",
-    "type": "class",
-    "implements": [
-        "TimeAngleAxisOption"
-    ]
+  "name": "TimeAngleAxis",
+  "type": "class",
+  "implements": ["TimeAngleAxisOption"]
 }

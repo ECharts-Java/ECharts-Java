@@ -1,7 +1,5 @@
 {
-    "name": "MarkPoint",
-    "type": "class",
-    "implements": [
-        "MarkPointOption"
-    ]
+  "name": "MarkPoint",
+  "type": "class",
+  "implements": ["MarkPointOption"]
 }

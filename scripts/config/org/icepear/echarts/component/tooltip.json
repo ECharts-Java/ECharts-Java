@@ -1,7 +1,5 @@
 {
-    "name": "Tooltip",
-    "type": "class",
-    "implements": [
-        "TooltipOption"
-    ]
+  "name": "Tooltip",
+  "type": "class",
+  "implements": ["TooltipOption"]
 }

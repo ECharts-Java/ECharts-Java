@@ -1,7 +1,5 @@
 {
-    "name": "ValueAxisLabel",
-    "type": "class",
-    "implements": [
-        "ValueAxisLabelOption"
-    ]
+  "name": "ValueAxisLabel",
+  "type": "class",
+  "implements": ["ValueAxisLabelOption"]
 }
