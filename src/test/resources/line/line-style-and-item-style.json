@@ -1,43 +1,27 @@
 {
-    "xAxis": {
-        "data": [
-            "Mon",
-            "Tue",
-            "Wed",
-            "Thu",
-            "Fri",
-            "Sat",
-            "Sun"
-        ],
-        "type": "category"
-    },
-    "yAxis": {
-        "type": "value"
-    },
-    "series": [
-        {
-            "lineStyle": {
-                "width": 4,
-                "color": "#5470C6",
-                "type": "dashed"
-            },
-            "data": [
-                120,
-                200,
-                150,
-                80,
-                70,
-                110,
-                130
-            ],
-            "type": "line",
-            "itemStyle": {
-                "color": "yellow",
-                "borderColor": "#EE6666",
-                "borderWidth": 3
-            },
-            "symbol": "triangle",
-            "symbolSize": 20
-        }
-    ]
+  "xAxis": {
+    "data": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+    "type": "category"
+  },
+  "yAxis": {
+    "type": "value"
+  },
+  "series": [
+    {
+      "lineStyle": {
+        "width": 4,
+        "color": "#5470C6",
+        "type": "dashed"
+      },
+      "data": [120, 200, 150, 80, 70, 110, 130],
+      "type": "line",
+      "itemStyle": {
+        "color": "yellow",
+        "borderColor": "#EE6666",
+        "borderWidth": 3
+      },
+      "symbol": "triangle",
+      "symbolSize": 20
+    }
+  ]
 }

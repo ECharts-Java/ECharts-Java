@@ -1,7 +1,5 @@
 {
-    "name": "PieItemStyle",
-    "type": "class",
-    "implements": [
-        "PieItemStyleOption"
-    ]
+  "name": "PieItemStyle",
+  "type": "class",
+  "implements": ["PieItemStyleOption"]
 }

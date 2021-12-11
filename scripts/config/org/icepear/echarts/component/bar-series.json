@@ -1,7 +1,5 @@
 {
-    "name": "BarSeries",
-    "type": "class",
-    "implements": [
-        "BarSeriesOption"
-    ]
+  "name": "BarSeries",
+  "type": "class",
+  "implements": ["BarSeriesOption"]
 }

@@ -1,7 +1,5 @@
 {
-    "name": "MarkLine2DDataItem",
-    "type": "class",
-    "implements": [
-        "MarkLine2DDataItemOption"
-    ]
+  "name": "MarkLine2DDataItem",
+  "type": "class",
+  "implements": ["MarkLine2DDataItemOption"]
 }

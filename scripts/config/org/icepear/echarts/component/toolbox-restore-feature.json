@@ -1,7 +1,5 @@
 {
-    "name": "ToolboxRestoreFeature",
-    "type": "class",
-    "implements": [
-        "ToolboxRestoreFeatureOption"
-    ]
+  "name": "ToolboxRestoreFeature",
+  "type": "class",
+  "implements": ["ToolboxRestoreFeatureOption"]
 }

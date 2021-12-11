@@ -1,7 +1,5 @@
 {
-    "name": "LogRadiusAxis",
-    "type": "class",
-    "implements": [
-        "LogRadiusAxisOption"
-    ]
+  "name": "LogRadiusAxis",
+  "type": "class",
+  "implements": ["LogRadiusAxisOption"]
 }

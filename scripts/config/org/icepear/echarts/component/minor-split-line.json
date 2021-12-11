@@ -1,7 +1,5 @@
 {
-    "name": "MinorSplitLine",
-    "type": "class",
-    "implements": [
-        "MinorSplitLineOption"
-    ]
+  "name": "MinorSplitLine",
+  "type": "class",
+  "implements": ["MinorSplitLineOption"]
 }

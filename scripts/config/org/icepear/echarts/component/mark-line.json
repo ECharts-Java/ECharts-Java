@@ -1,7 +1,5 @@
 {
-    "name": "MarkLine",
-    "type": "class",
-    "implements": [
-        "MarkLineOption"
-    ]
+  "name": "MarkLine",
+  "type": "class",
+  "implements": ["MarkLineOption"]
 }

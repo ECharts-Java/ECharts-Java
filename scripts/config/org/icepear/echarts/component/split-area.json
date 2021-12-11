@@ -1,7 +1,5 @@
 {
-    "name": "SplitArea",
-    "type": "class",
-    "implements": [
-        "SplitAreaOption"
-    ]
+  "name": "SplitArea",
+  "type": "class",
+  "implements": ["SplitAreaOption"]
 }

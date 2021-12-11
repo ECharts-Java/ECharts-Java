@@ -1,7 +1,5 @@
 {
-    "name": "CategoryRadiusAxis",
-    "type": "class",
-    "implements": [
-        "CategoryRadiusAxisOption"
-    ]
+  "name": "CategoryRadiusAxis",
+  "type": "class",
+  "implements": ["CategoryRadiusAxisOption"]
 }

@@ -1,7 +1,5 @@
 {
-    "name": "TooltipAxisPointer",
-    "type": "class",
-    "implements": [
-        "TooltipAxisPointerOption"
-    ]
+  "name": "TooltipAxisPointer",
+  "type": "class",
+  "implements": ["TooltipAxisPointerOption"]
 }

@@ -1,7 +1,5 @@
 {
-    "name": "Toolbox",
-    "type": "class",
-    "implements": [
-        "ToolboxOption"
-    ]
+  "name": "Toolbox",
+  "type": "class",
+  "implements": ["ToolboxOption"]
 }

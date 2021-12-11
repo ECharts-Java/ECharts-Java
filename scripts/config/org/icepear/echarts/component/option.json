@@ -1,7 +1,5 @@
 {
-    "name": "Option",
-    "type": "class",
-    "implements": [
-        "EChartsOption"
-    ]
+  "name": "Option",
+  "type": "class",
+  "implements": ["EChartsOption"]
 }

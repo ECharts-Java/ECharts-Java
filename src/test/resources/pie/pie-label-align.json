@@ -1,169 +1,160 @@
 {
-    "title": [
+  "title": [
+    {
+      "left": "center",
+      "text": "Pie label alignTo"
+    },
+    {
+      "top": "75%",
+      "left": "16.67%",
+      "subtext": "alignTo: \"none\" (default)",
+      "textAlign": "center"
+    },
+    {
+      "top": "75%",
+      "left": "50%",
+      "subtext": "alignTo: \"labelLine\"",
+      "textAlign": "center"
+    },
+    {
+      "top": "75%",
+      "left": "83.33%",
+      "subtext": "alignTo: \"edge\"",
+      "textAlign": "center"
+    }
+  ],
+  "series": [
+    {
+      "type": "pie",
+      "data": [
         {
-            "left": "center",
-            "text": "Pie label alignTo"
+          "name": "Apples",
+          "value": 70
         },
         {
-            "top": "75%",
-            "left": "16.67%",
-            "subtext": "alignTo: \"none\" (default)",
-            "textAlign": "center"
+          "name": "Strawberries",
+          "value": 68
         },
         {
-            "top": "75%",
-            "left": "50%",
-            "subtext": "alignTo: \"labelLine\"",
-            "textAlign": "center"
+          "name": "Bananas",
+          "value": 48
         },
         {
-            "top": "75%",
-            "left": "83.33%",
-            "subtext": "alignTo: \"edge\"",
-            "textAlign": "center"
+          "name": "Oranges",
+          "value": 40
+        },
+        {
+          "name": "Pears",
+          "value": 32
+        },
+        {
+          "name": "Pineapples",
+          "value": 27
+        },
+        {
+          "name": "Grapes",
+          "value": 18
         }
-    ],
-    "series": [
+      ],
+      "label": {
+        "position": "outer",
+        "alignTo": "none",
+        "bleedMargin": 5
+      },
+      "center": ["50%", "50%"],
+      "radius": "25%",
+      "top": 0,
+      "right": "66.6667%",
+      "bottom": 0,
+      "left": 0
+    },
+    {
+      "type": "pie",
+      "data": [
         {
-            "type": "pie",
-            "data": [
-                {
-                    "name": "Apples",
-                    "value": 70
-                },
-                {
-                    "name": "Strawberries",
-                    "value": 68
-                },
-                {
-                    "name": "Bananas",
-                    "value": 48
-                },
-                {
-                    "name": "Oranges",
-                    "value": 40
-                },
-                {
-                    "name": "Pears",
-                    "value": 32
-                },
-                {
-                    "name": "Pineapples",
-                    "value": 27
-                },
-                {
-                    "name": "Grapes",
-                    "value": 18
-                }
-            ],
-            "label": {
-                "position": "outer",
-                "alignTo": "none",
-                "bleedMargin": 5
-            },
-            "center": [
-                "50%",
-                "50%"
-            ],
-            "radius": "25%",
-            "top": 0,
-            "right": "66.6667%",
-            "bottom": 0,
-            "left": 0
+          "name": "Apples",
+          "value": 70
         },
         {
-            "type": "pie",
-            "data": [
-                {
-                    "name": "Apples",
-                    "value": 70
-                },
-                {
-                    "name": "Strawberries",
-                    "value": 68
-                },
-                {
-                    "name": "Bananas",
-                    "value": 48
-                },
-                {
-                    "name": "Oranges",
-                    "value": 40
-                },
-                {
-                    "name": "Pears",
-                    "value": 32
-                },
-                {
-                    "name": "Pineapples",
-                    "value": 27
-                },
-                {
-                    "name": "Grapes",
-                    "value": 18
-                }
-            ],
-            "label": {
-                "position": "outer",
-                "alignTo": "labelLine",
-                "bleedMargin": 5
-            },
-            "center": [
-                "50%",
-                "50%"
-            ],
-            "radius": "25%",
-            "top": 0,
-            "right": "33.3333%",
-            "bottom": 0,
-            "left": "33.3333%"
+          "name": "Strawberries",
+          "value": 68
         },
         {
-            "type": "pie",
-            "data": [
-                {
-                    "name": "Apples",
-                    "value": 70
-                },
-                {
-                    "name": "Strawberries",
-                    "value": 68
-                },
-                {
-                    "name": "Bananas",
-                    "value": 48
-                },
-                {
-                    "name": "Oranges",
-                    "value": 40
-                },
-                {
-                    "name": "Pears",
-                    "value": 32
-                },
-                {
-                    "name": "Pineapples",
-                    "value": 27
-                },
-                {
-                    "name": "Grapes",
-                    "value": 18
-                }
-            ],
-            "label": {
-                "position": "outer",
-                "alignTo": "edge",
-                "margin": 20
-            },
-            "center": [
-                "50%",
-                "50%"
-            ],
-            "radius": "25%",
-            "top": 0,
-            "right": 0,
-            "bottom": 0,
-            "left": "66.6667%"
+          "name": "Bananas",
+          "value": 48
+        },
+        {
+          "name": "Oranges",
+          "value": 40
+        },
+        {
+          "name": "Pears",
+          "value": 32
+        },
+        {
+          "name": "Pineapples",
+          "value": 27
+        },
+        {
+          "name": "Grapes",
+          "value": 18
         }
-    ]
+      ],
+      "label": {
+        "position": "outer",
+        "alignTo": "labelLine",
+        "bleedMargin": 5
+      },
+      "center": ["50%", "50%"],
+      "radius": "25%",
+      "top": 0,
+      "right": "33.3333%",
+      "bottom": 0,
+      "left": "33.3333%"
+    },
+    {
+      "type": "pie",
+      "data": [
+        {
+          "name": "Apples",
+          "value": 70
+        },
+        {
+          "name": "Strawberries",
+          "value": 68
+        },
+        {
+          "name": "Bananas",
+          "value": 48
+        },
+        {
+          "name": "Oranges",
+          "value": 40
+        },
+        {
+          "name": "Pears",
+          "value": 32
+        },
+        {
+          "name": "Pineapples",
+          "value": 27
+        },
+        {
+          "name": "Grapes",
+          "value": 18
+        }
+      ],
+      "label": {
+        "position": "outer",
+        "alignTo": "edge",
+        "margin": 20
+      },
+      "center": ["50%", "50%"],
+      "radius": "25%",
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": "66.6667%"
+    }
+  ]
 }

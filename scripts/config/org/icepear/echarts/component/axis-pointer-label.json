@@ -1,7 +1,5 @@
 {
-    "name": "AxisPointerLabel",
-    "type": "class",
-    "implements": [
-        "AxisPointerLabelOption"
-    ]
+  "name": "AxisPointerLabel",
+  "type": "class",
+  "implements": ["AxisPointerLabelOption"]
 }

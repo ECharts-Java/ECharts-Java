@@ -1,7 +1,5 @@
 {
-    "name": "MarkArea2DDataItemDim",
-    "type": "class",
-    "implements": [
-        "MarkArea2DDataItemDimOption"
-    ]
+  "name": "MarkArea2DDataItemDim",
+  "type": "class",
+  "implements": ["MarkArea2DDataItemDimOption"]
 }

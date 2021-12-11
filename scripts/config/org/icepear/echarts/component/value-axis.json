@@ -1,7 +1,5 @@
 {
-    "name": "ValueAxis",
-    "type": "class",
-    "implements": [
-        "ValueAxisOption"
-    ]
+  "name": "ValueAxis",
+  "type": "class",
+  "implements": ["ValueAxisOption"]
 }

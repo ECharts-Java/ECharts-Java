@@ -1,7 +1,5 @@
 {
-    "name": "BarBackgroundStyle",
-    "type": "class",
-    "implements": [
-        "BarBackgroundStyleOption"
-    ]
+  "name": "BarBackgroundStyle",
+  "type": "class",
+  "implements": ["BarBackgroundStyleOption"]
 }

@@ -1,48 +1,34 @@
 {
-    "name": "CategoryAxisBaseOption",
-    "type": "interface",
-    "extends": [
-        "AxisBaseOptionCommon"
-    ],
-    "fields": [
-        {
-            "name": "type",
-            "types": [
-                "String"
-            ]
-        },
-        {
-            "name": "boundaryGap",
-            "types": [
-                "Boolean"
-            ]
-        },
-        {
-            "name": "axisLabel",
-            "types": [
-                "Object"
-            ]
-        },
-        {
-            "name": "data",
-            "types": [
-                "Object[]"
-            ]
-        },
-        {
-            "name": "deduplication",
-            "types": [
-                "Boolean"
-            ]
-        },
-        {
-            "name": "axisTick",
-            "types": [
-                "Object"
-            ]
-        }
-    ],
-    "comments": [
-        "https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/coord/axisCommonTypes.ts#L110"
-    ]
+  "name": "CategoryAxisBaseOption",
+  "type": "interface",
+  "extends": ["AxisBaseOptionCommon"],
+  "fields": [
+    {
+      "name": "type",
+      "types": ["String"]
+    },
+    {
+      "name": "boundaryGap",
+      "types": ["Boolean"]
+    },
+    {
+      "name": "axisLabel",
+      "types": ["Object"]
+    },
+    {
+      "name": "data",
+      "types": ["Object[]"]
+    },
+    {
+      "name": "deduplication",
+      "types": ["Boolean"]
+    },
+    {
+      "name": "axisTick",
+      "types": ["Object"]
+    }
+  ],
+  "comments": [
+    "https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/coord/axisCommonTypes.ts#L110"
+  ]
 }

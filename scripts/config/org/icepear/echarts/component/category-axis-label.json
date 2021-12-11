@@ -1,7 +1,5 @@
 {
-    "name": "CategoryAxisLabel",
-    "type": "class",
-    "implements": [
-        "CategoryAxisLabelOption"
-    ]
+  "name": "CategoryAxisLabel",
+  "type": "class",
+  "implements": ["CategoryAxisLabelOption"]
 }

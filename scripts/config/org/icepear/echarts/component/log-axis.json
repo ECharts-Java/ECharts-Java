@@ -1,7 +1,5 @@
 {
-    "name": "LogAxis",
-    "type": "class",
-    "implements": [
-        "LogAxisOption"
-    ]
+  "name": "LogAxis",
+  "type": "class",
+  "implements": ["LogAxisOption"]
 }

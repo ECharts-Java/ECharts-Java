@@ -1,7 +1,5 @@
 {
-    "name": "CategoryAxisTick",
-    "type": "class",
-    "implements": [
-        "CategoryAxisTickOption"
-    ]
+  "name": "CategoryAxisTick",
+  "type": "class",
+  "implements": ["CategoryAxisTickOption"]
 }

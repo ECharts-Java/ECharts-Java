@@ -1,28 +1,22 @@
 {
-    "name": "MarkLineStateOption",
-    "type": "interface",
-    "extends": [],
-    "fields": [
-        {
-            "name": "lineStyle",
-            "types": [
-                "LineStyleOption"
-            ]
-        },
-        {
-            "name": "itemStyle",
-            "types": [
-                "ItemStyleOption"
-            ]
-        },
-        {
-            "name": "label",
-            "types": [
-                "SeriesLineLabelOption"
-            ]
-        }
-    ],
-    "comments": [
-        "https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/component/marker/MarkLineModel.ts#L31"
-    ]
+  "name": "MarkLineStateOption",
+  "type": "interface",
+  "extends": [],
+  "fields": [
+    {
+      "name": "lineStyle",
+      "types": ["LineStyleOption"]
+    },
+    {
+      "name": "itemStyle",
+      "types": ["ItemStyleOption"]
+    },
+    {
+      "name": "label",
+      "types": ["SeriesLineLabelOption"]
+    }
+  ],
+  "comments": [
+    "https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/component/marker/MarkLineModel.ts#L31"
+  ]
 }

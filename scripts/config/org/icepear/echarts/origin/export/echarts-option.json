@@ -1,198 +1,118 @@
 {
-    "name": "EChartsOption",
-    "type": "interface",
-    "extends": [
-        "ECBasicOption"
-    ],
-    "fields": [
-        {
-            "name": "dataset",
-            "types": [
-                "DatasetOption",
-                "DatasetOption[]"
-            ]
-        },
-        {
-            "name": "aria",
-            "types": [
-                "AriaOption"
-            ]
-        },
-        {
-            "name": "title",
-            "types": [
-                "TitleOption",
-                "TitleOption[]"
-            ]
-        },
-        {
-            "name": "grid",
-            "types": [
-                "GridOption",
-                "GridOption[]"
-            ]
-        },
-        {
-            "name": "radar",
-            "types": [
-                "RadarOption[]",
-                "RadarOption"
-            ]
-        },
-        {
-            "name": "polar",
-            "types": [
-                "PolarOption[]",
-                "PolarOption"
-            ]
-        },
-        {
-            "name": "geo",
-            "types": [
-                "GeoOption",
-                "GeoOption[]"
-            ]
-        },
-        {
-            "name": "angleAxis",
-            "types": [
-                "AngleAxisOption[]",
-                "AngleAxisOption"
-            ]
-        },
-        {
-            "name": "radiusAxis",
-            "types": [
-                "RadiusAxisOption[]",
-                "RadiusAxisOption"
-            ]
-        },
-        {
-            "name": "xAxis",
-            "types": [
-                "AxisOption[]",
-                "AxisOption"
-            ]
-        },
-        {
-            "name": "yAxis",
-            "types": [
-                "YAXisOption",
-                "YAXisOption[]"
-            ]
-        },
-        {
-            "name": "singleAxis",
-            "types": [
-                "SingleAxisOption",
-                "SingleAxisOption[]"
-            ]
-        },
-        {
-            "name": "parallel",
-            "types": [
-                "ParallelOption",
-                "ParallelOption[]"
-            ]
-        },
-        {
-            "name": "parallelAxis",
-            "types": [
-                "ParallelAxisOption",
-                "ParallelAxisOption[]"
-            ]
-        },
-        {
-            "name": "calendar",
-            "types": [
-                "CalendarOption[]",
-                "CalendarOption"
-            ]
-        },
-        {
-            "name": "toolbox",
-            "types": [
-                "ToolboxOption[]",
-                "ToolboxOption"
-            ]
-        },
-        {
-            "name": "tooltip",
-            "types": [
-                "TooltipOption[]",
-                "TooltipOption"
-            ]
-        },
-        {
-            "name": "axisPointer",
-            "types": [
-                "AxisPointerOption",
-                "AxisPointerOption[]"
-            ]
-        },
-        {
-            "name": "brush",
-            "types": [
-                "BrushOption",
-                "BrushOption[]"
-            ]
-        },
-        {
-            "name": "timeline",
-            "types": [
-                "TimelineSliderOption",
-                "TimelineOption"
-            ]
-        },
-        {
-            "name": "legend",
-            "types": [
-                "LegendOption",
-                "LegendOption[]"
-            ]
-        },
-        {
-            "name": "dataZoom",
-            "types": [
-                "DataZoomOption",
-                "DataZoomOption[]"
-            ]
-        },
-        {
-            "name": "visualMap",
-            "types": [
-                "VisualMapOption[]",
-                "VisualMapOption"
-            ]
-        },
-        {
-            "name": "graphic",
-            "types": [
-                "GraphicOption",
-                "GraphicOption[]"
-            ]
-        },
-        {
-            "name": "series",
-            "types": [
-                "SeriesOption",
-                "SeriesOption[]"
-            ]
-        },
-        {
-            "name": "options",
-            "types": [
-                "EChartsOption[]"
-            ]
-        },
-        {
-            "name": "baseOption",
-            "types": [
-                "EChartsOption"
-            ]
-        }
-    ],
-    "comments": [
-        "https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/export/option.ts#L246"
-    ]
+  "name": "EChartsOption",
+  "type": "interface",
+  "extends": ["ECBasicOption"],
+  "fields": [
+    {
+      "name": "dataset",
+      "types": ["DatasetOption", "DatasetOption[]"]
+    },
+    {
+      "name": "aria",
+      "types": ["AriaOption"]
+    },
+    {
+      "name": "title",
+      "types": ["TitleOption", "TitleOption[]"]
+    },
+    {
+      "name": "grid",
+      "types": ["GridOption", "GridOption[]"]
+    },
+    {
+      "name": "radar",
+      "types": ["RadarOption[]", "RadarOption"]
+    },
+    {
+      "name": "polar",
+      "types": ["PolarOption[]", "PolarOption"]
+    },
+    {
+      "name": "geo",
+      "types": ["GeoOption", "GeoOption[]"]
+    },
+    {
+      "name": "angleAxis",
+      "types": ["AngleAxisOption[]", "AngleAxisOption"]
+    },
+    {
+      "name": "radiusAxis",
+      "types": ["RadiusAxisOption[]", "RadiusAxisOption"]
+    },
+    {
+      "name": "xAxis",
+      "types": ["AxisOption[]", "AxisOption"]
+    },
+    {
+      "name": "yAxis",
+      "types": ["YAXisOption", "YAXisOption[]"]
+    },
+    {
+      "name": "singleAxis",
+      "types": ["SingleAxisOption", "SingleAxisOption[]"]
+    },
+    {
+      "name": "parallel",
+      "types": ["ParallelOption", "ParallelOption[]"]
+    },
+    {
+      "name": "parallelAxis",
+      "types": ["ParallelAxisOption", "ParallelAxisOption[]"]
+    },
+    {
+      "name": "calendar",
+      "types": ["CalendarOption[]", "CalendarOption"]
+    },
+    {
+      "name": "toolbox",
+      "types": ["ToolboxOption[]", "ToolboxOption"]
+    },
+    {
+      "name": "tooltip",
+      "types": ["TooltipOption[]", "TooltipOption"]
+    },
+    {
+      "name": "axisPointer",
+      "types": ["AxisPointerOption", "AxisPointerOption[]"]
+    },
+    {
+      "name": "brush",
+      "types": ["BrushOption", "BrushOption[]"]
+    },
+    {
+      "name": "timeline",
+      "types": ["TimelineSliderOption", "TimelineOption"]
+    },
+    {
+      "name": "legend",
+      "types": ["LegendOption", "LegendOption[]"]
+    },
+    {
+      "name": "dataZoom",
+      "types": ["DataZoomOption", "DataZoomOption[]"]
+    },
+    {
+      "name": "visualMap",
+      "types": ["VisualMapOption[]", "VisualMapOption"]
+    },
+    {
+      "name": "graphic",
+      "types": ["GraphicOption", "GraphicOption[]"]
+    },
+    {
+      "name": "series",
+      "types": ["SeriesOption", "SeriesOption[]"]
+    },
+    {
+      "name": "options",
+      "types": ["EChartsOption[]"]
+    },
+    {
+      "name": "baseOption",
+      "types": ["EChartsOption"]
+    }
+  ],
+  "comments": [
+    "https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/export/option.ts#L246"
+  ]
 }

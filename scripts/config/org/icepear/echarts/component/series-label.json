@@ -1,7 +1,5 @@
 {
-    "name": "SeriesLabel",
-    "type": "class",
-    "implements": [
-        "SeriesLabelOption"
-    ]
+  "name": "SeriesLabel",
+  "type": "class",
+  "implements": ["SeriesLabelOption"]
 }

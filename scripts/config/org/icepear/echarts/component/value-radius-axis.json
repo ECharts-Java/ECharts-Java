@@ -1,7 +1,5 @@
 {
-    "name": "ValueRadiusAxis",
-    "type": "class",
-    "implements": [
-        "ValueRadiusAxisOption"
-    ]
+  "name": "ValueRadiusAxis",
+  "type": "class",
+  "implements": ["ValueRadiusAxisOption"]
 }

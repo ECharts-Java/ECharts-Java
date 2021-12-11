@@ -1,7 +1,5 @@
 {
-    "name": "DefaultRadiusAxis",
-    "type": "class",
-    "implements": [
-        "DefaultRadiusAxisOption"
-    ]
+  "name": "DefaultRadiusAxis",
+  "type": "class",
+  "implements": ["DefaultRadiusAxisOption"]
 }

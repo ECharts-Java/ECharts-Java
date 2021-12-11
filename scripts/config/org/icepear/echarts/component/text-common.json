@@ -1,7 +1,5 @@
 {
-    "name": "Text",
-    "type": "class",
-    "implements": [
-        "TextCommonOption"
-    ]
+  "name": "Text",
+  "type": "class",
+  "implements": ["TextCommonOption"]
 }

@@ -1,7 +1,5 @@
 {
-    "name": "LogAngleAxis",
-    "type": "class",
-    "implements": [
-        "LogAngleAxisOption"
-    ]
+  "name": "LogAngleAxis",
+  "type": "class",
+  "implements": ["LogAngleAxisOption"]
 }

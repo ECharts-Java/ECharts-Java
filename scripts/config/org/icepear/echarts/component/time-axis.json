@@ -1,7 +1,5 @@
 {
-    "name": "TimeAxis",
-    "type": "class",
-    "implements": [
-        "TimeAxisOption"
-    ]
+  "name": "TimeAxis",
+  "type": "class",
+  "implements": ["TimeAxisOption"]
 }
