@@ -1,0 +1,56 @@
+{
+    "tooltip": {
+        "trigger": "item"
+    },
+    "legend": {
+        "top": "5%",
+        "left": "center"
+    },
+    "series": [
+        {
+            "type": "pie",
+            "name": "Access From",
+            "emphasis": {
+                "label": {
+                    "fontWeight": "bold",
+                    "fontSize": "40",
+                    "show": true
+                }
+            },
+            "data": [
+                {
+                    "name": "Search Engine",
+                    "value": 1048
+                },
+                {
+                    "name": "Direct",
+                    "value": 735
+                },
+                {
+                    "name": "Email",
+                    "value": 580
+                },
+                {
+                    "name": "Union Ads",
+                    "value": 484
+                },
+                {
+                    "name": "Video Ads",
+                    "value": 300
+                }
+            ],
+            "labelLine": {
+                "show": false
+            },
+            "label": {
+                "show": false,
+                "position": "center"
+            },
+            "radius": [
+                "40%",
+                "70%"
+            ],
+            "avoidLabelOverlap": false
+        }
+    ]
+}
