@@ -71,6 +71,11 @@ public class Polar implements PolarOption {
 		return this;
 	}
 
+	public Polar setRadius(Object[] radius) {
+		this.radius = radius;
+		return this;
+	}
+
 	public Polar setRadius(String radius) {
 		this.radius = radius;
 		return this;

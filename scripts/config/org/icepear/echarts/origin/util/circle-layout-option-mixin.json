@@ -16,7 +16,8 @@
                 "Number",
                 "String[]",
                 "String",
-                "Number[]"
+                "Number[]",
+                "Object[]"
             ]
         }
     ],

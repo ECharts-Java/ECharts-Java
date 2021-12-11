@@ -16,7 +16,7 @@ public interface LegendOption extends ComponentOption, LegendStyleOption, BoxLay
 
 	LegendOption setShow(Boolean show);
 
-	LegendOption setOrient(Object orient);
+	LegendOption setOrient(String orient);
 
 	LegendOption setAlign(String align);
 
