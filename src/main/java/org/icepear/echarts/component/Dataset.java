@@ -10,6 +10,7 @@ import lombok.experimental.Accessors;
 import org.icepear.echarts.origin.component.dataset.DatasetOption;
 import org.icepear.echarts.origin.data.helper.DataTransformOption;
 import org.icepear.echarts.origin.util.OptionDataItemObject;
+import org.icepear.echarts.origin.util.OptionEncode;
 
 @Accessors(chain=true)
 @Data
@@ -70,7 +71,7 @@ public class Dataset implements DatasetOption {
 
 	private Object[] dimensions;
 
-	private Object encode;
+	private OptionEncode encode;
 
 	@Setter(AccessLevel.NONE)
 	private Object source;

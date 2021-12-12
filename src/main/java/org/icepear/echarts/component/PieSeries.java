@@ -13,6 +13,7 @@ import org.icepear.echarts.origin.chart.pie.PieItemStyleOption;
 import org.icepear.echarts.origin.chart.pie.PieLabelOption;
 import org.icepear.echarts.origin.chart.pie.PieSeriesOption;
 import org.icepear.echarts.origin.util.LabelLineOption;
+import org.icepear.echarts.origin.util.OptionEncode;
 
 @Accessors(chain=true)
 @Data
@@ -408,7 +409,7 @@ public class PieSeries implements PieSeriesOption {
 
 	private Object[] dimensions;
 
-	private Object encode;
+	private OptionEncode encode;
 
 	private String roseType;
 
