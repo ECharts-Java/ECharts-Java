@@ -11,6 +11,7 @@ import org.icepear.echarts.origin.chart.line.LineSeriesOption;
 import org.icepear.echarts.origin.util.ItemStyleOption;
 import org.icepear.echarts.origin.util.LabelLineOption;
 import org.icepear.echarts.origin.util.LineStyleOption;
+import org.icepear.echarts.origin.util.OptionEncode;
 import org.icepear.echarts.origin.util.SeriesLabelOption;
 
 @Accessors(chain=true)
@@ -327,7 +328,7 @@ public class LineSeries implements LineSeriesOption {
 
 	private Object[] dimensions;
 
-	private Object encode;
+	private OptionEncode encode;
 
 	private Boolean clip;
 

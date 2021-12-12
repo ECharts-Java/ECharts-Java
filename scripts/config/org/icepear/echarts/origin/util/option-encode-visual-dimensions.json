@@ -1,0 +1,28 @@
+{
+  "name": "OptionEncodeVisualDimensions",
+  "type": "interface",
+  "extends": [],
+  "fields": [
+    {
+      "name": "tooltip",
+      "types": ["Number", "String", "Number[]", "String[]"]
+    },
+    { "name": "label", "types": ["Number", "String", "Number[]", "String[]"] },
+    {
+      "name": "itemName",
+      "types": ["Number", "String", "Number[]", "String[]"]
+    },
+    { "name": "itemId", "types": ["Number", "String", "Number[]", "String[]"] },
+    {
+      "name": "seriesName",
+      "types": ["Number", "String", "Number[]", "String[]"]
+    },
+    {
+      "name": "itemGroupId",
+      "types": ["Number", "String", "Number[]", "String[]"]
+    }
+  ],
+  "comments": [
+    "https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/util/types.ts#L656"
+  ]
+}

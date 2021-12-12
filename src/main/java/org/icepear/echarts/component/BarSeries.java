@@ -10,6 +10,7 @@ import lombok.experimental.Accessors;
 import org.icepear.echarts.origin.chart.bar.BarBackgroundStyleOption;
 import org.icepear.echarts.origin.chart.bar.BarSeriesOption;
 import org.icepear.echarts.origin.util.LabelLineOption;
+import org.icepear.echarts.origin.util.OptionEncode;
 
 @Accessors(chain=true)
 @Data
@@ -337,7 +338,7 @@ public class BarSeries implements BarSeriesOption {
 
 	private Object[] dimensions;
 
-	private Object encode;
+	private OptionEncode encode;
 
 	private Boolean clip;
 
