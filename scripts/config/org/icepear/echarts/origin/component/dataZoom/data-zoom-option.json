@@ -1,0 +1,178 @@
+{
+    "name": "DataZoomOption",
+    "type": "interface",
+    "extends": [
+        "ComponentOption"
+    ],
+    "fields": [
+        {
+            "name": "mainType",
+            "types": [
+                "String"
+            ]
+        },
+        {
+            "name": "orient",
+            "types": [
+                "LayoutOrient"
+            ]
+        },
+        {
+            "name": "xAxisIndex",
+            "types": [
+                "Number",
+                "Number[]"
+            ]
+        },
+        {
+            "name": "xAxisId",
+            "types": [
+                "String[]",
+                "String"
+            ]
+        },
+        {
+            "name": "yAxisIndex",
+            "types": [
+                "Number",
+                "Number[]"
+            ]
+        },
+        {
+            "name": "yAxisId",
+            "types": [
+                "String[]",
+                "String"
+            ]
+        },
+        {
+            "name": "radiusAxisIndex",
+            "types": [
+                "Number",
+                "Number[]"
+            ]
+        },
+        {
+            "name": "radiusAxisId",
+            "types": [
+                "String[]",
+                "String"
+            ]
+        },
+        {
+            "name": "angleAxisIndex",
+            "types": [
+                "Number",
+                "Number[]"
+            ]
+        },
+        {
+            "name": "angleAxisId",
+            "types": [
+                "String[]",
+                "String"
+            ]
+        },
+        {
+            "name": "singleAxisIndex",
+            "types": [
+                "Number",
+                "Number[]"
+            ]
+        },
+        {
+            "name": "singleAxisId",
+            "types": [
+                "String[]",
+                "String"
+            ]
+        },
+        {
+            "name": "filterMode",
+            "types": [
+                "String"
+            ]
+        },
+        {
+            "name": "throttle",
+            "types": [
+                "null",
+                "Number",
+                "undefined"
+            ]
+        },
+        {
+            "name": "start",
+            "types": [
+                "Number"
+            ]
+        },
+        {
+            "name": "end",
+            "types": [
+                "Number"
+            ]
+        },
+        {
+            "name": "startValue",
+            "types": [
+                "String",
+                "Number",
+                "Date"
+            ]
+        },
+        {
+            "name": "endValue",
+            "types": [
+                "String",
+                "Number",
+                "Date"
+            ]
+        },
+        {
+            "name": "minSpan",
+            "types": [
+                "Number"
+            ]
+        },
+        {
+            "name": "maxSpan",
+            "types": [
+                "Number"
+            ]
+        },
+        {
+            "name": "minValueSpan",
+            "types": [
+                "Number"
+            ]
+        },
+        {
+            "name": "maxValueSpan",
+            "types": [
+                "Number"
+            ]
+        },
+        {
+            "name": "rangeMode",
+            "types": [
+                "String[]"
+            ]
+        },
+        {
+            "name": "realtime",
+            "types": [
+                "Boolean"
+            ]
+        },
+        {
+            "name": "textStyle",
+            "types": [
+                "LabelOption"
+            ]
+        }
+    ],
+    "comments": [
+        "https://github.com/apache/echarts/blob/4569dc1d8b712dafb80b16e31c4fed0118e3acbd/src/component/dataZoom/DataZoomModel.ts#L38"
+    ]
+}

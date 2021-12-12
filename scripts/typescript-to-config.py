@@ -6,7 +6,10 @@ config_dir = "config"
 type_ts_to_java = {
     "number": "Number",
     "string": "String",
-    "boolean": "Boolean"
+    "boolean": "Boolean",
+    "ZRColor": "String",
+    "ColorString": "String",
+    "unknown": "Object",
 }
 
 
