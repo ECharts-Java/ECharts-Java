@@ -1,0 +1,7 @@
+{
+    "name": "DataZoom",
+    "type": "class",
+    "implements": [
+        "DataZoomOption"
+    ]
+}

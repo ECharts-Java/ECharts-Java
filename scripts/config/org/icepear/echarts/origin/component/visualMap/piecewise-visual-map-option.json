@@ -1,0 +1,96 @@
+{
+  "name": "PiecewiseVisualMapOption",
+  "type": "interface",
+  "extends": [
+    "VisualMapOption"
+  ],
+  "fields": [
+    {
+      "name": "align",
+      "types": [
+        "String"
+      ]
+    },
+    {
+      "name": "minOpen",
+      "types": [
+        "Boolean"
+      ]
+    },
+    {
+      "name": "maxOpen",
+      "types": [
+        "Boolean"
+      ]
+    },
+    {
+      "name": "itemWidth",
+      "types": [
+        "Number"
+      ]
+    },
+    {
+      "name": "itemHeight",
+      "types": [
+        "Number"
+      ]
+    },
+    {
+      "name": "itemSymbol",
+      "types": [
+        "String"
+      ]
+    },
+    {
+      "name": "pieces",
+      "types": [
+        "VisualPiece[]"
+      ]
+    },
+    {
+      "name": "categories",
+      "types": [
+        "String[]"
+      ]
+    },
+    {
+      "name": "splitNumber",
+      "types": [
+        "Number"
+      ]
+    },
+    {
+      "name": "selected",
+      "types": [
+        "Dictionary"
+      ]
+    },
+    {
+      "name": "selectedMode",
+      "types": [
+        "String"
+      ]
+    },
+    {
+      "name": "showLabel",
+      "types": [
+        "Boolean"
+      ]
+    },
+    {
+      "name": "itemGap",
+      "types": [
+        "Number"
+      ]
+    },
+    {
+      "name": "hoverLink",
+      "types": [
+        "Boolean"
+      ]
+    }
+  ],
+  "comments": [
+    "https://github.com/apache/echarts/blob/0114414eed6d0f9d1bb951459517e21ae557989f/src/component/visualMap/PiecewiseModel.ts#L70"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+    "name": "PiecewiseVisualMap",
+    "type": "class",
+    "implements": [
+        "PiecewiseVisualMapOption"
+    ]
+}
