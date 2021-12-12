@@ -99,8 +99,8 @@ ECharts Java is a library for Java developers to use JavaScript visualization li
 - [x] [Pie with Scrollable Legend](https://echarts.apache.org/examples/en/editor.html?c=pie-legend) (Not Tested)
 - [x] [Pie Special Label](https://echarts.apache.org/examples/en/editor.html?c=pie-rich-text) (Not Tested)
 - [x] [Nested Pies](https://echarts.apache.org/examples/en/editor.html?c=pie-nest)
-- [ ] [Partition Data to Pies](https://echarts.apache.org/examples/en/editor.html?c=data-transform-multiple-pie)
-- [ ] [Default Arrangement](https://echarts.apache.org/examples/en/editor.html?c=dataset-default)
+- [x] [Partition Data to Pies](https://echarts.apache.org/examples/en/editor.html?c=data-transform-multiple-pie)
+- [x] [Default Arrangement](https://echarts.apache.org/examples/en/editor.html?c=dataset-default)
 - [ ] ~~[Calendar Pie](https://echarts.apache.org/examples/en/editor.html?c=calendar-pie)~~
 - [ ] ~~[Share Dataset](https://echarts.apache.org/examples/en/editor.html?c=dataset-link)~~ (Duplicated)
 

@@ -17,5 +17,5 @@ public interface SeriesEncodeOptionMixin {
 
 	SeriesEncodeOptionMixin setDimensions(Object[] dimensions);
 
-	SeriesEncodeOptionMixin setEncode(Object encode);
+	SeriesEncodeOptionMixin setEncode(OptionEncode encode);
 }
