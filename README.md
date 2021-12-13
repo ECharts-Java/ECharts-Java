@@ -104,7 +104,150 @@ ECharts Java is a library for Java developers to use JavaScript visualization li
 - [ ] ~~[Calendar Pie](https://echarts.apache.org/examples/en/editor.html?c=calendar-pie)~~
 - [ ] ~~[Share Dataset](https://echarts.apache.org/examples/en/editor.html?c=dataset-link)~~ (Duplicated)
 
-### []()
+### [Scatter](https://echarts.apache.org/examples/en/index.html#chart-type-scatter)
+
+- [ ] [Basic Scatter Chart](https://echarts.apache.org/examples/en/editor.html?c=scatter-simple)
+- [ ] [Anscomb's Quartet](https://echarts.apache.org/examples/en/editor.html?c=scatter-anscombe-quartet)
+- [ ] [Clustering Process](https://echarts.apache.org/examples/en/editor.html?c=scatter-clustering)
+- [ ] [Clustering Process](https://echarts.apache.org/examples/en/editor.html?c=scatter-clustering-process)
+- [ ] [Exponential Regression](https://echarts.apache.org/examples/en/editor.html?c=scatter-exponential-regression)
+- [ ] [Effect Scatter Chart](https://echarts.apache.org/examples/en/editor.html?c=scatter-effect)
+- [ ] [Linear Regression](https://echarts.apache.org/examples/en/editor.html?c=scatter-linear-regression)
+- [ ] [Polynomial Regression](https://echarts.apache.org/examples/en/editor.html?c=scatter-polynomial-regression)
+- [ ] [Punch Card of Github](https://echarts.apache.org/examples/en/editor.html?c=scatter-punchCard)
+- [ ] [Scatter on Single Axis](https://echarts.apache.org/examples/en/editor.html?c=scatter-single-axis)
+- [ ] [Distribution of Height and Weight](https://echarts.apache.org/examples/en/editor.html?c=scatter-weight)
+- [ ] [Aggregate Scatter to Bar](https://echarts.apache.org/examples/en/editor.html?c=scatter-aggregate-bar)
+- [ ] [Align Label on the Right](https://echarts.apache.org/examples/en/editor.html?c=scatter-label-align-right)
+- [ ] [Align Label on the Top](https://echarts.apache.org/examples/en/editor.html?c=scatter-label-align-top)
+- [ ] [Symbol Shape Morph](https://echarts.apache.org/examples/en/editor.html?c=scatter-symbol-morph)
+- [ ] [Large Scatter](https://echarts.apache.org/examples/en/editor.html?c=scatter-large)
+- [ ] [Scatter Nebula](https://echarts.apache.org/examples/en/editor.html?c=scatter-nebula)
+- [ ] [Visual Interaction with Stream](https://echarts.apache.org/examples/en/editor.html?c=scatter-stream-visual)
+- [ ] [Bubble Chart](https://echarts.apache.org/examples/en/editor.html?c=bubble-gradient)
+- [ ] [Scatter AQI Color](https://echarts.apache.org/examples/en/editor.html?c=scatter-aqi-color)
+- [ ] [Scatter Nutrients](https://echarts.apache.org/examples/en/editor.html?c=scatter-nutrients)
+- [ ] [Scatter Nutrients Matrix](https://echarts.apache.org/examples/en/editor.html?c=scatter-nutrients-matrix)
+- [ ] [Punch Card of Github (Polar)](https://echarts.apache.org/examples/en/editor.html?c=scatter-polar-punchCard)
+- [ ] [Life Expectancy and GDP](https://echarts.apache.org/examples/en/editor.html?c=scatter-life-expectancy-timeline)
+- [ ] [Master Painter Color Choices Throughout History](https://echarts.apache.org/examples/en/editor.html?c=scatter-painter-choice)
+- [ ] [Air Quality - Baidu Map](https://echarts.apache.org/examples/en/editor.html?c=effectScatter-bmap)
+- [ ] [Logarithmic Regression](https://echarts.apache.org/examples/en/editor.html?c=scatter-logarithmic-regression)
+- [ ] [Scatter Matrix](https://echarts.apache.org/examples/en/editor.html?c=scatter-matrix)
+- [ ] [Calendar Charts](https://echarts.apache.org/examples/en/editor.html?c=calendar-charts)
+
+### [Candlestick](https://echarts.apache.org/examples/en/index.html#chart-type-candlestick)
+
+- [ ] [Basic Candlestick](https://echarts.apache.org/examples/en/editor.html?c=candlestick-simple)
+- [ ] [OHLC Chart](https://echarts.apache.org/examples/en/editor.html?c=custom-ohlc)
+- [ ] [Shanghai Index](https://echarts.apache.org/examples/en/editor.html?c=candlestick-sh)
+- [ ] [Large Scale Candlestick](https://echarts.apache.org/examples/en/editor.html?c=candlestick-large)
+- [ ] [Axis Pointer Link and Touch](https://echarts.apache.org/examples/en/editor.html?c=candlestick-touch)
+- [ ] [Candlestick Brush](https://echarts.apache.org/examples/en/editor.html?c=candlestick-brush)
+- [ ] [Shanghai Index, 2015](https://echarts.apache.org/examples/en/editor.html?c=candlestick-sh-2015)
+
+### [Radar](https://echarts.apache.org/examples/en/index.html#chart-type-radar)
+
+- [ ] [Basic Radar Chart](https://echarts.apache.org/examples/en/editor.html?c=radar)
+- [ ] [AQI - Radar Chart](https://echarts.apache.org/examples/en/editor.html?c=radar-aqi)
+- [ ] [Customized Radar Chart](https://echarts.apache.org/examples/en/editor.html?c=radar-custom)
+- [ ] [Proportion of Browsers](https://echarts.apache.org/examples/en/editor.html?c=radar2)
+- [ ] [Multiple Radar](https://echarts.apache.org/examples/en/editor.html?c=radar-multiple)
+
+### [Boxplot](https://echarts.apache.org/examples/en/index.html#chart-type-boxplot)
+
+- [ ] [Data Transform Simple Aggregate](https://echarts.apache.org/examples/en/editor.html?c=data-transform-aggregate)
+- [ ] [Boxplot Light Velocity](https://echarts.apache.org/examples/en/editor.html?c=boxplot-light-velocity)
+- [ ] [Boxplot Light Velocity 2](https://echarts.apache.org/examples/en/editor.html?c=boxplot-light-velocity2)
+- [ ] [Multiple Categories](https://echarts.apache.org/examples/en/editor.html?c=boxplot-multi)
+
+### [Heatmap](https://echarts.apache.org/examples/en/index.html#chart-type-heatmap)
+
+- [ ] [Heatmap on Cartesian](https://echarts.apache.org/examples/en/editor.html?c=heatmap-cartesian)
+- [ ] [Heatmap - 20K Data](https://echarts.apache.org/examples/en/editor.html?c=heatmap-large)
+- [ ] [Heatmap - Discrete Mapping of Color](https://echarts.apache.org/examples/en/editor.html?c=heatmap-large-piecewise)
+- [ ] [Heatmap on Baidu Map Extension](https://echarts.apache.org/examples/en/editor.html?c=heatmap-bmap)
+- [ ] [Calendar Heatmap](https://echarts.apache.org/examples/en/editor.html?c=calendar-heatmap)
+- [ ] [Calendar Heatmap Vertical](https://echarts.apache.org/examples/en/editor.html?c=calendar-vertical)
+
+### [Graph](https://echarts.apache.org/examples/en/index.html#chart-type-graph)
+
+- [ ] [Force Layout 2](https://echarts.apache.org/examples/en/editor.html?c=graph-force2)
+- [ ] [Graph on Cartesian](https://echarts.apache.org/examples/en/editor.html?c=graph-grid)
+- [ ] [Simple Graph](https://echarts.apache.org/examples/en/editor.html?c=graph-simple)
+- [ ] [Force Layout](https://echarts.apache.org/examples/en/editor.html?c=graph-force)
+- [ ] [Hide Overlapped Label](https://echarts.apache.org/examples/en/editor.html?c=graph-label-overlap)
+- [ ] [Les Miserables](https://echarts.apache.org/examples/en/editor.html?c=graph)
+- [ ] [Les Miserables (Circular)](https://echarts.apache.org/examples/en/editor.html?c=graph-circular-layout)
+- [ ] [Graph Dynamic](https://echarts.apache.org/examples/en/editor.html?c=graph-force-dynamic)
+- [ ] [Graph Life Expectancy](https://echarts.apache.org/examples/en/editor.html?c=graph-life-expectancy)
+- [ ] [Graph Webkit Dep](https://echarts.apache.org/examples/en/editor.html?c=graph-webkit-dep)
+- [ ] [NPM Dependencies](https://echarts.apache.org/examples/en/editor.html?c=graph-npm)
+- [ ] [Calendar Graph](https://echarts.apache.org/examples/en/editor.html?c=calendar-graph)
+
+### [Tree](https://echarts.apache.org/examples/en/index.html#chart-type-tree)
+
+- [ ] [From Left to Right Tree](https://echarts.apache.org/examples/en/editor.html?c=tree-basic)
+- [ ] [Multiple Trees](https://echarts.apache.org/examples/en/editor.html?c=tree-legend)
+- [ ] [From Bottom to Top Tree](https://echarts.apache.org/examples/en/editor.html?c=tree-orient-bottom-top)
+- [ ] [From Right to Left Tree](https://echarts.apache.org/examples/en/editor.html?c=tree-orient-right-left)
+- [ ] [Tree with Polyline Edge](https://echarts.apache.org/examples/en/editor.html?c=tree-polyline)
+- [ ] [Radial Tree](https://echarts.apache.org/examples/en/editor.html?c=tree-radial)
+- [ ] [From Top to Bottom Tree](https://echarts.apache.org/examples/en/editor.html?c=tree-vertical)
+
+### [Sunburst](https://echarts.apache.org/examples/en/index.html#chart-type-sunburst)
+
+- [ ] [Basic Sunburst](https://echarts.apache.org/examples/en/editor.html?c=sunburst-simple)
+- [ ] [Sunburst with Rounded Corner](https://echarts.apache.org/examples/en/editor.html?c=sunburst-borderRadius)
+- [ ] [Sunburst Label Rotate](https://echarts.apache.org/examples/en/editor.html?c=sunburst-label-rotate)
+- [ ] [Monochrome Sunburst](https://echarts.apache.org/examples/en/editor.html?c=sunburst-monochrome)
+- [ ] [Sunburst VisualMap](https://echarts.apache.org/examples/en/editor.html?c=sunburst-visualMap)
+- [ ] [Drink Flavors](https://echarts.apache.org/examples/en/editor.html?c=sunburst-drink)
+- [ ] [Book Records](https://echarts.apache.org/examples/en/editor.html?c=sunburst-book)
+
+### [Parallel](https://echarts.apache.org/examples/en/index.html#chart-type-parallel)
+
+- [ ] [Basic Parallel](https://echarts.apache.org/examples/en/editor.html?c=parallel-simple)
+- [ ] [Parallel AQI](https://echarts.apache.org/examples/en/editor.html?c=parallel-aqi)
+- [ ] [Parallel Nutrients](https://echarts.apache.org/examples/en/editor.html?c=parallel-nutrients)
+- [ ] [Scatter Matrix](https://echarts.apache.org/examples/en/editor.html?c=scatter-matrix) (Duplicated)
+
+### [Sankey](https://echarts.apache.org/examples/en/index.html#chart-type-sankey)
+
+- [ ] [Basic Sankey](https://echarts.apache.org/examples/en/editor.html?c=sankey-simple)
+- [ ] [Sankey Orient Vertical](https://echarts.apache.org/examples/en/editor.html?c=sankey-vertical)
+- [ ] [Specify ItemStyle for Each Node in Sankey](https://echarts.apache.org/examples/en/editor.html?c=sankey-itemstyle)
+- [ ] [Sankey with Levels Setting](https://echarts.apache.org/examples/en/editor.html?c=sankey-levels)
+- [ ] [Gradient Edge](https://echarts.apache.org/examples/en/editor.html?c=sankey-energy)
+- [ ] [Node Align Left in Sankey](https://echarts.apache.org/examples/en/editor.html?c=sankey-nodeAlign-left)
+- [ ] [Node Align Right in Sankey](https://echarts.apache.org/examples/en/editor.html?c=sankey-nodeAlign-right)
+
+### [Funnel](https://echarts.apache.org/examples/en/index.html#chart-type-funnel)
+
+- [ ] [Funnel Chart](https://echarts.apache.org/examples/en/editor.html?c=funnel)
+- [ ] [Funnel Compare](https://echarts.apache.org/examples/en/editor.html?c=funnel-align)
+- [ ] [Customized Funnel](https://echarts.apache.org/examples/en/editor.html?c=funnel-customize)
+- [ ] [Multiple Funnels](https://echarts.apache.org/examples/en/editor.html?c=funnel-mutiple)
+
+### [Gauge](https://echarts.apache.org/examples/en/index.html#chart-type-gauge)
+
+- [ ] [Gauge Basic Chart](https://echarts.apache.org/examples/en/editor.html?c=gauge)
+- [ ] [Simple Gauge](https://echarts.apache.org/examples/en/editor.html?c=gauge-simple)
+- [ ] [Speed Gauge](https://echarts.apache.org/examples/en/editor.html?c=gauge-speed)
+- [ ] [Grogress Gauge](https://echarts.apache.org/examples/en/editor.html?c=gauge-progress)
+- [ ] [Stage Speed Gauge](https://echarts.apache.org/examples/en/editor.html?c=gauge-stage)
+- [ ] [Grade Gauge](https://echarts.apache.org/examples/en/editor.html?c=gauge-grade)
+- [ ] [Multi Title Gauge](https://echarts.apache.org/examples/en/editor.html?c=gauge-multi-title)
+- [ ] [Temperature Gauge Chart](https://echarts.apache.org/examples/en/editor.html?c=gauge-temperature)
+- [ ] [Ring Gauge](https://echarts.apache.org/examples/en/editor.html?c=gauge-ring)
+- [ ] [Gauge Barometer Chart](https://echarts.apache.org/examples/en/editor.html?c=gauge-barometer)
+- [ ] [Clock](https://echarts.apache.org/examples/en/editor.html?c=gauge-clock)
+- [ ] [Gauge Car](https://echarts.apache.org/examples/en/editor.html?c=gauge-car)
+
+### [ThemeRiver](https://echarts.apache.org/examples/en/index.html#chart-type-themeRiver)
+
+- [ ] [ThemeRiver](https://echarts.apache.org/examples/en/editor.html?c=themeRiver-basic)
+- [ ] [ThemeRiver Lastfm](https://echarts.apache.org/examples/en/editor.html?c=themeRiver-lastfm)
 
 ## License
 
