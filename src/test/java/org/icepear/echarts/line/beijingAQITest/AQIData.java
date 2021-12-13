@@ -3,7 +3,7 @@ package org.icepear.echarts.line.beijingAQITest;
 import lombok.Data;
 
 @Data
-public class AQIData {
+class AQIData {
     private String date;
     private Number aqi;
 
