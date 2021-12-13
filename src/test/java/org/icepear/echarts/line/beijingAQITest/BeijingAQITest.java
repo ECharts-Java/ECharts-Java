@@ -11,8 +11,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import com.google.gson.Gson;
-import com.google.gson.JsonArray;
 import com.google.gson.stream.JsonReader;
 
 import org.icepear.echarts.component.CategoryAxis;
@@ -39,21 +37,20 @@ public class BeijingAQITest {
 	private AQIData readDTO(JsonReader reader) throws IOException {
 		reader.beginArray();
 		List<String> tempStr = new ArrayList<>();
-		while(reader.hasNext()) {
+		while (reader.hasNext()) {
 			tempStr.add(reader.nextString());
 		}
 		reader.endArray();
 		return new AQIData(tempStr.get(0), Integer.parseInt(tempStr.get(1)));
 	}
 
-    private Number[] getSeriesData() throws IOException{
+	private Number[] getSeriesData() throws IOException {
 		List<Number> resList = new ArrayList<>();
 		try (
-			InputStream inputStream = Files.newInputStream(Path.of(path));
-			JsonReader reader = new JsonReader(new InputStreamReader(inputStream));
-		) {
+				InputStream inputStream = Files.newInputStream(Path.of(path));
+				JsonReader reader = new JsonReader(new InputStreamReader(inputStream));) {
 			reader.beginArray();
-			while(reader.hasNext()) {
+			while (reader.hasNext()) {
 				AQIData dto = readDTO(reader);
 				resList.add(dto.getAqi());
 			}
@@ -63,47 +60,73 @@ public class BeijingAQITest {
 		return res;
 	}
 
-    @Test
-    public void testBeijingAQI() {
-        Title title = new Title()
-                .setText("Beijing AQI")
-                .setLeft("1%");
-        Tooltip tooltip = new Tooltip()
-                .setTrigger("axis");
-        Grid grid = new Grid()
-                .setLeft("5%")
-                .setRight("15%")
-                .setBottom("10%");
-        // axis not clear
-        Map featureMap = new HashMap(); // weird
-        featureMap.put("dataZoom", new ToolboxDataZoomFeature());
-        featureMap.put("restore", new ToolboxRestoreFeature());
-        featureMap.put("saveAsImage", new ToolboxSaveAsImageFeature());
-        Toolbox toolbox = new Toolbox().setRight(10).setFeature(featureMap);
-        DataZoom dataZoomEle1 = new DataZoom().setStartValue("2014-06-01");
-        DataZoom dataZoomEle2 = new DataZoom().setType("inside");
-        // outofrange not implemented
-        // piecewise/continuous => visualmap ?
-		VisualPiece visualPieces1 =  new VisualPiece().setGt(0).setLte(50).setColor("#93CE07");
-		VisualPiece visualPieces2 =  new VisualPiece().setGt(50).setLte(100).setColor("#FBDB0F");
-		VisualPiece visualPieces3 =  new VisualPiece().setGt(100).setLte(150).setColor("#FC7D02");
-		VisualPiece visualPieces4 =  new VisualPiece().setGt(150).setLte(200).setColor("#FD0100");
-		VisualPiece visualPieces5 =  new VisualPiece().setGt(200).setLte(300).setColor("#AA069F");
-		VisualPiece visualPieces6 =  new VisualPiece().setGt(300).setColor("#AC3B2A");
-		VisualPiece[] pieces = {visualPieces1, visualPieces2, visualPieces3, visualPieces4, visualPieces5, visualPieces6};
+	@Test
+	public void testBeijingAQI() {
+		Title title = new Title()
+				.setText("Beijing AQI")
+				.setLeft("1%");
 
-        PiecewiseVisualMap visualMap = new PiecewiseVisualMap().setTop(50).setRight(10).setPieces(pieces);
-		
+		Tooltip tooltip = new Tooltip()
+				.setTrigger("axis");
+
+		Grid grid = new Grid()
+				.setLeft("5%")
+				.setRight("15%")
+				.setBottom("10%");
+
+		// axis not clear
+		Map featureMap = new HashMap(); // weird
+		featureMap.put("dataZoom", new ToolboxDataZoomFeature());
+		featureMap.put("restore", new ToolboxRestoreFeature());
+		featureMap.put("saveAsImage", new ToolboxSaveAsImageFeature());
+		Toolbox toolbox = new Toolbox().setRight(10).setFeature(featureMap);
+		DataZoom dataZoomEle1 = new DataZoom().setStartValue("2014-06-01");
+		DataZoom dataZoomEle2 = new DataZoom().setType("inside");
+		// outofrange not implemented
+		// piecewise/continuous => visualmap ?
+		VisualPiece visualPieces1 = new VisualPiece()
+				.setGt(0)
+				.setLte(50)
+				.setColor("#93CE07");
+		VisualPiece visualPieces2 = new VisualPiece()
+				.setGt(50)
+				.setLte(100)
+				.setColor("#FBDB0F");
+		VisualPiece visualPieces3 = new VisualPiece()
+				.setGt(100)
+				.setLte(150)
+				.setColor("#FC7D02");
+		VisualPiece visualPieces4 = new VisualPiece()
+				.setGt(150)
+				.setLte(200)
+				.setColor("#FD0100");
+		VisualPiece visualPieces5 = new VisualPiece()
+				.setGt(200)
+				.setLte(300)
+				.setColor("#AA069F");
+		VisualPiece visualPieces6 = new VisualPiece()
+				.setGt(300)
+				.setColor("#AC3B2A");
+		VisualPiece[] pieces = { visualPieces1, visualPieces2, visualPieces3, visualPieces4, visualPieces5,
+				visualPieces6 };
+
+		PiecewiseVisualMap visualMap = new PiecewiseVisualMap()
+				.setTop(50)
+				.setRight(10)
+				.setPieces(pieces);
+
 		Number[] data = {};
 		try {
 			data = getSeriesData();
 		} catch (Exception e) {
 			System.out.println(e);
 		}
-        // LineSeries series = new LineSeries().setName("Beijing AQI").setType("line").setData(data).setMarkLine(
-        //         new MarkLine().setSilent(true).setLineStyle(new LineStyle().setColor("#333")).setData(markLineData));
-        Option option = new Option().setDataZoom(Arrays.asList(dataZoomEle1, dataZoomEle2));
+		// LineSeries series = new LineSeries().setName("Beijing
+		// AQI").setType("line").setData(data).setMarkLine(
+		// new MarkLine().setSilent(true).setLineStyle(new
+		// LineStyle().setColor("#333")).setData(markLineData));
+		Option option = new Option().setDataZoom(Arrays.asList(dataZoomEle1, dataZoomEle2));
 
-    }
+	}
 
 }
