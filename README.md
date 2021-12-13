@@ -22,7 +22,7 @@ ECharts Java is a library for Java developers to use JavaScript visualization li
 - [ ] [Large Scale Area Chart](https://echarts.apache.org/examples/en/editor.html?c=area-simple)
 - [ ] ~~[Confidence Band](https://echarts.apache.org/examples/en/editor.html?c=confidence-band)~~
 - [ ] [Rainfall vs Evaporation (Line)](https://echarts.apache.org/examples/en/editor.html?c=grid-multiple)
-- [ ] [Beijing AQI](https://echarts.apache.org/examples/en/editor.html?c=line-aqi)
+- [x] [Beijing AQI](https://echarts.apache.org/examples/en/editor.html?c=line-aqi)
 - [ ] ~~[Multiple X Axes](https://echarts.apache.org/examples/en/editor.html?c=multiple-x-axis)~~
 - [ ] [Rainfall](https://echarts.apache.org/examples/en/editor.html?c=area-rainfall)
 - [ ] [Area Chart with Time Axis](https://echarts.apache.org/examples/en/editor.html?c=area-time-axis)
@@ -54,7 +54,7 @@ ECharts Java is a library for Java developers to use JavaScript visualization li
 - [ ] [Bar Chart with Negative Value](https://echarts.apache.org/examples/en/editor.html?c=bar-negative2)
 - [ ] [Radial Polar Bar Label Position](https://echarts.apache.org/examples/en/editor.html?c=bar-polar-label-radial)
 - [ ] [Tangential Polar Bar Label Position](https://echarts.apache.org/examples/en/editor.html?c=bar-polar-label-tangential)
-- [ ] [World Population](https://echarts.apache.org/examples/en/editor.html?c=bar-y-category)
+- [x] [World Population](https://echarts.apache.org/examples/en/editor.html?c=bar-y-category)
 - [ ] ~~[Clickable Column Chart with Gradient](https://echarts.apache.org/examples/en/editor.html?c=bar-gradient)~~
 - [ ] ~~[Bar Label Rotation](https://echarts.apache.org/examples/en/editor.html?c=bar-label-rotation)~~
 - [ ] [Stacked Column Chart](https://echarts.apache.org/examples/en/editor.html?c=bar-stack)
