@@ -29,6 +29,7 @@ import org.icepear.echarts.component.ToolboxDataZoomFeature;
 import org.icepear.echarts.component.ToolboxRestoreFeature;
 import org.icepear.echarts.component.ToolboxSaveAsImageFeature;
 import org.icepear.echarts.component.Tooltip;
+import org.icepear.echarts.component.VisualPiece;
 import org.junit.Test;
 
 public class BeijingAQITest {
@@ -83,7 +84,16 @@ public class BeijingAQITest {
         DataZoom dataZoomEle2 = new DataZoom().setType("inside");
         // outofrange not implemented
         // piecewise/continuous => visualmap ?
-        PiecewiseVisualMap visualMap = new PiecewiseVisualMap().setTop(50).setRight(10);
+		VisualPiece visualPieces1 =  new VisualPiece().setGt(0).setLte(50).setColor("#93CE07");
+		VisualPiece visualPieces2 =  new VisualPiece().setGt(50).setLte(100).setColor("#FBDB0F");
+		VisualPiece visualPieces3 =  new VisualPiece().setGt(100).setLte(150).setColor("#FC7D02");
+		VisualPiece visualPieces4 =  new VisualPiece().setGt(150).setLte(200).setColor("#FD0100");
+		VisualPiece visualPieces5 =  new VisualPiece().setGt(200).setLte(300).setColor("#AA069F");
+		VisualPiece visualPieces6 =  new VisualPiece().setGt(300).setColor("#AC3B2A");
+		VisualPiece[] pieces = {visualPieces1, visualPieces2, visualPieces3, visualPieces4, visualPieces5, visualPieces6};
+
+        PiecewiseVisualMap visualMap = new PiecewiseVisualMap().setTop(50).setRight(10).setPieces(pieces);
+		
 		Number[] data = {};
 		try {
 			data = getSeriesData();
