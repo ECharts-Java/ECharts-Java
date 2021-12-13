@@ -1,0 +1,7 @@
+{
+    "name": "VisualPiece",
+    "type": "class",
+    "implements": [
+        "VisualPieceOption"
+    ]
+}

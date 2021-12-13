@@ -1,0 +1,21 @@
+{
+    "name": "VisualOptionUnit",
+    "type": "interface",
+    "extends": [],
+    "fields": [
+      { "name": "symbol", "types": ["String"] },
+      { "name": "symbolSize", "types": ["Number"] },
+      { "name": "color", "types": ["String"] },
+      { "name": "colorAlpha", "types": ["Number"] },
+      { "name": "opacity", "types": ["Number"] },
+      { "name": "colorLightness", "types": ["Number"] },
+      { "name": "colorSaturation", "types": ["Number"] },
+      { "name": "colorHue", "types": ["Number"] },
+      { "name": "decal", "types": ["DecalObject"] },
+      { "name": "liftZ", "types": ["Number"] }
+    ],
+    "comments": [
+        "https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/util/types.ts#L1005"
+    ]
+  }
+  
