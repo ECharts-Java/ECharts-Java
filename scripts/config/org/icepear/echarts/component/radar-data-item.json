@@ -1,0 +1,5 @@
+{
+  "name": "RadarDataItem",
+  "type": "class",
+  "implements": ["RadarDataItemOption"]
+}
