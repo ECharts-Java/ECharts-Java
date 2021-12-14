@@ -1,8 +1,11 @@
 package org.icepear.echarts.line.beijingAQITest;
 
+import static org.junit.Assert.assertEquals;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.io.Reader;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
@@ -11,14 +14,18 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import com.google.gson.JsonElement;
+import com.google.gson.JsonParser;
 import com.google.gson.stream.JsonReader;
 
 import org.icepear.echarts.component.CategoryAxis;
 import org.icepear.echarts.component.DataZoom;
+import org.icepear.echarts.component.DefaultAxis;
 import org.icepear.echarts.component.Grid;
 import org.icepear.echarts.component.LineSeries;
 import org.icepear.echarts.component.LineStyle;
 import org.icepear.echarts.component.MarkLine;
+import org.icepear.echarts.component.MarkLine1DDataItem;
 import org.icepear.echarts.component.Option;
 import org.icepear.echarts.component.PiecewiseVisualMap;
 import org.icepear.echarts.component.Title;
@@ -28,11 +35,13 @@ import org.icepear.echarts.component.ToolboxRestoreFeature;
 import org.icepear.echarts.component.ToolboxSaveAsImageFeature;
 import org.icepear.echarts.component.Tooltip;
 import org.icepear.echarts.component.VisualPiece;
+import org.icepear.echarts.origin.component.toolbox.ToolboxFeatureOption;
+import org.icepear.echarts.serializer.EChartSerializer;
 import org.junit.Test;
 
 public class BeijingAQITest {
 
-	private static final String path = "src/test/data/aqi-beijing.json";
+	private static final String path = "src/test/mock/aqi-beijing.json";
 
 	private AQIData readDTO(JsonReader reader) throws IOException {
 		reader.beginArray();
@@ -44,24 +53,39 @@ public class BeijingAQITest {
 		return new AQIData(tempStr.get(0), Integer.parseInt(tempStr.get(1)));
 	}
 
-	private Number[] getSeriesData() throws IOException {
-		List<Number> resList = new ArrayList<>();
+	private List<AQIData> getData() throws IOException {
+		List<AQIData> resList = new ArrayList<>();
 		try (
 				InputStream inputStream = Files.newInputStream(Path.of(path));
 				JsonReader reader = new JsonReader(new InputStreamReader(inputStream));) {
 			reader.beginArray();
 			while (reader.hasNext()) {
 				AQIData dto = readDTO(reader);
-				resList.add(dto.getAqi());
+				resList.add(dto);
 			}
 			reader.endArray();
 		}
-		Number[] res = resList.toArray(new Number[resList.size()]);
-		return res;
+		return resList;
 	}
 
 	@Test
 	public void testBeijingAQI() {
+
+		List<AQIData> data = new ArrayList<>();
+		try {
+			data = getData();
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+		int size = data.size();
+		String[] xAxisData = new String[size];
+		Number[] seriesData = new Number[size];
+
+		for (int i = 0; i < size; i++) {
+			xAxisData[i] = data.get(i).getDate();
+			seriesData[i] = data.get(i).getAqi();
+		}
+
 		Title title = new Title()
 				.setText("Beijing AQI")
 				.setLeft("1%");
@@ -74,16 +98,21 @@ public class BeijingAQITest {
 				.setRight("15%")
 				.setBottom("10%");
 
-		// axis not clear
-		Map featureMap = new HashMap(); // weird
-		featureMap.put("dataZoom", new ToolboxDataZoomFeature());
-		featureMap.put("restore", new ToolboxRestoreFeature());
-		featureMap.put("saveAsImage", new ToolboxSaveAsImageFeature());
+		CategoryAxis xAxis = new CategoryAxis().setData(xAxisData);
+
+		DefaultAxis yAxis = new DefaultAxis();
+		Map<String, ToolboxFeatureOption> featureMap = new HashMap<>() {
+			{
+				put("dataZoom", new ToolboxDataZoomFeature().setYAxisIndex("none"));
+				put("restore", new ToolboxRestoreFeature());
+				put("saveAsImage", new ToolboxSaveAsImageFeature());
+			}
+		};
 		Toolbox toolbox = new Toolbox().setRight(10).setFeature(featureMap);
 		DataZoom dataZoomEle1 = new DataZoom().setStartValue("2014-06-01");
 		DataZoom dataZoomEle2 = new DataZoom().setType("inside");
-		// outofrange not implemented
-		// piecewise/continuous => visualmap ?
+		DataZoom[] dataZoom = { dataZoomEle1, dataZoomEle2 };
+
 		VisualPiece visualPieces1 = new VisualPiece()
 				.setGt(0)
 				.setLte(50)
@@ -107,25 +136,51 @@ public class BeijingAQITest {
 		VisualPiece visualPieces6 = new VisualPiece()
 				.setGt(300)
 				.setColor("#AC3B2A");
-		VisualPiece[] pieces = { visualPieces1, visualPieces2, visualPieces3, visualPieces4, visualPieces5,
-				visualPieces6 };
+		VisualPiece[] pieces = {
+				visualPieces1, visualPieces2, visualPieces3, visualPieces4, visualPieces5, visualPieces6 };
 
 		PiecewiseVisualMap visualMap = new PiecewiseVisualMap()
 				.setTop(50)
 				.setRight(10)
 				.setPieces(pieces);
 
-		Number[] data = {};
-		try {
-			data = getSeriesData();
-		} catch (Exception e) {
-			System.out.println(e);
-		}
-		// LineSeries series = new LineSeries().setName("Beijing
-		// AQI").setType("line").setData(data).setMarkLine(
-		// new MarkLine().setSilent(true).setLineStyle(new
-		// LineStyle().setColor("#333")).setData(markLineData));
-		Option option = new Option().setDataZoom(Arrays.asList(dataZoomEle1, dataZoomEle2));
+		MarkLine1DDataItem dataItem1 = new MarkLine1DDataItem().setYAxis(50);
+		MarkLine1DDataItem dataItem2 = new MarkLine1DDataItem().setYAxis(100);
+		MarkLine1DDataItem dataItem3 = new MarkLine1DDataItem().setYAxis(150);
+		MarkLine1DDataItem dataItem4 = new MarkLine1DDataItem().setYAxis(200);
+		MarkLine1DDataItem dataItem5 = new MarkLine1DDataItem().setYAxis(300);
+		MarkLine1DDataItem[] markLineData = {
+				dataItem1, dataItem2, dataItem3, dataItem4, dataItem5
+		};
+
+		LineSeries series = new LineSeries()
+				.setName("Beijing AQI")
+				.setType("line")
+				.setData(seriesData)
+				.setMarkLine(
+						new MarkLine()
+								.setSilent(true)
+								.setLineStyle(new LineStyle().setColor("#333"))
+								.setData(markLineData));
+
+		Option option = new Option()
+				.setTitle(title)
+				.setTooltip(tooltip)
+				.setGrid(grid)
+				.setXAxis(xAxis)
+				.setYAxis(yAxis)
+				.setToolbox(toolbox)
+				.setDataZoom(dataZoom)
+				.setVisualMap(visualMap)
+				.setSeries(series);
+
+		// Reader reader = new InputStreamReader(
+		// this.getClass().getResourceAsStream("/line/beijing-aqi.json"));
+		// JsonElement expected = JsonParser.parseReader(reader);
+		// JsonElement actual = EChartSerializer.toJsonTree(option);
+		// assertEquals(expected, actual);
+
+		System.out.println(EChartSerializer.toJson(option));
 
 	}
 
