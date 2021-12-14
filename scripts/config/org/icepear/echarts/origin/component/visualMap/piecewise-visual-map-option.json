@@ -1,93 +1,63 @@
 {
   "name": "PiecewiseVisualMapOption",
   "type": "interface",
-  "extends": [
-    "VisualMapOption"
-  ],
+  "extends": ["VisualMapOption"],
   "fields": [
     {
       "name": "align",
-      "types": [
-        "String"
-      ]
+      "types": ["String"]
     },
     {
       "name": "minOpen",
-      "types": [
-        "Boolean"
-      ]
+      "types": ["Boolean"]
     },
     {
       "name": "maxOpen",
-      "types": [
-        "Boolean"
-      ]
+      "types": ["Boolean"]
     },
     {
       "name": "itemWidth",
-      "types": [
-        "Number"
-      ]
+      "types": ["Number"]
     },
     {
       "name": "itemHeight",
-      "types": [
-        "Number"
-      ]
+      "types": ["Number"]
     },
     {
       "name": "itemSymbol",
-      "types": [
-        "String"
-      ]
+      "types": ["String"]
     },
     {
       "name": "pieces",
-      "types": [
-        "VisualPiece[]"
-      ]
+      "types": ["VisualPiece[]"]
     },
     {
       "name": "categories",
-      "types": [
-        "String[]"
-      ]
+      "types": ["String[]"]
     },
     {
       "name": "splitNumber",
-      "types": [
-        "Number"
-      ]
+      "types": ["Number"]
     },
     {
       "name": "selected",
-      "types": [
-        "Dictionary"
-      ]
+      "types": ["Dictionary"]
     },
     {
       "name": "selectedMode",
-      "types": [
-        "String"
-      ]
+      "types": ["String"]
     },
     {
       "name": "showLabel",
-      "types": [
-        "Boolean"
-      ]
+      "types": ["Boolean"]
     },
     {
       "name": "itemGap",
-      "types": [
-        "Number"
-      ]
+      "types": ["Number"]
     },
     {
       "name": "hoverLink",
-      "types": [
-        "Boolean"
-      ]
+      "types": ["Boolean"]
     }
   ],
   "comments": [

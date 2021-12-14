@@ -1,6 +1,5 @@
 {
-    "name": "Encode",
-    "type": "class",
-    "implements": ["OptionEncode"]
-  }
-  
+  "name": "Encode",
+  "type": "class",
+  "implements": ["OptionEncode"]
+}
