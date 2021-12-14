@@ -1,0 +1,5 @@
+{
+  "name": "BoxplotSeries",
+  "type": "class",
+  "implements": ["BoxplotSeriesOption"]
+}

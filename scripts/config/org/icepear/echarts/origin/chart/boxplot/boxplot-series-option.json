@@ -1,0 +1,23 @@
+{
+  "name": "BoxplotSeriesOption",
+  "type": "interface",
+  "extends": [
+    "SeriesOption",
+    "BoxplotStateOption",
+    "SeriesOnCartesianOptionMixin",
+    "SeriesEncodeOptionMixin"
+  ],
+  "fields": [
+    { "name": "type", "types": ["String"] },
+    { "name": "coordinateSystem", "types": ["String"] },
+    { "name": "layout", "types": ["LayoutOrient"] },
+    { "name": "boxWidth", "types": ["Number[]", "String[]"] },
+    {
+      "name": "data",
+      "types": ["BoxplotDataValue[]", "BoxplotDataItemOption[]"]
+    }
+  ],
+  "comments": [
+    "https://github.com/apache/echarts/blob/1277d7ae81f2b1c7ede4e1731820a1c06bd16cf0/src/chart/boxplot/BoxplotSeries.ts#L58"
+  ]
+}

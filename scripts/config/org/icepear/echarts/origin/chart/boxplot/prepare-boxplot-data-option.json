@@ -1,0 +1,12 @@
+{
+  "name": "PrepareBoxplotDataOption",
+  "type": "interface",
+  "extends": [],
+  "fields": [
+    { "name": "boundIQR", "types": ["String", "Number"] },
+    { "name": "itemNameFormatter", "types": ["String"] }
+  ],
+  "comments": [
+    "https://github.com/apache/echarts/blob/f3471f0a7080e68f8819f7b000d32d73fb0820fb/src/chart/boxplot/prepareBoxplotData.ts#L23"
+  ]
+}
