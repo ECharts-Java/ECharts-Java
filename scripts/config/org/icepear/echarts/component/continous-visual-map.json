@@ -1,7 +1,5 @@
 {
-    "name": "ContinousVisualMap",
-    "type": "class",
-    "implements": [
-        "ContinousVisualMapOption"
-    ]
+  "name": "ContinousVisualMap",
+  "type": "class",
+  "implements": ["ContinousVisualMapOption"]
 }
