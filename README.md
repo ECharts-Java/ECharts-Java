@@ -106,7 +106,7 @@ ECharts Java is a library for Java developers to use JavaScript visualization li
 
 ### [Scatter](https://echarts.apache.org/examples/en/index.html#chart-type-scatter)
 
-- [ ] [Basic Scatter Chart](https://echarts.apache.org/examples/en/editor.html?c=scatter-simple)
+- [x] [Basic Scatter Chart](https://echarts.apache.org/examples/en/editor.html?c=scatter-simple)
 - [ ] [Anscomb's Quartet](https://echarts.apache.org/examples/en/editor.html?c=scatter-anscombe-quartet)
 - [ ] [Clustering Process](https://echarts.apache.org/examples/en/editor.html?c=scatter-clustering)
 - [ ] [Clustering Process](https://echarts.apache.org/examples/en/editor.html?c=scatter-clustering-process)
@@ -138,7 +138,7 @@ ECharts Java is a library for Java developers to use JavaScript visualization li
 
 ### [Candlestick](https://echarts.apache.org/examples/en/index.html#chart-type-candlestick)
 
-- [ ] [Basic Candlestick](https://echarts.apache.org/examples/en/editor.html?c=candlestick-simple)
+- [x] [Basic Candlestick](https://echarts.apache.org/examples/en/editor.html?c=candlestick-simple)
 - [ ] [OHLC Chart](https://echarts.apache.org/examples/en/editor.html?c=custom-ohlc)
 - [ ] [Shanghai Index](https://echarts.apache.org/examples/en/editor.html?c=candlestick-sh)
 - [ ] [Large Scale Candlestick](https://echarts.apache.org/examples/en/editor.html?c=candlestick-large)
