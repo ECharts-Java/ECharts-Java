@@ -174,13 +174,13 @@ public class BeijingAQITest {
 				.setVisualMap(visualMap)
 				.setSeries(series);
 
-		// Reader reader = new InputStreamReader(
-		// this.getClass().getResourceAsStream("/line/beijing-aqi.json"));
-		// JsonElement expected = JsonParser.parseReader(reader);
-		// JsonElement actual = EChartSerializer.toJsonTree(option);
-		// assertEquals(expected, actual);
+		Reader reader = new InputStreamReader(
+		this.getClass().getResourceAsStream("/line/beijing-aqi.json"));
+		JsonElement expected = JsonParser.parseReader(reader);
+		JsonElement actual = EChartSerializer.toJsonTree(option);
+		assertEquals(expected, actual);
 
-		System.out.println(EChartSerializer.toJson(option));
+		// System.out.println(EChartSerializer.toJson(option));
 
 	}
 
