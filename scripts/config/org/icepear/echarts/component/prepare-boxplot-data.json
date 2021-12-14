@@ -1,0 +1,5 @@
+{
+  "name": "PrepareBoxplotData",
+  "type": "class",
+  "implements": ["PrepareBoxplotDataOption"]
+}
