@@ -251,4 +251,4 @@ ECharts Java is a library for Java developers to use JavaScript visualization li
 
 ## License
 
-ECharts Java is available under the [Apache License V2](LICENSE).
+ECharts Java is available under the [Apache-2.0 License](LICENSE).
