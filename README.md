@@ -148,7 +148,7 @@ ECharts Java is a library for Java developers to use JavaScript visualization li
 
 ### [Radar](https://echarts.apache.org/examples/en/index.html#chart-type-radar)
 
-- [ ] [Basic Radar Chart](https://echarts.apache.org/examples/en/editor.html?c=radar)
+- [x] [Basic Radar Chart](https://echarts.apache.org/examples/en/editor.html?c=radar)
 - [ ] [AQI - Radar Chart](https://echarts.apache.org/examples/en/editor.html?c=radar-aqi)
 - [ ] [Customized Radar Chart](https://echarts.apache.org/examples/en/editor.html?c=radar-custom)
 - [ ] [Proportion of Browsers](https://echarts.apache.org/examples/en/editor.html?c=radar2)
@@ -157,7 +157,7 @@ ECharts Java is a library for Java developers to use JavaScript visualization li
 ### [Boxplot](https://echarts.apache.org/examples/en/index.html#chart-type-boxplot)
 
 - [ ] [Data Transform Simple Aggregate](https://echarts.apache.org/examples/en/editor.html?c=data-transform-aggregate)
-- [ ] [Boxplot Light Velocity](https://echarts.apache.org/examples/en/editor.html?c=boxplot-light-velocity)
+- [x] [Boxplot Light Velocity](https://echarts.apache.org/examples/en/editor.html?c=boxplot-light-velocity)
 - [ ] [Boxplot Light Velocity 2](https://echarts.apache.org/examples/en/editor.html?c=boxplot-light-velocity2)
 - [ ] [Multiple Categories](https://echarts.apache.org/examples/en/editor.html?c=boxplot-multi)
 
