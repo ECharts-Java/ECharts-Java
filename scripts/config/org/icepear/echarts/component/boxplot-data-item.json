@@ -1,0 +1,5 @@
+{
+  "name": "BoxplotDataItem",
+  "type": "class",
+  "implements": ["BoxplotDataItemOption"]
+}

@@ -1,0 +1,5 @@
+{
+  "name": "Label",
+  "type": "class",
+  "implements": ["LabelOption"]
+}
