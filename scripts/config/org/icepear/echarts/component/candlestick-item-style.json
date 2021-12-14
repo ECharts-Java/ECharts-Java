@@ -1,0 +1,5 @@
+{
+  "name": "CandlestickItemStyle",
+  "type": "class",
+  "implements": ["CandlestickItemStyleOption"]
+}
