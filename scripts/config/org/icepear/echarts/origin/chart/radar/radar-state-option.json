@@ -1,0 +1,14 @@
+{
+  "name": "RadarStateOption",
+  "type": "interface",
+  "extends": [],
+  "fields": [
+    { "name": "lineStyle", "types": ["LineStyleOption"] },
+    { "name": "areaStyle", "types": ["AreaStyleOption"] },
+    { "name": "label", "types": ["SeriesLabelOption"] },
+    { "name": "itemStyle", "types": ["ItemStyleOption"] }
+  ],
+  "comments": [
+    "https://github.com/apache/echarts/blob/1277d7ae81f2b1c7ede4e1731820a1c06bd16cf0/src/chart/radar/RadarSeries.ts#L50"
+  ]
+}
