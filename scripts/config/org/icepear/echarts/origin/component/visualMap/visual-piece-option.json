@@ -1,20 +1,18 @@
 {
-    "name": "VisualPieceOption",
-    "type": "interface",
-    "extends": ["VisualOptionUnit"],
-    "fields": [
-      { "name": "min", "types": ["Number"] },
-      { "name": "max", "types": ["Number"] },
-      { "name": "lt", "types": ["Number"] },
-      { "name": "gt", "types": ["Number"] },
-      { "name": "lte", "types": ["Number"] },
-      { "name": "gte", "types": ["Number"] },
-      { "name": "value", "types": ["Number"] },
-      { "name": "label", "types": ["String"] }
-    ],
-    "comments": [
-        "https://github.com/apache/echarts/blob/0114414eed6d0f9d1bb951459517e21ae557989f/src/component/visualMap/PiecewiseModel.ts#L31"
-    ]
-    
-  }
-  
+  "name": "VisualPieceOption",
+  "type": "interface",
+  "extends": ["VisualOptionUnit"],
+  "fields": [
+    { "name": "min", "types": ["Number"] },
+    { "name": "max", "types": ["Number"] },
+    { "name": "lt", "types": ["Number"] },
+    { "name": "gt", "types": ["Number"] },
+    { "name": "lte", "types": ["Number"] },
+    { "name": "gte", "types": ["Number"] },
+    { "name": "value", "types": ["Number"] },
+    { "name": "label", "types": ["String"] }
+  ],
+  "comments": [
+    "https://github.com/apache/echarts/blob/0114414eed6d0f9d1bb951459517e21ae557989f/src/component/visualMap/PiecewiseModel.ts#L31"
+  ]
+}
