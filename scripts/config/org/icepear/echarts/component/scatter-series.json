@@ -1,0 +1,5 @@
+{
+  "name": "ScatterSeries",
+  "type": "class",
+  "implements": ["ScatterSeriesOption"]
+}

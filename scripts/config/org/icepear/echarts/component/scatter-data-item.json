@@ -1,0 +1,5 @@
+{
+  "name": "ScatterDataItem",
+  "type": "class",
+  "implements": ["ScatterDataItemOption"]
+}
