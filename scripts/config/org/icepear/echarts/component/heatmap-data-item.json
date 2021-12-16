@@ -1,0 +1,5 @@
+{
+  "name": "HeatmapDataItem",
+  "type": "class",
+  "implements": ["HeatmapDataItemOption"]
+}
