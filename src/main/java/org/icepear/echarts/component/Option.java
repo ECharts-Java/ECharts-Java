@@ -6,11 +6,13 @@ import lombok.Setter;
 import lombok.experimental.Accessors;
 
 import org.icepear.echarts.origin.component.axisPointer.AxisPointerOption;
+import org.icepear.echarts.origin.component.dataZoom.DataZoomOption;
 import org.icepear.echarts.origin.component.dataset.DatasetOption;
 import org.icepear.echarts.origin.component.legend.LegendOption;
 import org.icepear.echarts.origin.component.title.TitleOption;
 import org.icepear.echarts.origin.component.toolbox.ToolboxOption;
 import org.icepear.echarts.origin.component.tooltip.TooltipOption;
+import org.icepear.echarts.origin.component.visualMap.VisualMapOption;
 import org.icepear.echarts.origin.coord.cartesian.AxisOption;
 import org.icepear.echarts.origin.coord.cartesian.GridOption;
 import org.icepear.echarts.origin.coord.polar.AngleAxisOption;
@@ -442,12 +444,12 @@ public class Option implements EChartsOption {
 	@Setter(AccessLevel.NONE)
 	private Object dataZoom;
 
-	public Option setDataZoom(Object dataZoom) {
+	public Option setDataZoom(DataZoomOption dataZoom) {
 		this.dataZoom = dataZoom;
 		return this;
 	}
 
-	public Option setDataZoom(Object[] dataZoom) {
+	public Option setDataZoom(DataZoomOption[] dataZoom) {
 		this.dataZoom = dataZoom;
 		return this;
 	}
@@ -455,12 +457,12 @@ public class Option implements EChartsOption {
 	@Setter(AccessLevel.NONE)
 	private Object visualMap;
 
-	public Option setVisualMap(Object visualMap) {
+	public Option setVisualMap(VisualMapOption visualMap) {
 		this.visualMap = visualMap;
 		return this;
 	}
 
-	public Option setVisualMap(Object[] visualMap) {
+	public Option setVisualMap(VisualMapOption[] visualMap) {
 		this.visualMap = visualMap;
 		return this;
 	}
