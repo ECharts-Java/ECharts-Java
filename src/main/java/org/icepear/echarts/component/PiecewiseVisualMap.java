@@ -241,7 +241,7 @@ public class PiecewiseVisualMap implements PiecewiseVisualMapOption {
 
 	private String itemSymbol;
 
-	private Object[] pieces;
+	private VisualPiece[] pieces;
 
 	private Number splitNumber;
 

@@ -1,11 +1,13 @@
 package org.icepear.echarts.origin.export;
 
 import org.icepear.echarts.origin.component.axisPointer.AxisPointerOption;
+import org.icepear.echarts.origin.component.dataZoom.DataZoomOption;
 import org.icepear.echarts.origin.component.dataset.DatasetOption;
 import org.icepear.echarts.origin.component.legend.LegendOption;
 import org.icepear.echarts.origin.component.title.TitleOption;
 import org.icepear.echarts.origin.component.toolbox.ToolboxOption;
 import org.icepear.echarts.origin.component.tooltip.TooltipOption;
+import org.icepear.echarts.origin.component.visualMap.VisualMapOption;
 import org.icepear.echarts.origin.coord.cartesian.AxisOption;
 import org.icepear.echarts.origin.coord.cartesian.GridOption;
 import org.icepear.echarts.origin.coord.polar.AngleAxisOption;
@@ -100,13 +102,13 @@ public interface EChartsOption extends ECBasicOption {
 
 	EChartsOption setLegend(LegendOption[] legend);
 
-	EChartsOption setDataZoom(Object dataZoom);
+	EChartsOption setDataZoom(DataZoomOption dataZoom);
 
-	EChartsOption setDataZoom(Object[] dataZoom);
+	EChartsOption setDataZoom(DataZoomOption[] dataZoom);
 
-	EChartsOption setVisualMap(Object visualMap);
+	EChartsOption setVisualMap(VisualMapOption visualMap);
 
-	EChartsOption setVisualMap(Object[] visualMap);
+	EChartsOption setVisualMap(VisualMapOption[] visualMap);
 
 	EChartsOption setGraphic(Object graphic);
 
