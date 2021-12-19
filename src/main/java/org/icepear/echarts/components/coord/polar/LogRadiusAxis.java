@@ -190,6 +190,8 @@ public class LogRadiusAxis implements LogRadiusAxisOption {
 		return this;
 	}
 
+	private Object[] data;
+
 	@Setter(AccessLevel.NONE)
 	private Object boundaryGap;
 

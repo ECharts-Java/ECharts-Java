@@ -59,7 +59,7 @@ public class DoughnutChartWithRoundedCornerTest {
                 .setSeries(new SeriesOption[] { series });
 
         Reader reader = new InputStreamReader(
-                this.getClass().getResourceAsStream("/pie/doughnut-chart-with-rounded-corner.json"));
+                this.getClass().getResourceAsStream("/advanced/pie/doughnut-chart-with-rounded-corner.json"));
         JsonElement expected = JsonParser.parseReader(reader);
         JsonElement actual = EChartsSerializer.toJsonTree(option);
         assertEquals(expected, actual);

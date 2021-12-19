@@ -53,8 +53,7 @@ public class DoughnutChartTest {
                 .setLegend(legend)
                 .setSeries(new SeriesOption[] { series });
 
-        Reader reader = new InputStreamReader(
-                this.getClass().getResourceAsStream("/pie/doughnut-chart.json"));
+        Reader reader = new InputStreamReader(this.getClass().getResourceAsStream("/advanced/pie/doughnut-chart.json"));
         JsonElement expected = JsonParser.parseReader(reader);
         JsonElement actual = EChartsSerializer.toJsonTree(option);
         assertEquals(expected, actual);

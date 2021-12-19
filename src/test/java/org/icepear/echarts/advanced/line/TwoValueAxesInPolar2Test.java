@@ -10,9 +10,9 @@ import com.google.gson.JsonParser;
 
 import org.icepear.echarts.Option;
 import org.icepear.echarts.charts.line.LineSeries;
+import org.icepear.echarts.components.coord.polar.DefaultRadiusAxis;
 import org.icepear.echarts.components.coord.polar.PolarAxis;
 import org.icepear.echarts.components.coord.polar.ValueAngleAxis;
-import org.icepear.echarts.components.coord.polar.ValueRadiusAxis;
 import org.icepear.echarts.components.legend.Legend;
 import org.icepear.echarts.components.title.Title;
 import org.icepear.echarts.components.tooltip.Tooltip;
@@ -47,7 +47,7 @@ public class TwoValueAxesInPolar2Test {
                 .setType("value")
                 .setStartAngle(0);
 
-        ValueRadiusAxis radiusAxis = new ValueRadiusAxis()
+        DefaultRadiusAxis radiusAxis = new DefaultRadiusAxis()
                 .setMin(0);
 
         LineSeries series = new LineSeries()
@@ -68,7 +68,7 @@ public class TwoValueAxesInPolar2Test {
                 .setAnimationDuration(2000);
 
         Reader reader = new InputStreamReader(
-                this.getClass().getResourceAsStream("/line/two-value-axes-in-polar-2.json"));
+                this.getClass().getResourceAsStream("/advanced/line/two-value-axes-in-polar-2.json"));
         JsonElement expected = JsonParser.parseReader(reader);
         JsonElement actual = EChartsSerializer.toJsonTree(option);
         assertEquals(expected, actual);

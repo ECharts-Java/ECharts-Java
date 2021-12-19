@@ -190,6 +190,8 @@ public class ValueRadiusAxis implements ValueRadiusAxisOption {
 		return this;
 	}
 
+	private Object[] data;
+
 	@Setter(AccessLevel.NONE)
 	private Object boundaryGap;
 

@@ -56,4 +56,6 @@ public interface AxisBaseOptionCommon extends ComponentOption, AnimationOptionMi
 	AxisBaseOptionCommon setMax(Number max);
 
 	AxisBaseOptionCommon setMax(String max);
+
+	AxisBaseOptionCommon setData(Object[] data);
 }

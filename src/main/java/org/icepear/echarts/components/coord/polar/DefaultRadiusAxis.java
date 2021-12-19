@@ -178,4 +178,6 @@ public class DefaultRadiusAxis implements DefaultRadiusAxisOption {
 		this.max = max;
 		return this;
 	}
+
+	private Object[] data;
 }
