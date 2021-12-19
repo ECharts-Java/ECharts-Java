@@ -15,7 +15,7 @@
     "SeriesEncodeOptionMixin"
   ],
   "fields": [
-    { "name": "type", "types": ["String"] },
+    { "name": "type", "types": ["String"], "default": "scatter" },
     { "name": "coordinateSystem", "types": ["String"] },
     { "name": "cursor", "types": ["String"] },
     { "name": "clip", "types": ["Boolean"] },

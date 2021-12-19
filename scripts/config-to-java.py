@@ -201,24 +201,33 @@ def merge_fields(src, dst, override=False):
 
 def get_all_fields(obj):
     fields = defaultdict(set)
+    defaults = {}
     for field in obj["fields"]:
         if "ignore" not in field or field["ignore"] == False:
             fields[field["name"]] |= set(field["types"])
-    return fields
+            if "default" in field:
+                defaults[field["name"]] = field["default"]
+    return fields, defaults
 
 
 def get_fields_dfs(obj):
     fields = defaultdict(set)
+    defaults = {}
     if obj["type"] == "class":
         for implement in obj["implements"]:
-            merge_fields(get_fields_dfs(
-                symbol_table[implement]["obj"]), fields)
+            subfields, subdefaults = get_fields_dfs(symbol_table[implement]["obj"])
+            merge_fields(subfields, fields)
+            defaults.update(subdefaults)
     elif obj["type"] == "interface":
         for extend in obj["extends"]:
             extend = extend.split("<")[0]
-            merge_fields(get_fields_dfs(symbol_table[extend]["obj"]), fields)
-        merge_fields(get_all_fields(obj), fields)
-    return fields
+            subfields, subdefaults = get_fields_dfs(symbol_table[extend]["obj"])
+            merge_fields(subfields, fields)
+            defaults.update(subdefaults)
+        subfields, subdefaults = get_all_fields(obj)
+        merge_fields(subfields, fields)
+        defaults.update(subdefaults)
+    return fields, defaults
 
 
 def eliminate_fields_conflicts(fields):
@@ -233,15 +242,21 @@ def eliminate_fields_conflicts(fields):
         fields[name] = new_types
 
 
-def generate_class_body_lines(obj, fields, lines):
+def generate_class_body_lines(obj, fields, defaults, lines):
     if len(fields) == 0:
         lines.append("\n")
     for name, types in fields.items():
         if len(types) == 1:
-            lines.append("\n\tprivate {} {};\n".format(list(types)[0], name))
+            if name in defaults:
+                lines.append("\n\tprivate {} {} = {};\n".format(list(types)[0], name, json.dumps(defaults[name])))
+            else:
+                lines.append("\n\tprivate {} {};\n".format(list(types)[0], name))
         else:
             lines.append("\n\t@Setter(AccessLevel.NONE)\n")
-            lines.append("\tprivate Object {};\n".format(name))
+            if name in defaults:
+                lines.append("\tprivate Object {} = {};\n".format(name, json.dumps(defaults[name])))
+            else:
+                lines.append("\tprivate Object {};\n".format(name))
             for type in sorted(list(types)):
                 lines.append("\n\tpublic {} set{}({} {}) {{\n".format(
                     obj["name"], name[0].upper() + name[1:], type, name))
@@ -273,7 +288,7 @@ def generate_file(info, lines):
 def generate_class(info):
     obj = info["obj"]
     symbols = get_symbols_dfs(obj)
-    fields = get_fields_dfs(obj)
+    fields, defaults = get_fields_dfs(obj)
     eliminate_fields_conflicts(fields)
     symbols |= {"Accessors", "Data"}
     lines = []
@@ -281,7 +296,7 @@ def generate_class(info):
     generate_import_lines(info, symbols, fields, lines)
     generate_annotation_lines(lines)
     generate_class_start_line(obj, lines)
-    generate_class_body_lines(obj, fields, lines)
+    generate_class_body_lines(obj, fields, defaults, lines)
     generate_end_line(lines)
     generate_file(info, lines)
 
@@ -289,7 +304,7 @@ def generate_class(info):
 def generate_interface(info):
     obj = info["obj"]
     symbols = get_all_symbols(obj)
-    fields = get_all_fields(obj)
+    fields, _ = get_all_fields(obj)
     eliminate_fields_conflicts(fields)
     lines = []
     generate_package_line(info, lines)

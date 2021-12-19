@@ -20,7 +20,7 @@ public class LineSeries implements LineSeriesOption {
 
 	private String mainType;
 
-	private String type;
+	private String type = "line";
 
 	@Setter(AccessLevel.NONE)
 	private Object id;

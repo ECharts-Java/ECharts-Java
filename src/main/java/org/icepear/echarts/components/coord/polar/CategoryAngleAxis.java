@@ -29,7 +29,7 @@ public class CategoryAngleAxis implements CategoryAngleAxisOption {
 
 	private String mainType;
 
-	private String type;
+	private String type = "category";
 
 	@Setter(AccessLevel.NONE)
 	private Object id;

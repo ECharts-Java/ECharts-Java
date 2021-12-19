@@ -31,7 +31,7 @@ public class TimeAxis implements TimeAxisOption {
 
 	private String mainType;
 
-	private String type;
+	private String type = "time";
 
 	@Setter(AccessLevel.NONE)
 	private Object id;

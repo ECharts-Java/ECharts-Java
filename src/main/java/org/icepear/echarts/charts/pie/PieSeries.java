@@ -21,7 +21,7 @@ public class PieSeries implements PieSeriesOption {
 
 	private String mainType;
 
-	private String type;
+	private String type = "pie";
 
 	@Setter(AccessLevel.NONE)
 	private Object id;

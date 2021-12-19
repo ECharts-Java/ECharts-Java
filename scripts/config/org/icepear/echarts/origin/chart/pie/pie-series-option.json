@@ -11,7 +11,8 @@
   "fields": [
     {
       "name": "type",
-      "types": ["String"]
+      "types": ["String"],
+      "default": "pie"
     },
     {
       "name": "roseType",
