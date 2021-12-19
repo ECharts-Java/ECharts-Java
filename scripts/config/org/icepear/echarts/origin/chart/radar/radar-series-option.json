@@ -8,7 +8,7 @@
     "SeriesEncodeOptionMixin"
   ],
   "fields": [
-    { "name": "type", "types": ["String"] },
+    { "name": "type", "types": ["String"], "default": "radar" },
     { "name": "coordinateSystem", "types": ["String"] },
     { "name": "radarIndex", "types": ["Number"] },
     { "name": "radarId", "types": ["String"] },

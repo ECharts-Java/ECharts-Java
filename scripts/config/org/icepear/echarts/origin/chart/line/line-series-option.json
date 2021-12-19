@@ -14,7 +14,8 @@
   "fields": [
     {
       "name": "type",
-      "types": ["String"]
+      "types": ["String"],
+      "default": "line"
     },
     {
       "name": "coordinateSystem",
