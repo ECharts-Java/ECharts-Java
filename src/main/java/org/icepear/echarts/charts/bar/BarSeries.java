@@ -18,7 +18,7 @@ public class BarSeries implements BarSeriesOption {
 
 	private String mainType;
 
-	private String type;
+	private String type = "bar";
 
 	@Setter(AccessLevel.NONE)
 	private Object id;

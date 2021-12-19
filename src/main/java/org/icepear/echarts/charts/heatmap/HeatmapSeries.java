@@ -20,7 +20,7 @@ public class HeatmapSeries implements HeatmapSeriesOption {
 
 	private String mainType;
 
-	private String type;
+	private String type = "heatmap";
 
 	@Setter(AccessLevel.NONE)
 	private Object id;

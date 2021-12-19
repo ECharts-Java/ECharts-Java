@@ -29,7 +29,7 @@ public class TimeAngleAxis implements TimeAngleAxisOption {
 
 	private String mainType;
 
-	private String type;
+	private String type = "time";
 
 	@Setter(AccessLevel.NONE)
 	private Object id;

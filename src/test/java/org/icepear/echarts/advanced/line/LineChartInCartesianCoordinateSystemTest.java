@@ -12,7 +12,7 @@ import org.icepear.echarts.Option;
 import org.icepear.echarts.charts.line.LineSeries;
 import org.icepear.echarts.components.coord.cartesian.DefaultAxis;
 import org.icepear.echarts.origin.util.SeriesOption;
-import org.icepear.echarts.serializer.EChartSerializer;
+import org.icepear.echarts.serializer.EChartsSerializer;
 import org.junit.Test;
 
 public class LineChartInCartesianCoordinateSystemTest {
@@ -37,7 +37,7 @@ public class LineChartInCartesianCoordinateSystemTest {
         Reader reader = new InputStreamReader(
                 this.getClass().getResourceAsStream("/line/line-chart-in-cartesian-coordinate-system.json"));
         JsonElement expected = JsonParser.parseReader(reader);
-        JsonElement actual = EChartSerializer.toJsonTree(option);
+        JsonElement actual = EChartsSerializer.toJsonTree(option);
         assertEquals(expected, actual);
 
         // System.out.println(EChartSerializer.toJson(option));

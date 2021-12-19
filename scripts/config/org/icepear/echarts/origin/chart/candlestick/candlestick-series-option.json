@@ -9,7 +9,7 @@
     "SeriesEncodeOptionMixin"
   ],
   "fields": [
-    { "name": "type", "types": ["String"] },
+    { "name": "type", "types": ["String"], "default": "candlestick" },
     { "name": "coordinateSystem", "types": ["String"] },
     { "name": "layout", "types": ["LayoutOrient"] },
     { "name": "clip", "types": ["Boolean"] },

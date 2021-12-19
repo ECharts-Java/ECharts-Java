@@ -22,7 +22,7 @@ public class RadarSeries implements RadarSeriesOption {
 
 	private String mainType;
 
-	private String type;
+	private String type = "radar";
 
 	@Setter(AccessLevel.NONE)
 	private Object id;

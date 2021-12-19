@@ -5,7 +5,8 @@
   "fields": [
     {
       "name": "type",
-      "types": ["String"]
+      "types": ["String"],
+      "default": "value"
     },
     {
       "name": "axisLabel",

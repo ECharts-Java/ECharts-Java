@@ -20,7 +20,7 @@ public class ScatterSeries implements ScatterSeriesOption {
 
 	private String mainType;
 
-	private String type;
+	private String type = "scatter";
 
 	@Setter(AccessLevel.NONE)
 	private Object id;

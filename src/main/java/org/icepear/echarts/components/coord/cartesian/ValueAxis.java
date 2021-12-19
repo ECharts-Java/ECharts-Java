@@ -31,7 +31,7 @@ public class ValueAxis implements ValueAxisOption {
 
 	private String mainType;
 
-	private String type;
+	private String type = "value";
 
 	@Setter(AccessLevel.NONE)
 	private Object id;

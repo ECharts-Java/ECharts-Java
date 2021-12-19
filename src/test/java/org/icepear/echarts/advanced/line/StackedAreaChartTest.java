@@ -26,7 +26,7 @@ import org.icepear.echarts.components.tooltip.Tooltip;
 import org.icepear.echarts.components.tooltip.TooltipAxisPointer;
 import org.icepear.echarts.origin.component.toolbox.ToolboxFeatureOption;
 import org.icepear.echarts.origin.util.SeriesOption;
-import org.icepear.echarts.serializer.EChartSerializer;
+import org.icepear.echarts.serializer.EChartsSerializer;
 import org.junit.Test;
 
 public class StackedAreaChartTest {
@@ -122,7 +122,7 @@ public class StackedAreaChartTest {
         Reader reader = new InputStreamReader(
                 this.getClass().getResourceAsStream("/line/stacked-area-chart.json"));
         JsonElement expected = JsonParser.parseReader(reader);
-        JsonElement actual = EChartSerializer.toJsonTree(option);
+        JsonElement actual = EChartsSerializer.toJsonTree(option);
         assertEquals(expected, actual);
 
         // System.out.println(EChartSerializer.toJson(option));

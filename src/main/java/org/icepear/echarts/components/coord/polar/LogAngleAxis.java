@@ -29,7 +29,7 @@ public class LogAngleAxis implements LogAngleAxisOption {
 
 	private String mainType;
 
-	private String type;
+	private String type = "log";
 
 	@Setter(AccessLevel.NONE)
 	private Object id;
