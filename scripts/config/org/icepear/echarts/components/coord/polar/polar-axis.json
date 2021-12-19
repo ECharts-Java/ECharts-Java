@@ -1,0 +1,5 @@
+{
+  "name": "PolarAxis",
+  "type": "class",
+  "implements": ["PolarOption"]
+}

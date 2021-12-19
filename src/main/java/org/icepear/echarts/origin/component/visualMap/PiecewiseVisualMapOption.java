@@ -1,6 +1,6 @@
 package org.icepear.echarts.origin.component.visualMap;
 
-import org.icepear.echarts.component.VisualPiece;
+import org.icepear.echarts.components.visualMap.VisualPiece;
 
 /**
  * https://github.com/apache/echarts/blob/0114414eed6d0f9d1bb951459517e21ae557989f/src/component/visualMap/PiecewiseModel.ts#L70

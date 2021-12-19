@@ -8,11 +8,11 @@ import java.io.Reader;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
 
-import org.icepear.echarts.component.Option;
-import org.icepear.echarts.component.PieDataItem;
-import org.icepear.echarts.component.PieLabel;
-import org.icepear.echarts.component.PieSeries;
-import org.icepear.echarts.component.Title;
+import org.icepear.echarts.Option;
+import org.icepear.echarts.charts.pie.PieDataItem;
+import org.icepear.echarts.charts.pie.PieLabel;
+import org.icepear.echarts.charts.pie.PieSeries;
+import org.icepear.echarts.components.title.Title;
 import org.icepear.echarts.origin.util.SeriesOption;
 import org.icepear.echarts.serializer.EChartSerializer;
 import org.junit.Test;
