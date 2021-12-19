@@ -19,8 +19,7 @@ import org.icepear.echarts.serializer.EChartSerializer;
 public class Engine {
     private Template template;
 
-    public Engine() throws IOException{
-
+    public Engine() throws IOException {
         TemplateLoader cpLoader = new ClassPathTemplateLoader("/", ".hbs");
         TemplateLoader fsLoader = new FileTemplateLoader("src/main/java/org/icepear/echarts/render/templates", ".hbs");
         Handlebars handlebars = new Handlebars().with(cpLoader, fsLoader);
@@ -29,7 +28,6 @@ public class Engine {
 
     public String render(Option option) throws IOException {
         String jsonStr = EChartSerializer.toJson(option);
-        System.out.println(jsonStr);
         String html = this.template.apply(jsonStr);
         return html;
     }
