@@ -96,7 +96,7 @@ public class WriteComplextHtmlTest {
                 .setDataset(new Dataset[] { dataset1, dataset2, dataset3 })
                 .setTooltip(tooltip)
                 .setGrid(grid)
-                .setXAxis(xAxis`)
+                .setXAxis(xAxis)
                 .setYAxis(yAxis)
                 .setSeries(new SeriesOption[] { series1, series2 });
         this.option = option;
