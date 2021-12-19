@@ -1,5 +1,6 @@
 package org.icepear.echarts.render;
 
+import java.awt.Desktop;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
@@ -36,6 +37,8 @@ public class Engine {
         BufferedWriter writer = new BufferedWriter(new FileWriter(path));
         writer.write(render(option));
         writer.close();
+        File file = new File(path);
+        Desktop.getDesktop().browse(file.toURI());
     }
 
 }
