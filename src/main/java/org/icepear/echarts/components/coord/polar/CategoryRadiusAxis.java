@@ -25,7 +25,7 @@ public class CategoryRadiusAxis implements CategoryRadiusAxisOption {
 
 	private String mainType;
 
-	private String type;
+	private String type = "category";
 
 	@Setter(AccessLevel.NONE)
 	private Object id;

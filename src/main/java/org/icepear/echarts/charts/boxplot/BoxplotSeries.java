@@ -20,7 +20,7 @@ public class BoxplotSeries implements BoxplotSeriesOption {
 
 	private String mainType;
 
-	private String type;
+	private String type = "boxplot";
 
 	@Setter(AccessLevel.NONE)
 	private Object id;

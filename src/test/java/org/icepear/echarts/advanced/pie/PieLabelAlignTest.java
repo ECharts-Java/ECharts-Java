@@ -14,7 +14,7 @@ import org.icepear.echarts.charts.pie.PieLabel;
 import org.icepear.echarts.charts.pie.PieSeries;
 import org.icepear.echarts.components.title.Title;
 import org.icepear.echarts.origin.util.SeriesOption;
-import org.icepear.echarts.serializer.EChartSerializer;
+import org.icepear.echarts.serializer.EChartsSerializer;
 import org.junit.Test;
 
 public class PieLabelAlignTest {
@@ -98,7 +98,7 @@ public class PieLabelAlignTest {
         Reader reader = new InputStreamReader(
                 this.getClass().getResourceAsStream("/pie/pie-label-align.json"));
         JsonElement expected = JsonParser.parseReader(reader);
-        JsonElement actual = EChartSerializer.toJsonTree(option);
+        JsonElement actual = EChartsSerializer.toJsonTree(option);
         assertEquals(expected, actual);
 
         // System.out.println(EChartSerializer.toJson(option));

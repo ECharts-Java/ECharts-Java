@@ -31,7 +31,7 @@ public class LogAxis implements LogAxisOption {
 
 	private String mainType;
 
-	private String type;
+	private String type = "log";
 
 	@Setter(AccessLevel.NONE)
 	private Object id;

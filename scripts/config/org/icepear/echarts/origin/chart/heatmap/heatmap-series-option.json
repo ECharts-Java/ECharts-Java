@@ -10,7 +10,7 @@
     "SeriesEncodeOptionMixin"
   ],
   "fields": [
-    { "name": "type", "types": ["String"] },
+    { "name": "type", "types": ["String"], "default": "heatmap" },
     { "name": "coordinateSystem", "types": ["String"] },
     { "name": "blurSize", "types": ["Number"] },
     { "name": "pointSize", "types": ["Number"] },

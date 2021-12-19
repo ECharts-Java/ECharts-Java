@@ -4,7 +4,7 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonElement;
 
-public class EChartSerializer {
+public class EChartsSerializer {
     private static final Gson gson = new GsonBuilder()
             .disableHtmlEscaping()
             .create();

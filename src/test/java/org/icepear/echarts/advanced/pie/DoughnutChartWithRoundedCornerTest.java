@@ -18,7 +18,7 @@ import org.icepear.echarts.charts.pie.PieSeries;
 import org.icepear.echarts.components.legend.Legend;
 import org.icepear.echarts.components.tooltip.Tooltip;
 import org.icepear.echarts.origin.util.SeriesOption;
-import org.icepear.echarts.serializer.EChartSerializer;
+import org.icepear.echarts.serializer.EChartsSerializer;
 import org.junit.Test;
 
 public class DoughnutChartWithRoundedCornerTest {
@@ -61,7 +61,7 @@ public class DoughnutChartWithRoundedCornerTest {
         Reader reader = new InputStreamReader(
                 this.getClass().getResourceAsStream("/pie/doughnut-chart-with-rounded-corner.json"));
         JsonElement expected = JsonParser.parseReader(reader);
-        JsonElement actual = EChartSerializer.toJsonTree(option);
+        JsonElement actual = EChartsSerializer.toJsonTree(option);
         assertEquals(expected, actual);
 
         // System.out.println(EChartSerializer.toJson(option));

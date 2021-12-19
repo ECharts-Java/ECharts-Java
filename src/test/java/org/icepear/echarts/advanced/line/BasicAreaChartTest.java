@@ -14,7 +14,7 @@ import org.icepear.echarts.components.coord.cartesian.CategoryAxis;
 import org.icepear.echarts.components.coord.cartesian.ValueAxis;
 import org.icepear.echarts.components.series.AreaStyle;
 import org.icepear.echarts.origin.util.SeriesOption;
-import org.icepear.echarts.serializer.EChartSerializer;
+import org.icepear.echarts.serializer.EChartsSerializer;
 import org.junit.Test;
 
 public class BasicAreaChartTest {
@@ -40,7 +40,7 @@ public class BasicAreaChartTest {
         Reader reader = new InputStreamReader(
                 this.getClass().getResourceAsStream("/line/basic-area-chart.json"));
         JsonElement expected = JsonParser.parseReader(reader);
-        JsonElement actual = EChartSerializer.toJsonTree(option);
+        JsonElement actual = EChartsSerializer.toJsonTree(option);
         assertEquals(expected, actual);
 
         // System.out.println(EChartSerializer.toJson(option));

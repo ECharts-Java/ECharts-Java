@@ -20,7 +20,7 @@ public class CandlestickSeries implements CandlestickSeriesOption {
 
 	private String mainType;
 
-	private String type;
+	private String type = "candlestick";
 
 	@Setter(AccessLevel.NONE)
 	private Object id;
