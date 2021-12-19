@@ -90,6 +90,10 @@
     {
       "name": "max",
       "types": ["Number", "String"]
+    },
+    {
+      "name": "data",
+      "types": ["Object[]"]
     }
   ],
   "comments": [

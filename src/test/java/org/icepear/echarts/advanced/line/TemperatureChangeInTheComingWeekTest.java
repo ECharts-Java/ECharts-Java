@@ -123,7 +123,7 @@ public class TemperatureChangeInTheComingWeekTest {
                 .setSeries(new SeriesOption[] { series1, series2 });
 
         Reader reader = new InputStreamReader(
-                this.getClass().getResourceAsStream("/line/temperature-change-in-the-coming-week.json"));
+                this.getClass().getResourceAsStream("/advanced/line/temperature-change-in-the-coming-week.json"));
         JsonElement expected = JsonParser.parseReader(reader);
         JsonElement actual = EChartsSerializer.toJsonTree(option);
         assertEquals(expected, actual);

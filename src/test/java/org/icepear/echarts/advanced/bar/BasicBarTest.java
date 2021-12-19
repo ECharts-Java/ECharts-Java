@@ -34,8 +34,7 @@ public class BasicBarTest {
                 .setYAxis(yAxis)
                 .setSeries(new SeriesOption[] { series });
 
-        Reader reader = new InputStreamReader(
-                this.getClass().getResourceAsStream("/bar/basic-bar.json"));
+        Reader reader = new InputStreamReader(this.getClass().getResourceAsStream("/advanced/bar/basic-bar.json"));
         JsonElement expected = JsonParser.parseReader(reader);
         JsonElement actual = EChartsSerializer.toJsonTree(option);
         assertEquals(expected, actual);

@@ -38,7 +38,7 @@ public class BasicAreaChartTest {
                 .setSeries(new SeriesOption[] { series });
 
         Reader reader = new InputStreamReader(
-                this.getClass().getResourceAsStream("/line/basic-area-chart.json"));
+                this.getClass().getResourceAsStream("/advanced/line/basic-area-chart.json"));
         JsonElement expected = JsonParser.parseReader(reader);
         JsonElement actual = EChartsSerializer.toJsonTree(option);
         assertEquals(expected, actual);

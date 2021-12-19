@@ -85,8 +85,7 @@ public class LogAxisTest {
                 .setYAxis(yAxis)
                 .setSeries(new SeriesOption[] { series1, series2, series3 });
 
-        Reader reader = new InputStreamReader(
-                this.getClass().getResourceAsStream("/line/log-axis.json"));
+        Reader reader = new InputStreamReader(this.getClass().getResourceAsStream("/advanced/line/log-axis.json"));
         JsonElement expected = JsonParser.parseReader(reader);
         JsonElement actual = EChartsSerializer.toJsonTree(option);
         assertEquals(expected, actual);

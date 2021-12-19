@@ -89,15 +89,15 @@ public class PartitionDataToPiesTest {
         MediaUnit mediaUnit1 = new MediaUnit()
                 .setQuery(new MediaQuery().setMinAspectRatio(1))
                 .setOption(new Option().setSeries(new SeriesOption[] {
-                        new PieSeries().setCenter(new String[] { "25%", "50%" }),
-                        new PieSeries().setCenter(new String[] { "50%", "50%" }),
-                        new PieSeries().setCenter(new String[] { "75%", "50%" }) }));
+                        new PieSeries().setType(null).setCenter(new String[] { "25%", "50%" }),
+                        new PieSeries().setType(null).setCenter(new String[] { "50%", "50%" }),
+                        new PieSeries().setType(null).setCenter(new String[] { "75%", "50%" }) }));
 
         MediaUnit mediaUnit2 = new MediaUnit()
                 .setOption(new Option().setSeries(new SeriesOption[] {
-                        new PieSeries().setCenter(new String[] { "50%", "25%" }),
-                        new PieSeries().setCenter(new String[] { "50%", "50%" }),
-                        new PieSeries().setCenter(new String[] { "50%", "75%" }) }));
+                        new PieSeries().setType(null).setCenter(new String[] { "50%", "25%" }),
+                        new PieSeries().setType(null).setCenter(new String[] { "50%", "50%" }),
+                        new PieSeries().setType(null).setCenter(new String[] { "50%", "75%" }) }));
 
         Option option = new Option()
                 .setDataset(new DatasetOption[] { dataset1, dataset2, dataset3, dataset4 })
@@ -105,7 +105,7 @@ public class PartitionDataToPiesTest {
                 .setMedia(new MediaUnitOption[] { mediaUnit1, mediaUnit2 });
 
         Reader reader = new InputStreamReader(
-                this.getClass().getResourceAsStream("/pie/partition-data-to-pies.json"));
+                this.getClass().getResourceAsStream("/advanced/pie/partition-data-to-pies.json"));
         JsonElement expected = JsonParser.parseReader(reader);
         JsonElement actual = EChartsSerializer.toJsonTree(option);
         assertEquals(expected, actual);

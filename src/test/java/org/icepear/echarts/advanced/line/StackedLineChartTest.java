@@ -94,7 +94,7 @@ public class StackedLineChartTest {
                 .setSeries(new SeriesOption[] { series1, series2, series3, series4, series5 });
 
         Reader reader = new InputStreamReader(
-                this.getClass().getResourceAsStream("/line/stacked-line-chart.json"));
+                this.getClass().getResourceAsStream("/advanced/line/stacked-line-chart.json"));
         JsonElement expected = JsonParser.parseReader(reader);
         JsonElement actual = EChartsSerializer.toJsonTree(option);
         assertEquals(expected, actual);

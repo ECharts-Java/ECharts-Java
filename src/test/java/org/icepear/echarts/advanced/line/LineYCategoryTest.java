@@ -58,10 +58,10 @@ public class LineYCategoryTest {
                 .setSymbol("circle")
                 .setSmooth(true)
                 .setLineStyle(new LineStyle()
-                    .setWidth(3)
-                    .setShadowColor("rgba(0,0,0,0.3)")
-                    .setShadowBlur(10)
-                    .setShadowOffsetY(8))
+                        .setWidth(3)
+                        .setShadowColor("rgba(0,0,0,0.3)")
+                        .setShadowBlur(10)
+                        .setShadowOffsetY(8))
                 .setData(new Number[] { 15, -50, -56.5, -46.5, -22.1, -2.5, -27.7, -55.7, -76.5 });
 
         Option option = new Option()
@@ -73,7 +73,7 @@ public class LineYCategoryTest {
                 .setSeries(new SeriesOption[] { series });
 
         Reader reader = new InputStreamReader(
-                this.getClass().getResourceAsStream("/line/line-y-category.json"));
+                this.getClass().getResourceAsStream("/advanced/line/line-y-category.json"));
         JsonElement expected = JsonParser.parseReader(reader);
         JsonElement actual = EChartsSerializer.toJsonTree(option);
         assertEquals(expected, actual);

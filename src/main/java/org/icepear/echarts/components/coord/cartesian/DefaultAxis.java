@@ -184,4 +184,6 @@ public class DefaultAxis implements DefaultAxisOption {
 		this.max = max;
 		return this;
 	}
+
+	private Object[] data;
 }

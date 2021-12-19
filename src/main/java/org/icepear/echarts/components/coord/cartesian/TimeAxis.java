@@ -196,6 +196,8 @@ public class TimeAxis implements TimeAxisOption {
 		return this;
 	}
 
+	private Object[] data;
+
 	@Setter(AccessLevel.NONE)
 	private Object boundaryGap;
 

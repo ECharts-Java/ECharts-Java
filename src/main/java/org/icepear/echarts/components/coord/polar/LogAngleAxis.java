@@ -194,6 +194,8 @@ public class LogAngleAxis implements LogAngleAxisOption {
 		return this;
 	}
 
+	private Object[] data;
+
 	@Setter(AccessLevel.NONE)
 	private Object boundaryGap;
 

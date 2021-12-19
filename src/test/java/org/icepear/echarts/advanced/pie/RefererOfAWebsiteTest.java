@@ -57,7 +57,7 @@ public class RefererOfAWebsiteTest {
                 .setSeries(new SeriesOption[] { series });
 
         Reader reader = new InputStreamReader(
-                this.getClass().getResourceAsStream("/pie/referer-of-a-website.json"));
+                this.getClass().getResourceAsStream("/advanced/pie/referer-of-a-website.json"));
         JsonElement expected = JsonParser.parseReader(reader);
         JsonElement actual = EChartsSerializer.toJsonTree(option);
         assertEquals(expected, actual);
