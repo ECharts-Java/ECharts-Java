@@ -8,11 +8,11 @@ import java.io.Reader;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
 
-import org.icepear.echarts.component.BarBackgroundStyle;
-import org.icepear.echarts.component.BarSeries;
-import org.icepear.echarts.component.CategoryAxis;
-import org.icepear.echarts.component.Option;
-import org.icepear.echarts.component.ValueAxis;
+import org.icepear.echarts.Option;
+import org.icepear.echarts.charts.bar.BarBackgroundStyle;
+import org.icepear.echarts.charts.bar.BarSeries;
+import org.icepear.echarts.components.coord.cartesian.CategoryAxis;
+import org.icepear.echarts.components.coord.cartesian.ValueAxis;
 import org.icepear.echarts.origin.util.SeriesOption;
 import org.icepear.echarts.serializer.EChartSerializer;
 import org.junit.Test;

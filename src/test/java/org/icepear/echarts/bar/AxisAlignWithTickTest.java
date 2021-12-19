@@ -8,14 +8,14 @@ import java.io.Reader;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
 
-import org.icepear.echarts.component.BarSeries;
-import org.icepear.echarts.component.CategoryAxis;
-import org.icepear.echarts.component.CategoryAxisTick;
-import org.icepear.echarts.component.Grid;
-import org.icepear.echarts.component.Option;
-import org.icepear.echarts.component.Tooltip;
-import org.icepear.echarts.component.TooltipAxisPointer;
-import org.icepear.echarts.component.ValueAxis;
+import org.icepear.echarts.Option;
+import org.icepear.echarts.charts.bar.BarSeries;
+import org.icepear.echarts.components.coord.CategoryAxisTick;
+import org.icepear.echarts.components.coord.cartesian.CategoryAxis;
+import org.icepear.echarts.components.coord.cartesian.ValueAxis;
+import org.icepear.echarts.components.grid.Grid;
+import org.icepear.echarts.components.tooltip.Tooltip;
+import org.icepear.echarts.components.tooltip.TooltipAxisPointer;
 import org.icepear.echarts.origin.util.SeriesOption;
 import org.icepear.echarts.serializer.EChartSerializer;
 import org.junit.Test;
@@ -23,6 +23,7 @@ import org.junit.Test;
 public class AxisAlignWithTickTest {
     @Test
     public void testAxisAlignWithTick() {
+
         Tooltip tooltip = new Tooltip()
                 .setTrigger("axis")
                 .setAxisPointer(new TooltipAxisPointer()
