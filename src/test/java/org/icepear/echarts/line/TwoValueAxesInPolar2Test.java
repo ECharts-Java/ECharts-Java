@@ -8,15 +8,15 @@ import java.io.Reader;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
 
-import org.icepear.echarts.component.Legend;
-import org.icepear.echarts.component.LineSeries;
-import org.icepear.echarts.component.Option;
-import org.icepear.echarts.component.Polar;
-import org.icepear.echarts.component.Title;
-import org.icepear.echarts.component.Tooltip;
-import org.icepear.echarts.component.TooltipAxisPointer;
-import org.icepear.echarts.component.ValueAngleAxis;
-import org.icepear.echarts.component.ValueRadiusAxis;
+import org.icepear.echarts.Option;
+import org.icepear.echarts.charts.line.LineSeries;
+import org.icepear.echarts.components.coord.polar.PolarAxis;
+import org.icepear.echarts.components.coord.polar.ValueAngleAxis;
+import org.icepear.echarts.components.coord.polar.ValueRadiusAxis;
+import org.icepear.echarts.components.legend.Legend;
+import org.icepear.echarts.components.title.Title;
+import org.icepear.echarts.components.tooltip.Tooltip;
+import org.icepear.echarts.components.tooltip.TooltipAxisPointer;
 import org.icepear.echarts.origin.util.SeriesOption;
 import org.icepear.echarts.serializer.EChartSerializer;
 import org.junit.Test;
@@ -36,7 +36,7 @@ public class TwoValueAxesInPolar2Test {
 
         Legend legend = new Legend().setData(new String[] { "line" });
 
-        Polar polar = new Polar()
+        PolarAxis polar = new PolarAxis()
                 .setCenter(new String[] { "50%", "54%" });
 
         Tooltip tooltip = new Tooltip()
