@@ -58,7 +58,7 @@ public class WriteHtmlTest {
     @Test
     public void testWriteHtml() throws IOException {
         Engine engine = new Engine();
-        engine.writeHtml("test.html", this.option);
+        engine.render("test.html", this.option);
     }
 
 }

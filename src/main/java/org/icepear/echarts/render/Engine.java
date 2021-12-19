@@ -27,18 +27,21 @@ public class Engine {
         this.template = handlebars.compile("page");
     }
 
-    public String render(Option option) throws IOException {
-        String jsonStr = EChartSerializer.toJson(option);
-        String html = this.template.apply(jsonStr);
-        return html;
-    }
-
-    public void writeHtml(String path, Option option) throws IOException {
+    public void writeHtml(String html, String path) throws IOException {
         BufferedWriter writer = new BufferedWriter(new FileWriter(path));
-        writer.write(render(option));
+        writer.write(html);
         writer.close();
         File file = new File(path);
         Desktop.getDesktop().browse(file.toURI());
     }
+
+    public String render(String path, Option option) throws IOException {
+        String jsonStr = EChartSerializer.toJson(option);
+        String html = this.template.apply(jsonStr);
+        writeHtml(html, path);
+        return html;
+    }
+
+
 
 }
