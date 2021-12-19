@@ -1,6 +1,6 @@
 package org.icepear.echarts.origin.component.tooltip;
 
-import org.icepear.echarts.component.TooltipAxisPointer;
+import org.icepear.echarts.components.tooltip.TooltipAxisPointer;
 import org.icepear.echarts.origin.util.CommonTooltipOption;
 import org.icepear.echarts.origin.util.ComponentOption;
 

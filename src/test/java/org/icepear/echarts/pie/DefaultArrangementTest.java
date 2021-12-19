@@ -8,12 +8,12 @@ import java.io.Reader;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
 
-import org.icepear.echarts.component.Dataset;
-import org.icepear.echarts.component.Encode;
-import org.icepear.echarts.component.Legend;
-import org.icepear.echarts.component.Option;
-import org.icepear.echarts.component.PieSeries;
-import org.icepear.echarts.component.Tooltip;
+import org.icepear.echarts.Option;
+import org.icepear.echarts.charts.pie.PieSeries;
+import org.icepear.echarts.components.dataset.Dataset;
+import org.icepear.echarts.components.legend.Legend;
+import org.icepear.echarts.components.series.Encode;
+import org.icepear.echarts.components.tooltip.Tooltip;
 import org.icepear.echarts.origin.util.SeriesOption;
 import org.icepear.echarts.serializer.EChartSerializer;
 import org.junit.Test;

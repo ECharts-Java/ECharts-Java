@@ -8,13 +8,13 @@ import java.io.Reader;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
 
-import org.icepear.echarts.component.Legend;
-import org.icepear.echarts.component.Option;
-import org.icepear.echarts.component.Radar;
-import org.icepear.echarts.component.RadarDataItem;
-import org.icepear.echarts.component.RadarIndicator;
-import org.icepear.echarts.component.RadarSeries;
-import org.icepear.echarts.component.Title;
+import org.icepear.echarts.Option;
+import org.icepear.echarts.charts.radar.RadarDataItem;
+import org.icepear.echarts.charts.radar.RadarSeries;
+import org.icepear.echarts.components.coord.radar.RadarAxis;
+import org.icepear.echarts.components.coord.radar.RadarIndicator;
+import org.icepear.echarts.components.legend.Legend;
+import org.icepear.echarts.components.title.Title;
 import org.icepear.echarts.origin.util.SeriesOption;
 import org.icepear.echarts.serializer.EChartSerializer;
 import org.junit.Test;
@@ -26,7 +26,7 @@ public class BasicRadarChartTest {
 
         Legend legend = new Legend().setData(new String[] { "Allocated Budget", "Actual Spending" });
 
-        Radar radar = new Radar().setIndicator(new RadarIndicator[] {
+        RadarAxis radar = new RadarAxis().setIndicator(new RadarIndicator[] {
                 new RadarIndicator().setName("Sales").setMax(6500),
                 new RadarIndicator().setName("Administration").setMax(16000),
                 new RadarIndicator().setName("Information Technology").setMax(30000),
