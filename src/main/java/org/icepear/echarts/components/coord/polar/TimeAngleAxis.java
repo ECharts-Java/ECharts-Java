@@ -194,6 +194,8 @@ public class TimeAngleAxis implements TimeAngleAxisOption {
 		return this;
 	}
 
+	private Object[] data;
+
 	@Setter(AccessLevel.NONE)
 	private Object boundaryGap;
 

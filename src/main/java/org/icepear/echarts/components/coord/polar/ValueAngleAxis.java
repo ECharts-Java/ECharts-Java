@@ -194,6 +194,8 @@ public class ValueAngleAxis implements ValueAngleAxisOption {
 		return this;
 	}
 
+	private Object[] data;
+
 	@Setter(AccessLevel.NONE)
 	private Object boundaryGap;
 

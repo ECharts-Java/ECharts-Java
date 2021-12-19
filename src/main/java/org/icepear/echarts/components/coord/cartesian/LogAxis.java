@@ -196,6 +196,8 @@ public class LogAxis implements LogAxisOption {
 		return this;
 	}
 
+	private Object[] data;
+
 	@Setter(AccessLevel.NONE)
 	private Object boundaryGap;
 

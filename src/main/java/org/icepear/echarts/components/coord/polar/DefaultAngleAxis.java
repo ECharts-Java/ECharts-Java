@@ -182,4 +182,6 @@ public class DefaultAngleAxis implements DefaultAngleAxisOption {
 		this.max = max;
 		return this;
 	}
+
+	private Object[] data;
 }

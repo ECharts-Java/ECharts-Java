@@ -205,9 +205,9 @@ public class CategoryAngleAxis implements CategoryAngleAxisOption {
 		return this;
 	}
 
-	private Boolean boundaryGap;
-
 	private Object[] data;
+
+	private Boolean boundaryGap;
 
 	private Boolean deduplication;
 }

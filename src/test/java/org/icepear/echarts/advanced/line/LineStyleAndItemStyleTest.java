@@ -47,7 +47,7 @@ public class LineStyleAndItemStyleTest {
                 .setSeries(new SeriesOption[] { series });
 
         Reader reader = new InputStreamReader(
-                this.getClass().getResourceAsStream("/line/line-style-and-item-style.json"));
+                this.getClass().getResourceAsStream("/advanced/line/line-style-and-item-style.json"));
         JsonElement expected = JsonParser.parseReader(reader);
         JsonElement actual = EChartsSerializer.toJsonTree(option);
         assertEquals(expected, actual);

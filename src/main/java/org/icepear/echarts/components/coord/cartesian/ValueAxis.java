@@ -196,6 +196,8 @@ public class ValueAxis implements ValueAxisOption {
 		return this;
 	}
 
+	private Object[] data;
+
 	@Setter(AccessLevel.NONE)
 	private Object boundaryGap;
 

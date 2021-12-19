@@ -103,8 +103,7 @@ public class NestedPiesTest {
                 .setLegend(legend)
                 .setSeries(new SeriesOption[] { series1, series2 });
 
-        Reader reader = new InputStreamReader(
-                this.getClass().getResourceAsStream("/pie/nested-pies.json"));
+        Reader reader = new InputStreamReader(this.getClass().getResourceAsStream("/advanced/pie/nested-pies.json"));
         JsonElement expected = JsonParser.parseReader(reader);
         JsonElement actual = EChartsSerializer.toJsonTree(option);
         assertEquals(expected, actual);
