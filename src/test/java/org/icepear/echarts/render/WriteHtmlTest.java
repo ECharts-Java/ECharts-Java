@@ -12,15 +12,14 @@ import org.icepear.echarts.component.TooltipAxisPointer;
 import org.icepear.echarts.component.ValueAxis;
 import org.icepear.echarts.origin.util.SeriesOption;
 
-import org.icepear.echarts.render.Engine;
-
 import org.junit.Before;
 import org.junit.Test;
 
 public class WriteHtmlTest {
+    private Option option;
 
     @Before
-    private static Option constructOption() {
+    public void constructOption() {
         Tooltip tooltip = new Tooltip()
                 .setTrigger("axis")
                 .setAxisPointer(new TooltipAxisPointer()
@@ -53,14 +52,13 @@ public class WriteHtmlTest {
                 .setYAxis(yAxis)
                 .setSeries(new SeriesOption[] { series });
 
-        return option;
+        this.option = option;
     }
 
     @Test
     public void testWriteHtml() throws IOException {
-        Option option = constructOption();
         Engine engine = new Engine();
-        engine.writeHtml("test.html", option);
+        engine.writeHtml("test.html", this.option);
     }
 
 }
