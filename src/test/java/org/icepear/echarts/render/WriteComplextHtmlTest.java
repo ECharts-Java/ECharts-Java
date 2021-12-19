@@ -105,6 +105,6 @@ public class WriteComplextHtmlTest {
     @Test
     public void testWriteComplextHtml() throws IOException {
         Engine engine = new Engine();
-        engine.writeHtml("test.html", this.option);
+        engine.render("test.html", this.option);
     }
 }
