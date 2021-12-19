@@ -12,7 +12,6 @@ import com.google.gson.JsonParser;
 
 import org.icepear.echarts.Option;
 import org.icepear.echarts.charts.line.LineSeries;
-import org.icepear.echarts.components.coord.cartesian.CategoryAxis;
 import org.icepear.echarts.components.coord.cartesian.DefaultAxis;
 import org.icepear.echarts.components.dataZoom.DataZoom;
 import org.icepear.echarts.components.grid.Grid;
@@ -33,8 +32,7 @@ import org.junit.Test;
 
 public class BeijingAQITest {
     private JsonArray getData() {
-        Reader reader = new InputStreamReader(
-                this.getClass().getResourceAsStream("/mock/aqi-beijing.json"));
+        Reader reader = new InputStreamReader(this.getClass().getResourceAsStream("/advanced/mock/aqi-beijing.json"));
         JsonElement data = JsonParser.parseReader(reader);
         return data.getAsJsonArray();
     }
@@ -63,7 +61,7 @@ public class BeijingAQITest {
                 .setRight("15%")
                 .setBottom("10%");
 
-        CategoryAxis xAxis = new CategoryAxis().setData(xAxisData);
+        DefaultAxis xAxis = new DefaultAxis().setData(xAxisData);
 
         DefaultAxis yAxis = new DefaultAxis();
 
@@ -143,8 +141,7 @@ public class BeijingAQITest {
                 .setVisualMap(visualMap)
                 .setSeries(new SeriesOption[] { series });
 
-        Reader reader = new InputStreamReader(
-                this.getClass().getResourceAsStream("/line/beijing-aqi.json"));
+        Reader reader = new InputStreamReader(this.getClass().getResourceAsStream("/advanced/line/beijing-aqi.json"));
         JsonElement expected = JsonParser.parseReader(reader);
         JsonElement actual = EChartsSerializer.toJsonTree(option);
         assertEquals(expected, actual);

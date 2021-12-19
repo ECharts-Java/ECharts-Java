@@ -35,7 +35,7 @@ public class BasicLineChartTest {
                 .setSeries(new SeriesOption[] { series });
 
         Reader reader = new InputStreamReader(
-                this.getClass().getResourceAsStream("/line/basic-line-chart.json"));
+                this.getClass().getResourceAsStream("/advanced/line/basic-line-chart.json"));
         JsonElement expected = JsonParser.parseReader(reader);
         JsonElement actual = EChartsSerializer.toJsonTree(option);
         assertEquals(expected, actual);

@@ -23,58 +23,57 @@ import org.junit.Test;
 
 public class WorldPopulationTest {
 
-	@Test
-	public void testWorldPopulation() {
-		Title title = new Title()
-				.setText("World Population");
+    @Test
+    public void testWorldPopulation() {
+        Title title = new Title()
+                .setText("World Population");
 
-		Tooltip tooltip = new Tooltip()
-				.setTrigger("axis")
-				.setAxisPointer(new TooltipAxisPointer()
-						.setType("shadow"));
+        Tooltip tooltip = new Tooltip()
+                .setTrigger("axis")
+                .setAxisPointer(new TooltipAxisPointer()
+                        .setType("shadow"));
 
-		Legend legend = new Legend();
-		Grid grid = new Grid()
-				.setLeft("3%")
-				.setRight("4%")
-				.setBottom(("3%"))
-				.setContainLabel(true);
+        Legend legend = new Legend();
+        Grid grid = new Grid()
+                .setLeft("3%")
+                .setRight("4%")
+                .setBottom(("3%"))
+                .setContainLabel(true);
 
-		ValueAxis xAxis = new ValueAxis()
-				.setType("value")
-				.setBoundaryGap(new Number[] { 0, 0.01 });
+        ValueAxis xAxis = new ValueAxis()
+                .setType("value")
+                .setBoundaryGap(new Number[] { 0, 0.01 });
 
-		CategoryAxis yAxis = new CategoryAxis()
-				.setType("category")
-				.setData(new String[] { "Brazil", "Indonesia", "USA", "India", "China", "World" });
+        CategoryAxis yAxis = new CategoryAxis()
+                .setType("category")
+                .setData(new String[] { "Brazil", "Indonesia", "USA", "India", "China", "World" });
 
-		BarSeries series2011 = new BarSeries()
-				.setName("2011")
-				.setType("bar")
-				.setData(new Number[] { 18203, 23489, 29034, 104970, 131744, 630230 });
+        BarSeries series2011 = new BarSeries()
+                .setName("2011")
+                .setType("bar")
+                .setData(new Number[] { 18203, 23489, 29034, 104970, 131744, 630230 });
 
-		BarSeries series2012 = new BarSeries()
-				.setName("2012")
-				.setType("bar")
-				.setData(new Number[] { 19325, 23438, 31000, 121594, 134141, 681807 });
+        BarSeries series2012 = new BarSeries()
+                .setName("2012")
+                .setType("bar")
+                .setData(new Number[] { 19325, 23438, 31000, 121594, 134141, 681807 });
 
-		Option option = new Option()
-				.setTitle(title)
-				.setTooltip(tooltip)
-				.setLegend(legend)
-				.setGrid(grid)
-				.setXAxis(xAxis)
-				.setYAxis(yAxis)
-				.setSeries(new SeriesOption[] { series2011, series2012 });
+        Option option = new Option()
+                .setTitle(title)
+                .setTooltip(tooltip)
+                .setLegend(legend)
+                .setGrid(grid)
+                .setXAxis(xAxis)
+                .setYAxis(yAxis)
+                .setSeries(new SeriesOption[] { series2011, series2012 });
 
-		Reader reader = new InputStreamReader(
-				this.getClass().getResourceAsStream("/bar/world-population.json"));
+        Reader reader = new InputStreamReader(
+                this.getClass().getResourceAsStream("/advanced/bar/world-population.json"));
+        JsonElement expected = JsonParser.parseReader(reader);
+        JsonElement actual = EChartsSerializer.toJsonTree(option);
+        assertEquals(expected, actual);
 
-		JsonElement expected = JsonParser.parseReader(reader);
-		JsonElement actual = EChartsSerializer.toJsonTree(option);
-		assertEquals(expected, actual);
-
-		// System.out.println(EChartSerializer.toJson(option));
-	}
+        // System.out.println(EChartSerializer.toJson(option));
+    }
 
 }

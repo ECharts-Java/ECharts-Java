@@ -10,7 +10,6 @@ import com.google.gson.JsonParser;
 
 import org.icepear.echarts.Option;
 import org.icepear.echarts.charts.candlestick.CandlestickSeries;
-import org.icepear.echarts.components.coord.cartesian.CategoryAxis;
 import org.icepear.echarts.components.coord.cartesian.DefaultAxis;
 import org.icepear.echarts.origin.util.SeriesOption;
 import org.icepear.echarts.serializer.EChartsSerializer;
@@ -19,7 +18,7 @@ import org.junit.Test;
 public class BasicCandlestickTest {
     @Test
     public void testBasicCandlestick() {
-        CategoryAxis xAxis = new CategoryAxis()
+        DefaultAxis xAxis = new DefaultAxis()
                 .setData(new String[] { "2017-10-24", "2017-10-25", "2017-10-26", "2017-10-27" });
 
         DefaultAxis yAxis = new DefaultAxis();
@@ -38,7 +37,7 @@ public class BasicCandlestickTest {
                 .setSeries(new SeriesOption[] { series });
 
         Reader reader = new InputStreamReader(
-                this.getClass().getResourceAsStream("/candlestick/basic-candlestick.json"));
+                this.getClass().getResourceAsStream("/advanced/candlestick/basic-candlestick.json"));
         JsonElement expected = JsonParser.parseReader(reader);
         JsonElement actual = EChartsSerializer.toJsonTree(option);
         assertEquals(expected, actual);

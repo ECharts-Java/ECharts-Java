@@ -63,7 +63,7 @@ public class NightingaleChartSimpleTest {
                 .setSeries(new SeriesOption[] { series });
 
         Reader reader = new InputStreamReader(
-                this.getClass().getResourceAsStream("/pie/nightingale-chart-simple.json"));
+                this.getClass().getResourceAsStream("/advanced/pie/nightingale-chart-simple.json"));
         JsonElement expected = JsonParser.parseReader(reader);
         JsonElement actual = EChartsSerializer.toJsonTree(option);
         assertEquals(expected, actual);

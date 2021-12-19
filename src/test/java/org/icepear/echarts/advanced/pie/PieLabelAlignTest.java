@@ -96,7 +96,7 @@ public class PieLabelAlignTest {
                 .setSeries(new SeriesOption[] { series1, series2, series3 });
 
         Reader reader = new InputStreamReader(
-                this.getClass().getResourceAsStream("/pie/pie-label-align.json"));
+                this.getClass().getResourceAsStream("/advanced/pie/pie-label-align.json"));
         JsonElement expected = JsonParser.parseReader(reader);
         JsonElement actual = EChartsSerializer.toJsonTree(option);
         assertEquals(expected, actual);

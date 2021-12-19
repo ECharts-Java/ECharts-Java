@@ -102,7 +102,7 @@ public class BoxplotLightVelocityTest {
                 .setSeries(new SeriesOption[] { series1, series2 });
 
         Reader reader = new InputStreamReader(
-                this.getClass().getResourceAsStream("/boxplot/boxplot-light-velocity.json"));
+                this.getClass().getResourceAsStream("/advanced/boxplot/boxplot-light-velocity.json"));
         JsonElement expected = JsonParser.parseReader(reader);
         JsonElement actual = EChartsSerializer.toJsonTree(option);
         assertEquals(expected, actual);

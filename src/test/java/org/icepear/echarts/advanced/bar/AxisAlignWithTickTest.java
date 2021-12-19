@@ -57,7 +57,7 @@ public class AxisAlignWithTickTest {
                 .setSeries(new SeriesOption[] { series });
 
         Reader reader = new InputStreamReader(
-                this.getClass().getResourceAsStream("/bar/axis-align-with-tick.json"));
+                this.getClass().getResourceAsStream("/advanced/bar/axis-align-with-tick.json"));
         JsonElement expected = JsonParser.parseReader(reader);
         JsonElement actual = EChartsSerializer.toJsonTree(option);
         assertEquals(expected, actual);

@@ -52,7 +52,7 @@ public class BasicRadarChartTest {
                 .setSeries(new SeriesOption[] { series });
 
         Reader reader = new InputStreamReader(
-                this.getClass().getResourceAsStream("/radar/basic-radar-chart.json"));
+                this.getClass().getResourceAsStream("/advanced/radar/basic-radar-chart.json"));
         JsonElement expected = JsonParser.parseReader(reader);
         JsonElement actual = EChartsSerializer.toJsonTree(option);
         assertEquals(expected, actual);

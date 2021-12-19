@@ -55,7 +55,7 @@ public class BasicScatterChartTest {
                 .setSeries(new SeriesOption[] { series });
 
         Reader reader = new InputStreamReader(
-                this.getClass().getResourceAsStream("/scatter/basic-scatter-chart.json"));
+                this.getClass().getResourceAsStream("/advanced/scatter/basic-scatter-chart.json"));
         JsonElement expected = JsonParser.parseReader(reader);
         JsonElement actual = EChartsSerializer.toJsonTree(option);
         assertEquals(expected, actual);
