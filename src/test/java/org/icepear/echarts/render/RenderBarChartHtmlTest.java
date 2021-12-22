@@ -15,7 +15,7 @@ import org.icepear.echarts.origin.util.SeriesOption;
 import org.junit.Before;
 import org.junit.Test;
 
-public class renderSimpleHtmlTest {
+public class RenderBarChartHtmlTest {
     private Option option;
 
     @Before
@@ -56,7 +56,7 @@ public class renderSimpleHtmlTest {
     }
 
     @Test
-    public void renderSimpleHtmlTest() throws IOException {
+    public void testRenderSimpleHtml() throws IOException {
         Engine engine = new Engine();
         engine.render("test.html", this.option);
     }

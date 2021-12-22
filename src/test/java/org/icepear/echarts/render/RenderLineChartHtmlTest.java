@@ -31,7 +31,7 @@ import org.icepear.echarts.origin.component.toolbox.ToolboxFeatureOption;
 import org.icepear.echarts.origin.util.SeriesOption;
 import org.junit.Test;
 
-public class renderComplextHtmlTest {
+public class RenderLineChartHtmlTest {
 
     private Option option;
 
@@ -124,7 +124,7 @@ public class renderComplextHtmlTest {
     }
 
     @Test
-    public void renderComplextHtmlTest() throws IOException {
+    public void testRenderComplextHtml() throws IOException {
         Engine engine = new Engine();
         engine.render("test.html", this.option);
     }
