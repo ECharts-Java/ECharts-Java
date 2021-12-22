@@ -6,7 +6,7 @@ import org.icepear.echarts.component.Option;
 import org.junit.Before;
 import org.junit.Test;
 
-public class renderEmptyTest {
+public class RenderEmptyTest {
     private Option option;
 
     @Before
@@ -15,7 +15,7 @@ public class renderEmptyTest {
     }
 
     @Test
-    public void renderEmptyTest() throws IOException {
+    public void testRenderEmpty() throws IOException {
         Engine engine = new Engine();
         engine.render("test.html", this.option);
     }
