@@ -101,6 +101,11 @@ public class Dataset implements DatasetOption {
 		return this;
 	}
 
+	public Dataset setSource(Object source) {
+		this.source = source;
+		return this;
+	}
+
 	public Dataset setSource(Object[] source) {
 		this.source = source;
 		return this;
