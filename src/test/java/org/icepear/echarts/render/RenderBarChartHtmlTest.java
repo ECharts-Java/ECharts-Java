@@ -2,14 +2,14 @@ package org.icepear.echarts.render;
 
 import java.io.IOException;
 
-import org.icepear.echarts.component.Option;
-import org.icepear.echarts.component.Tooltip;
-import org.icepear.echarts.component.BarSeries;
-import org.icepear.echarts.component.CategoryAxis;
-import org.icepear.echarts.component.CategoryAxisTick;
-import org.icepear.echarts.component.Grid;
-import org.icepear.echarts.component.TooltipAxisPointer;
-import org.icepear.echarts.component.ValueAxis;
+import org.icepear.echarts.Option;
+import org.icepear.echarts.charts.bar.BarSeries;
+import org.icepear.echarts.components.coord.CategoryAxisTick;
+import org.icepear.echarts.components.coord.cartesian.CategoryAxis;
+import org.icepear.echarts.components.coord.cartesian.ValueAxis;
+import org.icepear.echarts.components.grid.Grid;
+import org.icepear.echarts.components.tooltip.Tooltip;
+import org.icepear.echarts.components.tooltip.TooltipAxisPointer;
 import org.icepear.echarts.origin.util.SeriesOption;
 
 import org.junit.Before;

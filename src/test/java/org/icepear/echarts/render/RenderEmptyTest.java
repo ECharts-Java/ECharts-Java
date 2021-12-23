@@ -2,7 +2,7 @@ package org.icepear.echarts.render;
 
 import java.io.IOException;
 
-import org.icepear.echarts.component.Option;
+import org.icepear.echarts.Option;
 import org.junit.Before;
 import org.junit.Test;
 
