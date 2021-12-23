@@ -29,7 +29,8 @@
         "String[][][]",
         "Number[][][]",
         "Date[][][]",
-        "Map<String, Object[]>"
+        "Map<String, Object[]>",
+        "Object"
       ]
     },
     {
