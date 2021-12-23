@@ -1,38 +1,37 @@
 package org.icepear.echarts.render;
 
-import org.icepear.echarts.component.Option;
-import org.junit.Before;
-
 import java.io.IOException;
 import java.util.HashMap;
 
-import org.icepear.echarts.component.CategoryAxis;
-import org.icepear.echarts.component.Legend;
-import org.icepear.echarts.component.LineSeries;
-import org.icepear.echarts.component.MarkLine;
-import org.icepear.echarts.component.MarkLine1DDataItem;
-import org.icepear.echarts.component.MarkLine2DDataItem;
-import org.icepear.echarts.component.MarkLine2DDataItemDim;
-import org.icepear.echarts.component.MarkPoint;
-import org.icepear.echarts.component.MarkPointDataItem;
-import org.icepear.echarts.component.SeriesLineLabel;
-import org.icepear.echarts.component.Title;
-import org.icepear.echarts.component.Toolbox;
-import org.icepear.echarts.component.ToolboxDataViewFeature;
-import org.icepear.echarts.component.ToolboxDataZoomFeature;
-import org.icepear.echarts.component.ToolboxMagicTypeFeature;
-import org.icepear.echarts.component.ToolboxRestoreFeature;
-import org.icepear.echarts.component.ToolboxSaveAsImageFeature;
-import org.icepear.echarts.component.Tooltip;
-import org.icepear.echarts.component.ValueAxis;
-import org.icepear.echarts.component.ValueAxisLabel;
+import org.icepear.echarts.Option;
+import org.icepear.echarts.charts.line.LineSeries;
+import org.icepear.echarts.components.coord.ValueAxisLabel;
+import org.icepear.echarts.components.coord.cartesian.CategoryAxis;
+import org.icepear.echarts.components.coord.cartesian.ValueAxis;
+import org.icepear.echarts.components.legend.Legend;
+import org.icepear.echarts.components.marker.MarkLine;
+import org.icepear.echarts.components.marker.MarkLine1DDataItem;
+import org.icepear.echarts.components.marker.MarkLine2DDataItem;
+import org.icepear.echarts.components.marker.MarkLine2DDataItemDim;
+import org.icepear.echarts.components.marker.MarkPoint;
+import org.icepear.echarts.components.marker.MarkPointDataItem;
+import org.icepear.echarts.components.series.SeriesLineLabel;
+import org.icepear.echarts.components.title.Title;
+import org.icepear.echarts.components.toolbox.Toolbox;
+import org.icepear.echarts.components.toolbox.ToolboxDataViewFeature;
+import org.icepear.echarts.components.toolbox.ToolboxDataZoomFeature;
+import org.icepear.echarts.components.toolbox.ToolboxMagicTypeFeature;
+import org.icepear.echarts.components.toolbox.ToolboxRestoreFeature;
+import org.icepear.echarts.components.toolbox.ToolboxSaveAsImageFeature;
+import org.icepear.echarts.components.tooltip.Tooltip;
 import org.icepear.echarts.origin.component.marker.MarkLineDataItemOption;
 import org.icepear.echarts.origin.component.toolbox.ToolboxFeatureOption;
 import org.icepear.echarts.origin.util.SeriesOption;
+import org.junit.Before;
 import org.junit.Test;
 
-public class RenderLineChartHtmlTest {
 
+public class RenderLineChartHtmlTest {
     private Option option;
 
     @Before
