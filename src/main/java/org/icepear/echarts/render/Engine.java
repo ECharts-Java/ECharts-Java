@@ -23,8 +23,8 @@ public class Engine {
         BufferedWriter writer = new BufferedWriter(new FileWriter(path));
         writer.write(html);
         writer.close();
-        File file = new File(path);
-        Desktop.getDesktop().browse(file.toURI());
+        // File file = new File(path);
+        // Desktop.getDesktop().browse(file.toURI());
     }
 
     public String render(String path, Option option) throws IOException {
