@@ -40,6 +40,6 @@ public class BasicLineChartTest {
         JsonElement actual = EChartsSerializer.toJsonTree(option);
         assertEquals(expected, actual);
 
-        // System.out.println(EChartSerializer.toJson(option));
+        // System.out.println(EChartsSerializer.toJson(option));
     }
 }
