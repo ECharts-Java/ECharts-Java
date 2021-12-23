@@ -18,13 +18,12 @@ import org.icepear.echarts.component.Option;
 import org.icepear.echarts.serializer.EChartSerializer;
 
 public class Engine {
-    private Template template;
+    private Handlebars handlebars;
 
     public Engine() throws IOException {
         TemplateLoader cpLoader = new ClassPathTemplateLoader("/", ".hbs");
         TemplateLoader fsLoader = new FileTemplateLoader("src/main/java/org/icepear/echarts/render/templates", ".hbs");
-        Handlebars handlebars = new Handlebars().with(cpLoader, fsLoader);
-        this.template = handlebars.compile("page");
+        this.handlebars = new Handlebars().with(cpLoader, fsLoader);
     }
 
     public void writeHtml(String html, String path) throws IOException {
@@ -36,12 +35,12 @@ public class Engine {
     }
 
     public String render(String path, Option option) throws IOException {
+        Template template = handlebars.compile("index");
         String jsonStr = EChartSerializer.toJson(option);
-        String html = this.template.apply(jsonStr);
+        String html = template.apply(jsonStr);
         writeHtml(html, path);
         return html;
     }
-
 
 
 }
