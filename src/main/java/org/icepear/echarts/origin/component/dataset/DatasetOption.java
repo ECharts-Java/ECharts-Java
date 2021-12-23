@@ -29,6 +29,8 @@ public interface DatasetOption extends ComponentOption, SeriesEncodeOptionMixin 
 
 	DatasetOption setSource(Number[][][] source);
 
+	DatasetOption setSource(Object source);
+
 	DatasetOption setSource(Object[] source);
 
 	DatasetOption setSource(Object[][] source);
