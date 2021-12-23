@@ -5,8 +5,6 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.net.URL;
-import java.net.URLClassLoader;
 
 import com.github.jknack.handlebars.Handlebars;
 import com.github.jknack.handlebars.Template;
@@ -14,8 +12,8 @@ import com.github.jknack.handlebars.io.ClassPathTemplateLoader;
 import com.github.jknack.handlebars.io.FileTemplateLoader;
 import com.github.jknack.handlebars.io.TemplateLoader;
 
-import org.icepear.echarts.component.Option;
-import org.icepear.echarts.serializer.EChartSerializer;
+import org.icepear.echarts.Option;
+import org.icepear.echarts.serializer.EChartsSerializer;
 
 public class Engine {
     private Handlebars handlebars;
@@ -36,7 +34,7 @@ public class Engine {
 
     public String render(String path, Option option) throws IOException {
         Template template = handlebars.compile("index");
-        String jsonStr = EChartSerializer.toJson(option);
+        String jsonStr = EChartsSerializer.toJson(option);
         String html = template.apply(jsonStr);
         writeHtml(html, path);
         return html;
