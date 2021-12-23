@@ -18,10 +18,20 @@
         <h1 class="display">EChart Java</h1>
         <div id="container">
         </div>
+        <button onclick="downloadImage()">Download Image</button>
         <script type="text/javascript">
+            function downloadImage() {
+                let canvas = document.querySelector("canvas");
+                var image = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
+                console.log("haha");
+                console.log(canvas);
+                console.log(image);
+                window.location.href = image;
+            }
             let chart = echarts.init(document.getElementById("container"));
             let option = {{{this}}}
             chart.setOption(option);
+
         </script>
     </body>
 </html>
