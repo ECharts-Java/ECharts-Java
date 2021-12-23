@@ -2,9 +2,10 @@ package org.icepear.echarts;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.function.Supplier;
 
 import org.icepear.echarts.components.coord.cartesian.CategoryAxis;
+import org.icepear.echarts.components.coord.cartesian.LogAxis;
+import org.icepear.echarts.components.coord.cartesian.TimeAxis;
 import org.icepear.echarts.components.coord.cartesian.ValueAxis;
 import org.icepear.echarts.origin.coord.cartesian.AxisOption;
 import org.icepear.echarts.origin.util.SeriesOption;
@@ -13,8 +14,8 @@ public abstract class CartesianChart<T extends Chart<?, ?>, E extends SeriesOpti
     protected List<AxisOption> xAxes;
     protected List<AxisOption> yAxes;
 
-    public CartesianChart(final Class<T> clazz, final Supplier<E> seriesSupplier, final String seriesType) {
-        super(clazz, seriesSupplier, seriesType);
+    public CartesianChart(final Class<T> clazz, final Class<E> seriesClazz) {
+        super(clazz, seriesClazz);
         xAxes = new ArrayList<>();
         yAxes = new ArrayList<>();
     }
@@ -26,12 +27,22 @@ public abstract class CartesianChart<T extends Chart<?, ?>, E extends SeriesOpti
     }
 
     public T addXAxis() {
-        xAxes.add(new ValueAxis());
+        xAxes.add(createValueAxis());
+        return self;
+    }
+
+    public T addXAxis(String name) {
+        xAxes.add(createValueAxis().setName(name));
         return self;
     }
 
     public T addXAxis(String[] xAxis) {
-        xAxes.add(new CategoryAxis().setData(xAxis));
+        xAxes.add(createCategoryAxis().setData(xAxis));
+        return self;
+    }
+
+    public T addXAxis(String name, String[] xAxis) {
+        xAxes.add(createCategoryAxis().setName(name).setData(xAxis));
         return self;
     }
 
@@ -41,17 +52,43 @@ public abstract class CartesianChart<T extends Chart<?, ?>, E extends SeriesOpti
     }
 
     public T addYAxis() {
-        yAxes.add(new ValueAxis());
+        yAxes.add(createValueAxis());
+        return self;
+    }
+
+    public T addYAxis(String name) {
+        yAxes.add(createValueAxis().setName(name));
         return self;
     }
 
     public T addYAxis(String[] yAxis) {
-        yAxes.add(new CategoryAxis().setData(yAxis));
+        yAxes.add(createCategoryAxis().setData(yAxis));
+        return self;
+    }
+
+    public T addYAxis(String name, String[] yAxis) {
+        yAxes.add(createCategoryAxis().setName(name).setData(yAxis));
         return self;
     }
 
     public T addYAxis(AxisOption yAxis) {
         yAxes.add(yAxis);
         return self;
+    }
+
+    protected CategoryAxis createCategoryAxis() {
+        return new CategoryAxis().setType("category");
+    }
+
+    protected ValueAxis createValueAxis() {
+        return new ValueAxis().setType("value");
+    }
+
+    protected LogAxis createLogAxis() {
+        return new LogAxis().setType("log");
+    }
+
+    protected TimeAxis createTimeAxis() {
+        return new TimeAxis().setType("time");
     }
 }
