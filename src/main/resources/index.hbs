@@ -8,6 +8,13 @@
         integrity="sha512-ivdGNkeO+FTZH5ZoVC4gS4ovGSiWc+6v60/hvHkccaMN2BXchfKdvEZtviy5L4xSpF8NPsfS0EVNSGf+EsUdxA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <style>
+
+        body {
+            margin: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
         #title-container {
             width: {{width}}px;
             display: flex;
@@ -21,7 +28,7 @@
             border: 1px solid black;
         }
 
-        #container {
+        #display-container {
             width: {{width}}px;
             height: {{height}}px;
             border: 2px solid black;
@@ -30,12 +37,15 @@
 </head>
 
 <body>
-    <div id="title-container">
-        <h1 class="display">ECharts Java</h1>
-        <button id="download-btn" onclick="downloadImage()">Download Image</button>
-    </div>
     <div id="container">
+        <div id="title-container">
+            <h1 class="display">ECharts Java</h1>
+            <button id="download-btn" onclick="downloadImage()">Download Image</button>
+        </div>
+        <div id="display-container">
+        </div>
     </div>
+    
     <script type="text/javascript">
         function downloadImage() {
             let canvas = document.querySelector("canvas");
@@ -52,9 +62,8 @@
                 location.replace(image);
             }
         }
-        let chart =
-            echarts.init(document.getElementById("container")); let option =
-                {{{ html }}}
+        let chart = echarts.init(document.getElementById("display-container")); 
+        let option = {{{ html }}}
         chart.setOption(option);
 
     </script>
