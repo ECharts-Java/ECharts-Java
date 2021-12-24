@@ -1,4 +1,4 @@
-package org.icepear.echarts.render;
+package org.icepear.echarts.render.advanced;
 
 import java.io.IOException;
 
@@ -11,11 +11,11 @@ import org.icepear.echarts.components.grid.Grid;
 import org.icepear.echarts.components.tooltip.Tooltip;
 import org.icepear.echarts.components.tooltip.TooltipAxisPointer;
 import org.icepear.echarts.origin.util.SeriesOption;
-
+import org.icepear.echarts.render.Engine;
 import org.junit.Before;
 import org.junit.Test;
 
-public class RenderBarChartHtmlTest {
+public class RenderBarChartByOptionTest {
     private Option option;
 
     @Before
