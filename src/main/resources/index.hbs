@@ -1,37 +1,63 @@
-<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>EChart Demo</title>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.2.2/echarts.min.js" integrity="sha512-ivdGNkeO+FTZH5ZoVC4gS4ovGSiWc+6v60/hvHkccaMN2BXchfKdvEZtviy5L4xSpF8NPsfS0EVNSGf+EsUdxA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <style>
-            #container {
-                width: 1000px;
-                height: 850px;
-                border: 2px solid black;
-            }
-        </style>
-    </head>
 
-    <body>
-        <h1 class="display">EChart Java</h1>
-        <div id="container">
-        </div>
-        <button onclick="downloadImage()">Download Image</button>
-        <script type="text/javascript">
-            function downloadImage() {
-                let canvas = document.querySelector("canvas");
-                var image = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
-                console.log("haha");
-                console.log(canvas);
-                console.log(image);
-                window.location.href = image;
-            }
-            let chart = echarts.init(document.getElementById("container"));
-            let option = {{{this}}}
-            chart.setOption(option);
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ECharts Demo</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.2.2/echarts.min.js"
+        integrity="sha512-ivdGNkeO+FTZH5ZoVC4gS4ovGSiWc+6v60/hvHkccaMN2BXchfKdvEZtviy5L4xSpF8NPsfS0EVNSGf+EsUdxA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        #title-container {
+            width: {{width}}px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #download-btn {
+            border-radius: 6px;
+            background-color: aliceblue;
+            border: 1px solid black;
+        }
 
-        </script>
-    </body>
+        #container {
+            width: {{width}}px;
+            height: {{height}}px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="title-container">
+        <h1 class="display">ECharts Java</h1>
+        <button id="download-btn" onclick="downloadImage()">Download Image</button>
+    </div>
+    <div id="container">
+    </div>
+    <script type="text/javascript">
+        function downloadImage() {
+            let canvas = document.querySelector("canvas");
+            let image = canvas.toDataURL("image/png").replace("image/png",
+                "image/octet-stream");
+            let fakeLink = document.createElement("a");
+            if (typeof fakeLink.download === "string") {
+                document.body.appendChild(fakeLink);
+                fakeLink.download = "echart.png";
+                fakeLink.href = image;
+                fakeLink.click();
+                document.body.removeChild(fakeLink);
+            } else {
+                location.replace(image);
+            }
+        }
+        let chart =
+            echarts.init(document.getElementById("container")); let option =
+                {{{ html }}}
+        chart.setOption(option);
+
+    </script>
+</body>
+
 </html>
