@@ -1,4 +1,4 @@
-package org.icepear.echarts.render;
+package org.icepear.echarts.render.advanced;
 
 import java.io.IOException;
 import java.util.HashMap;
@@ -27,11 +27,12 @@ import org.icepear.echarts.components.tooltip.Tooltip;
 import org.icepear.echarts.origin.component.marker.MarkLineDataItemOption;
 import org.icepear.echarts.origin.component.toolbox.ToolboxFeatureOption;
 import org.icepear.echarts.origin.util.SeriesOption;
+import org.icepear.echarts.render.Engine;
 import org.junit.Before;
 import org.junit.Test;
 
 
-public class RenderLineChartHtmlTest {
+public class RenderLineChartByOptionTest {
     private Option option;
 
     @Before

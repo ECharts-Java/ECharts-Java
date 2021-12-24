@@ -60,7 +60,7 @@ public class Engine {
     public void render(String path, Option option) throws IOException {
         Template template = handlebars.compile("index");
         String jsonStr = EChartsSerializer.toJson(option);
-        ChartMeta chartMeta = new ChartMeta(1000, 1000, jsonStr);
+        ChartMeta chartMeta = new ChartMeta(600, 600, jsonStr);
         String html = template.apply(chartMeta);
         writeHtml(html, path, false);
     }
