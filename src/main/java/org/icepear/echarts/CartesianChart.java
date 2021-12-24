@@ -20,6 +20,7 @@ public abstract class CartesianChart<T extends Chart<?, ?>, E extends SeriesOpti
         yAxes = new ArrayList<>();
     }
 
+    @Override
     public Option getOption() {
         return super.getOption()
                 .setXAxis(xAxes.toArray(new AxisOption[0]))
