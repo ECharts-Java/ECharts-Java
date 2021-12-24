@@ -1,12 +1,13 @@
-package org.icepear.echarts.render;
+package org.icepear.echarts.render.advanced;
 
 import java.io.IOException;
 
 import org.icepear.echarts.Option;
+import org.icepear.echarts.render.Engine;
 import org.junit.Before;
 import org.junit.Test;
 
-public class RenderEmptyTest {
+public class RenderEmptyByOptionTest {
     private Option option;
 
     @Before
