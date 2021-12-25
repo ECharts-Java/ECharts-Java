@@ -82,5 +82,46 @@ public class Engine {
         writeHtml(html, path, willOpen);
     }
 
+    /**
+     * Used in the simple case, render the echarts in default width and height, without download button
+     * @param chart the chart to be rendered
+     * @return a string in html format
+     * @throws IOException
+     */
+    public String renderBase(Chart<?,?> chart) throws IOException {
+        Template template = handlebars.compile("base");
+        String jsonStr = EChartsSerializer.toJson(chart.getOption());
+        ChartMeta chartMeta = new ChartMeta(600, 600, jsonStr);
+        return template.apply(chartMeta);
+    }
+
+    /**
+     * Used in the advanced case, render the echarts in default width and height, without download button
+     * @param option the option to initiate the chart
+     * @return the resulted string in html format
+     * @throws IOException
+     */
+    public String renderBase(Option option) throws IOException {
+        Template template = handlebars.compile("base");
+        String jsonStr = EChartsSerializer.toJson(option);
+        ChartMeta chartMeta = new ChartMeta(600, 600, jsonStr);
+        return template.apply(chartMeta);
+    }
+
+    /**
+     * Used in both the simple and advanced cases, render the echarts in customized width and height, without download button
+     * @param option the option to initiate the chart
+     * @param height the height of the chart
+     * @param width the width of the chart
+     * @return the resulted string in html format
+     * @throws IOException
+     */
+    public String renderBase(Option option, int height, int width) throws IOException {
+        Template template = handlebars.compile("base");
+        String jsonStr = EChartsSerializer.toJson(option);
+        ChartMeta chartMeta = new ChartMeta(height, width, jsonStr);
+        return template.apply(chartMeta);
+    }
+
 
 }
