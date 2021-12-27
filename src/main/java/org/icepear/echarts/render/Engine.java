@@ -88,7 +88,7 @@ public class Engine {
      * @return a string in html format
      * @throws IOException
      */
-    public String renderBase(Chart<?,?> chart) throws IOException {
+    public String renderHtml(Chart<?,?> chart) throws IOException {
         Template template = handlebars.compile("base");
         String jsonStr = EChartsSerializer.toJson(chart.getOption());
         ChartMeta chartMeta = new ChartMeta(600, 600, jsonStr);
@@ -101,7 +101,7 @@ public class Engine {
      * @return the resulted string in html format
      * @throws IOException
      */
-    public String renderBase(Option option) throws IOException {
+    public String renderHtml(Option option) throws IOException {
         Template template = handlebars.compile("base");
         String jsonStr = EChartsSerializer.toJson(option);
         ChartMeta chartMeta = new ChartMeta(600, 600, jsonStr);
@@ -116,7 +116,7 @@ public class Engine {
      * @return the resulted string in html format
      * @throws IOException
      */
-    public String renderBase(Option option, int height, int width) throws IOException {
+    public String renderHtml(Option option, int height, int width) throws IOException {
         Template template = handlebars.compile("base");
         String jsonStr = EChartsSerializer.toJson(option);
         ChartMeta chartMeta = new ChartMeta(height, width, jsonStr);

@@ -6,11 +6,11 @@ import lombok.Data;
 public class ChartMeta {
     private int height;
     private int width;
-    private String html;
+    private String option;
 
-    public ChartMeta(int height, int width, String html) {
+    public ChartMeta(int height, int width, String option) {
         this.height = height;
         this.width = width;
-        this.html = html;
+        this.option = option;
     }
 }
