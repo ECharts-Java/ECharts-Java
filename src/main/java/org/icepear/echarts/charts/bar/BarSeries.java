@@ -161,6 +161,16 @@ public class BarSeries implements BarSeriesOption {
 	@Setter(AccessLevel.NONE)
 	private Object data;
 
+	public BarSeries setData(Number[] data) {
+		this.data = data;
+		return this;
+	}
+
+	public BarSeries setData(Number[][] data) {
+		this.data = data;
+		return this;
+	}
+
 	public BarSeries setData(Object data) {
 		this.data = data;
 		return this;
@@ -172,6 +182,16 @@ public class BarSeries implements BarSeriesOption {
 	}
 
 	public BarSeries setData(Object[][] data) {
+		this.data = data;
+		return this;
+	}
+
+	public BarSeries setData(String[] data) {
+		this.data = data;
+		return this;
+	}
+
+	public BarSeries setData(String[][] data) {
 		this.data = data;
 		return this;
 	}

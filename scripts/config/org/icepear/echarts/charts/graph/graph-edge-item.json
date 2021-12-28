@@ -1,0 +1,5 @@
+{
+  "name": "GraphEdgeItem",
+  "type": "class",
+  "implements": ["GraphEdgeItemOption"]
+}

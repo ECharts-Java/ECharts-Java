@@ -105,4 +105,37 @@ public class ScatterDataItem implements ScatterDataItemOption {
 	}
 
 	private Boolean selected;
+
+	@Setter(AccessLevel.NONE)
+	private Object value;
+
+	public ScatterDataItem setValue(Number value) {
+		this.value = value;
+		return this;
+	}
+
+	public ScatterDataItem setValue(Number[] value) {
+		this.value = value;
+		return this;
+	}
+
+	public ScatterDataItem setValue(Object value) {
+		this.value = value;
+		return this;
+	}
+
+	public ScatterDataItem setValue(Object[] value) {
+		this.value = value;
+		return this;
+	}
+
+	public ScatterDataItem setValue(String value) {
+		this.value = value;
+		return this;
+	}
+
+	public ScatterDataItem setValue(String[] value) {
+		this.value = value;
+		return this;
+	}
 }

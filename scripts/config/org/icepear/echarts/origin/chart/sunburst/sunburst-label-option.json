@@ -1,0 +1,14 @@
+{
+  "name": "SunburstLabelOption",
+  "type": "interface",
+  "extends": ["SeriesLabelOption"],
+  "fields": [
+    { "name": "rotate", "types": ["Number", "String"] },
+    { "name": "minAngle", "types": ["Number"] },
+    { "name": "silent", "types": ["Boolean"] },
+    { "name": "position", "types": ["String"] }
+  ],
+  "comments": [
+    "https://github.com/apache/echarts/blob/566ba8e83dd283ba359fe9aceee0d4a12dbcd6c7/src/chart/sunburst/SunburstSeries.ts#L53"
+  ]
+}

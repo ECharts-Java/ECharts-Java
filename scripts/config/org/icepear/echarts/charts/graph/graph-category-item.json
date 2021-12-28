@@ -1,0 +1,5 @@
+{
+  "name": "GraphCategoryItem",
+  "type": "class",
+  "implements": ["GraphCategoryItemOption"]
+}

@@ -1,0 +1,5 @@
+{
+  "name": "TreeSeriesNodeItem",
+  "type": "class",
+  "implements": ["TreeSeriesNodeItemOption"]
+}

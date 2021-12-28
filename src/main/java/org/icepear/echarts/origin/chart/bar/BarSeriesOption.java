@@ -21,9 +21,17 @@ public interface BarSeriesOption extends BaseBarSeriesOption, BarStateOption, Se
 
 	BarSeriesOption setBackgroundStyle(BarBackgroundStyleOption backgroundStyle);
 
+	BarSeriesOption setData(Number[] data);
+
+	BarSeriesOption setData(Number[][] data);
+
 	BarSeriesOption setData(Object[] data);
 
 	BarSeriesOption setData(Object[][] data);
+
+	BarSeriesOption setData(String[] data);
+
+	BarSeriesOption setData(String[][] data);
 
 	BarSeriesOption setRealtimeSort(Boolean realtimeSort);
 }

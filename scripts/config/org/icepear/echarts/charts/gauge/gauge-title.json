@@ -1,0 +1,5 @@
+{
+  "name": "GaugeTitle",
+  "type": "class",
+  "implements": ["GaugeTitleOption"]
+}

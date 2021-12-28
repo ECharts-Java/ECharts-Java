@@ -1,0 +1,5 @@
+{
+  "name": "GaugeDataItem",
+  "type": "class",
+  "implements": ["GaugeDataItemOption"]
+}
