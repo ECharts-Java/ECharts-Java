@@ -5,7 +5,7 @@ package org.icepear.echarts.origin.util;
  */
 public interface AreaStyleOption extends ShadowOptionMixin {
 
-	AreaStyleOption setColor(String color);
+    AreaStyleOption setColor(String color);
 
-	AreaStyleOption setOpacity(Number opacity);
+    AreaStyleOption setOpacity(Number opacity);
 }

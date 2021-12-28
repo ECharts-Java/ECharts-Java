@@ -7,9 +7,9 @@ import org.icepear.echarts.origin.util.StatesOptionMixin;
  */
 public interface ParallelSeriesDataItemOption extends ParallelStateOption, StatesOptionMixin {
 
-	ParallelSeriesDataItemOption setValue(Number[] value);
+    ParallelSeriesDataItemOption setValue(Number[] value);
 
-	ParallelSeriesDataItemOption setValue(Object[] value);
+    ParallelSeriesDataItemOption setValue(Object[] value);
 
-	ParallelSeriesDataItemOption setValue(String[] value);
+    ParallelSeriesDataItemOption setValue(String[] value);
 }

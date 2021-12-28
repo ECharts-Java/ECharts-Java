@@ -8,9 +8,9 @@ import org.icepear.echarts.origin.util.ComponentOption;
  */
 public interface AxisPointerOption extends ComponentOption, CommonAxisPointerOption {
 
-	AxisPointerOption setMainType(String mainType);
+    AxisPointerOption setMainType(String mainType);
 
-	AxisPointerOption setType(String type);
+    AxisPointerOption setType(String type);
 
-	AxisPointerOption setLink(Object[] link);
+    AxisPointerOption setLink(Object[] link);
 }

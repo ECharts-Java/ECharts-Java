@@ -11,19 +11,19 @@ import org.icepear.echarts.origin.util.SeriesOption;
  */
 public interface HeatmapSeriesOption extends SeriesOption, HeatmapStateOption, SeriesOnCartesianOptionMixin, SeriesOnGeoOptionMixin, SeriesOnCalendarOptionMixin, SeriesEncodeOptionMixin {
 
-	HeatmapSeriesOption setType(String type);
+    HeatmapSeriesOption setType(String type);
 
-	HeatmapSeriesOption setCoordinateSystem(String coordinateSystem);
+    HeatmapSeriesOption setCoordinateSystem(String coordinateSystem);
 
-	HeatmapSeriesOption setBlurSize(Number blurSize);
+    HeatmapSeriesOption setBlurSize(Number blurSize);
 
-	HeatmapSeriesOption setPointSize(Number pointSize);
+    HeatmapSeriesOption setPointSize(Number pointSize);
 
-	HeatmapSeriesOption setMaxOpacity(Number maxOpacity);
+    HeatmapSeriesOption setMaxOpacity(Number maxOpacity);
 
-	HeatmapSeriesOption setMinOpacity(Number minOpacity);
+    HeatmapSeriesOption setMinOpacity(Number minOpacity);
 
-	HeatmapSeriesOption setData(HeatmapDataItemOption[] data);
+    HeatmapSeriesOption setData(HeatmapDataItemOption[] data);
 
-	HeatmapSeriesOption setData(Object[] data);
+    HeatmapSeriesOption setData(Object[] data);
 }

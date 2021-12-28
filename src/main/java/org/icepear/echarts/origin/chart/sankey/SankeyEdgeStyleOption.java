@@ -7,5 +7,5 @@ import org.icepear.echarts.origin.util.LineStyleOption;
  */
 public interface SankeyEdgeStyleOption extends LineStyleOption {
 
-	SankeyEdgeStyleOption setCurveness(Number curveness);
+    SankeyEdgeStyleOption setCurveness(Number curveness);
 }

@@ -5,5 +5,5 @@ package org.icepear.echarts.origin.util;
  */
 public interface SeriesSamplingOptionMixin {
 
-	SeriesSamplingOptionMixin setSampling(String sampling);
+    SeriesSamplingOptionMixin setSampling(String sampling);
 }

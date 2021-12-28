@@ -8,9 +8,9 @@ import org.icepear.echarts.origin.util.ComponentOption;
  */
 public interface MarkerOption extends ComponentOption, AnimationOptionMixin {
 
-	MarkerOption setSilent(Boolean silent);
+    MarkerOption setSilent(Boolean silent);
 
-	MarkerOption setData(Object[] data);
+    MarkerOption setData(Object[] data);
 
-	MarkerOption setTooltip(Object tooltip);
+    MarkerOption setTooltip(Object tooltip);
 }

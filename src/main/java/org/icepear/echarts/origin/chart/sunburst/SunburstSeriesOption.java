@@ -9,23 +9,23 @@ import org.icepear.echarts.origin.util.SunburstColorByMixin;
  */
 public interface SunburstSeriesOption extends SeriesOption, SunburstStateOption, SunburstColorByMixin, CircleLayoutOptionMixin {
 
-	SunburstSeriesOption setType(String type);
+    SunburstSeriesOption setType(String type);
 
-	SunburstSeriesOption setClockwise(Boolean clockwise);
+    SunburstSeriesOption setClockwise(Boolean clockwise);
 
-	SunburstSeriesOption setStartAngle(Number startAngle);
+    SunburstSeriesOption setStartAngle(Number startAngle);
 
-	SunburstSeriesOption setMinAngle(Number minAngle);
+    SunburstSeriesOption setMinAngle(Number minAngle);
 
-	SunburstSeriesOption setStillShowZeroSum(Boolean stillShowZeroSum);
+    SunburstSeriesOption setStillShowZeroSum(Boolean stillShowZeroSum);
 
-	SunburstSeriesOption setNodeClick(String nodeClick);
+    SunburstSeriesOption setNodeClick(String nodeClick);
 
-	SunburstSeriesOption setRenderLabelForZeroData(Boolean renderLabelForZeroData);
+    SunburstSeriesOption setRenderLabelForZeroData(Boolean renderLabelForZeroData);
 
-	SunburstSeriesOption setLevels(SunburstSeriesLevelOption[] levels);
+    SunburstSeriesOption setLevels(SunburstSeriesLevelOption[] levels);
 
-	SunburstSeriesOption setAnimationType(String animationType);
+    SunburstSeriesOption setAnimationType(String animationType);
 
-	SunburstSeriesOption setSort(String sort);
+    SunburstSeriesOption setSort(String sort);
 }

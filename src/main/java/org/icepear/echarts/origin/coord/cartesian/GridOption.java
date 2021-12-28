@@ -9,17 +9,17 @@ import org.icepear.echarts.origin.util.ShadowOptionMixin;
  */
 public interface GridOption extends ComponentOption, BoxLayoutOptionMixin, ShadowOptionMixin {
 
-	GridOption setMainType(String mainType);
+    GridOption setMainType(String mainType);
 
-	GridOption setShow(Boolean show);
+    GridOption setShow(Boolean show);
 
-	GridOption setContainLabel(Boolean containLabel);
+    GridOption setContainLabel(Boolean containLabel);
 
-	GridOption setBackgroundColor(String backgroundColor);
+    GridOption setBackgroundColor(String backgroundColor);
 
-	GridOption setBorderWidth(Number borderWidth);
+    GridOption setBorderWidth(Number borderWidth);
 
-	GridOption setBorderColor(String borderColor);
+    GridOption setBorderColor(String borderColor);
 
-	GridOption setTooltip(Object tooltip);
+    GridOption setTooltip(Object tooltip);
 }

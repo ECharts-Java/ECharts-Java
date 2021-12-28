@@ -5,51 +5,51 @@ package org.icepear.echarts.origin.util;
  */
 public interface OptionEncodeVisualDimensions {
 
-	OptionEncodeVisualDimensions setTooltip(Number tooltip);
+    OptionEncodeVisualDimensions setTooltip(Number tooltip);
 
-	OptionEncodeVisualDimensions setTooltip(Number[] tooltip);
+    OptionEncodeVisualDimensions setTooltip(Number[] tooltip);
 
-	OptionEncodeVisualDimensions setTooltip(String tooltip);
+    OptionEncodeVisualDimensions setTooltip(String tooltip);
 
-	OptionEncodeVisualDimensions setTooltip(String[] tooltip);
+    OptionEncodeVisualDimensions setTooltip(String[] tooltip);
 
-	OptionEncodeVisualDimensions setLabel(Number label);
+    OptionEncodeVisualDimensions setLabel(Number label);
 
-	OptionEncodeVisualDimensions setLabel(Number[] label);
+    OptionEncodeVisualDimensions setLabel(Number[] label);
 
-	OptionEncodeVisualDimensions setLabel(String label);
+    OptionEncodeVisualDimensions setLabel(String label);
 
-	OptionEncodeVisualDimensions setLabel(String[] label);
+    OptionEncodeVisualDimensions setLabel(String[] label);
 
-	OptionEncodeVisualDimensions setItemName(Number itemName);
+    OptionEncodeVisualDimensions setItemName(Number itemName);
 
-	OptionEncodeVisualDimensions setItemName(Number[] itemName);
+    OptionEncodeVisualDimensions setItemName(Number[] itemName);
 
-	OptionEncodeVisualDimensions setItemName(String itemName);
+    OptionEncodeVisualDimensions setItemName(String itemName);
 
-	OptionEncodeVisualDimensions setItemName(String[] itemName);
+    OptionEncodeVisualDimensions setItemName(String[] itemName);
 
-	OptionEncodeVisualDimensions setItemId(Number itemId);
+    OptionEncodeVisualDimensions setItemId(Number itemId);
 
-	OptionEncodeVisualDimensions setItemId(Number[] itemId);
+    OptionEncodeVisualDimensions setItemId(Number[] itemId);
 
-	OptionEncodeVisualDimensions setItemId(String itemId);
+    OptionEncodeVisualDimensions setItemId(String itemId);
 
-	OptionEncodeVisualDimensions setItemId(String[] itemId);
+    OptionEncodeVisualDimensions setItemId(String[] itemId);
 
-	OptionEncodeVisualDimensions setSeriesName(Number seriesName);
+    OptionEncodeVisualDimensions setSeriesName(Number seriesName);
 
-	OptionEncodeVisualDimensions setSeriesName(Number[] seriesName);
+    OptionEncodeVisualDimensions setSeriesName(Number[] seriesName);
 
-	OptionEncodeVisualDimensions setSeriesName(String seriesName);
+    OptionEncodeVisualDimensions setSeriesName(String seriesName);
 
-	OptionEncodeVisualDimensions setSeriesName(String[] seriesName);
+    OptionEncodeVisualDimensions setSeriesName(String[] seriesName);
 
-	OptionEncodeVisualDimensions setItemGroupId(Number itemGroupId);
+    OptionEncodeVisualDimensions setItemGroupId(Number itemGroupId);
 
-	OptionEncodeVisualDimensions setItemGroupId(Number[] itemGroupId);
+    OptionEncodeVisualDimensions setItemGroupId(Number[] itemGroupId);
 
-	OptionEncodeVisualDimensions setItemGroupId(String itemGroupId);
+    OptionEncodeVisualDimensions setItemGroupId(String itemGroupId);
 
-	OptionEncodeVisualDimensions setItemGroupId(String[] itemGroupId);
+    OptionEncodeVisualDimensions setItemGroupId(String[] itemGroupId);
 }

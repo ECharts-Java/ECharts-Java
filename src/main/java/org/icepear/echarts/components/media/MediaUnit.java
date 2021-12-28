@@ -7,11 +7,11 @@ import org.icepear.echarts.origin.util.ECUnitOption;
 import org.icepear.echarts.origin.util.MediaQueryOption;
 import org.icepear.echarts.origin.util.MediaUnitOption;
 
-@Accessors(chain=true)
+@Accessors(chain = true)
 @Data
 public class MediaUnit implements MediaUnitOption {
 
-	private MediaQueryOption query;
+    private MediaQueryOption query;
 
-	private ECUnitOption option;
+    private ECUnitOption option;
 }

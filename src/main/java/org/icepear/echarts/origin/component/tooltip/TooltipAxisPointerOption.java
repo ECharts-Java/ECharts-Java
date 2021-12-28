@@ -7,7 +7,7 @@ import org.icepear.echarts.origin.component.axisPointer.AxisPointerOption;
  */
 public interface TooltipAxisPointerOption extends AxisPointerOption {
 
-	TooltipAxisPointerOption setAxis(String axis);
+    TooltipAxisPointerOption setAxis(String axis);
 
-	TooltipAxisPointerOption setCrossStyle(Object crossStyle);
+    TooltipAxisPointerOption setCrossStyle(Object crossStyle);
 }

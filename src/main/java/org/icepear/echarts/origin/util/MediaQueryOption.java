@@ -5,15 +5,15 @@ package org.icepear.echarts.origin.util;
  */
 public interface MediaQueryOption {
 
-	MediaQueryOption setMinWidth(Number minWidth);
+    MediaQueryOption setMinWidth(Number minWidth);
 
-	MediaQueryOption setMaxWidth(Number maxWidth);
+    MediaQueryOption setMaxWidth(Number maxWidth);
 
-	MediaQueryOption setMinHeight(Number minHeight);
+    MediaQueryOption setMinHeight(Number minHeight);
 
-	MediaQueryOption setMaxHeight(Number maxHeight);
+    MediaQueryOption setMaxHeight(Number maxHeight);
 
-	MediaQueryOption setMinAspectRatio(Number minAspectRatio);
+    MediaQueryOption setMinAspectRatio(Number minAspectRatio);
 
-	MediaQueryOption setMaxAspectRatio(Number maxAspectRatio);
+    MediaQueryOption setMaxAspectRatio(Number maxAspectRatio);
 }

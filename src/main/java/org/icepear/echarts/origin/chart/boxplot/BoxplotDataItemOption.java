@@ -7,5 +7,5 @@ import org.icepear.echarts.origin.util.StatesOptionMixin;
  */
 public interface BoxplotDataItemOption extends BoxplotStateOption, StatesOptionMixin {
 
-	BoxplotDataItemOption setValue(Object value);
+    BoxplotDataItemOption setValue(Object value);
 }

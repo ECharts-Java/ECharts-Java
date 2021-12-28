@@ -5,9 +5,9 @@ package org.icepear.echarts.origin.chart.boxplot;
  */
 public interface PrepareBoxplotDataOption {
 
-	PrepareBoxplotDataOption setBoundIQR(Number boundIQR);
+    PrepareBoxplotDataOption setBoundIQR(Number boundIQR);
 
-	PrepareBoxplotDataOption setBoundIQR(String boundIQR);
+    PrepareBoxplotDataOption setBoundIQR(String boundIQR);
 
-	PrepareBoxplotDataOption setItemNameFormatter(String itemNameFormatter);
+    PrepareBoxplotDataOption setItemNameFormatter(String itemNameFormatter);
 }

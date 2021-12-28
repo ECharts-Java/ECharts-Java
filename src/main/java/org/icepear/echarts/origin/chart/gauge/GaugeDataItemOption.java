@@ -7,15 +7,15 @@ import org.icepear.echarts.origin.util.StatesOptionMixin;
  */
 public interface GaugeDataItemOption extends GaugeStateOption, StatesOptionMixin {
 
-	GaugeDataItemOption setName(String name);
+    GaugeDataItemOption setName(String name);
 
-	GaugeDataItemOption setValue(Number value);
+    GaugeDataItemOption setValue(Number value);
 
-	GaugeDataItemOption setPointer(GaugePointerOption pointer);
+    GaugeDataItemOption setPointer(GaugePointerOption pointer);
 
-	GaugeDataItemOption setProgress(GaugeProgressOption progress);
+    GaugeDataItemOption setProgress(GaugeProgressOption progress);
 
-	GaugeDataItemOption setTitle(GaugeTitleOption title);
+    GaugeDataItemOption setTitle(GaugeTitleOption title);
 
-	GaugeDataItemOption setDetail(GaugeDetailOption detail);
+    GaugeDataItemOption setDetail(GaugeDetailOption detail);
 }

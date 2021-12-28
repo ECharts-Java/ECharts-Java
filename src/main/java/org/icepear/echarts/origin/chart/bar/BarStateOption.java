@@ -5,7 +5,7 @@ package org.icepear.echarts.origin.chart.bar;
  */
 public interface BarStateOption {
 
-	BarStateOption setItemStyle(Object itemStyle);
+    BarStateOption setItemStyle(Object itemStyle);
 
-	BarStateOption setLabel(Object label);
+    BarStateOption setLabel(Object label);
 }

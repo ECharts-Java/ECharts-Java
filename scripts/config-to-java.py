@@ -171,7 +171,7 @@ def generate_comment_lines(obj, lines):
 
 
 def generate_annotation_lines(lines):
-    lines.append("@Accessors(chain=true)\n")
+    lines.append("@Accessors(chain = true)\n")
     lines.append("@Data\n")
 
 
@@ -248,21 +248,21 @@ def generate_class_body_lines(obj, fields, defaults, lines):
     for name, types in fields.items():
         if len(types) == 1:
             if name in defaults:
-                lines.append("\n\tprivate {} {} = {};\n".format(list(types)[0], name, json.dumps(defaults[name])))
+                lines.append("\n    private {} {} = {};\n".format(list(types)[0], name, json.dumps(defaults[name])))
             else:
-                lines.append("\n\tprivate {} {};\n".format(list(types)[0], name))
+                lines.append("\n    private {} {};\n".format(list(types)[0], name))
         else:
-            lines.append("\n\t@Setter(AccessLevel.NONE)\n")
+            lines.append("\n    @Setter(AccessLevel.NONE)\n")
             if name in defaults:
-                lines.append("\tprivate Object {} = {};\n".format(name, json.dumps(defaults[name])))
+                lines.append("    private Object {} = {};\n".format(name, json.dumps(defaults[name])))
             else:
-                lines.append("\tprivate Object {};\n".format(name))
+                lines.append("    private Object {};\n".format(name))
             for type in sorted(list(types)):
-                lines.append("\n\tpublic {} set{}({} {}) {{\n".format(
+                lines.append("\n    public {} set{}({} {}) {{\n".format(
                     obj["name"], name[0].upper() + name[1:], type, name))
-                lines.append("\t\tthis.{} = {};\n".format(name, name))
-                lines.append("\t\treturn this;\n")
-                lines.append("\t}\n")
+                lines.append("        this.{} = {};\n".format(name, name))
+                lines.append("        return this;\n")
+                lines.append("    }\n")
 
 
 def generate_interface_body_lines(obj, fields, lines):
@@ -270,7 +270,7 @@ def generate_interface_body_lines(obj, fields, lines):
         lines.append("\n")
     for name, types in fields.items():
         for type in sorted(list(types)):
-            lines.append("\n\t{} set{}({} {});\n".format(
+            lines.append("\n    {} set{}({} {});\n".format(
                 obj["name"], name[0].upper() + name[1:], type, name))
 
 

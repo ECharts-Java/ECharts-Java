@@ -8,31 +8,31 @@ import org.icepear.echarts.origin.util.SymbolOptionMixin;
  */
 public interface GraphNodeItemOption extends SymbolOptionMixin, GraphNodeStateOption, StatesOptionMixin {
 
-	GraphNodeItemOption setId(String id);
+    GraphNodeItemOption setId(String id);
 
-	GraphNodeItemOption setName(String name);
+    GraphNodeItemOption setName(String name);
 
-	GraphNodeItemOption setValue(Number value);
+    GraphNodeItemOption setValue(Number value);
 
-	GraphNodeItemOption setValue(Number[] value);
+    GraphNodeItemOption setValue(Number[] value);
 
-	GraphNodeItemOption setValue(Object value);
+    GraphNodeItemOption setValue(Object value);
 
-	GraphNodeItemOption setValue(Object[] value);
+    GraphNodeItemOption setValue(Object[] value);
 
-	GraphNodeItemOption setValue(String value);
+    GraphNodeItemOption setValue(String value);
 
-	GraphNodeItemOption setValue(String[] value);
+    GraphNodeItemOption setValue(String[] value);
 
-	GraphNodeItemOption setX(Number x);
+    GraphNodeItemOption setX(Number x);
 
-	GraphNodeItemOption setY(Number y);
+    GraphNodeItemOption setY(Number y);
 
-	GraphNodeItemOption setFixed(Boolean fixed);
+    GraphNodeItemOption setFixed(Boolean fixed);
 
-	GraphNodeItemOption setCategory(Number category);
+    GraphNodeItemOption setCategory(Number category);
 
-	GraphNodeItemOption setCategory(String category);
+    GraphNodeItemOption setCategory(String category);
 
-	GraphNodeItemOption setDraggable(Boolean draggable);
+    GraphNodeItemOption setDraggable(Boolean draggable);
 }

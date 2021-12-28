@@ -5,13 +5,13 @@ package org.icepear.echarts.origin.util;
  */
 public interface ECBasicOption extends ECUnitOption {
 
-	ECBasicOption setBaseOption(ECUnitOption baseOption);
+    ECBasicOption setBaseOption(ECUnitOption baseOption);
 
-	ECBasicOption setTimeline(ComponentOption timeline);
+    ECBasicOption setTimeline(ComponentOption timeline);
 
-	ECBasicOption setTimeline(ComponentOption[] timeline);
+    ECBasicOption setTimeline(ComponentOption[] timeline);
 
-	ECBasicOption setOptions(ECUnitOption[] options);
+    ECBasicOption setOptions(ECUnitOption[] options);
 
-	ECBasicOption setMedia(MediaUnitOption[] media);
+    ECBasicOption setMedia(MediaUnitOption[] media);
 }

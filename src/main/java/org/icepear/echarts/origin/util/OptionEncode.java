@@ -5,11 +5,11 @@ package org.icepear.echarts.origin.util;
  */
 public interface OptionEncode extends OptionEncodeVisualDimensions {
 
-	OptionEncode setValue(Number value);
+    OptionEncode setValue(Number value);
 
-	OptionEncode setValue(Number[] value);
+    OptionEncode setValue(Number[] value);
 
-	OptionEncode setValue(String value);
+    OptionEncode setValue(String value);
 
-	OptionEncode setValue(String[] value);
+    OptionEncode setValue(String[] value);
 }

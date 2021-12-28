@@ -6,23 +6,23 @@ package org.icepear.echarts.origin.util;
  */
 public interface VisualOptionUnit {
 
-	VisualOptionUnit setSymbol(String symbol);
+    VisualOptionUnit setSymbol(String symbol);
 
-	VisualOptionUnit setSymbolSize(Number symbolSize);
+    VisualOptionUnit setSymbolSize(Number symbolSize);
 
-	VisualOptionUnit setColor(String color);
+    VisualOptionUnit setColor(String color);
 
-	VisualOptionUnit setColorAlpha(Number colorAlpha);
+    VisualOptionUnit setColorAlpha(Number colorAlpha);
 
-	VisualOptionUnit setOpacity(Number opacity);
+    VisualOptionUnit setOpacity(Number opacity);
 
-	VisualOptionUnit setColorLightness(Number colorLightness);
+    VisualOptionUnit setColorLightness(Number colorLightness);
 
-	VisualOptionUnit setColorSaturation(Number colorSaturation);
+    VisualOptionUnit setColorSaturation(Number colorSaturation);
 
-	VisualOptionUnit setColorHue(Number colorHue);
+    VisualOptionUnit setColorHue(Number colorHue);
 
-	VisualOptionUnit setDecal(Object decal);
+    VisualOptionUnit setDecal(Object decal);
 
-	VisualOptionUnit setLiftZ(Number liftZ);
+    VisualOptionUnit setLiftZ(Number liftZ);
 }

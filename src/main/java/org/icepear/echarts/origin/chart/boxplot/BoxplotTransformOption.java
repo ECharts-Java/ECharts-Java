@@ -7,7 +7,7 @@ import org.icepear.echarts.origin.data.helper.DataTransformOption;
  */
 public interface BoxplotTransformOption extends DataTransformOption {
 
-	BoxplotTransformOption setType(String type);
+    BoxplotTransformOption setType(String type);
 
-	BoxplotTransformOption setConfig(PrepareBoxplotDataOption config);
+    BoxplotTransformOption setConfig(PrepareBoxplotDataOption config);
 }

@@ -8,17 +8,17 @@ import org.icepear.echarts.origin.util.StatesOptionMixin;
  */
 public interface SankeyNodeItemOption extends SankeyNodeStateOption, StatesOptionMixin, DefaultOptionDataItemObject {
 
-	SankeyNodeItemOption setId(String id);
+    SankeyNodeItemOption setId(String id);
 
-	SankeyNodeItemOption setLocalX(Number localX);
+    SankeyNodeItemOption setLocalX(Number localX);
 
-	SankeyNodeItemOption setLocalY(Number localY);
+    SankeyNodeItemOption setLocalY(Number localY);
 
-	SankeyNodeItemOption setDepth(Number depth);
+    SankeyNodeItemOption setDepth(Number depth);
 
-	SankeyNodeItemOption setDraggable(Boolean draggable);
+    SankeyNodeItemOption setDraggable(Boolean draggable);
 
-	SankeyNodeItemOption setFocusNodeAdjacency(Boolean focusNodeAdjacency);
+    SankeyNodeItemOption setFocusNodeAdjacency(Boolean focusNodeAdjacency);
 
-	SankeyNodeItemOption setFocusNodeAdjacency(String focusNodeAdjacency);
+    SankeyNodeItemOption setFocusNodeAdjacency(String focusNodeAdjacency);
 }

@@ -5,7 +5,7 @@ package org.icepear.echarts.origin.util;
  */
 public interface SeriesLargeOptionMixin {
 
-	SeriesLargeOptionMixin setLarge(Boolean large);
+    SeriesLargeOptionMixin setLarge(Boolean large);
 
-	SeriesLargeOptionMixin setLargeThreshold(Number largeThreshold);
+    SeriesLargeOptionMixin setLargeThreshold(Number largeThreshold);
 }

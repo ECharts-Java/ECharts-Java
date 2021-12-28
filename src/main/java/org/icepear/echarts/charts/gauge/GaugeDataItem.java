@@ -10,27 +10,27 @@ import org.icepear.echarts.origin.chart.gauge.GaugeProgressOption;
 import org.icepear.echarts.origin.chart.gauge.GaugeTitleOption;
 import org.icepear.echarts.origin.util.ItemStyleOption;
 
-@Accessors(chain=true)
+@Accessors(chain = true)
 @Data
 public class GaugeDataItem implements GaugeDataItemOption {
 
-	private ItemStyleOption itemStyle;
+    private ItemStyleOption itemStyle;
 
-	private Object emphasis;
+    private Object emphasis;
 
-	private Object select;
+    private Object select;
 
-	private Object blur;
+    private Object blur;
 
-	private String name;
+    private String name;
 
-	private Number value;
+    private Number value;
 
-	private GaugePointerOption pointer;
+    private GaugePointerOption pointer;
 
-	private GaugeProgressOption progress;
+    private GaugeProgressOption progress;
 
-	private GaugeTitleOption title;
+    private GaugeTitleOption title;
 
-	private GaugeDetailOption detail;
+    private GaugeDetailOption detail;
 }

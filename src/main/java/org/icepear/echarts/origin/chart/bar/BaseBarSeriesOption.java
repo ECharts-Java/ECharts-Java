@@ -9,27 +9,27 @@ import org.icepear.echarts.origin.util.SeriesOption;
  */
 public interface BaseBarSeriesOption extends SeriesOption, SeriesOnCartesianOptionMixin, SeriesOnPolarOptionMixin {
 
-	BaseBarSeriesOption setBarMinHeight(Number barMinHeight);
+    BaseBarSeriesOption setBarMinHeight(Number barMinHeight);
 
-	BaseBarSeriesOption setBarMinAngle(Number barMinAngle);
+    BaseBarSeriesOption setBarMinAngle(Number barMinAngle);
 
-	BaseBarSeriesOption setBarMaxWidth(Number barMaxWidth);
+    BaseBarSeriesOption setBarMaxWidth(Number barMaxWidth);
 
-	BaseBarSeriesOption setBarMinWidth(Number barMinWidth);
+    BaseBarSeriesOption setBarMinWidth(Number barMinWidth);
 
-	BaseBarSeriesOption setBarWidth(Number barWidth);
+    BaseBarSeriesOption setBarWidth(Number barWidth);
 
-	BaseBarSeriesOption setBarWidth(String barWidth);
+    BaseBarSeriesOption setBarWidth(String barWidth);
 
-	BaseBarSeriesOption setBarGap(Number barGap);
+    BaseBarSeriesOption setBarGap(Number barGap);
 
-	BaseBarSeriesOption setBarGap(String barGap);
+    BaseBarSeriesOption setBarGap(String barGap);
 
-	BaseBarSeriesOption setBarCategoryGap(Number barCategoryGap);
+    BaseBarSeriesOption setBarCategoryGap(Number barCategoryGap);
 
-	BaseBarSeriesOption setBarCategoryGap(String barCategoryGap);
+    BaseBarSeriesOption setBarCategoryGap(String barCategoryGap);
 
-	BaseBarSeriesOption setLarge(Boolean large);
+    BaseBarSeriesOption setLarge(Boolean large);
 
-	BaseBarSeriesOption setLargeThreshold(Number largeThreshold);
+    BaseBarSeriesOption setLargeThreshold(Number largeThreshold);
 }

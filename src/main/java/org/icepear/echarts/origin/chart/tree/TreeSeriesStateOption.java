@@ -8,9 +8,9 @@ import org.icepear.echarts.origin.util.SeriesLabelOption;
  */
 public interface TreeSeriesStateOption {
 
-	TreeSeriesStateOption setItemStyle(ItemStyleOption itemStyle);
+    TreeSeriesStateOption setItemStyle(ItemStyleOption itemStyle);
 
-	TreeSeriesStateOption setLineStyle(Object lineStyle);
+    TreeSeriesStateOption setLineStyle(Object lineStyle);
 
-	TreeSeriesStateOption setLabel(SeriesLabelOption label);
+    TreeSeriesStateOption setLabel(SeriesLabelOption label);
 }

@@ -8,7 +8,7 @@ import org.icepear.echarts.origin.util.SeriesLabelOption;
  */
 public interface ParallelStateOption {
 
-	ParallelStateOption setLineStyle(LineStyleOption lineStyle);
+    ParallelStateOption setLineStyle(LineStyleOption lineStyle);
 
-	ParallelStateOption setLabel(SeriesLabelOption label);
+    ParallelStateOption setLabel(SeriesLabelOption label);
 }

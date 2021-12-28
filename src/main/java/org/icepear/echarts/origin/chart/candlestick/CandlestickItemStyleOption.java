@@ -7,7 +7,7 @@ import org.icepear.echarts.origin.util.ItemStyleOption;
  */
 public interface CandlestickItemStyleOption extends ItemStyleOption {
 
-	CandlestickItemStyleOption setColor0(Object color0);
+    CandlestickItemStyleOption setColor0(Object color0);
 
-	CandlestickItemStyleOption setBorderColor0(Object borderColor0);
+    CandlestickItemStyleOption setBorderColor0(Object borderColor0);
 }

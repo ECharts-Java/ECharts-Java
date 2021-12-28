@@ -5,5 +5,5 @@ package org.icepear.echarts.origin.util;
  */
 public interface EmphasisOption {
 
-	EmphasisOption setBlurScope(Object blurScope);
+    EmphasisOption setBlurScope(Object blurScope);
 }

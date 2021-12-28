@@ -7,13 +7,13 @@ import org.icepear.echarts.origin.component.toolbox.ToolboxFeatureOption;
  */
 public interface ToolboxMagicTypeFeatureOption extends ToolboxFeatureOption {
 
-	ToolboxMagicTypeFeatureOption setType(Object[] type);
+    ToolboxMagicTypeFeatureOption setType(Object[] type);
 
-	ToolboxMagicTypeFeatureOption setIcon(String icon);
+    ToolboxMagicTypeFeatureOption setIcon(String icon);
 
-	ToolboxMagicTypeFeatureOption setTitle(String title);
+    ToolboxMagicTypeFeatureOption setTitle(String title);
 
-	ToolboxMagicTypeFeatureOption setOption(String option);
+    ToolboxMagicTypeFeatureOption setOption(String option);
 
-	ToolboxMagicTypeFeatureOption setSeriesIndex(Object seriesIndex);
+    ToolboxMagicTypeFeatureOption setSeriesIndex(Object seriesIndex);
 }

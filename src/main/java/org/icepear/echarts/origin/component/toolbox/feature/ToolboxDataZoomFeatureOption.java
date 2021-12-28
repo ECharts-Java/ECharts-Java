@@ -8,21 +8,21 @@ import org.icepear.echarts.origin.util.ItemStyleOption;
  */
 public interface ToolboxDataZoomFeatureOption extends ToolboxFeatureOption {
 
-	ToolboxDataZoomFeatureOption setType(Object[] type);
+    ToolboxDataZoomFeatureOption setType(Object[] type);
 
-	ToolboxDataZoomFeatureOption setIcon(String icon);
+    ToolboxDataZoomFeatureOption setIcon(String icon);
 
-	ToolboxDataZoomFeatureOption setTitle(String title);
+    ToolboxDataZoomFeatureOption setTitle(String title);
 
-	ToolboxDataZoomFeatureOption setFilterMode(String filterMode);
+    ToolboxDataZoomFeatureOption setFilterMode(String filterMode);
 
-	ToolboxDataZoomFeatureOption setXAxisIndex(Object xAxisIndex);
+    ToolboxDataZoomFeatureOption setXAxisIndex(Object xAxisIndex);
 
-	ToolboxDataZoomFeatureOption setYAxisIndex(Object yAxisIndex);
+    ToolboxDataZoomFeatureOption setYAxisIndex(Object yAxisIndex);
 
-	ToolboxDataZoomFeatureOption setXAxisId(Object xAxisId);
+    ToolboxDataZoomFeatureOption setXAxisId(Object xAxisId);
 
-	ToolboxDataZoomFeatureOption setYAxisId(Object yAxisId);
+    ToolboxDataZoomFeatureOption setYAxisId(Object yAxisId);
 
-	ToolboxDataZoomFeatureOption setBrushStyle(ItemStyleOption brushStyle);
+    ToolboxDataZoomFeatureOption setBrushStyle(ItemStyleOption brushStyle);
 }

@@ -5,11 +5,11 @@ package org.icepear.echarts.origin.data.helper;
  */
 public interface DataTransformConfigOption {
 
-	DataTransformConfigOption setDimension(String dimension);
+    DataTransformConfigOption setDimension(String dimension);
 
-	DataTransformConfigOption setValue(Number value);
+    DataTransformConfigOption setValue(Number value);
 
-	DataTransformConfigOption setValue(Object value);
+    DataTransformConfigOption setValue(Object value);
 
-	DataTransformConfigOption setValue(String value);
+    DataTransformConfigOption setValue(String value);
 }

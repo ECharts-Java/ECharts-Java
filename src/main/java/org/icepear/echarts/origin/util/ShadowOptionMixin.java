@@ -5,11 +5,11 @@ package org.icepear.echarts.origin.util;
  */
 public interface ShadowOptionMixin {
 
-	ShadowOptionMixin setShadowBlur(Number shadowBlur);
+    ShadowOptionMixin setShadowBlur(Number shadowBlur);
 
-	ShadowOptionMixin setShadowColor(String shadowColor);
+    ShadowOptionMixin setShadowColor(String shadowColor);
 
-	ShadowOptionMixin setShadowOffsetX(Number shadowOffsetX);
+    ShadowOptionMixin setShadowOffsetX(Number shadowOffsetX);
 
-	ShadowOptionMixin setShadowOffsetY(Number shadowOffsetY);
+    ShadowOptionMixin setShadowOffsetY(Number shadowOffsetY);
 }

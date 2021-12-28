@@ -5,13 +5,13 @@ package org.icepear.echarts.origin.util;
  */
 public interface RoamOptionMixin {
 
-	RoamOptionMixin setRoam(Boolean roam);
+    RoamOptionMixin setRoam(Boolean roam);
 
-	RoamOptionMixin setRoam(String roam);
+    RoamOptionMixin setRoam(String roam);
 
-	RoamOptionMixin setCenter(Number[] center);
+    RoamOptionMixin setCenter(Number[] center);
 
-	RoamOptionMixin setZoom(Number zoom);
+    RoamOptionMixin setZoom(Number zoom);
 
-	RoamOptionMixin setScaleLimit(Object scaleLimit);
+    RoamOptionMixin setScaleLimit(Object scaleLimit);
 }

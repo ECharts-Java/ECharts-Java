@@ -5,37 +5,37 @@ package org.icepear.echarts.origin.util;
  */
 public interface CommonAxisPointerOption {
 
-	CommonAxisPointerOption setShow(Boolean show);
+    CommonAxisPointerOption setShow(Boolean show);
 
-	CommonAxisPointerOption setShow(String show);
+    CommonAxisPointerOption setShow(String show);
 
-	CommonAxisPointerOption setTriggerOn(String triggerOn);
+    CommonAxisPointerOption setTriggerOn(String triggerOn);
 
-	CommonAxisPointerOption setType(String type);
+    CommonAxisPointerOption setType(String type);
 
-	CommonAxisPointerOption setSnap(Boolean snap);
+    CommonAxisPointerOption setSnap(Boolean snap);
 
-	CommonAxisPointerOption setTriggerTooltip(Boolean triggerTooltip);
+    CommonAxisPointerOption setTriggerTooltip(Boolean triggerTooltip);
 
-	CommonAxisPointerOption setValue(Object value);
+    CommonAxisPointerOption setValue(Object value);
 
-	CommonAxisPointerOption setStatus(String status);
+    CommonAxisPointerOption setStatus(String status);
 
-	CommonAxisPointerOption setLabel(Object label);
+    CommonAxisPointerOption setLabel(Object label);
 
-	CommonAxisPointerOption setAnimation(Boolean animation);
+    CommonAxisPointerOption setAnimation(Boolean animation);
 
-	CommonAxisPointerOption setAnimation(String animation);
+    CommonAxisPointerOption setAnimation(String animation);
 
-	CommonAxisPointerOption setAnimationDurationUpdate(Number animationDurationUpdate);
+    CommonAxisPointerOption setAnimationDurationUpdate(Number animationDurationUpdate);
 
-	CommonAxisPointerOption setAnimationEasingUpdate(Object animationEasingUpdate);
+    CommonAxisPointerOption setAnimationEasingUpdate(Object animationEasingUpdate);
 
-	CommonAxisPointerOption setLineStyle(LineStyleOption lineStyle);
+    CommonAxisPointerOption setLineStyle(LineStyleOption lineStyle);
 
-	CommonAxisPointerOption setShadowStyle(AreaStyleOption shadowStyle);
+    CommonAxisPointerOption setShadowStyle(AreaStyleOption shadowStyle);
 
-	CommonAxisPointerOption setHandle(Object handle);
+    CommonAxisPointerOption setHandle(Object handle);
 
-	CommonAxisPointerOption setSeriesDataIndices(Object[] seriesDataIndices);
+    CommonAxisPointerOption setSeriesDataIndices(Object[] seriesDataIndices);
 }

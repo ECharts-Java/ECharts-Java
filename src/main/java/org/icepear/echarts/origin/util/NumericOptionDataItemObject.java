@@ -6,11 +6,11 @@ package org.icepear.echarts.origin.util;
  */
 public interface NumericOptionDataItemObject extends OptionDataItemObject {
 
-	NumericOptionDataItemObject setValue(Number value);
+    NumericOptionDataItemObject setValue(Number value);
 
-	NumericOptionDataItemObject setValue(Number[] value);
+    NumericOptionDataItemObject setValue(Number[] value);
 
-	NumericOptionDataItemObject setValue(String value);
+    NumericOptionDataItemObject setValue(String value);
 
-	NumericOptionDataItemObject setValue(String[] value);
+    NumericOptionDataItemObject setValue(String[] value);
 }

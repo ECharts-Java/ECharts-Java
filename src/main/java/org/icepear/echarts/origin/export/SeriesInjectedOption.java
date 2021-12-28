@@ -5,11 +5,11 @@ package org.icepear.echarts.origin.export;
  */
 public interface SeriesInjectedOption {
 
-	SeriesInjectedOption setMarkArea(Object markArea);
+    SeriesInjectedOption setMarkArea(Object markArea);
 
-	SeriesInjectedOption setMarkLine(Object markLine);
+    SeriesInjectedOption setMarkLine(Object markLine);
 
-	SeriesInjectedOption setMarkPoint(Object markPoint);
+    SeriesInjectedOption setMarkPoint(Object markPoint);
 
-	SeriesInjectedOption setTooltip(Object tooltip);
+    SeriesInjectedOption setTooltip(Object tooltip);
 }

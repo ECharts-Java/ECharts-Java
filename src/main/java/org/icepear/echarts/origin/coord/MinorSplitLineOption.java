@@ -7,7 +7,7 @@ import org.icepear.echarts.origin.util.LineStyleOption;
  */
 public interface MinorSplitLineOption {
 
-	MinorSplitLineOption setShow(Boolean show);
+    MinorSplitLineOption setShow(Boolean show);
 
-	MinorSplitLineOption setLineStyle(LineStyleOption lineStyle);
+    MinorSplitLineOption setLineStyle(LineStyleOption lineStyle);
 }

@@ -7,5 +7,5 @@ import org.icepear.echarts.origin.util.LineStyleOption;
  */
 public interface GraphEdgeLineStyleOption extends LineStyleOption {
 
-	GraphEdgeLineStyleOption setCurveness(Number curveness);
+    GraphEdgeLineStyleOption setCurveness(Number curveness);
 }

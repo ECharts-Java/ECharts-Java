@@ -10,45 +10,45 @@ import org.icepear.echarts.origin.util.SeriesOption;
  */
 public interface GaugeSeriesOption extends SeriesOption, GaugeStateOption, CircleLayoutOptionMixin, SeriesEncodeOptionMixin {
 
-	GaugeSeriesOption setType(String type);
+    GaugeSeriesOption setType(String type);
 
-	GaugeSeriesOption setRadius(Number radius);
+    GaugeSeriesOption setRadius(Number radius);
 
-	GaugeSeriesOption setRadius(String radius);
+    GaugeSeriesOption setRadius(String radius);
 
-	GaugeSeriesOption setStartAngle(Number startAngle);
+    GaugeSeriesOption setStartAngle(Number startAngle);
 
-	GaugeSeriesOption setEndAngle(Number endAngle);
+    GaugeSeriesOption setEndAngle(Number endAngle);
 
-	GaugeSeriesOption setClockwise(Boolean clockwise);
+    GaugeSeriesOption setClockwise(Boolean clockwise);
 
-	GaugeSeriesOption setMin(Number min);
+    GaugeSeriesOption setMin(Number min);
 
-	GaugeSeriesOption setMax(Number max);
+    GaugeSeriesOption setMax(Number max);
 
-	GaugeSeriesOption setSplitNumber(Number splitNumber);
+    GaugeSeriesOption setSplitNumber(Number splitNumber);
 
-	GaugeSeriesOption setItemStyle(ItemStyleOption itemStyle);
+    GaugeSeriesOption setItemStyle(ItemStyleOption itemStyle);
 
-	GaugeSeriesOption setAxisLine(Object axisLine);
+    GaugeSeriesOption setAxisLine(Object axisLine);
 
-	GaugeSeriesOption setProgress(GaugeProgressOption progress);
+    GaugeSeriesOption setProgress(GaugeProgressOption progress);
 
-	GaugeSeriesOption setSplitLine(Object splitLine);
+    GaugeSeriesOption setSplitLine(Object splitLine);
 
-	GaugeSeriesOption setAxisTick(Object axisTick);
+    GaugeSeriesOption setAxisTick(Object axisTick);
 
-	GaugeSeriesOption setAxisLabel(Object axisLabel);
+    GaugeSeriesOption setAxisLabel(Object axisLabel);
 
-	GaugeSeriesOption setPointer(GaugePointerOption pointer);
+    GaugeSeriesOption setPointer(GaugePointerOption pointer);
 
-	GaugeSeriesOption setAnchor(GaugeAnchorOption anchor);
+    GaugeSeriesOption setAnchor(GaugeAnchorOption anchor);
 
-	GaugeSeriesOption setTitle(GaugeTitleOption title);
+    GaugeSeriesOption setTitle(GaugeTitleOption title);
 
-	GaugeSeriesOption setDetail(GaugeDetailOption detail);
+    GaugeSeriesOption setDetail(GaugeDetailOption detail);
 
-	GaugeSeriesOption setData(GaugeDataItemOption[] data);
+    GaugeSeriesOption setData(GaugeDataItemOption[] data);
 
-	GaugeSeriesOption setData(Object[] data);
+    GaugeSeriesOption setData(Object[] data);
 }

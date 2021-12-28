@@ -8,33 +8,33 @@ import org.icepear.echarts.origin.util.SeriesOption;
  */
 public interface SankeySeriesOption extends SeriesOption, SankeyBothStateOption, BoxLayoutOptionMixin {
 
-	SankeySeriesOption setType(String type);
+    SankeySeriesOption setType(String type);
 
-	SankeySeriesOption setColor(String[] color);
+    SankeySeriesOption setColor(String[] color);
 
-	SankeySeriesOption setCoordinateSystem(String coordinateSystem);
+    SankeySeriesOption setCoordinateSystem(String coordinateSystem);
 
-	SankeySeriesOption setOrient(Object orient);
+    SankeySeriesOption setOrient(Object orient);
 
-	SankeySeriesOption setNodeWidth(Number nodeWidth);
+    SankeySeriesOption setNodeWidth(Number nodeWidth);
 
-	SankeySeriesOption setNodeGap(Number nodeGap);
+    SankeySeriesOption setNodeGap(Number nodeGap);
 
-	SankeySeriesOption setDraggable(Boolean draggable);
+    SankeySeriesOption setDraggable(Boolean draggable);
 
-	SankeySeriesOption setFocusNodeAdjacency(Boolean focusNodeAdjacency);
+    SankeySeriesOption setFocusNodeAdjacency(Boolean focusNodeAdjacency);
 
-	SankeySeriesOption setFocusNodeAdjacency(String focusNodeAdjacency);
+    SankeySeriesOption setFocusNodeAdjacency(String focusNodeAdjacency);
 
-	SankeySeriesOption setLayoutIterations(Number layoutIterations);
+    SankeySeriesOption setLayoutIterations(Number layoutIterations);
 
-	SankeySeriesOption setData(SankeyNodeItemOption[] data);
+    SankeySeriesOption setData(SankeyNodeItemOption[] data);
 
-	SankeySeriesOption setNodes(SankeyNodeItemOption[] nodes);
+    SankeySeriesOption setNodes(SankeyNodeItemOption[] nodes);
 
-	SankeySeriesOption setEdges(SankeyEdgeItemOption[] edges);
+    SankeySeriesOption setEdges(SankeyEdgeItemOption[] edges);
 
-	SankeySeriesOption setLinks(SankeyEdgeItemOption[] links);
+    SankeySeriesOption setLinks(SankeyEdgeItemOption[] links);
 
-	SankeySeriesOption setLevels(SankeyLevelOption[] levels);
+    SankeySeriesOption setLevels(SankeyLevelOption[] levels);
 }
