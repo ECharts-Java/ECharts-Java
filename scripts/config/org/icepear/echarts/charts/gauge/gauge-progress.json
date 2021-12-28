@@ -1,0 +1,5 @@
+{
+  "name": "GaugeProgress",
+  "type": "class",
+  "implements": ["GaugeProgressOption"]
+}

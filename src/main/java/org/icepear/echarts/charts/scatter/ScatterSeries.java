@@ -168,6 +168,11 @@ public class ScatterSeries implements ScatterSeriesOption {
 		return this;
 	}
 
+	public ScatterSeries setData(Number[][] data) {
+		this.data = data;
+		return this;
+	}
+
 	public ScatterSeries setData(Object data) {
 		this.data = data;
 		return this;
@@ -184,6 +189,16 @@ public class ScatterSeries implements ScatterSeriesOption {
 	}
 
 	public ScatterSeries setData(ScatterDataItemOption[] data) {
+		this.data = data;
+		return this;
+	}
+
+	public ScatterSeries setData(String[] data) {
+		this.data = data;
+		return this;
+	}
+
+	public ScatterSeries setData(String[][] data) {
 		this.data = data;
 		return this;
 	}

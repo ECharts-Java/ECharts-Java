@@ -175,17 +175,17 @@ public class PieSeries implements PieSeriesOption {
 	@Setter(AccessLevel.NONE)
 	private Object data;
 
+	public PieSeries setData(Number[] data) {
+		this.data = data;
+		return this;
+	}
+
+	public PieSeries setData(Number[][] data) {
+		this.data = data;
+		return this;
+	}
+
 	public PieSeries setData(Object data) {
-		this.data = data;
-		return this;
-	}
-
-	public PieSeries setData(Object[] data) {
-		this.data = data;
-		return this;
-	}
-
-	public PieSeries setData(Object[][] data) {
 		this.data = data;
 		return this;
 	}

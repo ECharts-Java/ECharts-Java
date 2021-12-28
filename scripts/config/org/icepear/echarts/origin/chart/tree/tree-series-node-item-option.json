@@ -1,0 +1,19 @@
+{
+  "name": "TreeSeriesNodeItemOption",
+  "type": "interface",
+  "extends": [
+    "SymbolOptionMixin",
+    "TreeSeriesStateOption",
+    "StatesOptionMixin",
+    "DefaultOptionDataItemObject"
+  ],
+  "fields": [
+    { "name": "children", "types": ["TreeSeriesNodeItemOption[]"] },
+    { "name": "collapsed", "types": ["Boolean"] },
+    { "name": "link", "types": ["String"] },
+    { "name": "target", "types": ["String"] }
+  ],
+  "comments": [
+    "https://github.com/apache/echarts/blob/566ba8e83dd283ba359fe9aceee0d4a12dbcd6c7/src/chart/tree/TreeSeries.ts#L63"
+  ]
+}

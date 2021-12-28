@@ -1,0 +1,24 @@
+{
+  "name": "ParallelSeriesOption",
+  "type": "interface",
+  "extends": ["SeriesOption", "ParallelStateOption", "SeriesEncodeOptionMixin"],
+  "fields": [
+    { "name": "type", "types": ["String"], "default": "parallel" },
+    { "name": "coordinateSystem", "types": ["String"] },
+    { "name": "parallelIndex", "types": ["Number"] },
+    { "name": "parallelId", "types": ["String"] },
+    { "name": "inactiveOpacity", "types": ["Number"] },
+    { "name": "activeOpacity", "types": ["Number"] },
+    { "name": "smooth", "types": ["Boolean", "Number"] },
+    { "name": "realtime", "types": ["Boolean"] },
+    { "name": "tooltip", "types": ["SeriesTooltipOption"] },
+    { "name": "parallelAxisDefault", "types": ["ParallelAxisOption"] },
+    {
+      "name": "data",
+      "types": ["ParallelSeriesDataItemOption[]", "ParallelSeriesDataValue[]"]
+    }
+  ],
+  "comments": [
+    "https://github.com/apache/echarts/blob/566ba8e83dd283ba359fe9aceee0d4a12dbcd6c7/src/chart/parallel/ParallelSeries.ts#L60"
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "name": "SankeyEdgeItem",
+  "type": "class",
+  "implements": ["SankeyEdgeItemOption"]
+}

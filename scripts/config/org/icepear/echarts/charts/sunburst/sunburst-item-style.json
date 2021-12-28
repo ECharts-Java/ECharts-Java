@@ -1,0 +1,5 @@
+{
+  "name": "SunburstItemStyle",
+  "type": "class",
+  "implements": ["SunburstItemStyleOption"]
+}

@@ -1,0 +1,5 @@
+{
+  "name": "FunnelSeries",
+  "type": "class",
+  "implements": ["FunnelSeriesOption"]
+}

@@ -1,0 +1,5 @@
+{
+  "name": "GaugeSeries",
+  "type": "class",
+  "implements": ["GaugeSeriesOption"]
+}

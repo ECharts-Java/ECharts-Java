@@ -22,9 +22,12 @@
     {
       "name": "data",
       "types": [
-        "OptionDataValue[][]",
-        "OptionDataValue[]",
+        "String[]",
+        "String[][]",
         "Number[]",
+        "Number[][]",
+        "Date[]",
+        "Date[][]",
         "ScatterDataItemOption[]"
       ]
     }

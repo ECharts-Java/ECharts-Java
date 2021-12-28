@@ -1,0 +1,5 @@
+{
+  "name": "FunnelLabel",
+  "type": "class",
+  "implements": ["FunnelLabelOption"]
+}

@@ -26,9 +26,15 @@ public interface ScatterSeriesOption extends SeriesOption, ScatterStateOption, S
 
 	ScatterSeriesOption setData(Number[] data);
 
+	ScatterSeriesOption setData(Number[][] data);
+
 	ScatterSeriesOption setData(Object[] data);
 
 	ScatterSeriesOption setData(Object[][] data);
 
 	ScatterSeriesOption setData(ScatterDataItemOption[] data);
+
+	ScatterSeriesOption setData(String[] data);
+
+	ScatterSeriesOption setData(String[][] data);
 }
