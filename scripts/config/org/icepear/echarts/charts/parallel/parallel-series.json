@@ -1,0 +1,5 @@
+{
+  "name": "ParallelSeries",
+  "type": "class",
+  "implements": ["ParallelSeriesOption"]
+}

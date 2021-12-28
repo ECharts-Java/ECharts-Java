@@ -1,0 +1,5 @@
+{
+  "name": "GraphEdgeLineStyle",
+  "type": "class",
+  "implements": ["GraphEdgeLineStyleOption"]
+}

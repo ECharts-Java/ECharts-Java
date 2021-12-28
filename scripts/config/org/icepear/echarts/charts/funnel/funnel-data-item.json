@@ -1,0 +1,5 @@
+{
+  "name": "FunnelDataItem",
+  "type": "class",
+  "implements": ["FunnelDataItemOption"]
+}

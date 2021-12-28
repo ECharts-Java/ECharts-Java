@@ -1,0 +1,5 @@
+{
+  "name": "SunburstSeriesLevel",
+  "type": "class",
+  "implements": ["SunburstSeriesLevelOption"]
+}

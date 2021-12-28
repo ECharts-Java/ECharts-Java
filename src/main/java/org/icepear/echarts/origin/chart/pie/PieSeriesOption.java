@@ -38,9 +38,9 @@ public interface PieSeriesOption extends SeriesOption, PieStateOption, CircleLay
 
 	PieSeriesOption setEmptyCircleStyle(PieItemStyleOption emptyCircleStyle);
 
-	PieSeriesOption setData(Object[] data);
+	PieSeriesOption setData(Number[] data);
 
-	PieSeriesOption setData(Object[][] data);
+	PieSeriesOption setData(Number[][] data);
 
 	PieSeriesOption setData(PieDataItemOption[] data);
 

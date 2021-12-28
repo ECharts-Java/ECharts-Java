@@ -1,0 +1,5 @@
+{
+  "name": "GraphNodeItem",
+  "type": "class",
+  "implements": ["GraphNodeItemOption"]
+}

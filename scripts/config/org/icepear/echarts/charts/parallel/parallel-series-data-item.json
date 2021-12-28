@@ -1,0 +1,5 @@
+{
+  "name": "ParallelSeriesDataItem",
+  "type": "class",
+  "implements": ["ParallelSeriesDataItemOption"]
+}

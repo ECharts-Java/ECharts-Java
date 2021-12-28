@@ -1,0 +1,5 @@
+{
+  "name": "SankeyEdgeStyle",
+  "type": "class",
+  "implements": ["SankeyEdgeStyleOption"]
+}

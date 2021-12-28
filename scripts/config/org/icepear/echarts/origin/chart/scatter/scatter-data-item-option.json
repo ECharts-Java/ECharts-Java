@@ -5,7 +5,7 @@
     "SymbolOptionMixin",
     "ScatterStateOption",
     "StatesOptionMixin",
-    "OptionDataItemObject"
+    "DefaultOptionDataItemObject"
   ],
   "fields": [],
   "comments": [

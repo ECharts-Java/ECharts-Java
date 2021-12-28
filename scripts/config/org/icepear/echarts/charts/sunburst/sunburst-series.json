@@ -1,0 +1,5 @@
+{
+  "name": "SunburstSeries",
+  "type": "class",
+  "implements": ["SunburstSeriesOption"]
+}

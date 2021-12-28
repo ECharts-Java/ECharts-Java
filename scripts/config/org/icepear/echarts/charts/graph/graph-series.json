@@ -1,0 +1,5 @@
+{
+  "name": "GraphSeries",
+  "type": "class",
+  "implements": ["GraphSeriesOption"]
+}

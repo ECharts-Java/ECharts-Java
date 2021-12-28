@@ -69,8 +69,8 @@
     {
       "name": "data",
       "types": [
-        "OptionDataValueNumeric[]",
-        "OptionDataValueNumeric[][]",
+        "Number[]",
+        "Number[][]",
         "PieDataItemOption[]"
       ]
     },
