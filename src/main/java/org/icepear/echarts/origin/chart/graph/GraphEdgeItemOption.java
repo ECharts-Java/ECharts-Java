@@ -8,15 +8,15 @@ import org.icepear.echarts.origin.util.StatesOptionMixin;
  */
 public interface GraphEdgeItemOption extends GraphEdgeStateOption, StatesOptionMixin, NumericGraphEdgeItemObject {
 
-	GraphEdgeItemOption setValue(Number value);
+    GraphEdgeItemOption setValue(Number value);
 
-	GraphEdgeItemOption setSymbol(String symbol);
+    GraphEdgeItemOption setSymbol(String symbol);
 
-	GraphEdgeItemOption setSymbol(String[] symbol);
+    GraphEdgeItemOption setSymbol(String[] symbol);
 
-	GraphEdgeItemOption setSymbolSize(Number symbolSize);
+    GraphEdgeItemOption setSymbolSize(Number symbolSize);
 
-	GraphEdgeItemOption setSymbolSize(Number[] symbolSize);
+    GraphEdgeItemOption setSymbolSize(Number[] symbolSize);
 
-	GraphEdgeItemOption setIgnoreForceLayout(Boolean ignoreForceLayout);
+    GraphEdgeItemOption setIgnoreForceLayout(Boolean ignoreForceLayout);
 }

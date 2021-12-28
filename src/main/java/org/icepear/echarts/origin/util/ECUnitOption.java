@@ -5,25 +5,25 @@ package org.icepear.echarts.origin.util;
  */
 public interface ECUnitOption extends AnimationOptionMixin, ColorPaletteOptionMixin {
 
-	ECUnitOption setBaseOption(Object baseOption);
+    ECUnitOption setBaseOption(Object baseOption);
 
-	ECUnitOption setOptions(Object options);
+    ECUnitOption setOptions(Object options);
 
-	ECUnitOption setMedia(Object media);
+    ECUnitOption setMedia(Object media);
 
-	ECUnitOption setTimeline(ComponentOption timeline);
+    ECUnitOption setTimeline(ComponentOption timeline);
 
-	ECUnitOption setTimeline(ComponentOption[] timeline);
+    ECUnitOption setTimeline(ComponentOption[] timeline);
 
-	ECUnitOption setBackgroundColor(String backgroundColor);
+    ECUnitOption setBackgroundColor(String backgroundColor);
 
-	ECUnitOption setDarkMode(Boolean darkMode);
+    ECUnitOption setDarkMode(Boolean darkMode);
 
-	ECUnitOption setDarkMode(String darkMode);
+    ECUnitOption setDarkMode(String darkMode);
 
-	ECUnitOption setTextStyle(Object textStyle);
+    ECUnitOption setTextStyle(Object textStyle);
 
-	ECUnitOption setUseUTC(Boolean useUTC);
+    ECUnitOption setUseUTC(Boolean useUTC);
 
-	ECUnitOption setStateAnimation(Object stateAnimation);
+    ECUnitOption setStateAnimation(Object stateAnimation);
 }

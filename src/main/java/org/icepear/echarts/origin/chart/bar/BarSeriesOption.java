@@ -9,29 +9,29 @@ import org.icepear.echarts.origin.util.SeriesStackOptionMixin;
  */
 public interface BarSeriesOption extends BaseBarSeriesOption, BarStateOption, SeriesStackOptionMixin, SeriesSamplingOptionMixin, SeriesEncodeOptionMixin {
 
-	BarSeriesOption setType(String type);
+    BarSeriesOption setType(String type);
 
-	BarSeriesOption setCoordinateSystem(String coordinateSystem);
+    BarSeriesOption setCoordinateSystem(String coordinateSystem);
 
-	BarSeriesOption setClip(Boolean clip);
+    BarSeriesOption setClip(Boolean clip);
 
-	BarSeriesOption setRoundCap(Boolean roundCap);
+    BarSeriesOption setRoundCap(Boolean roundCap);
 
-	BarSeriesOption setShowBackground(Boolean showBackground);
+    BarSeriesOption setShowBackground(Boolean showBackground);
 
-	BarSeriesOption setBackgroundStyle(BarBackgroundStyleOption backgroundStyle);
+    BarSeriesOption setBackgroundStyle(BarBackgroundStyleOption backgroundStyle);
 
-	BarSeriesOption setData(Number[] data);
+    BarSeriesOption setData(Number[] data);
 
-	BarSeriesOption setData(Number[][] data);
+    BarSeriesOption setData(Number[][] data);
 
-	BarSeriesOption setData(Object[] data);
+    BarSeriesOption setData(Object[] data);
 
-	BarSeriesOption setData(Object[][] data);
+    BarSeriesOption setData(Object[][] data);
 
-	BarSeriesOption setData(String[] data);
+    BarSeriesOption setData(String[] data);
 
-	BarSeriesOption setData(String[][] data);
+    BarSeriesOption setData(String[][] data);
 
-	BarSeriesOption setRealtimeSort(Boolean realtimeSort);
+    BarSeriesOption setRealtimeSort(Boolean realtimeSort);
 }

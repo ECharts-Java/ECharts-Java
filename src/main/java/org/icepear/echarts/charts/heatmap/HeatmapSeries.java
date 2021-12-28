@@ -14,288 +14,288 @@ import org.icepear.echarts.origin.util.LabelLineOption;
 import org.icepear.echarts.origin.util.OptionEncode;
 import org.icepear.echarts.origin.util.SeriesLabelOption;
 
-@Accessors(chain=true)
+@Accessors(chain = true)
 @Data
 public class HeatmapSeries implements HeatmapSeriesOption {
 
-	private String mainType;
+    private String mainType;
 
-	private String type = "heatmap";
+    private String type = "heatmap";
 
-	@Setter(AccessLevel.NONE)
-	private Object id;
+    @Setter(AccessLevel.NONE)
+    private Object id;
 
-	public HeatmapSeries setId(Number id) {
-		this.id = id;
-		return this;
-	}
+    public HeatmapSeries setId(Number id) {
+        this.id = id;
+        return this;
+    }
 
-	public HeatmapSeries setId(String id) {
-		this.id = id;
-		return this;
-	}
+    public HeatmapSeries setId(String id) {
+        this.id = id;
+        return this;
+    }
 
-	@Setter(AccessLevel.NONE)
-	private Object name;
+    @Setter(AccessLevel.NONE)
+    private Object name;
 
-	public HeatmapSeries setName(Number name) {
-		this.name = name;
-		return this;
-	}
+    public HeatmapSeries setName(Number name) {
+        this.name = name;
+        return this;
+    }
 
-	public HeatmapSeries setName(String name) {
-		this.name = name;
-		return this;
-	}
+    public HeatmapSeries setName(String name) {
+        this.name = name;
+        return this;
+    }
 
-	private Number z;
+    private Number z;
 
-	private Number zlevel;
+    private Number zlevel;
 
-	private Boolean animation;
+    private Boolean animation;
 
-	private Number animationThreshold;
+    private Number animationThreshold;
 
-	@Setter(AccessLevel.NONE)
-	private Object animationDuration;
+    @Setter(AccessLevel.NONE)
+    private Object animationDuration;
 
-	public HeatmapSeries setAnimationDuration(Number animationDuration) {
-		this.animationDuration = animationDuration;
-		return this;
-	}
+    public HeatmapSeries setAnimationDuration(Number animationDuration) {
+        this.animationDuration = animationDuration;
+        return this;
+    }
 
-	public HeatmapSeries setAnimationDuration(Object animationDuration) {
-		this.animationDuration = animationDuration;
-		return this;
-	}
+    public HeatmapSeries setAnimationDuration(Object animationDuration) {
+        this.animationDuration = animationDuration;
+        return this;
+    }
 
-	private Object animationEasing;
+    private Object animationEasing;
 
-	@Setter(AccessLevel.NONE)
-	private Object animationDelay;
+    @Setter(AccessLevel.NONE)
+    private Object animationDelay;
 
-	public HeatmapSeries setAnimationDelay(Number animationDelay) {
-		this.animationDelay = animationDelay;
-		return this;
-	}
+    public HeatmapSeries setAnimationDelay(Number animationDelay) {
+        this.animationDelay = animationDelay;
+        return this;
+    }
 
-	public HeatmapSeries setAnimationDelay(Object animationDelay) {
-		this.animationDelay = animationDelay;
-		return this;
-	}
+    public HeatmapSeries setAnimationDelay(Object animationDelay) {
+        this.animationDelay = animationDelay;
+        return this;
+    }
 
-	@Setter(AccessLevel.NONE)
-	private Object animationDurationUpdate;
+    @Setter(AccessLevel.NONE)
+    private Object animationDurationUpdate;
 
-	public HeatmapSeries setAnimationDurationUpdate(Number animationDurationUpdate) {
-		this.animationDurationUpdate = animationDurationUpdate;
-		return this;
-	}
+    public HeatmapSeries setAnimationDurationUpdate(Number animationDurationUpdate) {
+        this.animationDurationUpdate = animationDurationUpdate;
+        return this;
+    }
 
-	public HeatmapSeries setAnimationDurationUpdate(Object animationDurationUpdate) {
-		this.animationDurationUpdate = animationDurationUpdate;
-		return this;
-	}
+    public HeatmapSeries setAnimationDurationUpdate(Object animationDurationUpdate) {
+        this.animationDurationUpdate = animationDurationUpdate;
+        return this;
+    }
 
-	private Object animationEasingUpdate;
+    private Object animationEasingUpdate;
 
-	@Setter(AccessLevel.NONE)
-	private Object animationDelayUpdate;
+    @Setter(AccessLevel.NONE)
+    private Object animationDelayUpdate;
 
-	public HeatmapSeries setAnimationDelayUpdate(Number animationDelayUpdate) {
-		this.animationDelayUpdate = animationDelayUpdate;
-		return this;
-	}
+    public HeatmapSeries setAnimationDelayUpdate(Number animationDelayUpdate) {
+        this.animationDelayUpdate = animationDelayUpdate;
+        return this;
+    }
 
-	public HeatmapSeries setAnimationDelayUpdate(Object animationDelayUpdate) {
-		this.animationDelayUpdate = animationDelayUpdate;
-		return this;
-	}
+    public HeatmapSeries setAnimationDelayUpdate(Object animationDelayUpdate) {
+        this.animationDelayUpdate = animationDelayUpdate;
+        return this;
+    }
 
-	@Setter(AccessLevel.NONE)
-	private Object color;
+    @Setter(AccessLevel.NONE)
+    private Object color;
 
-	public HeatmapSeries setColor(String color) {
-		this.color = color;
-		return this;
-	}
+    public HeatmapSeries setColor(String color) {
+        this.color = color;
+        return this;
+    }
 
-	public HeatmapSeries setColor(String[] color) {
-		this.color = color;
-		return this;
-	}
+    public HeatmapSeries setColor(String[] color) {
+        this.color = color;
+        return this;
+    }
 
-	private String[][] colorLayer;
+    private String[][] colorLayer;
 
-	private Object emphasis;
+    private Object emphasis;
 
-	private Object select;
+    private Object select;
 
-	private Object blur;
+    private Object blur;
 
-	private Object markArea;
+    private Object markArea;
 
-	private Object markLine;
+    private Object markLine;
 
-	private Object markPoint;
+    private Object markPoint;
 
-	private Object tooltip;
+    private Object tooltip;
 
-	private Boolean silent;
+    private Boolean silent;
 
-	private String blendMode;
+    private String blendMode;
 
-	private String cursor;
+    private String cursor;
 
-	@Setter(AccessLevel.NONE)
-	private Object dataGroupId;
+    @Setter(AccessLevel.NONE)
+    private Object dataGroupId;
 
-	public HeatmapSeries setDataGroupId(Number dataGroupId) {
-		this.dataGroupId = dataGroupId;
-		return this;
-	}
+    public HeatmapSeries setDataGroupId(Number dataGroupId) {
+        this.dataGroupId = dataGroupId;
+        return this;
+    }
 
-	public HeatmapSeries setDataGroupId(String dataGroupId) {
-		this.dataGroupId = dataGroupId;
-		return this;
-	}
+    public HeatmapSeries setDataGroupId(String dataGroupId) {
+        this.dataGroupId = dataGroupId;
+        return this;
+    }
 
-	@Setter(AccessLevel.NONE)
-	private Object data;
+    @Setter(AccessLevel.NONE)
+    private Object data;
 
-	public HeatmapSeries setData(HeatmapDataItemOption[] data) {
-		this.data = data;
-		return this;
-	}
+    public HeatmapSeries setData(HeatmapDataItemOption[] data) {
+        this.data = data;
+        return this;
+    }
 
-	public HeatmapSeries setData(Object data) {
-		this.data = data;
-		return this;
-	}
+    public HeatmapSeries setData(Object data) {
+        this.data = data;
+        return this;
+    }
 
-	public HeatmapSeries setData(Object[] data) {
-		this.data = data;
-		return this;
-	}
+    public HeatmapSeries setData(Object[] data) {
+        this.data = data;
+        return this;
+    }
 
-	private Object colorBy;
+    private Object colorBy;
 
-	private Boolean legendHoverLink;
+    private Boolean legendHoverLink;
 
-	@Setter(AccessLevel.NONE)
-	private Object progressive;
+    @Setter(AccessLevel.NONE)
+    private Object progressive;
 
-	public HeatmapSeries setProgressive(Boolean progressive) {
-		this.progressive = progressive;
-		return this;
-	}
+    public HeatmapSeries setProgressive(Boolean progressive) {
+        this.progressive = progressive;
+        return this;
+    }
 
-	public HeatmapSeries setProgressive(Number progressive) {
-		this.progressive = progressive;
-		return this;
-	}
+    public HeatmapSeries setProgressive(Number progressive) {
+        this.progressive = progressive;
+        return this;
+    }
 
-	private Number progressiveThreshold;
+    private Number progressiveThreshold;
 
-	private String progressiveChunkMode;
+    private String progressiveChunkMode;
 
-	private String coordinateSystem;
+    private String coordinateSystem;
 
-	private Number hoverLayerThreshold;
+    private Number hoverLayerThreshold;
 
-	@Setter(AccessLevel.NONE)
-	private Object seriesLayoutBy;
+    @Setter(AccessLevel.NONE)
+    private Object seriesLayoutBy;
 
-	public HeatmapSeries setSeriesLayoutBy(Object seriesLayoutBy) {
-		this.seriesLayoutBy = seriesLayoutBy;
-		return this;
-	}
+    public HeatmapSeries setSeriesLayoutBy(Object seriesLayoutBy) {
+        this.seriesLayoutBy = seriesLayoutBy;
+        return this;
+    }
 
-	public HeatmapSeries setSeriesLayoutBy(String seriesLayoutBy) {
-		this.seriesLayoutBy = seriesLayoutBy;
-		return this;
-	}
+    public HeatmapSeries setSeriesLayoutBy(String seriesLayoutBy) {
+        this.seriesLayoutBy = seriesLayoutBy;
+        return this;
+    }
 
-	private LabelLineOption labelLine;
+    private LabelLineOption labelLine;
 
-	private Object labelLayout;
+    private Object labelLayout;
 
-	private Object stateAnimation;
+    private Object stateAnimation;
 
-	@Setter(AccessLevel.NONE)
-	private Object universalTransition;
+    @Setter(AccessLevel.NONE)
+    private Object universalTransition;
 
-	public HeatmapSeries setUniversalTransition(Boolean universalTransition) {
-		this.universalTransition = universalTransition;
-		return this;
-	}
+    public HeatmapSeries setUniversalTransition(Boolean universalTransition) {
+        this.universalTransition = universalTransition;
+        return this;
+    }
 
-	public HeatmapSeries setUniversalTransition(Object universalTransition) {
-		this.universalTransition = universalTransition;
-		return this;
-	}
+    public HeatmapSeries setUniversalTransition(Object universalTransition) {
+        this.universalTransition = universalTransition;
+        return this;
+    }
 
-	private Map<String, Boolean> selectedMap;
+    private Map<String, Boolean> selectedMap;
 
-	@Setter(AccessLevel.NONE)
-	private Object selectedMode;
+    @Setter(AccessLevel.NONE)
+    private Object selectedMode;
 
-	public HeatmapSeries setSelectedMode(Boolean selectedMode) {
-		this.selectedMode = selectedMode;
-		return this;
-	}
+    public HeatmapSeries setSelectedMode(Boolean selectedMode) {
+        this.selectedMode = selectedMode;
+        return this;
+    }
 
-	public HeatmapSeries setSelectedMode(String selectedMode) {
-		this.selectedMode = selectedMode;
-		return this;
-	}
+    public HeatmapSeries setSelectedMode(String selectedMode) {
+        this.selectedMode = selectedMode;
+        return this;
+    }
 
-	private ItemStyleOption itemStyle;
+    private ItemStyleOption itemStyle;
 
-	private SeriesLabelOption label;
+    private SeriesLabelOption label;
 
-	private Number xAxisIndex;
+    private Number xAxisIndex;
 
-	private Number yAxisIndex;
+    private Number yAxisIndex;
 
-	private String xAxisId;
+    private String xAxisId;
 
-	private String yAxisId;
+    private String yAxisId;
 
-	private Number geoIndex;
+    private Number geoIndex;
 
-	private String geoId;
+    private String geoId;
 
-	private Number calendarIndex;
+    private Number calendarIndex;
 
-	private String calendarId;
+    private String calendarId;
 
-	private Number datasetIndex;
+    private Number datasetIndex;
 
-	@Setter(AccessLevel.NONE)
-	private Object datasetId;
+    @Setter(AccessLevel.NONE)
+    private Object datasetId;
 
-	public HeatmapSeries setDatasetId(Number datasetId) {
-		this.datasetId = datasetId;
-		return this;
-	}
+    public HeatmapSeries setDatasetId(Number datasetId) {
+        this.datasetId = datasetId;
+        return this;
+    }
 
-	public HeatmapSeries setDatasetId(String datasetId) {
-		this.datasetId = datasetId;
-		return this;
-	}
+    public HeatmapSeries setDatasetId(String datasetId) {
+        this.datasetId = datasetId;
+        return this;
+    }
 
-	private Object sourceHeader;
+    private Object sourceHeader;
 
-	private Object[] dimensions;
+    private Object[] dimensions;
 
-	private OptionEncode encode;
+    private OptionEncode encode;
 
-	private Number blurSize;
+    private Number blurSize;
 
-	private Number pointSize;
+    private Number pointSize;
 
-	private Number maxOpacity;
+    private Number maxOpacity;
 
-	private Number minOpacity;
+    private Number minOpacity;
 }

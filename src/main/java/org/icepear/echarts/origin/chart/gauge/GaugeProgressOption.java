@@ -7,15 +7,15 @@ import org.icepear.echarts.origin.util.ItemStyleOption;
  */
 public interface GaugeProgressOption {
 
-	GaugeProgressOption setShow(Boolean show);
+    GaugeProgressOption setShow(Boolean show);
 
-	GaugeProgressOption setOverlap(Boolean overlap);
+    GaugeProgressOption setOverlap(Boolean overlap);
 
-	GaugeProgressOption setWidth(Number width);
+    GaugeProgressOption setWidth(Number width);
 
-	GaugeProgressOption setRoundCap(Boolean roundCap);
+    GaugeProgressOption setRoundCap(Boolean roundCap);
 
-	GaugeProgressOption setClip(Boolean clip);
+    GaugeProgressOption setClip(Boolean clip);
 
-	GaugeProgressOption setItemStyle(ItemStyleOption itemStyle);
+    GaugeProgressOption setItemStyle(ItemStyleOption itemStyle);
 }

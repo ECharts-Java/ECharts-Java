@@ -7,9 +7,9 @@ import org.icepear.echarts.origin.util.StatesOptionMixin;
  */
 public interface MarkAreaOption extends MarkerOption, MarkAreaStateOption, StatesOptionMixin {
 
-	MarkAreaOption setMainType(String mainType);
+    MarkAreaOption setMainType(String mainType);
 
-	MarkAreaOption setPrecision(Number precision);
+    MarkAreaOption setPrecision(Number precision);
 
-	MarkAreaOption setData(MarkAreaDataItemOption[] data);
+    MarkAreaOption setData(MarkAreaDataItemOption[] data);
 }

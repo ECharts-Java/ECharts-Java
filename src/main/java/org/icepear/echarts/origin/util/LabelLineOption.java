@@ -5,19 +5,19 @@ package org.icepear.echarts.origin.util;
  */
 public interface LabelLineOption {
 
-	LabelLineOption setShow(Boolean show);
+    LabelLineOption setShow(Boolean show);
 
-	LabelLineOption setShowAbove(Boolean showAbove);
+    LabelLineOption setShowAbove(Boolean showAbove);
 
-	LabelLineOption setLength(Number length);
+    LabelLineOption setLength(Number length);
 
-	LabelLineOption setLength2(Number length2);
+    LabelLineOption setLength2(Number length2);
 
-	LabelLineOption setSmooth(Boolean smooth);
+    LabelLineOption setSmooth(Boolean smooth);
 
-	LabelLineOption setSmooth(Number smooth);
+    LabelLineOption setSmooth(Number smooth);
 
-	LabelLineOption setMinTurnAngle(Number minTurnAngle);
+    LabelLineOption setMinTurnAngle(Number minTurnAngle);
 
-	LabelLineOption setLineStyle(LineStyleOption lineStyle);
+    LabelLineOption setLineStyle(LineStyleOption lineStyle);
 }

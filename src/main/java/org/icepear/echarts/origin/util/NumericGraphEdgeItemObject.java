@@ -6,11 +6,11 @@ package org.icepear.echarts.origin.util;
  */
 public interface NumericGraphEdgeItemObject extends NumericOptionDataItemObject {
 
-	NumericGraphEdgeItemObject setSource(Number source);
+    NumericGraphEdgeItemObject setSource(Number source);
 
-	NumericGraphEdgeItemObject setSource(String source);
+    NumericGraphEdgeItemObject setSource(String source);
 
-	NumericGraphEdgeItemObject setTarget(Number target);
+    NumericGraphEdgeItemObject setTarget(Number target);
 
-	NumericGraphEdgeItemObject setTarget(String target);
+    NumericGraphEdgeItemObject setTarget(String target);
 }

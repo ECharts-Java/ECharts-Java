@@ -7,5 +7,5 @@ import org.icepear.echarts.origin.util.StatesOptionMixin;
  */
 public interface CandlestickDataItemOption extends CandlestickStateOption, StatesOptionMixin {
 
-	CandlestickDataItemOption setValue(Object value);
+    CandlestickDataItemOption setValue(Object value);
 }

@@ -7,31 +7,31 @@ import org.icepear.echarts.components.visualMap.VisualPiece;
  */
 public interface PiecewiseVisualMapOption extends VisualMapOption {
 
-	PiecewiseVisualMapOption setAlign(String align);
+    PiecewiseVisualMapOption setAlign(String align);
 
-	PiecewiseVisualMapOption setMinOpen(Boolean minOpen);
+    PiecewiseVisualMapOption setMinOpen(Boolean minOpen);
 
-	PiecewiseVisualMapOption setMaxOpen(Boolean maxOpen);
+    PiecewiseVisualMapOption setMaxOpen(Boolean maxOpen);
 
-	PiecewiseVisualMapOption setItemWidth(Number itemWidth);
+    PiecewiseVisualMapOption setItemWidth(Number itemWidth);
 
-	PiecewiseVisualMapOption setItemHeight(Number itemHeight);
+    PiecewiseVisualMapOption setItemHeight(Number itemHeight);
 
-	PiecewiseVisualMapOption setItemSymbol(String itemSymbol);
+    PiecewiseVisualMapOption setItemSymbol(String itemSymbol);
 
-	PiecewiseVisualMapOption setPieces(VisualPiece[] pieces);
+    PiecewiseVisualMapOption setPieces(VisualPiece[] pieces);
 
-	PiecewiseVisualMapOption setCategories(String[] categories);
+    PiecewiseVisualMapOption setCategories(String[] categories);
 
-	PiecewiseVisualMapOption setSplitNumber(Number splitNumber);
+    PiecewiseVisualMapOption setSplitNumber(Number splitNumber);
 
-	PiecewiseVisualMapOption setSelected(Object selected);
+    PiecewiseVisualMapOption setSelected(Object selected);
 
-	PiecewiseVisualMapOption setSelectedMode(String selectedMode);
+    PiecewiseVisualMapOption setSelectedMode(String selectedMode);
 
-	PiecewiseVisualMapOption setShowLabel(Boolean showLabel);
+    PiecewiseVisualMapOption setShowLabel(Boolean showLabel);
 
-	PiecewiseVisualMapOption setItemGap(Number itemGap);
+    PiecewiseVisualMapOption setItemGap(Number itemGap);
 
-	PiecewiseVisualMapOption setHoverLink(Boolean hoverLink);
+    PiecewiseVisualMapOption setHoverLink(Boolean hoverLink);
 }

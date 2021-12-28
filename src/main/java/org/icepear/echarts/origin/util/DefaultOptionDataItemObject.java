@@ -6,15 +6,15 @@ package org.icepear.echarts.origin.util;
  */
 public interface DefaultOptionDataItemObject extends OptionDataItemObject {
 
-	DefaultOptionDataItemObject setValue(Number value);
+    DefaultOptionDataItemObject setValue(Number value);
 
-	DefaultOptionDataItemObject setValue(Number[] value);
+    DefaultOptionDataItemObject setValue(Number[] value);
 
-	DefaultOptionDataItemObject setValue(Object value);
+    DefaultOptionDataItemObject setValue(Object value);
 
-	DefaultOptionDataItemObject setValue(Object[] value);
+    DefaultOptionDataItemObject setValue(Object[] value);
 
-	DefaultOptionDataItemObject setValue(String value);
+    DefaultOptionDataItemObject setValue(String value);
 
-	DefaultOptionDataItemObject setValue(String[] value);
+    DefaultOptionDataItemObject setValue(String[] value);
 }

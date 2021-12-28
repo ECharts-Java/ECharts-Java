@@ -7,17 +7,17 @@ import org.icepear.echarts.origin.util.StatesOptionMixin;
  */
 public interface SunburstSeriesLevelOption extends SunburstStateOption, StatesOptionMixin {
 
-	SunburstSeriesLevelOption setRadius(Number[] radius);
+    SunburstSeriesLevelOption setRadius(Number[] radius);
 
-	SunburstSeriesLevelOption setRadius(String[] radius);
+    SunburstSeriesLevelOption setRadius(String[] radius);
 
-	SunburstSeriesLevelOption setR(Number r);
+    SunburstSeriesLevelOption setR(Number r);
 
-	SunburstSeriesLevelOption setR(String r);
+    SunburstSeriesLevelOption setR(String r);
 
-	SunburstSeriesLevelOption setR0(Number r0);
+    SunburstSeriesLevelOption setR0(Number r0);
 
-	SunburstSeriesLevelOption setR0(String r0);
+    SunburstSeriesLevelOption setR0(String r0);
 
-	SunburstSeriesLevelOption setHighlight(Object highlight);
+    SunburstSeriesLevelOption setHighlight(Object highlight);
 }

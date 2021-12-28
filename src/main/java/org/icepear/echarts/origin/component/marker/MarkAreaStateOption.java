@@ -8,7 +8,7 @@ import org.icepear.echarts.origin.util.SeriesLabelOption;
  */
 public interface MarkAreaStateOption {
 
-	MarkAreaStateOption setItemStyle(ItemStyleOption itemStyle);
+    MarkAreaStateOption setItemStyle(ItemStyleOption itemStyle);
 
-	MarkAreaStateOption setLabel(SeriesLabelOption label);
+    MarkAreaStateOption setLabel(SeriesLabelOption label);
 }

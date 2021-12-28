@@ -5,21 +5,21 @@ package org.icepear.echarts.origin.util;
  */
 public interface SymbolOptionMixin {
 
-	SymbolOptionMixin setSymbol(String symbol);
+    SymbolOptionMixin setSymbol(String symbol);
 
-	SymbolOptionMixin setSymbolSize(Number symbolSize);
+    SymbolOptionMixin setSymbolSize(Number symbolSize);
 
-	SymbolOptionMixin setSymbolSize(Number[] symbolSize);
+    SymbolOptionMixin setSymbolSize(Number[] symbolSize);
 
-	SymbolOptionMixin setSymbolRotate(Number symbolRotate);
+    SymbolOptionMixin setSymbolRotate(Number symbolRotate);
 
-	SymbolOptionMixin setSymbolKeepAspect(Boolean symbolKeepAspect);
+    SymbolOptionMixin setSymbolKeepAspect(Boolean symbolKeepAspect);
 
-	SymbolOptionMixin setSymbolOffset(Number symbolOffset);
+    SymbolOptionMixin setSymbolOffset(Number symbolOffset);
 
-	SymbolOptionMixin setSymbolOffset(Number[] symbolOffset);
+    SymbolOptionMixin setSymbolOffset(Number[] symbolOffset);
 
-	SymbolOptionMixin setSymbolOffset(String symbolOffset);
+    SymbolOptionMixin setSymbolOffset(String symbolOffset);
 
-	SymbolOptionMixin setSymbolOffset(String[] symbolOffset);
+    SymbolOptionMixin setSymbolOffset(String[] symbolOffset);
 }

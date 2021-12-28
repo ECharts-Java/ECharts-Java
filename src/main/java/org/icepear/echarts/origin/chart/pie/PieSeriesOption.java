@@ -10,39 +10,39 @@ import org.icepear.echarts.origin.util.SeriesOption;
  */
 public interface PieSeriesOption extends SeriesOption, PieStateOption, CircleLayoutOptionMixin, BoxLayoutOptionMixin, SeriesEncodeOptionMixin {
 
-	PieSeriesOption setType(String type);
+    PieSeriesOption setType(String type);
 
-	PieSeriesOption setRoseType(String roseType);
+    PieSeriesOption setRoseType(String roseType);
 
-	PieSeriesOption setClockwise(Boolean clockwise);
+    PieSeriesOption setClockwise(Boolean clockwise);
 
-	PieSeriesOption setStartAngle(Number startAngle);
+    PieSeriesOption setStartAngle(Number startAngle);
 
-	PieSeriesOption setMinAngle(Number minAngle);
+    PieSeriesOption setMinAngle(Number minAngle);
 
-	PieSeriesOption setMinShowLabelAngle(Number minShowLabelAngle);
+    PieSeriesOption setMinShowLabelAngle(Number minShowLabelAngle);
 
-	PieSeriesOption setSelectedOffset(Number selectedOffset);
+    PieSeriesOption setSelectedOffset(Number selectedOffset);
 
-	PieSeriesOption setAvoidLabelOverlap(Boolean avoidLabelOverlap);
+    PieSeriesOption setAvoidLabelOverlap(Boolean avoidLabelOverlap);
 
-	PieSeriesOption setPercentPrecision(Number percentPrecision);
+    PieSeriesOption setPercentPrecision(Number percentPrecision);
 
-	PieSeriesOption setStillShowZeroSum(Boolean stillShowZeroSum);
+    PieSeriesOption setStillShowZeroSum(Boolean stillShowZeroSum);
 
-	PieSeriesOption setAnimationType(String animationType);
+    PieSeriesOption setAnimationType(String animationType);
 
-	PieSeriesOption setAnimationTypeUpdate(String animationTypeUpdate);
+    PieSeriesOption setAnimationTypeUpdate(String animationTypeUpdate);
 
-	PieSeriesOption setShowEmptyCircle(Boolean showEmptyCircle);
+    PieSeriesOption setShowEmptyCircle(Boolean showEmptyCircle);
 
-	PieSeriesOption setEmptyCircleStyle(PieItemStyleOption emptyCircleStyle);
+    PieSeriesOption setEmptyCircleStyle(PieItemStyleOption emptyCircleStyle);
 
-	PieSeriesOption setData(Number[] data);
+    PieSeriesOption setData(Number[] data);
 
-	PieSeriesOption setData(Number[][] data);
+    PieSeriesOption setData(Number[][] data);
 
-	PieSeriesOption setData(PieDataItemOption[] data);
+    PieSeriesOption setData(PieDataItemOption[] data);
 
-	PieSeriesOption setEmphasis(PieEmphasisOption emphasis);
+    PieSeriesOption setEmphasis(PieEmphasisOption emphasis);
 }

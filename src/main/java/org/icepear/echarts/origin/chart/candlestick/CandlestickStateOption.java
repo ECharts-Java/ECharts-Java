@@ -7,7 +7,7 @@ import org.icepear.echarts.origin.util.SeriesLabelOption;
  */
 public interface CandlestickStateOption {
 
-	CandlestickStateOption setItemStyle(CandlestickItemStyleOption itemStyle);
+    CandlestickStateOption setItemStyle(CandlestickItemStyleOption itemStyle);
 
-	CandlestickStateOption setLabel(SeriesLabelOption label);
+    CandlestickStateOption setLabel(SeriesLabelOption label);
 }

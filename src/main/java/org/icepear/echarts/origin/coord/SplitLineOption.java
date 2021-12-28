@@ -7,11 +7,11 @@ import org.icepear.echarts.origin.util.LineStyleOption;
  */
 public interface SplitLineOption {
 
-	SplitLineOption setShow(Boolean show);
+    SplitLineOption setShow(Boolean show);
 
-	SplitLineOption setInterval(Number interval);
+    SplitLineOption setInterval(Number interval);
 
-	SplitLineOption setInterval(String interval);
+    SplitLineOption setInterval(String interval);
 
-	SplitLineOption setLineStyle(LineStyleOption lineStyle);
+    SplitLineOption setLineStyle(LineStyleOption lineStyle);
 }

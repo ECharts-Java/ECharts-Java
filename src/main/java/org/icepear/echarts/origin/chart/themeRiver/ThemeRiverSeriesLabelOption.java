@@ -7,5 +7,5 @@ import org.icepear.echarts.origin.util.SeriesLabelOption;
  */
 public interface ThemeRiverSeriesLabelOption extends SeriesLabelOption {
 
-	ThemeRiverSeriesLabelOption setMargin(Number margin);
+    ThemeRiverSeriesLabelOption setMargin(Number margin);
 }

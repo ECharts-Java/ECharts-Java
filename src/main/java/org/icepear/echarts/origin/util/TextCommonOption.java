@@ -5,69 +5,69 @@ package org.icepear.echarts.origin.util;
  */
 public interface TextCommonOption extends ShadowOptionMixin {
 
-	TextCommonOption setColor(String color);
+    TextCommonOption setColor(String color);
 
-	TextCommonOption setFontStyle(String fontStyle);
+    TextCommonOption setFontStyle(String fontStyle);
 
-	TextCommonOption setFontWeight(String fontWeight);
+    TextCommonOption setFontWeight(String fontWeight);
 
-	TextCommonOption setFontFamily(String fontFamily);
+    TextCommonOption setFontFamily(String fontFamily);
 
-	TextCommonOption setFontSize(Number fontSize);
+    TextCommonOption setFontSize(Number fontSize);
 
-	TextCommonOption setFontSize(String fontSize);
+    TextCommonOption setFontSize(String fontSize);
 
-	TextCommonOption setAlign(String align);
+    TextCommonOption setAlign(String align);
 
-	TextCommonOption setVerticalAlign(String verticalAlign);
+    TextCommonOption setVerticalAlign(String verticalAlign);
 
-	TextCommonOption setBaseline(String baseline);
+    TextCommonOption setBaseline(String baseline);
 
-	TextCommonOption setOpacity(Number opacity);
+    TextCommonOption setOpacity(Number opacity);
 
-	TextCommonOption setLineHeight(Number lineHeight);
+    TextCommonOption setLineHeight(Number lineHeight);
 
-	TextCommonOption setBackgroundColor(Object backgroundColor);
+    TextCommonOption setBackgroundColor(Object backgroundColor);
 
-	TextCommonOption setBackgroundColor(String backgroundColor);
+    TextCommonOption setBackgroundColor(String backgroundColor);
 
-	TextCommonOption setBorderColor(String borderColor);
+    TextCommonOption setBorderColor(String borderColor);
 
-	TextCommonOption setBorderWidth(Number borderWidth);
+    TextCommonOption setBorderWidth(Number borderWidth);
 
-	TextCommonOption setBorderType(String borderType);
+    TextCommonOption setBorderType(String borderType);
 
-	TextCommonOption setBorderDashOffset(Number borderDashOffset);
+    TextCommonOption setBorderDashOffset(Number borderDashOffset);
 
-	TextCommonOption setBorderRadius(Number borderRadius);
+    TextCommonOption setBorderRadius(Number borderRadius);
 
-	TextCommonOption setBorderRadius(Number[] borderRadius);
+    TextCommonOption setBorderRadius(Number[] borderRadius);
 
-	TextCommonOption setPadding(Number padding);
+    TextCommonOption setPadding(Number padding);
 
-	TextCommonOption setPadding(Number[] padding);
+    TextCommonOption setPadding(Number[] padding);
 
-	TextCommonOption setWidth(Number width);
+    TextCommonOption setWidth(Number width);
 
-	TextCommonOption setWidth(String width);
+    TextCommonOption setWidth(String width);
 
-	TextCommonOption setHeight(Number height);
+    TextCommonOption setHeight(Number height);
 
-	TextCommonOption setTextBorderColor(String textBorderColor);
+    TextCommonOption setTextBorderColor(String textBorderColor);
 
-	TextCommonOption setTextBorderWidth(Number textBorderWidth);
+    TextCommonOption setTextBorderWidth(Number textBorderWidth);
 
-	TextCommonOption setTextBorderType(String textBorderType);
+    TextCommonOption setTextBorderType(String textBorderType);
 
-	TextCommonOption setTextBorderDashOffset(Number textBorderDashOffset);
+    TextCommonOption setTextBorderDashOffset(Number textBorderDashOffset);
 
-	TextCommonOption setTextShadowBlur(Number textShadowBlur);
+    TextCommonOption setTextShadowBlur(Number textShadowBlur);
 
-	TextCommonOption setTextShadowColor(String textShadowColor);
+    TextCommonOption setTextShadowColor(String textShadowColor);
 
-	TextCommonOption setTextShadowOffsetX(Number textShadowOffsetX);
+    TextCommonOption setTextShadowOffsetX(Number textShadowOffsetX);
 
-	TextCommonOption setTextShadowOffsetY(Number textShadowOffsetY);
+    TextCommonOption setTextShadowOffsetY(Number textShadowOffsetY);
 
-	TextCommonOption setTag(String tag);
+    TextCommonOption setTag(String tag);
 }

@@ -5,15 +5,15 @@ package org.icepear.echarts.origin.coord.radar;
  */
 public interface RadarIndicatorOption {
 
-	RadarIndicatorOption setName(String name);
+    RadarIndicatorOption setName(String name);
 
-	RadarIndicatorOption setText(String text);
+    RadarIndicatorOption setText(String text);
 
-	RadarIndicatorOption setMin(Number min);
+    RadarIndicatorOption setMin(Number min);
 
-	RadarIndicatorOption setMax(Number max);
+    RadarIndicatorOption setMax(Number max);
 
-	RadarIndicatorOption setColor(Object color);
+    RadarIndicatorOption setColor(Object color);
 
-	RadarIndicatorOption setAxisType(String axisType);
+    RadarIndicatorOption setAxisType(String axisType);
 }

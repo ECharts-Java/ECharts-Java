@@ -5,9 +5,9 @@ package org.icepear.echarts.origin.coord;
  */
 public interface LogAxisBaseOption extends NumericAxisBaseOptionCommon {
 
-	LogAxisBaseOption setType(String type);
+    LogAxisBaseOption setType(String type);
 
-	LogAxisBaseOption setAxisLabel(Object axisLabel);
+    LogAxisBaseOption setAxisLabel(Object axisLabel);
 
-	LogAxisBaseOption setLogBase(Number logBase);
+    LogAxisBaseOption setLogBase(Number logBase);
 }

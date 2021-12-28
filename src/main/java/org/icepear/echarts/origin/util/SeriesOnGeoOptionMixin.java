@@ -5,7 +5,7 @@ package org.icepear.echarts.origin.util;
  */
 public interface SeriesOnGeoOptionMixin {
 
-	SeriesOnGeoOptionMixin setGeoIndex(Number geoIndex);
+    SeriesOnGeoOptionMixin setGeoIndex(Number geoIndex);
 
-	SeriesOnGeoOptionMixin setGeoId(String geoId);
+    SeriesOnGeoOptionMixin setGeoId(String geoId);
 }

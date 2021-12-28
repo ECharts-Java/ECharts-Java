@@ -9,11 +9,11 @@ import org.icepear.echarts.origin.util.SymbolOptionMixin;
  */
 public interface TreeSeriesNodeItemOption extends SymbolOptionMixin, TreeSeriesStateOption, StatesOptionMixin, DefaultOptionDataItemObject {
 
-	TreeSeriesNodeItemOption setChildren(TreeSeriesNodeItemOption[] children);
+    TreeSeriesNodeItemOption setChildren(TreeSeriesNodeItemOption[] children);
 
-	TreeSeriesNodeItemOption setCollapsed(Boolean collapsed);
+    TreeSeriesNodeItemOption setCollapsed(Boolean collapsed);
 
-	TreeSeriesNodeItemOption setLink(String link);
+    TreeSeriesNodeItemOption setLink(String link);
 
-	TreeSeriesNodeItemOption setTarget(String target);
+    TreeSeriesNodeItemOption setTarget(String target);
 }

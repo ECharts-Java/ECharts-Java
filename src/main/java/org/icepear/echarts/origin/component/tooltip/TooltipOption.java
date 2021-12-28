@@ -9,21 +9,21 @@ import org.icepear.echarts.origin.util.ComponentOption;
  */
 public interface TooltipOption extends CommonTooltipOption, ComponentOption {
 
-	TooltipOption setMainType(String mainType);
+    TooltipOption setMainType(String mainType);
 
-	TooltipOption setAxisPointer(TooltipAxisPointer axisPointer);
+    TooltipOption setAxisPointer(TooltipAxisPointer axisPointer);
 
-	TooltipOption setShowContent(Boolean showContent);
+    TooltipOption setShowContent(Boolean showContent);
 
-	TooltipOption setTrigger(String trigger);
+    TooltipOption setTrigger(String trigger);
 
-	TooltipOption setDisplayMode(String displayMode);
+    TooltipOption setDisplayMode(String displayMode);
 
-	TooltipOption setRenderMode(String renderMode);
+    TooltipOption setRenderMode(String renderMode);
 
-	TooltipOption setAppendToBody(Boolean appendToBody);
+    TooltipOption setAppendToBody(Boolean appendToBody);
 
-	TooltipOption setClassName(String className);
+    TooltipOption setClassName(String className);
 
-	TooltipOption setOrder(String order);
+    TooltipOption setOrder(String order);
 }

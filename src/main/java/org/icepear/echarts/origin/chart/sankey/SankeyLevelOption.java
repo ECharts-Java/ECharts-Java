@@ -5,5 +5,5 @@ package org.icepear.echarts.origin.chart.sankey;
  */
 public interface SankeyLevelOption extends SankeyNodeStateOption, SankeyEdgeStateOption {
 
-	SankeyLevelOption setDepth(Number depth);
+    SankeyLevelOption setDepth(Number depth);
 }

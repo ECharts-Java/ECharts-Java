@@ -8,7 +8,7 @@ import org.icepear.echarts.origin.util.SeriesLabelOption;
  */
 public interface BoxplotStateOption {
 
-	BoxplotStateOption setItemStyle(ItemStyleOption itemStyle);
+    BoxplotStateOption setItemStyle(ItemStyleOption itemStyle);
 
-	BoxplotStateOption setLabel(SeriesLabelOption label);
+    BoxplotStateOption setLabel(SeriesLabelOption label);
 }

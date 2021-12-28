@@ -15,39 +15,39 @@ import org.icepear.echarts.origin.util.SymbolOptionMixin;
  */
 public interface LineSeriesOption extends SeriesOption, LineStateOption, SeriesOnCartesianOptionMixin, SeriesOnPolarOptionMixin, SeriesStackOptionMixin, SeriesSamplingOptionMixin, SymbolOptionMixin, SeriesEncodeOptionMixin {
 
-	LineSeriesOption setType(String type);
+    LineSeriesOption setType(String type);
 
-	LineSeriesOption setCoordinateSystem(String coordinateSystem);
+    LineSeriesOption setCoordinateSystem(String coordinateSystem);
 
-	LineSeriesOption setClip(Boolean clip);
+    LineSeriesOption setClip(Boolean clip);
 
-	LineSeriesOption setLabel(SeriesLabelOption label);
+    LineSeriesOption setLabel(SeriesLabelOption label);
 
-	LineSeriesOption setEndLabel(Object endLabel);
+    LineSeriesOption setEndLabel(Object endLabel);
 
-	LineSeriesOption setLineStyle(LineStyleOption lineStyle);
+    LineSeriesOption setLineStyle(LineStyleOption lineStyle);
 
-	LineSeriesOption setAreaStyle(Object areaStyle);
+    LineSeriesOption setAreaStyle(Object areaStyle);
 
-	LineSeriesOption setStep(Boolean step);
+    LineSeriesOption setStep(Boolean step);
 
-	LineSeriesOption setStep(String step);
+    LineSeriesOption setStep(String step);
 
-	LineSeriesOption setSmooth(Boolean smooth);
+    LineSeriesOption setSmooth(Boolean smooth);
 
-	LineSeriesOption setSmooth(Number smooth);
+    LineSeriesOption setSmooth(Number smooth);
 
-	LineSeriesOption setSmoothMonotone(String smoothMonotone);
+    LineSeriesOption setSmoothMonotone(String smoothMonotone);
 
-	LineSeriesOption setConnectNulls(Boolean connectNulls);
+    LineSeriesOption setConnectNulls(Boolean connectNulls);
 
-	LineSeriesOption setShowSymbol(Boolean showSymbol);
+    LineSeriesOption setShowSymbol(Boolean showSymbol);
 
-	LineSeriesOption setShowAllSymbol(Boolean showAllSymbol);
+    LineSeriesOption setShowAllSymbol(Boolean showAllSymbol);
 
-	LineSeriesOption setShowAllSymbol(String showAllSymbol);
+    LineSeriesOption setShowAllSymbol(String showAllSymbol);
 
-	LineSeriesOption setData(Object[] data);
+    LineSeriesOption setData(Object[] data);
 
-	LineSeriesOption setTriggerLineEvent(Boolean triggerLineEvent);
+    LineSeriesOption setTriggerLineEvent(Boolean triggerLineEvent);
 }

@@ -5,7 +5,7 @@ package org.icepear.echarts.origin.util;
  */
 public interface SeriesOnSingleOptionMixin {
 
-	SeriesOnSingleOptionMixin setSingleAxisIndex(Number singleAxisIndex);
+    SeriesOnSingleOptionMixin setSingleAxisIndex(Number singleAxisIndex);
 
-	SeriesOnSingleOptionMixin setSingleAxisId(String singleAxisId);
+    SeriesOnSingleOptionMixin setSingleAxisId(String singleAxisId);
 }

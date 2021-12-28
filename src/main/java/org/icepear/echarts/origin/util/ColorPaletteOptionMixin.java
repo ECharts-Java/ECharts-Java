@@ -5,9 +5,9 @@ package org.icepear.echarts.origin.util;
  */
 public interface ColorPaletteOptionMixin {
 
-	ColorPaletteOptionMixin setColor(String color);
+    ColorPaletteOptionMixin setColor(String color);
 
-	ColorPaletteOptionMixin setColor(String[] color);
+    ColorPaletteOptionMixin setColor(String[] color);
 
-	ColorPaletteOptionMixin setColorLayer(String[][] colorLayer);
+    ColorPaletteOptionMixin setColorLayer(String[][] colorLayer);
 }

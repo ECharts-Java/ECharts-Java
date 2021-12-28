@@ -6,7 +6,7 @@ package org.icepear.echarts.origin.util;
  */
 public interface CategoryOptionDataItemObject extends OptionDataItemObject {
 
-	CategoryOptionDataItemObject setValue(String value);
+    CategoryOptionDataItemObject setValue(String value);
 
-	CategoryOptionDataItemObject setValue(String[] value);
+    CategoryOptionDataItemObject setValue(String[] value);
 }

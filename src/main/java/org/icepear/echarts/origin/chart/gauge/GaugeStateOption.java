@@ -7,5 +7,5 @@ import org.icepear.echarts.origin.util.ItemStyleOption;
  */
 public interface GaugeStateOption {
 
-	GaugeStateOption setItemStyle(ItemStyleOption itemStyle);
+    GaugeStateOption setItemStyle(ItemStyleOption itemStyle);
 }

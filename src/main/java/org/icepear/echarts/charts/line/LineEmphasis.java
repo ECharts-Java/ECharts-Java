@@ -11,34 +11,34 @@ import org.icepear.echarts.origin.util.ItemStyleOption;
 import org.icepear.echarts.origin.util.LineStyleOption;
 import org.icepear.echarts.origin.util.SeriesLabelOption;
 
-@Accessors(chain=true)
+@Accessors(chain = true)
 @Data
 public class LineEmphasis implements LineEmphasisOption {
 
-	private ItemStyleOption itemStyle;
+    private ItemStyleOption itemStyle;
 
-	private SeriesLabelOption label;
+    private SeriesLabelOption label;
 
-	private Object endLabel;
+    private Object endLabel;
 
-	private Object blurScope;
+    private Object blurScope;
 
-	@Setter(AccessLevel.NONE)
-	private Object lineStyle;
+    @Setter(AccessLevel.NONE)
+    private Object lineStyle;
 
-	public LineEmphasis setLineStyle(LineStyleOption lineStyle) {
-		this.lineStyle = lineStyle;
-		return this;
-	}
+    public LineEmphasis setLineStyle(LineStyleOption lineStyle) {
+        this.lineStyle = lineStyle;
+        return this;
+    }
 
-	public LineEmphasis setLineStyle(Object lineStyle) {
-		this.lineStyle = lineStyle;
-		return this;
-	}
+    public LineEmphasis setLineStyle(Object lineStyle) {
+        this.lineStyle = lineStyle;
+        return this;
+    }
 
-	private AreaStyleOption areaStyle;
+    private AreaStyleOption areaStyle;
 
-	private Object focus;
+    private Object focus;
 
-	private Boolean scale;
+    private Boolean scale;
 }

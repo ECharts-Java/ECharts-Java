@@ -5,7 +5,7 @@ package org.icepear.echarts.origin.coord;
  */
 public interface TimeAxisBaseOption extends NumericAxisBaseOptionCommon {
 
-	TimeAxisBaseOption setType(String type);
+    TimeAxisBaseOption setType(String type);
 
-	TimeAxisBaseOption setAxisLabel(Object axisLabel);
+    TimeAxisBaseOption setAxisLabel(Object axisLabel);
 }

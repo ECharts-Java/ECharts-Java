@@ -7,29 +7,29 @@ import org.icepear.echarts.origin.component.marker.MarkArea1DDataItemOption;
 import org.icepear.echarts.origin.util.ItemStyleOption;
 import org.icepear.echarts.origin.util.SeriesLabelOption;
 
-@Accessors(chain=true)
+@Accessors(chain = true)
 @Data
 public class MarkArea1DDataItem implements MarkArea1DDataItemOption {
 
-	private ItemStyleOption itemStyle;
+    private ItemStyleOption itemStyle;
 
-	private SeriesLabelOption label;
+    private SeriesLabelOption label;
 
-	private Object emphasis;
+    private Object emphasis;
 
-	private Object select;
+    private Object select;
 
-	private Object blur;
+    private Object blur;
 
-	private String name;
+    private String name;
 
-	private Number xAxis;
+    private Number xAxis;
 
-	private Number yAxis;
+    private Number yAxis;
 
-	private Object type;
+    private Object type;
 
-	private Number valueIndex;
+    private Number valueIndex;
 
-	private String valueDim;
+    private String valueDim;
 }

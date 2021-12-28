@@ -8,7 +8,7 @@ import org.icepear.echarts.origin.util.SeriesLabelOption;
  */
 public interface HeatmapStateOption {
 
-	HeatmapStateOption setItemStyle(ItemStyleOption itemStyle);
+    HeatmapStateOption setItemStyle(ItemStyleOption itemStyle);
 
-	HeatmapStateOption setLabel(SeriesLabelOption label);
+    HeatmapStateOption setLabel(SeriesLabelOption label);
 }

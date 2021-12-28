@@ -7,5 +7,5 @@ import org.icepear.echarts.origin.util.SeriesLabelOption;
  */
 public interface FunnelLabelOption extends SeriesLabelOption {
 
-	FunnelLabelOption setPosition(String position);
+    FunnelLabelOption setPosition(String position);
 }

@@ -7,5 +7,5 @@ import org.icepear.echarts.origin.util.StatesOptionMixin;
  */
 public interface MarkLineDataItemOptionBase extends MarkLineStateOption, StatesOptionMixin {
 
-	MarkLineDataItemOptionBase setName(String name);
+    MarkLineDataItemOptionBase setName(String name);
 }

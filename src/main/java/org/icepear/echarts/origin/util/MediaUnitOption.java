@@ -5,7 +5,7 @@ package org.icepear.echarts.origin.util;
  */
 public interface MediaUnitOption {
 
-	MediaUnitOption setQuery(MediaQueryOption query);
+    MediaUnitOption setQuery(MediaQueryOption query);
 
-	MediaUnitOption setOption(ECUnitOption option);
+    MediaUnitOption setOption(ECUnitOption option);
 }

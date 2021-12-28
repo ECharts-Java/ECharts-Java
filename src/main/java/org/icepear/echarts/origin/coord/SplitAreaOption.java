@@ -7,11 +7,11 @@ import org.icepear.echarts.origin.util.AreaStyleOption;
  */
 public interface SplitAreaOption {
 
-	SplitAreaOption setShow(Boolean show);
+    SplitAreaOption setShow(Boolean show);
 
-	SplitAreaOption setInterval(Number interval);
+    SplitAreaOption setInterval(Number interval);
 
-	SplitAreaOption setInterval(String interval);
+    SplitAreaOption setInterval(String interval);
 
-	SplitAreaOption setAreaStyle(AreaStyleOption areaStyle);
+    SplitAreaOption setAreaStyle(AreaStyleOption areaStyle);
 }

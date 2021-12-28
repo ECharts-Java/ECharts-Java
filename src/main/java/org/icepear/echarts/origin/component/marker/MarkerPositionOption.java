@@ -5,31 +5,31 @@ package org.icepear.echarts.origin.component.marker;
  */
 public interface MarkerPositionOption {
 
-	MarkerPositionOption setX(Number x);
+    MarkerPositionOption setX(Number x);
 
-	MarkerPositionOption setX(String x);
+    MarkerPositionOption setX(String x);
 
-	MarkerPositionOption setY(Number y);
+    MarkerPositionOption setY(Number y);
 
-	MarkerPositionOption setY(String y);
+    MarkerPositionOption setY(String y);
 
-	MarkerPositionOption setCoord(Object[] coord);
+    MarkerPositionOption setCoord(Object[] coord);
 
-	MarkerPositionOption setXAxis(Object xAxis);
+    MarkerPositionOption setXAxis(Object xAxis);
 
-	MarkerPositionOption setYAxis(Object yAxis);
+    MarkerPositionOption setYAxis(Object yAxis);
 
-	MarkerPositionOption setRadiusAxis(Object radiusAxis);
+    MarkerPositionOption setRadiusAxis(Object radiusAxis);
 
-	MarkerPositionOption setAngleAxis(Object angleAxis);
+    MarkerPositionOption setAngleAxis(Object angleAxis);
 
-	MarkerPositionOption setType(Object type);
+    MarkerPositionOption setType(Object type);
 
-	MarkerPositionOption setValueIndex(Number valueIndex);
+    MarkerPositionOption setValueIndex(Number valueIndex);
 
-	MarkerPositionOption setValueDim(String valueDim);
+    MarkerPositionOption setValueDim(String valueDim);
 
-	MarkerPositionOption setValue(Number value);
+    MarkerPositionOption setValue(Number value);
 
-	MarkerPositionOption setValue(String value);
+    MarkerPositionOption setValue(String value);
 }

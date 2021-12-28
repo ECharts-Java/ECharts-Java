@@ -5,19 +5,19 @@ package org.icepear.echarts.origin.util;
  */
 public interface ComponentOption {
 
-	ComponentOption setMainType(String mainType);
+    ComponentOption setMainType(String mainType);
 
-	ComponentOption setType(String type);
+    ComponentOption setType(String type);
 
-	ComponentOption setId(Number id);
+    ComponentOption setId(Number id);
 
-	ComponentOption setId(String id);
+    ComponentOption setId(String id);
 
-	ComponentOption setName(Number name);
+    ComponentOption setName(Number name);
 
-	ComponentOption setName(String name);
+    ComponentOption setName(String name);
 
-	ComponentOption setZ(Number z);
+    ComponentOption setZ(Number z);
 
-	ComponentOption setZlevel(Number zlevel);
+    ComponentOption setZlevel(Number zlevel);
 }

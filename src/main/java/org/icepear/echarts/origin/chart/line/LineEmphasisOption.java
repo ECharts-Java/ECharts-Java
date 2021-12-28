@@ -12,13 +12,13 @@ import org.icepear.echarts.origin.util.LineStyleOption;
  */
 public interface LineEmphasisOption extends LineStateOption, EmphasisOption {
 
-	LineEmphasisOption setLineStyle(LineStyleOption lineStyle);
+    LineEmphasisOption setLineStyle(LineStyleOption lineStyle);
 
-	LineEmphasisOption setLineStyle(Object lineStyle);
+    LineEmphasisOption setLineStyle(Object lineStyle);
 
-	LineEmphasisOption setAreaStyle(AreaStyleOption areaStyle);
+    LineEmphasisOption setAreaStyle(AreaStyleOption areaStyle);
 
-	LineEmphasisOption setFocus(Object focus);
+    LineEmphasisOption setFocus(Object focus);
 
-	LineEmphasisOption setScale(Boolean scale);
+    LineEmphasisOption setScale(Boolean scale);
 }

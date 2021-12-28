@@ -5,9 +5,9 @@ package org.icepear.echarts.origin.coord;
  */
 public interface ValueAxisBaseOption extends NumericAxisBaseOptionCommon {
 
-	ValueAxisBaseOption setType(String type);
+    ValueAxisBaseOption setType(String type);
 
-	ValueAxisBaseOption setAxisLabel(Object axisLabel);
+    ValueAxisBaseOption setAxisLabel(Object axisLabel);
 
-	ValueAxisBaseOption setScale(Boolean scale);
+    ValueAxisBaseOption setScale(Boolean scale);
 }

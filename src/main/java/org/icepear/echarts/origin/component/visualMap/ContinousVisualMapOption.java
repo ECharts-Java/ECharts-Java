@@ -7,33 +7,33 @@ import org.icepear.echarts.origin.util.ItemStyleOption;
  */
 public interface ContinousVisualMapOption extends VisualMapOption {
 
-	ContinousVisualMapOption setAlign(String align);
+    ContinousVisualMapOption setAlign(String align);
 
-	ContinousVisualMapOption setCalculable(Boolean calculable);
+    ContinousVisualMapOption setCalculable(Boolean calculable);
 
-	ContinousVisualMapOption setRange(Number[] range);
+    ContinousVisualMapOption setRange(Number[] range);
 
-	ContinousVisualMapOption setHoverLink(Boolean hoverLink);
+    ContinousVisualMapOption setHoverLink(Boolean hoverLink);
 
-	ContinousVisualMapOption setHoverLinkDataSize(Number hoverLinkDataSize);
+    ContinousVisualMapOption setHoverLinkDataSize(Number hoverLinkDataSize);
 
-	ContinousVisualMapOption setHoverLinkOnHandle(Boolean hoverLinkOnHandle);
+    ContinousVisualMapOption setHoverLinkOnHandle(Boolean hoverLinkOnHandle);
 
-	ContinousVisualMapOption setHandleIcon(String handleIcon);
+    ContinousVisualMapOption setHandleIcon(String handleIcon);
 
-	ContinousVisualMapOption setHandleSize(Number handleSize);
+    ContinousVisualMapOption setHandleSize(Number handleSize);
 
-	ContinousVisualMapOption setHandleSize(String handleSize);
+    ContinousVisualMapOption setHandleSize(String handleSize);
 
-	ContinousVisualMapOption setHandleStyle(ItemStyleOption handleStyle);
+    ContinousVisualMapOption setHandleStyle(ItemStyleOption handleStyle);
 
-	ContinousVisualMapOption setIndicatorIcon(String indicatorIcon);
+    ContinousVisualMapOption setIndicatorIcon(String indicatorIcon);
 
-	ContinousVisualMapOption setIndicatorSize(Number indicatorSize);
+    ContinousVisualMapOption setIndicatorSize(Number indicatorSize);
 
-	ContinousVisualMapOption setIndicatorSize(String indicatorSize);
+    ContinousVisualMapOption setIndicatorSize(String indicatorSize);
 
-	ContinousVisualMapOption setIndicatorStyle(ItemStyleOption indicatorStyle);
+    ContinousVisualMapOption setIndicatorStyle(ItemStyleOption indicatorStyle);
 
-	ContinousVisualMapOption setEmphasis(Object emphasis);
+    ContinousVisualMapOption setEmphasis(Object emphasis);
 }

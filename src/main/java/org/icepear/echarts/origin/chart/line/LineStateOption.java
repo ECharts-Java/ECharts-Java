@@ -8,9 +8,9 @@ import org.icepear.echarts.origin.util.SeriesLabelOption;
  */
 public interface LineStateOption {
 
-	LineStateOption setItemStyle(ItemStyleOption itemStyle);
+    LineStateOption setItemStyle(ItemStyleOption itemStyle);
 
-	LineStateOption setLabel(SeriesLabelOption label);
+    LineStateOption setLabel(SeriesLabelOption label);
 
-	LineStateOption setEndLabel(Object endLabel);
+    LineStateOption setEndLabel(Object endLabel);
 }

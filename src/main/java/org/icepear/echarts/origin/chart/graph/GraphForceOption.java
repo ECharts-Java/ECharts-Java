@@ -5,19 +5,19 @@ package org.icepear.echarts.origin.chart.graph;
  */
 public interface GraphForceOption {
 
-	GraphForceOption setInitLayout(String initLayout);
+    GraphForceOption setInitLayout(String initLayout);
 
-	GraphForceOption setRepulsion(Number repulsion);
+    GraphForceOption setRepulsion(Number repulsion);
 
-	GraphForceOption setRepulsion(Number[] repulsion);
+    GraphForceOption setRepulsion(Number[] repulsion);
 
-	GraphForceOption setGravity(Number gravity);
+    GraphForceOption setGravity(Number gravity);
 
-	GraphForceOption setFriction(Number friction);
+    GraphForceOption setFriction(Number friction);
 
-	GraphForceOption setEdgeLength(Number edgeLength);
+    GraphForceOption setEdgeLength(Number edgeLength);
 
-	GraphForceOption setEdgeLength(Number[] edgeLength);
+    GraphForceOption setEdgeLength(Number[] edgeLength);
 
-	GraphForceOption setLayoutAnimation(Boolean layoutAnimation);
+    GraphForceOption setLayoutAnimation(Boolean layoutAnimation);
 }

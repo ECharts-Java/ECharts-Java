@@ -5,13 +5,13 @@ package org.icepear.echarts.origin.component.marker;
  */
 public interface MarkArea1DDataItemOption extends MarkAreaDataItemOptionBase, MarkAreaDataItemOption {
 
-	MarkArea1DDataItemOption setXAxis(Number xAxis);
+    MarkArea1DDataItemOption setXAxis(Number xAxis);
 
-	MarkArea1DDataItemOption setYAxis(Number yAxis);
+    MarkArea1DDataItemOption setYAxis(Number yAxis);
 
-	MarkArea1DDataItemOption setType(Object type);
+    MarkArea1DDataItemOption setType(Object type);
 
-	MarkArea1DDataItemOption setValueIndex(Number valueIndex);
+    MarkArea1DDataItemOption setValueIndex(Number valueIndex);
 
-	MarkArea1DDataItemOption setValueDim(String valueDim);
+    MarkArea1DDataItemOption setValueDim(String valueDim);
 }

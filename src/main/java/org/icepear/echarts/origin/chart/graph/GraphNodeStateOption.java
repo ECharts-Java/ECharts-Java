@@ -8,7 +8,7 @@ import org.icepear.echarts.origin.util.SeriesLabelOption;
  */
 public interface GraphNodeStateOption {
 
-	GraphNodeStateOption setItemStyle(ItemStyleOption itemStyle);
+    GraphNodeStateOption setItemStyle(ItemStyleOption itemStyle);
 
-	GraphNodeStateOption setLabel(SeriesLabelOption label);
+    GraphNodeStateOption setLabel(SeriesLabelOption label);
 }

@@ -16,25 +16,25 @@ import org.icepear.echarts.origin.util.SymbolOptionMixin;
  */
 public interface ScatterSeriesOption extends SeriesOption, ScatterStateOption, SeriesOnCartesianOptionMixin, SeriesOnPolarOptionMixin, SeriesOnCalendarOptionMixin, SeriesOnGeoOptionMixin, SeriesOnSingleOptionMixin, SeriesLargeOptionMixin, SeriesStackOptionMixin, SymbolOptionMixin, SeriesEncodeOptionMixin {
 
-	ScatterSeriesOption setType(String type);
+    ScatterSeriesOption setType(String type);
 
-	ScatterSeriesOption setCoordinateSystem(String coordinateSystem);
+    ScatterSeriesOption setCoordinateSystem(String coordinateSystem);
 
-	ScatterSeriesOption setCursor(String cursor);
+    ScatterSeriesOption setCursor(String cursor);
 
-	ScatterSeriesOption setClip(Boolean clip);
+    ScatterSeriesOption setClip(Boolean clip);
 
-	ScatterSeriesOption setData(Number[] data);
+    ScatterSeriesOption setData(Number[] data);
 
-	ScatterSeriesOption setData(Number[][] data);
+    ScatterSeriesOption setData(Number[][] data);
 
-	ScatterSeriesOption setData(Object[] data);
+    ScatterSeriesOption setData(Object[] data);
 
-	ScatterSeriesOption setData(Object[][] data);
+    ScatterSeriesOption setData(Object[][] data);
 
-	ScatterSeriesOption setData(ScatterDataItemOption[] data);
+    ScatterSeriesOption setData(ScatterDataItemOption[] data);
 
-	ScatterSeriesOption setData(String[] data);
+    ScatterSeriesOption setData(String[] data);
 
-	ScatterSeriesOption setData(String[][] data);
+    ScatterSeriesOption setData(String[][] data);
 }

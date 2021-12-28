@@ -5,17 +5,17 @@ package org.icepear.echarts.origin.util;
  */
 public interface SeriesEncodeOptionMixin {
 
-	SeriesEncodeOptionMixin setDatasetIndex(Number datasetIndex);
+    SeriesEncodeOptionMixin setDatasetIndex(Number datasetIndex);
 
-	SeriesEncodeOptionMixin setDatasetId(Number datasetId);
+    SeriesEncodeOptionMixin setDatasetId(Number datasetId);
 
-	SeriesEncodeOptionMixin setDatasetId(String datasetId);
+    SeriesEncodeOptionMixin setDatasetId(String datasetId);
 
-	SeriesEncodeOptionMixin setSeriesLayoutBy(Object seriesLayoutBy);
+    SeriesEncodeOptionMixin setSeriesLayoutBy(Object seriesLayoutBy);
 
-	SeriesEncodeOptionMixin setSourceHeader(Object sourceHeader);
+    SeriesEncodeOptionMixin setSourceHeader(Object sourceHeader);
 
-	SeriesEncodeOptionMixin setDimensions(Object[] dimensions);
+    SeriesEncodeOptionMixin setDimensions(Object[] dimensions);
 
-	SeriesEncodeOptionMixin setEncode(OptionEncode encode);
+    SeriesEncodeOptionMixin setEncode(OptionEncode encode);
 }

@@ -5,11 +5,11 @@ package org.icepear.echarts.origin.util;
  */
 public interface AxisPointerLabelOption extends LabelOption {
 
-	AxisPointerLabelOption setPrecision(Number precision);
+    AxisPointerLabelOption setPrecision(Number precision);
 
-	AxisPointerLabelOption setPrecision(String precision);
+    AxisPointerLabelOption setPrecision(String precision);
 
-	AxisPointerLabelOption setMargin(Number margin);
+    AxisPointerLabelOption setMargin(Number margin);
 
-	AxisPointerLabelOption setFormatter(String formatter);
+    AxisPointerLabelOption setFormatter(String formatter);
 }

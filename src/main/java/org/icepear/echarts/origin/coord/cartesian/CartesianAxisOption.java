@@ -5,13 +5,13 @@ package org.icepear.echarts.origin.coord.cartesian;
  */
 public interface CartesianAxisOption {
 
-	CartesianAxisOption setGridIndex(Number gridIndex);
+    CartesianAxisOption setGridIndex(Number gridIndex);
 
-	CartesianAxisOption setGridId(String gridId);
+    CartesianAxisOption setGridId(String gridId);
 
-	CartesianAxisOption setPosition(String position);
+    CartesianAxisOption setPosition(String position);
 
-	CartesianAxisOption setOffset(Number offset);
+    CartesianAxisOption setOffset(Number offset);
 
-	CartesianAxisOption setCategorySortInfo(Object categorySortInfo);
+    CartesianAxisOption setCategorySortInfo(Object categorySortInfo);
 }

@@ -5,5 +5,5 @@ package org.icepear.echarts.origin.chart.sankey;
  */
 public interface SankeyEdgeStateOption {
 
-	SankeyEdgeStateOption setLineStyle(SankeyEdgeStyleOption lineStyle);
+    SankeyEdgeStateOption setLineStyle(SankeyEdgeStyleOption lineStyle);
 }

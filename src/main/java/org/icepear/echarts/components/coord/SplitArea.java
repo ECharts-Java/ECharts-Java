@@ -8,24 +8,24 @@ import lombok.experimental.Accessors;
 import org.icepear.echarts.origin.coord.SplitAreaOption;
 import org.icepear.echarts.origin.util.AreaStyleOption;
 
-@Accessors(chain=true)
+@Accessors(chain = true)
 @Data
 public class SplitArea implements SplitAreaOption {
 
-	private Boolean show;
+    private Boolean show;
 
-	@Setter(AccessLevel.NONE)
-	private Object interval;
+    @Setter(AccessLevel.NONE)
+    private Object interval;
 
-	public SplitArea setInterval(Number interval) {
-		this.interval = interval;
-		return this;
-	}
+    public SplitArea setInterval(Number interval) {
+        this.interval = interval;
+        return this;
+    }
 
-	public SplitArea setInterval(String interval) {
-		this.interval = interval;
-		return this;
-	}
+    public SplitArea setInterval(String interval) {
+        this.interval = interval;
+        return this;
+    }
 
-	private AreaStyleOption areaStyle;
+    private AreaStyleOption areaStyle;
 }

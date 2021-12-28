@@ -7,7 +7,7 @@ import org.icepear.echarts.origin.util.ItemStyleOption;
  */
 public interface FunnelStateOption {
 
-	FunnelStateOption setItemStyle(ItemStyleOption itemStyle);
+    FunnelStateOption setItemStyle(ItemStyleOption itemStyle);
 
-	FunnelStateOption setLabel(FunnelLabelOption label);
+    FunnelStateOption setLabel(FunnelLabelOption label);
 }

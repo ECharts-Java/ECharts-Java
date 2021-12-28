@@ -5,15 +5,15 @@ package org.icepear.echarts.origin.coord;
  */
 public interface CategoryAxisBaseOption extends AxisBaseOptionCommon {
 
-	CategoryAxisBaseOption setType(String type);
+    CategoryAxisBaseOption setType(String type);
 
-	CategoryAxisBaseOption setBoundaryGap(Boolean boundaryGap);
+    CategoryAxisBaseOption setBoundaryGap(Boolean boundaryGap);
 
-	CategoryAxisBaseOption setAxisLabel(Object axisLabel);
+    CategoryAxisBaseOption setAxisLabel(Object axisLabel);
 
-	CategoryAxisBaseOption setData(Object[] data);
+    CategoryAxisBaseOption setData(Object[] data);
 
-	CategoryAxisBaseOption setDeduplication(Boolean deduplication);
+    CategoryAxisBaseOption setDeduplication(Boolean deduplication);
 
-	CategoryAxisBaseOption setAxisTick(Object axisTick);
+    CategoryAxisBaseOption setAxisTick(Object axisTick);
 }

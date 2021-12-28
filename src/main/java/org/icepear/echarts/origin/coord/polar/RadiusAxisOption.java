@@ -5,7 +5,7 @@ package org.icepear.echarts.origin.coord.polar;
  */
 public interface RadiusAxisOption {
 
-	RadiusAxisOption setPolarIndex(Number polarIndex);
+    RadiusAxisOption setPolarIndex(Number polarIndex);
 
-	RadiusAxisOption setPolarId(String polarId);
+    RadiusAxisOption setPolarId(String polarId);
 }

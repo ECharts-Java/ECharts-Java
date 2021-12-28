@@ -5,43 +5,43 @@ import lombok.experimental.Accessors;
 
 import org.icepear.echarts.origin.component.visualMap.VisualPieceOption;
 
-@Accessors(chain=true)
+@Accessors(chain = true)
 @Data
 public class VisualPiece implements VisualPieceOption {
 
-	private String symbol;
+    private String symbol;
 
-	private Number symbolSize;
+    private Number symbolSize;
 
-	private String color;
+    private String color;
 
-	private Number colorAlpha;
+    private Number colorAlpha;
 
-	private Number opacity;
+    private Number opacity;
 
-	private Number colorLightness;
+    private Number colorLightness;
 
-	private Number colorSaturation;
+    private Number colorSaturation;
 
-	private Number colorHue;
+    private Number colorHue;
 
-	private Object decal;
+    private Object decal;
 
-	private Number liftZ;
+    private Number liftZ;
 
-	private Number min;
+    private Number min;
 
-	private Number max;
+    private Number max;
 
-	private Number lt;
+    private Number lt;
 
-	private Number gt;
+    private Number gt;
 
-	private Number lte;
+    private Number lte;
 
-	private Number gte;
+    private Number gte;
 
-	private Number value;
+    private Number value;
 
-	private String label;
+    private String label;
 }

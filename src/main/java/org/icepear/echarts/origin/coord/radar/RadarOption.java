@@ -13,37 +13,37 @@ import org.icepear.echarts.origin.util.ComponentOption;
  */
 public interface RadarOption extends ComponentOption, CircleLayoutOptionMixin {
 
-	RadarOption setMainType(String mainType);
+    RadarOption setMainType(String mainType);
 
-	RadarOption setStartAngle(Number startAngle);
+    RadarOption setStartAngle(Number startAngle);
 
-	RadarOption setShape(String shape);
+    RadarOption setShape(String shape);
 
-	RadarOption setAxisLine(AxisLineOption axisLine);
+    RadarOption setAxisLine(AxisLineOption axisLine);
 
-	RadarOption setAxisTick(AxisTickOption axisTick);
+    RadarOption setAxisTick(AxisTickOption axisTick);
 
-	RadarOption setAxisLabel(AxisLabelBaseOption axisLabel);
+    RadarOption setAxisLabel(AxisLabelBaseOption axisLabel);
 
-	RadarOption setSplitLine(SplitLineOption splitLine);
+    RadarOption setSplitLine(SplitLineOption splitLine);
 
-	RadarOption setSplitArea(SplitAreaOption splitArea);
+    RadarOption setSplitArea(SplitAreaOption splitArea);
 
-	RadarOption setAxisName(Object axisName);
+    RadarOption setAxisName(Object axisName);
 
-	RadarOption setAxisNameGap(Number axisNameGap);
+    RadarOption setAxisNameGap(Number axisNameGap);
 
-	RadarOption setTriggerEvent(Boolean triggerEvent);
+    RadarOption setTriggerEvent(Boolean triggerEvent);
 
-	RadarOption setScale(Boolean scale);
+    RadarOption setScale(Boolean scale);
 
-	RadarOption setSplitNumber(Number splitNumber);
+    RadarOption setSplitNumber(Number splitNumber);
 
-	RadarOption setBoundaryGap(Boolean boundaryGap);
+    RadarOption setBoundaryGap(Boolean boundaryGap);
 
-	RadarOption setBoundaryGap(Number[] boundaryGap);
+    RadarOption setBoundaryGap(Number[] boundaryGap);
 
-	RadarOption setBoundaryGap(String[] boundaryGap);
+    RadarOption setBoundaryGap(String[] boundaryGap);
 
-	RadarOption setIndicator(RadarIndicatorOption[] indicator);
+    RadarOption setIndicator(RadarIndicatorOption[] indicator);
 }

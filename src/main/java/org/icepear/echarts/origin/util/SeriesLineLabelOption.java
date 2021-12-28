@@ -5,5 +5,5 @@ package org.icepear.echarts.origin.util;
  */
 public interface SeriesLineLabelOption extends LineLabelOption {
 
-	SeriesLineLabelOption setFormatter(String formatter);
+    SeriesLineLabelOption setFormatter(String formatter);
 }

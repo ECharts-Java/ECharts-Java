@@ -8,5 +8,5 @@ import org.icepear.echarts.origin.util.ComponentOption;
  */
 public interface PolarOption extends ComponentOption, CircleLayoutOptionMixin {
 
-	PolarOption setMainType(String mainType);
+    PolarOption setMainType(String mainType);
 }
