@@ -5,11 +5,11 @@ package org.icepear.echarts.origin.util;
  */
 public interface SeriesOnCartesianOptionMixin {
 
-	SeriesOnCartesianOptionMixin setXAxisIndex(Number xAxisIndex);
+    SeriesOnCartesianOptionMixin setXAxisIndex(Number xAxisIndex);
 
-	SeriesOnCartesianOptionMixin setYAxisIndex(Number yAxisIndex);
+    SeriesOnCartesianOptionMixin setYAxisIndex(Number yAxisIndex);
 
-	SeriesOnCartesianOptionMixin setXAxisId(String xAxisId);
+    SeriesOnCartesianOptionMixin setXAxisId(String xAxisId);
 
-	SeriesOnCartesianOptionMixin setYAxisId(String yAxisId);
+    SeriesOnCartesianOptionMixin setYAxisId(String yAxisId);
 }

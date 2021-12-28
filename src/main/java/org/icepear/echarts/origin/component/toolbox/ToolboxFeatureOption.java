@@ -7,21 +7,21 @@ import java.util.Map;
  */
 public interface ToolboxFeatureOption {
 
-	ToolboxFeatureOption setShow(Boolean show);
+    ToolboxFeatureOption setShow(Boolean show);
 
-	ToolboxFeatureOption setTitle(Map<String, String> title);
+    ToolboxFeatureOption setTitle(Map<String, String> title);
 
-	ToolboxFeatureOption setTitle(String title);
+    ToolboxFeatureOption setTitle(String title);
 
-	ToolboxFeatureOption setIcon(Map<String, String> icon);
+    ToolboxFeatureOption setIcon(Map<String, String> icon);
 
-	ToolboxFeatureOption setIcon(String icon);
+    ToolboxFeatureOption setIcon(String icon);
 
-	ToolboxFeatureOption setIconStyle(Object iconStyle);
+    ToolboxFeatureOption setIconStyle(Object iconStyle);
 
-	ToolboxFeatureOption setEmphasis(Object emphasis);
+    ToolboxFeatureOption setEmphasis(Object emphasis);
 
-	ToolboxFeatureOption setIconStatus(Map<String, Object> iconStatus);
+    ToolboxFeatureOption setIconStatus(Map<String, Object> iconStatus);
 
-	ToolboxFeatureOption setOnclick(Object onclick);
+    ToolboxFeatureOption setOnclick(Object onclick);
 }

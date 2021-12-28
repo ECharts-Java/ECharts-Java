@@ -5,9 +5,9 @@ package org.icepear.echarts.origin.util;
  */
 public interface StatesOptionMixin {
 
-	StatesOptionMixin setEmphasis(Object emphasis);
+    StatesOptionMixin setEmphasis(Object emphasis);
 
-	StatesOptionMixin setSelect(Object select);
+    StatesOptionMixin setSelect(Object select);
 
-	StatesOptionMixin setBlur(Object blur);
+    StatesOptionMixin setBlur(Object blur);
 }

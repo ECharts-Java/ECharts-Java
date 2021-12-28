@@ -18,77 +18,77 @@ import org.icepear.echarts.origin.util.SymbolOptionMixin;
  */
 public interface GraphSeriesOption extends SeriesOption, SeriesOnCartesianOptionMixin, SeriesOnPolarOptionMixin, SeriesOnCalendarOptionMixin, SeriesOnGeoOptionMixin, SeriesOnSingleOptionMixin, SymbolOptionMixin, RoamOptionMixin, BoxLayoutOptionMixin {
 
-	GraphSeriesOption setType(String type);
+    GraphSeriesOption setType(String type);
 
-	GraphSeriesOption setCoordinateSystem(String coordinateSystem);
+    GraphSeriesOption setCoordinateSystem(String coordinateSystem);
 
-	GraphSeriesOption setLegendHoverLink(Boolean legendHoverLink);
+    GraphSeriesOption setLegendHoverLink(Boolean legendHoverLink);
 
-	GraphSeriesOption setLayout(String layout);
+    GraphSeriesOption setLayout(String layout);
 
-	GraphSeriesOption setData(GraphNodeItemOption[] data);
+    GraphSeriesOption setData(GraphNodeItemOption[] data);
 
-	GraphSeriesOption setData(Number[] data);
+    GraphSeriesOption setData(Number[] data);
 
-	GraphSeriesOption setData(Number[][] data);
+    GraphSeriesOption setData(Number[][] data);
 
-	GraphSeriesOption setData(Object[] data);
+    GraphSeriesOption setData(Object[] data);
 
-	GraphSeriesOption setData(Object[][] data);
+    GraphSeriesOption setData(Object[][] data);
 
-	GraphSeriesOption setData(String[] data);
+    GraphSeriesOption setData(String[] data);
 
-	GraphSeriesOption setData(String[][] data);
+    GraphSeriesOption setData(String[][] data);
 
-	GraphSeriesOption setNodes(GraphNodeItemOption[] nodes);
+    GraphSeriesOption setNodes(GraphNodeItemOption[] nodes);
 
-	GraphSeriesOption setNodes(Number[] nodes);
+    GraphSeriesOption setNodes(Number[] nodes);
 
-	GraphSeriesOption setNodes(Number[][] nodes);
+    GraphSeriesOption setNodes(Number[][] nodes);
 
-	GraphSeriesOption setNodes(Object[] nodes);
+    GraphSeriesOption setNodes(Object[] nodes);
 
-	GraphSeriesOption setNodes(Object[][] nodes);
+    GraphSeriesOption setNodes(Object[][] nodes);
 
-	GraphSeriesOption setNodes(String[] nodes);
+    GraphSeriesOption setNodes(String[] nodes);
 
-	GraphSeriesOption setNodes(String[][] nodes);
+    GraphSeriesOption setNodes(String[][] nodes);
 
-	GraphSeriesOption setEdges(GraphEdgeItemOption[] edges);
+    GraphSeriesOption setEdges(GraphEdgeItemOption[] edges);
 
-	GraphSeriesOption setLinks(GraphEdgeItemOption[] links);
+    GraphSeriesOption setLinks(GraphEdgeItemOption[] links);
 
-	GraphSeriesOption setCategories(GraphCategoryItemOption[] categories);
+    GraphSeriesOption setCategories(GraphCategoryItemOption[] categories);
 
-	GraphSeriesOption setFocusNodeAdjacency(Boolean focusNodeAdjacency);
+    GraphSeriesOption setFocusNodeAdjacency(Boolean focusNodeAdjacency);
 
-	GraphSeriesOption setNodeScaleRatio(Number nodeScaleRatio);
+    GraphSeriesOption setNodeScaleRatio(Number nodeScaleRatio);
 
-	GraphSeriesOption setDraggable(Boolean draggable);
+    GraphSeriesOption setDraggable(Boolean draggable);
 
-	GraphSeriesOption setEdgeSymbol(String edgeSymbol);
+    GraphSeriesOption setEdgeSymbol(String edgeSymbol);
 
-	GraphSeriesOption setEdgeSymbol(String[] edgeSymbol);
+    GraphSeriesOption setEdgeSymbol(String[] edgeSymbol);
 
-	GraphSeriesOption setEdgeSymbolSize(Number edgeSymbolSize);
+    GraphSeriesOption setEdgeSymbolSize(Number edgeSymbolSize);
 
-	GraphSeriesOption setEdgeSymbolSize(Number[] edgeSymbolSize);
+    GraphSeriesOption setEdgeSymbolSize(Number[] edgeSymbolSize);
 
-	GraphSeriesOption setEdgeLabel(SeriesLineLabelOption edgeLabel);
+    GraphSeriesOption setEdgeLabel(SeriesLineLabelOption edgeLabel);
 
-	GraphSeriesOption setLabel(SeriesLabelOption label);
+    GraphSeriesOption setLabel(SeriesLabelOption label);
 
-	GraphSeriesOption setItemStyle(ItemStyleOption itemStyle);
+    GraphSeriesOption setItemStyle(ItemStyleOption itemStyle);
 
-	GraphSeriesOption setLineStyle(GraphEdgeLineStyleOption lineStyle);
+    GraphSeriesOption setLineStyle(GraphEdgeLineStyleOption lineStyle);
 
-	GraphSeriesOption setEmphasis(Object emphasis);
+    GraphSeriesOption setEmphasis(Object emphasis);
 
-	GraphSeriesOption setBlur(Object blur);
+    GraphSeriesOption setBlur(Object blur);
 
-	GraphSeriesOption setSelect(Object select);
+    GraphSeriesOption setSelect(Object select);
 
-	GraphSeriesOption setCircular(Object circular);
+    GraphSeriesOption setCircular(Object circular);
 
-	GraphSeriesOption setForce(GraphForceOption force);
+    GraphSeriesOption setForce(GraphForceOption force);
 }

@@ -5,7 +5,7 @@ package org.icepear.echarts.origin.util;
  */
 public interface SeriesOnCalendarOptionMixin {
 
-	SeriesOnCalendarOptionMixin setCalendarIndex(Number calendarIndex);
+    SeriesOnCalendarOptionMixin setCalendarIndex(Number calendarIndex);
 
-	SeriesOnCalendarOptionMixin setCalendarId(String calendarId);
+    SeriesOnCalendarOptionMixin setCalendarId(String calendarId);
 }

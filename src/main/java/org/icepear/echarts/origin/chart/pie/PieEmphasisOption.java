@@ -8,9 +8,9 @@ package org.icepear.echarts.origin.chart.pie;
  */
 public interface PieEmphasisOption extends PieStateOption {
 
-	PieEmphasisOption setFocus(Object focus);
+    PieEmphasisOption setFocus(Object focus);
 
-	PieEmphasisOption setScale(Boolean scale);
+    PieEmphasisOption setScale(Boolean scale);
 
-	PieEmphasisOption setScaleSize(Number scaleSize);
+    PieEmphasisOption setScaleSize(Number scaleSize);
 }

@@ -5,5 +5,5 @@ package org.icepear.echarts.origin.util;
  */
 public interface SeriesStackOptionMixin {
 
-	SeriesStackOptionMixin setStack(String stack);
+    SeriesStackOptionMixin setStack(String stack);
 }

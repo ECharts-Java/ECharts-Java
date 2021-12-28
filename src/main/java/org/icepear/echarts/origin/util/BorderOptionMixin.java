@@ -5,17 +5,17 @@ package org.icepear.echarts.origin.util;
  */
 public interface BorderOptionMixin {
 
-	BorderOptionMixin setBorderColor(String borderColor);
+    BorderOptionMixin setBorderColor(String borderColor);
 
-	BorderOptionMixin setBorderWidth(Number borderWidth);
+    BorderOptionMixin setBorderWidth(Number borderWidth);
 
-	BorderOptionMixin setBorderType(String borderType);
+    BorderOptionMixin setBorderType(String borderType);
 
-	BorderOptionMixin setBorderCap(Object borderCap);
+    BorderOptionMixin setBorderCap(Object borderCap);
 
-	BorderOptionMixin setBorderJoin(Object borderJoin);
+    BorderOptionMixin setBorderJoin(Object borderJoin);
 
-	BorderOptionMixin setBorderDashOffset(Number borderDashOffset);
+    BorderOptionMixin setBorderDashOffset(Number borderDashOffset);
 
-	BorderOptionMixin setBorderMiterLimit(Number borderMiterLimit);
+    BorderOptionMixin setBorderMiterLimit(Number borderMiterLimit);
 }

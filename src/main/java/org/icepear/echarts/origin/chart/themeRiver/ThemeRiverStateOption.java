@@ -7,7 +7,7 @@ import org.icepear.echarts.origin.util.ItemStyleOption;
  */
 public interface ThemeRiverStateOption {
 
-	ThemeRiverStateOption setLabel(ThemeRiverSeriesLabelOption label);
+    ThemeRiverStateOption setLabel(ThemeRiverSeriesLabelOption label);
 
-	ThemeRiverStateOption setItemStyle(ItemStyleOption itemStyle);
+    ThemeRiverStateOption setItemStyle(ItemStyleOption itemStyle);
 }

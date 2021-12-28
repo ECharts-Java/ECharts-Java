@@ -7,13 +7,13 @@ import org.icepear.echarts.origin.util.LineStyleOption;
  */
 public interface AxisTickOption {
 
-	AxisTickOption setShow(Boolean show);
+    AxisTickOption setShow(Boolean show);
 
-	AxisTickOption setShow(String show);
+    AxisTickOption setShow(String show);
 
-	AxisTickOption setInside(Boolean inside);
+    AxisTickOption setInside(Boolean inside);
 
-	AxisTickOption setLength(Number length);
+    AxisTickOption setLength(Number length);
 
-	AxisTickOption setLineStyle(LineStyleOption lineStyle);
+    AxisTickOption setLineStyle(LineStyleOption lineStyle);
 }

@@ -5,9 +5,9 @@ package org.icepear.echarts.origin.coord;
  */
 public interface CategoryAxisTickOption extends AxisTickOption {
 
-	CategoryAxisTickOption setAlignWithLabel(Boolean alignWithLabel);
+    CategoryAxisTickOption setAlignWithLabel(Boolean alignWithLabel);
 
-	CategoryAxisTickOption setInterval(Number interval);
+    CategoryAxisTickOption setInterval(Number interval);
 
-	CategoryAxisTickOption setInterval(String interval);
+    CategoryAxisTickOption setInterval(String interval);
 }

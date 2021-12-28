@@ -5,9 +5,9 @@ package org.icepear.echarts.origin.data.helper;
  */
 public interface DataTransformOption {
 
-	DataTransformOption setType(String type);
+    DataTransformOption setType(String type);
 
-	DataTransformOption setConfig(DataTransformConfigOption config);
+    DataTransformOption setConfig(DataTransformConfigOption config);
 
-	DataTransformOption setPrint(Boolean print);
+    DataTransformOption setPrint(Boolean print);
 }

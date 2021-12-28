@@ -10,11 +10,11 @@ import org.icepear.echarts.origin.util.SeriesLabelOption;
  */
 public interface RadarStateOption {
 
-	RadarStateOption setLineStyle(LineStyleOption lineStyle);
+    RadarStateOption setLineStyle(LineStyleOption lineStyle);
 
-	RadarStateOption setAreaStyle(AreaStyleOption areaStyle);
+    RadarStateOption setAreaStyle(AreaStyleOption areaStyle);
 
-	RadarStateOption setLabel(SeriesLabelOption label);
+    RadarStateOption setLabel(SeriesLabelOption label);
 
-	RadarStateOption setItemStyle(ItemStyleOption itemStyle);
+    RadarStateOption setItemStyle(ItemStyleOption itemStyle);
 }

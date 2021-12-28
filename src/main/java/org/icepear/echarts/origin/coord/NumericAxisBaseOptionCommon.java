@@ -5,15 +5,15 @@ package org.icepear.echarts.origin.coord;
  */
 public interface NumericAxisBaseOptionCommon extends AxisBaseOptionCommon {
 
-	NumericAxisBaseOptionCommon setBoundaryGap(Number[] boundaryGap);
+    NumericAxisBaseOptionCommon setBoundaryGap(Number[] boundaryGap);
 
-	NumericAxisBaseOptionCommon setBoundaryGap(String[] boundaryGap);
+    NumericAxisBaseOptionCommon setBoundaryGap(String[] boundaryGap);
 
-	NumericAxisBaseOptionCommon setSplitNumber(Number splitNumber);
+    NumericAxisBaseOptionCommon setSplitNumber(Number splitNumber);
 
-	NumericAxisBaseOptionCommon setInterval(Number interval);
+    NumericAxisBaseOptionCommon setInterval(Number interval);
 
-	NumericAxisBaseOptionCommon setMinInterval(Number minInterval);
+    NumericAxisBaseOptionCommon setMinInterval(Number minInterval);
 
-	NumericAxisBaseOptionCommon setMaxInterval(Number maxInterval);
+    NumericAxisBaseOptionCommon setMaxInterval(Number maxInterval);
 }

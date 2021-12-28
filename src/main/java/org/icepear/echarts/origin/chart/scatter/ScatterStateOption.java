@@ -8,7 +8,7 @@ import org.icepear.echarts.origin.util.SeriesLabelOption;
  */
 public interface ScatterStateOption {
 
-	ScatterStateOption setItemStyle(ItemStyleOption itemStyle);
+    ScatterStateOption setItemStyle(ItemStyleOption itemStyle);
 
-	ScatterStateOption setLabel(SeriesLabelOption label);
+    ScatterStateOption setLabel(SeriesLabelOption label);
 }

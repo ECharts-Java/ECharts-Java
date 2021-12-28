@@ -7,19 +7,19 @@ import org.icepear.echarts.origin.chart.tree.TreeSeriesLeavesOption;
 import org.icepear.echarts.origin.util.ItemStyleOption;
 import org.icepear.echarts.origin.util.SeriesLabelOption;
 
-@Accessors(chain=true)
+@Accessors(chain = true)
 @Data
 public class TreeSeriesLeaves implements TreeSeriesLeavesOption {
 
-	private ItemStyleOption itemStyle;
+    private ItemStyleOption itemStyle;
 
-	private Object lineStyle;
+    private Object lineStyle;
 
-	private SeriesLabelOption label;
+    private SeriesLabelOption label;
 
-	private Object emphasis;
+    private Object emphasis;
 
-	private Object select;
+    private Object select;
 
-	private Object blur;
+    private Object blur;
 }

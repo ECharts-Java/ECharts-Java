@@ -7,13 +7,13 @@ import org.icepear.echarts.origin.util.LabelOption;
  */
 public interface GaugeTitleOption extends LabelOption {
 
-	GaugeTitleOption setOffsetCenter(Number[] offsetCenter);
+    GaugeTitleOption setOffsetCenter(Number[] offsetCenter);
 
-	GaugeTitleOption setOffsetCenter(String[] offsetCenter);
+    GaugeTitleOption setOffsetCenter(String[] offsetCenter);
 
-	GaugeTitleOption setFormatter(Object formatter);
+    GaugeTitleOption setFormatter(Object formatter);
 
-	GaugeTitleOption setFormatter(String formatter);
+    GaugeTitleOption setFormatter(String formatter);
 
-	GaugeTitleOption setValueAnimation(Boolean valueAnimation);
+    GaugeTitleOption setValueAnimation(Boolean valueAnimation);
 }

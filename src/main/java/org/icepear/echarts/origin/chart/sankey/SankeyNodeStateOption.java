@@ -8,7 +8,7 @@ import org.icepear.echarts.origin.util.SeriesLabelOption;
  */
 public interface SankeyNodeStateOption {
 
-	SankeyNodeStateOption setLabel(SeriesLabelOption label);
+    SankeyNodeStateOption setLabel(SeriesLabelOption label);
 
-	SankeyNodeStateOption setItemStyle(ItemStyleOption itemStyle);
+    SankeyNodeStateOption setItemStyle(ItemStyleOption itemStyle);
 }

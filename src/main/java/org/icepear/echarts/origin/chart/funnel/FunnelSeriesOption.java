@@ -9,31 +9,31 @@ import org.icepear.echarts.origin.util.SeriesOption;
  */
 public interface FunnelSeriesOption extends SeriesOption, FunnelStateOption, BoxLayoutOptionMixin, SeriesEncodeOptionMixin {
 
-	FunnelSeriesOption setType(String type);
+    FunnelSeriesOption setType(String type);
 
-	FunnelSeriesOption setMin(Number min);
+    FunnelSeriesOption setMin(Number min);
 
-	FunnelSeriesOption setMax(Number max);
+    FunnelSeriesOption setMax(Number max);
 
-	FunnelSeriesOption setMinSize(Number minSize);
+    FunnelSeriesOption setMinSize(Number minSize);
 
-	FunnelSeriesOption setMinSize(String minSize);
+    FunnelSeriesOption setMinSize(String minSize);
 
-	FunnelSeriesOption setMaxSize(Number maxSize);
+    FunnelSeriesOption setMaxSize(Number maxSize);
 
-	FunnelSeriesOption setMaxSize(String maxSize);
+    FunnelSeriesOption setMaxSize(String maxSize);
 
-	FunnelSeriesOption setSort(String sort);
+    FunnelSeriesOption setSort(String sort);
 
-	FunnelSeriesOption setOrient(Object orient);
+    FunnelSeriesOption setOrient(Object orient);
 
-	FunnelSeriesOption setGap(Number gap);
+    FunnelSeriesOption setGap(Number gap);
 
-	FunnelSeriesOption setFunnelAlign(Object funnelAlign);
+    FunnelSeriesOption setFunnelAlign(Object funnelAlign);
 
-	FunnelSeriesOption setData(FunnelDataItemOption[] data);
+    FunnelSeriesOption setData(FunnelDataItemOption[] data);
 
-	FunnelSeriesOption setData(Number[] data);
+    FunnelSeriesOption setData(Number[] data);
 
-	FunnelSeriesOption setData(Number[][] data);
+    FunnelSeriesOption setData(Number[][] data);
 }

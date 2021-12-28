@@ -10,27 +10,27 @@ import org.icepear.echarts.origin.util.SeriesOption;
  */
 public interface CandlestickSeriesOption extends SeriesOption, CandlestickStateOption, SeriesOnCartesianOptionMixin, SeriesLargeOptionMixin, SeriesEncodeOptionMixin {
 
-	CandlestickSeriesOption setType(String type);
+    CandlestickSeriesOption setType(String type);
 
-	CandlestickSeriesOption setCoordinateSystem(String coordinateSystem);
+    CandlestickSeriesOption setCoordinateSystem(String coordinateSystem);
 
-	CandlestickSeriesOption setLayout(Object layout);
+    CandlestickSeriesOption setLayout(Object layout);
 
-	CandlestickSeriesOption setClip(Boolean clip);
+    CandlestickSeriesOption setClip(Boolean clip);
 
-	CandlestickSeriesOption setBarMaxWidth(Number barMaxWidth);
+    CandlestickSeriesOption setBarMaxWidth(Number barMaxWidth);
 
-	CandlestickSeriesOption setBarMaxWidth(String barMaxWidth);
+    CandlestickSeriesOption setBarMaxWidth(String barMaxWidth);
 
-	CandlestickSeriesOption setBarMinWidth(Number barMinWidth);
+    CandlestickSeriesOption setBarMinWidth(Number barMinWidth);
 
-	CandlestickSeriesOption setBarMinWidth(String barMinWidth);
+    CandlestickSeriesOption setBarMinWidth(String barMinWidth);
 
-	CandlestickSeriesOption setBarWidth(Number barWidth);
+    CandlestickSeriesOption setBarWidth(Number barWidth);
 
-	CandlestickSeriesOption setBarWidth(String barWidth);
+    CandlestickSeriesOption setBarWidth(String barWidth);
 
-	CandlestickSeriesOption setData(CandlestickDataItemOption[] data);
+    CandlestickSeriesOption setData(CandlestickDataItemOption[] data);
 
-	CandlestickSeriesOption setData(Object[] data);
+    CandlestickSeriesOption setData(Object[] data);
 }

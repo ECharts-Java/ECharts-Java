@@ -7,7 +7,7 @@ import org.icepear.echarts.origin.util.ItemStyleOption;
  */
 public interface BarBackgroundStyleOption extends ItemStyleOption {
 
-	BarBackgroundStyleOption setBorderRadius(Number borderRadius);
+    BarBackgroundStyleOption setBorderRadius(Number borderRadius);
 
-	BarBackgroundStyleOption setBorderRadius(Number[] borderRadius);
+    BarBackgroundStyleOption setBorderRadius(Number[] borderRadius);
 }

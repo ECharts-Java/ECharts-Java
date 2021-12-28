@@ -7,21 +7,21 @@ import org.icepear.echarts.origin.component.toolbox.ToolboxFeatureOption;
  */
 public interface ToolboxSaveAsImageFeatureOption extends ToolboxFeatureOption {
 
-	ToolboxSaveAsImageFeatureOption setIcon(String icon);
+    ToolboxSaveAsImageFeatureOption setIcon(String icon);
 
-	ToolboxSaveAsImageFeatureOption setTitle(String title);
+    ToolboxSaveAsImageFeatureOption setTitle(String title);
 
-	ToolboxSaveAsImageFeatureOption setType(String type);
+    ToolboxSaveAsImageFeatureOption setType(String type);
 
-	ToolboxSaveAsImageFeatureOption setBackgroundColor(String backgroundColor);
+    ToolboxSaveAsImageFeatureOption setBackgroundColor(String backgroundColor);
 
-	ToolboxSaveAsImageFeatureOption setConnectedBackgroundColor(String connectedBackgroundColor);
+    ToolboxSaveAsImageFeatureOption setConnectedBackgroundColor(String connectedBackgroundColor);
 
-	ToolboxSaveAsImageFeatureOption setName(String name);
+    ToolboxSaveAsImageFeatureOption setName(String name);
 
-	ToolboxSaveAsImageFeatureOption setExcludeComponents(String[] excludeComponents);
+    ToolboxSaveAsImageFeatureOption setExcludeComponents(String[] excludeComponents);
 
-	ToolboxSaveAsImageFeatureOption setPixelRatio(Number pixelRatio);
+    ToolboxSaveAsImageFeatureOption setPixelRatio(Number pixelRatio);
 
-	ToolboxSaveAsImageFeatureOption setLang(String[] lang);
+    ToolboxSaveAsImageFeatureOption setLang(String[] lang);
 }

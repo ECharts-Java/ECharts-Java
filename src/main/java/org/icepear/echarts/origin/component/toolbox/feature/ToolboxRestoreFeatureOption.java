@@ -7,7 +7,7 @@ import org.icepear.echarts.origin.component.toolbox.ToolboxFeatureOption;
  */
 public interface ToolboxRestoreFeatureOption extends ToolboxFeatureOption {
 
-	ToolboxRestoreFeatureOption setIcon(String icon);
+    ToolboxRestoreFeatureOption setIcon(String icon);
 
-	ToolboxRestoreFeatureOption setTitle(String title);
+    ToolboxRestoreFeatureOption setTitle(String title);
 }

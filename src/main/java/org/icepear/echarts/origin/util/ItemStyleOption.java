@@ -5,11 +5,11 @@ package org.icepear.echarts.origin.util;
  */
 public interface ItemStyleOption extends ShadowOptionMixin, BorderOptionMixin {
 
-	ItemStyleOption setColor(String color);
+    ItemStyleOption setColor(String color);
 
-	ItemStyleOption setOpacity(Number opacity);
+    ItemStyleOption setOpacity(Number opacity);
 
-	ItemStyleOption setDecal(Object decal);
+    ItemStyleOption setDecal(Object decal);
 
-	ItemStyleOption setDecal(String decal);
+    ItemStyleOption setDecal(String decal);
 }

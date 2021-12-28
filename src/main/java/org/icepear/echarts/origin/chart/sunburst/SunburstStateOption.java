@@ -5,7 +5,7 @@ package org.icepear.echarts.origin.chart.sunburst;
  */
 public interface SunburstStateOption {
 
-	SunburstStateOption setItemStyle(SunburstItemStyleOption itemStyle);
+    SunburstStateOption setItemStyle(SunburstItemStyleOption itemStyle);
 
-	SunburstStateOption setLabel(SunburstLabelOption label);
+    SunburstStateOption setLabel(SunburstLabelOption label);
 }

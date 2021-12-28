@@ -8,15 +8,15 @@ import org.icepear.echarts.origin.util.OptionDataItemObject;
  */
 public interface RadarOptionDataItemObject extends OptionDataItemObject {
 
-	RadarOptionDataItemObject setValue(Number[] value);
+    RadarOptionDataItemObject setValue(Number[] value);
 
-	RadarOptionDataItemObject setValue(Number[][] value);
+    RadarOptionDataItemObject setValue(Number[][] value);
 
-	RadarOptionDataItemObject setValue(Object[] value);
+    RadarOptionDataItemObject setValue(Object[] value);
 
-	RadarOptionDataItemObject setValue(Object[][] value);
+    RadarOptionDataItemObject setValue(Object[][] value);
 
-	RadarOptionDataItemObject setValue(String[] value);
+    RadarOptionDataItemObject setValue(String[] value);
 
-	RadarOptionDataItemObject setValue(String[][] value);
+    RadarOptionDataItemObject setValue(String[][] value);
 }

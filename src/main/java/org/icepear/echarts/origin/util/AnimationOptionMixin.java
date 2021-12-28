@@ -5,27 +5,27 @@ package org.icepear.echarts.origin.util;
  */
 public interface AnimationOptionMixin {
 
-	AnimationOptionMixin setAnimation(Boolean animation);
+    AnimationOptionMixin setAnimation(Boolean animation);
 
-	AnimationOptionMixin setAnimationThreshold(Number animationThreshold);
+    AnimationOptionMixin setAnimationThreshold(Number animationThreshold);
 
-	AnimationOptionMixin setAnimationDuration(Number animationDuration);
+    AnimationOptionMixin setAnimationDuration(Number animationDuration);
 
-	AnimationOptionMixin setAnimationDuration(Object animationDuration);
+    AnimationOptionMixin setAnimationDuration(Object animationDuration);
 
-	AnimationOptionMixin setAnimationEasing(Object animationEasing);
+    AnimationOptionMixin setAnimationEasing(Object animationEasing);
 
-	AnimationOptionMixin setAnimationDelay(Number animationDelay);
+    AnimationOptionMixin setAnimationDelay(Number animationDelay);
 
-	AnimationOptionMixin setAnimationDelay(Object animationDelay);
+    AnimationOptionMixin setAnimationDelay(Object animationDelay);
 
-	AnimationOptionMixin setAnimationDurationUpdate(Number animationDurationUpdate);
+    AnimationOptionMixin setAnimationDurationUpdate(Number animationDurationUpdate);
 
-	AnimationOptionMixin setAnimationDurationUpdate(Object animationDurationUpdate);
+    AnimationOptionMixin setAnimationDurationUpdate(Object animationDurationUpdate);
 
-	AnimationOptionMixin setAnimationEasingUpdate(Object animationEasingUpdate);
+    AnimationOptionMixin setAnimationEasingUpdate(Object animationEasingUpdate);
 
-	AnimationOptionMixin setAnimationDelayUpdate(Number animationDelayUpdate);
+    AnimationOptionMixin setAnimationDelayUpdate(Number animationDelayUpdate);
 
-	AnimationOptionMixin setAnimationDelayUpdate(Object animationDelayUpdate);
+    AnimationOptionMixin setAnimationDelayUpdate(Object animationDelayUpdate);
 }

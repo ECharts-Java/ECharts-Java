@@ -7,19 +7,19 @@ import org.icepear.echarts.origin.util.ItemStyleOption;
  */
 public interface GaugeAnchorOption {
 
-	GaugeAnchorOption setShow(Boolean show);
+    GaugeAnchorOption setShow(Boolean show);
 
-	GaugeAnchorOption setShowAbove(Boolean showAbove);
+    GaugeAnchorOption setShowAbove(Boolean showAbove);
 
-	GaugeAnchorOption setSize(Number size);
+    GaugeAnchorOption setSize(Number size);
 
-	GaugeAnchorOption setIcon(String icon);
+    GaugeAnchorOption setIcon(String icon);
 
-	GaugeAnchorOption setOffsetCenter(Number[] offsetCenter);
+    GaugeAnchorOption setOffsetCenter(Number[] offsetCenter);
 
-	GaugeAnchorOption setOffsetCenter(String[] offsetCenter);
+    GaugeAnchorOption setOffsetCenter(String[] offsetCenter);
 
-	GaugeAnchorOption setKeepAspect(Boolean keepAspect);
+    GaugeAnchorOption setKeepAspect(Boolean keepAspect);
 
-	GaugeAnchorOption setItemStyle(ItemStyleOption itemStyle);
+    GaugeAnchorOption setItemStyle(ItemStyleOption itemStyle);
 }

@@ -5,57 +5,57 @@ package org.icepear.echarts.origin.util;
  */
 public interface CommonTooltipOption {
 
-	CommonTooltipOption setShow(Boolean show);
+    CommonTooltipOption setShow(Boolean show);
 
-	CommonTooltipOption setTriggerOn(String triggerOn);
+    CommonTooltipOption setTriggerOn(String triggerOn);
 
-	CommonTooltipOption setAlwaysShowContent(Boolean alwaysShowContent);
+    CommonTooltipOption setAlwaysShowContent(Boolean alwaysShowContent);
 
-	CommonTooltipOption setFormatter(Object formatter);
+    CommonTooltipOption setFormatter(Object formatter);
 
-	CommonTooltipOption setFormatter(String formatter);
+    CommonTooltipOption setFormatter(String formatter);
 
-	CommonTooltipOption setPosition(Number[] position);
+    CommonTooltipOption setPosition(Number[] position);
 
-	CommonTooltipOption setPosition(Object position);
+    CommonTooltipOption setPosition(Object position);
 
-	CommonTooltipOption setPosition(String[] position);
+    CommonTooltipOption setPosition(String[] position);
 
-	CommonTooltipOption setConfine(Boolean confine);
+    CommonTooltipOption setConfine(Boolean confine);
 
-	CommonTooltipOption setAlign(String align);
+    CommonTooltipOption setAlign(String align);
 
-	CommonTooltipOption setVerticalAlign(String verticalAlign);
+    CommonTooltipOption setVerticalAlign(String verticalAlign);
 
-	CommonTooltipOption setShowDelay(Number showDelay);
+    CommonTooltipOption setShowDelay(Number showDelay);
 
-	CommonTooltipOption setHideDelay(Number hideDelay);
+    CommonTooltipOption setHideDelay(Number hideDelay);
 
-	CommonTooltipOption setTransitionDuration(Number transitionDuration);
+    CommonTooltipOption setTransitionDuration(Number transitionDuration);
 
-	CommonTooltipOption setEnterable(Boolean enterable);
+    CommonTooltipOption setEnterable(Boolean enterable);
 
-	CommonTooltipOption setBackgroundColor(String backgroundColor);
+    CommonTooltipOption setBackgroundColor(String backgroundColor);
 
-	CommonTooltipOption setBorderColor(String borderColor);
+    CommonTooltipOption setBorderColor(String borderColor);
 
-	CommonTooltipOption setBorderRadius(Number borderRadius);
+    CommonTooltipOption setBorderRadius(Number borderRadius);
 
-	CommonTooltipOption setBorderWidth(Number borderWidth);
+    CommonTooltipOption setBorderWidth(Number borderWidth);
 
-	CommonTooltipOption setShadowBlur(Number shadowBlur);
+    CommonTooltipOption setShadowBlur(Number shadowBlur);
 
-	CommonTooltipOption setShadowColor(String shadowColor);
+    CommonTooltipOption setShadowColor(String shadowColor);
 
-	CommonTooltipOption setShadowOffsetX(Number shadowOffsetX);
+    CommonTooltipOption setShadowOffsetX(Number shadowOffsetX);
 
-	CommonTooltipOption setShadowOffsetY(Number shadowOffsetY);
+    CommonTooltipOption setShadowOffsetY(Number shadowOffsetY);
 
-	CommonTooltipOption setPadding(Number padding);
+    CommonTooltipOption setPadding(Number padding);
 
-	CommonTooltipOption setPadding(Number[] padding);
+    CommonTooltipOption setPadding(Number[] padding);
 
-	CommonTooltipOption setExtraCssText(String extraCssText);
+    CommonTooltipOption setExtraCssText(String extraCssText);
 
-	CommonTooltipOption setTextStyle(Object textStyle);
+    CommonTooltipOption setTextStyle(Object textStyle);
 }

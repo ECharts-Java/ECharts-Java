@@ -7,5 +7,5 @@ import org.icepear.echarts.origin.util.StatesOptionMixin;
  */
 public interface HeatmapDataItemOption extends HeatmapStateOption, StatesOptionMixin {
 
-	HeatmapDataItemOption setValue(Object value);
+    HeatmapDataItemOption setValue(Object value);
 }

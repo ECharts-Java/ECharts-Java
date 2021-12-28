@@ -5,9 +5,9 @@ package org.icepear.echarts.origin.util;
  */
 public interface LineLabelOption extends LabelOption {
 
-	LineLabelOption setPosition(String position);
+    LineLabelOption setPosition(String position);
 
-	LineLabelOption setDistance(Number distance);
+    LineLabelOption setDistance(Number distance);
 
-	LineLabelOption setDistance(Number[] distance);
+    LineLabelOption setDistance(Number[] distance);
 }

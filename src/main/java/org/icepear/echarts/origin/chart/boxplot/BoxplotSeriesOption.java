@@ -9,17 +9,17 @@ import org.icepear.echarts.origin.util.SeriesOption;
  */
 public interface BoxplotSeriesOption extends SeriesOption, BoxplotStateOption, SeriesOnCartesianOptionMixin, SeriesEncodeOptionMixin {
 
-	BoxplotSeriesOption setType(String type);
+    BoxplotSeriesOption setType(String type);
 
-	BoxplotSeriesOption setCoordinateSystem(String coordinateSystem);
+    BoxplotSeriesOption setCoordinateSystem(String coordinateSystem);
 
-	BoxplotSeriesOption setLayout(Object layout);
+    BoxplotSeriesOption setLayout(Object layout);
 
-	BoxplotSeriesOption setBoxWidth(Number[] boxWidth);
+    BoxplotSeriesOption setBoxWidth(Number[] boxWidth);
 
-	BoxplotSeriesOption setBoxWidth(String[] boxWidth);
+    BoxplotSeriesOption setBoxWidth(String[] boxWidth);
 
-	BoxplotSeriesOption setData(BoxplotDataItemOption[] data);
+    BoxplotSeriesOption setData(BoxplotDataItemOption[] data);
 
-	BoxplotSeriesOption setData(Object[] data);
+    BoxplotSeriesOption setData(Object[] data);
 }

@@ -13,45 +13,45 @@ import org.icepear.echarts.origin.util.SeriesEncodeOptionMixin;
  */
 public interface DatasetOption extends ComponentOption, SeriesEncodeOptionMixin {
 
-	DatasetOption setMainType(String mainType);
+    DatasetOption setMainType(String mainType);
 
-	DatasetOption setSeriesLayoutBy(Object seriesLayoutBy);
+    DatasetOption setSeriesLayoutBy(Object seriesLayoutBy);
 
-	DatasetOption setSourceHeader(Object sourceHeader);
+    DatasetOption setSourceHeader(Object sourceHeader);
 
-	DatasetOption setSource(Map<String, Object>[] source);
+    DatasetOption setSource(Map<String, Object>[] source);
 
-	DatasetOption setSource(Map<String, Object[]> source);
+    DatasetOption setSource(Map<String, Object[]> source);
 
-	DatasetOption setSource(Number[] source);
+    DatasetOption setSource(Number[] source);
 
-	DatasetOption setSource(Number[][] source);
+    DatasetOption setSource(Number[][] source);
 
-	DatasetOption setSource(Number[][][] source);
+    DatasetOption setSource(Number[][][] source);
 
-	DatasetOption setSource(Object source);
+    DatasetOption setSource(Object source);
 
-	DatasetOption setSource(Object[] source);
+    DatasetOption setSource(Object[] source);
 
-	DatasetOption setSource(Object[][] source);
+    DatasetOption setSource(Object[][] source);
 
-	DatasetOption setSource(Object[][][] source);
+    DatasetOption setSource(Object[][][] source);
 
-	DatasetOption setSource(OptionDataItemObject[] source);
+    DatasetOption setSource(OptionDataItemObject[] source);
 
-	DatasetOption setSource(String[] source);
+    DatasetOption setSource(String[] source);
 
-	DatasetOption setSource(String[][] source);
+    DatasetOption setSource(String[][] source);
 
-	DatasetOption setSource(String[][][] source);
+    DatasetOption setSource(String[][][] source);
 
-	DatasetOption setFromDatasetIndex(Number fromDatasetIndex);
+    DatasetOption setFromDatasetIndex(Number fromDatasetIndex);
 
-	DatasetOption setFromDatasetId(String fromDatasetId);
+    DatasetOption setFromDatasetId(String fromDatasetId);
 
-	DatasetOption setTransform(DataTransformOption transform);
+    DatasetOption setTransform(DataTransformOption transform);
 
-	DatasetOption setTransform(DataTransformOption[] transform);
+    DatasetOption setTransform(DataTransformOption[] transform);
 
-	DatasetOption setFromTransformResult(Number fromTransformResult);
+    DatasetOption setFromTransformResult(Number fromTransformResult);
 }

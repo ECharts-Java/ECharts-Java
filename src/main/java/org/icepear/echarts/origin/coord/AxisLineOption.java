@@ -7,27 +7,27 @@ import org.icepear.echarts.origin.util.LineStyleOption;
  */
 public interface AxisLineOption {
 
-	AxisLineOption setShow(Boolean show);
+    AxisLineOption setShow(Boolean show);
 
-	AxisLineOption setShow(String show);
+    AxisLineOption setShow(String show);
 
-	AxisLineOption setOnZero(Boolean onZero);
+    AxisLineOption setOnZero(Boolean onZero);
 
-	AxisLineOption setOnZeroAxisIndex(Number onZeroAxisIndex);
+    AxisLineOption setOnZeroAxisIndex(Number onZeroAxisIndex);
 
-	AxisLineOption setSymbol(String symbol);
+    AxisLineOption setSymbol(String symbol);
 
-	AxisLineOption setSymbol(String[] symbol);
+    AxisLineOption setSymbol(String[] symbol);
 
-	AxisLineOption setSymbolSize(Number[] symbolSize);
+    AxisLineOption setSymbolSize(Number[] symbolSize);
 
-	AxisLineOption setSymbolOffset(Number symbolOffset);
+    AxisLineOption setSymbolOffset(Number symbolOffset);
 
-	AxisLineOption setSymbolOffset(Number[] symbolOffset);
+    AxisLineOption setSymbolOffset(Number[] symbolOffset);
 
-	AxisLineOption setSymbolOffset(String symbolOffset);
+    AxisLineOption setSymbolOffset(String symbolOffset);
 
-	AxisLineOption setSymbolOffset(String[] symbolOffset);
+    AxisLineOption setSymbolOffset(String[] symbolOffset);
 
-	AxisLineOption setLineStyle(LineStyleOption lineStyle);
+    AxisLineOption setLineStyle(LineStyleOption lineStyle);
 }

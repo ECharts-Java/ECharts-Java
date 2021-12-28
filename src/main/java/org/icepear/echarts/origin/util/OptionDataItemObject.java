@@ -5,17 +5,17 @@ package org.icepear.echarts.origin.util;
  */
 public interface OptionDataItemObject {
 
-	OptionDataItemObject setId(Number id);
+    OptionDataItemObject setId(Number id);
 
-	OptionDataItemObject setId(String id);
+    OptionDataItemObject setId(String id);
 
-	OptionDataItemObject setName(Number name);
+    OptionDataItemObject setName(Number name);
 
-	OptionDataItemObject setName(String name);
+    OptionDataItemObject setName(String name);
 
-	OptionDataItemObject setGroupId(Number groupId);
+    OptionDataItemObject setGroupId(Number groupId);
 
-	OptionDataItemObject setGroupId(String groupId);
+    OptionDataItemObject setGroupId(String groupId);
 
-	OptionDataItemObject setSelected(Boolean selected);
+    OptionDataItemObject setSelected(Boolean selected);
 }

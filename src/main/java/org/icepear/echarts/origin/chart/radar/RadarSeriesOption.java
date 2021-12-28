@@ -9,19 +9,19 @@ import org.icepear.echarts.origin.util.SymbolOptionMixin;
  */
 public interface RadarSeriesOption extends SeriesOption, RadarStateOption, SymbolOptionMixin, SeriesEncodeOptionMixin {
 
-	RadarSeriesOption setType(String type);
+    RadarSeriesOption setType(String type);
 
-	RadarSeriesOption setCoordinateSystem(String coordinateSystem);
+    RadarSeriesOption setCoordinateSystem(String coordinateSystem);
 
-	RadarSeriesOption setRadarIndex(Number radarIndex);
+    RadarSeriesOption setRadarIndex(Number radarIndex);
 
-	RadarSeriesOption setRadarId(String radarId);
+    RadarSeriesOption setRadarId(String radarId);
 
-	RadarSeriesOption setData(Number[][] data);
+    RadarSeriesOption setData(Number[][] data);
 
-	RadarSeriesOption setData(Object[][] data);
+    RadarSeriesOption setData(Object[][] data);
 
-	RadarSeriesOption setData(RadarDataItemOption[] data);
+    RadarSeriesOption setData(RadarDataItemOption[] data);
 
-	RadarSeriesOption setData(String[][] data);
+    RadarSeriesOption setData(String[][] data);
 }

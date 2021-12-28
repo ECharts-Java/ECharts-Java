@@ -5,7 +5,7 @@ package org.icepear.echarts.origin.chart.pie;
  */
 public interface PieStateOption {
 
-	PieStateOption setItemStyle(PieItemStyleOption itemStyle);
+    PieStateOption setItemStyle(PieItemStyleOption itemStyle);
 
-	PieStateOption setLabel(PieLabelOption label);
+    PieStateOption setLabel(PieLabelOption label);
 }

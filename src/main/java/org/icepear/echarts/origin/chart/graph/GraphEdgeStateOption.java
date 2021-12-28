@@ -7,7 +7,7 @@ import org.icepear.echarts.origin.util.SeriesLineLabelOption;
  */
 public interface GraphEdgeStateOption {
 
-	GraphEdgeStateOption setLineStyle(GraphEdgeLineStyleOption lineStyle);
+    GraphEdgeStateOption setLineStyle(GraphEdgeLineStyleOption lineStyle);
 
-	GraphEdgeStateOption setLabel(SeriesLineLabelOption label);
+    GraphEdgeStateOption setLabel(SeriesLineLabelOption label);
 }

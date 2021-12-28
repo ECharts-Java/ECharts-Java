@@ -7,11 +7,11 @@ import org.icepear.echarts.origin.util.ItemStyleOption;
  */
 public interface PieItemStyleOption extends ItemStyleOption {
 
-	PieItemStyleOption setBorderRadius(Number borderRadius);
+    PieItemStyleOption setBorderRadius(Number borderRadius);
 
-	PieItemStyleOption setBorderRadius(Number[] borderRadius);
+    PieItemStyleOption setBorderRadius(Number[] borderRadius);
 
-	PieItemStyleOption setBorderRadius(String borderRadius);
+    PieItemStyleOption setBorderRadius(String borderRadius);
 
-	PieItemStyleOption setBorderRadius(String[] borderRadius);
+    PieItemStyleOption setBorderRadius(String[] borderRadius);
 }

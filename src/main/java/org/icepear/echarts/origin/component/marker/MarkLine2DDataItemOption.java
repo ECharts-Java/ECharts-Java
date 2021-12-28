@@ -5,7 +5,7 @@ package org.icepear.echarts.origin.component.marker;
  */
 public interface MarkLine2DDataItemOption extends MarkLineDataItemOption {
 
-	MarkLine2DDataItemOption setStartPoint(MarkLine2DDataItemDimOption startPoint);
+    MarkLine2DDataItemOption setStartPoint(MarkLine2DDataItemDimOption startPoint);
 
-	MarkLine2DDataItemOption setEndPoint(MarkLine2DDataItemDimOption endPoint);
+    MarkLine2DDataItemOption setEndPoint(MarkLine2DDataItemDimOption endPoint);
 }

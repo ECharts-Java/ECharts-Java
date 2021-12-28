@@ -5,7 +5,7 @@ package org.icepear.echarts.origin.util;
  */
 public interface SeriesOnPolarOptionMixin {
 
-	SeriesOnPolarOptionMixin setPolarIndex(Number polarIndex);
+    SeriesOnPolarOptionMixin setPolarIndex(Number polarIndex);
 
-	SeriesOnPolarOptionMixin setPolarId(String polarId);
+    SeriesOnPolarOptionMixin setPolarId(String polarId);
 }

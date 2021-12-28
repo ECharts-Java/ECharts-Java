@@ -7,11 +7,11 @@ import org.icepear.echarts.origin.util.LineStyleOption;
  */
 public interface MinorTickOption {
 
-	MinorTickOption setShow(Boolean show);
+    MinorTickOption setShow(Boolean show);
 
-	MinorTickOption setSplitNumber(Number splitNumber);
+    MinorTickOption setSplitNumber(Number splitNumber);
 
-	MinorTickOption setLength(Number length);
+    MinorTickOption setLength(Number length);
 
-	MinorTickOption setLineStyle(LineStyleOption lineStyle);
+    MinorTickOption setLineStyle(LineStyleOption lineStyle);
 }

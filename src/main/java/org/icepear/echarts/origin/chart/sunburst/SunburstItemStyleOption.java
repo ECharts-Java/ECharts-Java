@@ -7,11 +7,11 @@ import org.icepear.echarts.origin.util.ItemStyleOption;
  */
 public interface SunburstItemStyleOption extends ItemStyleOption {
 
-	SunburstItemStyleOption setBorderRadius(Number borderRadius);
+    SunburstItemStyleOption setBorderRadius(Number borderRadius);
 
-	SunburstItemStyleOption setBorderRadius(Number[] borderRadius);
+    SunburstItemStyleOption setBorderRadius(Number[] borderRadius);
 
-	SunburstItemStyleOption setBorderRadius(String borderRadius);
+    SunburstItemStyleOption setBorderRadius(String borderRadius);
 
-	SunburstItemStyleOption setBorderRadius(String[] borderRadius);
+    SunburstItemStyleOption setBorderRadius(String[] borderRadius);
 }

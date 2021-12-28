@@ -7,13 +7,13 @@ import org.icepear.echarts.origin.util.SeriesLabelOption;
  */
 public interface SunburstLabelOption extends SeriesLabelOption {
 
-	SunburstLabelOption setRotate(Number rotate);
+    SunburstLabelOption setRotate(Number rotate);
 
-	SunburstLabelOption setRotate(String rotate);
+    SunburstLabelOption setRotate(String rotate);
 
-	SunburstLabelOption setMinAngle(Number minAngle);
+    SunburstLabelOption setMinAngle(Number minAngle);
 
-	SunburstLabelOption setSilent(Boolean silent);
+    SunburstLabelOption setSilent(Boolean silent);
 
-	SunburstLabelOption setPosition(String position);
+    SunburstLabelOption setPosition(String position);
 }

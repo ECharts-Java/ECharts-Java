@@ -7,5 +7,5 @@ import org.icepear.echarts.origin.util.LabelLineOption;
  */
 public interface PieLabelLineOption extends LabelLineOption {
 
-	PieLabelLineOption setMaxSurfaceAngle(Number maxSurfaceAngle);
+    PieLabelLineOption setMaxSurfaceAngle(Number maxSurfaceAngle);
 }

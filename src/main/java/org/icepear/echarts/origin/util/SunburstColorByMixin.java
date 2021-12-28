@@ -5,5 +5,5 @@ package org.icepear.echarts.origin.util;
  */
 public interface SunburstColorByMixin {
 
-	SunburstColorByMixin setColorBy(String colorBy);
+    SunburstColorByMixin setColorBy(String colorBy);
 }

@@ -10,43 +10,43 @@ import org.icepear.echarts.origin.util.LabelOption;
  */
 public interface TitleOption extends ComponentOption, BoxLayoutOptionMixin, BorderOptionMixin {
 
-	TitleOption setMainType(String mainType);
+    TitleOption setMainType(String mainType);
 
-	TitleOption setShow(Boolean show);
+    TitleOption setShow(Boolean show);
 
-	TitleOption setText(String text);
+    TitleOption setText(String text);
 
-	TitleOption setLink(String link);
+    TitleOption setLink(String link);
 
-	TitleOption setTarget(String target);
+    TitleOption setTarget(String target);
 
-	TitleOption setSubtext(String subtext);
+    TitleOption setSubtext(String subtext);
 
-	TitleOption setSublink(String sublink);
+    TitleOption setSublink(String sublink);
 
-	TitleOption setSubtarget(String subtarget);
+    TitleOption setSubtarget(String subtarget);
 
-	TitleOption setTextAlign(String textAlign);
+    TitleOption setTextAlign(String textAlign);
 
-	TitleOption setTextVerticalAlign(String textVerticalAlign);
+    TitleOption setTextVerticalAlign(String textVerticalAlign);
 
-	TitleOption setTextBaseline(String textBaseline);
+    TitleOption setTextBaseline(String textBaseline);
 
-	TitleOption setBackgroundColor(String backgroundColor);
+    TitleOption setBackgroundColor(String backgroundColor);
 
-	TitleOption setPadding(Number padding);
+    TitleOption setPadding(Number padding);
 
-	TitleOption setPadding(Number[] padding);
+    TitleOption setPadding(Number[] padding);
 
-	TitleOption setItemGap(Number itemGap);
+    TitleOption setItemGap(Number itemGap);
 
-	TitleOption setTextStyle(LabelOption textStyle);
+    TitleOption setTextStyle(LabelOption textStyle);
 
-	TitleOption setSubtextStyle(LabelOption subtextStyle);
+    TitleOption setSubtextStyle(LabelOption subtextStyle);
 
-	TitleOption setTriggerEvent(Boolean triggerEvent);
+    TitleOption setTriggerEvent(Boolean triggerEvent);
 
-	TitleOption setBorderRadius(Number borderRadius);
+    TitleOption setBorderRadius(Number borderRadius);
 
-	TitleOption setBorderRadius(Number[] borderRadius);
+    TitleOption setBorderRadius(Number[] borderRadius);
 }

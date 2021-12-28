@@ -8,5 +8,5 @@ import org.icepear.echarts.origin.util.StatesOptionMixin;
  */
 public interface FunnelDataItemOption extends FunnelStateOption, StatesOptionMixin, OptionDataItemObject {
 
-	FunnelDataItemOption setItemStyle(Object itemStyle);
+    FunnelDataItemOption setItemStyle(Object itemStyle);
 }

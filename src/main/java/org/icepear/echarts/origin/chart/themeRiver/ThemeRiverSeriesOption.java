@@ -9,19 +9,19 @@ import org.icepear.echarts.origin.util.SeriesOption;
  */
 public interface ThemeRiverSeriesOption extends SeriesOption, ThemeRiverStateOption, SeriesOnSingleOptionMixin, BoxLayoutOptionMixin {
 
-	ThemeRiverSeriesOption setType(String type);
+    ThemeRiverSeriesOption setType(String type);
 
-	ThemeRiverSeriesOption setColor(String[] color);
+    ThemeRiverSeriesOption setColor(String[] color);
 
-	ThemeRiverSeriesOption setCoordinateSystem(String coordinateSystem);
+    ThemeRiverSeriesOption setCoordinateSystem(String coordinateSystem);
 
-	ThemeRiverSeriesOption setBoundaryGap(Number[] boundaryGap);
+    ThemeRiverSeriesOption setBoundaryGap(Number[] boundaryGap);
 
-	ThemeRiverSeriesOption setBoundaryGap(String[] boundaryGap);
+    ThemeRiverSeriesOption setBoundaryGap(String[] boundaryGap);
 
-	ThemeRiverSeriesOption setData(Number[] data);
+    ThemeRiverSeriesOption setData(Number[] data);
 
-	ThemeRiverSeriesOption setData(Object[] data);
+    ThemeRiverSeriesOption setData(Object[] data);
 
-	ThemeRiverSeriesOption setData(String[] data);
+    ThemeRiverSeriesOption setData(String[] data);
 }

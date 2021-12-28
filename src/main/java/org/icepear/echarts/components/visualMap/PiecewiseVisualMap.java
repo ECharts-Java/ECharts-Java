@@ -8,250 +8,250 @@ import lombok.experimental.Accessors;
 import org.icepear.echarts.origin.component.visualMap.PiecewiseVisualMapOption;
 import org.icepear.echarts.origin.util.LabelOption;
 
-@Accessors(chain=true)
+@Accessors(chain = true)
 @Data
 public class PiecewiseVisualMap implements PiecewiseVisualMapOption {
 
-	private String mainType;
-
-	private String type;
+    private String mainType;
+
+    private String type;
 
-	@Setter(AccessLevel.NONE)
-	private Object id;
-
-	public PiecewiseVisualMap setId(Number id) {
-		this.id = id;
-		return this;
-	}
-
-	public PiecewiseVisualMap setId(String id) {
-		this.id = id;
-		return this;
-	}
+    @Setter(AccessLevel.NONE)
+    private Object id;
+
+    public PiecewiseVisualMap setId(Number id) {
+        this.id = id;
+        return this;
+    }
+
+    public PiecewiseVisualMap setId(String id) {
+        this.id = id;
+        return this;
+    }
 
-	@Setter(AccessLevel.NONE)
-	private Object name;
+    @Setter(AccessLevel.NONE)
+    private Object name;
 
-	public PiecewiseVisualMap setName(Number name) {
-		this.name = name;
-		return this;
-	}
+    public PiecewiseVisualMap setName(Number name) {
+        this.name = name;
+        return this;
+    }
 
-	public PiecewiseVisualMap setName(String name) {
-		this.name = name;
-		return this;
-	}
+    public PiecewiseVisualMap setName(String name) {
+        this.name = name;
+        return this;
+    }
 
-	private Number z;
+    private Number z;
 
-	private Number zlevel;
+    private Number zlevel;
 
-	@Setter(AccessLevel.NONE)
-	private Object width;
+    @Setter(AccessLevel.NONE)
+    private Object width;
 
-	public PiecewiseVisualMap setWidth(Number width) {
-		this.width = width;
-		return this;
-	}
+    public PiecewiseVisualMap setWidth(Number width) {
+        this.width = width;
+        return this;
+    }
 
-	public PiecewiseVisualMap setWidth(String width) {
-		this.width = width;
-		return this;
-	}
+    public PiecewiseVisualMap setWidth(String width) {
+        this.width = width;
+        return this;
+    }
 
-	@Setter(AccessLevel.NONE)
-	private Object height;
+    @Setter(AccessLevel.NONE)
+    private Object height;
 
-	public PiecewiseVisualMap setHeight(Number height) {
-		this.height = height;
-		return this;
-	}
+    public PiecewiseVisualMap setHeight(Number height) {
+        this.height = height;
+        return this;
+    }
 
-	public PiecewiseVisualMap setHeight(String height) {
-		this.height = height;
-		return this;
-	}
+    public PiecewiseVisualMap setHeight(String height) {
+        this.height = height;
+        return this;
+    }
 
-	@Setter(AccessLevel.NONE)
-	private Object top;
+    @Setter(AccessLevel.NONE)
+    private Object top;
 
-	public PiecewiseVisualMap setTop(Number top) {
-		this.top = top;
-		return this;
-	}
+    public PiecewiseVisualMap setTop(Number top) {
+        this.top = top;
+        return this;
+    }
 
-	public PiecewiseVisualMap setTop(String top) {
-		this.top = top;
-		return this;
-	}
+    public PiecewiseVisualMap setTop(String top) {
+        this.top = top;
+        return this;
+    }
 
-	@Setter(AccessLevel.NONE)
-	private Object right;
+    @Setter(AccessLevel.NONE)
+    private Object right;
 
-	public PiecewiseVisualMap setRight(Number right) {
-		this.right = right;
-		return this;
-	}
+    public PiecewiseVisualMap setRight(Number right) {
+        this.right = right;
+        return this;
+    }
 
-	public PiecewiseVisualMap setRight(String right) {
-		this.right = right;
-		return this;
-	}
+    public PiecewiseVisualMap setRight(String right) {
+        this.right = right;
+        return this;
+    }
 
-	@Setter(AccessLevel.NONE)
-	private Object bottom;
+    @Setter(AccessLevel.NONE)
+    private Object bottom;
 
-	public PiecewiseVisualMap setBottom(Number bottom) {
-		this.bottom = bottom;
-		return this;
-	}
+    public PiecewiseVisualMap setBottom(Number bottom) {
+        this.bottom = bottom;
+        return this;
+    }
 
-	public PiecewiseVisualMap setBottom(String bottom) {
-		this.bottom = bottom;
-		return this;
-	}
+    public PiecewiseVisualMap setBottom(String bottom) {
+        this.bottom = bottom;
+        return this;
+    }
 
-	@Setter(AccessLevel.NONE)
-	private Object left;
+    @Setter(AccessLevel.NONE)
+    private Object left;
 
-	public PiecewiseVisualMap setLeft(Number left) {
-		this.left = left;
-		return this;
-	}
+    public PiecewiseVisualMap setLeft(Number left) {
+        this.left = left;
+        return this;
+    }
 
-	public PiecewiseVisualMap setLeft(String left) {
-		this.left = left;
-		return this;
-	}
+    public PiecewiseVisualMap setLeft(String left) {
+        this.left = left;
+        return this;
+    }
 
-	private String borderColor;
+    private String borderColor;
 
-	private Number borderWidth;
+    private Number borderWidth;
 
-	private String borderType;
+    private String borderType;
 
-	private Object borderCap;
+    private Object borderCap;
 
-	private Object borderJoin;
+    private Object borderJoin;
 
-	private Number borderDashOffset;
+    private Number borderDashOffset;
 
-	private Number borderMiterLimit;
+    private Number borderMiterLimit;
 
-	private Boolean show;
+    private Boolean show;
 
-	private String align;
+    private String align;
 
-	private Boolean realtime;
+    private Boolean realtime;
 
-	@Setter(AccessLevel.NONE)
-	private Object seriesIndex;
+    @Setter(AccessLevel.NONE)
+    private Object seriesIndex;
 
-	public PiecewiseVisualMap setSeriesIndex(Number seriesIndex) {
-		this.seriesIndex = seriesIndex;
-		return this;
-	}
+    public PiecewiseVisualMap setSeriesIndex(Number seriesIndex) {
+        this.seriesIndex = seriesIndex;
+        return this;
+    }
 
-	public PiecewiseVisualMap setSeriesIndex(Number[] seriesIndex) {
-		this.seriesIndex = seriesIndex;
-		return this;
-	}
+    public PiecewiseVisualMap setSeriesIndex(Number[] seriesIndex) {
+        this.seriesIndex = seriesIndex;
+        return this;
+    }
 
-	public PiecewiseVisualMap setSeriesIndex(String seriesIndex) {
-		this.seriesIndex = seriesIndex;
-		return this;
-	}
+    public PiecewiseVisualMap setSeriesIndex(String seriesIndex) {
+        this.seriesIndex = seriesIndex;
+        return this;
+    }
 
-	private Number min;
+    private Number min;
 
-	private Number max;
+    private Number max;
 
-	private Number dimension;
+    private Number dimension;
 
-	private Object controller;
+    private Object controller;
 
-	private Object target;
+    private Object target;
 
-	private Number itemWidth;
+    private Number itemWidth;
 
-	private Number itemHeight;
+    private Number itemHeight;
 
-	private Boolean inverse;
+    private Boolean inverse;
 
-	private String orient;
+    private String orient;
 
-	private String backgroundColor;
+    private String backgroundColor;
 
-	private String contentColor;
+    private String contentColor;
 
-	private String inactiveColor;
+    private String inactiveColor;
 
-	@Setter(AccessLevel.NONE)
-	private Object padding;
+    @Setter(AccessLevel.NONE)
+    private Object padding;
 
-	public PiecewiseVisualMap setPadding(Number padding) {
-		this.padding = padding;
-		return this;
-	}
+    public PiecewiseVisualMap setPadding(Number padding) {
+        this.padding = padding;
+        return this;
+    }
 
-	public PiecewiseVisualMap setPadding(Number[] padding) {
-		this.padding = padding;
-		return this;
-	}
+    public PiecewiseVisualMap setPadding(Number[] padding) {
+        this.padding = padding;
+        return this;
+    }
 
-	private Number textGap;
+    private Number textGap;
 
-	private Number precision;
+    private Number precision;
 
-	private String[] color;
+    private String[] color;
 
-	@Setter(AccessLevel.NONE)
-	private Object formatter;
+    @Setter(AccessLevel.NONE)
+    private Object formatter;
 
-	public PiecewiseVisualMap setFormatter(Object formatter) {
-		this.formatter = formatter;
-		return this;
-	}
+    public PiecewiseVisualMap setFormatter(Object formatter) {
+        this.formatter = formatter;
+        return this;
+    }
 
-	public PiecewiseVisualMap setFormatter(String formatter) {
-		this.formatter = formatter;
-		return this;
-	}
+    public PiecewiseVisualMap setFormatter(String formatter) {
+        this.formatter = formatter;
+        return this;
+    }
 
-	private String[] text;
+    private String[] text;
 
-	private LabelOption textStyle;
+    private LabelOption textStyle;
 
-	@Setter(AccessLevel.NONE)
-	private Object categories;
+    @Setter(AccessLevel.NONE)
+    private Object categories;
 
-	public PiecewiseVisualMap setCategories(Object categories) {
-		this.categories = categories;
-		return this;
-	}
+    public PiecewiseVisualMap setCategories(Object categories) {
+        this.categories = categories;
+        return this;
+    }
 
-	public PiecewiseVisualMap setCategories(String[] categories) {
-		this.categories = categories;
-		return this;
-	}
+    public PiecewiseVisualMap setCategories(String[] categories) {
+        this.categories = categories;
+        return this;
+    }
 
-	private Boolean minOpen;
+    private Boolean minOpen;
 
-	private Boolean maxOpen;
+    private Boolean maxOpen;
 
-	private String itemSymbol;
+    private String itemSymbol;
 
-	private VisualPiece[] pieces;
+    private VisualPiece[] pieces;
 
-	private Number splitNumber;
+    private Number splitNumber;
 
-	private Object selected;
+    private Object selected;
 
-	private String selectedMode;
+    private String selectedMode;
 
-	private Boolean showLabel;
+    private Boolean showLabel;
 
-	private Number itemGap;
+    private Number itemGap;
 
-	private Boolean hoverLink;
+    private Boolean hoverLink;
 }

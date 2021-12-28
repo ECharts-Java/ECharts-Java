@@ -7,19 +7,19 @@ import org.icepear.echarts.origin.chart.heatmap.HeatmapDataItemOption;
 import org.icepear.echarts.origin.util.ItemStyleOption;
 import org.icepear.echarts.origin.util.SeriesLabelOption;
 
-@Accessors(chain=true)
+@Accessors(chain = true)
 @Data
 public class HeatmapDataItem implements HeatmapDataItemOption {
 
-	private ItemStyleOption itemStyle;
+    private ItemStyleOption itemStyle;
 
-	private SeriesLabelOption label;
+    private SeriesLabelOption label;
 
-	private Object emphasis;
+    private Object emphasis;
 
-	private Object select;
+    private Object select;
 
-	private Object blur;
+    private Object blur;
 
-	private Object value;
+    private Object value;
 }

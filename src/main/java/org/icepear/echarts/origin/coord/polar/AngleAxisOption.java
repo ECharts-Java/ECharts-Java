@@ -5,11 +5,11 @@ package org.icepear.echarts.origin.coord.polar;
  */
 public interface AngleAxisOption {
 
-	AngleAxisOption setPolarIndex(Number polarIndex);
+    AngleAxisOption setPolarIndex(Number polarIndex);
 
-	AngleAxisOption setPolarId(String polarId);
+    AngleAxisOption setPolarId(String polarId);
 
-	AngleAxisOption setStartAngle(Number startAngle);
+    AngleAxisOption setStartAngle(Number startAngle);
 
-	AngleAxisOption setClockwise(Boolean clockwise);
+    AngleAxisOption setClockwise(Boolean clockwise);
 }

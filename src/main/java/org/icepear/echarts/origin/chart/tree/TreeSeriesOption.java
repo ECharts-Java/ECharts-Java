@@ -10,25 +10,25 @@ import org.icepear.echarts.origin.util.SymbolOptionMixin;
  */
 public interface TreeSeriesOption extends SeriesOption, TreeSeriesStateOption, SymbolOptionMixin, BoxLayoutOptionMixin, RoamOptionMixin {
 
-	TreeSeriesOption setType(String type);
+    TreeSeriesOption setType(String type);
 
-	TreeSeriesOption setLayout(String layout);
+    TreeSeriesOption setLayout(String layout);
 
-	TreeSeriesOption setEdgeShape(String edgeShape);
+    TreeSeriesOption setEdgeShape(String edgeShape);
 
-	TreeSeriesOption setEdgeForkPosition(Number edgeForkPosition);
+    TreeSeriesOption setEdgeForkPosition(Number edgeForkPosition);
 
-	TreeSeriesOption setEdgeForkPosition(String edgeForkPosition);
+    TreeSeriesOption setEdgeForkPosition(String edgeForkPosition);
 
-	TreeSeriesOption setNodeScaleRatio(Number nodeScaleRatio);
+    TreeSeriesOption setNodeScaleRatio(Number nodeScaleRatio);
 
-	TreeSeriesOption setOrient(String orient);
+    TreeSeriesOption setOrient(String orient);
 
-	TreeSeriesOption setExpandAndCollapse(Boolean expandAndCollapse);
+    TreeSeriesOption setExpandAndCollapse(Boolean expandAndCollapse);
 
-	TreeSeriesOption setInitialTreeDepth(Number initialTreeDepth);
+    TreeSeriesOption setInitialTreeDepth(Number initialTreeDepth);
 
-	TreeSeriesOption setLeaves(TreeSeriesLeavesOption leaves);
+    TreeSeriesOption setLeaves(TreeSeriesLeavesOption leaves);
 
-	TreeSeriesOption setData(TreeSeriesNodeItemOption[] data);
+    TreeSeriesOption setData(TreeSeriesNodeItemOption[] data);
 }

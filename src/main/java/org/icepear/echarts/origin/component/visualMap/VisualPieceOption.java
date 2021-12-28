@@ -7,19 +7,19 @@ import org.icepear.echarts.origin.util.VisualOptionUnit;
  */
 public interface VisualPieceOption extends VisualOptionUnit {
 
-	VisualPieceOption setMin(Number min);
+    VisualPieceOption setMin(Number min);
 
-	VisualPieceOption setMax(Number max);
+    VisualPieceOption setMax(Number max);
 
-	VisualPieceOption setLt(Number lt);
+    VisualPieceOption setLt(Number lt);
 
-	VisualPieceOption setGt(Number gt);
+    VisualPieceOption setGt(Number gt);
 
-	VisualPieceOption setLte(Number lte);
+    VisualPieceOption setLte(Number lte);
 
-	VisualPieceOption setGte(Number gte);
+    VisualPieceOption setGte(Number gte);
 
-	VisualPieceOption setValue(Number value);
+    VisualPieceOption setValue(Number value);
 
-	VisualPieceOption setLabel(String label);
+    VisualPieceOption setLabel(String label);
 }

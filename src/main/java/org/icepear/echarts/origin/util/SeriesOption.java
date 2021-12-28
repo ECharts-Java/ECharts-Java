@@ -10,51 +10,51 @@ import org.icepear.echarts.origin.export.SeriesInjectedOption;
  */
 public interface SeriesOption extends ComponentOption, AnimationOptionMixin, ColorPaletteOptionMixin, StatesOptionMixin, SeriesInjectedOption {
 
-	SeriesOption setMainType(String mainType);
+    SeriesOption setMainType(String mainType);
 
-	SeriesOption setSilent(Boolean silent);
+    SeriesOption setSilent(Boolean silent);
 
-	SeriesOption setBlendMode(String blendMode);
+    SeriesOption setBlendMode(String blendMode);
 
-	SeriesOption setCursor(String cursor);
+    SeriesOption setCursor(String cursor);
 
-	SeriesOption setDataGroupId(Number dataGroupId);
+    SeriesOption setDataGroupId(Number dataGroupId);
 
-	SeriesOption setDataGroupId(String dataGroupId);
+    SeriesOption setDataGroupId(String dataGroupId);
 
-	SeriesOption setData(Object data);
+    SeriesOption setData(Object data);
 
-	SeriesOption setColorBy(Object colorBy);
+    SeriesOption setColorBy(Object colorBy);
 
-	SeriesOption setLegendHoverLink(Boolean legendHoverLink);
+    SeriesOption setLegendHoverLink(Boolean legendHoverLink);
 
-	SeriesOption setProgressive(Boolean progressive);
+    SeriesOption setProgressive(Boolean progressive);
 
-	SeriesOption setProgressive(Number progressive);
+    SeriesOption setProgressive(Number progressive);
 
-	SeriesOption setProgressiveThreshold(Number progressiveThreshold);
+    SeriesOption setProgressiveThreshold(Number progressiveThreshold);
 
-	SeriesOption setProgressiveChunkMode(String progressiveChunkMode);
+    SeriesOption setProgressiveChunkMode(String progressiveChunkMode);
 
-	SeriesOption setCoordinateSystem(String coordinateSystem);
+    SeriesOption setCoordinateSystem(String coordinateSystem);
 
-	SeriesOption setHoverLayerThreshold(Number hoverLayerThreshold);
+    SeriesOption setHoverLayerThreshold(Number hoverLayerThreshold);
 
-	SeriesOption setSeriesLayoutBy(String seriesLayoutBy);
+    SeriesOption setSeriesLayoutBy(String seriesLayoutBy);
 
-	SeriesOption setLabelLine(LabelLineOption labelLine);
+    SeriesOption setLabelLine(LabelLineOption labelLine);
 
-	SeriesOption setLabelLayout(Object labelLayout);
+    SeriesOption setLabelLayout(Object labelLayout);
 
-	SeriesOption setStateAnimation(Object stateAnimation);
+    SeriesOption setStateAnimation(Object stateAnimation);
 
-	SeriesOption setUniversalTransition(Boolean universalTransition);
+    SeriesOption setUniversalTransition(Boolean universalTransition);
 
-	SeriesOption setUniversalTransition(Object universalTransition);
+    SeriesOption setUniversalTransition(Object universalTransition);
 
-	SeriesOption setSelectedMap(Map<String, Boolean> selectedMap);
+    SeriesOption setSelectedMap(Map<String, Boolean> selectedMap);
 
-	SeriesOption setSelectedMode(Boolean selectedMode);
+    SeriesOption setSelectedMode(Boolean selectedMode);
 
-	SeriesOption setSelectedMode(String selectedMode);
+    SeriesOption setSelectedMode(String selectedMode);
 }

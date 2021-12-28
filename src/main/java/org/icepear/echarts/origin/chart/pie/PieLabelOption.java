@@ -7,27 +7,27 @@ import org.icepear.echarts.origin.util.SeriesLabelOption;
  */
 public interface PieLabelOption extends SeriesLabelOption {
 
-	PieLabelOption setRotate(Boolean rotate);
+    PieLabelOption setRotate(Boolean rotate);
 
-	PieLabelOption setRotate(Number rotate);
+    PieLabelOption setRotate(Number rotate);
 
-	PieLabelOption setRotate(String rotate);
+    PieLabelOption setRotate(String rotate);
 
-	PieLabelOption setAlignTo(String alignTo);
+    PieLabelOption setAlignTo(String alignTo);
 
-	PieLabelOption setEdgeDistance(Number edgeDistance);
+    PieLabelOption setEdgeDistance(Number edgeDistance);
 
-	PieLabelOption setEdgeDistance(String edgeDistance);
+    PieLabelOption setEdgeDistance(String edgeDistance);
 
-	PieLabelOption setMargin(Number margin);
+    PieLabelOption setMargin(Number margin);
 
-	PieLabelOption setMargin(String margin);
+    PieLabelOption setMargin(String margin);
 
-	PieLabelOption setBleedMargin(Number bleedMargin);
+    PieLabelOption setBleedMargin(Number bleedMargin);
 
-	PieLabelOption setDistanceToLabelLine(Number distanceToLabelLine);
+    PieLabelOption setDistanceToLabelLine(Number distanceToLabelLine);
 
-	PieLabelOption setPosition(Object position);
+    PieLabelOption setPosition(Object position);
 
-	PieLabelOption setPosition(String position);
+    PieLabelOption setPosition(String position);
 }

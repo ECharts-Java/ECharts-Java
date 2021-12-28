@@ -9,5 +9,5 @@ import org.icepear.echarts.origin.util.StatesOptionMixin;
  */
 public interface PieDataItemOption extends NumericOptionDataItemObject, PieStateOption, StatesOptionMixin {
 
-	PieDataItemOption setCursor(String cursor);
+    PieDataItemOption setCursor(String cursor);
 }

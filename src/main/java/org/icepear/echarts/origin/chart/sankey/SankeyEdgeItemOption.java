@@ -8,7 +8,7 @@ import org.icepear.echarts.origin.util.StatesOptionMixin;
  */
 public interface SankeyEdgeItemOption extends SankeyEdgeStateOption, StatesOptionMixin, NumericGraphEdgeItemObject {
 
-	SankeyEdgeItemOption setFocusNodeAdjacency(Boolean focusNodeAdjacency);
+    SankeyEdgeItemOption setFocusNodeAdjacency(Boolean focusNodeAdjacency);
 
-	SankeyEdgeItemOption setFocusNodeAdjacency(String focusNodeAdjacency);
+    SankeyEdgeItemOption setFocusNodeAdjacency(String focusNodeAdjacency);
 }

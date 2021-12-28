@@ -7,59 +7,59 @@ import lombok.experimental.Accessors;
 
 import org.icepear.echarts.origin.chart.bar.BarBackgroundStyleOption;
 
-@Accessors(chain=true)
+@Accessors(chain = true)
 @Data
 public class BarBackgroundStyle implements BarBackgroundStyleOption {
 
-	private Number shadowBlur;
+    private Number shadowBlur;
 
-	private String shadowColor;
+    private String shadowColor;
 
-	private Number shadowOffsetX;
+    private Number shadowOffsetX;
 
-	private Number shadowOffsetY;
+    private Number shadowOffsetY;
 
-	private String borderColor;
+    private String borderColor;
 
-	private Number borderWidth;
+    private Number borderWidth;
 
-	private String borderType;
+    private String borderType;
 
-	private Object borderCap;
+    private Object borderCap;
 
-	private Object borderJoin;
+    private Object borderJoin;
 
-	private Number borderDashOffset;
+    private Number borderDashOffset;
 
-	private Number borderMiterLimit;
+    private Number borderMiterLimit;
 
-	private String color;
+    private String color;
 
-	private Number opacity;
+    private Number opacity;
 
-	@Setter(AccessLevel.NONE)
-	private Object decal;
+    @Setter(AccessLevel.NONE)
+    private Object decal;
 
-	public BarBackgroundStyle setDecal(Object decal) {
-		this.decal = decal;
-		return this;
-	}
+    public BarBackgroundStyle setDecal(Object decal) {
+        this.decal = decal;
+        return this;
+    }
 
-	public BarBackgroundStyle setDecal(String decal) {
-		this.decal = decal;
-		return this;
-	}
+    public BarBackgroundStyle setDecal(String decal) {
+        this.decal = decal;
+        return this;
+    }
 
-	@Setter(AccessLevel.NONE)
-	private Object borderRadius;
+    @Setter(AccessLevel.NONE)
+    private Object borderRadius;
 
-	public BarBackgroundStyle setBorderRadius(Number borderRadius) {
-		this.borderRadius = borderRadius;
-		return this;
-	}
+    public BarBackgroundStyle setBorderRadius(Number borderRadius) {
+        this.borderRadius = borderRadius;
+        return this;
+    }
 
-	public BarBackgroundStyle setBorderRadius(Number[] borderRadius) {
-		this.borderRadius = borderRadius;
-		return this;
-	}
+    public BarBackgroundStyle setBorderRadius(Number[] borderRadius) {
+        this.borderRadius = borderRadius;
+        return this;
+    }
 }

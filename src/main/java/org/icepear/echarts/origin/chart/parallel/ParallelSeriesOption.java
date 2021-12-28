@@ -8,29 +8,29 @@ import org.icepear.echarts.origin.util.SeriesOption;
  */
 public interface ParallelSeriesOption extends SeriesOption, ParallelStateOption, SeriesEncodeOptionMixin {
 
-	ParallelSeriesOption setType(String type);
+    ParallelSeriesOption setType(String type);
 
-	ParallelSeriesOption setCoordinateSystem(String coordinateSystem);
+    ParallelSeriesOption setCoordinateSystem(String coordinateSystem);
 
-	ParallelSeriesOption setParallelIndex(Number parallelIndex);
+    ParallelSeriesOption setParallelIndex(Number parallelIndex);
 
-	ParallelSeriesOption setParallelId(String parallelId);
+    ParallelSeriesOption setParallelId(String parallelId);
 
-	ParallelSeriesOption setInactiveOpacity(Number inactiveOpacity);
+    ParallelSeriesOption setInactiveOpacity(Number inactiveOpacity);
 
-	ParallelSeriesOption setActiveOpacity(Number activeOpacity);
+    ParallelSeriesOption setActiveOpacity(Number activeOpacity);
 
-	ParallelSeriesOption setSmooth(Boolean smooth);
+    ParallelSeriesOption setSmooth(Boolean smooth);
 
-	ParallelSeriesOption setSmooth(Number smooth);
+    ParallelSeriesOption setSmooth(Number smooth);
 
-	ParallelSeriesOption setRealtime(Boolean realtime);
+    ParallelSeriesOption setRealtime(Boolean realtime);
 
-	ParallelSeriesOption setTooltip(Object tooltip);
+    ParallelSeriesOption setTooltip(Object tooltip);
 
-	ParallelSeriesOption setParallelAxisDefault(Object parallelAxisDefault);
+    ParallelSeriesOption setParallelAxisDefault(Object parallelAxisDefault);
 
-	ParallelSeriesOption setData(Object[] data);
+    ParallelSeriesOption setData(Object[] data);
 
-	ParallelSeriesOption setData(ParallelSeriesDataItemOption[] data);
+    ParallelSeriesOption setData(ParallelSeriesDataItemOption[] data);
 }

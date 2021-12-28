@@ -8,9 +8,9 @@ import org.icepear.echarts.origin.util.SymbolOptionMixin;
  */
 public interface MarkPointOption extends MarkerOption, SymbolOptionMixin, StatesOptionMixin, MarkPointStateOption {
 
-	MarkPointOption setMainType(String mainType);
+    MarkPointOption setMainType(String mainType);
 
-	MarkPointOption setPrecision(Number precision);
+    MarkPointOption setPrecision(Number precision);
 
-	MarkPointOption setData(MarkPointDataItemOption[] data);
+    MarkPointOption setData(MarkPointDataItemOption[] data);
 }

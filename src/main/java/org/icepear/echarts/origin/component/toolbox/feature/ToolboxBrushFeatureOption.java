@@ -7,9 +7,9 @@ import org.icepear.echarts.origin.component.toolbox.ToolboxFeatureOption;
  */
 public interface ToolboxBrushFeatureOption extends ToolboxFeatureOption {
 
-	ToolboxBrushFeatureOption setType(Object[] type);
+    ToolboxBrushFeatureOption setType(Object[] type);
 
-	ToolboxBrushFeatureOption setIcon(String icon);
+    ToolboxBrushFeatureOption setIcon(String icon);
 
-	ToolboxBrushFeatureOption setTitle(String title);
+    ToolboxBrushFeatureOption setTitle(String title);
 }

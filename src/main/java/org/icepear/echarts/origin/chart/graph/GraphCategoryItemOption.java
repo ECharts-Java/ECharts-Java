@@ -8,11 +8,11 @@ import org.icepear.echarts.origin.util.SymbolOptionMixin;
  */
 public interface GraphCategoryItemOption extends SymbolOptionMixin, GraphNodeStateOption, StatesOptionMixin {
 
-	GraphCategoryItemOption setName(String name);
+    GraphCategoryItemOption setName(String name);
 
-	GraphCategoryItemOption setValue(Number value);
+    GraphCategoryItemOption setValue(Number value);
 
-	GraphCategoryItemOption setValue(Object value);
+    GraphCategoryItemOption setValue(Object value);
 
-	GraphCategoryItemOption setValue(String value);
+    GraphCategoryItemOption setValue(String value);
 }
