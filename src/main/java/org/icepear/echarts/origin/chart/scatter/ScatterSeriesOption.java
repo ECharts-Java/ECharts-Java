@@ -14,7 +14,9 @@ import org.icepear.echarts.origin.util.SymbolOptionMixin;
 /**
  * https://github.com/apache/echarts/blob/1277d7ae81f2b1c7ede4e1731820a1c06bd16cf0/src/chart/scatter/ScatterSeries.ts#L62
  */
-public interface ScatterSeriesOption extends SeriesOption, ScatterStateOption, SeriesOnCartesianOptionMixin, SeriesOnPolarOptionMixin, SeriesOnCalendarOptionMixin, SeriesOnGeoOptionMixin, SeriesOnSingleOptionMixin, SeriesLargeOptionMixin, SeriesStackOptionMixin, SymbolOptionMixin, SeriesEncodeOptionMixin {
+public interface ScatterSeriesOption extends SeriesOption, ScatterStateOption, SeriesOnCartesianOptionMixin,
+        SeriesOnPolarOptionMixin, SeriesOnCalendarOptionMixin, SeriesOnGeoOptionMixin, SeriesOnSingleOptionMixin,
+        SeriesLargeOptionMixin, SeriesStackOptionMixin, SymbolOptionMixin, SeriesEncodeOptionMixin {
 
     ScatterSeriesOption setType(String type);
 
