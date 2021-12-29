@@ -10,11 +10,11 @@ import org.icepear.echarts.components.coord.cartesian.ValueAxis;
 import org.icepear.echarts.origin.coord.cartesian.AxisOption;
 import org.icepear.echarts.origin.util.SeriesOption;
 
-public abstract class CartesianChart<T extends Chart<?, ?>, E extends SeriesOption> extends Chart<T, E> {
+public abstract class CartesianCoordChart<T extends Chart<?, ?>, E extends SeriesOption> extends Chart<T, E> {
     protected List<AxisOption> xAxes;
     protected List<AxisOption> yAxes;
 
-    public CartesianChart(final Class<T> clazz, final Class<E> seriesClazz) {
+    public CartesianCoordChart(final Class<T> clazz, final Class<E> seriesClazz) {
         super(clazz, seriesClazz);
         xAxes = new ArrayList<>();
         yAxes = new ArrayList<>();

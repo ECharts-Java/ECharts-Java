@@ -1,0 +1,5 @@
+{
+  "name": "DefaultParallelAxis",
+  "type": "class",
+  "implements": ["DefaultParallelAxisOption"]
+}

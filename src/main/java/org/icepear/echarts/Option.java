@@ -15,10 +15,12 @@ import org.icepear.echarts.origin.component.tooltip.TooltipOption;
 import org.icepear.echarts.origin.component.visualMap.VisualMapOption;
 import org.icepear.echarts.origin.coord.cartesian.AxisOption;
 import org.icepear.echarts.origin.coord.cartesian.GridOption;
+import org.icepear.echarts.origin.coord.parallel.ParallelAxisOption;
 import org.icepear.echarts.origin.coord.polar.AngleAxisOption;
 import org.icepear.echarts.origin.coord.polar.PolarOption;
 import org.icepear.echarts.origin.coord.polar.RadiusAxisOption;
 import org.icepear.echarts.origin.coord.radar.RadarOption;
+import org.icepear.echarts.origin.coord.single.SingleAxisOption;
 import org.icepear.echarts.origin.export.EChartsOption;
 import org.icepear.echarts.origin.util.ComponentOption;
 import org.icepear.echarts.origin.util.ECUnitOption;
@@ -327,12 +329,12 @@ public class Option implements EChartsOption {
     @Setter(AccessLevel.NONE)
     private Object singleAxis;
 
-    public Option setSingleAxis(Object singleAxis) {
+    public Option setSingleAxis(SingleAxisOption singleAxis) {
         this.singleAxis = singleAxis;
         return this;
     }
 
-    public Option setSingleAxis(Object[] singleAxis) {
+    public Option setSingleAxis(SingleAxisOption[] singleAxis) {
         this.singleAxis = singleAxis;
         return this;
     }
@@ -353,12 +355,12 @@ public class Option implements EChartsOption {
     @Setter(AccessLevel.NONE)
     private Object parallelAxis;
 
-    public Option setParallelAxis(Object parallelAxis) {
+    public Option setParallelAxis(ParallelAxisOption parallelAxis) {
         this.parallelAxis = parallelAxis;
         return this;
     }
 
-    public Option setParallelAxis(Object[] parallelAxis) {
+    public Option setParallelAxis(ParallelAxisOption[] parallelAxis) {
         this.parallelAxis = parallelAxis;
         return this;
     }

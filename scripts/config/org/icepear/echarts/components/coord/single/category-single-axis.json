@@ -1,0 +1,5 @@
+{
+  "name": "CategorySingleAxis",
+  "type": "class",
+  "implements": ["CategorySingleAxisOption"]
+}

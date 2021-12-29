@@ -7,8 +7,8 @@ import org.icepear.echarts.origin.coord.polar.AngleAxisOption;
 import org.icepear.echarts.origin.coord.polar.RadiusAxisOption;
 import org.icepear.echarts.origin.util.SeriesOption;
 
-public abstract class PolarChart<T extends Chart<?, ?>, E extends SeriesOption> extends Chart<T, E> {
-    public PolarChart(final Class<T> clazz, final Class<E> seriesClazz) {
+public abstract class PolarCoordChart<T extends Chart<?, ?>, E extends SeriesOption> extends Chart<T, E> {
+    public PolarCoordChart(final Class<T> clazz, final Class<E> seriesClazz) {
         super(clazz, seriesClazz);
         option.setPolar(new PolarAxis());
     }

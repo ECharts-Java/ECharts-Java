@@ -5,7 +5,7 @@ import org.icepear.echarts.components.coord.SplitArea;
 import org.icepear.echarts.components.coord.cartesian.CategoryAxis;
 import org.icepear.echarts.components.coord.cartesian.ValueAxis;
 
-public class Heatmap extends CartesianChart<Heatmap, HeatmapSeries> {
+public class Heatmap extends CartesianCoordChart<Heatmap, HeatmapSeries> {
     public Heatmap() {
         super(Heatmap.class, HeatmapSeries.class);
     }

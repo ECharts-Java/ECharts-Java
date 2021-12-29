@@ -4,7 +4,7 @@ import org.icepear.echarts.charts.boxplot.BoxplotSeries;
 import org.icepear.echarts.components.dataset.DataTransform;
 import org.icepear.echarts.components.dataset.Dataset;
 
-public class Boxplot extends CartesianChart<Boxplot, BoxplotSeries> {
+public class Boxplot extends CartesianCoordChart<Boxplot, BoxplotSeries> {
     public Boxplot() {
         super(Boxplot.class, BoxplotSeries.class);
     }
