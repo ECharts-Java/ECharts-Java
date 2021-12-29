@@ -19,7 +19,7 @@ import lombok.extern.slf4j.Slf4j;
 public class Engine {
     private Handlebars handlebars;
 
-    public Engine() throws IOException {
+    public Engine() {
         this.handlebars = new Handlebars();
     }
 
@@ -170,6 +170,25 @@ public class Engine {
             log.info("renderHtml: Handlebars cannot find corresponding templates.");
             return "";
         }
+    }
+
+    /**
+     * Render serialized json object of Option in Chart
+     * 
+     * @param chart the chart to be rendered
+     * @return a string representation of a json object
+     */
+    public String renderJsonOption(Chart<?, ?> chart) {
+        return EChartsSerializer.toJson(chart.getOption());
+    }
+
+    /**
+     * Render serialized json object of an Option
+     * @param option the option to be serialized
+     * @return a string representation of a json object
+     */
+    public String renderJsonOption(Option option) {
+        return EChartsSerializer.toJson(option);
     }
 
 }
