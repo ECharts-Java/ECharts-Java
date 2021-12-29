@@ -1,0 +1,5 @@
+{
+  "name": "TimeSingleAxis",
+  "type": "class",
+  "implements": ["TimeSingleAxisOption"]
+}

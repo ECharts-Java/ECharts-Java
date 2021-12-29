@@ -2,7 +2,7 @@ package org.icepear.echarts;
 
 import org.icepear.echarts.charts.bar.BarSeries;
 
-public class PolarBar extends PolarChart<PolarBar, BarSeries> {
+public class PolarBar extends PolarCoordChart<PolarBar, BarSeries> {
     public PolarBar() {
         super(PolarBar.class, BarSeries.class);
     }

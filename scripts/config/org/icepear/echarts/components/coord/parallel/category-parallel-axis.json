@@ -1,0 +1,5 @@
+{
+  "name": "CategoryParallelAxis",
+  "type": "class",
+  "implements": ["CategoryParallelAxisOption"]
+}

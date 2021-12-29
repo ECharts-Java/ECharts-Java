@@ -2,7 +2,7 @@ package org.icepear.echarts;
 
 import org.icepear.echarts.charts.line.LineSeries;
 
-public class PolarLine extends PolarChart<PolarLine, LineSeries> {
+public class PolarLine extends PolarCoordChart<PolarLine, LineSeries> {
     public PolarLine() {
         super(PolarLine.class, LineSeries.class);
     }

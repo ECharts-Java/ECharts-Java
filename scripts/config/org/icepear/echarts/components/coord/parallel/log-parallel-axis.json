@@ -1,0 +1,5 @@
+{
+  "name": "LogParallelAxis",
+  "type": "class",
+  "implements": ["LogParallelAxisOption"]
+}
