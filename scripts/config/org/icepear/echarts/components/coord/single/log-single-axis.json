@@ -1,0 +1,5 @@
+{
+  "name": "LogSingleAxis",
+  "type": "class",
+  "implements": ["LogSingleAxisOption"]
+}

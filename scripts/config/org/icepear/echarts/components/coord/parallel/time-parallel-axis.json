@@ -1,0 +1,5 @@
+{
+  "name": "TimeParallelAxis",
+  "type": "class",
+  "implements": ["TimeParallelAxisOption"]
+}

@@ -1,5 +1,6 @@
 package org.icepear.echarts.origin.chart.parallel;
 
+import org.icepear.echarts.origin.coord.parallel.ParallelAxisOption;
 import org.icepear.echarts.origin.util.SeriesEncodeOptionMixin;
 import org.icepear.echarts.origin.util.SeriesOption;
 
@@ -28,7 +29,7 @@ public interface ParallelSeriesOption extends SeriesOption, ParallelStateOption,
 
     ParallelSeriesOption setTooltip(Object tooltip);
 
-    ParallelSeriesOption setParallelAxisDefault(Object parallelAxisDefault);
+    ParallelSeriesOption setParallelAxisDefault(ParallelAxisOption parallelAxisDefault);
 
     ParallelSeriesOption setData(Object[] data);
 

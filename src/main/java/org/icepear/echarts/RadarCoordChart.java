@@ -4,8 +4,8 @@ import org.icepear.echarts.components.coord.radar.RadarAxis;
 import org.icepear.echarts.components.coord.radar.RadarIndicator;
 import org.icepear.echarts.origin.util.SeriesOption;
 
-public abstract class RadarChart<T extends Chart<?, ?>, E extends SeriesOption> extends Chart<T, E> {
-    public RadarChart(final Class<T> clazz, final Class<E> seriesClazz) {
+public abstract class RadarCoordChart<T extends Chart<?, ?>, E extends SeriesOption> extends Chart<T, E> {
+    public RadarCoordChart(final Class<T> clazz, final Class<E> seriesClazz) {
         super(clazz, seriesClazz);
     }
 

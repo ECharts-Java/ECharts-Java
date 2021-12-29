@@ -10,10 +10,12 @@ import org.icepear.echarts.origin.component.tooltip.TooltipOption;
 import org.icepear.echarts.origin.component.visualMap.VisualMapOption;
 import org.icepear.echarts.origin.coord.cartesian.AxisOption;
 import org.icepear.echarts.origin.coord.cartesian.GridOption;
+import org.icepear.echarts.origin.coord.parallel.ParallelAxisOption;
 import org.icepear.echarts.origin.coord.polar.AngleAxisOption;
 import org.icepear.echarts.origin.coord.polar.PolarOption;
 import org.icepear.echarts.origin.coord.polar.RadiusAxisOption;
 import org.icepear.echarts.origin.coord.radar.RadarOption;
+import org.icepear.echarts.origin.coord.single.SingleAxisOption;
 import org.icepear.echarts.origin.util.ECBasicOption;
 import org.icepear.echarts.origin.util.SeriesOption;
 
@@ -64,17 +66,17 @@ public interface EChartsOption extends ECBasicOption {
 
     EChartsOption setYAxis(Object[] yAxis);
 
-    EChartsOption setSingleAxis(Object singleAxis);
+    EChartsOption setSingleAxis(SingleAxisOption singleAxis);
 
-    EChartsOption setSingleAxis(Object[] singleAxis);
+    EChartsOption setSingleAxis(SingleAxisOption[] singleAxis);
 
     EChartsOption setParallel(Object parallel);
 
     EChartsOption setParallel(Object[] parallel);
 
-    EChartsOption setParallelAxis(Object parallelAxis);
+    EChartsOption setParallelAxis(ParallelAxisOption parallelAxis);
 
-    EChartsOption setParallelAxis(Object[] parallelAxis);
+    EChartsOption setParallelAxis(ParallelAxisOption[] parallelAxis);
 
     EChartsOption setCalendar(Object calendar);
 

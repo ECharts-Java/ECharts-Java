@@ -1,0 +1,5 @@
+{
+  "name": "ValueSingleAxis",
+  "type": "class",
+  "implements": ["ValueSingleAxisOption"]
+}

@@ -2,7 +2,7 @@ package org.icepear.echarts;
 
 import org.icepear.echarts.charts.candlestick.CandlestickSeries;
 
-public class Candlestick extends CartesianChart<Candlestick, CandlestickSeries> {
+public class Candlestick extends CartesianCoordChart<Candlestick, CandlestickSeries> {
     public Candlestick() {
         super(Candlestick.class, CandlestickSeries.class);
     }
