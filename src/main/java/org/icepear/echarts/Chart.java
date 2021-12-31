@@ -39,13 +39,28 @@ public abstract class Chart<T extends Chart<?, ?>, E extends SeriesOption> {
         return self;
     }
 
+    public T setTitle(Title title) {
+        option.setTitle(title);
+        return self;
+    }
+
     public T setLegend(Boolean show) {
         option.setLegend(new Legend().setShow(show));
         return self;
     }
 
+    public T setLegend(Legend legend) {
+        option.setLegend(legend);
+        return self;
+    }
+
     public T setTooltip(String trigger) {
         option.setTooltip(new Tooltip().setTrigger(trigger));
+        return self;
+    }
+
+    public T setTooltip(Tooltip tooltip) {
+        option.setTooltip(tooltip);
         return self;
     }
 

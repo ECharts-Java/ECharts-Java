@@ -49,6 +49,10 @@
     {
       "name": "realtimeSort",
       "types": ["Boolean"]
+    },
+    {
+      "name": "emphasis",
+      "types": ["BarEmphasisOption"]
     }
   ],
   "comments": [

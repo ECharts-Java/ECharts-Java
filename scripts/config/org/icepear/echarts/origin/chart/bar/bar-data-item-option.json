@@ -1,0 +1,13 @@
+{
+  "name": "BarDataItemOption",
+  "type": "interface",
+  "extends": [
+    "BarStateOption",
+    "StatesOptionMixin",
+    "DefaultOptionDataItemObject"
+  ],
+  "fields": [{ "name": "cursor", "types": ["String"] }],
+  "comments": [
+    "https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/chart/bar/BarSeries.ts#L59"
+  ]
+}

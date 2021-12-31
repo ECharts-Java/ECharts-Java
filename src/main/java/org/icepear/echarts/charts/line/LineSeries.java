@@ -8,6 +8,7 @@ import lombok.Setter;
 import lombok.experimental.Accessors;
 
 import org.icepear.echarts.origin.chart.line.LineAreaStyleOption;
+import org.icepear.echarts.origin.chart.line.LineEmphasisOption;
 import org.icepear.echarts.origin.chart.line.LineSeriesOption;
 import org.icepear.echarts.origin.util.ItemStyleOption;
 import org.icepear.echarts.origin.util.LabelLineOption;
@@ -128,7 +129,18 @@ public class LineSeries implements LineSeriesOption {
 
     private String[][] colorLayer;
 
+    @Setter(AccessLevel.NONE)
     private Object emphasis;
+
+    public LineSeries setEmphasis(LineEmphasisOption emphasis) {
+        this.emphasis = emphasis;
+        return this;
+    }
+
+    public LineSeries setEmphasis(Object emphasis) {
+        this.emphasis = emphasis;
+        return this;
+    }
 
     private Object select;
 

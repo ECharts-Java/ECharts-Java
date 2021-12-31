@@ -1,0 +1,5 @@
+{
+  "name": "BarEmphasis",
+  "type": "class",
+  "implements": ["BarEmphasisOption"]
+}
