@@ -47,7 +47,7 @@ public class Engine {
 
     /**
      * Used in simple chart case, render the echarts in html file, in default width,
-     * height and willOpen
+     * height and willOpen. The html file also provides download chart function.
      * 
      * @param path  path to save the html file
      * @param chart the chart to be rendered
@@ -86,19 +86,42 @@ public class Engine {
     }
 
     /**
+     * Used in simple chart cases, render the echarts in
+     * customized width, height, and willOpen
+     * 
+     * @param path     path to save the html file
+     * @param option   the option used to init the chart
+     * @param height   the height of the chart, ends with "px" or "%"
+     * @param width    the width of the chart, ends with "px" or "%"
+     * @param willOpen whether allowing to open the html in browser automatically
+     * @throws IOException
+     */
+    public void render(String path, Chart<?,?> chart, String height, String width, Boolean willOpen) {
+        String jsonStr = EChartsSerializer.toJson(chart.getOption());
+        ChartMeta chartMeta = new ChartMeta(height, width, jsonStr);
+        try {
+            Template template = handlebars.compile("index");
+            String html = template.apply(chartMeta);
+            writeHtml(html, path, willOpen);
+        } catch (IOException e) {
+            log.info("render: Handlebars cannot find corresponding templates.");
+        }
+    }
+
+    /**
      * Used in both simple and advanced chart cases, render the echarts in
      * customized width, height, and willOpen
      * 
      * @param path     path to save the html file
      * @param option   the option used to init the chart
-     * @param height   the height of the chart
-     * @param width    the width of the chart
+     * @param height   the height of the chart, ends with "px" or "%"
+     * @param width    the width of the chart, ends with "px" or "%"
      * @param willOpen whether allowing to open the html in browser automatically
      * @throws IOException
      */
-    public void render(String path, Option option, int height, int width, Boolean willOpen) {
+    public void render(String path, Option option, String height, String width, Boolean willOpen) {
         String jsonStr = EChartsSerializer.toJson(option);
-        ChartMeta chartMeta = new ChartMeta("600px", "600px", jsonStr);
+        ChartMeta chartMeta = new ChartMeta(height, width, jsonStr);
         try {
             Template template = handlebars.compile("index");
             String html = template.apply(chartMeta);
@@ -118,7 +141,7 @@ public class Engine {
      */
     public String renderHtml(Chart<?, ?> chart) {
         String jsonStr = EChartsSerializer.toJson(chart.getOption());
-        ChartMeta chartMeta = new ChartMeta("600px", "100%", jsonStr);
+        ChartMeta chartMeta = new ChartMeta("100%", "100%", jsonStr);
         Template template = null;
         try {
             template = handlebars.compile("base");
@@ -139,11 +162,33 @@ public class Engine {
      */
     public String renderHtml(Option option) {
         String jsonStr = EChartsSerializer.toJson(option);
-        ChartMeta chartMeta = new ChartMeta("600px", "100%", jsonStr);
+        ChartMeta chartMeta = new ChartMeta("100%", "100%", jsonStr);
         Template template = null;
         try {
             template = handlebars.compile("base");
             return template.apply(chartMeta);
+        } catch (IOException e) {
+            log.info("renderHtml: Handlebars cannot find corresponding templates.");
+            return "";
+        }
+    }
+
+    /**
+     * Used in the simple cases, render the echarts in customized
+     * width and height, without download button
+     * 
+     * @param option the option to initiate the chart
+     * @param height the height of the chart, ends with "px" or "%"
+     * @param width  the width of the chart, ends with "px" or "%"
+     * @return the resulted string in html format
+     * @throws IOException
+     */
+    public String renderHtml(Chart<?,?> chart , String height, String width) throws IOException {
+        String jsonStr = EChartsSerializer.toJson(chart.getOption());
+        ChartMeta chartMeta = new ChartMeta(height, width, jsonStr);
+        try {
+            Template template = handlebars.compile("base");
+            return template.apply(chartMeta);    
         } catch (IOException e) {
             log.info("renderHtml: Handlebars cannot find corresponding templates.");
             return "";
@@ -160,9 +205,9 @@ public class Engine {
      * @return the resulted string in html format
      * @throws IOException
      */
-    public String renderHtml(Option option, int height, int width) throws IOException {
+    public String renderHtml(Option option, String height, String width) throws IOException {
         String jsonStr = EChartsSerializer.toJson(option);
-        ChartMeta chartMeta = new ChartMeta("600px", "100%", jsonStr);
+        ChartMeta chartMeta = new ChartMeta(height, width, jsonStr);
         try {
             Template template = handlebars.compile("base");
             return template.apply(chartMeta);    
