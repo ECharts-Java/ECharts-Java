@@ -1,0 +1,65 @@
+{
+  "title": { "text": "Stacked Area" },
+  "xAxis": [
+    {
+      "type": "category",
+      "data": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+      "boundaryGap": false
+    }
+  ],
+  "yAxis": [{ "type": "value" }],
+  "tooltip": { "trigger": "axis" },
+  "legend": { "show": true },
+  "series": [
+    {
+      "type": "line",
+      "name": "Line 1",
+      "data": [140, 232, 101, 264, 90, 340, 250],
+      "stack": "Total",
+      "lineStyle": { "width": 0 },
+      "areaStyle": {},
+      "smooth": true,
+      "showSymbol": false
+    },
+    {
+      "type": "line",
+      "name": "Line 2",
+      "data": [120, 282, 111, 234, 220, 340, 310],
+      "stack": "Total",
+      "lineStyle": { "width": 0 },
+      "areaStyle": {},
+      "smooth": true,
+      "showSymbol": false
+    },
+    {
+      "type": "line",
+      "name": "Line 3",
+      "data": [320, 132, 201, 334, 190, 130, 220],
+      "stack": "Total",
+      "lineStyle": { "width": 0 },
+      "areaStyle": {},
+      "smooth": true,
+      "showSymbol": false
+    },
+    {
+      "type": "line",
+      "name": "Line 4",
+      "data": [220, 402, 231, 134, 190, 230, 120],
+      "stack": "Total",
+      "lineStyle": { "width": 0 },
+      "areaStyle": {},
+      "smooth": true,
+      "showSymbol": false
+    },
+    {
+      "type": "line",
+      "name": "Line 5",
+      "data": [220, 302, 181, 234, 210, 290, 150],
+      "stack": "Total",
+      "lineStyle": { "width": 0 },
+      "areaStyle": {},
+      "smooth": true,
+      "showSymbol": false
+    }
+  ]
+}

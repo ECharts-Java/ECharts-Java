@@ -7,6 +7,7 @@ import lombok.Data;
 import lombok.Setter;
 import lombok.experimental.Accessors;
 
+import org.icepear.echarts.origin.chart.line.LineAreaStyleOption;
 import org.icepear.echarts.origin.chart.line.LineSeriesOption;
 import org.icepear.echarts.origin.util.ItemStyleOption;
 import org.icepear.echarts.origin.util.LabelLineOption;
@@ -334,7 +335,7 @@ public class LineSeries implements LineSeriesOption {
 
     private LineStyleOption lineStyle;
 
-    private Object areaStyle;
+    private LineAreaStyleOption areaStyle;
 
     @Setter(AccessLevel.NONE)
     private Object step;

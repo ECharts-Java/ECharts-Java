@@ -39,7 +39,7 @@
     },
     {
       "name": "areaStyle",
-      "types": ["Object"]
+      "types": ["LineAreaStyleOption"]
     },
     {
       "name": "step",

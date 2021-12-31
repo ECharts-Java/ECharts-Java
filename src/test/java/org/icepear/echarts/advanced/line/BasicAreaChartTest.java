@@ -9,10 +9,10 @@ import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
 
 import org.icepear.echarts.Option;
+import org.icepear.echarts.charts.line.LineAreaStyle;
 import org.icepear.echarts.charts.line.LineSeries;
 import org.icepear.echarts.components.coord.cartesian.CategoryAxis;
 import org.icepear.echarts.components.coord.cartesian.ValueAxis;
-import org.icepear.echarts.components.series.AreaStyle;
 import org.icepear.echarts.origin.util.SeriesOption;
 import org.icepear.echarts.serializer.EChartsSerializer;
 import org.junit.Test;
@@ -30,7 +30,7 @@ public class BasicAreaChartTest {
         LineSeries series = new LineSeries()
                 .setData(new Number[] { 820, 932, 901, 934, 1290, 1330, 1320 })
                 .setType("line")
-                .setAreaStyle(new AreaStyle());
+                .setAreaStyle(new LineAreaStyle());
 
         Option option = new Option()
                 .setXAxis(xAxis)
