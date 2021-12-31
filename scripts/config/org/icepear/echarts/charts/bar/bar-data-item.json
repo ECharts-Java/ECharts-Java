@@ -1,0 +1,5 @@
+{
+  "name": "BarDataItem",
+  "type": "class",
+  "implements": ["BarDataItemOption"]
+}

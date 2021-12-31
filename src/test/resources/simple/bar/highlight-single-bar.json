@@ -1,0 +1,23 @@
+{
+  "xAxis": [
+    {
+      "type": "category",
+      "data": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+    }
+  ],
+  "yAxis": [{ "type": "value" }],
+  "series": [
+    {
+      "type": "bar",
+      "data": [
+        { "value": 120 },
+        { "itemStyle": { "color": "#a90000" }, "value": 200 },
+        { "value": 150 },
+        { "value": 80 },
+        { "value": 70 },
+        { "value": 110 },
+        { "value": 130 }
+      ]
+    }
+  ]
+}

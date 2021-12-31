@@ -72,6 +72,10 @@
     {
       "name": "triggerLineEvent",
       "types": ["Boolean"]
+    },
+    {
+      "name": "emphasis",
+      "types": ["LineEmphasisOption"]
     }
   ],
   "comments": [
