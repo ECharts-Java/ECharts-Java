@@ -55,7 +55,7 @@ public class Engine {
      */
     public void render(String path, Chart<?, ?> chart) {
         String jsonStr = EChartsSerializer.toJson(chart.getOption());
-        ChartMeta chartMeta = new ChartMeta(600, 600, jsonStr);
+        ChartMeta chartMeta = new ChartMeta("600px", "600px", jsonStr);
         try {
             Template template = handlebars.compile("index");
             String html = template.apply(chartMeta);
@@ -75,7 +75,7 @@ public class Engine {
      */
     public void render(String path, Option option) {
         String jsonStr = EChartsSerializer.toJson(option);
-        ChartMeta chartMeta = new ChartMeta(600, 600, jsonStr);
+        ChartMeta chartMeta = new ChartMeta("600px", "600px", jsonStr);
         try {
             Template template = handlebars.compile("index");
             String html = template.apply(chartMeta);
@@ -98,7 +98,7 @@ public class Engine {
      */
     public void render(String path, Option option, int height, int width, Boolean willOpen) {
         String jsonStr = EChartsSerializer.toJson(option);
-        ChartMeta chartMeta = new ChartMeta(height, width, jsonStr);
+        ChartMeta chartMeta = new ChartMeta("600px", "600px", jsonStr);
         try {
             Template template = handlebars.compile("index");
             String html = template.apply(chartMeta);
@@ -118,7 +118,7 @@ public class Engine {
      */
     public String renderHtml(Chart<?, ?> chart) {
         String jsonStr = EChartsSerializer.toJson(chart.getOption());
-        ChartMeta chartMeta = new ChartMeta(600, 600, jsonStr);
+        ChartMeta chartMeta = new ChartMeta("600px", "100%", jsonStr);
         Template template = null;
         try {
             template = handlebars.compile("base");
@@ -139,7 +139,7 @@ public class Engine {
      */
     public String renderHtml(Option option) {
         String jsonStr = EChartsSerializer.toJson(option);
-        ChartMeta chartMeta = new ChartMeta(600, 600, jsonStr);
+        ChartMeta chartMeta = new ChartMeta("600px", "100%", jsonStr);
         Template template = null;
         try {
             template = handlebars.compile("base");
@@ -162,7 +162,7 @@ public class Engine {
      */
     public String renderHtml(Option option, int height, int width) throws IOException {
         String jsonStr = EChartsSerializer.toJson(option);
-        ChartMeta chartMeta = new ChartMeta(height, width, jsonStr);
+        ChartMeta chartMeta = new ChartMeta("600px", "100%", jsonStr);
         try {
             Template template = handlebars.compile("base");
             return template.apply(chartMeta);    

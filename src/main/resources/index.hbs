@@ -28,8 +28,8 @@
         }
 
         #display-container {
-            width: {{width}}px;
-            height: {{height}}px;
+            width: {{width}};
+            height: {{height}};
             border: 2px solid black;
         }
     </style>
@@ -64,7 +64,6 @@
         let chart = echarts.init(document.getElementById("display-container")); 
         let option = {{{ option }}}
         chart.setOption(option);
-
     </script>
 </body>
 
