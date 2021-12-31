@@ -9,9 +9,9 @@ import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
 
 import org.icepear.echarts.Line;
+import org.icepear.echarts.charts.line.LineAreaStyle;
 import org.icepear.echarts.charts.line.LineSeries;
 import org.icepear.echarts.components.coord.cartesian.CategoryAxis;
-import org.icepear.echarts.components.series.AreaStyle;
 import org.icepear.echarts.serializer.EChartsSerializer;
 import org.junit.Test;
 
@@ -20,12 +20,12 @@ public class BasicAreaTest {
     public void testBasicArea() {
         Line line = new Line()
                 .addXAxis(new CategoryAxis()
-                        .setData(new String[] { "Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun" })
-                        .setBoundaryGap(false))
+                        .setBoundaryGap(false)
+                        .setData(new String[] { "Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun" }))
                 .addYAxis()
                 .addSeries(new LineSeries()
                         .setData(new Number[] { 820, 932, 901, 934, 1290, 1330, 1320 })
-                        .setAreaStyle(new AreaStyle()));
+                        .setAreaStyle(new LineAreaStyle()));
 
         Reader reader = new InputStreamReader(
                 this.getClass().getResourceAsStream("/simple/line/basic-area.json"));
