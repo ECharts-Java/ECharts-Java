@@ -1,0 +1,5 @@
+{
+    "name": "LineAreaStyle",
+    "type": "class",
+    "implements": ["LineAreaStyleOption"]
+  }

@@ -10,6 +10,7 @@ import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
 
 import org.icepear.echarts.Option;
+import org.icepear.echarts.charts.line.LineAreaStyle;
 import org.icepear.echarts.charts.line.LineEmphasis;
 import org.icepear.echarts.charts.line.LineSeries;
 import org.icepear.echarts.components.axisPointer.AxisPointerLabel;
@@ -17,7 +18,6 @@ import org.icepear.echarts.components.coord.cartesian.CategoryAxis;
 import org.icepear.echarts.components.coord.cartesian.ValueAxis;
 import org.icepear.echarts.components.grid.Grid;
 import org.icepear.echarts.components.legend.Legend;
-import org.icepear.echarts.components.series.AreaStyle;
 import org.icepear.echarts.components.series.SeriesLabel;
 import org.icepear.echarts.components.title.Title;
 import org.icepear.echarts.components.toolbox.Toolbox;
@@ -70,7 +70,7 @@ public class StackedAreaChartTest {
                 .setName("Email")
                 .setType("line")
                 .setStack("Total")
-                .setAreaStyle(new AreaStyle())
+                .setAreaStyle(new LineAreaStyle())
                 .setEmphasis(emphasis)
                 .setData(new Number[] { 120, 132, 101, 134, 90, 230, 210 });
 
@@ -78,7 +78,7 @@ public class StackedAreaChartTest {
                 .setName("Union Ads")
                 .setType("line")
                 .setStack("Total")
-                .setAreaStyle(new AreaStyle())
+                .setAreaStyle(new LineAreaStyle())
                 .setEmphasis(emphasis)
                 .setData(new Number[] { 220, 182, 191, 234, 290, 330, 310 });
 
@@ -86,7 +86,7 @@ public class StackedAreaChartTest {
                 .setName("Video Ads")
                 .setType("line")
                 .setStack("Total")
-                .setAreaStyle(new AreaStyle())
+                .setAreaStyle(new LineAreaStyle())
                 .setEmphasis(emphasis)
                 .setData(new Number[] { 150, 232, 201, 154, 190, 330, 410 });
 
@@ -94,7 +94,7 @@ public class StackedAreaChartTest {
                 .setName("Direct")
                 .setType("line")
                 .setStack("Total")
-                .setAreaStyle(new AreaStyle())
+                .setAreaStyle(new LineAreaStyle())
                 .setEmphasis(emphasis)
                 .setData(new Number[] { 320, 332, 301, 334, 390, 330, 320 });
 
@@ -102,7 +102,7 @@ public class StackedAreaChartTest {
                 .setName("Search Engine")
                 .setType("line")
                 .setStack("Total")
-                .setAreaStyle(new AreaStyle())
+                .setAreaStyle(new LineAreaStyle())
                 .setEmphasis(emphasis)
                 .setLabel(new SeriesLabel()
                         .setShow(true)
