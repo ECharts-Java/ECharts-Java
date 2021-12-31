@@ -1,0 +1,16 @@
+{
+  "xAxis": [
+    {
+      "type": "category",
+      "data": ["Matcha Latte", "Milk Tea", "Cheese Cocoa", "Walnut Brownie"]
+    }
+  ],
+  "yAxis": [{ "type": "value" }],
+  "tooltip": { "trigger": "item" },
+  "legend": { "show": true },
+  "series": [
+    { "type": "bar", "name": "2015", "data": [43.3, 83.1, 86.4, 72.4] },
+    { "type": "bar", "name": "2016", "data": [85.8, 73.4, 65.2, 53.9] },
+    { "type": "bar", "name": "2017", "data": [93.7, 55.1, 82.5, 39.1] }
+  ]
+}

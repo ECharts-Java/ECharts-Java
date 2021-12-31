@@ -210,7 +210,7 @@ public class Engine {
         ChartMeta chartMeta = new ChartMeta(height, width, jsonStr);
         try {
             Template template = handlebars.compile("base");
-            return template.apply(chartMeta);    
+            return template.apply(chartMeta);
         } catch (IOException e) {
             log.info("renderHtml: Handlebars cannot find corresponding templates.");
             return "";
@@ -229,6 +229,7 @@ public class Engine {
 
     /**
      * Render serialized json object of an Option
+     * 
      * @param option the option to be serialized
      * @return a string representation of a json object
      */

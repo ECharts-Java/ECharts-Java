@@ -8,6 +8,10 @@ import lombok.Setter;
 import lombok.experimental.Accessors;
 
 import org.icepear.echarts.origin.chart.bar.BarBackgroundStyleOption;
+import org.icepear.echarts.origin.chart.bar.BarDataItemOption;
+import org.icepear.echarts.origin.chart.bar.BarEmphasisOption;
+import org.icepear.echarts.origin.chart.bar.BarItemStyleOption;
+import org.icepear.echarts.origin.chart.bar.BarSeriesLabelOption;
 import org.icepear.echarts.origin.chart.bar.BarSeriesOption;
 import org.icepear.echarts.origin.util.LabelLineOption;
 import org.icepear.echarts.origin.util.OptionEncode;
@@ -125,7 +129,18 @@ public class BarSeries implements BarSeriesOption {
 
     private String[][] colorLayer;
 
+    @Setter(AccessLevel.NONE)
     private Object emphasis;
+
+    public BarSeries setEmphasis(BarEmphasisOption emphasis) {
+        this.emphasis = emphasis;
+        return this;
+    }
+
+    public BarSeries setEmphasis(Object emphasis) {
+        this.emphasis = emphasis;
+        return this;
+    }
 
     private Object select;
 
@@ -160,6 +175,11 @@ public class BarSeries implements BarSeriesOption {
 
     @Setter(AccessLevel.NONE)
     private Object data;
+
+    public BarSeries setData(BarDataItemOption[] data) {
+        this.data = data;
+        return this;
+    }
 
     public BarSeries setData(Number[] data) {
         this.data = data;
@@ -331,9 +351,9 @@ public class BarSeries implements BarSeriesOption {
 
     private Number largeThreshold;
 
-    private Object itemStyle;
+    private BarItemStyleOption itemStyle;
 
-    private Object label;
+    private BarSeriesLabelOption label;
 
     private String stack;
 

@@ -1,0 +1,26 @@
+{
+  "title": { "text": "Waterfall" },
+  "xAxis": [
+    {
+      "type": "category",
+      "data": ["Total", "Rent", "Utilities", "Transportation", "Meals", "Other"]
+    }
+  ],
+  "yAxis": [{ "type": "value" }],
+  "series": [
+    {
+      "type": "bar",
+      "name": "Placeholder",
+      "data": [0, 1700, 1400, 1200, 300, 0],
+      "itemStyle": { "borderColor": "transparent", "color": "transparent" },
+      "stack": "Total"
+    },
+    {
+      "type": "bar",
+      "name": "Life Cost",
+      "data": [2900, 1200, 300, 200, 900, 300],
+      "label": { "show": true, "position": "inside" },
+      "stack": "Total"
+    }
+  ]
+}

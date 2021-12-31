@@ -17,7 +17,7 @@ import org.icepear.echarts.serializer.EChartsSerializer;
 import org.junit.Test;
 
 public class StackedAreaTest {
-    protected LineSeries createSeries(String name, Object[] data) {
+    private LineSeries createSeries(String name, Object[] data) {
         return new LineSeries()
                 .setName(name)
                 .setStack("Total")
