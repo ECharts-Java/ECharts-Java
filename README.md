@@ -1,6 +1,21 @@
-# ECharts Java
-
-![example workflow](https://github.com/IcePear-Jzx/ECharts-Java/actions/workflows/maven.yml/badge.svg)
+<!-- <p align="center">
+    <img src="https://user-images.githubusercontent.com/19553554/71825144-2d568180-30d6-11ea-8ee0-63c849cfd934.png" alt="pyecharts logo" width=200 height=200 />
+</p> -->
+<h1 align="center">ECharts Java</h1>
+<p align="center">
+    <em>ECharts ❤️ Java = Echarts Java</em>
+</p>
+<p align="center">
+    <a href="https://github.com/IcePear-Jzx/ECharts-Java/actions">
+        <img src="https://github.com/IcePear-Jzx/ECharts-Java/actions/workflows/maven.yml/badge.svg" alt="Github Actions Status">
+    </a>
+    <a href="https://github.com/pyecharts/pyecharts/pulls">
+        <img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat" alt="Contributions welcome">
+    </a>
+    <a href="https://opensource.org/licenses/MIT">
+        <img src="https://img.shields.io/badge/License-MIT-brightgreen.svg" alt="License">
+    </a>
+</p>
 
 ## Introduction
 
@@ -57,7 +72,7 @@ public static void main(String[] args) {
     engine.render("index.html", bar);
 }
 ```
-![alt text](assets/imgs/multibar-render.gif)
+<img src="assets/imgs/multibar-render.gif" alt="multi-bar-render" style="width:85%;" />
 
 ### Generate Option Object and its Json Representation
 
@@ -75,10 +90,11 @@ public static void main(String[] args) {
     String jsonStr = engine.renderJsonOption(lineChart);
 }
 ```
-![Json Representation](assets/imgs/renderJsonOption.png)
+<img src="assets/imgs/renderJsonOption.png" alt="Json Representation" style="width:95%;" />
+
 ### Integrate with Spring Web Application
 
-![Spring Boot Integration](assets/imgs/line-renderHtml.gif)
+<img src="assets/imgs/line-renderHtml.gif" alt="spring-boot-integration" style="width:75%;" />
 
 For demo codes, please refer to the [docs](https://echarts.icepear.org/) and [example repo](https://github.com/incandescentxxc/Echarts-Java-Examples).
 
