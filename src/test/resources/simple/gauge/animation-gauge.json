@@ -1,0 +1,12 @@
+{
+  "tooltip": { "trigger": "item" },
+  "series": [
+    {
+      "type": "gauge",
+      "name": "Pressure",
+      "data": [{ "name": "SCORE", "value": 50 }],
+      "progress": { "show": true },
+      "detail": { "valueAnimation": true }
+    }
+  ]
+}
