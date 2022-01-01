@@ -13,7 +13,7 @@ import org.icepear.echarts.origin.data.helper.DataTransformConfigOption;
 @Data
 public class BoxplotTransform implements BoxplotTransformOption {
 
-    private String type;
+    private String type = "boxplot";
 
     @Setter(AccessLevel.NONE)
     private Object config;
