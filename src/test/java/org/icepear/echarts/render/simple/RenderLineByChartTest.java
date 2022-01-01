@@ -23,7 +23,7 @@ public class RenderLineByChartTest {
     }
 
     @Test
-    public void testRenderLineByChart() throws IOException {
+    public void testRenderLineByChart() {
         Engine engine = new Engine();
         engine.render("test.html", chart);
     }
