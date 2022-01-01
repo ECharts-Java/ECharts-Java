@@ -80,10 +80,14 @@ public static void main(String[] args) {
 }
 ```
 <<<<<<< HEAD
+<<<<<<< HEAD
 <img src="assets/imgs/multibar-render.gif" alt="multi-bar-render" style="width:85%;" />
 =======
 ![alt text](assets/imgs/multibar-render.gif)
 >>>>>>> 1ef373e (add readme)
+=======
+<img src="assets/imgs/multibar-render.gif" alt="multi-bar-render" style="width:85%;" />
+>>>>>>> 1a06c7a (add headings for readme)
 
 ### Generate Option Object and its Json Representation
 
@@ -102,6 +106,7 @@ public static void main(String[] args) {
 }
 ```
 <<<<<<< HEAD
+<<<<<<< HEAD
 <img src="assets/imgs/renderJsonOption.png" alt="Json Representation" style="width:95%;" />
 
 ### Integrate with Spring Web Application
@@ -111,9 +116,13 @@ public static void main(String[] args) {
 For demo codes, please refer to the [docs](https://echarts.icepear.org/) and [example repo](https://github.com/incandescentxxc/ECharts-Java-Examples).
 =======
 ![Json Representation](assets/imgs/renderJsonOption.png)
+=======
+<img src="assets/imgs/renderJsonOption.png" alt="Json Representation" style="width:95%;" />
+
+>>>>>>> 1a06c7a (add headings for readme)
 ### Integrate with Spring Web Application
 
-![Spring Boot Integration](assets/imgs/line-renderHtml.gif)
+<img src="assets/imgs/line-renderHtml.gif" alt="spring-boot-integration" style="width:75%;" />
 
 For demo codes, please refer to the [docs](https://echarts.icepear.org/) and [example repo](https://github.com/incandescentxxc/Echarts-Java-Examples).
 >>>>>>> 1ef373e (add readme)
