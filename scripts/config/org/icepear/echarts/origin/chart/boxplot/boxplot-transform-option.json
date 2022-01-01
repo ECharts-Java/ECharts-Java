@@ -3,7 +3,7 @@
   "type": "interface",
   "extends": ["DataTransformOption"],
   "fields": [
-    { "name": "type", "types": ["String"] },
+    { "name": "type", "types": ["String"], "default": "boxplot" },
     { "name": "config", "types": ["PrepareBoxplotDataOption"] }
   ],
   "comments": [

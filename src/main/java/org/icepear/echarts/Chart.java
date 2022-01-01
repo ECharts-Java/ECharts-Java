@@ -79,6 +79,11 @@ public abstract class Chart<T extends Chart<?, ?>, E extends SeriesOption> {
         return self;
     }
 
+    public T addDataset(Dataset dataset) {
+        datasets.add(dataset);
+        return self;
+    }
+
     public T setVisualMap(Number min, Number max) {
         option.setVisualMap(new ContinousVisualMap().setMin(min).setMax(max));
         return self;
