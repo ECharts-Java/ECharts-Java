@@ -29,7 +29,6 @@ public class Engine {
      * @param html     a String representing in html format
      * @param path     path to save the html file
      * @param willOpen whether allowing to open the html in browser automatically
-     * @throws IOException
      */
     private void writeHtml(String html, String path, Boolean willOpen) {
         try {
@@ -51,7 +50,6 @@ public class Engine {
      * 
      * @param path  path to save the html file
      * @param chart the chart to be rendered
-     * @throws IOException
      */
     public void render(String path, Chart<?, ?> chart) {
         String jsonStr = EChartsSerializer.toJson(chart.getOption());
@@ -71,7 +69,6 @@ public class Engine {
      * 
      * @param path   path to save the html file
      * @param option the option used to init the chart
-     * @throws IOException
      */
     public void render(String path, Option option) {
         String jsonStr = EChartsSerializer.toJson(option);
@@ -90,11 +87,10 @@ public class Engine {
      * customized width, height, and willOpen
      * 
      * @param path     path to save the html file
-     * @param option   the option used to init the chart
+     * @param chart    the chart to be rendered
      * @param height   the height of the chart, ends with "px" or "%"
      * @param width    the width of the chart, ends with "px" or "%"
      * @param willOpen whether allowing to open the html in browser automatically
-     * @throws IOException
      */
     public void render(String path, Chart<?,?> chart, String height, String width, Boolean willOpen) {
         String jsonStr = EChartsSerializer.toJson(chart.getOption());
@@ -117,7 +113,6 @@ public class Engine {
      * @param height   the height of the chart, ends with "px" or "%"
      * @param width    the width of the chart, ends with "px" or "%"
      * @param willOpen whether allowing to open the html in browser automatically
-     * @throws IOException
      */
     public void render(String path, Option option, String height, String width, Boolean willOpen) {
         String jsonStr = EChartsSerializer.toJson(option);
@@ -137,7 +132,6 @@ public class Engine {
      * 
      * @param chart the chart to be rendered
      * @return a string in html format
-     * @throws IOException
      */
     public String renderHtml(Chart<?, ?> chart) {
         String jsonStr = EChartsSerializer.toJson(chart.getOption());
@@ -158,7 +152,6 @@ public class Engine {
      * 
      * @param option the option to initiate the chart
      * @return the resulted string in html format
-     * @throws IOException
      */
     public String renderHtml(Option option) {
         String jsonStr = EChartsSerializer.toJson(option);
@@ -177,13 +170,12 @@ public class Engine {
      * Used in the simple cases, render the echarts in customized
      * width and height, without download button
      * 
-     * @param option the option to initiate the chart
+     * @param chart  the chart to be rendered
      * @param height the height of the chart, ends with "px" or "%"
      * @param width  the width of the chart, ends with "px" or "%"
      * @return the resulted string in html format
-     * @throws IOException
      */
-    public String renderHtml(Chart<?,?> chart , String height, String width) throws IOException {
+    public String renderHtml(Chart<?,?> chart , String height, String width) {
         String jsonStr = EChartsSerializer.toJson(chart.getOption());
         ChartMeta chartMeta = new ChartMeta(height, width, jsonStr);
         try {
@@ -203,9 +195,8 @@ public class Engine {
      * @param height the height of the chart
      * @param width  the width of the chart
      * @return the resulted string in html format
-     * @throws IOException
      */
-    public String renderHtml(Option option, String height, String width) throws IOException {
+    public String renderHtml(Option option, String height, String width) {
         String jsonStr = EChartsSerializer.toJson(option);
         ChartMeta chartMeta = new ChartMeta(height, width, jsonStr);
         try {
