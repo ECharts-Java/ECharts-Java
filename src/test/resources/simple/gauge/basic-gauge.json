@@ -1,0 +1,4 @@
+{
+  "tooltip": { "trigger": "item" },
+  "series": [{ "type": "gauge", "data": [{ "name": "SCORE", "value": 50 }] }]
+}
