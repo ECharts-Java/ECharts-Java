@@ -74,4 +74,27 @@ public class FunnelDataItem implements FunnelDataItemOption {
     }
 
     private Boolean selected;
+
+    @Setter(AccessLevel.NONE)
+    private Object value;
+
+    public FunnelDataItem setValue(Number value) {
+        this.value = value;
+        return this;
+    }
+
+    public FunnelDataItem setValue(Number[] value) {
+        this.value = value;
+        return this;
+    }
+
+    public FunnelDataItem setValue(String value) {
+        this.value = value;
+        return this;
+    }
+
+    public FunnelDataItem setValue(String[] value) {
+        this.value = value;
+        return this;
+    }
 }
