@@ -11,6 +11,7 @@ import org.icepear.echarts.origin.chart.radar.RadarDataItemOption;
 import org.icepear.echarts.origin.chart.radar.RadarSeriesOption;
 import org.icepear.echarts.origin.util.AreaStyleOption;
 import org.icepear.echarts.origin.util.ItemStyleOption;
+import org.icepear.echarts.origin.util.LabelLayoutOption;
 import org.icepear.echarts.origin.util.LabelLineOption;
 import org.icepear.echarts.origin.util.LineStyleOption;
 import org.icepear.echarts.origin.util.OptionEncode;
@@ -230,7 +231,7 @@ public class RadarSeries implements RadarSeriesOption {
 
     private LabelLineOption labelLine;
 
-    private Object labelLayout;
+    private LabelLayoutOption labelLayout;
 
     private Object stateAnimation;
 

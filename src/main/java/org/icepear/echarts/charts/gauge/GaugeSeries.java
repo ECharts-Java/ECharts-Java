@@ -15,6 +15,7 @@ import org.icepear.echarts.origin.chart.gauge.GaugeProgressOption;
 import org.icepear.echarts.origin.chart.gauge.GaugeSeriesOption;
 import org.icepear.echarts.origin.chart.gauge.GaugeTitleOption;
 import org.icepear.echarts.origin.util.ItemStyleOption;
+import org.icepear.echarts.origin.util.LabelLayoutOption;
 import org.icepear.echarts.origin.util.LabelLineOption;
 import org.icepear.echarts.origin.util.OptionEncode;
 
@@ -222,7 +223,7 @@ public class GaugeSeries implements GaugeSeriesOption {
 
     private LabelLineOption labelLine;
 
-    private Object labelLayout;
+    private LabelLayoutOption labelLayout;
 
     private Object stateAnimation;
 

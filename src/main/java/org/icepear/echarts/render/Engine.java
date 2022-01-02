@@ -92,7 +92,7 @@ public class Engine {
      * @param width    the width of the chart, ends with "px" or "%"
      * @param willOpen whether allowing to open the html in browser automatically
      */
-    public void render(String path, Chart<?,?> chart, String height, String width, Boolean willOpen) {
+    public void render(String path, Chart<?, ?> chart, String height, String width, Boolean willOpen) {
         String jsonStr = EChartsSerializer.toJson(chart.getOption());
         ChartMeta chartMeta = new ChartMeta(height, width, jsonStr);
         try {
@@ -175,12 +175,12 @@ public class Engine {
      * @param width  the width of the chart, ends with "px" or "%"
      * @return the resulted string in html format
      */
-    public String renderHtml(Chart<?,?> chart , String height, String width) {
+    public String renderHtml(Chart<?, ?> chart, String height, String width) {
         String jsonStr = EChartsSerializer.toJson(chart.getOption());
         ChartMeta chartMeta = new ChartMeta(height, width, jsonStr);
         try {
             Template template = handlebars.compile("base");
-            return template.apply(chartMeta);    
+            return template.apply(chartMeta);
         } catch (IOException e) {
             log.info("renderHtml: Handlebars cannot find corresponding templates.");
             return "";

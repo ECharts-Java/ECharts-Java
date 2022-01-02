@@ -10,6 +10,7 @@ import lombok.experimental.Accessors;
 import org.icepear.echarts.origin.chart.themeRiver.ThemeRiverSeriesLabelOption;
 import org.icepear.echarts.origin.chart.themeRiver.ThemeRiverSeriesOption;
 import org.icepear.echarts.origin.util.ItemStyleOption;
+import org.icepear.echarts.origin.util.LabelLayoutOption;
 import org.icepear.echarts.origin.util.LabelLineOption;
 
 @Accessors(chain = true)
@@ -210,7 +211,7 @@ public class ThemeRiverSeries implements ThemeRiverSeriesOption {
 
     private LabelLineOption labelLine;
 
-    private Object labelLayout;
+    private LabelLayoutOption labelLayout;
 
     private Object stateAnimation;
 

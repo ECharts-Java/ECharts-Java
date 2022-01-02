@@ -32,7 +32,7 @@ import org.junit.Test;
 
 public class BeijingAQITest {
     private JsonArray getData() {
-        Reader reader = new InputStreamReader(this.getClass().getResourceAsStream("/advanced/mock/aqi-beijing.json"));
+        Reader reader = new InputStreamReader(this.getClass().getResourceAsStream("/mock/aqi-beijing.json"));
         JsonElement data = JsonParser.parseReader(reader);
         return data.getAsJsonArray();
     }

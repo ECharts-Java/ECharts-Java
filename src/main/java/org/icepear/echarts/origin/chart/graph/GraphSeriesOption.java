@@ -84,13 +84,13 @@ public interface GraphSeriesOption
 
     GraphSeriesOption setLineStyle(GraphEdgeLineStyleOption lineStyle);
 
-    GraphSeriesOption setEmphasis(Object emphasis);
+    GraphSeriesOption setEmphasis(GraphEmphasisOption emphasis);
 
-    GraphSeriesOption setBlur(Object blur);
+    GraphSeriesOption setBlur(GraphBlurOption blur);
 
-    GraphSeriesOption setSelect(Object select);
+    GraphSeriesOption setSelect(GraphSelectOption select);
 
-    GraphSeriesOption setCircular(Object circular);
+    GraphSeriesOption setCircular(GraphCircularOption circular);
 
     GraphSeriesOption setForce(GraphForceOption force);
 }

@@ -1,0 +1,5 @@
+{
+  "name": "GraphEmphasis",
+  "type": "class",
+  "implements": ["GraphEmphasisOption"]
+}

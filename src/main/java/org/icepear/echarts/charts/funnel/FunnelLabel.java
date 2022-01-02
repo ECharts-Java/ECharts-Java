@@ -135,18 +135,7 @@ public class FunnelLabel implements FunnelLabelOption {
 
     private Boolean show;
 
-    @Setter(AccessLevel.NONE)
-    private Object position;
-
-    public FunnelLabel setPosition(Object position) {
-        this.position = position;
-        return this;
-    }
-
-    public FunnelLabel setPosition(String position) {
-        this.position = position;
-        return this;
-    }
+    private String position;
 
     private Number distance;
 

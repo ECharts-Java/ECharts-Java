@@ -135,7 +135,7 @@ public class Label implements LabelOption {
 
     private Boolean show;
 
-    private Object position;
+    private String position;
 
     private Number distance;
 
