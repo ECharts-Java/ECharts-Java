@@ -13,6 +13,7 @@ import org.icepear.echarts.origin.chart.sankey.SankeyLevelOption;
 import org.icepear.echarts.origin.chart.sankey.SankeyNodeItemOption;
 import org.icepear.echarts.origin.chart.sankey.SankeySeriesOption;
 import org.icepear.echarts.origin.util.ItemStyleOption;
+import org.icepear.echarts.origin.util.LabelLayoutOption;
 import org.icepear.echarts.origin.util.LabelLineOption;
 import org.icepear.echarts.origin.util.SeriesLabelOption;
 
@@ -204,7 +205,7 @@ public class SankeySeries implements SankeySeriesOption {
 
     private LabelLineOption labelLine;
 
-    private Object labelLayout;
+    private LabelLayoutOption labelLayout;
 
     private Object stateAnimation;
 

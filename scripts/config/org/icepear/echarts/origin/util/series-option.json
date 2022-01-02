@@ -71,7 +71,7 @@
     },
     {
       "name": "labelLayout",
-      "types": ["LabelLayoutOptionCallback", "LabelLayoutOption"]
+      "types": ["LabelLayoutOption"]
     },
     {
       "name": "stateAnimation",

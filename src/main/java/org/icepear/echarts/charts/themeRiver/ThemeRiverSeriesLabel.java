@@ -135,7 +135,7 @@ public class ThemeRiverSeriesLabel implements ThemeRiverSeriesLabelOption {
 
     private Boolean show;
 
-    private Object position;
+    private String position;
 
     private Number distance;
 

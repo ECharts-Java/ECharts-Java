@@ -12,6 +12,7 @@ import org.icepear.echarts.origin.chart.pie.PieEmphasisOption;
 import org.icepear.echarts.origin.chart.pie.PieItemStyleOption;
 import org.icepear.echarts.origin.chart.pie.PieLabelOption;
 import org.icepear.echarts.origin.chart.pie.PieSeriesOption;
+import org.icepear.echarts.origin.util.LabelLayoutOption;
 import org.icepear.echarts.origin.util.LabelLineOption;
 import org.icepear.echarts.origin.util.OptionEncode;
 
@@ -235,7 +236,7 @@ public class PieSeries implements PieSeriesOption {
 
     private LabelLineOption labelLine;
 
-    private Object labelLayout;
+    private LabelLayoutOption labelLayout;
 
     private Object stateAnimation;
 

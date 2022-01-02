@@ -11,6 +11,7 @@ import org.icepear.echarts.origin.chart.line.LineAreaStyleOption;
 import org.icepear.echarts.origin.chart.line.LineEmphasisOption;
 import org.icepear.echarts.origin.chart.line.LineSeriesOption;
 import org.icepear.echarts.origin.util.ItemStyleOption;
+import org.icepear.echarts.origin.util.LabelLayoutOption;
 import org.icepear.echarts.origin.util.LabelLineOption;
 import org.icepear.echarts.origin.util.LineStyleOption;
 import org.icepear.echarts.origin.util.OptionEncode;
@@ -226,7 +227,7 @@ public class LineSeries implements LineSeriesOption {
 
     private LabelLineOption labelLine;
 
-    private Object labelLayout;
+    private LabelLayoutOption labelLayout;
 
     private Object stateAnimation;
 

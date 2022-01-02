@@ -53,10 +53,10 @@
     { "name": "label", "types": ["SeriesLabelOption"] },
     { "name": "itemStyle", "types": ["ItemStyleOption"] },
     { "name": "lineStyle", "types": ["GraphEdgeLineStyleOption"] },
-    { "name": "emphasis", "types": ["Object"] },
-    { "name": "blur", "types": ["Object"] },
-    { "name": "select", "types": ["Object"] },
-    { "name": "circular", "types": ["Object"] },
+    { "name": "emphasis", "types": ["GraphEmphasisOption"] },
+    { "name": "blur", "types": ["GraphBlurOption"] },
+    { "name": "select", "types": ["GraphSelectOption"] },
+    { "name": "circular", "types": ["GraphCircularOption"] },
     { "name": "force", "types": ["GraphForceOption"] }
   ],
   "comments": [
