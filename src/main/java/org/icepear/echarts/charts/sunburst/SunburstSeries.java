@@ -11,6 +11,7 @@ import org.icepear.echarts.origin.chart.sunburst.SunburstItemStyleOption;
 import org.icepear.echarts.origin.chart.sunburst.SunburstLabelOption;
 import org.icepear.echarts.origin.chart.sunburst.SunburstSeriesLevelOption;
 import org.icepear.echarts.origin.chart.sunburst.SunburstSeriesOption;
+import org.icepear.echarts.origin.util.LabelLayoutOption;
 import org.icepear.echarts.origin.util.LabelLineOption;
 
 @Accessors(chain = true)
@@ -201,7 +202,7 @@ public class SunburstSeries implements SunburstSeriesOption {
 
     private LabelLineOption labelLine;
 
-    private Object labelLayout;
+    private LabelLayoutOption labelLayout;
 
     private Object stateAnimation;
 

@@ -45,7 +45,7 @@ public interface SeriesOption extends ComponentOption, AnimationOptionMixin, Col
 
     SeriesOption setLabelLine(LabelLineOption labelLine);
 
-    SeriesOption setLabelLayout(Object labelLayout);
+    SeriesOption setLabelLayout(LabelLayoutOption labelLayout);
 
     SeriesOption setStateAnimation(Object stateAnimation);
 

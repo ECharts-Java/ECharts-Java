@@ -7,13 +7,18 @@ import lombok.Data;
 import lombok.Setter;
 import lombok.experimental.Accessors;
 
+import org.icepear.echarts.origin.chart.graph.GraphBlurOption;
 import org.icepear.echarts.origin.chart.graph.GraphCategoryItemOption;
+import org.icepear.echarts.origin.chart.graph.GraphCircularOption;
 import org.icepear.echarts.origin.chart.graph.GraphEdgeItemOption;
 import org.icepear.echarts.origin.chart.graph.GraphEdgeLineStyleOption;
+import org.icepear.echarts.origin.chart.graph.GraphEmphasisOption;
 import org.icepear.echarts.origin.chart.graph.GraphForceOption;
 import org.icepear.echarts.origin.chart.graph.GraphNodeItemOption;
+import org.icepear.echarts.origin.chart.graph.GraphSelectOption;
 import org.icepear.echarts.origin.chart.graph.GraphSeriesOption;
 import org.icepear.echarts.origin.util.ItemStyleOption;
+import org.icepear.echarts.origin.util.LabelLayoutOption;
 import org.icepear.echarts.origin.util.LabelLineOption;
 import org.icepear.echarts.origin.util.SeriesLabelOption;
 import org.icepear.echarts.origin.util.SeriesLineLabelOption;
@@ -131,11 +136,44 @@ public class GraphSeries implements GraphSeriesOption {
 
     private String[][] colorLayer;
 
+    @Setter(AccessLevel.NONE)
     private Object emphasis;
 
+    public GraphSeries setEmphasis(GraphEmphasisOption emphasis) {
+        this.emphasis = emphasis;
+        return this;
+    }
+
+    public GraphSeries setEmphasis(Object emphasis) {
+        this.emphasis = emphasis;
+        return this;
+    }
+
+    @Setter(AccessLevel.NONE)
     private Object select;
 
+    public GraphSeries setSelect(GraphSelectOption select) {
+        this.select = select;
+        return this;
+    }
+
+    public GraphSeries setSelect(Object select) {
+        this.select = select;
+        return this;
+    }
+
+    @Setter(AccessLevel.NONE)
     private Object blur;
+
+    public GraphSeries setBlur(GraphBlurOption blur) {
+        this.blur = blur;
+        return this;
+    }
+
+    public GraphSeries setBlur(Object blur) {
+        this.blur = blur;
+        return this;
+    }
 
     private Object markArea;
 
@@ -236,7 +274,7 @@ public class GraphSeries implements GraphSeriesOption {
 
     private LabelLineOption labelLine;
 
-    private Object labelLayout;
+    private LabelLayoutOption labelLayout;
 
     private Object stateAnimation;
 
@@ -517,7 +555,7 @@ public class GraphSeries implements GraphSeriesOption {
 
     private GraphEdgeLineStyleOption lineStyle;
 
-    private Object circular;
+    private GraphCircularOption circular;
 
     private GraphForceOption force;
 }

@@ -1,0 +1,24 @@
+{
+  "name": "LabelLayoutOption",
+  "type": "interface",
+  "extends": [],
+  "fields": [
+    { "name": "moveOverlap", "types": ["String"] },
+    { "name": "hideOverlap", "types": ["Boolean"] },
+    { "name": "draggable", "types": ["Boolean"] },
+    { "name": "x", "types": ["Number", "String"] },
+    { "name": "y", "types": ["Number", "String"] },
+    { "name": "dx", "types": ["Number"] },
+    { "name": "dy", "types": ["Number"] },
+    { "name": "rotate", "types": ["Number"] },
+    { "name": "align", "types": ["String"] },
+    { "name": "verticalAlign", "types": ["String"] },
+    { "name": "width", "types": ["Number"] },
+    { "name": "height", "types": ["Number"] },
+    { "name": "fontSize", "types": ["Number"] },
+    { "name": "labelLinePoints", "types": ["Number[]"] }
+  ],
+  "comments": [
+    "https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/util/types.ts#L1189"
+  ]
+}

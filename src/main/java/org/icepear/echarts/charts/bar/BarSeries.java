@@ -13,6 +13,7 @@ import org.icepear.echarts.origin.chart.bar.BarEmphasisOption;
 import org.icepear.echarts.origin.chart.bar.BarItemStyleOption;
 import org.icepear.echarts.origin.chart.bar.BarSeriesLabelOption;
 import org.icepear.echarts.origin.chart.bar.BarSeriesOption;
+import org.icepear.echarts.origin.util.LabelLayoutOption;
 import org.icepear.echarts.origin.util.LabelLineOption;
 import org.icepear.echarts.origin.util.OptionEncode;
 
@@ -256,7 +257,7 @@ public class BarSeries implements BarSeriesOption {
 
     private LabelLineOption labelLine;
 
-    private Object labelLayout;
+    private LabelLayoutOption labelLayout;
 
     private Object stateAnimation;
 

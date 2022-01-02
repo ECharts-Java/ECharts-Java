@@ -1,6 +1,5 @@
 {
-    "name": "GraphForce",
-    "type": "class",
-    "implements": ["GraphForceOption"]
-  }
-  
+  "name": "GraphForce",
+  "type": "class",
+  "implements": ["GraphForceOption"]
+}

@@ -135,18 +135,7 @@ public class SunburstLabel implements SunburstLabelOption {
 
     private Boolean show;
 
-    @Setter(AccessLevel.NONE)
-    private Object position;
-
-    public SunburstLabel setPosition(Object position) {
-        this.position = position;
-        return this;
-    }
-
-    public SunburstLabel setPosition(String position) {
-        this.position = position;
-        return this;
-    }
+    private String position;
 
     private Number distance;
 

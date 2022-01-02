@@ -10,6 +10,7 @@ import lombok.experimental.Accessors;
 import org.icepear.echarts.origin.chart.scatter.ScatterDataItemOption;
 import org.icepear.echarts.origin.chart.scatter.ScatterSeriesOption;
 import org.icepear.echarts.origin.util.ItemStyleOption;
+import org.icepear.echarts.origin.util.LabelLayoutOption;
 import org.icepear.echarts.origin.util.LabelLineOption;
 import org.icepear.echarts.origin.util.OptionEncode;
 import org.icepear.echarts.origin.util.SeriesLabelOption;
@@ -243,7 +244,7 @@ public class ScatterSeries implements ScatterSeriesOption {
 
     private LabelLineOption labelLine;
 
-    private Object labelLayout;
+    private LabelLayoutOption labelLayout;
 
     private Object stateAnimation;
 
