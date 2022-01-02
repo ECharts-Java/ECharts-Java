@@ -135,7 +135,7 @@ public class GaugeDetail implements GaugeDetailOption {
 
     private Boolean show;
 
-    private Object position;
+    private String position;
 
     private Number distance;
 

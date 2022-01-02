@@ -135,7 +135,7 @@ public class GaugeTitle implements GaugeTitleOption {
 
     private Boolean show;
 
-    private Object position;
+    private String position;
 
     private Number distance;
 

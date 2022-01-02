@@ -9,7 +9,7 @@
     },
     {
       "name": "position",
-      "types": ["Object"]
+      "types": ["String"]
     },
     {
       "name": "distance",

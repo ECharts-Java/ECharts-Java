@@ -1,0 +1,5 @@
+{
+  "name": "GraphCircular",
+  "type": "class",
+  "implements": ["GraphCircularOption"]
+}

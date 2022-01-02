@@ -135,7 +135,7 @@ public class SeriesLabel implements SeriesLabelOption {
 
     private Boolean show;
 
-    private Object position;
+    private String position;
 
     private Number distance;
 

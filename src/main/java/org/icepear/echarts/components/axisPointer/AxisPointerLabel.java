@@ -135,7 +135,7 @@ public class AxisPointerLabel implements AxisPointerLabelOption {
 
     private Boolean show;
 
-    private Object position;
+    private String position;
 
     private Number distance;
 

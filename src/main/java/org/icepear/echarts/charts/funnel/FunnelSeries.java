@@ -11,6 +11,7 @@ import org.icepear.echarts.origin.chart.funnel.FunnelDataItemOption;
 import org.icepear.echarts.origin.chart.funnel.FunnelLabelOption;
 import org.icepear.echarts.origin.chart.funnel.FunnelSeriesOption;
 import org.icepear.echarts.origin.util.ItemStyleOption;
+import org.icepear.echarts.origin.util.LabelLayoutOption;
 import org.icepear.echarts.origin.util.LabelLineOption;
 import org.icepear.echarts.origin.util.OptionEncode;
 
@@ -223,7 +224,7 @@ public class FunnelSeries implements FunnelSeriesOption {
 
     private LabelLineOption labelLine;
 
-    private Object labelLayout;
+    private LabelLayoutOption labelLayout;
 
     private Object stateAnimation;
 

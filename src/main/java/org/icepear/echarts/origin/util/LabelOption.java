@@ -9,7 +9,7 @@ public interface LabelOption extends TextCommonOption {
 
     LabelOption setShow(Boolean show);
 
-    LabelOption setPosition(Object position);
+    LabelOption setPosition(String position);
 
     LabelOption setDistance(Number distance);
 

@@ -135,18 +135,7 @@ public class SeriesLineLabel implements SeriesLineLabelOption {
 
     private Boolean show;
 
-    @Setter(AccessLevel.NONE)
-    private Object position;
-
-    public SeriesLineLabel setPosition(Object position) {
-        this.position = position;
-        return this;
-    }
-
-    public SeriesLineLabel setPosition(String position) {
-        this.position = position;
-        return this;
-    }
+    private String position;
 
     @Setter(AccessLevel.NONE)
     private Object distance;

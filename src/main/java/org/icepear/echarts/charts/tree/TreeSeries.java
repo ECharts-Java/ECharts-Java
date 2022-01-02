@@ -11,6 +11,7 @@ import org.icepear.echarts.origin.chart.tree.TreeSeriesLeavesOption;
 import org.icepear.echarts.origin.chart.tree.TreeSeriesNodeItemOption;
 import org.icepear.echarts.origin.chart.tree.TreeSeriesOption;
 import org.icepear.echarts.origin.util.ItemStyleOption;
+import org.icepear.echarts.origin.util.LabelLayoutOption;
 import org.icepear.echarts.origin.util.LabelLineOption;
 import org.icepear.echarts.origin.util.SeriesLabelOption;
 
@@ -202,7 +203,7 @@ public class TreeSeries implements TreeSeriesOption {
 
     private LabelLineOption labelLine;
 
-    private Object labelLayout;
+    private LabelLayoutOption labelLayout;
 
     private Object stateAnimation;
 

@@ -1,0 +1,5 @@
+{
+  "name": "LabelLayout",
+  "type": "class",
+  "implements": ["LabelLayoutOption"]
+}
