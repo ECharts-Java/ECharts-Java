@@ -3,7 +3,7 @@
 </p> -->
 <h1 align="center">ECharts Java</h1>
 <p align="center">
-    <em>ECharts ❤️ Java = Echarts Java</em>
+    <em>ECharts ❤️ Java = ECharts Java</em>
 </p>
 <p align="center">
     <a href="https://github.com/IcePear-Jzx/ECharts-Java/actions">
@@ -96,7 +96,7 @@ public static void main(String[] args) {
 
 <img src="assets/imgs/line-renderHtml.gif" alt="spring-boot-integration" style="width:75%;" />
 
-For demo codes, please refer to the [docs](https://echarts.icepear.org/) and [example repo](https://github.com/incandescentxxc/Echarts-Java-Examples).
+For demo codes, please refer to the [docs](https://echarts.icepear.org/) and [example repo](https://github.com/incandescentxxc/ECharts-Java-Examples).
 
 ## Gallery
 TODO
@@ -110,7 +110,7 @@ Welcome more contribution in the community!
 ## Acknowledgement
 - This project is inspired by the Homework 6 of the course [Principles of Software Construction Objects, Design, and Concurrency](https://cmu-17-214.github.io/f2021/), Fall 2021, at [Carnegie Mellon University](https://www.cmu.edu/). We sincerely thank [Christian](https://www.cs.cmu.edu/~ckaestne/) and [Vincent](https://vhellendoorn.github.io/) for the wonderful course.
 
-- This project is also inspired by the [pyecharts](https://github.com/pyecharts/pyecharts) and [go-echarts](https://github.com/go-echarts/go-echarts), which are the Echart siblings in Python and Go languages.
+- This project is also inspired by the [pyecharts](https://github.com/pyecharts/pyecharts) and [go-echarts](https://github.com/go-echarts/go-echarts), which are the ECharts siblings in Python and Go languages.
 
 ## License
 
