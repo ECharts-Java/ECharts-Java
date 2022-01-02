@@ -15,6 +15,9 @@
     <a href="https://opensource.org/licenses/Apache-2.0">
         <img src="https://img.shields.io/badge/License-Apache_2.0-blue.svg" alt="License">
     </a>
+    <a href="https://maven-badges.herokuapp.com/maven-central/org.icepear.echarts/echarts-java">
+        <img src="https://maven-badges.herokuapp.com/maven-central/org.icepear.echarts/echarts-java/badge.svg" alt="Maven Central">
+    </a>
 </p>
 
 ## Introduction
