@@ -1,8 +1,6 @@
 
 package org.icepear.echarts.render.simple;
 
-import java.io.IOException;
-
 import org.icepear.echarts.Chart;
 import org.icepear.echarts.Line;
 import org.icepear.echarts.render.Engine;
