@@ -54,7 +54,7 @@ implementation 'org.icepear.echarts:echarts-java:1.0.0'
 
 For more, refer to [here](https://search.maven.org/artifact/org.icepear.echarts/echarts-java/1.0.0/jar).
 
-## Usages 
+## Usage
 
 ### Generate Local HTML and Download Image
 
