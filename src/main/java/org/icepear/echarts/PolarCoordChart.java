@@ -15,6 +15,11 @@ public abstract class PolarCoordChart<T extends Chart<?, ?>, E extends SeriesOpt
         option.setPolar(new PolarAxis());
     }
 
+    public T setPolarAxis() {
+        option.setPolar(new PolarAxis());
+        return self;
+    }
+
     public T setPolarAxis(String[] radius) {
         option.setPolar(new PolarAxis().setRadius(radius));
         return self;
