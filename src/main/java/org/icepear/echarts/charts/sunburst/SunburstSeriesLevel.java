@@ -7,11 +7,11 @@ import lombok.experimental.Accessors;
 
 import org.icepear.echarts.origin.chart.sunburst.SunburstItemStyleOption;
 import org.icepear.echarts.origin.chart.sunburst.SunburstLabelOption;
-import org.icepear.echarts.origin.chart.sunburst.SunburstSeriesLevelOption;
+import org.icepear.echarts.origin.chart.sunburst.SunburstLevelOption;
 
 @Accessors(chain = true)
 @Data
-public class SunburstSeriesLevel implements SunburstSeriesLevelOption {
+public class SunburstSeriesLevel implements SunburstLevelOption {
 
     private SunburstItemStyleOption itemStyle;
 

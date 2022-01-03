@@ -7,11 +7,11 @@ import lombok.experimental.Accessors;
 
 import org.icepear.echarts.origin.chart.sunburst.SunburstItemStyleOption;
 import org.icepear.echarts.origin.chart.sunburst.SunburstLabelOption;
-import org.icepear.echarts.origin.chart.sunburst.SunburstSeriesNodeItemOption;
+import org.icepear.echarts.origin.chart.sunburst.SunburstNodeItemOption;
 
 @Accessors(chain = true)
 @Data
-public class SunburstSeriesNodeItem implements SunburstSeriesNodeItemOption {
+public class SunburstNodeItem implements SunburstNodeItemOption {
 
     private SunburstItemStyleOption itemStyle;
 
@@ -26,12 +26,12 @@ public class SunburstSeriesNodeItem implements SunburstSeriesNodeItemOption {
     @Setter(AccessLevel.NONE)
     private Object id;
 
-    public SunburstSeriesNodeItem setId(Number id) {
+    public SunburstNodeItem setId(Number id) {
         this.id = id;
         return this;
     }
 
-    public SunburstSeriesNodeItem setId(String id) {
+    public SunburstNodeItem setId(String id) {
         this.id = id;
         return this;
     }
@@ -39,12 +39,12 @@ public class SunburstSeriesNodeItem implements SunburstSeriesNodeItemOption {
     @Setter(AccessLevel.NONE)
     private Object name;
 
-    public SunburstSeriesNodeItem setName(Number name) {
+    public SunburstNodeItem setName(Number name) {
         this.name = name;
         return this;
     }
 
-    public SunburstSeriesNodeItem setName(String name) {
+    public SunburstNodeItem setName(String name) {
         this.name = name;
         return this;
     }
@@ -52,12 +52,12 @@ public class SunburstSeriesNodeItem implements SunburstSeriesNodeItemOption {
     @Setter(AccessLevel.NONE)
     private Object groupId;
 
-    public SunburstSeriesNodeItem setGroupId(Number groupId) {
+    public SunburstNodeItem setGroupId(Number groupId) {
         this.groupId = groupId;
         return this;
     }
 
-    public SunburstSeriesNodeItem setGroupId(String groupId) {
+    public SunburstNodeItem setGroupId(String groupId) {
         this.groupId = groupId;
         return this;
     }
@@ -67,32 +67,32 @@ public class SunburstSeriesNodeItem implements SunburstSeriesNodeItemOption {
     @Setter(AccessLevel.NONE)
     private Object value;
 
-    public SunburstSeriesNodeItem setValue(Number value) {
+    public SunburstNodeItem setValue(Number value) {
         this.value = value;
         return this;
     }
 
-    public SunburstSeriesNodeItem setValue(Number[] value) {
+    public SunburstNodeItem setValue(Number[] value) {
         this.value = value;
         return this;
     }
 
-    public SunburstSeriesNodeItem setValue(Object value) {
+    public SunburstNodeItem setValue(Object value) {
         this.value = value;
         return this;
     }
 
-    public SunburstSeriesNodeItem setValue(Object[] value) {
+    public SunburstNodeItem setValue(Object[] value) {
         this.value = value;
         return this;
     }
 
-    public SunburstSeriesNodeItem setValue(String value) {
+    public SunburstNodeItem setValue(String value) {
         this.value = value;
         return this;
     }
 
-    public SunburstSeriesNodeItem setValue(String[] value) {
+    public SunburstNodeItem setValue(String[] value) {
         this.value = value;
         return this;
     }
@@ -103,7 +103,7 @@ public class SunburstSeriesNodeItem implements SunburstSeriesNodeItemOption {
 
     private String target;
 
-    private SunburstSeriesNodeItemOption[] children;
+    private SunburstNodeItemOption[] children;
 
     private Boolean collapsed;
 

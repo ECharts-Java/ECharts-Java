@@ -1,5 +1,5 @@
 {
-  "name": "ParallelSeriesDataItemOption",
+  "name": "ParallelDataItemOption",
   "type": "interface",
   "extends": ["ParallelStateOption", "StatesOptionMixin"],
   "fields": [{ "name": "value", "types": ["String[]", "Number[]", "Date[]"] }],

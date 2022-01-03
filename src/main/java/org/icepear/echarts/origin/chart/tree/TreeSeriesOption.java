@@ -9,7 +9,7 @@ import org.icepear.echarts.origin.util.SymbolOptionMixin;
  * https://github.com/apache/echarts/blob/566ba8e83dd283ba359fe9aceee0d4a12dbcd6c7/src/chart/tree/TreeSeries.ts#L83
  */
 public interface TreeSeriesOption
-        extends SeriesOption, TreeSeriesStateOption, SymbolOptionMixin, BoxLayoutOptionMixin, RoamOptionMixin {
+        extends SeriesOption, TreeStateOption, SymbolOptionMixin, BoxLayoutOptionMixin, RoamOptionMixin {
 
     TreeSeriesOption setType(String type);
 
@@ -29,7 +29,7 @@ public interface TreeSeriesOption
 
     TreeSeriesOption setInitialTreeDepth(Number initialTreeDepth);
 
-    TreeSeriesOption setLeaves(TreeSeriesLeavesOption leaves);
+    TreeSeriesOption setLeaves(TreeLeavesOption leaves);
 
-    TreeSeriesOption setData(TreeSeriesNodeItemOption[] data);
+    TreeSeriesOption setData(TreeNodeItemOption[] data);
 }

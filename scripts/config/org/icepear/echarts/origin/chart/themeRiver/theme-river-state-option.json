@@ -3,7 +3,7 @@
   "type": "interface",
   "extends": [],
   "fields": [
-    { "name": "label", "types": ["ThemeRiverSeriesLabelOption"] },
+    { "name": "label", "types": ["ThemeRiverLabelOption"] },
     { "name": "itemStyle", "types": ["ItemStyleOption"] }
   ],
   "comments": [

@@ -24,11 +24,11 @@ public interface SunburstSeriesOption
 
     SunburstSeriesOption setRenderLabelForZeroData(Boolean renderLabelForZeroData);
 
-    SunburstSeriesOption setLevels(SunburstSeriesLevelOption[] levels);
+    SunburstSeriesOption setLevels(SunburstLevelOption[] levels);
 
     SunburstSeriesOption setAnimationType(String animationType);
 
     SunburstSeriesOption setSort(String sort);
 
-    SunburstSeriesOption setData(SunburstSeriesNodeItemOption[] data);
+    SunburstSeriesOption setData(SunburstNodeItemOption[] data);
 }

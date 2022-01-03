@@ -1,14 +1,14 @@
 {
-  "name": "TreeSeriesNodeItemOption",
+  "name": "TreeNodeItemOption",
   "type": "interface",
   "extends": [
     "SymbolOptionMixin",
-    "TreeSeriesStateOption",
+    "TreeStateOption",
     "StatesOptionMixin",
     "DefaultOptionDataItemObject"
   ],
   "fields": [
-    { "name": "children", "types": ["TreeSeriesNodeItemOption[]"] },
+    { "name": "children", "types": ["TreeNodeItemOption[]"] },
     { "name": "collapsed", "types": ["Boolean"] },
     { "name": "link", "types": ["String"] },
     { "name": "target", "types": ["String"] }

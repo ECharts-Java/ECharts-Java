@@ -7,7 +7,7 @@ import lombok.Data;
 import lombok.Setter;
 import lombok.experimental.Accessors;
 
-import org.icepear.echarts.origin.chart.parallel.ParallelSeriesDataItemOption;
+import org.icepear.echarts.origin.chart.parallel.ParallelDataItemOption;
 import org.icepear.echarts.origin.chart.parallel.ParallelSeriesOption;
 import org.icepear.echarts.origin.coord.parallel.ParallelAxisOption;
 import org.icepear.echarts.origin.util.LabelLayoutOption;
@@ -175,7 +175,7 @@ public class ParallelSeries implements ParallelSeriesOption {
         return this;
     }
 
-    public ParallelSeries setData(ParallelSeriesDataItemOption[] data) {
+    public ParallelSeries setData(ParallelDataItemOption[] data) {
         this.data = data;
         return this;
     }
