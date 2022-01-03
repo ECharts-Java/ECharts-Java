@@ -12,6 +12,9 @@
     <a href="https://github.com/pyecharts/pyecharts/pulls">
         <img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat" alt="Contributions welcome">
     </a>
+    <!-- <a href="https://codecov.io/gh/IcePear-Jzx/ECharts-Java">
+        <img src="https://codecov.io/gh/IcePear-Jzx/ECharts-Java/branch/dev/graph/badge.svg?token=V1N6AQ0EA1"/>
+    </a> -->
     <a href="https://opensource.org/licenses/Apache-2.0">
         <img src="https://img.shields.io/badge/License-Apache_2.0-blue.svg" alt="License">
     </a>
@@ -19,6 +22,7 @@
         <img src="https://maven-badges.herokuapp.com/maven-central/org.icepear.echarts/echarts-java/badge.svg" alt="Maven Central">
     </a>
 </p>
+50e0a1fe-35f7-4641-ba37-d60d8e4792d3
 
 ## Introduction
 
@@ -54,16 +58,13 @@ implementation 'org.icepear.echarts:echarts-java:1.0.0'
 
 For more, refer to [here](https://search.maven.org/artifact/org.icepear.echarts/echarts-java/1.0.0/jar).
 
-<<<<<<< HEAD
 ## Usage
-=======
-## Usages 
->>>>>>> 1ef373e (add readme)
 
 ### Generate Local HTML and Download Image
 
 ```java
 public static void main(String[] args) {
+    // All methods in EChart Java supports method chaining
     Bar bar = new Bar()
             .setTooltip(new Tooltip().setTrigger("axis")
                     .setAxisPointer(new TooltipAxisPointer().setType("shadow")))
@@ -76,18 +77,12 @@ public static void main(String[] args) {
             .addSeries(createSeries("Video Ad", new Number[] { 150, 212, 201, 154, 190, 330, 410 }))
             .addSeries(createSeries("Search Engine", new Number[] { 820, 832, 901, 934, 1290, 1330, 1320 }));
     Engine engine = new Engine();
+    // The render method will generate our EChart into a HTML file saved locally in the current directory.
+    // The name of the HTML can also be set by the first parameter of the function.
     engine.render("index.html", bar);
 }
 ```
-<<<<<<< HEAD
-<<<<<<< HEAD
 <img src="assets/imgs/multibar-render.gif" alt="multi-bar-render" style="width:85%;" />
-=======
-![alt text](assets/imgs/multibar-render.gif)
->>>>>>> 1ef373e (add readme)
-=======
-<img src="assets/imgs/multibar-render.gif" alt="multi-bar-render" style="width:85%;" />
->>>>>>> 1a06c7a (add headings for readme)
 
 ### Generate Option Object and its Json Representation
 
@@ -102,11 +97,10 @@ public static void main(String[] args) {
                         .setData(new Number[] { 820, 932, 901, 934, 1290, 1330, 1320 })
                         .setAreaStyle(new LineAreaStyle()));
     Engine engine = new Engine();
+    // It is recommended that you can  get the serialized version of Option in the representation of JSON, which can be used directly in the template or in the RESTful APIs.
     String jsonStr = engine.renderJsonOption(lineChart);
 }
 ```
-<<<<<<< HEAD
-<<<<<<< HEAD
 <img src="assets/imgs/renderJsonOption.png" alt="Json Representation" style="width:95%;" />
 
 ### Integrate with Spring Web Application
@@ -114,18 +108,6 @@ public static void main(String[] args) {
 <img src="assets/imgs/line-renderHtml.gif" alt="spring-boot-integration" style="width:75%;" />
 
 For demo codes, please refer to the [docs](https://echarts.icepear.org/) and [example repo](https://github.com/incandescentxxc/ECharts-Java-Examples).
-=======
-![Json Representation](assets/imgs/renderJsonOption.png)
-=======
-<img src="assets/imgs/renderJsonOption.png" alt="Json Representation" style="width:95%;" />
-
->>>>>>> 1a06c7a (add headings for readme)
-### Integrate with Spring Web Application
-
-<img src="assets/imgs/line-renderHtml.gif" alt="spring-boot-integration" style="width:75%;" />
-
-For demo codes, please refer to the [docs](https://echarts.icepear.org/) and [example repo](https://github.com/incandescentxxc/Echarts-Java-Examples).
->>>>>>> 1ef373e (add readme)
 
 ## Gallery
 TODO
@@ -139,11 +121,7 @@ Welcome more contribution in the community!
 ## Acknowledgement
 - This project is inspired by the Homework 6 of the course [Principles of Software Construction Objects, Design, and Concurrency](https://cmu-17-214.github.io/f2021/), Fall 2021, at [Carnegie Mellon University](https://www.cmu.edu/). We sincerely thank [Christian](https://www.cs.cmu.edu/~ckaestne/) and [Vincent](https://vhellendoorn.github.io/) for the wonderful course.
 
-<<<<<<< HEAD
 - This project is also inspired by the [pyecharts](https://github.com/pyecharts/pyecharts) and [go-echarts](https://github.com/go-echarts/go-echarts), which are the ECharts siblings in Python and Go languages.
-=======
-- This project is also inspired by the [pyecharts](https://github.com/pyecharts/pyecharts) and [go-echarts](https://github.com/go-echarts/go-echarts), which are the Echart siblings in Python and Go languages.
->>>>>>> 1ef373e (add readme)
 
 ## License
 
