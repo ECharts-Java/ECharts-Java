@@ -8,6 +8,7 @@ import lombok.Setter;
 import lombok.experimental.Accessors;
 
 import org.icepear.echarts.origin.chart.line.LineAreaStyleOption;
+import org.icepear.echarts.origin.chart.line.LineDataItemOption;
 import org.icepear.echarts.origin.chart.line.LineEmphasisOption;
 import org.icepear.echarts.origin.chart.line.LineSeriesOption;
 import org.icepear.echarts.origin.util.ItemStyleOption;
@@ -176,6 +177,11 @@ public class LineSeries implements LineSeriesOption {
 
     @Setter(AccessLevel.NONE)
     private Object data;
+
+    public LineSeries setData(LineDataItemOption[] data) {
+        this.data = data;
+        return this;
+    }
 
     public LineSeries setData(Object data) {
         this.data = data;

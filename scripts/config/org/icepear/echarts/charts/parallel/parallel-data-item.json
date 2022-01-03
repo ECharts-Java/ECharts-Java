@@ -1,0 +1,5 @@
+{
+  "name": "ParallelDataItem",
+  "type": "class",
+  "implements": ["ParallelDataItemOption"]
+}

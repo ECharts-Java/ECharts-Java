@@ -1,0 +1,5 @@
+{
+  "name": "TreeLeaves",
+  "type": "class",
+  "implements": ["TreeLeavesOption"]
+}

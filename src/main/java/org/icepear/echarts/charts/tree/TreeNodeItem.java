@@ -5,25 +5,25 @@ import lombok.Data;
 import lombok.Setter;
 import lombok.experimental.Accessors;
 
-import org.icepear.echarts.origin.chart.tree.TreeSeriesNodeItemOption;
+import org.icepear.echarts.origin.chart.tree.TreeNodeItemOption;
 import org.icepear.echarts.origin.util.ItemStyleOption;
 import org.icepear.echarts.origin.util.SeriesLabelOption;
 
 @Accessors(chain = true)
 @Data
-public class TreeSeriesNodeItem implements TreeSeriesNodeItemOption {
+public class TreeNodeItem implements TreeNodeItemOption {
 
     private String symbol;
 
     @Setter(AccessLevel.NONE)
     private Object symbolSize;
 
-    public TreeSeriesNodeItem setSymbolSize(Number symbolSize) {
+    public TreeNodeItem setSymbolSize(Number symbolSize) {
         this.symbolSize = symbolSize;
         return this;
     }
 
-    public TreeSeriesNodeItem setSymbolSize(Number[] symbolSize) {
+    public TreeNodeItem setSymbolSize(Number[] symbolSize) {
         this.symbolSize = symbolSize;
         return this;
     }
@@ -35,22 +35,22 @@ public class TreeSeriesNodeItem implements TreeSeriesNodeItemOption {
     @Setter(AccessLevel.NONE)
     private Object symbolOffset;
 
-    public TreeSeriesNodeItem setSymbolOffset(Number symbolOffset) {
+    public TreeNodeItem setSymbolOffset(Number symbolOffset) {
         this.symbolOffset = symbolOffset;
         return this;
     }
 
-    public TreeSeriesNodeItem setSymbolOffset(Number[] symbolOffset) {
+    public TreeNodeItem setSymbolOffset(Number[] symbolOffset) {
         this.symbolOffset = symbolOffset;
         return this;
     }
 
-    public TreeSeriesNodeItem setSymbolOffset(String symbolOffset) {
+    public TreeNodeItem setSymbolOffset(String symbolOffset) {
         this.symbolOffset = symbolOffset;
         return this;
     }
 
-    public TreeSeriesNodeItem setSymbolOffset(String[] symbolOffset) {
+    public TreeNodeItem setSymbolOffset(String[] symbolOffset) {
         this.symbolOffset = symbolOffset;
         return this;
     }
@@ -70,12 +70,12 @@ public class TreeSeriesNodeItem implements TreeSeriesNodeItemOption {
     @Setter(AccessLevel.NONE)
     private Object id;
 
-    public TreeSeriesNodeItem setId(Number id) {
+    public TreeNodeItem setId(Number id) {
         this.id = id;
         return this;
     }
 
-    public TreeSeriesNodeItem setId(String id) {
+    public TreeNodeItem setId(String id) {
         this.id = id;
         return this;
     }
@@ -83,12 +83,12 @@ public class TreeSeriesNodeItem implements TreeSeriesNodeItemOption {
     @Setter(AccessLevel.NONE)
     private Object name;
 
-    public TreeSeriesNodeItem setName(Number name) {
+    public TreeNodeItem setName(Number name) {
         this.name = name;
         return this;
     }
 
-    public TreeSeriesNodeItem setName(String name) {
+    public TreeNodeItem setName(String name) {
         this.name = name;
         return this;
     }
@@ -96,12 +96,12 @@ public class TreeSeriesNodeItem implements TreeSeriesNodeItemOption {
     @Setter(AccessLevel.NONE)
     private Object groupId;
 
-    public TreeSeriesNodeItem setGroupId(Number groupId) {
+    public TreeNodeItem setGroupId(Number groupId) {
         this.groupId = groupId;
         return this;
     }
 
-    public TreeSeriesNodeItem setGroupId(String groupId) {
+    public TreeNodeItem setGroupId(String groupId) {
         this.groupId = groupId;
         return this;
     }
@@ -111,37 +111,37 @@ public class TreeSeriesNodeItem implements TreeSeriesNodeItemOption {
     @Setter(AccessLevel.NONE)
     private Object value;
 
-    public TreeSeriesNodeItem setValue(Number value) {
+    public TreeNodeItem setValue(Number value) {
         this.value = value;
         return this;
     }
 
-    public TreeSeriesNodeItem setValue(Number[] value) {
+    public TreeNodeItem setValue(Number[] value) {
         this.value = value;
         return this;
     }
 
-    public TreeSeriesNodeItem setValue(Object value) {
+    public TreeNodeItem setValue(Object value) {
         this.value = value;
         return this;
     }
 
-    public TreeSeriesNodeItem setValue(Object[] value) {
+    public TreeNodeItem setValue(Object[] value) {
         this.value = value;
         return this;
     }
 
-    public TreeSeriesNodeItem setValue(String value) {
+    public TreeNodeItem setValue(String value) {
         this.value = value;
         return this;
     }
 
-    public TreeSeriesNodeItem setValue(String[] value) {
+    public TreeNodeItem setValue(String[] value) {
         this.value = value;
         return this;
     }
 
-    private TreeSeriesNodeItemOption[] children;
+    private TreeNodeItemOption[] children;
 
     private Boolean collapsed;
 

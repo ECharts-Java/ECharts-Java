@@ -1,0 +1,5 @@
+{
+  "name": "ThemeRiverLabel",
+  "type": "class",
+  "implements": ["ThemeRiverLabelOption"]
+}

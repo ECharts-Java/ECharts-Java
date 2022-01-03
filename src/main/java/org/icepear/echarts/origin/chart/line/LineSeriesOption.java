@@ -49,6 +49,8 @@ public interface LineSeriesOption
 
     LineSeriesOption setShowAllSymbol(String showAllSymbol);
 
+    LineSeriesOption setData(LineDataItemOption[] data);
+
     LineSeriesOption setData(Object[] data);
 
     LineSeriesOption setTriggerLineEvent(Boolean triggerLineEvent);

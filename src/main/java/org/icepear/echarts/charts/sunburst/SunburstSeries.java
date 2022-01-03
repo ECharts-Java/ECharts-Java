@@ -9,8 +9,8 @@ import lombok.experimental.Accessors;
 
 import org.icepear.echarts.origin.chart.sunburst.SunburstItemStyleOption;
 import org.icepear.echarts.origin.chart.sunburst.SunburstLabelOption;
-import org.icepear.echarts.origin.chart.sunburst.SunburstSeriesLevelOption;
-import org.icepear.echarts.origin.chart.sunburst.SunburstSeriesNodeItemOption;
+import org.icepear.echarts.origin.chart.sunburst.SunburstLevelOption;
+import org.icepear.echarts.origin.chart.sunburst.SunburstNodeItemOption;
 import org.icepear.echarts.origin.chart.sunburst.SunburstSeriesOption;
 import org.icepear.echarts.origin.util.LabelLayoutOption;
 import org.icepear.echarts.origin.util.LabelLineOption;
@@ -169,7 +169,7 @@ public class SunburstSeries implements SunburstSeriesOption {
         return this;
     }
 
-    public SunburstSeries setData(SunburstSeriesNodeItemOption[] data) {
+    public SunburstSeries setData(SunburstNodeItemOption[] data) {
         this.data = data;
         return this;
     }
@@ -303,7 +303,7 @@ public class SunburstSeries implements SunburstSeriesOption {
 
     private Boolean renderLabelForZeroData;
 
-    private SunburstSeriesLevelOption[] levels;
+    private SunburstLevelOption[] levels;
 
     private String animationType;
 

@@ -7,8 +7,8 @@ import lombok.Data;
 import lombok.Setter;
 import lombok.experimental.Accessors;
 
-import org.icepear.echarts.origin.chart.tree.TreeSeriesLeavesOption;
-import org.icepear.echarts.origin.chart.tree.TreeSeriesNodeItemOption;
+import org.icepear.echarts.origin.chart.tree.TreeLeavesOption;
+import org.icepear.echarts.origin.chart.tree.TreeNodeItemOption;
 import org.icepear.echarts.origin.chart.tree.TreeSeriesOption;
 import org.icepear.echarts.origin.util.ItemStyleOption;
 import org.icepear.echarts.origin.util.LabelLayoutOption;
@@ -169,7 +169,7 @@ public class TreeSeries implements TreeSeriesOption {
         return this;
     }
 
-    public TreeSeries setData(TreeSeriesNodeItemOption[] data) {
+    public TreeSeries setData(TreeNodeItemOption[] data) {
         this.data = data;
         return this;
     }
@@ -405,5 +405,5 @@ public class TreeSeries implements TreeSeriesOption {
 
     private Number initialTreeDepth;
 
-    private TreeSeriesLeavesOption leaves;
+    private TreeLeavesOption leaves;
 }

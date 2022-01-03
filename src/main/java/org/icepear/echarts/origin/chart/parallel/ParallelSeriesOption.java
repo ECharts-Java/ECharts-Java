@@ -33,5 +33,5 @@ public interface ParallelSeriesOption extends SeriesOption, ParallelStateOption,
 
     ParallelSeriesOption setData(Object[] data);
 
-    ParallelSeriesOption setData(ParallelSeriesDataItemOption[] data);
+    ParallelSeriesOption setData(ParallelDataItemOption[] data);
 }

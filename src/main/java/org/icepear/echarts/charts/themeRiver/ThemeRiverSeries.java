@@ -7,7 +7,7 @@ import lombok.Data;
 import lombok.Setter;
 import lombok.experimental.Accessors;
 
-import org.icepear.echarts.origin.chart.themeRiver.ThemeRiverSeriesLabelOption;
+import org.icepear.echarts.origin.chart.themeRiver.ThemeRiverLabelOption;
 import org.icepear.echarts.origin.chart.themeRiver.ThemeRiverSeriesOption;
 import org.icepear.echarts.origin.util.ItemStyleOption;
 import org.icepear.echarts.origin.util.LabelLayoutOption;
@@ -243,7 +243,7 @@ public class ThemeRiverSeries implements ThemeRiverSeriesOption {
         return this;
     }
 
-    private ThemeRiverSeriesLabelOption label;
+    private ThemeRiverLabelOption label;
 
     private ItemStyleOption itemStyle;
 

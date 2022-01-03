@@ -1,5 +1,0 @@
-{
-  "name": "ThemeRiverSeriesLabel",
-  "type": "class",
-  "implements": ["ThemeRiverSeriesLabelOption"]
-}

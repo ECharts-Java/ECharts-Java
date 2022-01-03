@@ -6,11 +6,11 @@ import org.icepear.echarts.origin.util.SeriesLabelOption;
 /**
  * https://github.com/apache/echarts/blob/566ba8e83dd283ba359fe9aceee0d4a12dbcd6c7/src/chart/tree/TreeSeries.ts#L47
  */
-public interface TreeSeriesStateOption {
+public interface TreeStateOption {
 
-    TreeSeriesStateOption setItemStyle(ItemStyleOption itemStyle);
+    TreeStateOption setItemStyle(ItemStyleOption itemStyle);
 
-    TreeSeriesStateOption setLineStyle(Object lineStyle);
+    TreeStateOption setLineStyle(Object lineStyle);
 
-    TreeSeriesStateOption setLabel(SeriesLabelOption label);
+    TreeStateOption setLabel(SeriesLabelOption label);
 }
