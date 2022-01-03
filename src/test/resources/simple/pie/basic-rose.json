@@ -1,0 +1,21 @@
+{
+  "legend": { "show": true },
+  "series": [
+    {
+      "type": "pie",
+      "data": [
+        { "name": "rose 1", "value": 40 },
+        { "name": "rose 2", "value": 38 },
+        { "name": "rose 3", "value": 32 },
+        { "name": "rose 4", "value": 30 },
+        { "name": "rose 5", "value": 28 },
+        { "name": "rose 6", "value": 26 },
+        { "name": "rose 7", "value": 22 },
+        { "name": "rose 8", "value": 18 }
+      ],
+      "itemStyle": { "borderRadius": 8 },
+      "radius": [50, 250],
+      "roseType": "area"
+    }
+  ]
+}
