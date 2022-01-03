@@ -1,0 +1,26 @@
+{
+  "tooltip": { "trigger": "item" },
+  "legend": { "show": true },
+  "series": [
+    {
+      "type": "pie",
+      "emphasis": {
+        "label": { "fontWeight": "bold", "fontSize": 40, "show": true }
+      },
+      "data": [
+        { "name": "Search Engine", "value": 1048 },
+        { "name": "Direct", "value": 735 },
+        { "name": "Email", "value": 580 },
+        { "name": "Union Ads", "value": 484 },
+        { "name": "Video Ads", "value": 300 }
+      ],
+      "itemStyle": {
+        "borderColor": "#fff",
+        "borderWidth": 2,
+        "borderRadius": 10
+      },
+      "label": { "show": false, "position": "center" },
+      "radius": ["40%", "70%"]
+    }
+  ]
+}
