@@ -7,7 +7,7 @@ import lombok.experimental.Accessors;
 
 import org.icepear.echarts.origin.chart.bar.BarDataItemOption;
 import org.icepear.echarts.origin.chart.bar.BarItemStyleOption;
-import org.icepear.echarts.origin.chart.bar.BarSeriesLabelOption;
+import org.icepear.echarts.origin.chart.bar.BarLabelOption;
 
 @Accessors(chain = true)
 @Data
@@ -15,7 +15,7 @@ public class BarDataItem implements BarDataItemOption {
 
     private BarItemStyleOption itemStyle;
 
-    private BarSeriesLabelOption label;
+    private BarLabelOption label;
 
     private Object emphasis;
 

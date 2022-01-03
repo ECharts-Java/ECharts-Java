@@ -7,5 +7,5 @@ public interface BarStateOption {
 
     BarStateOption setItemStyle(BarItemStyleOption itemStyle);
 
-    BarStateOption setLabel(BarSeriesLabelOption label);
+    BarStateOption setLabel(BarLabelOption label);
 }

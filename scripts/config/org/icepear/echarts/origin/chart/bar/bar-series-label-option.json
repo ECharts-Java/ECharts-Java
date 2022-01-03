@@ -1,5 +1,5 @@
 {
-  "name": "BarSeriesLabelOption",
+  "name": "BarLabelOption",
   "type": "interface",
   "extends": ["SeriesLabelOption"],
   "fields": [{ "name": "position", "types": ["String"] }],

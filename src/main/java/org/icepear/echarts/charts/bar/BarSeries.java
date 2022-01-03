@@ -11,7 +11,7 @@ import org.icepear.echarts.origin.chart.bar.BarBackgroundStyleOption;
 import org.icepear.echarts.origin.chart.bar.BarDataItemOption;
 import org.icepear.echarts.origin.chart.bar.BarEmphasisOption;
 import org.icepear.echarts.origin.chart.bar.BarItemStyleOption;
-import org.icepear.echarts.origin.chart.bar.BarSeriesLabelOption;
+import org.icepear.echarts.origin.chart.bar.BarLabelOption;
 import org.icepear.echarts.origin.chart.bar.BarSeriesOption;
 import org.icepear.echarts.origin.util.LabelLayoutOption;
 import org.icepear.echarts.origin.util.LabelLineOption;
@@ -354,7 +354,7 @@ public class BarSeries implements BarSeriesOption {
 
     private BarItemStyleOption itemStyle;
 
-    private BarSeriesLabelOption label;
+    private BarLabelOption label;
 
     private String stack;
 

@@ -7,12 +7,12 @@ import lombok.Data;
 import lombok.Setter;
 import lombok.experimental.Accessors;
 
-import org.icepear.echarts.origin.chart.bar.BarSeriesLabelOption;
+import org.icepear.echarts.origin.chart.bar.BarLabelOption;
 import org.icepear.echarts.origin.util.TextCommonOption;
 
 @Accessors(chain = true)
 @Data
-public class BarSeriesLabel implements BarSeriesLabelOption {
+public class BarLabel implements BarLabelOption {
 
     private Number shadowBlur;
 
@@ -33,12 +33,12 @@ public class BarSeriesLabel implements BarSeriesLabelOption {
     @Setter(AccessLevel.NONE)
     private Object fontSize;
 
-    public BarSeriesLabel setFontSize(Number fontSize) {
+    public BarLabel setFontSize(Number fontSize) {
         this.fontSize = fontSize;
         return this;
     }
 
-    public BarSeriesLabel setFontSize(String fontSize) {
+    public BarLabel setFontSize(String fontSize) {
         this.fontSize = fontSize;
         return this;
     }
@@ -56,12 +56,12 @@ public class BarSeriesLabel implements BarSeriesLabelOption {
     @Setter(AccessLevel.NONE)
     private Object backgroundColor;
 
-    public BarSeriesLabel setBackgroundColor(Object backgroundColor) {
+    public BarLabel setBackgroundColor(Object backgroundColor) {
         this.backgroundColor = backgroundColor;
         return this;
     }
 
-    public BarSeriesLabel setBackgroundColor(String backgroundColor) {
+    public BarLabel setBackgroundColor(String backgroundColor) {
         this.backgroundColor = backgroundColor;
         return this;
     }
@@ -77,12 +77,12 @@ public class BarSeriesLabel implements BarSeriesLabelOption {
     @Setter(AccessLevel.NONE)
     private Object borderRadius;
 
-    public BarSeriesLabel setBorderRadius(Number borderRadius) {
+    public BarLabel setBorderRadius(Number borderRadius) {
         this.borderRadius = borderRadius;
         return this;
     }
 
-    public BarSeriesLabel setBorderRadius(Number[] borderRadius) {
+    public BarLabel setBorderRadius(Number[] borderRadius) {
         this.borderRadius = borderRadius;
         return this;
     }
@@ -90,12 +90,12 @@ public class BarSeriesLabel implements BarSeriesLabelOption {
     @Setter(AccessLevel.NONE)
     private Object padding;
 
-    public BarSeriesLabel setPadding(Number padding) {
+    public BarLabel setPadding(Number padding) {
         this.padding = padding;
         return this;
     }
 
-    public BarSeriesLabel setPadding(Number[] padding) {
+    public BarLabel setPadding(Number[] padding) {
         this.padding = padding;
         return this;
     }
@@ -103,12 +103,12 @@ public class BarSeriesLabel implements BarSeriesLabelOption {
     @Setter(AccessLevel.NONE)
     private Object width;
 
-    public BarSeriesLabel setWidth(Number width) {
+    public BarLabel setWidth(Number width) {
         this.width = width;
         return this;
     }
 
-    public BarSeriesLabel setWidth(String width) {
+    public BarLabel setWidth(String width) {
         this.width = width;
         return this;
     }
@@ -152,12 +152,12 @@ public class BarSeriesLabel implements BarSeriesLabelOption {
     @Setter(AccessLevel.NONE)
     private Object precision;
 
-    public BarSeriesLabel setPrecision(Number precision) {
+    public BarLabel setPrecision(Number precision) {
         this.precision = precision;
         return this;
     }
 
-    public BarSeriesLabel setPrecision(String precision) {
+    public BarLabel setPrecision(String precision) {
         this.precision = precision;
         return this;
     }
