@@ -43,6 +43,5 @@ public class BasicPolarLineTest {
         assertEquals(expected, actual);
 
         // System.out.println(EChartsSerializer.toJson(polarLine.getOption()));
-
     }
 }
