@@ -10,6 +10,7 @@ import lombok.experimental.Accessors;
 import org.icepear.echarts.origin.chart.sunburst.SunburstItemStyleOption;
 import org.icepear.echarts.origin.chart.sunburst.SunburstLabelOption;
 import org.icepear.echarts.origin.chart.sunburst.SunburstSeriesLevelOption;
+import org.icepear.echarts.origin.chart.sunburst.SunburstSeriesNodeItemOption;
 import org.icepear.echarts.origin.chart.sunburst.SunburstSeriesOption;
 import org.icepear.echarts.origin.util.LabelLayoutOption;
 import org.icepear.echarts.origin.util.LabelLineOption;
@@ -160,7 +161,18 @@ public class SunburstSeries implements SunburstSeriesOption {
         return this;
     }
 
+    @Setter(AccessLevel.NONE)
     private Object data;
+
+    public SunburstSeries setData(Object data) {
+        this.data = data;
+        return this;
+    }
+
+    public SunburstSeries setData(SunburstSeriesNodeItemOption[] data) {
+        this.data = data;
+        return this;
+    }
 
     @Setter(AccessLevel.NONE)
     private Object colorBy;
