@@ -1,5 +1,7 @@
 package org.icepear.echarts;
 
+import org.icepear.echarts.components.coord.polar.CategoryAngleAxis;
+import org.icepear.echarts.components.coord.polar.CategoryRadiusAxis;
 import org.icepear.echarts.components.coord.polar.DefaultAngleAxis;
 import org.icepear.echarts.components.coord.polar.DefaultRadiusAxis;
 import org.icepear.echarts.components.coord.polar.PolarAxis;
@@ -13,6 +15,11 @@ public abstract class PolarCoordChart<T extends Chart<?, ?>, E extends SeriesOpt
         option.setPolar(new PolarAxis());
     }
 
+    public T setPolarAxis(String[] radius) {
+        option.setPolar(new PolarAxis().setRadius(radius));
+        return self;
+    }
+
     public T setPolarAxis(PolarAxis polarAxis) {
         option.setPolar(polarAxis);
         return self;
@@ -23,6 +30,16 @@ public abstract class PolarCoordChart<T extends Chart<?, ?>, E extends SeriesOpt
         return self;
     }
 
+    public T setAngleAxis(Number max) {
+        option.setAngleAxis(new DefaultAngleAxis().setMax(max));
+        return self;
+    }
+
+    public T setAngleAxis(String[] categories) {
+        option.setAngleAxis(new CategoryAngleAxis().setData(categories));
+        return self;
+    }
+
     public T setAngleAxis(AngleAxisOption angleAxis) {
         option.setAngleAxis(angleAxis);
         return self;
@@ -30,6 +47,16 @@ public abstract class PolarCoordChart<T extends Chart<?, ?>, E extends SeriesOpt
 
     public T setRadiusAxis() {
         option.setRadiusAxis(new DefaultRadiusAxis());
+        return self;
+    }
+
+    public T setRadiusAxis(Number max) {
+        option.setRadiusAxis(new DefaultRadiusAxis().setMax(max));
+        return self;
+    }
+
+    public T setRadiusAxis(String[] categories) {
+        option.setRadiusAxis(new CategoryRadiusAxis().setData(categories));
         return self;
     }
 
