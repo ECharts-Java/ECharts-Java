@@ -7,12 +7,12 @@ import lombok.Data;
 import lombok.Setter;
 import lombok.experimental.Accessors;
 
-import org.icepear.echarts.origin.chart.themeRiver.ThemeRiverSeriesLabelOption;
+import org.icepear.echarts.origin.chart.themeRiver.ThemeRiverLabelOption;
 import org.icepear.echarts.origin.util.TextCommonOption;
 
 @Accessors(chain = true)
 @Data
-public class ThemeRiverSeriesLabel implements ThemeRiverSeriesLabelOption {
+public class ThemeRiverLabel implements ThemeRiverLabelOption {
 
     private Number shadowBlur;
 
@@ -33,12 +33,12 @@ public class ThemeRiverSeriesLabel implements ThemeRiverSeriesLabelOption {
     @Setter(AccessLevel.NONE)
     private Object fontSize;
 
-    public ThemeRiverSeriesLabel setFontSize(Number fontSize) {
+    public ThemeRiverLabel setFontSize(Number fontSize) {
         this.fontSize = fontSize;
         return this;
     }
 
-    public ThemeRiverSeriesLabel setFontSize(String fontSize) {
+    public ThemeRiverLabel setFontSize(String fontSize) {
         this.fontSize = fontSize;
         return this;
     }
@@ -56,12 +56,12 @@ public class ThemeRiverSeriesLabel implements ThemeRiverSeriesLabelOption {
     @Setter(AccessLevel.NONE)
     private Object backgroundColor;
 
-    public ThemeRiverSeriesLabel setBackgroundColor(Object backgroundColor) {
+    public ThemeRiverLabel setBackgroundColor(Object backgroundColor) {
         this.backgroundColor = backgroundColor;
         return this;
     }
 
-    public ThemeRiverSeriesLabel setBackgroundColor(String backgroundColor) {
+    public ThemeRiverLabel setBackgroundColor(String backgroundColor) {
         this.backgroundColor = backgroundColor;
         return this;
     }
@@ -77,12 +77,12 @@ public class ThemeRiverSeriesLabel implements ThemeRiverSeriesLabelOption {
     @Setter(AccessLevel.NONE)
     private Object borderRadius;
 
-    public ThemeRiverSeriesLabel setBorderRadius(Number borderRadius) {
+    public ThemeRiverLabel setBorderRadius(Number borderRadius) {
         this.borderRadius = borderRadius;
         return this;
     }
 
-    public ThemeRiverSeriesLabel setBorderRadius(Number[] borderRadius) {
+    public ThemeRiverLabel setBorderRadius(Number[] borderRadius) {
         this.borderRadius = borderRadius;
         return this;
     }
@@ -90,12 +90,12 @@ public class ThemeRiverSeriesLabel implements ThemeRiverSeriesLabelOption {
     @Setter(AccessLevel.NONE)
     private Object padding;
 
-    public ThemeRiverSeriesLabel setPadding(Number padding) {
+    public ThemeRiverLabel setPadding(Number padding) {
         this.padding = padding;
         return this;
     }
 
-    public ThemeRiverSeriesLabel setPadding(Number[] padding) {
+    public ThemeRiverLabel setPadding(Number[] padding) {
         this.padding = padding;
         return this;
     }
@@ -103,12 +103,12 @@ public class ThemeRiverSeriesLabel implements ThemeRiverSeriesLabelOption {
     @Setter(AccessLevel.NONE)
     private Object width;
 
-    public ThemeRiverSeriesLabel setWidth(Number width) {
+    public ThemeRiverLabel setWidth(Number width) {
         this.width = width;
         return this;
     }
 
-    public ThemeRiverSeriesLabel setWidth(String width) {
+    public ThemeRiverLabel setWidth(String width) {
         this.width = width;
         return this;
     }
@@ -152,12 +152,12 @@ public class ThemeRiverSeriesLabel implements ThemeRiverSeriesLabelOption {
     @Setter(AccessLevel.NONE)
     private Object precision;
 
-    public ThemeRiverSeriesLabel setPrecision(Number precision) {
+    public ThemeRiverLabel setPrecision(Number precision) {
         this.precision = precision;
         return this;
     }
 
-    public ThemeRiverSeriesLabel setPrecision(String precision) {
+    public ThemeRiverLabel setPrecision(String precision) {
         this.precision = precision;
         return this;
     }

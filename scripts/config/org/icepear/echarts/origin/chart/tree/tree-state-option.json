@@ -1,5 +1,5 @@
 {
-  "name": "TreeSeriesStateOption",
+  "name": "TreeStateOption",
   "type": "interface",
   "extends": [],
   "fields": [

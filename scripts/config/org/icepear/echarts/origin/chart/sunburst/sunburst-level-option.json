@@ -1,5 +1,5 @@
 {
-  "name": "SunburstSeriesLevelOption",
+  "name": "SunburstLevelOption",
   "type": "interface",
   "extends": ["SunburstStateOption", "StatesOptionMixin"],
   "fields": [

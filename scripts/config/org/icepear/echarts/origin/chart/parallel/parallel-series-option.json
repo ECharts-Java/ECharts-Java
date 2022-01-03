@@ -15,7 +15,7 @@
     { "name": "parallelAxisDefault", "types": ["ParallelAxisOption"] },
     {
       "name": "data",
-      "types": ["ParallelSeriesDataItemOption[]", "ParallelSeriesDataValue[]"]
+      "types": ["ParallelDataItemOption[]", "ParallelSeriesDataValue[]"]
     }
   ],
   "comments": [

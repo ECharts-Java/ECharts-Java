@@ -1,5 +1,5 @@
 {
-  "name": "ThemeRiverSeriesLabelOption",
+  "name": "ThemeRiverLabelOption",
   "type": "interface",
   "extends": ["SeriesLabelOption"],
   "fields": [{ "name": "margin", "types": ["Number"] }],

@@ -1,5 +1,5 @@
 {
-  "name": "SunburstSeriesNodeItemOption",
+  "name": "SunburstNodeItemOption",
   "type": "interface",
   "extends": [
     "SunburstStateOption",
@@ -10,7 +10,7 @@
     { "name": "nodeClick", "types": ["String"] },
     { "name": "link", "types": ["String"] },
     { "name": "target", "types": ["String"] },
-    { "name": "children", "types": ["SunburstSeriesNodeItemOption[]"] },
+    { "name": "children", "types": ["SunburstNodeItemOption[]"] },
     { "name": "collapsed", "types": ["Boolean"] },
     { "name": "cursor", "types": ["String"] }
   ],

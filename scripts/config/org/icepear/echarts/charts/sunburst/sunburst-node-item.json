@@ -1,0 +1,5 @@
+{
+  "name": "SunburstNodeItem",
+  "type": "class",
+  "implements": ["SunburstNodeItemOption"]
+}

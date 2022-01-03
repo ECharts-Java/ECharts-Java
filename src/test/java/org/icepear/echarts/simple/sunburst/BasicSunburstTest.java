@@ -11,7 +11,7 @@ import com.google.gson.JsonParser;
 import org.icepear.echarts.Sunburst;
 import org.icepear.echarts.charts.sunburst.SunburstLabel;
 import org.icepear.echarts.charts.sunburst.SunburstSeries;
-import org.icepear.echarts.charts.sunburst.SunburstSeriesNodeItem;
+import org.icepear.echarts.charts.sunburst.SunburstNodeItem;
 import org.icepear.echarts.serializer.EChartsSerializer;
 import org.junit.Test;
 
@@ -22,36 +22,36 @@ public class BasicSunburstTest {
                 .addSeries(new SunburstSeries()
                         .setRadius(new String[] { "0", "90%" })
                         .setLabel(new SunburstLabel().setRotate("radial"))
-                        .setData(new SunburstSeriesNodeItem[] {
-                                new SunburstSeriesNodeItem().setName("Grandpa")
-                                        .setChildren(new SunburstSeriesNodeItem[] {
-                                                new SunburstSeriesNodeItem().setName("Uncle Leo").setValue(15)
-                                                        .setChildren(new SunburstSeriesNodeItem[] {
-                                                                new SunburstSeriesNodeItem().setName("Cousin Jack")
+                        .setData(new SunburstNodeItem[] {
+                                new SunburstNodeItem().setName("Grandpa")
+                                        .setChildren(new SunburstNodeItem[] {
+                                                new SunburstNodeItem().setName("Uncle Leo").setValue(15)
+                                                        .setChildren(new SunburstNodeItem[] {
+                                                                new SunburstNodeItem().setName("Cousin Jack")
                                                                         .setValue(2),
-                                                                new SunburstSeriesNodeItem().setName("Cousin Mary")
+                                                                new SunburstNodeItem().setName("Cousin Mary")
                                                                         .setValue(5)
-                                                                        .setChildren(new SunburstSeriesNodeItem[] {
-                                                                                new SunburstSeriesNodeItem()
+                                                                        .setChildren(new SunburstNodeItem[] {
+                                                                                new SunburstNodeItem()
                                                                                         .setName("Jackson").setValue(2)
                                                                         }),
-                                                                new SunburstSeriesNodeItem().setName("Cousin Ben")
+                                                                new SunburstNodeItem().setName("Cousin Ben")
                                                                         .setValue(4)
                                                         }),
-                                                new SunburstSeriesNodeItem().setName("Father").setValue(10)
-                                                        .setChildren(new SunburstSeriesNodeItem[] {
-                                                                new SunburstSeriesNodeItem().setName("Me").setValue(5),
-                                                                new SunburstSeriesNodeItem().setName("Brother Peter")
+                                                new SunburstNodeItem().setName("Father").setValue(10)
+                                                        .setChildren(new SunburstNodeItem[] {
+                                                                new SunburstNodeItem().setName("Me").setValue(5),
+                                                                new SunburstNodeItem().setName("Brother Peter")
                                                                         .setValue(1)
                                                         })
                                         }),
-                                new SunburstSeriesNodeItem().setName("Nancy")
-                                        .setChildren(new SunburstSeriesNodeItem[] {
-                                                new SunburstSeriesNodeItem().setName("Uncle Nike")
-                                                        .setChildren(new SunburstSeriesNodeItem[] {
-                                                                new SunburstSeriesNodeItem().setName("Cousin Betty")
+                                new SunburstNodeItem().setName("Nancy")
+                                        .setChildren(new SunburstNodeItem[] {
+                                                new SunburstNodeItem().setName("Uncle Nike")
+                                                        .setChildren(new SunburstNodeItem[] {
+                                                                new SunburstNodeItem().setName("Cousin Betty")
                                                                         .setValue(1),
-                                                                new SunburstSeriesNodeItem().setName("Cousin Jenny")
+                                                                new SunburstNodeItem().setName("Cousin Jenny")
                                                                         .setValue(2)
                                                         })
                                         })
@@ -59,7 +59,7 @@ public class BasicSunburstTest {
                         }));
 
         Reader reader = new InputStreamReader(
-        this.getClass().getResourceAsStream("/simple/sunburst/basic-sunburst.json"));
+                this.getClass().getResourceAsStream("/simple/sunburst/basic-sunburst.json"));
         JsonElement expected = JsonParser.parseReader(reader);
         JsonElement actual = EChartsSerializer.toJsonTree(sunburst.getOption());
         assertEquals(expected, actual);
