@@ -117,4 +117,4 @@ Welcome more contribution in the community!
 
 ## License
 
-ECharts Java is available under the [Apache-2.0 License](LICENSE).
+ECharts Java is available under the [Apache License 2.0](LICENSE).
