@@ -11,7 +11,7 @@ import com.google.gson.JsonParser;
 import org.icepear.echarts.Bar;
 import org.icepear.echarts.charts.bar.BarEmphasis;
 import org.icepear.echarts.charts.bar.BarSeries;
-import org.icepear.echarts.charts.bar.BarSeriesLabel;
+import org.icepear.echarts.charts.bar.BarLabel;
 import org.icepear.echarts.components.tooltip.Tooltip;
 import org.icepear.echarts.components.tooltip.TooltipAxisPointer;
 import org.icepear.echarts.serializer.EChartsSerializer;
@@ -20,7 +20,7 @@ import org.junit.Test;
 public class HorizontalStackedBarTest {
     private BarSeries createSeries(String name, Object[] data) {
         return new BarSeries().setName(name).setStack("total")
-                .setLabel(new BarSeriesLabel().setShow(true))
+                .setLabel(new BarLabel().setShow(true))
                 .setEmphasis(new BarEmphasis().setFocus("series"))
                 .setData(data);
     }

@@ -9,7 +9,7 @@
     },
     {
       "name": "label",
-      "types": ["BarSeriesLabelOption"]
+      "types": ["BarLabelOption"]
     }
   ],
   "comments": [

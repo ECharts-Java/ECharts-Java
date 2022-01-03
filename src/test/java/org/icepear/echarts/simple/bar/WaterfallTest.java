@@ -11,7 +11,7 @@ import com.google.gson.JsonParser;
 import org.icepear.echarts.Bar;
 import org.icepear.echarts.charts.bar.BarItemStyle;
 import org.icepear.echarts.charts.bar.BarSeries;
-import org.icepear.echarts.charts.bar.BarSeriesLabel;
+import org.icepear.echarts.charts.bar.BarLabel;
 import org.icepear.echarts.serializer.EChartsSerializer;
 import org.junit.Test;
 
@@ -26,7 +26,7 @@ public class WaterfallTest {
                         .setItemStyle(new BarItemStyle().setBorderColor("transparent").setColor("transparent"))
                         .setData(new Number[] { 0, 1700, 1400, 1200, 300, 0 }))
                 .addSeries(new BarSeries().setName("Life Cost").setStack("Total")
-                        .setLabel(new BarSeriesLabel().setShow(true).setPosition("inside"))
+                        .setLabel(new BarLabel().setShow(true).setPosition("inside"))
                         .setData(new Number[] { 2900, 1200, 300, 200, 900, 300 }));
 
         Reader reader = new InputStreamReader(
