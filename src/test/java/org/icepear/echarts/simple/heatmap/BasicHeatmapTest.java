@@ -13,8 +13,6 @@ import com.google.gson.JsonParser;
 
 import org.icepear.echarts.Heatmap;
 import org.icepear.echarts.charts.heatmap.HeatmapSeries;
-import org.icepear.echarts.components.coord.SplitArea;
-import org.icepear.echarts.components.coord.cartesian.CategoryAxis;
 import org.icepear.echarts.components.series.SeriesLabel;
 import org.icepear.echarts.serializer.EChartsSerializer;
 import org.junit.Before;
@@ -49,12 +47,8 @@ public class BasicHeatmapTest {
     @Test
     public void testBasicHeatmap() {
         Heatmap heatmap = new Heatmap()
-                .addXAxis(new CategoryAxis()
-                        .setData(hours.toArray())
-                        .setSplitArea(new SplitArea().setShow(true)))
-                .addYAxis(new CategoryAxis()
-                        .setData(days.toArray())
-                        .setSplitArea(new SplitArea().setShow(true)))
+                .addXAxis(hours.toArray(new String[0]))
+                .addYAxis(days.toArray(new String[0]))
                 .setVisualMap(0, 10)
                 .addSeries(new HeatmapSeries().setName("Punch Card")
                         .setData(punchcard.toArray())
