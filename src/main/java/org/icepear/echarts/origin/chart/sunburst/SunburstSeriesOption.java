@@ -7,8 +7,7 @@ import org.icepear.echarts.origin.util.SunburstColorByMixin;
 /**
  * https://github.com/apache/echarts/blob/566ba8e83dd283ba359fe9aceee0d4a12dbcd6c7/src/chart/sunburst/SunburstSeries.ts#L120
  */
-public interface SunburstSeriesOption
-        extends SeriesOption, SunburstStateOption, SunburstColorByMixin, CircleLayoutOptionMixin {
+public interface SunburstSeriesOption extends SeriesOption, SunburstStateOption, SunburstColorByMixin, CircleLayoutOptionMixin {
 
     SunburstSeriesOption setType(String type);
 
@@ -29,4 +28,6 @@ public interface SunburstSeriesOption
     SunburstSeriesOption setAnimationType(String animationType);
 
     SunburstSeriesOption setSort(String sort);
+
+    SunburstSeriesOption setData(SunburstSeriesNodeItemOption[] data);
 }
