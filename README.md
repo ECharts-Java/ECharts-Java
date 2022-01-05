@@ -3,7 +3,7 @@
 </p> -->
 <h1 align="center">ECharts Java</h1>
 <p align="center">
-    <em>"We bring better Vis into Java with ECharts"  ➡️  ECharts Java</em>
+    <em>"We bring better visualization into Java with ECharts"</em>
 </p>
 <p align="center">
     <a href="https://github.com/IcePear-Jzx/ECharts-Java/actions">
