@@ -16,15 +16,15 @@
   <licenses>
     <license>
       <name>Apache License 2.0</name>
-      <url>https://github.com/IcePear-Jzx/ECharts-Java/blob/master/LICENSE</url>
+      <url>https://github.com/ECharts-Java/ECharts-Java/blob/master/LICENSE</url>
       <distribution>repo</distribution>
     </license>
   </licenses>
 
   <scm>
-    <url>https://github.com/IcePear-Jzx/ECharts-Java</url>
-    <connection>https://github.com/IcePear-Jzx/ECharts-Java.git</connection>
-    <developerConnection>https://github.com/IcePear-Jzx</developerConnection>
+    <url>https://github.com/ECharts-Java/ECharts-Java</url>
+    <connection>https://github.com/ECharts-Java/ECharts-Java.git</connection>
+    <developerConnection>https://github.com/ECharts-Java</developerConnection>
   </scm>
 
   <developers>

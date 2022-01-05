@@ -6,14 +6,14 @@
     <em>"We bring better visualization into Java with ECharts"</em>
 </p>
 <p align="center">
-    <a href="https://github.com/IcePear-Jzx/ECharts-Java/actions">
-        <img src="https://github.com/IcePear-Jzx/ECharts-Java/actions/workflows/maven.yml/badge.svg" alt="Github Actions Status">
+    <a href="https://github.com/ECharts-Java/ECharts-Java/actions">
+        <img src="https://github.com/ECharts-Java/ECharts-Java/actions/workflows/maven.yml/badge.svg" alt="Github Actions Status">
     </a>
     <a href="https://github.com/pyecharts/pyecharts/pulls">
         <img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat" alt="Contributions welcome">
     </a>
-    <!-- <a href="https://codecov.io/gh/IcePear-Jzx/ECharts-Java">
-        <img src="https://codecov.io/gh/IcePear-Jzx/ECharts-Java/branch/dev/graph/badge.svg?token=V1N6AQ0EA1"/>
+    <!-- <a href="https://codecov.io/gh/ECharts-Java/ECharts-Java">
+        <img src="https://codecov.io/gh/ECharts-Java/ECharts-Java/branch/dev/graph/badge.svg?token=V1N6AQ0EA1"/>
     </a> -->
     <a href="https://opensource.org/licenses/Apache-2.0">
         <img src="https://img.shields.io/badge/License-Apache_2.0-blue.svg" alt="License">
