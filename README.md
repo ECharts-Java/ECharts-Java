@@ -3,7 +3,7 @@
 </p> -->
 <h1 align="center">ECharts Java</h1>
 <p align="center">
-    <em>ECharts ❤️ Java = ECharts Java</em>
+    <em>"We bring better Vis into Java with ECharts"  ➡️  ECharts Java</em>
 </p>
 <p align="center">
     <a href="https://github.com/IcePear-Jzx/ECharts-Java/actions">
@@ -22,13 +22,12 @@
         <img src="https://maven-badges.herokuapp.com/maven-central/org.icepear.echarts/echarts-java/badge.svg" alt="Maven Central">
     </a>
 </p>
-50e0a1fe-35f7-4641-ba37-d60d8e4792d3
 
-## Introduction
+## 📙 Introduction
 
 ECharts Java is a lightweight but comprehensive library for Java developers to easily use JavaScript visualization library [Apache ECharts](https://echarts.apache.org/en/index.html). The simple chart mode facilitates users to write visualization fast and easily, empowered by the clean APIs provided by ECharts Java. The advanced mode helps create an `Option` object and its Json representation in chainable Java codes, which includes almost all the features defined in [Apache ECharts](https://echarts.apache.org/en/index.html).
 
-## Features
+## 🌠 Features
 
 - Simple, clean and organized APIs, supporting method chaining
 
@@ -40,9 +39,9 @@ ECharts Java is a lightweight but comprehensive library for Java developers to e
 
 - Complete and detailed documentation and examples
 
-## Installation
+## 🔬 Installation
 
-For Maven project, includes the following in your pom.xml
+For a Maven project, includes the following in your pom.xml
 ```xml
 <dependency>
   <groupId>org.icepear.echarts</groupId>
@@ -51,14 +50,14 @@ For Maven project, includes the following in your pom.xml
 </dependency>
 ```
 
-For Gradle Groovy project, includes
+For a Gradle Groovy project, includes
 ```
 implementation 'org.icepear.echarts:echarts-java:1.0.0'
 ```
 
 For more, refer to [here](https://search.maven.org/artifact/org.icepear.echarts/echarts-java/1.0.0/jar).
 
-## Usage
+## 🔭 Usage
 
 ### Generate Local HTML and Download Image
 
@@ -109,20 +108,20 @@ public static void main(String[] args) {
 
 For demo codes, please refer to the [docs](https://echarts.icepear.org/) and [example repo](https://github.com/incandescentxxc/ECharts-Java-Examples).
 
-## Gallery
+## 🎇 Gallery
 TODO
 
-## Authors
+## 💡 Authors
 - [@IcePear-Jzx](https://github.com/IcePear-Jzx)
 - [@incandescentxxc](https://github.com/incandescentxxc)
 
 Welcome more contribution in the community!
 
-## Acknowledgement
+## 💌 Acknowledgement
 - This project is inspired by the Homework 6 of the course [Principles of Software Construction Objects, Design, and Concurrency](https://cmu-17-214.github.io/f2021/), Fall 2021, at [Carnegie Mellon University](https://www.cmu.edu/). We sincerely thank [Christian](https://www.cs.cmu.edu/~ckaestne/) and [Vincent](https://vhellendoorn.github.io/) for the wonderful course.
 
 - This project is also inspired by the [pyecharts](https://github.com/pyecharts/pyecharts) and [go-echarts](https://github.com/go-echarts/go-echarts), which are the ECharts siblings in Python and Go languages.
 
-## License
+## 🎈 License
 
 ECharts Java is available under the [Apache License 2.0](LICENSE).
