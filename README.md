@@ -1,6 +1,6 @@
-<p align="center">
-    <img src="assets/imgs/logo.png" alt="logo" width=150 height=150 style="border-radius: 50%; box-shadow: 0 0 10px 0;" />
-</p>
+<div align="center">
+    <img src="assets/imgs/logo.png" alt="logo" width=150 height=150 />
+</div>
 <h1 align="center">ECharts Java</h1>
 <p align="center">
     <em>"We bring better visualization into Java with ECharts"</em>
