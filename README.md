@@ -1,6 +1,6 @@
-<!-- <p align="center">
-    <img src="https://user-images.githubusercontent.com/19553554/71825144-2d568180-30d6-11ea-8ee0-63c849cfd934.png" alt="pyecharts logo" width=200 height=200 />
-</p> -->
+<p align="center">
+    <img src="assets/imgs/logo.png" alt="logo" width=150 height=150 style="border-radius: 50%; box-shadow: 0 0 10px 0;" />
+</p>
 <h1 align="center">ECharts Java</h1>
 <p align="center">
     <em>"We bring better visualization into Java with ECharts"</em>
