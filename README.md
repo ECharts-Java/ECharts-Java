@@ -130,7 +130,12 @@ The output JSON object will be like the following,
 For demo codes, please refer to the [docs](https://echarts.icepear.org/) and [example repo](https://github.com/incandescentxxc/ECharts-Java-Examples).
 
 ## 🎇 Gallery
-TODO
+
+|<img align="center" src="assets/imgs/stacked-line.jpg" />|<img align="center" src="assets/imgs/stacked-area.jpg" />|
+|--|--|
+
+|![stacked-line](assets/imgs/stacked-line.jpg)|![stacked-area](assets/imgs/stacked-area.jpg)|
+|--|--|
 
 ## 💡 Authors
 - [@IcePear-Jzx](https://github.com/IcePear-Jzx)
