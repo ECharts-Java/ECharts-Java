@@ -137,7 +137,23 @@ For demo codes, please refer to the [docs](https://echarts.icepear.org/) and [ex
   <img src="assets/imgs/multiple-series-bar.jpg" width="32%" />
   <img src="assets/imgs/horizontal-stacked-bar.jpg" width="32%" /> 
   <img src="assets/imgs/basic-scatter.jpg" width="32%" />
-  <img src="assets/imgs/basic-boxplot.jpg" width="32%" /> 
+  <!-- <img src="assets/imgs/basic-boxplot.jpg" width="32%" />  -->
+  <img src="assets/imgs/basic-candlestick.jpg" width="32%" /> 
+  <img src="assets/imgs/basic-heatmap.jpg" width="32%" /> 
+  <img src="assets/imgs/basic-polar-line.jpg" width="32%" /> 
+  <img src="assets/imgs/tangential-polar-bar.jpg" width="32%" /> 
+  <img src="assets/imgs/basic-polar-scatter.jpg" width="32%" /> 
+  <img src="assets/imgs/basic-radar.jpg" width="32%" /> 
+  <img src="assets/imgs/basic-parallel.jpg" width="32%" />
+  <img src="assets/imgs/basic-theme-river.jpg" width="32%" />
+  <img src="assets/imgs/basic-rose.jpg" width="32%" />
+  <img src="assets/imgs/nested-pie.jpg" width="32%" />
+  <img src="assets/imgs/circular-layout-graph.jpg" width="32%" />
+  <img src="assets/imgs/hide-overlapped-label-graph.jpg" width="32%" />
+  <img src="assets/imgs/basic-sankey.jpg" width="32%" />
+  <img src="assets/imgs/basic-funnel.jpg" width="32%" />
+  <img src="assets/imgs/basic-sunburst.jpg" width="32%" />
+  <img src="assets/imgs/animation-gauge.jpg" width="32%" /> 
 </p>
 
 ## 💡 Authors
