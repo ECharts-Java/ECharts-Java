@@ -1,5 +1,0 @@
-{
-  "name": "DefaultSingleAxis",
-  "type": "class",
-  "implements": ["DefaultSingleAxisOption"]
-}

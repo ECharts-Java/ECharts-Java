@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.icepear.echarts.components.coord.parallel.CategoryParallelAxis;
-import org.icepear.echarts.components.coord.parallel.DefaultParallelAxis;
 import org.icepear.echarts.components.coord.parallel.LogParallelAxis;
 import org.icepear.echarts.components.coord.parallel.TimeParallelAxis;
 import org.icepear.echarts.components.coord.parallel.ValueParallelAxis;
@@ -24,12 +23,12 @@ public abstract class ParallelCoordChart<T extends Chart<?, ?>, E extends Series
     }
 
     public T addParallelAxis(Number dim) {
-        parallelAxes.add(new DefaultParallelAxis().setDim(dim));
+        parallelAxes.add(new ValueParallelAxis().setDim(dim));
         return self;
     }
 
     public T addParallelAxis(String name, Number dim) {
-        parallelAxes.add(new DefaultParallelAxis().setName(name).setDim(dim));
+        parallelAxes.add(new ValueParallelAxis().setName(name).setDim(dim));
         return self;
     }
 

@@ -12,7 +12,8 @@ import com.google.gson.JsonParser;
 
 import org.icepear.echarts.Option;
 import org.icepear.echarts.charts.line.LineSeries;
-import org.icepear.echarts.components.coord.cartesian.DefaultAxis;
+import org.icepear.echarts.components.coord.cartesian.CategoryAxis;
+import org.icepear.echarts.components.coord.cartesian.ValueAxis;
 import org.icepear.echarts.components.dataZoom.DataZoom;
 import org.icepear.echarts.components.grid.Grid;
 import org.icepear.echarts.components.marker.MarkLine;
@@ -61,9 +62,9 @@ public class BeijingAQITest {
                 .setRight("15%")
                 .setBottom("10%");
 
-        DefaultAxis xAxis = new DefaultAxis().setData(xAxisData);
+        CategoryAxis xAxis = new CategoryAxis().setType(null).setData(xAxisData);
 
-        DefaultAxis yAxis = new DefaultAxis();
+        ValueAxis yAxis = new ValueAxis().setType(null);
 
         Toolbox toolbox = new Toolbox().setRight(10).setFeature(new HashMap<>() {
             {
