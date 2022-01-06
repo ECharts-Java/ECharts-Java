@@ -133,9 +133,9 @@ For demo codes, please refer to the [docs](https://echarts.icepear.org/) and [ex
 
 |<img align="center" src="assets/imgs/stacked-line.jpg" />|<img align="center" src="assets/imgs/stacked-area.jpg" />|
 |--|--|
+|<img align="center" src="assets/imgs/multiple-series-bar.jpg" />|<img align="center" src="assets/imgs/horizontal-stacked-bar.jpg" />|
+|<img align="center" src="assets/imgs/basic-scatter.jpg" />|<img align="center" src="assets/imgs/basic-boxplot.jpg" />|
 
-|![stacked-line](assets/imgs/stacked-line.jpg)|![stacked-area](assets/imgs/stacked-area.jpg)|
-|--|--|
 
 ## 💡 Authors
 - [@IcePear-Jzx](https://github.com/IcePear-Jzx)
