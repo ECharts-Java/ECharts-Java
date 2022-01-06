@@ -10,7 +10,8 @@ import com.google.gson.JsonParser;
 
 import org.icepear.echarts.Option;
 import org.icepear.echarts.charts.candlestick.CandlestickSeries;
-import org.icepear.echarts.components.coord.cartesian.DefaultAxis;
+import org.icepear.echarts.components.coord.cartesian.CategoryAxis;
+import org.icepear.echarts.components.coord.cartesian.ValueAxis;
 import org.icepear.echarts.origin.util.SeriesOption;
 import org.icepear.echarts.serializer.EChartsSerializer;
 import org.junit.Test;
@@ -18,10 +19,11 @@ import org.junit.Test;
 public class BasicCandlestickTest {
     @Test
     public void testBasicCandlestick() {
-        DefaultAxis xAxis = new DefaultAxis()
+        CategoryAxis xAxis = new CategoryAxis()
+                .setType(null)
                 .setData(new String[] { "2017-10-24", "2017-10-25", "2017-10-26", "2017-10-27" });
 
-        DefaultAxis yAxis = new DefaultAxis();
+        ValueAxis yAxis = new ValueAxis().setType(null);
 
         CandlestickSeries series = new CandlestickSeries()
                 .setType("candlestick")

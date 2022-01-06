@@ -10,7 +10,8 @@ import com.google.gson.JsonParser;
 
 import org.icepear.echarts.Option;
 import org.icepear.echarts.charts.scatter.ScatterSeries;
-import org.icepear.echarts.components.coord.cartesian.DefaultAxis;
+import org.icepear.echarts.components.coord.cartesian.CategoryAxis;
+import org.icepear.echarts.components.coord.cartesian.ValueAxis;
 import org.icepear.echarts.origin.util.SeriesOption;
 import org.icepear.echarts.serializer.EChartsSerializer;
 import org.junit.Test;
@@ -18,9 +19,9 @@ import org.junit.Test;
 public class BasicScatterChartTest {
     @Test
     public void testBasicScatterChart() {
-        DefaultAxis xAxis = new DefaultAxis();
+        ValueAxis xAxis = new ValueAxis().setType(null);
 
-        DefaultAxis yAxis = new DefaultAxis();
+        CategoryAxis yAxis = new CategoryAxis().setType(null);
 
         ScatterSeries series = new ScatterSeries()
                 .setSymbolSize(20)

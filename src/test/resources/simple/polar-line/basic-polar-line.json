@@ -1,7 +1,7 @@
 {
   "polar": {},
-  "angleAxis": {},
-  "radiusAxis": { "min": 0 },
+  "angleAxis": { "type": "category" },
+  "radiusAxis": { "type": "value", "min": 0 },
   "tooltip": { "type": "axis", "axisPointer": { "type": "cross" } },
   "series": [
     {

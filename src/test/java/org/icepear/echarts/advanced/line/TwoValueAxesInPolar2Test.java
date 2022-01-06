@@ -10,9 +10,9 @@ import com.google.gson.JsonParser;
 
 import org.icepear.echarts.Option;
 import org.icepear.echarts.charts.line.LineSeries;
-import org.icepear.echarts.components.coord.polar.DefaultRadiusAxis;
 import org.icepear.echarts.components.coord.polar.PolarAxis;
 import org.icepear.echarts.components.coord.polar.ValueAngleAxis;
+import org.icepear.echarts.components.coord.polar.ValueRadiusAxis;
 import org.icepear.echarts.components.legend.Legend;
 import org.icepear.echarts.components.title.Title;
 import org.icepear.echarts.components.tooltip.Tooltip;
@@ -47,7 +47,8 @@ public class TwoValueAxesInPolar2Test {
                 .setType("value")
                 .setStartAngle(0);
 
-        DefaultRadiusAxis radiusAxis = new DefaultRadiusAxis()
+        ValueRadiusAxis radiusAxis = new ValueRadiusAxis()
+                .setType(null)
                 .setMin(0);
 
         LineSeries series = new LineSeries()

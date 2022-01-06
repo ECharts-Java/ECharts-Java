@@ -10,7 +10,7 @@ import com.google.gson.JsonParser;
 
 import org.icepear.echarts.PolarLine;
 import org.icepear.echarts.charts.line.LineSeries;
-import org.icepear.echarts.components.coord.polar.DefaultRadiusAxis;
+import org.icepear.echarts.components.coord.polar.ValueRadiusAxis;
 import org.icepear.echarts.components.tooltip.Tooltip;
 import org.icepear.echarts.components.tooltip.TooltipAxisPointer;
 import org.icepear.echarts.serializer.EChartsSerializer;
@@ -32,7 +32,7 @@ public class BasicPolarLineTest {
                         .setAxisPointer(new TooltipAxisPointer().setType("cross")))
                 .setPolarAxis()
                 .setAngleAxis()
-                .setRadiusAxis(new DefaultRadiusAxis().setMin(0))
+                .setRadiusAxis(new ValueRadiusAxis().setMin(0))
                 .addSeries(new LineSeries().setCoordinateSystem("polar")
                         .setShowSymbol(false).setData(data));
 

@@ -1,7 +1,7 @@
 {
   "title": { "text": "Tangential Polar Bar" },
   "polar": { "radius": ["30", "80%"] },
-  "angleAxis": { "max": 4 },
+  "angleAxis": { "type": "value", "max": 4 },
   "radiusAxis": { "type": "category", "data": ["a", "b", "c", "d"] },
   "tooltip": { "trigger": "item" },
   "series": [

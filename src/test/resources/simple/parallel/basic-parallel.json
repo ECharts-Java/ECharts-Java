@@ -1,8 +1,8 @@
 {
   "parallelAxis": [
-    { "dim": 0, "name": "Price" },
-    { "dim": 1, "name": "Net Weight" },
-    { "dim": 2, "name": "Amount" },
+    { "dim": 0, "type": "value", "name": "Price" },
+    { "dim": 1, "type": "value", "name": "Net Weight" },
+    { "dim": 2, "type": "value", "name": "Amount" },
     {
       "dim": 3,
       "type": "category",
