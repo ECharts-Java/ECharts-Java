@@ -132,12 +132,12 @@ For demo codes, please refer to the [docs](https://echarts.icepear.org/) and [ex
 ## 🎇 Gallery
 
 <p float="center">
-  <img src="assets/imgs/stacked-line.jpg" width="49%" />
-  <img src="assets/imgs/stacked-area.jpg" width="49%" /> 
-  <img src="assets/imgs/multiple-series-bar.jpg" width="49%" />
-  <img src="assets/imgs/horizontal-stacked-bar.jpg" width="49%" /> 
-  <img src="assets/imgs/basic-scatter.jpg" width="49%" />
-  <img src="assets/imgs/basic-boxplot.jpg" width="49%" /> 
+  <img src="assets/imgs/stacked-line.jpg" width="32%" />
+  <img src="assets/imgs/stacked-area.jpg" width="32%" /> 
+  <img src="assets/imgs/multiple-series-bar.jpg" width="32%" />
+  <img src="assets/imgs/horizontal-stacked-bar.jpg" width="32%" /> 
+  <img src="assets/imgs/basic-scatter.jpg" width="32%" />
+  <img src="assets/imgs/basic-boxplot.jpg" width="32%" /> 
 </p>
 
 ## 💡 Authors
