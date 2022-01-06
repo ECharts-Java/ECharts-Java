@@ -131,11 +131,14 @@ For demo codes, please refer to the [docs](https://echarts.icepear.org/) and [ex
 
 ## 🎇 Gallery
 
-|<img align="center" src="assets/imgs/stacked-line.jpg" />|<img align="center" src="assets/imgs/stacked-area.jpg" />|
-|--|--|
-|<img align="center" src="assets/imgs/multiple-series-bar.jpg" />|<img align="center" src="assets/imgs/horizontal-stacked-bar.jpg" />|
-|<img align="center" src="assets/imgs/basic-scatter.jpg" />|<img align="center" src="assets/imgs/basic-boxplot.jpg" />|
-
+<p float="center">
+  <img src="assets/imgs/stacked-line.jpg" width="49%" />
+  <img src="assets/imgs/stacked-area.jpg" width="49%" /> 
+  <img src="assets/imgs/multiple-series-bar.jpg" width="49%" />
+  <img src="assets/imgs/horizontal-stacked-bar.jpg" width="49%" /> 
+  <img src="assets/imgs/basic-scatter.jpg" width="49%" />
+  <img src="assets/imgs/basic-boxplot.jpg" width="49%" /> 
+</p>
 
 ## 💡 Authors
 - [@IcePear-Jzx](https://github.com/IcePear-Jzx)
