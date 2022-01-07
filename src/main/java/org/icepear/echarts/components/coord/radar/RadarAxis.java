@@ -10,6 +10,7 @@ import org.icepear.echarts.origin.coord.AxisLineOption;
 import org.icepear.echarts.origin.coord.AxisTickOption;
 import org.icepear.echarts.origin.coord.SplitAreaOption;
 import org.icepear.echarts.origin.coord.SplitLineOption;
+import org.icepear.echarts.origin.coord.radar.RadarAxisNameOption;
 import org.icepear.echarts.origin.coord.radar.RadarIndicatorOption;
 import org.icepear.echarts.origin.coord.radar.RadarOption;
 
@@ -106,7 +107,7 @@ public class RadarAxis implements RadarOption {
 
     private SplitAreaOption splitArea;
 
-    private Object axisName;
+    private RadarAxisNameOption axisName;
 
     private Number axisNameGap;
 
