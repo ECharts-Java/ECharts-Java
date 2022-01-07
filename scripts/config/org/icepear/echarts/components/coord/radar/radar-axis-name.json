@@ -1,0 +1,5 @@
+{
+  "name": "RadarAxisName",
+  "type": "class",
+  "implements": ["RadarAxisNameOption"]
+}

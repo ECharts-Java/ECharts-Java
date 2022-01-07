@@ -37,7 +37,7 @@
     },
     {
       "name": "axisName",
-      "types": ["Object"]
+      "types": ["RadarAxisNameOption"]
     },
     {
       "name": "axisNameGap",

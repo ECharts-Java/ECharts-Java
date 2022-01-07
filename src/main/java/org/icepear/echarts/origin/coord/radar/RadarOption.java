@@ -29,7 +29,7 @@ public interface RadarOption extends ComponentOption, CircleLayoutOptionMixin {
 
     RadarOption setSplitArea(SplitAreaOption splitArea);
 
-    RadarOption setAxisName(Object axisName);
+    RadarOption setAxisName(RadarAxisNameOption axisName);
 
     RadarOption setAxisNameGap(Number axisNameGap);
 
