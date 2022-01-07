@@ -1,6 +1,6 @@
 package org.icepear.echarts.origin.component.visualMap;
 
-import org.icepear.echarts.components.visualMap.VisualPiece;
+import java.util.Map;
 
 /**
  * https://github.com/apache/echarts/blob/0114414eed6d0f9d1bb951459517e21ae557989f/src/component/visualMap/PiecewiseModel.ts#L70
@@ -19,13 +19,13 @@ public interface PiecewiseVisualMapOption extends VisualMapOption {
 
     PiecewiseVisualMapOption setItemSymbol(String itemSymbol);
 
-    PiecewiseVisualMapOption setPieces(VisualPiece[] pieces);
+    PiecewiseVisualMapOption setPieces(VisualPieceOption[] pieces);
 
     PiecewiseVisualMapOption setCategories(String[] categories);
 
     PiecewiseVisualMapOption setSplitNumber(Number splitNumber);
 
-    PiecewiseVisualMapOption setSelected(Object selected);
+    PiecewiseVisualMapOption setSelected(Map<String, Boolean> selected);
 
     PiecewiseVisualMapOption setSelectedMode(String selectedMode);
 

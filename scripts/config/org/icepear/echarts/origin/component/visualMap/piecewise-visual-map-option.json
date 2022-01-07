@@ -29,7 +29,7 @@
     },
     {
       "name": "pieces",
-      "types": ["VisualPiece[]"]
+      "types": ["VisualPieceOption[]"]
     },
     {
       "name": "categories",
@@ -41,7 +41,7 @@
     },
     {
       "name": "selected",
-      "types": ["Dictionary"]
+      "types": ["Map<String, Boolean>"]
     },
     {
       "name": "selectedMode",
