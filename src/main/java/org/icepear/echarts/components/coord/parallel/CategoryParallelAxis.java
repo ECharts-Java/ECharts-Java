@@ -7,6 +7,7 @@ import lombok.experimental.Accessors;
 
 import org.icepear.echarts.origin.coord.AxisLabelBaseOption;
 import org.icepear.echarts.origin.coord.AxisLineOption;
+import org.icepear.echarts.origin.coord.AxisNameTextStyleOption;
 import org.icepear.echarts.origin.coord.AxisTickOption;
 import org.icepear.echarts.origin.coord.MinorSplitLineOption;
 import org.icepear.echarts.origin.coord.MinorTickOption;
@@ -142,7 +143,7 @@ public class CategoryParallelAxis implements CategoryParallelAxisOption {
 
     private Object nameTruncate;
 
-    private Object nameTextStyle;
+    private AxisNameTextStyleOption nameTextStyle;
 
     private Number nameGap;
 

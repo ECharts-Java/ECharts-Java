@@ -23,7 +23,7 @@ public interface AxisBaseOptionCommon extends ComponentOption, AnimationOptionMi
 
     AxisBaseOptionCommon setNameTruncate(Object nameTruncate);
 
-    AxisBaseOptionCommon setNameTextStyle(Object nameTextStyle);
+    AxisBaseOptionCommon setNameTextStyle(AxisNameTextStyleOption nameTextStyle);
 
     AxisBaseOptionCommon setNameGap(Number nameGap);
 
