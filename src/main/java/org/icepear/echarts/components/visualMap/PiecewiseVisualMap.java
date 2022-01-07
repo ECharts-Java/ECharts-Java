@@ -1,11 +1,14 @@
 package org.icepear.echarts.components.visualMap;
 
+import java.util.Map;
+
 import lombok.AccessLevel;
 import lombok.Data;
 import lombok.Setter;
 import lombok.experimental.Accessors;
 
 import org.icepear.echarts.origin.component.visualMap.PiecewiseVisualMapOption;
+import org.icepear.echarts.origin.component.visualMap.VisualPieceOption;
 import org.icepear.echarts.origin.util.LabelOption;
 
 @Accessors(chain = true)
@@ -241,11 +244,11 @@ public class PiecewiseVisualMap implements PiecewiseVisualMapOption {
 
     private String itemSymbol;
 
-    private VisualPiece[] pieces;
+    private VisualPieceOption[] pieces;
 
     private Number splitNumber;
 
-    private Object selected;
+    private Map<String, Boolean> selected;
 
     private String selectedMode;
 

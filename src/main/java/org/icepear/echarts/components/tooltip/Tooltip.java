@@ -5,6 +5,7 @@ import lombok.Data;
 import lombok.Setter;
 import lombok.experimental.Accessors;
 
+import org.icepear.echarts.origin.component.tooltip.TooltipAxisPointerOption;
 import org.icepear.echarts.origin.component.tooltip.TooltipOption;
 
 @Accessors(chain = true)
@@ -129,7 +130,7 @@ public class Tooltip implements TooltipOption {
 
     private Number zlevel;
 
-    private TooltipAxisPointer axisPointer;
+    private TooltipAxisPointerOption axisPointer;
 
     private Boolean showContent;
 

@@ -1,6 +1,5 @@
 package org.icepear.echarts.origin.component.tooltip;
 
-import org.icepear.echarts.components.tooltip.TooltipAxisPointer;
 import org.icepear.echarts.origin.util.CommonTooltipOption;
 import org.icepear.echarts.origin.util.ComponentOption;
 
@@ -11,7 +10,7 @@ public interface TooltipOption extends CommonTooltipOption, ComponentOption {
 
     TooltipOption setMainType(String mainType);
 
-    TooltipOption setAxisPointer(TooltipAxisPointer axisPointer);
+    TooltipOption setAxisPointer(TooltipAxisPointerOption axisPointer);
 
     TooltipOption setShowContent(Boolean showContent);
 
