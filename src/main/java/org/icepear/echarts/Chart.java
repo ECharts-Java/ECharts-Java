@@ -64,18 +64,18 @@ public abstract class Chart<T extends Chart<?, ?>, E extends SeriesOption> {
         return self;
     }
 
-    public T addDataset(Object[] dataset) {
-        datasets.add(new Dataset().setSource(dataset));
+    public T addDataset(Object[] source) {
+        datasets.add(new Dataset().setSource(source));
         return self;
     }
 
-    public T addDataset(Object[][] dataset) {
-        datasets.add(new Dataset().setSource(dataset));
+    public T addDataset(Object[][] source) {
+        datasets.add(new Dataset().setSource(source));
         return self;
     }
 
-    public T addDataset(Object[][][] dataset) {
-        datasets.add(new Dataset().setSource(dataset));
+    public T addDataset(Object[][][] source) {
+        datasets.add(new Dataset().setSource(source));
         return self;
     }
 
@@ -94,33 +94,33 @@ public abstract class Chart<T extends Chart<?, ?>, E extends SeriesOption> {
         return self;
     }
 
-    public T addSeries(Object[] series) {
-        this.series.add(createSeries(series));
+    public T addSeries(Object[] data) {
+        this.series.add(createSeries(data));
         return self;
     }
 
-    public T addSeries(Object[][] series) {
-        this.series.add(createSeries(series));
+    public T addSeries(Object[][] data) {
+        this.series.add(createSeries(data));
         return self;
     }
 
-    public T addSeries(Object[][][] series) {
-        this.series.add(createSeries(series));
+    public T addSeries(Object[][][] data) {
+        this.series.add(createSeries(data));
         return self;
     }
 
-    public T addSeries(String name, Object[] series) {
-        this.series.add(createSeries(name, series));
+    public T addSeries(String name, Object[] data) {
+        this.series.add(createSeries(name, data));
         return self;
     }
 
-    public T addSeries(String name, Object[][] series) {
-        this.series.add(createSeries(name, series));
+    public T addSeries(String name, Object[][] data) {
+        this.series.add(createSeries(name, data));
         return self;
     }
 
-    public T addSeries(String name, Object[][][] series) {
-        this.series.add(createSeries(name, series));
+    public T addSeries(String name, Object[][][] data) {
+        this.series.add(createSeries(name, data));
         return self;
     }
 
@@ -131,12 +131,12 @@ public abstract class Chart<T extends Chart<?, ?>, E extends SeriesOption> {
 
     protected abstract E createSeries();
 
-    protected E createSeries(Object series) {
-        return seriesClazz.cast(createSeries().setData(series));
+    protected E createSeries(Object data) {
+        return seriesClazz.cast(createSeries().setData(data));
     }
 
-    protected E createSeries(String name, Object series) {
-        return seriesClazz.cast(createSeries(series).setName(name));
+    protected E createSeries(String name, Object data) {
+        return seriesClazz.cast(createSeries(data).setName(name));
     }
 
     protected E createSeries(E series) {
