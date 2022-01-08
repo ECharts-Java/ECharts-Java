@@ -37,13 +37,13 @@ public abstract class CartesianCoordChart<T extends Chart<?, ?>, E extends Serie
         return self;
     }
 
-    public T addXAxis(String[] xAxis) {
-        xAxes.add(createCategoryAxis().setData(xAxis));
+    public T addXAxis(String[] data) {
+        xAxes.add(createCategoryAxis().setData(data));
         return self;
     }
 
-    public T addXAxis(String name, String[] xAxis) {
-        xAxes.add(createCategoryAxis().setName(name).setData(xAxis));
+    public T addXAxis(String name, String[] data) {
+        xAxes.add(createCategoryAxis().setName(name).setData(data));
         return self;
     }
 
@@ -62,13 +62,13 @@ public abstract class CartesianCoordChart<T extends Chart<?, ?>, E extends Serie
         return self;
     }
 
-    public T addYAxis(String[] yAxis) {
-        yAxes.add(createCategoryAxis().setData(yAxis));
+    public T addYAxis(String[] data) {
+        yAxes.add(createCategoryAxis().setData(data));
         return self;
     }
 
-    public T addYAxis(String name, String[] yAxis) {
-        yAxes.add(createCategoryAxis().setName(name).setData(yAxis));
+    public T addYAxis(String name, String[] data) {
+        yAxes.add(createCategoryAxis().setName(name).setData(data));
         return self;
     }
 
