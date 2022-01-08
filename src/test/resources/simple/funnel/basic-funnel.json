@@ -1,7 +1,7 @@
 {
   "title": { "text": "Funnel" },
   "tooltip": { "trigger": "item" },
-  "legend": { "show": true },
+  "legend": {},
   "series": [
     {
       "type": "funnel",

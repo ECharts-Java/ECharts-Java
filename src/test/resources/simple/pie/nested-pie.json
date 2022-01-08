@@ -1,6 +1,6 @@
 {
   "tooltip": { "trigger": "item" },
-  "legend": { "show": true },
+  "legend": {},
   "series": [
     {
       "type": "pie",

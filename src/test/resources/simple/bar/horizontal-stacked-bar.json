@@ -7,7 +7,7 @@
     }
   ],
   "tooltip": { "axisPointer": { "type": "shadow" }, "trigger": "axis" },
-  "legend": { "show": true },
+  "legend": {},
   "series": [
     {
       "type": "bar",

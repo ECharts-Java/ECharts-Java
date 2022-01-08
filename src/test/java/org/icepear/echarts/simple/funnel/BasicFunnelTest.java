@@ -21,7 +21,7 @@ public class BasicFunnelTest {
         Funnel funnel = new Funnel()
                 .setTitle("Funnel")
                 .setTooltip("item")
-                .setLegend(true)
+                .setLegend()
                 .addSeries(new FunnelSeries()
                         .setLabel(new FunnelLabel().setShow(true).setPosition("inside"))
                         .setData(new FunnelDataItem[] {

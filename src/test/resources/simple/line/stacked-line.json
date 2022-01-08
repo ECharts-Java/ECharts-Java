@@ -9,7 +9,7 @@
   ],
   "yAxis": [{ "type": "value" }],
   "tooltip": { "trigger": "axis" },
-  "legend": { "show": true },
+  "legend": {},
   "series": [
     {
       "type": "line",

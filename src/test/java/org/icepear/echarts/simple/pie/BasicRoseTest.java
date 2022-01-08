@@ -19,7 +19,7 @@ public class BasicRoseTest {
     @Test
     public void testBasicRose() {
         Pie pie = new Pie()
-                .setLegend(true)
+                .setLegend()
                 .addSeries(new PieSeries()
                         .setRadius(new Number[] { 50, 250 })
                         .setRoseType("area")

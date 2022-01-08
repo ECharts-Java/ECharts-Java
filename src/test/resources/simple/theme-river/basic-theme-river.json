@@ -1,6 +1,6 @@
 {
   "singleAxis": { "type": "time" },
-  "legend": { "show": true },
+  "legend": {},
   "series": [
     {
       "type": "themeRiver",

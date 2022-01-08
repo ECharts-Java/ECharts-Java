@@ -7,7 +7,7 @@
   ],
   "yAxis": [{ "type": "value" }],
   "tooltip": { "trigger": "item" },
-  "legend": { "show": true },
+  "legend": {},
   "series": [
     { "type": "bar", "name": "2015", "data": [43.3, 83.1, 86.4, 72.4] },
     { "type": "bar", "name": "2016", "data": [85.8, 73.4, 65.2, 53.9] },

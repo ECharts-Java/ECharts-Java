@@ -34,8 +34,8 @@ public abstract class Chart<T extends Chart<?, ?>, E extends SeriesOption> {
         return option;
     }
 
-    public T setTitle(String title) {
-        option.setTitle(new Title().setText(title));
+    public T setTitle(String text) {
+        option.setTitle(new Title().setText(text));
         return self;
     }
 
@@ -44,8 +44,8 @@ public abstract class Chart<T extends Chart<?, ?>, E extends SeriesOption> {
         return self;
     }
 
-    public T setLegend(Boolean show) {
-        option.setLegend(new Legend().setShow(show));
+    public T setLegend() {
+        option.setLegend(new Legend());
         return self;
     }
 

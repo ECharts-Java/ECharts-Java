@@ -10,7 +10,7 @@
       { "name": "Marketing", "max": 25000 }
     ]
   },
-  "legend": { "show": true },
+  "legend": {},
   "series": [
     {
       "type": "radar",

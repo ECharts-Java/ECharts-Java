@@ -22,7 +22,7 @@ public class BasicDoughnutTest {
     public void testBasicDoughnut() {
         Pie pie = new Pie()
                 .setTooltip("item")
-                .setLegend(true)
+                .setLegend()
                 .addSeries(new PieSeries().setRadius(new String[] { "40%", "70%" })
                         .setItemStyle(new PieItemStyle()
                                 .setBorderRadius(10)
