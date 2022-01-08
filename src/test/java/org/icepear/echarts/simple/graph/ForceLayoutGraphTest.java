@@ -57,7 +57,7 @@ public class ForceLayoutGraphTest {
         Graph graph = new Graph()
                 .setTitle("Les Miserables")
                 .setTooltip("item")
-                .setLegend(true)
+                .setLegend()
                 .addSeries(new GraphSeries().setName("Les Miserables")
                         .setLayout("force")
                         .setData(nodes.toArray(new GraphNodeItem[0]))

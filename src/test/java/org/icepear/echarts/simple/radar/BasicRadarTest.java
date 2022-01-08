@@ -19,7 +19,7 @@ public class BasicRadarTest {
     public void testBasicRadar() {
         Radar radar = new Radar()
                 .setTitle("Basic Radar")
-                .setLegend(true)
+                .setLegend()
                 .setRadarAxis(new RadarIndicator[] {
                         new RadarIndicator().setName("Sales").setMax(6500),
                         new RadarIndicator().setName("Administration").setMax(16000),

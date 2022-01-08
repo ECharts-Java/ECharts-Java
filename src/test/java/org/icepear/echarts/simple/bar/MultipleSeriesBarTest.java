@@ -16,7 +16,7 @@ public class MultipleSeriesBarTest {
     @Test
     public void testMultipleSeriesBar() {
         Bar bar = new Bar()
-                .setLegend(true)
+                .setLegend()
                 .setTooltip("item")
                 .addXAxis(new String[] { "Matcha Latte", "Milk Tea", "Cheese Cocoa", "Walnut Brownie" })
                 .addYAxis()

@@ -19,7 +19,7 @@ public class BasicPieTest {
         Pie pie = new Pie()
                 .setTitle("Basic Pie")
                 .setTooltip("item")
-                .setLegend(true)
+                .setLegend()
                 .addSeries(new PieDataItem[] {
                         new PieDataItem().setValue(1048).setName("Search Engine"),
                         new PieDataItem().setValue(735).setName("Direct"),

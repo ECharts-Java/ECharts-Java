@@ -59,7 +59,7 @@ public class CircularLayoutGraphTest {
         Graph graph = new Graph()
                 .setTitle("Les Miserables")
                 .setTooltip("item")
-                .setLegend(true)
+                .setLegend()
                 .addSeries(new GraphSeries().setName("Les Miserables")
                         .setLayout("circular")
                         .setCircular(new GraphCircular().setRotateLabel(true))

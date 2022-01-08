@@ -51,7 +51,7 @@ public class BasicPolarScatterTest {
     @Test
     public void testBasicPolarScatter() {
         PolarScatter polarScatter = new PolarScatter()
-                .setLegend(true)
+                .setLegend()
                 .setTooltip("item")
                 .setPolarAxis()
                 .setAngleAxis(new CategoryAngleAxis()
