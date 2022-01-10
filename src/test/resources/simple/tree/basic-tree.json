@@ -1,0 +1,26 @@
+{
+  "tooltip": { "trigger": "item" },
+  "series": [
+    {
+      "type": "tree",
+      "emphasis": { "focus": "descendant" },
+      "data": [
+        {
+          "name": "flare",
+          "children": [
+            {
+              "name": "analytics",
+              "children": [
+                { "name": "cluster", "value": 3938 },
+                { "name": "graph", "value": 3534 }
+              ]
+            },
+            { "name": "animate", "value": 17010 }
+          ]
+        }
+      ],
+      "label": { "align": "right", "position": "left" },
+      "leaves": { "label": { "align": "left", "position": "right" } }
+    }
+  ]
+}

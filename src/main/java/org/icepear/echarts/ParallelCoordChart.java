@@ -32,13 +32,13 @@ public abstract class ParallelCoordChart<T extends Chart<?, ?>, E extends Series
         return self;
     }
 
-    public T addParallelAxis(Number dim, String[] parallelAxis) {
-        parallelAxes.add(createCategoryParallelAxis().setDim(dim).setData(parallelAxis));
+    public T addParallelAxis(Number dim, String[] data) {
+        parallelAxes.add(createCategoryParallelAxis().setDim(dim).setData(data));
         return self;
     }
 
-    public T addParallelAxis(String name, Number dim, String[] parallelAxis) {
-        parallelAxes.add(createCategoryParallelAxis().setName(name).setDim(dim).setData(parallelAxis));
+    public T addParallelAxis(String name, Number dim, String[] data) {
+        parallelAxes.add(createCategoryParallelAxis().setName(name).setDim(dim).setData(data));
         return self;
     }
 

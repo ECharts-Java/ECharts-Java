@@ -9,8 +9,8 @@ public abstract class RadarCoordChart<T extends Chart<?, ?>, E extends SeriesOpt
         super(clazz, seriesClazz);
     }
 
-    public T setRadarAxis(RadarIndicator[] radarAxis) {
-        option.setRadar(new RadarAxis().setIndicator(radarAxis));
+    public T setRadarAxis(RadarIndicator[] indicators) {
+        option.setRadar(new RadarAxis().setIndicator(indicators));
         return self;
     }
 
