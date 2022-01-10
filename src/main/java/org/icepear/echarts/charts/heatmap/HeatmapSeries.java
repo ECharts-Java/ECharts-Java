@@ -179,7 +179,7 @@ public class HeatmapSeries implements HeatmapSeriesOption {
         return this;
     }
 
-    private Object colorBy;
+    private String colorBy;
 
     private Boolean legendHoverLink;
 

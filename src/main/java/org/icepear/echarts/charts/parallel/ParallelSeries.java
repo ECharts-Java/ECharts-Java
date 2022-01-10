@@ -180,7 +180,7 @@ public class ParallelSeries implements ParallelSeriesOption {
         return this;
     }
 
-    private Object colorBy;
+    private String colorBy;
 
     private Boolean legendHoverLink;
 

@@ -182,7 +182,7 @@ public class ThemeRiverSeries implements ThemeRiverSeriesOption {
         return this;
     }
 
-    private Object colorBy;
+    private String colorBy;
 
     private Boolean legendHoverLink;
 

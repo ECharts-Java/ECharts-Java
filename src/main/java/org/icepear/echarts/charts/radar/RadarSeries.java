@@ -191,7 +191,7 @@ public class RadarSeries implements RadarSeriesOption {
         return this;
     }
 
-    private Object colorBy;
+    private String colorBy;
 
     private Boolean legendHoverLink;
 

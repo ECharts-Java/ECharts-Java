@@ -245,7 +245,7 @@ public class GraphSeries implements GraphSeriesOption {
         return this;
     }
 
-    private Object colorBy;
+    private String colorBy;
 
     private Boolean legendHoverLink;
 

@@ -184,7 +184,7 @@ public class FunnelSeries implements FunnelSeriesOption {
         return this;
     }
 
-    private Object colorBy;
+    private String colorBy;
 
     private Boolean legendHoverLink;
 

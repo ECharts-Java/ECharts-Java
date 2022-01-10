@@ -8,7 +8,8 @@ import org.icepear.echarts.origin.export.SeriesInjectedOption;
  * https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/util/types.ts#L1587
  * https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/export/option.ts#L181
  */
-public interface SeriesOption extends ComponentOption, AnimationOptionMixin, ColorPaletteOptionMixin, StatesOptionMixin, SeriesInjectedOption {
+public interface SeriesOption extends ComponentOption, AnimationOptionMixin, ColorPaletteOptionMixin, StatesOptionMixin,
+        SeriesInjectedOption {
 
     SeriesOption setMainType(String mainType);
 
@@ -24,7 +25,7 @@ public interface SeriesOption extends ComponentOption, AnimationOptionMixin, Col
 
     SeriesOption setData(Object data);
 
-    SeriesOption setColorBy(Object colorBy);
+    SeriesOption setColorBy(String colorBy);
 
     SeriesOption setLegendHoverLink(Boolean legendHoverLink);
 

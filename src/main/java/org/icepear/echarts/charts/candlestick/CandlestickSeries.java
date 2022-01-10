@@ -179,7 +179,7 @@ public class CandlestickSeries implements CandlestickSeriesOption {
         return this;
     }
 
-    private Object colorBy;
+    private String colorBy;
 
     private Boolean legendHoverLink;
 
