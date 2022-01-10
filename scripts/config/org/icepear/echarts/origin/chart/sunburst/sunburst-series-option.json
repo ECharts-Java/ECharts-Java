@@ -1,12 +1,7 @@
 {
   "name": "SunburstSeriesOption",
   "type": "interface",
-  "extends": [
-    "SeriesOption",
-    "SunburstStateOption",
-    "SunburstColorByMixin",
-    "CircleLayoutOptionMixin"
-  ],
+  "extends": ["SeriesOption", "SunburstStateOption", "CircleLayoutOptionMixin"],
   "fields": [
     { "name": "type", "types": ["String"], "default": "sunburst" },
     { "name": "clockwise", "types": ["Boolean"] },
@@ -21,6 +16,7 @@
     { "name": "data", "types": ["SunburstNodeItemOption[]"] }
   ],
   "comments": [
-    "https://github.com/apache/echarts/blob/566ba8e83dd283ba359fe9aceee0d4a12dbcd6c7/src/chart/sunburst/SunburstSeries.ts#L120"
+    "https://github.com/apache/echarts/blob/566ba8e83dd283ba359fe9aceee0d4a12dbcd6c7/src/chart/sunburst/SunburstSeries.ts#L120",
+    "https://github.com/apache/echarts/blob/566ba8e83dd283ba359fe9aceee0d4a12dbcd6c7/src/util/types.ts#L860"
   ]
 }
