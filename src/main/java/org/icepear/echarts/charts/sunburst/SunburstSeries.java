@@ -174,18 +174,7 @@ public class SunburstSeries implements SunburstSeriesOption {
         return this;
     }
 
-    @Setter(AccessLevel.NONE)
-    private Object colorBy;
-
-    public SunburstSeries setColorBy(Object colorBy) {
-        this.colorBy = colorBy;
-        return this;
-    }
-
-    public SunburstSeries setColorBy(String colorBy) {
-        this.colorBy = colorBy;
-        return this;
-    }
+    private String colorBy;
 
     private Boolean legendHoverLink;
 

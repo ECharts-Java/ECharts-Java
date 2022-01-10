@@ -196,7 +196,7 @@ public class PieSeries implements PieSeriesOption {
         return this;
     }
 
-    private Object colorBy;
+    private String colorBy;
 
     private Boolean legendHoverLink;
 

@@ -193,7 +193,7 @@ public class LineSeries implements LineSeriesOption {
         return this;
     }
 
-    private Object colorBy;
+    private String colorBy;
 
     private Boolean legendHoverLink;
 
