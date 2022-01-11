@@ -9,6 +9,9 @@ import lombok.experimental.Accessors;
 
 import org.icepear.echarts.origin.chart.parallel.ParallelDataItemOption;
 import org.icepear.echarts.origin.chart.parallel.ParallelSeriesOption;
+import org.icepear.echarts.origin.component.marker.MarkAreaOption;
+import org.icepear.echarts.origin.component.marker.MarkLineOption;
+import org.icepear.echarts.origin.component.marker.MarkPointOption;
 import org.icepear.echarts.origin.coord.parallel.ParallelAxisOption;
 import org.icepear.echarts.origin.util.LabelLayoutOption;
 import org.icepear.echarts.origin.util.LabelLineOption;
@@ -135,11 +138,11 @@ public class ParallelSeries implements ParallelSeriesOption {
 
     private Object blur;
 
-    private Object markArea;
+    private MarkAreaOption markArea;
 
-    private Object markLine;
+    private MarkLineOption markLine;
 
-    private Object markPoint;
+    private MarkPointOption markPoint;
 
     private Object tooltip;
 

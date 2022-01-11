@@ -12,6 +12,9 @@ import org.icepear.echarts.origin.chart.pie.PieEmphasisOption;
 import org.icepear.echarts.origin.chart.pie.PieItemStyleOption;
 import org.icepear.echarts.origin.chart.pie.PieLabelOption;
 import org.icepear.echarts.origin.chart.pie.PieSeriesOption;
+import org.icepear.echarts.origin.component.marker.MarkAreaOption;
+import org.icepear.echarts.origin.component.marker.MarkLineOption;
+import org.icepear.echarts.origin.component.marker.MarkPointOption;
 import org.icepear.echarts.origin.util.LabelLayoutOption;
 import org.icepear.echarts.origin.util.LabelLineOption;
 import org.icepear.echarts.origin.util.OptionEncode;
@@ -146,11 +149,11 @@ public class PieSeries implements PieSeriesOption {
 
     private Object blur;
 
-    private Object markArea;
+    private MarkAreaOption markArea;
 
-    private Object markLine;
+    private MarkLineOption markLine;
 
-    private Object markPoint;
+    private MarkPointOption markPoint;
 
     private Object tooltip;
 

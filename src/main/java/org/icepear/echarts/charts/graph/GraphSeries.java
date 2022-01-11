@@ -17,6 +17,9 @@ import org.icepear.echarts.origin.chart.graph.GraphForceOption;
 import org.icepear.echarts.origin.chart.graph.GraphNodeItemOption;
 import org.icepear.echarts.origin.chart.graph.GraphSelectOption;
 import org.icepear.echarts.origin.chart.graph.GraphSeriesOption;
+import org.icepear.echarts.origin.component.marker.MarkAreaOption;
+import org.icepear.echarts.origin.component.marker.MarkLineOption;
+import org.icepear.echarts.origin.component.marker.MarkPointOption;
 import org.icepear.echarts.origin.util.ItemStyleOption;
 import org.icepear.echarts.origin.util.LabelLayoutOption;
 import org.icepear.echarts.origin.util.LabelLineOption;
@@ -175,11 +178,11 @@ public class GraphSeries implements GraphSeriesOption {
         return this;
     }
 
-    private Object markArea;
+    private MarkAreaOption markArea;
 
-    private Object markLine;
+    private MarkLineOption markLine;
 
-    private Object markPoint;
+    private MarkPointOption markPoint;
 
     private Object tooltip;
 

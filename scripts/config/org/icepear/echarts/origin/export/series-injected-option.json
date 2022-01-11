@@ -5,15 +5,15 @@
   "fields": [
     {
       "name": "markArea",
-      "types": ["MarkAreaComponentOption"]
+      "types": ["MarkAreaOption"]
     },
     {
       "name": "markLine",
-      "types": ["MarkLineComponentOption"]
+      "types": ["MarkLineOption"]
     },
     {
       "name": "markPoint",
-      "types": ["MarkPointComponentOption"]
+      "types": ["MarkPointOption"]
     },
     {
       "name": "tooltip",
