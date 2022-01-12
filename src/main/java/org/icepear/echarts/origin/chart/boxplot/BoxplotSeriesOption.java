@@ -23,4 +23,6 @@ public interface BoxplotSeriesOption
     BoxplotSeriesOption setData(BoxplotDataItemOption[] data);
 
     BoxplotSeriesOption setData(Object[] data);
+
+    BoxplotSeriesOption setEmphasis(BoxplotEmphasisOption emphasis);
 }
