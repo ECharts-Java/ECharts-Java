@@ -38,7 +38,7 @@ public class LineEmphasis implements LineEmphasisOption {
 
     private AreaStyleOption areaStyle;
 
-    private Object focus;
+    private String focus;
 
     private Boolean scale;
 }
