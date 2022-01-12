@@ -46,7 +46,7 @@ public class DataZoom implements DataZoomOption {
 
     private Number zlevel;
 
-    private Object orient;
+    private String orient;
 
     @Setter(AccessLevel.NONE)
     private Object xAxisIndex;

@@ -8,6 +8,7 @@ import lombok.Setter;
 import lombok.experimental.Accessors;
 
 import org.icepear.echarts.origin.chart.funnel.FunnelDataItemOption;
+import org.icepear.echarts.origin.chart.funnel.FunnelEmphasisOption;
 import org.icepear.echarts.origin.chart.funnel.FunnelLabelOption;
 import org.icepear.echarts.origin.chart.funnel.FunnelSeriesOption;
 import org.icepear.echarts.origin.component.marker.MarkAreaOption;
@@ -131,7 +132,18 @@ public class FunnelSeries implements FunnelSeriesOption {
 
     private String[][] colorLayer;
 
+    @Setter(AccessLevel.NONE)
     private Object emphasis;
+
+    public FunnelSeries setEmphasis(FunnelEmphasisOption emphasis) {
+        this.emphasis = emphasis;
+        return this;
+    }
+
+    public FunnelSeries setEmphasis(Object emphasis) {
+        this.emphasis = emphasis;
+        return this;
+    }
 
     private Object select;
 
@@ -394,7 +406,7 @@ public class FunnelSeries implements FunnelSeriesOption {
 
     private String sort;
 
-    private Object orient;
+    private String orient;
 
     private Number gap;
 

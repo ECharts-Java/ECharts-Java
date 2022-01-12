@@ -7,6 +7,7 @@ import lombok.Data;
 import lombok.Setter;
 import lombok.experimental.Accessors;
 
+import org.icepear.echarts.origin.chart.sunburst.SunburstEmphasisOption;
 import org.icepear.echarts.origin.chart.sunburst.SunburstItemStyleOption;
 import org.icepear.echarts.origin.chart.sunburst.SunburstLabelOption;
 import org.icepear.echarts.origin.chart.sunburst.SunburstLevelOption;
@@ -131,7 +132,18 @@ public class SunburstSeries implements SunburstSeriesOption {
 
     private String[][] colorLayer;
 
+    @Setter(AccessLevel.NONE)
     private Object emphasis;
+
+    public SunburstSeries setEmphasis(Object emphasis) {
+        this.emphasis = emphasis;
+        return this;
+    }
+
+    public SunburstSeries setEmphasis(SunburstEmphasisOption emphasis) {
+        this.emphasis = emphasis;
+        return this;
+    }
 
     private Object select;
 

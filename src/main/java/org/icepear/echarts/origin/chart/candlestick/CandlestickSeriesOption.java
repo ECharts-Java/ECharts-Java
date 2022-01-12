@@ -15,7 +15,7 @@ public interface CandlestickSeriesOption extends SeriesOption, CandlestickStateO
 
     CandlestickSeriesOption setCoordinateSystem(String coordinateSystem);
 
-    CandlestickSeriesOption setLayout(Object layout);
+    CandlestickSeriesOption setLayout(String layout);
 
     CandlestickSeriesOption setClip(Boolean clip);
 
@@ -33,5 +33,7 @@ public interface CandlestickSeriesOption extends SeriesOption, CandlestickStateO
 
     CandlestickSeriesOption setData(CandlestickDataItemOption[] data);
 
-    CandlestickSeriesOption setData(Object[] data);
+    CandlestickSeriesOption setData(Object[][] data);
+
+    CandlestickSeriesOption setEmphasis(CandlestickEmphasisOption emphasis);
 }

@@ -7,6 +7,7 @@ import lombok.Data;
 import lombok.Setter;
 import lombok.experimental.Accessors;
 
+import org.icepear.echarts.origin.chart.tree.TreeEmphasisOption;
 import org.icepear.echarts.origin.chart.tree.TreeLeavesOption;
 import org.icepear.echarts.origin.chart.tree.TreeNodeItemOption;
 import org.icepear.echarts.origin.chart.tree.TreeSeriesOption;
@@ -131,7 +132,18 @@ public class TreeSeries implements TreeSeriesOption {
 
     private String[][] colorLayer;
 
+    @Setter(AccessLevel.NONE)
     private Object emphasis;
+
+    public TreeSeries setEmphasis(Object emphasis) {
+        this.emphasis = emphasis;
+        return this;
+    }
+
+    public TreeSeries setEmphasis(TreeEmphasisOption emphasis) {
+        this.emphasis = emphasis;
+        return this;
+    }
 
     private Object select;
 

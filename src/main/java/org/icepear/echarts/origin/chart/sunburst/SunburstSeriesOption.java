@@ -30,4 +30,6 @@ public interface SunburstSeriesOption extends SeriesOption, SunburstStateOption,
     SunburstSeriesOption setSort(String sort);
 
     SunburstSeriesOption setData(SunburstNodeItemOption[] data);
+
+    SunburstSeriesOption setEmphasis(SunburstEmphasisOption emphasis);
 }

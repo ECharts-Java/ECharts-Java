@@ -52,4 +52,6 @@ public interface GaugeSeriesOption
     GaugeSeriesOption setData(GaugeDataItemOption[] data);
 
     GaugeSeriesOption setData(Object[] data);
+
+    GaugeSeriesOption setEmphasis(GaugeEmphasisOption emphasis);
 }

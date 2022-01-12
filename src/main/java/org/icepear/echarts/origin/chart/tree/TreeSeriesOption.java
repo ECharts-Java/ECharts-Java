@@ -32,4 +32,6 @@ public interface TreeSeriesOption
     TreeSeriesOption setLeaves(TreeLeavesOption leaves);
 
     TreeSeriesOption setData(TreeNodeItemOption[] data);
+
+    TreeSeriesOption setEmphasis(TreeEmphasisOption emphasis);
 }

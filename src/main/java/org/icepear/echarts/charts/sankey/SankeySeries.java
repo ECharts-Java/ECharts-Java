@@ -9,6 +9,7 @@ import lombok.experimental.Accessors;
 
 import org.icepear.echarts.origin.chart.sankey.SankeyEdgeItemOption;
 import org.icepear.echarts.origin.chart.sankey.SankeyEdgeStyleOption;
+import org.icepear.echarts.origin.chart.sankey.SankeyEmphasisOption;
 import org.icepear.echarts.origin.chart.sankey.SankeyLevelOption;
 import org.icepear.echarts.origin.chart.sankey.SankeyNodeItemOption;
 import org.icepear.echarts.origin.chart.sankey.SankeySeriesOption;
@@ -133,7 +134,18 @@ public class SankeySeries implements SankeySeriesOption {
 
     private String[][] colorLayer;
 
+    @Setter(AccessLevel.NONE)
     private Object emphasis;
+
+    public SankeySeries setEmphasis(Object emphasis) {
+        this.emphasis = emphasis;
+        return this;
+    }
+
+    public SankeySeries setEmphasis(SankeyEmphasisOption emphasis) {
+        this.emphasis = emphasis;
+        return this;
+    }
 
     private Object select;
 
@@ -324,7 +336,7 @@ public class SankeySeries implements SankeySeriesOption {
         return this;
     }
 
-    private Object orient;
+    private String orient;
 
     private Number nodeWidth;
 

@@ -1,0 +1,5 @@
+{
+  "name": "SunburstEmphasis",
+  "type": "class",
+  "implements": ["SunburstEmphasisOption"]
+}

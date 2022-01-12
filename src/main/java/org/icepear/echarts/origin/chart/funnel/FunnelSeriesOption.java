@@ -26,7 +26,7 @@ public interface FunnelSeriesOption
 
     FunnelSeriesOption setSort(String sort);
 
-    FunnelSeriesOption setOrient(Object orient);
+    FunnelSeriesOption setOrient(String orient);
 
     FunnelSeriesOption setGap(Number gap);
 
@@ -37,4 +37,6 @@ public interface FunnelSeriesOption
     FunnelSeriesOption setData(Number[] data);
 
     FunnelSeriesOption setData(Number[][] data);
+
+    FunnelSeriesOption setEmphasis(FunnelEmphasisOption emphasis);
 }

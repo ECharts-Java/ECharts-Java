@@ -24,4 +24,6 @@ public interface RadarSeriesOption extends SeriesOption, RadarStateOption, Symbo
     RadarSeriesOption setData(RadarDataItemOption[] data);
 
     RadarSeriesOption setData(String[][] data);
+
+    RadarSeriesOption setEmphasis(RadarEmphasisOption emphasis);
 }

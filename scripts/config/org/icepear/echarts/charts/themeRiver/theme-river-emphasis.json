@@ -1,0 +1,5 @@
+{
+  "name": "ThemeRiverEmphasis",
+  "type": "class",
+  "implements": ["ThemeRiverEmphasisOption"]
+}

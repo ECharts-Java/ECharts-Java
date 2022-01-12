@@ -1,0 +1,5 @@
+{
+  "name": "HeatmapEmphasis",
+  "type": "class",
+  "implements": ["HeatmapEmphasisOption"]
+}

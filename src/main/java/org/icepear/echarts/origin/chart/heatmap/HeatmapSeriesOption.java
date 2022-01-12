@@ -27,4 +27,6 @@ public interface HeatmapSeriesOption extends SeriesOption, HeatmapStateOption, S
     HeatmapSeriesOption setData(HeatmapDataItemOption[] data);
 
     HeatmapSeriesOption setData(Object[] data);
+
+    HeatmapSeriesOption setEmphasis(HeatmapEmphasisOption emphasis);
 }

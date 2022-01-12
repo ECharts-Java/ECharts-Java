@@ -1,7 +1,7 @@
 {
   "name": "BoxplotEmphasisOption",
   "type": "interface",
-  "extends": [],
+  "extends": ["BoxplotStateOption", "EmphasisOption"],
   "fields": [
     {
       "name": "focus",

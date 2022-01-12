@@ -7,6 +7,7 @@ import lombok.Data;
 import lombok.Setter;
 import lombok.experimental.Accessors;
 
+import org.icepear.echarts.origin.chart.themeRiver.ThemeRiverEmphasisOption;
 import org.icepear.echarts.origin.chart.themeRiver.ThemeRiverLabelOption;
 import org.icepear.echarts.origin.chart.themeRiver.ThemeRiverSeriesOption;
 import org.icepear.echarts.origin.component.marker.MarkAreaOption;
@@ -129,7 +130,18 @@ public class ThemeRiverSeries implements ThemeRiverSeriesOption {
 
     private String[][] colorLayer;
 
+    @Setter(AccessLevel.NONE)
     private Object emphasis;
+
+    public ThemeRiverSeries setEmphasis(Object emphasis) {
+        this.emphasis = emphasis;
+        return this;
+    }
+
+    public ThemeRiverSeries setEmphasis(ThemeRiverEmphasisOption emphasis) {
+        this.emphasis = emphasis;
+        return this;
+    }
 
     private Object select;
 

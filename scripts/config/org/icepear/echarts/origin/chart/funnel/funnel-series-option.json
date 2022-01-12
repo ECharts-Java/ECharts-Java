@@ -14,12 +14,16 @@
     { "name": "minSize", "types": ["String", "Number"] },
     { "name": "maxSize", "types": ["String", "Number"] },
     { "name": "sort", "types": ["String"] },
-    { "name": "orient", "types": ["LayoutOrient"] },
+    { "name": "orient", "types": ["String"] },
     { "name": "gap", "types": ["Number"] },
     { "name": "funnelAlign", "types": ["VerticalAlign", "HorizontalAlign"] },
     {
       "name": "data",
       "types": ["FunnelDataItemOption[]", "Number[][]", "Number[]"]
+    },
+    {
+      "name": "emphasis",
+      "types": ["FunnelEmphasisOption"]
     }
   ],
   "comments": [

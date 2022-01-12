@@ -9,7 +9,7 @@
     },
     {
       "name": "orient",
-      "types": ["LayoutOrient"]
+      "types": ["String"]
     },
     {
       "name": "xAxisIndex",

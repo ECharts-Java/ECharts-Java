@@ -8,6 +8,7 @@ import lombok.Setter;
 import lombok.experimental.Accessors;
 
 import org.icepear.echarts.origin.chart.parallel.ParallelDataItemOption;
+import org.icepear.echarts.origin.chart.parallel.ParallelEmphasisOption;
 import org.icepear.echarts.origin.chart.parallel.ParallelSeriesOption;
 import org.icepear.echarts.origin.component.marker.MarkAreaOption;
 import org.icepear.echarts.origin.component.marker.MarkLineOption;
@@ -132,7 +133,18 @@ public class ParallelSeries implements ParallelSeriesOption {
 
     private String[][] colorLayer;
 
+    @Setter(AccessLevel.NONE)
     private Object emphasis;
+
+    public ParallelSeries setEmphasis(Object emphasis) {
+        this.emphasis = emphasis;
+        return this;
+    }
+
+    public ParallelSeries setEmphasis(ParallelEmphasisOption emphasis) {
+        this.emphasis = emphasis;
+        return this;
+    }
 
     private Object select;
 
