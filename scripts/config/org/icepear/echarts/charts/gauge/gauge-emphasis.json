@@ -1,0 +1,5 @@
+{
+  "name": "GaugeEmphasis",
+  "type": "class",
+  "implements": ["GaugeEmphasisOption"]
+}

@@ -19,6 +19,10 @@
     {
       "name": "data",
       "types": ["HeatmapDataValue[]", "HeatmapDataItemOption[]"]
+    },
+    {
+      "name": "emphasis",
+      "types": ["HeatmapEmphasisOption"]
     }
   ],
   "comments": [

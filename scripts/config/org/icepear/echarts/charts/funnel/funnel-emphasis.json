@@ -1,0 +1,5 @@
+{
+  "name": "FunnelEmphasis",
+  "type": "class",
+  "implements": ["FunnelEmphasisOption"]
+}

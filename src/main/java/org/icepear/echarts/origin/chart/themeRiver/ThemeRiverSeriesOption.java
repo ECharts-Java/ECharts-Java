@@ -25,4 +25,6 @@ public interface ThemeRiverSeriesOption
     ThemeRiverSeriesOption setData(Object[] data);
 
     ThemeRiverSeriesOption setData(String[] data);
+
+    ThemeRiverSeriesOption setEmphasis(ThemeRiverEmphasisOption emphasis);
 }

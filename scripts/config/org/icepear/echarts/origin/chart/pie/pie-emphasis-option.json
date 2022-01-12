@@ -1,7 +1,7 @@
 {
   "name": "PieEmphasisOption",
   "type": "interface",
-  "extends": ["PieStateOption"],
+  "extends": ["PieStateOption", "EmphasisOption"],
   "fields": [
     {
       "name": "focus",

@@ -1,7 +1,7 @@
 {
   "name": "TreeEmphasisOption",
   "type": "interface",
-  "extends": ["EmphasisOption"],
+  "extends": ["TreeStateOption", "EmphasisOption"],
   "fields": [
     {
       "name": "focus",

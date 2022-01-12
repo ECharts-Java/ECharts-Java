@@ -1,0 +1,5 @@
+{
+  "name": "ScatterEmphasis",
+  "type": "class",
+  "implements": ["ScatterEmphasisOption"]
+}

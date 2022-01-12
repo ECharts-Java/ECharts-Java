@@ -30,6 +30,10 @@
         "Date[][]",
         "ScatterDataItemOption[]"
       ]
+    },
+    {
+      "name": "emphasis",
+      "types": ["ScatterEmphasisOption"]
     }
   ],
   "comments": [

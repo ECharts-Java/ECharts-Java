@@ -1,0 +1,5 @@
+{
+  "name": "RadarEmphasis",
+  "type": "class",
+  "implements": ["RadarEmphasisOption"]
+}

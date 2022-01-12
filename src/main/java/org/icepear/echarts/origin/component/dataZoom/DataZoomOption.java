@@ -10,7 +10,7 @@ public interface DataZoomOption extends ComponentOption {
 
     DataZoomOption setMainType(String mainType);
 
-    DataZoomOption setOrient(Object orient);
+    DataZoomOption setOrient(String orient);
 
     DataZoomOption setXAxisIndex(Number xAxisIndex);
 

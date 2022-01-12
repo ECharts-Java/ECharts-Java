@@ -29,6 +29,10 @@
     {
       "name": "data",
       "types": ["GaugeDataItemOption[]", "OptionDataValueNumeric[]"]
+    },
+    {
+      "name": "emphasis",
+      "types": ["GaugeEmphasisOption"]
     }
   ],
   "comments": [

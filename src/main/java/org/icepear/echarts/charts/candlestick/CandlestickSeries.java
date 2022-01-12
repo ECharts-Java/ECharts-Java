@@ -8,6 +8,7 @@ import lombok.Setter;
 import lombok.experimental.Accessors;
 
 import org.icepear.echarts.origin.chart.candlestick.CandlestickDataItemOption;
+import org.icepear.echarts.origin.chart.candlestick.CandlestickEmphasisOption;
 import org.icepear.echarts.origin.chart.candlestick.CandlestickItemStyleOption;
 import org.icepear.echarts.origin.chart.candlestick.CandlestickSeriesOption;
 import org.icepear.echarts.origin.component.marker.MarkAreaOption;
@@ -131,7 +132,18 @@ public class CandlestickSeries implements CandlestickSeriesOption {
 
     private String[][] colorLayer;
 
+    @Setter(AccessLevel.NONE)
     private Object emphasis;
+
+    public CandlestickSeries setEmphasis(CandlestickEmphasisOption emphasis) {
+        this.emphasis = emphasis;
+        return this;
+    }
+
+    public CandlestickSeries setEmphasis(Object emphasis) {
+        this.emphasis = emphasis;
+        return this;
+    }
 
     private Object select;
 
@@ -177,7 +189,7 @@ public class CandlestickSeries implements CandlestickSeriesOption {
         return this;
     }
 
-    public CandlestickSeries setData(Object[] data) {
+    public CandlestickSeries setData(Object[][] data) {
         this.data = data;
         return this;
     }
@@ -291,7 +303,7 @@ public class CandlestickSeries implements CandlestickSeriesOption {
 
     private OptionEncode encode;
 
-    private Object layout;
+    private String layout;
 
     private Boolean clip;
 

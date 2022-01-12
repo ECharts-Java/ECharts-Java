@@ -14,7 +14,7 @@ public interface SankeySeriesOption extends SeriesOption, SankeyBothStateOption,
 
     SankeySeriesOption setCoordinateSystem(String coordinateSystem);
 
-    SankeySeriesOption setOrient(Object orient);
+    SankeySeriesOption setOrient(String orient);
 
     SankeySeriesOption setNodeWidth(Number nodeWidth);
 
@@ -37,4 +37,6 @@ public interface SankeySeriesOption extends SeriesOption, SankeyBothStateOption,
     SankeySeriesOption setLinks(SankeyEdgeItemOption[] links);
 
     SankeySeriesOption setLevels(SankeyLevelOption[] levels);
+
+    SankeySeriesOption setEmphasis(SankeyEmphasisOption emphasis);
 }

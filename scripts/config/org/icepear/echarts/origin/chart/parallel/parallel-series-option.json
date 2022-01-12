@@ -16,6 +16,10 @@
     {
       "name": "data",
       "types": ["ParallelDataItemOption[]", "ParallelSeriesDataValue[]"]
+    },
+    {
+      "name": "emphasis",
+      "types": ["ParallelEmphasisOption"]
     }
   ],
   "comments": [

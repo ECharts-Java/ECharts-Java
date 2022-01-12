@@ -39,4 +39,6 @@ public interface ScatterSeriesOption extends SeriesOption, ScatterStateOption, S
     ScatterSeriesOption setData(String[] data);
 
     ScatterSeriesOption setData(String[][] data);
+
+    ScatterSeriesOption setEmphasis(ScatterEmphasisOption emphasis);
 }

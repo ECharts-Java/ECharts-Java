@@ -8,6 +8,7 @@ import lombok.Setter;
 import lombok.experimental.Accessors;
 
 import org.icepear.echarts.origin.chart.scatter.ScatterDataItemOption;
+import org.icepear.echarts.origin.chart.scatter.ScatterEmphasisOption;
 import org.icepear.echarts.origin.chart.scatter.ScatterSeriesOption;
 import org.icepear.echarts.origin.component.marker.MarkAreaOption;
 import org.icepear.echarts.origin.component.marker.MarkLineOption;
@@ -131,7 +132,18 @@ public class ScatterSeries implements ScatterSeriesOption {
 
     private String[][] colorLayer;
 
+    @Setter(AccessLevel.NONE)
     private Object emphasis;
+
+    public ScatterSeries setEmphasis(Object emphasis) {
+        this.emphasis = emphasis;
+        return this;
+    }
+
+    public ScatterSeries setEmphasis(ScatterEmphasisOption emphasis) {
+        this.emphasis = emphasis;
+        return this;
+    }
 
     private Object select;
 

@@ -8,6 +8,7 @@ import lombok.Setter;
 import lombok.experimental.Accessors;
 
 import org.icepear.echarts.origin.chart.heatmap.HeatmapDataItemOption;
+import org.icepear.echarts.origin.chart.heatmap.HeatmapEmphasisOption;
 import org.icepear.echarts.origin.chart.heatmap.HeatmapSeriesOption;
 import org.icepear.echarts.origin.component.marker.MarkAreaOption;
 import org.icepear.echarts.origin.component.marker.MarkLineOption;
@@ -131,7 +132,18 @@ public class HeatmapSeries implements HeatmapSeriesOption {
 
     private String[][] colorLayer;
 
+    @Setter(AccessLevel.NONE)
     private Object emphasis;
+
+    public HeatmapSeries setEmphasis(HeatmapEmphasisOption emphasis) {
+        this.emphasis = emphasis;
+        return this;
+    }
+
+    public HeatmapSeries setEmphasis(Object emphasis) {
+        this.emphasis = emphasis;
+        return this;
+    }
 
     private Object select;
 

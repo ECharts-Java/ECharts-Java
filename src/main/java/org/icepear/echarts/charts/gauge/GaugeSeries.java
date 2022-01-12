@@ -10,6 +10,7 @@ import lombok.experimental.Accessors;
 import org.icepear.echarts.origin.chart.gauge.GaugeAnchorOption;
 import org.icepear.echarts.origin.chart.gauge.GaugeDataItemOption;
 import org.icepear.echarts.origin.chart.gauge.GaugeDetailOption;
+import org.icepear.echarts.origin.chart.gauge.GaugeEmphasisOption;
 import org.icepear.echarts.origin.chart.gauge.GaugePointerOption;
 import org.icepear.echarts.origin.chart.gauge.GaugeProgressOption;
 import org.icepear.echarts.origin.chart.gauge.GaugeSeriesOption;
@@ -135,7 +136,18 @@ public class GaugeSeries implements GaugeSeriesOption {
 
     private String[][] colorLayer;
 
+    @Setter(AccessLevel.NONE)
     private Object emphasis;
+
+    public GaugeSeries setEmphasis(GaugeEmphasisOption emphasis) {
+        this.emphasis = emphasis;
+        return this;
+    }
+
+    public GaugeSeries setEmphasis(Object emphasis) {
+        this.emphasis = emphasis;
+        return this;
+    }
 
     private Object select;
 

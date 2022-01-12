@@ -1,7 +1,7 @@
 {
   "name": "SankeyEmphasisOption",
   "type": "interface",
-  "extends": ["EmphasisOption"],
+  "extends": ["SankeyBothStateOption", "EmphasisOption"],
   "fields": [
     {
       "name": "focus",

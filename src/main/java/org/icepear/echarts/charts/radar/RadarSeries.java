@@ -8,6 +8,7 @@ import lombok.Setter;
 import lombok.experimental.Accessors;
 
 import org.icepear.echarts.origin.chart.radar.RadarDataItemOption;
+import org.icepear.echarts.origin.chart.radar.RadarEmphasisOption;
 import org.icepear.echarts.origin.chart.radar.RadarSeriesOption;
 import org.icepear.echarts.origin.component.marker.MarkAreaOption;
 import org.icepear.echarts.origin.component.marker.MarkLineOption;
@@ -133,7 +134,18 @@ public class RadarSeries implements RadarSeriesOption {
 
     private String[][] colorLayer;
 
+    @Setter(AccessLevel.NONE)
     private Object emphasis;
+
+    public RadarSeries setEmphasis(Object emphasis) {
+        this.emphasis = emphasis;
+        return this;
+    }
+
+    public RadarSeries setEmphasis(RadarEmphasisOption emphasis) {
+        this.emphasis = emphasis;
+        return this;
+    }
 
     private Object select;
 
