@@ -33,7 +33,7 @@ public interface CandlestickSeriesOption extends SeriesOption, CandlestickStateO
 
     CandlestickSeriesOption setData(CandlestickDataItemOption[] data);
 
-    CandlestickSeriesOption setData(Object[][] data);
+    CandlestickSeriesOption setData(Number[][] data);
 
     CandlestickSeriesOption setEmphasis(CandlestickEmphasisOption emphasis);
 }
