@@ -15,6 +15,10 @@
     {
       "name": "data",
       "types": ["BoxplotDataValue[]", "BoxplotDataItemOption[]"]
+    },
+    {
+      "name": "emphasis",
+      "types": ["BoxplotEmphasisOption"]
     }
   ],
   "comments": [

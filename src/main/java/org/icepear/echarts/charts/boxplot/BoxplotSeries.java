@@ -8,6 +8,7 @@ import lombok.Setter;
 import lombok.experimental.Accessors;
 
 import org.icepear.echarts.origin.chart.boxplot.BoxplotDataItemOption;
+import org.icepear.echarts.origin.chart.boxplot.BoxplotEmphasisOption;
 import org.icepear.echarts.origin.chart.boxplot.BoxplotSeriesOption;
 import org.icepear.echarts.origin.component.marker.MarkAreaOption;
 import org.icepear.echarts.origin.component.marker.MarkLineOption;
@@ -131,7 +132,18 @@ public class BoxplotSeries implements BoxplotSeriesOption {
 
     private String[][] colorLayer;
 
+    @Setter(AccessLevel.NONE)
     private Object emphasis;
+
+    public BoxplotSeries setEmphasis(BoxplotEmphasisOption emphasis) {
+        this.emphasis = emphasis;
+        return this;
+    }
+
+    public BoxplotSeries setEmphasis(Object emphasis) {
+        this.emphasis = emphasis;
+        return this;
+    }
 
     private Object select;
 
