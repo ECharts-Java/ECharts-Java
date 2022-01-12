@@ -22,7 +22,7 @@ public interface BoxplotSeriesOption
 
     BoxplotSeriesOption setData(BoxplotDataItemOption[] data);
 
-    BoxplotSeriesOption setData(Object[] data);
+    BoxplotSeriesOption setData(Number[][] data);
 
     BoxplotSeriesOption setEmphasis(BoxplotEmphasisOption emphasis);
 }

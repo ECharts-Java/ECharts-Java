@@ -184,12 +184,12 @@ public class BoxplotSeries implements BoxplotSeriesOption {
         return this;
     }
 
-    public BoxplotSeries setData(Object data) {
+    public BoxplotSeries setData(Number[][] data) {
         this.data = data;
         return this;
     }
 
-    public BoxplotSeries setData(Object[] data) {
+    public BoxplotSeries setData(Object data) {
         this.data = data;
         return this;
     }
