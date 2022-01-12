@@ -10,7 +10,7 @@
   "fields": [
     { "name": "type", "types": ["String"], "default": "boxplot" },
     { "name": "coordinateSystem", "types": ["String"] },
-    { "name": "layout", "types": ["LayoutOrient"] },
+    { "name": "layout", "types": ["String"] },
     { "name": "boxWidth", "types": ["Number[]", "String[]"] },
     {
       "name": "data",

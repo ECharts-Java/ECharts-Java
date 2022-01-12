@@ -14,7 +14,7 @@ public interface BoxplotSeriesOption
 
     BoxplotSeriesOption setCoordinateSystem(String coordinateSystem);
 
-    BoxplotSeriesOption setLayout(Object layout);
+    BoxplotSeriesOption setLayout(String layout);
 
     BoxplotSeriesOption setBoxWidth(Number[] boxWidth);
 
