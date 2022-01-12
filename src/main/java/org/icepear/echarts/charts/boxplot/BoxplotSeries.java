@@ -287,7 +287,7 @@ public class BoxplotSeries implements BoxplotSeriesOption {
 
     private OptionEncode encode;
 
-    private Object layout;
+    private String layout;
 
     @Setter(AccessLevel.NONE)
     private Object boxWidth;
