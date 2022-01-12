@@ -14,7 +14,7 @@
     { "name": "boxWidth", "types": ["Number[]", "String[]"] },
     {
       "name": "data",
-      "types": ["BoxplotDataValue[]", "BoxplotDataItemOption[]"]
+      "types": ["Number[][]", "BoxplotDataItemOption[]"]
     },
     {
       "name": "emphasis",
