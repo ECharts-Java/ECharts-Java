@@ -18,7 +18,7 @@ public interface LineEmphasisOption extends LineStateOption, EmphasisOption {
 
     LineEmphasisOption setAreaStyle(AreaStyleOption areaStyle);
 
-    LineEmphasisOption setFocus(Object focus);
+    LineEmphasisOption setFocus(String focus);
 
     LineEmphasisOption setScale(Boolean scale);
 }

@@ -13,7 +13,7 @@
     },
     {
       "name": "focus",
-      "types": ["DefaultEmphasisFocus"]
+      "types": ["String"]
     },
     {
       "name": "scale",

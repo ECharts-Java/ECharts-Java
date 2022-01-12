@@ -15,7 +15,7 @@ public class PieEmphasis implements PieEmphasisOption {
 
     private PieLabelOption label;
 
-    private Object focus;
+    private String focus;
 
     private Boolean scale;
 
