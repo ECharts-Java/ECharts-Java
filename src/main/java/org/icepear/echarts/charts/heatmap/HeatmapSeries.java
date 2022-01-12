@@ -189,7 +189,7 @@ public class HeatmapSeries implements HeatmapSeriesOption {
         return this;
     }
 
-    public HeatmapSeries setData(Object[] data) {
+    public HeatmapSeries setData(Object[][] data) {
         this.data = data;
         return this;
     }

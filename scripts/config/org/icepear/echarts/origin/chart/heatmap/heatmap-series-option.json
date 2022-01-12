@@ -18,7 +18,7 @@
     { "name": "minOpacity", "types": ["Number"] },
     {
       "name": "data",
-      "types": ["HeatmapDataValue[]", "HeatmapDataItemOption[]"]
+      "types": ["Object[][]", "HeatmapDataItemOption[]"]
     },
     {
       "name": "emphasis",
