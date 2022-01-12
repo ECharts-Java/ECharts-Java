@@ -184,12 +184,12 @@ public class CandlestickSeries implements CandlestickSeriesOption {
         return this;
     }
 
-    public CandlestickSeries setData(Object data) {
+    public CandlestickSeries setData(Number[][] data) {
         this.data = data;
         return this;
     }
 
-    public CandlestickSeries setData(Object[][] data) {
+    public CandlestickSeries setData(Object data) {
         this.data = data;
         return this;
     }
