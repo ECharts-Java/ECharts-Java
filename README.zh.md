@@ -23,29 +23,29 @@
     </a>
 </p>
 
-[English README](README.md)
+[English README](README.md) | [中文README](README.zh.md)
 
 ## 📙 简介
 
-ECharts Java是一款基于[Apache ECharts](https://echarts.apache.org/en/index.html)的，简易但全面的数据可视化库。
+ECharts Java 是一款基于 [Apache ECharts](https://echarts.apache.org/en/index.html) 的，简易但全面的数据可视化库。
 
-论简易性，ECharts Java重新设计了一系列和绘图有关的接口，使得绘图过程更加符合直觉和常理。同时，由于Apache ECharts的接口过于复杂和繁琐，我们在ECharts Java的图表API中简化了部分原本的接口设计。
+论简易性，ECharts Java 重新设计了一系列和绘图有关的接口，使得绘图过程更加符合直觉和常理。同时，由于Apache ECharts 的接口过于复杂和繁琐，我们在 ECharts Java 的图表 API 中简化了部分原本的接口设计。
 
-论全面，ECharts Java保留了Apache ECharts“一切皆Option”的设计理念。因此，除了重新设计的图表APIs以外，我们还保留了自定义Option对象的方法。用户可以从零开始，按照ECharts的Option文档，自定义任何ECharts支持的Option。除此以外，我们还使用链式方法调用等方式，使得Java开发者在构建Option的过程中更加方便。
+论全面，ECharts Java 保留了 Apache ECharts “一切皆Option”的设计理念。因此，除了重新设计的图表 API 以外，我们还保留了自定义 Option 对象的方法。用户可以从零开始，按照 ECharts 的 Option 文档，自定义任何 ECharts 支持的 Option。除此以外，我们还使用链式方法调用等方式，使得 Java 开发者在构建 Option 的过程中更加方便。
 
 
 ## 🌠 特性
 
 - 简单、整洁、高度组织化的API接口，支持链式调用
-- 完整保存Apache ECharts的功能
-- 快速集成至当前流行的Web框架
-- 灵活的导出格式，支持HTML，PNG和JSON
+- 完整保存 Apache ECharts 的功能
+- 快速集成至当前流行的 Web 框架
+- 灵活的导出格式，支持 HTML，PNG和 JSON
 - 完整、详细的文档和示例库
 
 ## 🔬 安装
 
 
-Maven项目:
+Maven 项目:
 ```xml
 // pom.xml
 <dependency>
@@ -55,7 +55,7 @@ Maven项目:
 </dependency>
 ```
 
-Gradle项目:
+Gradle 项目:
 ```
 implementation 'org.icepear.echarts:echarts-java:1.0.2'
 ```
@@ -88,7 +88,7 @@ public static void main(String[] args) {
 ```
 <img src="assets/imgs/multibar-render.gif" alt="multi-bar-render" style="width:85%;" />
 
-### 生成Option对象和对应JSON结构
+### 生成Option对象和对应的JSON结构
 
 ```java
 public static void main(String[] args) {
@@ -128,7 +128,7 @@ public static void main(String[] args) {
 }
 ```
 
-### 集成至Spring Boot应用
+### 集成至 Spring Boot 应用
 
 <img src="assets/imgs/line-renderHtml.gif" alt="spring-boot-integration" style="width:75%;" />
 
@@ -165,13 +165,13 @@ public static void main(String[] args) {
 - [@IcePear-Jzx](https://github.com/IcePear-Jzx)
 - [@incandescentxxc](https://github.com/incandescentxxc)
 
-欢迎大家积极提issue，fork，和其他贡献！
+欢迎大家积极提 issue，fork，和其他贡献！
 
 ## 💌 鸣谢
-- This project is inspired by the Homework 6 of the course [Principles of Software Construction Objects, Design, and Concurrency](https://cmu-17-214.github.io/f2021/), Fall 2021, at [Carnegie Mellon University](https://www.cmu.edu/). We sincerely thank [Christian](https://www.cs.cmu.edu/~ckaestne/) and [Vincent](https://vhellendoorn.github.io/) for the wonderful course.
+- 本项目灵感来源于[卡耐基梅隆大学](https://www.cmu.edu/)的课程，[Principles of Software Construction Objects, Design, and Concurrency](https://cmu-17-214.github.io/f2021/)。我们在此真诚地感谢 [Christian](https://www.cs.cmu.edu/~ckaestne/) 和 [Vincent](https://vhellendoorn.github.io/) 在2021秋天教授的这门课。
 
-- This project is also inspired by the [pyecharts](https://github.com/pyecharts/pyecharts) and [go-echarts](https://github.com/go-echarts/go-echarts), which are the ECharts siblings in Python and Go languages.
+- 本项目同样也受到 [pyecharts](https://github.com/pyecharts/pyecharts) 和 [go-echarts](https://github.com/go-echarts/go-echarts)的启发。
 
-## 🎈 证书
+## 🎈 License
 
-ECharts Java is available under the [Apache License 2.0](LICENSE).
+[Apache License 2.0](LICENSE).
