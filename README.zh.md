@@ -23,7 +23,7 @@
     </a>
 </p>
 
-[English README](README.md)
+[English README](README.md) | [中文README](README.zh.md)
 
 [官方文档](https://echarts.icepear.org/#/zh-cn/)
 
@@ -90,7 +90,11 @@ public static void main(String[] args) {
 ```
 <img src="assets/imgs/multibar-render.gif" alt="multi-bar-render" style="width:85%;" />
 
+<<<<<<< HEAD
 ### 生成 Option 对象和对应的 JSON 结构
+=======
+### 生成Option对象和对应的JSON结构
+>>>>>>> fd9eafc (improvements of docs)
 
 ```java
 public static void main(String[] args) {
