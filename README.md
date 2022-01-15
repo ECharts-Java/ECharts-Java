@@ -23,7 +23,7 @@
     </a>
 </p>
 
-[Chinese README](README.zh.md)
+[中文README](README.zh.md) | [English README](README.md)
 ## 📙 Introduction
 
 ECharts Java is a lightweight but comprehensive library for Java developers to easily use JavaScript visualization library [Apache ECharts](https://echarts.apache.org/en/index.html). The simple chart mode facilitates users to write visualization fast and easily, empowered by the clean APIs provided by ECharts Java. The advanced mode helps create an `Option` object and its Json representation in chainable Java codes, which includes almost all the features defined in [Apache ECharts](https://echarts.apache.org/en/index.html).
