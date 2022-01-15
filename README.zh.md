@@ -23,27 +23,31 @@
     </a>
 </p>
 
-[Chinese README](README.zh.md)
-## 📙 Introduction
+[English README](README.md)
 
-ECharts Java is a lightweight but comprehensive library for Java developers to easily use JavaScript visualization library [Apache ECharts](https://echarts.apache.org/en/index.html). The simple chart mode facilitates users to write visualization fast and easily, empowered by the clean APIs provided by ECharts Java. The advanced mode helps create an `Option` object and its Json representation in chainable Java codes, which includes almost all the features defined in [Apache ECharts](https://echarts.apache.org/en/index.html).
+## 📙 简介
 
-## 🌠 Features
+ECharts Java是一款基于[Apache ECharts](https://echarts.apache.org/en/index.html)的，简易但全面的数据可视化库。
 
-- Simple, clean and organized APIs, supporting method chaining
+论简易性，ECharts Java重新设计了一系列绘图有关的接口，使得绘图过程更加符合直觉。同时，由于Apache ECharts的接口过于复杂和繁琐，我们在ECharts Java的图表API中简化了部分原本的接口设计。
 
-- Full coverage of [Apache ECharts](https://echarts.apache.org/en/index.html) functionalities
+论全面，ECharts Java保留了Apache ECharts”一切皆Option“的设计理念。因此，除了重新设计的图表APIs以外，我们还保留了自定义Option对象的方法。用户可以从零开始，按照ECharts的Option文档，自定义任何ECharts支持的Option。除此以外，我们还使用链式方法调用等方式，使得Java开发者在构建Option的过程中更加方便。
 
-- Easily integrate with Web Frameworks
 
-- Flexible export format, including HTML and images
+## 🌠 特性
 
-- Complete and detailed documentation and examples
+- 简单，整洁，高度组织化的API接口，支持链式调用。
+- 完整保存Apache ECharts的功能
+- 快速集成至当前流行的Web框架
+- 灵活的导出格式，支持HTML，PNG和JSON
+- 完整、详细的文档和示例库
 
-## 🔬 Installation
+## 🔬 安装
 
-For a Maven project, includes the following in your pom.xml
+
+Maven Project:
 ```xml
+// pom.xml
 <dependency>
   <groupId>org.icepear.echarts</groupId>
   <artifactId>echarts-java</artifactId>
@@ -51,16 +55,16 @@ For a Maven project, includes the following in your pom.xml
 </dependency>
 ```
 
-For a Gradle Groovy project, includes
+Gradle Groovy Project:
 ```
 implementation 'org.icepear.echarts:echarts-java:1.0.2'
 ```
 
-For more, refer to [here](https://search.maven.org/artifact/org.icepear.echarts/echarts-java/1.0.2/jar).
+如果你使用的是其他项目，请参阅[这里](https://search.maven.org/artifact/org.icepear.echarts/echarts-java/1.0.2/jar)。
 
-## 🔭 Usage
+## 🔭 使用
 
-### Generate Local HTML and Download Image
+### 生成本地HTML和下载图片
 
 ```java
 public static void main(String[] args) {
@@ -84,7 +88,7 @@ public static void main(String[] args) {
 ```
 <img src="assets/imgs/multibar-render.gif" alt="multi-bar-render" style="width:85%;" />
 
-### Generate Option Object and its JSON Representation
+### 生成Option对象和对应JSON结构
 
 ```java
 public static void main(String[] args) {
@@ -102,7 +106,7 @@ public static void main(String[] args) {
 }
 ```
 
-The output JSON object will be like the following,
+生成的JSON对象如下：
 
 ```json
 {
@@ -124,13 +128,13 @@ The output JSON object will be like the following,
 }
 ```
 
-### Integrate with Spring Web Application
+### 集成至Spring Boot应用
 
 <img src="assets/imgs/line-renderHtml.gif" alt="spring-boot-integration" style="width:75%;" />
 
-For demo codes, please refer to the [docs](https://echarts.icepear.org/) and [example repo](https://github.com/incandescentxxc/ECharts-Java-Examples).
+详细内容请参阅，[文档](https://echarts.icepear.org/) ，[代码仓库](https://github.com/incandescentxxc/ECharts-Java-Examples)。
 
-## 🎇 Gallery
+## 🎇 示例
 
 <p float="center">
   <img src="assets/imgs/stacked-line.jpg" width="32%" />
@@ -157,17 +161,17 @@ For demo codes, please refer to the [docs](https://echarts.icepear.org/) and [ex
   <img src="assets/imgs/animation-gauge.jpg" width="32%" /> 
 </p>
 
-## 💡 Authors
+## 💡 作者
 - [@IcePear-Jzx](https://github.com/IcePear-Jzx)
 - [@incandescentxxc](https://github.com/incandescentxxc)
 
-Welcome more contribution in the community!
+欢迎大家积极提issue，fork，和其他贡献！
 
-## 💌 Acknowledgement
+## 💌 鸣谢
 - This project is inspired by the Homework 6 of the course [Principles of Software Construction Objects, Design, and Concurrency](https://cmu-17-214.github.io/f2021/), Fall 2021, at [Carnegie Mellon University](https://www.cmu.edu/). We sincerely thank [Christian](https://www.cs.cmu.edu/~ckaestne/) and [Vincent](https://vhellendoorn.github.io/) for the wonderful course.
 
 - This project is also inspired by the [pyecharts](https://github.com/pyecharts/pyecharts) and [go-echarts](https://github.com/go-echarts/go-echarts), which are the ECharts siblings in Python and Go languages.
 
-## 🎈 License
+## 🎈 证书
 
 ECharts Java is available under the [Apache License 2.0](LICENSE).
