@@ -23,7 +23,9 @@
     </a>
 </p>
 
-[English README](README.md) | [中文README](README.zh.md)
+[English README](README.md)
+
+[官方文档](https://echarts.icepear.org/#/zh-cn/)
 
 ## 📙 简介
 
@@ -36,10 +38,10 @@ ECharts Java 是一款基于 [Apache ECharts](https://echarts.apache.org/en/inde
 
 ## 🌠 特性
 
-- 简单、整洁、高度组织化的API接口，支持链式调用
+- 简单、整洁、高度组织化的 API 接口，支持链式调用
 - 完整保存 Apache ECharts 的功能
 - 快速集成至当前流行的 Web 框架
-- 灵活的导出格式，支持 HTML，PNG和 JSON
+- 灵活的导出格式，支持 HTML，PNG 和 JSON
 - 完整、详细的文档和示例库
 
 ## 🔬 安装
@@ -64,7 +66,7 @@ implementation 'org.icepear.echarts:echarts-java:1.0.2'
 
 ## 🔭 使用
 
-### 生成HTML和下载图片
+### 生成 HTML 和下载图片
 
 ```java
 public static void main(String[] args) {
@@ -88,7 +90,7 @@ public static void main(String[] args) {
 ```
 <img src="assets/imgs/multibar-render.gif" alt="multi-bar-render" style="width:85%;" />
 
-### 生成Option对象和对应的JSON结构
+### 生成 Option 对象和对应的 JSON 结构
 
 ```java
 public static void main(String[] args) {
@@ -106,7 +108,7 @@ public static void main(String[] args) {
 }
 ```
 
-生成的JSON对象如下：
+生成的 JSON 对象如下：
 
 ```json
 {
@@ -134,7 +136,7 @@ public static void main(String[] args) {
 
 详细内容请参阅，[文档](https://echarts.icepear.org/#/zh-cn/) ，[代码仓库](https://github.com/incandescentxxc/ECharts-Java-Examples)。
 
-## 🎇 示例
+## 🎇  示例
 
 <p float="center">
   <img src="assets/imgs/stacked-line.jpg" width="32%" />
@@ -168,10 +170,10 @@ public static void main(String[] args) {
 欢迎大家积极提 issue，fork，和其他贡献！
 
 ## 💌 鸣谢
-- 本项目灵感来源于[卡耐基梅隆大学](https://www.cmu.edu/)的课程，[Principles of Software Construction Objects, Design, and Concurrency](https://cmu-17-214.github.io/f2021/)。我们在此真诚地感谢 [Christian](https://www.cs.cmu.edu/~ckaestne/) 和 [Vincent](https://vhellendoorn.github.io/) 在2021秋天教授的这门课。
+- 本项目灵感来源于[卡耐基梅隆大学](https://www.cmu.edu/)的课程，[Principles of Software Construction Objects, Design, and Concurrency](https://cmu-17-214.github.io/f2021/)。我们在此真诚地感谢 [Christian](https://www.cs.cmu.edu/~ckaestne/) 和 [Vincent](https://vhellendoorn.github.io/) 在 2021 秋天教授的这门课。
 
 - 本项目同样也受到 [pyecharts](https://github.com/pyecharts/pyecharts) 和 [go-echarts](https://github.com/go-echarts/go-echarts)的启发。
 
-## 🎈 License
+## 🎈 开源协议
 
-[Apache License 2.0](LICENSE).
+本项目遵循 [Apache License 2.0](LICENSE) 开源协议。
