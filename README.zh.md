@@ -23,7 +23,9 @@
     </a>
 </p>
 
-[English README](README.md) | [中文README](README.zh.md)
+[English README](README.md)
+
+[官方文档](https://echarts.icepear.org/#/zh-cn/)
 
 [官方文档](https://echarts.icepear.org/#/zh-cn/)
 
@@ -91,10 +93,14 @@ public static void main(String[] args) {
 <img src="assets/imgs/multibar-render.gif" alt="multi-bar-render" style="width:85%;" />
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### 生成 Option 对象和对应的 JSON 结构
 =======
 ### 生成Option对象和对应的JSON结构
 >>>>>>> fd9eafc (improvements of docs)
+=======
+### 生成 Option 对象和对应的 JSON 结构
+>>>>>>> f1de896 (doc standard fixed)
 
 ```java
 public static void main(String[] args) {
@@ -179,5 +185,6 @@ public static void main(String[] args) {
 - 本项目同样也受到 [pyecharts](https://github.com/pyecharts/pyecharts) 和 [go-echarts](https://github.com/go-echarts/go-echarts) 的启发。
 
 ## 🎈 开源协议
+
 
 本项目遵循 [Apache License 2.0](LICENSE) 开源协议。
