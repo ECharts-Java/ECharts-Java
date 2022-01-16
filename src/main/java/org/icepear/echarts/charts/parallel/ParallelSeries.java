@@ -185,7 +185,7 @@ public class ParallelSeries implements ParallelSeriesOption {
         return this;
     }
 
-    public ParallelSeries setData(Object[] data) {
+    public ParallelSeries setData(Object[][] data) {
         this.data = data;
         return this;
     }

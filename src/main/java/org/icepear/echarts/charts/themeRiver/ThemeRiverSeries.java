@@ -177,22 +177,12 @@ public class ThemeRiverSeries implements ThemeRiverSeriesOption {
     @Setter(AccessLevel.NONE)
     private Object data;
 
-    public ThemeRiverSeries setData(Number[] data) {
-        this.data = data;
-        return this;
-    }
-
     public ThemeRiverSeries setData(Object data) {
         this.data = data;
         return this;
     }
 
-    public ThemeRiverSeries setData(Object[] data) {
-        this.data = data;
-        return this;
-    }
-
-    public ThemeRiverSeries setData(String[] data) {
+    public ThemeRiverSeries setData(Object[][] data) {
         this.data = data;
         return this;
     }

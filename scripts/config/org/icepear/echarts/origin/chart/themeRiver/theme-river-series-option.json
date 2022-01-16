@@ -12,7 +12,7 @@
     { "name": "color", "types": ["String[]"] },
     { "name": "coordinateSystem", "types": ["String"] },
     { "name": "boundaryGap", "types": ["String[]", "Number[]"] },
-    { "name": "data", "types": ["Date[]", "Number[]", "String[]"] },
+    { "name": "data", "types": ["Object[][]"] },
     {
       "name": "emphasis",
       "types": ["ThemeRiverEmphasisOption"]

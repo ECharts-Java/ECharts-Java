@@ -31,7 +31,7 @@ public interface ParallelSeriesOption extends SeriesOption, ParallelStateOption,
 
     ParallelSeriesOption setParallelAxisDefault(ParallelAxisOption parallelAxisDefault);
 
-    ParallelSeriesOption setData(Object[] data);
+    ParallelSeriesOption setData(Object[][] data);
 
     ParallelSeriesOption setData(ParallelDataItemOption[] data);
 
