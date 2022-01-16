@@ -20,11 +20,7 @@ public interface ThemeRiverSeriesOption
 
     ThemeRiverSeriesOption setBoundaryGap(String[] boundaryGap);
 
-    ThemeRiverSeriesOption setData(Number[] data);
-
-    ThemeRiverSeriesOption setData(Object[] data);
-
-    ThemeRiverSeriesOption setData(String[] data);
+    ThemeRiverSeriesOption setData(Object[][] data);
 
     ThemeRiverSeriesOption setEmphasis(ThemeRiverEmphasisOption emphasis);
 }
