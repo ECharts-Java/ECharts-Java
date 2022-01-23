@@ -68,16 +68,13 @@ For more, refer to [here](https://search.maven.org/artifact/org.icepear.echarts/
 public static void main(String[] args) {
     // All methods in EChart Java supports method chaining
     Bar bar = new Bar()
-            .setTooltip(new Tooltip().setTrigger("axis")
-                    .setAxisPointer(new TooltipAxisPointer().setType("shadow")))
-            .setLegend()
-            .addXAxis()
-            .addYAxis(new String[] { "Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun" })
-            .addSeries(createSeries("Direct", new Number[] { 320, 302, 301, 334, 390, 330, 320 }))
-            .addSeries(createSeries("Mail Ad", new Number[] { 120, 132, 101, 134, 90, 230, 210 }))
-            .addSeries(createSeries("Affiliate Ad", new Number[] { 220, 182, 191, 234, 290, 330, 310 }))
-            .addSeries(createSeries("Video Ad", new Number[] { 150, 212, 201, 154, 190, 330, 410 }))
-            .addSeries(createSeries("Search Engine", new Number[] { 820, 832, 901, 934, 1290, 1330, 1320 }));
+              .setLegend()
+              .setTooltip("item")
+              .addXAxis(new String[] { "Matcha Latte", "Milk Tea", "Cheese Cocoa", "Walnut Brownie" })
+              .addYAxis()
+              .addSeries("2015", new Number[] { 43.3, 83.1, 86.4, 72.4 })
+              .addSeries("2016", new Number[] { 85.8, 73.4, 65.2, 53.9 })
+              .addSeries("2017", new Number[] { 93.7, 55.1, 82.5, 39.1 });
     Engine engine = new Engine();
     // The render method will generate our EChart into a HTML file saved locally in the current directory.
     // The name of the HTML can also be set by the first parameter of the function.
