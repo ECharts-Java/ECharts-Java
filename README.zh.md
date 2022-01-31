@@ -27,8 +27,6 @@
 
 [官方文档](https://echarts.icepear.org/#/zh-cn/)
 
-[官方文档](https://echarts.icepear.org/#/zh-cn/)
-
 ## 📙 简介
 
 ECharts Java 是一款基于 [Apache ECharts](https://echarts.apache.org/en/index.html) 的，简易但全面的数据可视化库。（现支持 Apache ECharts 5.x 版本）。
