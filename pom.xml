@@ -5,7 +5,7 @@
 
   <groupId>org.icepear.echarts</groupId>
   <artifactId>echarts-java</artifactId>
-  <version>1.0.2</version>
+  <version>1.0.3</version>
 
   <name>ECharts Java</name>
   <description>
