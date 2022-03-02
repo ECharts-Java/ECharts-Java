@@ -27,6 +27,7 @@ import org.icepear.echarts.components.toolbox.ToolboxSaveAsImageFeature;
 import org.icepear.echarts.components.tooltip.Tooltip;
 import org.icepear.echarts.components.visualMap.PiecewiseVisualMap;
 import org.icepear.echarts.components.visualMap.VisualPiece;
+import org.icepear.echarts.origin.component.toolbox.ToolboxFeatureOption;
 import org.icepear.echarts.origin.util.SeriesOption;
 import org.icepear.echarts.serializer.EChartsSerializer;
 import org.junit.Test;
@@ -66,7 +67,7 @@ public class BeijingAQITest {
 
         ValueAxis yAxis = new ValueAxis().setType(null);
 
-        Toolbox toolbox = new Toolbox().setRight(10).setFeature(new HashMap<>() {
+        Toolbox toolbox = new Toolbox().setRight(10).setFeature(new HashMap<String, ToolboxFeatureOption>() {
             {
                 put("dataZoom", new ToolboxDataZoomFeature().setYAxisIndex("none"));
                 put("restore", new ToolboxRestoreFeature());

@@ -18,6 +18,7 @@ import org.icepear.echarts.components.legend.Legend;
 import org.icepear.echarts.components.text.Text;
 import org.icepear.echarts.components.tooltip.Tooltip;
 import org.icepear.echarts.origin.util.SeriesOption;
+import org.icepear.echarts.origin.util.TextCommonOption;
 import org.icepear.echarts.serializer.EChartsSerializer;
 import org.junit.Test;
 
@@ -65,7 +66,7 @@ public class NestedPiesTest {
                         .setBorderColor("#8C8D8E")
                         .setBorderWidth(1)
                         .setBorderRadius(4)
-                        .setRich(new HashMap<>() {
+                        .setRich(new HashMap<String, TextCommonOption>() {
                             {
                                 put("a", new Text()
                                         .setColor("#6E7079")
