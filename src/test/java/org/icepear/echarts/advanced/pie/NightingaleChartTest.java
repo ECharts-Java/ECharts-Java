@@ -23,6 +23,7 @@ import org.icepear.echarts.components.toolbox.ToolboxDefaultFeature;
 import org.icepear.echarts.components.toolbox.ToolboxRestoreFeature;
 import org.icepear.echarts.components.toolbox.ToolboxSaveAsImageFeature;
 import org.icepear.echarts.components.tooltip.Tooltip;
+import org.icepear.echarts.origin.component.toolbox.ToolboxFeatureOption;
 import org.icepear.echarts.origin.util.SeriesOption;
 import org.icepear.echarts.serializer.EChartsSerializer;
 import org.junit.Test;
@@ -54,7 +55,7 @@ public class NightingaleChartTest {
 
         Toolbox toolbox = new Toolbox()
                 .setShow(true)
-                .setFeature(new HashMap<>() {
+                .setFeature(new HashMap<String, ToolboxFeatureOption>() {
                     {
                         put("mark", new ToolboxDefaultFeature().setShow(true));
                         put("dataView", new ToolboxDataViewFeature().setShow(true).setReadOnly(false));
