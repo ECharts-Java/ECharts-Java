@@ -52,15 +52,7 @@ public class Engine {
      * @param chart the chart to be rendered
      */
     public void render(String path, Chart<?, ?> chart) {
-        String jsonStr = new EChartsSerializer().toJson(chart.getOption());
-        ChartMeta chartMeta = new ChartMeta("600px", "600px", jsonStr);
-        try {
-            Template template = handlebars.compile("index");
-            String html = template.apply(chartMeta);
-            writeHtml(html, path, false);
-        } catch (IOException e) {
-            log.info("render: Handlebars cannot find corresponding templates.");
-        }
+        render(path, chart.getOption());
     }
 
     /**
@@ -71,15 +63,7 @@ public class Engine {
      * @param option the option used to init the chart
      */
     public void render(String path, Option option) {
-        String jsonStr = new EChartsSerializer().toJson(option);
-        ChartMeta chartMeta = new ChartMeta("600px", "600px", jsonStr);
-        try {
-            Template template = handlebars.compile("index");
-            String html = template.apply(chartMeta);
-            writeHtml(html, path, false);
-        } catch (IOException e) {
-            log.info("render: Handlebars cannot find corresponding templates.");
-        }
+        render(path, option, "600px", "600px", false);
     }
 
     /**
@@ -93,15 +77,7 @@ public class Engine {
      * @param willOpen whether allowing to open the html in browser automatically
      */
     public void render(String path, Chart<?, ?> chart, String height, String width, Boolean willOpen) {
-        String jsonStr = new EChartsSerializer().toJson(chart.getOption());
-        ChartMeta chartMeta = new ChartMeta(height, width, jsonStr);
-        try {
-            Template template = handlebars.compile("index");
-            String html = template.apply(chartMeta);
-            writeHtml(html, path, willOpen);
-        } catch (IOException e) {
-            log.info("render: Handlebars cannot find corresponding templates.");
-        }
+        render(path, chart.getOption(), height, width, willOpen);
     }
 
     /**
@@ -134,16 +110,7 @@ public class Engine {
      * @return a string in html format
      */
     public String renderHtml(Chart<?, ?> chart) {
-        String jsonStr = new EChartsSerializer().toJson(chart.getOption());
-        ChartMeta chartMeta = new ChartMeta("100%", "100%", jsonStr);
-        Template template = null;
-        try {
-            template = handlebars.compile("base");
-            return template.apply(chartMeta);
-        } catch (IOException e) {
-            log.info("renderHtml: Handlebars cannot find corresponding templates.");
-            return "";
-        }
+        return renderHtml(chart.getOption());
     }
 
     /**
@@ -154,16 +121,7 @@ public class Engine {
      * @return the resulted string in html format
      */
     public String renderHtml(Option option) {
-        String jsonStr = new EChartsSerializer().toJson(option);
-        ChartMeta chartMeta = new ChartMeta("100%", "100%", jsonStr);
-        Template template = null;
-        try {
-            template = handlebars.compile("base");
-            return template.apply(chartMeta);
-        } catch (IOException e) {
-            log.info("renderHtml: Handlebars cannot find corresponding templates.");
-            return "";
-        }
+        return renderHtml(option, "100%", "100%");
     }
 
     /**
@@ -176,15 +134,7 @@ public class Engine {
      * @return the resulted string in html format
      */
     public String renderHtml(Chart<?, ?> chart, String height, String width) {
-        String jsonStr = new EChartsSerializer().toJson(chart.getOption());
-        ChartMeta chartMeta = new ChartMeta(height, width, jsonStr);
-        try {
-            Template template = handlebars.compile("base");
-            return template.apply(chartMeta);
-        } catch (IOException e) {
-            log.info("renderHtml: Handlebars cannot find corresponding templates.");
-            return "";
-        }
+        return renderHtml(chart.getOption(), "100%", "100%");
     }
 
     /**
@@ -215,7 +165,7 @@ public class Engine {
      * @return a string representation of a json object
      */
     public String renderJsonOption(Chart<?, ?> chart) {
-        return new EChartsSerializer().toJson(chart.getOption());
+        return renderJsonOption(chart.getOption());
     }
 
     /**
