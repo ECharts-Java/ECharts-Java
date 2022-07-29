@@ -4,19 +4,12 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonElement;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class EChartsSerializer {
     private final EChartsTypeAdapter<?> markArea2DDataItemAdapter = new MarkArea2DDataItemAdapter();
     private final EChartsTypeAdapter<?> markLine2DDataItemAdapter = new MarkLine2DDataItemAdapter();
     private final Gson gson;
 
-    public EChartsSerializer() {
-        this(new ArrayList<>());
-    }
-
-    public EChartsSerializer(List<EChartsTypeAdapter<?>> typeAdapters) {
+    public EChartsSerializer(EChartsTypeAdapter<?> ... typeAdapters) {
         GsonBuilder gsonBuilder = new GsonBuilder().disableHtmlEscaping()
                 .registerTypeAdapter(markArea2DDataItemAdapter.getType(), markArea2DDataItemAdapter)
                 .registerTypeAdapter(markLine2DDataItemAdapter.getType(), markLine2DDataItemAdapter);
