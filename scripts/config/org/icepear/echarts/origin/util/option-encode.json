@@ -3,6 +3,12 @@
   "type": "interface",
   "extends": ["OptionEncodeVisualDimensions"],
   "fields": [
+    { "name": "x", "types": ["Number", "String", "Number[]", "String[]"] },
+    { "name": "y", "types": ["Number", "String", "Number[]", "String[]"] },
+    { "name": "radius", "types": ["Number", "String", "Number[]", "String[]"] },
+    { "name": "angle", "types": ["Number", "String", "Number[]", "String[]"] },
+    { "name": "lng", "types": ["Number", "String", "Number[]", "String[]"] },
+    { "name": "lat", "types": ["Number", "String", "Number[]", "String[]"] },
     { "name": "value", "types": ["Number", "String", "Number[]", "String[]"] }
   ],
   "comments": [
