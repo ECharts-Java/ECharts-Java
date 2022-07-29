@@ -150,6 +150,144 @@ public class Encode implements OptionEncode {
     }
 
     @Setter(AccessLevel.NONE)
+    private Object x;
+
+    public Encode setX(Number x) {
+        this.x = x;
+        return this;
+    }
+
+    public Encode setX(Number[] x) {
+        this.x = x;
+        return this;
+    }
+
+    public Encode setX(String x) {
+        this.x = x;
+        return this;
+    }
+
+    public Encode setX(String[] x) {
+        this.x = x;
+        return this;
+    }
+
+    @Setter(AccessLevel.NONE)
+    private Object y;
+
+    public Encode setY(Number y) {
+        this.y = y;
+        return this;
+    }
+
+    public Encode setY(Number[] y) {
+        this.y = y;
+        return this;
+    }
+
+    public Encode setY(String y) {
+        this.y = y;
+        return this;
+    }
+
+    public Encode setY(String[] y) {
+        this.y = y;
+        return this;
+    }
+
+    @Setter(AccessLevel.NONE)
+    private Object radius;
+
+    public Encode setRadius(Number radius) {
+        this.radius = radius;
+        return this;
+    }
+
+    public Encode setRadius(Number[] radius) {
+        this.radius = radius;
+        return this;
+    }
+
+    public Encode setRadius(String radius) {
+        this.radius = radius;
+        return this;
+    }
+
+    public Encode setRadius(String[] radius) {
+        this.radius = radius;
+        return this;
+    }
+
+    @Setter(AccessLevel.NONE)
+    private Object angle;
+
+    public Encode setAngle(Number angle) {
+        this.angle = angle;
+        return this;
+    }
+
+    public Encode setAngle(Number[] angle) {
+        this.angle = angle;
+        return this;
+    }
+
+    public Encode setAngle(String angle) {
+        this.angle = angle;
+        return this;
+    }
+
+    public Encode setAngle(String[] angle) {
+        this.angle = angle;
+        return this;
+    }
+
+    @Setter(AccessLevel.NONE)
+    private Object lng;
+
+    public Encode setLng(Number lng) {
+        this.lng = lng;
+        return this;
+    }
+
+    public Encode setLng(Number[] lng) {
+        this.lng = lng;
+        return this;
+    }
+
+    public Encode setLng(String lng) {
+        this.lng = lng;
+        return this;
+    }
+
+    public Encode setLng(String[] lng) {
+        this.lng = lng;
+        return this;
+    }
+
+    @Setter(AccessLevel.NONE)
+    private Object lat;
+
+    public Encode setLat(Number lat) {
+        this.lat = lat;
+        return this;
+    }
+
+    public Encode setLat(Number[] lat) {
+        this.lat = lat;
+        return this;
+    }
+
+    public Encode setLat(String lat) {
+        this.lat = lat;
+        return this;
+    }
+
+    public Encode setLat(String[] lat) {
+        this.lat = lat;
+        return this;
+    }
+
+    @Setter(AccessLevel.NONE)
     private Object value;
 
     public Encode setValue(Number value) {
