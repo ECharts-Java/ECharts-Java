@@ -28,9 +28,9 @@ public class BasicScatterTest {
         Reader reader = new InputStreamReader(
                 this.getClass().getResourceAsStream("/simple/scatter/basic-scatter.json"));
         JsonElement expected = JsonParser.parseReader(reader);
-        JsonElement actual = EChartsSerializer.toJsonTree(scatter.getOption());
+        JsonElement actual = new EChartsSerializer().toJsonTree(scatter.getOption());
         assertEquals(expected, actual);
 
-        // System.out.println(EChartsSerializer.toJson(scatter.getOption()));
+        // System.out.println(new EChartsSerializer().toJson(scatter.getOption()));
     }
 }

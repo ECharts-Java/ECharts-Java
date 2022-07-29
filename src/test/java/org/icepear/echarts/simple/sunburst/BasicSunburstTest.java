@@ -61,9 +61,9 @@ public class BasicSunburstTest {
         Reader reader = new InputStreamReader(
                 this.getClass().getResourceAsStream("/simple/sunburst/basic-sunburst.json"));
         JsonElement expected = JsonParser.parseReader(reader);
-        JsonElement actual = EChartsSerializer.toJsonTree(sunburst.getOption());
+        JsonElement actual = new EChartsSerializer().toJsonTree(sunburst.getOption());
         assertEquals(expected, actual);
 
-        // System.out.println(EChartsSerializer.toJson(sunburst.getOption()));
+        // System.out.println(new EChartsSerializer().toJson(sunburst.getOption()));
     }
 }

@@ -42,9 +42,9 @@ public class BasicTreeTest {
         Reader reader = new InputStreamReader(
                 this.getClass().getResourceAsStream("/simple/tree/basic-tree.json"));
         JsonElement expected = JsonParser.parseReader(reader);
-        JsonElement actual = EChartsSerializer.toJsonTree(tree.getOption());
+        JsonElement actual = new EChartsSerializer().toJsonTree(tree.getOption());
         assertEquals(expected, actual);
 
-        // System.out.println(EChartsSerializer.toJson(tree.getOption()));
+        // System.out.println(new EChartsSerializer().toJson(tree.getOption()));
     }
 }

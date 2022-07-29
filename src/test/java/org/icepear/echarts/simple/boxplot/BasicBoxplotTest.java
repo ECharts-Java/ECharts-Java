@@ -30,9 +30,9 @@ public class BasicBoxplotTest {
         Reader reader = new InputStreamReader(
                 this.getClass().getResourceAsStream("/simple/boxplot/basic-boxplot.json"));
         JsonElement expected = JsonParser.parseReader(reader);
-        JsonElement actual = EChartsSerializer.toJsonTree(boxplot.getOption());
+        JsonElement actual = new EChartsSerializer().toJsonTree(boxplot.getOption());
         assertEquals(expected, actual);
 
-        // System.out.println(EChartsSerializer.toJson(boxplot.getOption()));
+        // System.out.println(new EChartsSerializer().toJson(boxplot.getOption()));
     }
 }

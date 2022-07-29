@@ -41,9 +41,9 @@ public class BarWithBackgroundTest {
         Reader reader = new InputStreamReader(
                 this.getClass().getResourceAsStream("/advanced/bar/bar-with-background.json"));
         JsonElement expected = JsonParser.parseReader(reader);
-        JsonElement actual = EChartsSerializer.toJsonTree(option);
+        JsonElement actual = new EChartsSerializer().toJsonTree(option);
         assertEquals(expected, actual);
 
-        // System.out.println(EChartsSerializer.toJson(option));
+        // System.out.println(new EChartsSerializer().toJson(option));
     }
 }

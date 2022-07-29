@@ -38,9 +38,9 @@ public class BasicRadarTest {
         Reader reader = new InputStreamReader(
                 this.getClass().getResourceAsStream("/simple/radar/basic-radar.json"));
         JsonElement expected = JsonParser.parseReader(reader);
-        JsonElement actual = EChartsSerializer.toJsonTree(radar.getOption());
+        JsonElement actual = new EChartsSerializer().toJsonTree(radar.getOption());
         assertEquals(expected, actual);
 
-        // System.out.println(EChartsSerializer.toJson(radar.getOption()));
+        // System.out.println(new EChartsSerializer().toJson(radar.getOption()));
     }
 }

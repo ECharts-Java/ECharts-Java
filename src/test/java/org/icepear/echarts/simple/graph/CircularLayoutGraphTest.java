@@ -72,9 +72,9 @@ public class CircularLayoutGraphTest {
         Reader reader = new InputStreamReader(
                 this.getClass().getResourceAsStream("/simple/graph/circular-layout-graph.json"));
         JsonElement expected = JsonParser.parseReader(reader);
-        JsonElement actual = EChartsSerializer.toJsonTree(graph.getOption());
+        JsonElement actual = new EChartsSerializer().toJsonTree(graph.getOption());
         assertEquals(expected, actual);
 
-        // System.out.println(EChartsSerializer.toJson(graph.getOption()));
+        // System.out.println(new EChartsSerializer().toJson(graph.getOption()));
     }
 }

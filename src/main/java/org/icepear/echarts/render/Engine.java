@@ -52,7 +52,7 @@ public class Engine {
      * @param chart the chart to be rendered
      */
     public void render(String path, Chart<?, ?> chart) {
-        String jsonStr = EChartsSerializer.toJson(chart.getOption());
+        String jsonStr = new EChartsSerializer().toJson(chart.getOption());
         ChartMeta chartMeta = new ChartMeta("600px", "600px", jsonStr);
         try {
             Template template = handlebars.compile("index");
@@ -71,7 +71,7 @@ public class Engine {
      * @param option the option used to init the chart
      */
     public void render(String path, Option option) {
-        String jsonStr = EChartsSerializer.toJson(option);
+        String jsonStr = new EChartsSerializer().toJson(option);
         ChartMeta chartMeta = new ChartMeta("600px", "600px", jsonStr);
         try {
             Template template = handlebars.compile("index");
@@ -93,7 +93,7 @@ public class Engine {
      * @param willOpen whether allowing to open the html in browser automatically
      */
     public void render(String path, Chart<?, ?> chart, String height, String width, Boolean willOpen) {
-        String jsonStr = EChartsSerializer.toJson(chart.getOption());
+        String jsonStr = new EChartsSerializer().toJson(chart.getOption());
         ChartMeta chartMeta = new ChartMeta(height, width, jsonStr);
         try {
             Template template = handlebars.compile("index");
@@ -115,7 +115,7 @@ public class Engine {
      * @param willOpen whether allowing to open the html in browser automatically
      */
     public void render(String path, Option option, String height, String width, Boolean willOpen) {
-        String jsonStr = EChartsSerializer.toJson(option);
+        String jsonStr = new EChartsSerializer().toJson(option);
         ChartMeta chartMeta = new ChartMeta(height, width, jsonStr);
         try {
             Template template = handlebars.compile("index");
@@ -134,7 +134,7 @@ public class Engine {
      * @return a string in html format
      */
     public String renderHtml(Chart<?, ?> chart) {
-        String jsonStr = EChartsSerializer.toJson(chart.getOption());
+        String jsonStr = new EChartsSerializer().toJson(chart.getOption());
         ChartMeta chartMeta = new ChartMeta("100%", "100%", jsonStr);
         Template template = null;
         try {
@@ -154,7 +154,7 @@ public class Engine {
      * @return the resulted string in html format
      */
     public String renderHtml(Option option) {
-        String jsonStr = EChartsSerializer.toJson(option);
+        String jsonStr = new EChartsSerializer().toJson(option);
         ChartMeta chartMeta = new ChartMeta("100%", "100%", jsonStr);
         Template template = null;
         try {
@@ -176,7 +176,7 @@ public class Engine {
      * @return the resulted string in html format
      */
     public String renderHtml(Chart<?, ?> chart, String height, String width) {
-        String jsonStr = EChartsSerializer.toJson(chart.getOption());
+        String jsonStr = new EChartsSerializer().toJson(chart.getOption());
         ChartMeta chartMeta = new ChartMeta(height, width, jsonStr);
         try {
             Template template = handlebars.compile("base");
@@ -197,7 +197,7 @@ public class Engine {
      * @return the resulted string in html format
      */
     public String renderHtml(Option option, String height, String width) {
-        String jsonStr = EChartsSerializer.toJson(option);
+        String jsonStr = new EChartsSerializer().toJson(option);
         ChartMeta chartMeta = new ChartMeta(height, width, jsonStr);
         try {
             Template template = handlebars.compile("base");
@@ -215,7 +215,7 @@ public class Engine {
      * @return a string representation of a json object
      */
     public String renderJsonOption(Chart<?, ?> chart) {
-        return EChartsSerializer.toJson(chart.getOption());
+        return new EChartsSerializer().toJson(chart.getOption());
     }
 
     /**
@@ -225,7 +225,7 @@ public class Engine {
      * @return a string representation of a json object
      */
     public String renderJsonOption(Option option) {
-        return EChartsSerializer.toJson(option);
+        return new EChartsSerializer().toJson(option);
     }
 
 }

@@ -42,9 +42,9 @@ public class BasicSankeyTest {
         Reader reader = new InputStreamReader(
                 this.getClass().getResourceAsStream("/simple/sankey/basic-sankey.json"));
         JsonElement expected = JsonParser.parseReader(reader);
-        JsonElement actual = EChartsSerializer.toJsonTree(sankey.getOption());
+        JsonElement actual = new EChartsSerializer().toJsonTree(sankey.getOption());
         assertEquals(expected, actual);
 
-        // System.out.println(EChartsSerializer.toJson(sankey.getOption()));
+        // System.out.println(new EChartsSerializer().toJson(sankey.getOption()));
     }
 }

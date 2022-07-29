@@ -39,9 +39,9 @@ public class BasicPolarLineTest {
         Reader reader = new InputStreamReader(
                 this.getClass().getResourceAsStream("/simple/polar-line/basic-polar-line.json"));
         JsonElement expected = JsonParser.parseReader(reader);
-        JsonElement actual = EChartsSerializer.toJsonTree(polarLine.getOption());
+        JsonElement actual = new EChartsSerializer().toJsonTree(polarLine.getOption());
         assertEquals(expected, actual);
 
-        // System.out.println(EChartsSerializer.toJson(polarLine.getOption()));
+        // System.out.println(new EChartsSerializer().toJson(polarLine.getOption()));
     }
 }

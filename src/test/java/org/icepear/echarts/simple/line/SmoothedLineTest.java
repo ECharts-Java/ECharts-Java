@@ -26,9 +26,9 @@ public class SmoothedLineTest {
         Reader reader = new InputStreamReader(
                 this.getClass().getResourceAsStream("/simple/line/smoothed-line.json"));
         JsonElement expected = JsonParser.parseReader(reader);
-        JsonElement actual = EChartsSerializer.toJsonTree(line.getOption());
+        JsonElement actual = new EChartsSerializer().toJsonTree(line.getOption());
         assertEquals(expected, actual);
 
-        // System.out.println(EChartsSerializer.toJson(line.getOption()));
+        // System.out.println(new EChartsSerializer().toJson(line.getOption()));
     }
 }

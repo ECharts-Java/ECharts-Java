@@ -4,21 +4,33 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonElement;
 
-import org.icepear.echarts.components.marker.MarkArea2DDataItem;
-import org.icepear.echarts.components.marker.MarkLine2DDataItem;
+import java.util.ArrayList;
+import java.util.List;
 
 public class EChartsSerializer {
-    private static final Gson gson = new GsonBuilder()
-            .registerTypeAdapter(MarkArea2DDataItem.class, new MarkArea2DDataItemSerializer())
-            .registerTypeAdapter(MarkLine2DDataItem.class, new MarkLine2DDataItemSerializer())
-            .disableHtmlEscaping()
-            .create();
+    private final EChartsTypeAdapter<?> markArea2DDataItemAdapter = new MarkArea2DDataItemAdapter();
+    private final EChartsTypeAdapter<?> markLine2DDataItemAdapter = new MarkLine2DDataItemAdapter();
+    private final Gson gson;
 
-    public static String toJson(Object src) {
+    public EChartsSerializer() {
+        this(new ArrayList<>());
+    }
+
+    public EChartsSerializer(List<EChartsTypeAdapter<?>> typeAdapters) {
+        GsonBuilder gsonBuilder = new GsonBuilder().disableHtmlEscaping()
+                .registerTypeAdapter(markArea2DDataItemAdapter.getType(), markArea2DDataItemAdapter)
+                .registerTypeAdapter(markLine2DDataItemAdapter.getType(), markLine2DDataItemAdapter);
+        for (EChartsTypeAdapter<?> typeAdapter : typeAdapters) {
+            gsonBuilder.registerTypeAdapter(typeAdapter.getType(), typeAdapter);
+        }
+        gson = gsonBuilder.create();
+    }
+
+    public String toJson(Object src) {
         return gson.toJson(src);
     }
 
-    public static JsonElement toJsonTree(Object src) {
+    public JsonElement toJsonTree(Object src) {
         return gson.toJsonTree(src);
     }
 }
