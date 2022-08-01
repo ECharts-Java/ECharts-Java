@@ -67,9 +67,9 @@ public class BasicThemeRiverTest {
         Reader reader = new InputStreamReader(
                 this.getClass().getResourceAsStream("/simple/theme-river/basic-theme-river.json"));
         JsonElement expected = JsonParser.parseReader(reader);
-        JsonElement actual = EChartsSerializer.toJsonTree(themeRiver.getOption());
+        JsonElement actual = new EChartsSerializer().toJsonTree(themeRiver.getOption());
         assertEquals(expected, actual);
 
-        // System.out.println(EChartsSerializer.toJson(themeRiver.getOption()));
+        // System.out.println(new EChartsSerializer().toJson(themeRiver.getOption()));
     }
 }

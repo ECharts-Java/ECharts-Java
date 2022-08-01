@@ -57,9 +57,9 @@ public class BasicHeatmapTest {
         Reader reader = new InputStreamReader(
                 this.getClass().getResourceAsStream("/simple/heatmap/basic-heatmap.json"));
         JsonElement expected = JsonParser.parseReader(reader);
-        JsonElement actual = EChartsSerializer.toJsonTree(heatmap.getOption());
+        JsonElement actual = new EChartsSerializer().toJsonTree(heatmap.getOption());
         assertEquals(expected, actual);
 
-        // System.out.println(EChartsSerializer.toJson(heatmap.getOption()));
+        // System.out.println(new EChartsSerializer().toJson(heatmap.getOption()));
     }
 }

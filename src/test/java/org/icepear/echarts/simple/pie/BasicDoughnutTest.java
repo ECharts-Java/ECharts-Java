@@ -42,9 +42,9 @@ public class BasicDoughnutTest {
         Reader reader = new InputStreamReader(
                 this.getClass().getResourceAsStream("/simple/pie/basic-doughnut.json"));
         JsonElement expected = JsonParser.parseReader(reader);
-        JsonElement actual = EChartsSerializer.toJsonTree(pie.getOption());
+        JsonElement actual = new EChartsSerializer().toJsonTree(pie.getOption());
         assertEquals(expected, actual);
 
-        // System.out.println(EChartsSerializer.toJson(pie.getOption()));
+        // System.out.println(new EChartsSerializer().toJson(pie.getOption()));
     }
 }

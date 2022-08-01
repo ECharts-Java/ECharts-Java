@@ -28,9 +28,9 @@ public class BasicCandlestickTest {
         Reader reader = new InputStreamReader(
                 this.getClass().getResourceAsStream("/simple/candlestick/basic-candlestick.json"));
         JsonElement expected = JsonParser.parseReader(reader);
-        JsonElement actual = EChartsSerializer.toJsonTree(candlestick.getOption());
+        JsonElement actual = new EChartsSerializer().toJsonTree(candlestick.getOption());
         assertEquals(expected, actual);
 
-        // System.out.println(EChartsSerializer.toJson(candlestick.getOption()));
+        // System.out.println(new EChartsSerializer().toJson(candlestick.getOption()));
     }
 }

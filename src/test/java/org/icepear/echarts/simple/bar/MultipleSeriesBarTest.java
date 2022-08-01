@@ -27,9 +27,9 @@ public class MultipleSeriesBarTest {
         Reader reader = new InputStreamReader(
                 this.getClass().getResourceAsStream("/simple/bar/multiple-series-bar.json"));
         JsonElement expected = JsonParser.parseReader(reader);
-        JsonElement actual = EChartsSerializer.toJsonTree(bar.getOption());
+        JsonElement actual = new EChartsSerializer().toJsonTree(bar.getOption());
         assertEquals(expected, actual);
 
-        // System.out.println(EChartsSerializer.toJson(bar.getOption()));
+        // System.out.println(new EChartsSerializer().toJson(bar.getOption()));
     }
 }

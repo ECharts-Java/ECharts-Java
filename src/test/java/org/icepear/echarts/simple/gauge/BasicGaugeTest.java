@@ -23,9 +23,9 @@ public class BasicGaugeTest {
         Reader reader = new InputStreamReader(
                 this.getClass().getResourceAsStream("/simple/gauge/basic-gauge.json"));
         JsonElement expected = JsonParser.parseReader(reader);
-        JsonElement actual = EChartsSerializer.toJsonTree(gauge.getOption());
+        JsonElement actual = new EChartsSerializer().toJsonTree(gauge.getOption());
         assertEquals(expected, actual);
 
-        // System.out.println(EChartsSerializer.toJson(gauge.getOption()));
+        // System.out.println(new EChartsSerializer().toJson(gauge.getOption()));
     }
 }

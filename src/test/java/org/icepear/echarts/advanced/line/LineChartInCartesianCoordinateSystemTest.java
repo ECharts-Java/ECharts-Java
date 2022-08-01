@@ -38,9 +38,9 @@ public class LineChartInCartesianCoordinateSystemTest {
         Reader reader = new InputStreamReader(this.getClass()
                 .getResourceAsStream("/advanced/line/line-chart-in-cartesian-coordinate-system.json"));
         JsonElement expected = JsonParser.parseReader(reader);
-        JsonElement actual = EChartsSerializer.toJsonTree(option);
+        JsonElement actual = new EChartsSerializer().toJsonTree(option);
         assertEquals(expected, actual);
 
-        // System.out.println(EChartsSerializer.toJson(option));
+        // System.out.println(new EChartsSerializer().toJson(option));
     }
 }

@@ -35,9 +35,9 @@ public class BasicFunnelTest {
         Reader reader = new InputStreamReader(
                 this.getClass().getResourceAsStream("/simple/funnel/basic-funnel.json"));
         JsonElement expected = JsonParser.parseReader(reader);
-        JsonElement actual = EChartsSerializer.toJsonTree(funnel.getOption());
+        JsonElement actual = new EChartsSerializer().toJsonTree(funnel.getOption());
         assertEquals(expected, actual);
 
-        // System.out.println(EChartsSerializer.toJson(funnel.getOption()));
+        // System.out.println(new EChartsSerializer().toJson(funnel.getOption()));
     }
 }

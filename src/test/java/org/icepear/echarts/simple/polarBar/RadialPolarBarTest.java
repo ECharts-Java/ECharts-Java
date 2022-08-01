@@ -26,9 +26,9 @@ public class RadialPolarBarTest {
         Reader reader = new InputStreamReader(
                 this.getClass().getResourceAsStream("/simple/polar-bar/radial-polar-bar.json"));
         JsonElement expected = JsonParser.parseReader(reader);
-        JsonElement actual = EChartsSerializer.toJsonTree(polarBar.getOption());
+        JsonElement actual = new EChartsSerializer().toJsonTree(polarBar.getOption());
         assertEquals(expected, actual);
 
-        // System.out.println(EChartsSerializer.toJson(polarBar.getOption()));
+        // System.out.println(new EChartsSerializer().toJson(polarBar.getOption()));
     }
 }

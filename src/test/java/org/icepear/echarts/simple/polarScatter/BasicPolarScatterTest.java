@@ -68,9 +68,9 @@ public class BasicPolarScatterTest {
         Reader reader = new InputStreamReader(
                 this.getClass().getResourceAsStream("/simple/polar-scatter/basic-polar-scatter.json"));
         JsonElement expected = JsonParser.parseReader(reader);
-        JsonElement actual = EChartsSerializer.toJsonTree(polarScatter.getOption());
+        JsonElement actual = new EChartsSerializer().toJsonTree(polarScatter.getOption());
         assertEquals(expected, actual);
 
-        // System.out.println(EChartsSerializer.toJson(polarScatter.getOption()));
+        // System.out.println(new EChartsSerializer().toJson(polarScatter.getOption()));
     }
 }

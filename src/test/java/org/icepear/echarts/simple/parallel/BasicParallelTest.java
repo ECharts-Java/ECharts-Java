@@ -33,9 +33,9 @@ public class BasicParallelTest {
         Reader reader = new InputStreamReader(
                 this.getClass().getResourceAsStream("/simple/parallel/basic-parallel.json"));
         JsonElement expected = JsonParser.parseReader(reader);
-        JsonElement actual = EChartsSerializer.toJsonTree(parallel.getOption());
+        JsonElement actual = new EChartsSerializer().toJsonTree(parallel.getOption());
         assertEquals(expected, actual);
 
-        // System.out.println(EChartsSerializer.toJson(parallel.getOption()));
+        // System.out.println(new EChartsSerializer().toJson(parallel.getOption()));
     }
 }
