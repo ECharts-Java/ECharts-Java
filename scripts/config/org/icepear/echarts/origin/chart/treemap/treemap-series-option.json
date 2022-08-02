@@ -18,7 +18,7 @@
         { "name": "drillDownIcon", "types": ["String"]},
         { "name": "zoomToNodeRatio", "types": ["Number"]},
         { "name": "nodeClick", "types": ["String"]},
-        { "name": "breadcrumb", "types": []},
+        { "name": "breadcrumb", "types": ["TreemapSeriesBreadCrumbOption"]},
         { "name": "levels", "types": ["TreemapSeriesLevelOption"]},
         { "name": "data", "types": ["TreemapSeriesNodeItemOption"]}
     ],
