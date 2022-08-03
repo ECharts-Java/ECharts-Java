@@ -1,0 +1,5 @@
+{
+  "name": "TreemapSeriesVisual",
+  "type": "class",
+  "implements": ["TreemapSeriesVisualOption"]
+}

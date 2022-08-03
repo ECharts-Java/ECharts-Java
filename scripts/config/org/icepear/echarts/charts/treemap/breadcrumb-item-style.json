@@ -1,0 +1,5 @@
+{
+  "name": "BreadcrumbItemStyle",
+  "type": "class",
+  "implements": ["BreadcrumbItemStyleOption"]
+}
