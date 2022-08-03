@@ -1,5 +1,5 @@
 {
-    "name": "TreemapSeriesBreadCrumbOption",
+    "name": "BreadcrumbOption",
     "type": "interface",
     "extends": ["BoxLayoutOptionMixin"],
     "fields": [
