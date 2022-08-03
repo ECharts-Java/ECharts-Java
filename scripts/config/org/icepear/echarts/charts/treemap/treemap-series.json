@@ -1,0 +1,5 @@
+{
+  "name": "TreemapSeries",
+  "type": "class",
+  "implements": ["TreemapSeriesOption"]
+}

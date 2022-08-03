@@ -1,0 +1,5 @@
+{
+  "name": "TreemapSeriesItemStyle",
+  "type": "class",
+  "implements": ["TreemapSeriesItemStyleOption"]
+}

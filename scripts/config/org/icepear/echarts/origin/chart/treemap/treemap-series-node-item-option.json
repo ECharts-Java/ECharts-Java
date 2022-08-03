@@ -1,0 +1,22 @@
+{
+  "name": "TreemapSeriesNodeItemOption",
+  "type": "interface",
+  "extends": [
+    "TreemapSeriesVisualOption",
+    "TreemapStateOption",
+    "StatesOptionMixin"
+  ],
+  "fields": [
+    { "name": "id", "types": ["String", "Number"] },
+    { "name": "name", "types": ["String", "Number"] },
+    { "name": "value", "types": ["Number", "Number[]"] },
+    { "name": "children", "types": ["TreemapSeriesNodeItemOption[]"] },
+    { "name": "color", "types": ["String[]", "String"] },
+    { "name": "decal", "types": ["DecalObject[]", "String"] }
+  ],
+  "comments": [
+    "https://github.com/apache/echarts/blob/566ba8e83dd283ba359fe9aceee0d4a12dbcd6c7/src/chart/treemap/TreemapSeries.ts#L136",
+    "https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/util/types.ts#L624",
+    "https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/util/types.ts#L625"
+  ]
+}
