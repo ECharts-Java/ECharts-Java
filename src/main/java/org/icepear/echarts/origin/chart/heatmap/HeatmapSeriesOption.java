@@ -9,7 +9,8 @@ import org.icepear.echarts.origin.util.SeriesOption;
 /**
  * https://github.com/apache/echarts/blob/1277d7ae81f2b1c7ede4e1731820a1c06bd16cf0/src/chart/heatmap/HeatmapSeries.ts#L58
  */
-public interface HeatmapSeriesOption extends SeriesOption, HeatmapStateOption, SeriesOnCartesianOptionMixin, SeriesOnGeoOptionMixin, SeriesOnCalendarOptionMixin, SeriesEncodeOptionMixin {
+public interface HeatmapSeriesOption extends SeriesOption, HeatmapStateOption, SeriesOnCartesianOptionMixin,
+        SeriesOnGeoOptionMixin, SeriesOnCalendarOptionMixin, SeriesEncodeOptionMixin {
 
     HeatmapSeriesOption setType(String type);
 

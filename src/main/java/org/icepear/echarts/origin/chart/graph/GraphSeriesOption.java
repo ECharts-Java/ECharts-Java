@@ -16,7 +16,9 @@ import org.icepear.echarts.origin.util.SymbolOptionMixin;
 /**
  * https://github.com/apache/echarts/blob/566ba8e83dd283ba359fe9aceee0d4a12dbcd6c7/src/chart/graph/GraphSeries.ts#L139
  */
-public interface GraphSeriesOption extends SeriesOption, SeriesOnCartesianOptionMixin, SeriesOnPolarOptionMixin, SeriesOnCalendarOptionMixin, SeriesOnGeoOptionMixin, SeriesOnSingleOptionMixin, SymbolOptionMixin, RoamOptionMixin, BoxLayoutOptionMixin {
+public interface GraphSeriesOption
+        extends SeriesOption, SeriesOnCartesianOptionMixin, SeriesOnPolarOptionMixin, SeriesOnCalendarOptionMixin,
+        SeriesOnGeoOptionMixin, SeriesOnSingleOptionMixin, SymbolOptionMixin, RoamOptionMixin, BoxLayoutOptionMixin {
 
     GraphSeriesOption setType(String type);
 

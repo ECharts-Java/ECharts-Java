@@ -7,7 +7,8 @@ import org.icepear.echarts.origin.util.SeriesOption;
 /**
  * https://github.com/apache/echarts/blob/566ba8e83dd283ba359fe9aceee0d4a12dbcd6c7/src/chart/themeRiver/ThemeRiverSeries.ts#L61
  */
-public interface ThemeRiverSeriesOption extends SeriesOption, ThemeRiverStateOption, SeriesOnSingleOptionMixin, BoxLayoutOptionMixin {
+public interface ThemeRiverSeriesOption
+        extends SeriesOption, ThemeRiverStateOption, SeriesOnSingleOptionMixin, BoxLayoutOptionMixin {
 
     ThemeRiverSeriesOption setType(String type);
 
