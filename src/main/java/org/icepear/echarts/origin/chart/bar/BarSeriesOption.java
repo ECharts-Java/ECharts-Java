@@ -7,8 +7,7 @@ import org.icepear.echarts.origin.util.SeriesStackOptionMixin;
 /**
  * https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/chart/bar/BarSeries.ts#L65
  */
-public interface BarSeriesOption extends BaseBarSeriesOption, BarStateOption, SeriesStackOptionMixin,
-        SeriesSamplingOptionMixin, SeriesEncodeOptionMixin {
+public interface BarSeriesOption extends BaseBarSeriesOption, BarStateOption, SeriesStackOptionMixin, SeriesSamplingOptionMixin, SeriesEncodeOptionMixin {
 
     BarSeriesOption setType(String type);
 

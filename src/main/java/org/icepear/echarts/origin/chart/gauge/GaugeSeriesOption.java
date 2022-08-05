@@ -8,8 +8,7 @@ import org.icepear.echarts.origin.util.SeriesOption;
 /**
  * https://github.com/apache/echarts/blob/566ba8e83dd283ba359fe9aceee0d4a12dbcd6c7/src/chart/gauge/GaugeSeries.ts#L123
  */
-public interface GaugeSeriesOption
-        extends SeriesOption, GaugeStateOption, CircleLayoutOptionMixin, SeriesEncodeOptionMixin {
+public interface GaugeSeriesOption extends SeriesOption, GaugeStateOption, CircleLayoutOptionMixin, SeriesEncodeOptionMixin {
 
     GaugeSeriesOption setType(String type);
 

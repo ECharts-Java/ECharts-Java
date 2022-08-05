@@ -9,7 +9,7 @@ public interface ItemStyleOption extends ShadowOptionMixin, BorderOptionMixin {
 
     ItemStyleOption setOpacity(Number opacity);
 
-    ItemStyleOption setDecal(Object decal);
+    ItemStyleOption setDecal(DecalObject decal);
 
     ItemStyleOption setDecal(String decal);
 }

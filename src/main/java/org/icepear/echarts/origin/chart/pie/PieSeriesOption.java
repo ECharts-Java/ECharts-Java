@@ -8,8 +8,7 @@ import org.icepear.echarts.origin.util.SeriesOption;
 /**
  * https://github.com/apache/echarts/blob/790687df55a5dbe286e52cf182c0983938efd367/src/chart/pie/PieSeries.ts#L100
  */
-public interface PieSeriesOption
-        extends SeriesOption, PieStateOption, CircleLayoutOptionMixin, BoxLayoutOptionMixin, SeriesEncodeOptionMixin {
+public interface PieSeriesOption extends SeriesOption, PieStateOption, CircleLayoutOptionMixin, BoxLayoutOptionMixin, SeriesEncodeOptionMixin {
 
     PieSeriesOption setType(String type);
 

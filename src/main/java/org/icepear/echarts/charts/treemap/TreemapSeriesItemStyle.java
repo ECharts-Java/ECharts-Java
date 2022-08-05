@@ -1,16 +1,16 @@
-package org.icepear.echarts.charts.pie;
+package org.icepear.echarts.charts.treemap;
 
 import lombok.AccessLevel;
 import lombok.Data;
 import lombok.Setter;
 import lombok.experimental.Accessors;
 
-import org.icepear.echarts.origin.chart.pie.PieItemStyleOption;
+import org.icepear.echarts.origin.chart.treemap.TreemapSeriesItemStyleOption;
 import org.icepear.echarts.origin.util.DecalObject;
 
 @Accessors(chain = true)
 @Data
-public class PieItemStyle implements PieItemStyleOption {
+public class TreemapSeriesItemStyle implements TreemapSeriesItemStyleOption {
 
     private Number shadowBlur;
 
@@ -41,12 +41,12 @@ public class PieItemStyle implements PieItemStyleOption {
     @Setter(AccessLevel.NONE)
     private Object decal;
 
-    public PieItemStyle setDecal(DecalObject decal) {
+    public TreemapSeriesItemStyle setDecal(DecalObject decal) {
         this.decal = decal;
         return this;
     }
 
-    public PieItemStyle setDecal(String decal) {
+    public TreemapSeriesItemStyle setDecal(String decal) {
         this.decal = decal;
         return this;
     }
@@ -54,23 +54,21 @@ public class PieItemStyle implements PieItemStyleOption {
     @Setter(AccessLevel.NONE)
     private Object borderRadius;
 
-    public PieItemStyle setBorderRadius(Number borderRadius) {
+    public TreemapSeriesItemStyle setBorderRadius(Number borderRadius) {
         this.borderRadius = borderRadius;
         return this;
     }
 
-    public PieItemStyle setBorderRadius(Number[] borderRadius) {
+    public TreemapSeriesItemStyle setBorderRadius(Number[] borderRadius) {
         this.borderRadius = borderRadius;
         return this;
     }
 
-    public PieItemStyle setBorderRadius(String borderRadius) {
-        this.borderRadius = borderRadius;
-        return this;
-    }
+    private Number colorAlpha;
 
-    public PieItemStyle setBorderRadius(String[] borderRadius) {
-        this.borderRadius = borderRadius;
-        return this;
-    }
+    private Number colorSaturation;
+
+    private Number borderColorSaturation;
+
+    private Number gapWidth;
 }

@@ -6,6 +6,7 @@ import lombok.Setter;
 import lombok.experimental.Accessors;
 
 import org.icepear.echarts.origin.chart.bar.BarBackgroundStyleOption;
+import org.icepear.echarts.origin.util.DecalObject;
 
 @Accessors(chain = true)
 @Data
@@ -40,7 +41,7 @@ public class BarBackgroundStyle implements BarBackgroundStyleOption {
     @Setter(AccessLevel.NONE)
     private Object decal;
 
-    public BarBackgroundStyle setDecal(Object decal) {
+    public BarBackgroundStyle setDecal(DecalObject decal) {
         this.decal = decal;
         return this;
     }

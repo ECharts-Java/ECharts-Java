@@ -6,6 +6,7 @@ import lombok.Setter;
 import lombok.experimental.Accessors;
 
 import org.icepear.echarts.origin.chart.sunburst.SunburstItemStyleOption;
+import org.icepear.echarts.origin.util.DecalObject;
 
 @Accessors(chain = true)
 @Data
@@ -40,7 +41,7 @@ public class SunburstItemStyle implements SunburstItemStyleOption {
     @Setter(AccessLevel.NONE)
     private Object decal;
 
-    public SunburstItemStyle setDecal(Object decal) {
+    public SunburstItemStyle setDecal(DecalObject decal) {
         this.decal = decal;
         return this;
     }

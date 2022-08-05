@@ -1,16 +1,17 @@
-package org.icepear.echarts.components.series;
+package org.icepear.echarts.charts.treemap;
 
 import lombok.AccessLevel;
 import lombok.Data;
 import lombok.Setter;
 import lombok.experimental.Accessors;
 
+import org.icepear.echarts.origin.chart.treemap.BreadcrumbItemStyleOption;
 import org.icepear.echarts.origin.util.DecalObject;
-import org.icepear.echarts.origin.util.ItemStyleOption;
+import org.icepear.echarts.origin.util.LabelOption;
 
 @Accessors(chain = true)
 @Data
-public class ItemStyle implements ItemStyleOption {
+public class BreadcrumbItemStyle implements BreadcrumbItemStyleOption {
 
     private Number shadowBlur;
 
@@ -41,13 +42,15 @@ public class ItemStyle implements ItemStyleOption {
     @Setter(AccessLevel.NONE)
     private Object decal;
 
-    public ItemStyle setDecal(DecalObject decal) {
+    public BreadcrumbItemStyle setDecal(DecalObject decal) {
         this.decal = decal;
         return this;
     }
 
-    public ItemStyle setDecal(String decal) {
+    public BreadcrumbItemStyle setDecal(String decal) {
         this.decal = decal;
         return this;
     }
+
+    private LabelOption textStyle;
 }
