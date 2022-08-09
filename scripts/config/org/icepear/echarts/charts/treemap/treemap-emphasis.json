@@ -1,6 +1,5 @@
 {
-    "name": "TreemapEmphasis",
-    "type": "class",
-    "implements": ["TreemapEmphasisOption"]
-  }
-  
+  "name": "TreemapEmphasis",
+  "type": "class",
+  "implements": ["TreemapEmphasisOption"]
+}
