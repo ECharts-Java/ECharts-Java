@@ -22,7 +22,7 @@ public interface VisualOptionUnit {
 
     VisualOptionUnit setColorHue(Number colorHue);
 
-    VisualOptionUnit setDecal(Object decal);
+    VisualOptionUnit setDecal(DecalObject decal);
 
     VisualOptionUnit setLiftZ(Number liftZ);
 }

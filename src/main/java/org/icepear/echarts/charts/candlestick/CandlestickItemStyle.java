@@ -6,6 +6,7 @@ import lombok.Setter;
 import lombok.experimental.Accessors;
 
 import org.icepear.echarts.origin.chart.candlestick.CandlestickItemStyleOption;
+import org.icepear.echarts.origin.util.DecalObject;
 
 @Accessors(chain = true)
 @Data
@@ -40,7 +41,7 @@ public class CandlestickItemStyle implements CandlestickItemStyleOption {
     @Setter(AccessLevel.NONE)
     private Object decal;
 
-    public CandlestickItemStyle setDecal(Object decal) {
+    public CandlestickItemStyle setDecal(DecalObject decal) {
         this.decal = decal;
         return this;
     }

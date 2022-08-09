@@ -4,6 +4,7 @@ import lombok.Data;
 import lombok.experimental.Accessors;
 
 import org.icepear.echarts.origin.component.visualMap.VisualPieceOption;
+import org.icepear.echarts.origin.util.DecalObject;
 
 @Accessors(chain = true)
 @Data
@@ -25,7 +26,7 @@ public class VisualPiece implements VisualPieceOption {
 
     private Number colorHue;
 
-    private Object decal;
+    private DecalObject decal;
 
     private Number liftZ;
 
