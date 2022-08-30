@@ -103,6 +103,28 @@ public class Engine {
     }
 
     /**
+     * Used in both simple and advanced chart cases, render the echarts in base template (without download image button)
+     * with customized width, height, and willOpen
+     * 
+     * @param path     path to save the html file
+     * @param option   the option used to init the chart
+     * @param height   the height of the chart, ends with "px" or "%"
+     * @param width    the width of the chart, ends with "px" or "%"
+     * @param willOpen whether allowing to open the html in browser automatically
+     */
+    public void renderBase(String path, Option option, String height, String width, Boolean willOpen) {
+        String jsonStr = new EChartsSerializer().toJson(option);
+        ChartMeta chartMeta = new ChartMeta(height, width, jsonStr);
+        try {
+            Template template = handlebars.compile("base");
+            String html = template.apply(chartMeta);
+            writeHtml(html, path, willOpen);
+        } catch (IOException e) {
+            log.info("render: Handlebars cannot find corresponding templates.");
+        }
+    }
+
+    /**
      * Used in the simple case, render the echarts in default width and height,
      * without download button
      * 
