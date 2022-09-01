@@ -45,6 +45,27 @@ public class Engine {
     }
 
     /**
+     * Compile HandleBar template into HTML String
+     * @param templateName name of the template selected
+     * @param option the option used to init the chart
+     * @param height   the height of the chart, ends with "px" or "%"
+     * @param width    the width of the chart, ends with "px" or "%"
+     * @return HTML in String. Empty string when an exception is occurred.
+     */
+    private String compileHandleBars(String templateName, Option option, String height, String width) {
+        String jsonStr = new EChartsSerializer().toJson(option);
+        ChartMeta chartMeta = new ChartMeta(height, width, jsonStr);
+        String html = "";
+        try {
+            Template template = handlebars.compile("index");
+            html = template.apply(chartMeta);
+        } catch (IOException e) {
+            log.error(e.getMessage());
+        }
+        return html;
+    }
+
+    /**
      * Used in simple chart case, render the echarts in html file, in default width,
      * height and willOpen. The html file also provides download chart function.
      * 
@@ -91,37 +112,8 @@ public class Engine {
      * @param willOpen whether allowing to open the html in browser automatically
      */
     public void render(String path, Option option, String height, String width, Boolean willOpen) {
-        String jsonStr = new EChartsSerializer().toJson(option);
-        ChartMeta chartMeta = new ChartMeta(height, width, jsonStr);
-        try {
-            Template template = handlebars.compile("index");
-            String html = template.apply(chartMeta);
-            writeHtml(html, path, willOpen);
-        } catch (IOException e) {
-            log.info("render: Handlebars cannot find corresponding templates.");
-        }
-    }
-
-    /**
-     * Used in both simple and advanced chart cases, render the echarts in base template (without download image button)
-     * with customized width, height, and willOpen
-     * 
-     * @param path     path to save the html file
-     * @param option   the option used to init the chart
-     * @param height   the height of the chart, ends with "px" or "%"
-     * @param width    the width of the chart, ends with "px" or "%"
-     * @param willOpen whether allowing to open the html in browser automatically
-     */
-    public void renderBase(String path, Option option, String height, String width, Boolean willOpen) {
-        String jsonStr = new EChartsSerializer().toJson(option);
-        ChartMeta chartMeta = new ChartMeta(height, width, jsonStr);
-        try {
-            Template template = handlebars.compile("base");
-            String html = template.apply(chartMeta);
-            writeHtml(html, path, willOpen);
-        } catch (IOException e) {
-            log.info("render: Handlebars cannot find corresponding templates.");
-        }
+        String html = compileHandleBars("index", option, height, width);
+        writeHtml(html, path, willOpen);
     }
 
     /**
@@ -169,15 +161,7 @@ public class Engine {
      * @return the resulted string in html format
      */
     public String renderHtml(Option option, String height, String width) {
-        String jsonStr = new EChartsSerializer().toJson(option);
-        ChartMeta chartMeta = new ChartMeta(height, width, jsonStr);
-        try {
-            Template template = handlebars.compile("base");
-            return template.apply(chartMeta);
-        } catch (IOException e) {
-            log.info("renderHtml: Handlebars cannot find corresponding templates.");
-            return "";
-        }
+        return compileHandleBars("base", option, height, width);
     }
 
     /**
