@@ -52,7 +52,7 @@ public class Engine {
      * @param width    the width of the chart, ends with "px" or "%"
      * @return HTML in String. Empty string when an exception is occurred.
      */
-    private String compileHandleBar(String templateName, Option option, String height, String width) {
+    private String compileHandleBars(String templateName, Option option, String height, String width) {
         String jsonStr = new EChartsSerializer().toJson(option);
         ChartMeta chartMeta = new ChartMeta(height, width, jsonStr);
         String html = "";
@@ -112,31 +112,7 @@ public class Engine {
      * @param willOpen whether allowing to open the html in browser automatically
      */
     public void render(String path, Option option, String height, String width, Boolean willOpen) {
-        String html = compileHandleBar("index", option, height, width);
-        if (html.equals("")) {
-            log.error("Resulted HTML string is empty.");
-            return;
-        }
-        writeHtml(html, path, willOpen);
-    }
-
-    /**
-     * Used in both simple and advanced chart cases, render the echarts in base
-     * template (without download image button)
-     * with customized width, height, and willOpen
-     * 
-     * @param path     path to save the html file
-     * @param option   the option used to init the chart
-     * @param height   the height of the chart, ends with "px" or "%"
-     * @param width    the width of the chart, ends with "px" or "%"
-     * @param willOpen whether allowing to open the html in browser automatically
-     */
-    public void renderBase(String path, Option option, String height, String width, Boolean willOpen) {
-        String html = compileHandleBar("base", option, height, width);
-        if (html.equals("")) {
-            log.error("Resulted HTML string is empty.");
-            return;
-        }
+        String html = compileHandleBars("index", option, height, width);
         writeHtml(html, path, willOpen);
     }
 
@@ -185,7 +161,7 @@ public class Engine {
      * @return the resulted string in html format
      */
     public String renderHtml(Option option, String height, String width) {
-        return compileHandleBar("base", option, height, width);
+        return compileHandleBars("base", option, height, width);
     }
 
     /**
