@@ -49,16 +49,16 @@ For a Maven project, includes the following in your pom.xml
 <dependency>
   <groupId>org.icepear.echarts</groupId>
   <artifactId>echarts-java</artifactId>
-  <version>1.0.5</version>
+  <version>1.0.6</version>
 </dependency>
 ```
 
 For a Gradle Groovy project, includes
 ```
-implementation 'org.icepear.echarts:echarts-java:1.0.5'
+implementation 'org.icepear.echarts:echarts-java:1.0.6'
 ```
 
-For more, refer to [here](https://search.maven.org/artifact/org.icepear.echarts/echarts-java/1.0.5/jar).
+For more, refer to [here](https://search.maven.org/artifact/org.icepear.echarts/echarts-java/1.0.6/jar).
 
 ## 🔭 Usage
 
