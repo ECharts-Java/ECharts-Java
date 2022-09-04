@@ -10,7 +10,6 @@ import java.io.FileReader;
 import java.io.InputStreamReader;
 import java.util.stream.Collectors;
 
-import org.icepear.echarts.Chart;
 import org.icepear.echarts.Option;
 import org.icepear.echarts.charts.bar.BarSeries;
 import org.icepear.echarts.components.coord.CategoryAxisTick;
