@@ -57,7 +57,7 @@ public class Engine {
         ChartMeta chartMeta = new ChartMeta(height, width, jsonStr);
         String html = "";
         try {
-            Template template = handlebars.compile("index");
+            Template template = handlebars.compile(templateName);
             html = template.apply(chartMeta);
         } catch (IOException e) {
             log.error(e.getMessage());
