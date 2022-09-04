@@ -84,8 +84,11 @@ public class engineTest {
     
             BufferedReader expectedFileReader = new BufferedReader(new InputStreamReader(this.getClass().getResourceAsStream("/render/sampleIndex.html")));
             String expectedContent = expectedFileReader.lines().collect(Collectors.joining());
-    
+            renderedFileReader.close();
+            expectedFileReader.close();
+            
             assertEquals(expectedContent, renderedContent);    
+
         } catch (Exception e) {
             System.out.println("engineTest: testRenderFileContentCorrect exception found: " + e.getMessage());
         }
@@ -98,6 +101,7 @@ public class engineTest {
         try {
             BufferedReader expectedFileReader = new BufferedReader(new InputStreamReader(this.getClass().getResourceAsStream("/render/sampleBase.html")));
             String expectedContent = expectedFileReader.lines().collect(Collectors.joining(System.lineSeparator()));
+            expectedFileReader.close();
 
             assertEquals(expectedContent, acutalHTML);
         } catch (Exception e) {
@@ -112,6 +116,7 @@ public class engineTest {
         try {
             BufferedReader expectedFileReader = new BufferedReader(new InputStreamReader(this.getClass().getResourceAsStream("/render/sampleOption.json")));
             String expectedContent = expectedFileReader.lines().collect(Collectors.joining(System.lineSeparator()));
+            expectedFileReader.close();
 
             assertEquals(expectedContent, acutalJsonOption);
         } catch (Exception e) {
