@@ -1,0 +1,1 @@
+{"grid":{"right":"4%","bottom":"3%","left":"3%","containLabel":true},"xAxis":{"type":"category","axisTick":{"alignWithLabel":true},"data":["Mon","Tue","Wed","Thu","Fri","Sat","Sun"]},"yAxis":{"type":"value"},"tooltip":{"axisPointer":{"type":"shadow"},"trigger":"axis"},"series":[{"type":"bar","name":"Direct","data":[10,52,200,334,390,330,220],"barWidth":"60%"}]}
