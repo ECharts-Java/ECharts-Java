@@ -8,7 +8,6 @@ import java.io.IOException;
 
 import com.github.jknack.handlebars.Handlebars;
 import com.github.jknack.handlebars.Template;
-
 import org.icepear.echarts.Chart;
 import org.icepear.echarts.Option;
 import org.icepear.echarts.serializer.EChartsSerializer;
@@ -182,6 +181,18 @@ public class Engine {
      */
     public String renderJsonOption(Option option) {
         return new EChartsSerializer().toJson(option);
+    }
+
+
+    /**
+     * Returns  html element string object of an Option
+     * 
+     * @param option the option to be serialized
+     * @return a string representation of a html elements
+     */
+    public String getHtml(Chart<?, ?> chart) {
+        String html = compileHandleBars("base", chart.getOption(), "100%", "100%");
+        return html;
     }
 
 }
