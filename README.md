@@ -159,6 +159,7 @@ For demo codes, please refer to the [docs](https://echarts.icepear.org/) and [ex
 ## 💡 Authors
 - [@IcePear-Jzx](https://github.com/IcePear-Jzx)
 - [@incandescentxxc](https://github.com/incandescentxxc)
+- [@PeiyangYU](https://github.com/PeiyangYu)
 
 Welcome more contribution in the community!
 
