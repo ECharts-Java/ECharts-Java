@@ -159,6 +159,11 @@ For demo codes, please refer to the [docs](https://echarts.icepear.org/) and [ex
 ## 💡 Authors
 - [@IcePear-Jzx](https://github.com/IcePear-Jzx)
 - [@incandescentxxc](https://github.com/incandescentxxc)
+- [@PeiyangYU](https://github.com/PeiyangYu)
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=ECharts-Java/ECharts-Java&type=Date)](https://star-history.com/#ECharts-Java/ECharts-Java&Date)
 
 Welcome more contribution in the community!
 
