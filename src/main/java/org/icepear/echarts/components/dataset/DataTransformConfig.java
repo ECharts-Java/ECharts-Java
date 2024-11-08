@@ -15,6 +15,8 @@ public class DataTransformConfig implements DataTransformConfigOption {
 
     @Setter(AccessLevel.NONE)
     private Object value;
+    
+    private String order;
 
     public DataTransformConfig setValue(Number value) {
         this.value = value;
