@@ -9,7 +9,7 @@
     <a href="https://github.com/ECharts-Java/ECharts-Java/actions">
         <img src="https://github.com/ECharts-Java/ECharts-Java/actions/workflows/maven.yml/badge.svg" alt="Github Actions Status">
     </a>
-    <a href="https://github.com/pyecharts/pyecharts/pulls">
+    <a href="https://github.com/ECharts-Java/ECharts-Java/pulls">
         <img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat" alt="Contributions welcome">
     </a>
     <!-- <a href="https://codecov.io/gh/ECharts-Java/ECharts-Java">
@@ -127,6 +127,11 @@ public static void main(String[] args) {
   ]
 }
 ```
+
+### 扩展 
+
+我们最近添加了保存图片的功能。支持导出png, jpg或者base64流的功能。 请参考 [ECharts Java Snapshot PhatomJS](https://github.com/ECharts-Java/Snapshot-PhantomJS)。
+
 
 ### 集成至 Spring Boot 应用
 
