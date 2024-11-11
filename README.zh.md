@@ -128,6 +128,11 @@ public static void main(String[] args) {
 }
 ```
 
+### 扩展 
+
+我们最近添加了保存图片的功能。支持导出png, jpg或者base64流的功能。 请参考 [ECharts Java Snapshot PhatomJS](https://github.com/ECharts-Java/Snapshot-PhantomJS)。
+
+
 ### 集成至 Spring Boot 应用
 
 <img src="assets/imgs/line-renderHtml.gif" alt="spring-boot-integration" style="width:75%;" />
