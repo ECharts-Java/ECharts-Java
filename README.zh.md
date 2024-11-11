@@ -9,7 +9,7 @@
     <a href="https://github.com/ECharts-Java/ECharts-Java/actions">
         <img src="https://github.com/ECharts-Java/ECharts-Java/actions/workflows/maven.yml/badge.svg" alt="Github Actions Status">
     </a>
-    <a href="https://github.com/pyecharts/pyecharts/pulls">
+    <a href="https://github.com/ECharts-Java/ECharts-Java/pulls">
         <img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat" alt="Contributions welcome">
     </a>
     <!-- <a href="https://codecov.io/gh/ECharts-Java/ECharts-Java">
