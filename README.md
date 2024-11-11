@@ -125,7 +125,7 @@ The output JSON object will be like the following,
 
 ### Extension 
 
-We've recently added support to programatically export images as png/jpg or base64 string. Please see [ECharts Java Snapshot PhatomJS](https://github.com/ECharts-Java/Snapshot-PhantomJS) for more details.
+We've recently added support to programatically export images as png/jpg or base64 stream. Please see [ECharts Java Snapshot PhatomJS](https://github.com/ECharts-Java/Snapshot-PhantomJS) for more details.
 
 ### Integrate with Spring Web Application
 
