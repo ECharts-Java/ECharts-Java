@@ -1,6 +1,6 @@
 package org.icepear.echarts.simple.treemap;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.io.InputStreamReader;
 import java.io.Reader;
@@ -9,7 +9,7 @@ import org.icepear.echarts.Treemap;
 import org.icepear.echarts.charts.treemap.TreemapSeries;
 import org.icepear.echarts.charts.treemap.TreemapSeriesNodeItem;
 import org.icepear.echarts.serializer.EChartsSerializer;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;

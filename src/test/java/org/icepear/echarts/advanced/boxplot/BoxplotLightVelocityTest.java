@@ -1,6 +1,6 @@
 package org.icepear.echarts.advanced.boxplot;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.io.InputStreamReader;
 import java.io.Reader;
@@ -24,11 +24,12 @@ import org.icepear.echarts.components.tooltip.Tooltip;
 import org.icepear.echarts.components.tooltip.TooltipAxisPointer;
 import org.icepear.echarts.origin.util.SeriesOption;
 import org.icepear.echarts.serializer.EChartsSerializer;
-import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
-public class BoxplotLightVelocityTest {
+class BoxplotLightVelocityTest {
     @Test
-    public void testBoxplotLightVelocity() {
+    void testBoxplotLightVelocity() {
         Title title1 = new Title()
                 .setText("Michelson-Morley Experiment")
                 .setLeft("center");
@@ -105,7 +106,7 @@ public class BoxplotLightVelocityTest {
                 this.getClass().getResourceAsStream("/advanced/boxplot/boxplot-light-velocity.json"));
         JsonElement expected = JsonParser.parseReader(reader);
         JsonElement actual = new EChartsSerializer().toJsonTree(option);
-        assertEquals(expected, actual);
+        Assertions.assertEquals(expected, actual);
 
         // System.out.println(new EChartsSerializer().toJson(option));
     }

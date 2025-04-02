@@ -1,12 +1,12 @@
 package org.icepear.echarts.serializer;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.lang.reflect.Type;
 
 import org.icepear.echarts.components.marker.MarkArea2DDataItem;
 import org.icepear.echarts.components.marker.MarkArea2DDataItemDim;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;

@@ -3,13 +3,13 @@ package org.icepear.echarts.render.simple;
 import org.icepear.echarts.Bar;
 import org.icepear.echarts.Chart;
 import org.icepear.echarts.render.Engine;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 public class RenderMultiSeriesBarTest {
     private Chart<?,?> chart = null;
 
-    @Before
+    @BeforeEach
     public void constructChart() {
         Bar bar = new Bar()
         .setLegend()

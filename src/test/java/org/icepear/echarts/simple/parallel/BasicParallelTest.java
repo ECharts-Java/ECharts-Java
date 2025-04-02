@@ -1,6 +1,6 @@
 package org.icepear.echarts.simple.parallel;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.io.InputStreamReader;
 import java.io.Reader;
@@ -12,7 +12,7 @@ import org.icepear.echarts.Parallel;
 import org.icepear.echarts.charts.parallel.ParallelSeries;
 import org.icepear.echarts.components.series.LineStyle;
 import org.icepear.echarts.serializer.EChartsSerializer;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 public class BasicParallelTest {
     @Test

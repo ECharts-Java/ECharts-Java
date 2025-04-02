@@ -1,6 +1,6 @@
 package org.icepear.echarts.simple.sunburst;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.io.InputStreamReader;
 import java.io.Reader;
@@ -13,7 +13,7 @@ import org.icepear.echarts.charts.sunburst.SunburstLabel;
 import org.icepear.echarts.charts.sunburst.SunburstSeries;
 import org.icepear.echarts.charts.sunburst.SunburstNodeItem;
 import org.icepear.echarts.serializer.EChartsSerializer;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 public class BasicSunburstTest {
     @Test

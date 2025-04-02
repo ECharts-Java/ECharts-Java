@@ -1,6 +1,5 @@
 package org.icepear.echarts.advanced.line;
 
-import static org.junit.Assert.assertEquals;
 
 import java.io.InputStreamReader;
 import java.io.Reader;
@@ -22,7 +21,9 @@ import org.icepear.echarts.components.tooltip.Tooltip;
 import org.icepear.echarts.origin.component.toolbox.ToolboxFeatureOption;
 import org.icepear.echarts.origin.util.SeriesOption;
 import org.icepear.echarts.serializer.EChartsSerializer;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class StepLineTest {
     @Test

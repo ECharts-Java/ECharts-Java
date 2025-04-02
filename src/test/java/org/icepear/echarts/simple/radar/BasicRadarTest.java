@@ -1,6 +1,6 @@
 package org.icepear.echarts.simple.radar;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.io.InputStreamReader;
 import java.io.Reader;
@@ -12,7 +12,7 @@ import org.icepear.echarts.Radar;
 import org.icepear.echarts.charts.radar.RadarDataItem;
 import org.icepear.echarts.components.coord.radar.RadarIndicator;
 import org.icepear.echarts.serializer.EChartsSerializer;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 public class BasicRadarTest {
     @Test

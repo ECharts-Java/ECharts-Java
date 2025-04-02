@@ -28,14 +28,14 @@ import org.icepear.echarts.origin.component.marker.MarkLineDataItemOption;
 import org.icepear.echarts.origin.component.toolbox.ToolboxFeatureOption;
 import org.icepear.echarts.origin.util.SeriesOption;
 import org.icepear.echarts.render.Engine;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 
 public class RenderLineChartByOptionTest {
     private Option option;
 
-    @Before
+    @BeforeEach
     public void constructOption() {
         Title title = new Title().setText("Temperature Change in the Coming Week");
 

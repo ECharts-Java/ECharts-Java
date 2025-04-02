@@ -4,13 +4,13 @@ package org.icepear.echarts.render.simple;
 import org.icepear.echarts.Chart;
 import org.icepear.echarts.Line;
 import org.icepear.echarts.render.Engine;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 public class RenderLineByChartTest {
     private Chart<?,?> chart;
 
-    @Before
+    @BeforeEach
     public void constructChart() {
         Line line = new Line()
                 .addXAxis(new String[] { "Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun" })

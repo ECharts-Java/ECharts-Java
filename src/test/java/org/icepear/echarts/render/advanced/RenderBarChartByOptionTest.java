@@ -12,13 +12,13 @@ import org.icepear.echarts.components.tooltip.Tooltip;
 import org.icepear.echarts.components.tooltip.TooltipAxisPointer;
 import org.icepear.echarts.origin.util.SeriesOption;
 import org.icepear.echarts.render.Engine;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 public class RenderBarChartByOptionTest {
     private Option option;
 
-    @Before
+    @BeforeEach
     public void constructOption() {
         Tooltip tooltip = new Tooltip()
                 .setTrigger("axis")

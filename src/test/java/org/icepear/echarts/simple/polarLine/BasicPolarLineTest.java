@@ -1,6 +1,6 @@
 package org.icepear.echarts.simple.polarLine;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.io.InputStreamReader;
 import java.io.Reader;
@@ -14,7 +14,7 @@ import org.icepear.echarts.components.coord.polar.ValueRadiusAxis;
 import org.icepear.echarts.components.tooltip.Tooltip;
 import org.icepear.echarts.components.tooltip.TooltipAxisPointer;
 import org.icepear.echarts.serializer.EChartsSerializer;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 public class BasicPolarLineTest {
     @Test

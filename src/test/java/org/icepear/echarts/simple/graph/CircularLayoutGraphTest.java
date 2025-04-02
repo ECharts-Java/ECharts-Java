@@ -1,6 +1,6 @@
 package org.icepear.echarts.simple.graph;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.io.InputStreamReader;
 import java.io.Reader;
@@ -20,15 +20,15 @@ import org.icepear.echarts.charts.graph.GraphNodeItem;
 import org.icepear.echarts.charts.graph.GraphSeries;
 import org.icepear.echarts.components.series.SeriesLabel;
 import org.icepear.echarts.serializer.EChartsSerializer;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 public class CircularLayoutGraphTest {
     private List<GraphNodeItem> nodes;
     private List<GraphEdgeItem> links;
     private List<GraphCategoryItem> categories;
 
-    @Before
+    @BeforeEach
     public void loadData() {
         Reader reader = new InputStreamReader(this.getClass().getResourceAsStream("/mock/les-miserables.json"));
         JsonObject data = JsonParser.parseReader(reader).getAsJsonObject();

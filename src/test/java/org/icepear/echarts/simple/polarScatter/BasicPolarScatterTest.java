@@ -1,6 +1,6 @@
 package org.icepear.echarts.simple.polarScatter;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.io.InputStreamReader;
 import java.io.Reader;
@@ -19,15 +19,15 @@ import org.icepear.echarts.components.coord.SplitLine;
 import org.icepear.echarts.components.coord.polar.CategoryAngleAxis;
 import org.icepear.echarts.components.coord.polar.CategoryRadiusAxis;
 import org.icepear.echarts.serializer.EChartsSerializer;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 public class BasicPolarScatterTest {
     private List<String> hours;
     private List<String> days;
     private List<ScatterDataItem> items;
 
-    @Before
+    @BeforeEach
     public void loadData() {
         Reader reader = new InputStreamReader(this.getClass().getResourceAsStream("/mock/punch-card.json"));
         JsonObject data = JsonParser.parseReader(reader).getAsJsonObject();

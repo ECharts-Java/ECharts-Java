@@ -1,6 +1,6 @@
 package org.icepear.echarts.simple.gauge;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.io.InputStreamReader;
 import java.io.Reader;
@@ -14,7 +14,7 @@ import org.icepear.echarts.charts.gauge.GaugeDetail;
 import org.icepear.echarts.charts.gauge.GaugeProgress;
 import org.icepear.echarts.charts.gauge.GaugeSeries;
 import org.icepear.echarts.serializer.EChartsSerializer;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 public class AnimationGaugeTest {
     @Test

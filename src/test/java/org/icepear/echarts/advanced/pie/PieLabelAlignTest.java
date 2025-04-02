@@ -1,6 +1,6 @@
 package org.icepear.echarts.advanced.pie;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.io.InputStreamReader;
 import java.io.Reader;
@@ -15,7 +15,7 @@ import org.icepear.echarts.charts.pie.PieSeries;
 import org.icepear.echarts.components.title.Title;
 import org.icepear.echarts.origin.util.SeriesOption;
 import org.icepear.echarts.serializer.EChartsSerializer;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 public class PieLabelAlignTest {
     @Test
