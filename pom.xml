@@ -44,6 +44,30 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>17</maven.compiler.source>
     <maven.compiler.target>17</maven.compiler.target>
+
+    <!-- Dependency versions -->
+    <junit.version>5.12.1</junit.version>
+    <lombok.version>1.18.30</lombok.version>
+    <gson.version>2.12.1</gson.version>
+    <handlebars.version>4.4.0</handlebars.version>
+    <slf4j.version>2.0.17</slf4j.version>
+    <checkstyle.version>10.22.0</checkstyle.version>
+
+    <!-- Plugin versions -->
+    <maven-source-plugin.version>3.3.1</maven-source-plugin.version>
+    <maven-javadoc-plugin.version>3.11.2</maven-javadoc-plugin.version>
+    <maven-gpg-plugin.version>3.2.7</maven-gpg-plugin.version>
+    <maven-clean-plugin.version>3.3.1</maven-clean-plugin.version>
+    <maven-resources-plugin.version>3.3.1</maven-resources-plugin.version>
+    <maven-compiler-plugin.version>3.11.0</maven-compiler-plugin.version>
+    <maven-surefire-plugin.version>3.2.2</maven-surefire-plugin.version>
+    <maven-jar-plugin.version>3.3.0</maven-jar-plugin.version>
+    <maven-install-plugin.version>3.1.1</maven-install-plugin.version>
+    <maven-deploy-plugin.version>3.1.1</maven-deploy-plugin.version>
+    <maven-site-plugin.version>3.21.0</maven-site-plugin.version>
+    <maven-project-info-reports-plugin.version>3.9.0</maven-project-info-reports-plugin.version>
+    <maven-checkstyle-plugin.version>3.6.0</maven-checkstyle-plugin.version>
+    <maven-jxr-plugin.version>3.6.0</maven-jxr-plugin.version>
   </properties>
 
   <distributionManagement>
@@ -61,31 +85,31 @@
     <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-engine</artifactId>
-      <version>5.12.1</version>
+      <version>${junit.version}</version>
       <scope>test</scope>
     </dependency>
     <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
     <dependency>
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
-      <version>1.18.30</version>
+      <version>${lombok.version}</version>
       <scope>provided</scope>
     </dependency>
     <!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
     <dependency>
       <groupId>com.google.code.gson</groupId>
       <artifactId>gson</artifactId>
-      <version>2.12.1</version>
+      <version>${gson.version}</version>
     </dependency>
     <dependency>
       <groupId>com.github.jknack</groupId>
       <artifactId>handlebars</artifactId>
-      <version>4.4.0</version>
+      <version>${handlebars.version}</version>
     </dependency>
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-simple</artifactId>
-      <version>2.0.17</version>
+      <version>${slf4j.version}</version>
     </dependency>
   </dependencies>
 
@@ -97,7 +121,7 @@
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-source-plugin</artifactId>
-            <version>3.3.1</version>
+            <version>${maven-source-plugin.version}</version>
             <executions>
               <execution>
                 <id>attach-sources</id>
@@ -110,7 +134,7 @@
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-javadoc-plugin</artifactId>
-            <version>3.11.2</version>
+            <version>${maven-javadoc-plugin.version}</version>
             <executions>
               <execution>
                 <id>attach-javadocs</id>
@@ -132,7 +156,7 @@
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-gpg-plugin</artifactId>
-            <version>3.2.7</version>
+            <version>${maven-gpg-plugin.version}</version>
             <executions>
               <execution>
                 <id>sign-artifacts</id>
@@ -155,60 +179,60 @@
         <!-- clean lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->
         <plugin>
           <artifactId>maven-clean-plugin</artifactId>
-          <version>3.3.1</version>
+          <version>${maven-clean-plugin.version}</version>
         </plugin>
         <!-- default lifecycle, jar packaging: see https://maven.apache.org/ref/current/maven-core/default-bindings.html#Plugin_bindings_for_jar_packaging -->
         <plugin>
           <artifactId>maven-resources-plugin</artifactId>
-          <version>3.3.1</version>
+          <version>${maven-resources-plugin.version}</version>
         </plugin>
         <plugin>
           <artifactId>maven-compiler-plugin</artifactId>
-          <version>3.11.0</version>
+          <version>${maven-compiler-plugin.version}</version>
           <configuration>
             <annotationProcessorPaths>
               <path>
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
-                <version>1.18.30</version>
+                <version>${lombok.version}</version>
               </path>
             </annotationProcessorPaths>
           </configuration>
         </plugin>
         <plugin>
           <artifactId>maven-surefire-plugin</artifactId>
-          <version>3.2.2</version>
+          <version>${maven-surefire-plugin.version}</version>
         </plugin>
         <plugin>
           <artifactId>maven-jar-plugin</artifactId>
-          <version>3.3.0</version>
+          <version>${maven-jar-plugin.version}</version>
         </plugin>
         <plugin>
           <artifactId>maven-install-plugin</artifactId>
-          <version>3.1.1</version>
+          <version>${maven-install-plugin.version}</version>
         </plugin>
         <plugin>
           <artifactId>maven-deploy-plugin</artifactId>
-          <version>3.1.1</version>
+          <version>${maven-deploy-plugin.version}</version>
         </plugin>
         <!-- site lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#site_Lifecycle -->
         <plugin>
           <artifactId>maven-site-plugin</artifactId>
-          <version>3.21.0</version>
+          <version>${maven-site-plugin.version}</version>
         </plugin>
         <plugin>
           <artifactId>maven-project-info-reports-plugin</artifactId>
-          <version>3.9.0</version>
+          <version>${maven-project-info-reports-plugin.version}</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-checkstyle-plugin</artifactId>
-          <version>3.6.0</version>
+          <version>${maven-checkstyle-plugin.version}</version>
           <dependencies>
             <dependency>
               <groupId>com.puppycrawl.tools</groupId>
               <artifactId>checkstyle</artifactId>
-              <version>10.22.0</version>
+              <version>${checkstyle.version}</version>
             </dependency>
           </dependencies>
         </plugin>
@@ -221,7 +245,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-checkstyle-plugin</artifactId>
-        <version>3.6.0</version>
+        <version>${maven-checkstyle-plugin.version}</version>
         <configuration>
           <configLocation>checkstyle.xml</configLocation>
         </configuration>
@@ -229,7 +253,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jxr-plugin</artifactId>
-        <version>3.6.0</version>
+        <version>${maven-jxr-plugin.version}</version>
       </plugin>
     </plugins>
   </reporting>
