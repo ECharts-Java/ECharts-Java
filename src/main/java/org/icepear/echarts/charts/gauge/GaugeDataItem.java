@@ -1,5 +1,8 @@
 package org.icepear.echarts.charts.gauge;
 
+import java.io.Serial;
+import java.io.Serializable;
+
 import lombok.Data;
 import lombok.experimental.Accessors;
 
@@ -12,7 +15,10 @@ import org.icepear.echarts.origin.util.ItemStyleOption;
 
 @Accessors(chain = true)
 @Data
-public class GaugeDataItem implements GaugeDataItemOption {
+public class GaugeDataItem implements GaugeDataItemOption, Serializable {
+
+    @Serial
+    private static final long serialVersionUID = 1L;
 
     private ItemStyleOption itemStyle;
 

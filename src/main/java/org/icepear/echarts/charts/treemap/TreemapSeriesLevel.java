@@ -1,5 +1,8 @@
 package org.icepear.echarts.charts.treemap;
 
+import java.io.Serial;
+import java.io.Serializable;
+
 import lombok.AccessLevel;
 import lombok.Data;
 import lombok.Setter;
@@ -12,7 +15,10 @@ import org.icepear.echarts.origin.util.DecalObject;
 
 @Accessors(chain = true)
 @Data
-public class TreemapSeriesLevel implements TreemapSeriesLevelOption {
+public class TreemapSeriesLevel implements TreemapSeriesLevelOption, Serializable {
+
+    @Serial
+    private static final long serialVersionUID = 1L;
 
     @Setter(AccessLevel.NONE)
     private Object visualDimension;

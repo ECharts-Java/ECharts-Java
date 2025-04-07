@@ -1,5 +1,7 @@
 package org.icepear.echarts.components.series;
 
+import java.io.Serial;
+import java.io.Serializable;
 import java.util.Map;
 
 import lombok.AccessLevel;
@@ -12,7 +14,10 @@ import org.icepear.echarts.origin.util.TextCommonOption;
 
 @Accessors(chain = true)
 @Data
-public class SeriesLineLabel implements SeriesLineLabelOption {
+public class SeriesLineLabel implements SeriesLineLabelOption, Serializable {
+
+    @Serial
+    private static final long serialVersionUID = 1L;
 
     private Number shadowBlur;
 

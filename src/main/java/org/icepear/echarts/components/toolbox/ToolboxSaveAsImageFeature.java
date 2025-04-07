@@ -1,5 +1,7 @@
 package org.icepear.echarts.components.toolbox;
 
+import java.io.Serial;
+import java.io.Serializable;
 import java.util.Map;
 
 import lombok.AccessLevel;
@@ -11,7 +13,10 @@ import org.icepear.echarts.origin.component.toolbox.feature.ToolboxSaveAsImageFe
 
 @Accessors(chain = true)
 @Data
-public class ToolboxSaveAsImageFeature implements ToolboxSaveAsImageFeatureOption {
+public class ToolboxSaveAsImageFeature implements ToolboxSaveAsImageFeatureOption, Serializable {
+
+    @Serial
+    private static final long serialVersionUID = 1L;
 
     private Boolean show;
 

@@ -1,5 +1,8 @@
 package org.icepear.echarts.charts.scatter;
 
+import java.io.Serial;
+import java.io.Serializable;
+
 import lombok.Data;
 import lombok.experimental.Accessors;
 
@@ -9,7 +12,10 @@ import org.icepear.echarts.origin.util.SeriesLabelOption;
 
 @Accessors(chain = true)
 @Data
-public class ScatterEmphasis implements ScatterEmphasisOption {
+public class ScatterEmphasis implements ScatterEmphasisOption, Serializable {
+
+    @Serial
+    private static final long serialVersionUID = 1L;
 
     private ItemStyleOption itemStyle;
 

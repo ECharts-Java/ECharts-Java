@@ -1,5 +1,8 @@
 package org.icepear.echarts.components.coord.cartesian;
 
+import java.io.Serial;
+import java.io.Serializable;
+
 import lombok.AccessLevel;
 import lombok.Data;
 import lombok.Setter;
@@ -18,7 +21,10 @@ import org.icepear.echarts.origin.util.CommonAxisPointerOption;
 
 @Accessors(chain = true)
 @Data
-public class CategoryAxis implements CategoryAxisOption {
+public class CategoryAxis implements CategoryAxisOption, Serializable {
+
+    @Serial
+    private static final long serialVersionUID = 1L;
 
     private Number gridIndex;
 

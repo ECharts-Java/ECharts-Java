@@ -1,5 +1,7 @@
 package org.icepear.echarts.components.legend;
 
+import java.io.Serial;
+import java.io.Serializable;
 import java.util.Map;
 
 import lombok.AccessLevel;
@@ -12,7 +14,10 @@ import org.icepear.echarts.origin.util.LabelOption;
 
 @Accessors(chain = true)
 @Data
-public class Legend implements LegendOption {
+public class Legend implements LegendOption, Serializable {
+
+    @Serial
+    private static final long serialVersionUID = 1L;
 
     private String mainType;
 

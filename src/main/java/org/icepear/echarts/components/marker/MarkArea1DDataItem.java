@@ -1,5 +1,8 @@
 package org.icepear.echarts.components.marker;
 
+import java.io.Serial;
+import java.io.Serializable;
+
 import lombok.Data;
 import lombok.experimental.Accessors;
 
@@ -9,7 +12,10 @@ import org.icepear.echarts.origin.util.SeriesLabelOption;
 
 @Accessors(chain = true)
 @Data
-public class MarkArea1DDataItem implements MarkArea1DDataItemOption {
+public class MarkArea1DDataItem implements MarkArea1DDataItemOption, Serializable {
+
+    @Serial
+    private static final long serialVersionUID = 1L;
 
     private ItemStyleOption itemStyle;
 

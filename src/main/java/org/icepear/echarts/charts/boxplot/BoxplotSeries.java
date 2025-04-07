@@ -1,5 +1,7 @@
 package org.icepear.echarts.charts.boxplot;
 
+import java.io.Serial;
+import java.io.Serializable;
 import java.util.Map;
 
 import lombok.AccessLevel;
@@ -21,7 +23,10 @@ import org.icepear.echarts.origin.util.SeriesLabelOption;
 
 @Accessors(chain = true)
 @Data
-public class BoxplotSeries implements BoxplotSeriesOption {
+public class BoxplotSeries implements BoxplotSeriesOption, Serializable {
+
+    @Serial
+    private static final long serialVersionUID = 1L;
 
     private String mainType;
 

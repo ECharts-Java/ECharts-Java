@@ -1,5 +1,7 @@
 package org.icepear.echarts.charts.sankey;
 
+import java.io.Serial;
+import java.io.Serializable;
 import java.util.Map;
 
 import lombok.AccessLevel;
@@ -23,7 +25,10 @@ import org.icepear.echarts.origin.util.SeriesLabelOption;
 
 @Accessors(chain = true)
 @Data
-public class SankeySeries implements SankeySeriesOption {
+public class SankeySeries implements SankeySeriesOption, Serializable {
+
+    @Serial
+    private static final long serialVersionUID = 1L;
 
     private String mainType;
 

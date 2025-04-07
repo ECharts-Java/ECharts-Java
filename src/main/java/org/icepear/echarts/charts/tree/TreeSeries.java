@@ -1,5 +1,7 @@
 package org.icepear.echarts.charts.tree;
 
+import java.io.Serial;
+import java.io.Serializable;
 import java.util.Map;
 
 import lombok.AccessLevel;
@@ -21,7 +23,10 @@ import org.icepear.echarts.origin.util.SeriesLabelOption;
 
 @Accessors(chain = true)
 @Data
-public class TreeSeries implements TreeSeriesOption {
+public class TreeSeries implements TreeSeriesOption, Serializable {
+
+    @Serial
+    private static final long serialVersionUID = 1L;
 
     private String mainType;
 

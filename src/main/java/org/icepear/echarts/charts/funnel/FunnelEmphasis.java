@@ -1,5 +1,8 @@
 package org.icepear.echarts.charts.funnel;
 
+import java.io.Serial;
+import java.io.Serializable;
+
 import lombok.Data;
 import lombok.experimental.Accessors;
 
@@ -9,7 +12,10 @@ import org.icepear.echarts.origin.util.ItemStyleOption;
 
 @Accessors(chain = true)
 @Data
-public class FunnelEmphasis implements FunnelEmphasisOption {
+public class FunnelEmphasis implements FunnelEmphasisOption, Serializable {
+
+    @Serial
+    private static final long serialVersionUID = 1L;
 
     private String focus;
 

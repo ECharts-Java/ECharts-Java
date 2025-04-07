@@ -1,5 +1,8 @@
 package org.icepear.echarts.charts.treemap;
 
+import java.io.Serial;
+import java.io.Serializable;
+
 import lombok.Data;
 import lombok.experimental.Accessors;
 
@@ -8,7 +11,10 @@ import org.icepear.echarts.origin.chart.treemap.BreadcrumbItemStyleOption;
 
 @Accessors(chain = true)
 @Data
-public class BreadcrumbEmphasisItemStyle implements BreadcrumbEmphasisItemStyleOption {
+public class BreadcrumbEmphasisItemStyle implements BreadcrumbEmphasisItemStyleOption, Serializable {
+
+    @Serial
+    private static final long serialVersionUID = 1L;
 
     private BreadcrumbItemStyleOption itemStyle;
 }

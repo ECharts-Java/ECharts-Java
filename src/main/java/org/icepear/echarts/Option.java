@@ -1,5 +1,8 @@
 package org.icepear.echarts;
 
+import java.io.Serial;
+import java.io.Serializable;
+
 import lombok.AccessLevel;
 import lombok.Data;
 import lombok.Setter;
@@ -29,7 +32,10 @@ import org.icepear.echarts.origin.util.SeriesOption;
 
 @Accessors(chain = true)
 @Data
-public class Option implements EChartsOption {
+public class Option implements EChartsOption, Serializable {
+
+    @Serial
+    private static final long serialVersionUID = 1L;
 
     private Boolean animation;
 

@@ -1,5 +1,7 @@
 package org.icepear.echarts.components.visualMap;
 
+import java.io.Serial;
+import java.io.Serializable;
 import java.util.Map;
 
 import lombok.AccessLevel;
@@ -13,7 +15,10 @@ import org.icepear.echarts.origin.util.LabelOption;
 
 @Accessors(chain = true)
 @Data
-public class PiecewiseVisualMap implements PiecewiseVisualMapOption {
+public class PiecewiseVisualMap implements PiecewiseVisualMapOption, Serializable {
+
+    @Serial
+    private static final long serialVersionUID = 1L;
 
     private String mainType;
 
