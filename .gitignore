@@ -40,4 +40,4 @@ target/
 
 scripts/java
 scripts/*.ts
-scripts/*.json
+scripts/config/*.json

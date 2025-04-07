@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Legend",
+    "implements": ["Serializable"]
+  },
+  {
+    "name": "Option",
+    "implements": ["Serializable"]
+  },
+  {
+    "name": "ComponentOption",
+    "implements": ["Serializable"]
+  },
+  {
+    "name": "StatesOptionMixin",
+    "implements": ["Serializable"]
+  },
+  {
+    "name": "ShadowOptionMixin",
+    "implements": ["Serializable"]
+  }
+]

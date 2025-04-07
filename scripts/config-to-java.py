@@ -5,6 +5,9 @@ from collections import defaultdict
 config_dir = "config"
 java_dir = "java"
 
+additional_interfaces_file = "additional_interfaces.json"
+additional_interfaces = {}
+
 symbol_table = {
     "?": {
         "path": None,
@@ -71,9 +74,23 @@ symbol_table = {
         "import": "lombok.Setter",
         "builtin": True,
         "obj": None
+    },
+    "Serializable": {
+        "path": None,
+        "import": "java.io.Serializable",
+        "builtin": True,
+        "obj": None
     }
 }
 
+def build_additional_interfaces():
+    try:
+        with open(os.path.join(os.path.dirname(__file__), additional_interfaces_file), "r") as f:
+            global_data_array = json.load(f)
+            for global_data in global_data_array:
+                additional_interfaces[global_data["name"]] = global_data
+    except Exception as e:
+        print("Warning: Failed to load additional interfaces: {}".format(e))
 
 def build_symbol_table():
     for root, _, files in os.walk(config_dir):
@@ -81,6 +98,23 @@ def build_symbol_table():
             path = os.path.join(root, file)
             obj = json.load(open(path))
             name = obj["name"].split("<")[0]
+
+            if name in additional_interfaces:
+                if "implements" in additional_interfaces[name] and obj.get("type") == "class":
+                    if "implements" not in obj:
+                        obj["implements"] = []
+                    for impl in additional_interfaces[name]["implements"]:
+                        if impl not in obj["implements"]:
+                            obj["implements"].append(impl)
+
+                # Extends for interfaces
+                if "implements" in additional_interfaces[name] and obj.get("type") == "interface":
+                    if "extends" not in obj:
+                        obj["extends"] = []
+                    for impl in additional_interfaces[name]["implements"]:
+                        if impl not in obj["extends"]:
+                            obj["extends"].append(impl)
+
             symbol_table[name] = {
                 "path": os.path.join(root.replace(config_dir, java_dir), "{}.java".format(name)),
                 "import": "{}.{}".format(".".join(root.replace(config_dir + "/", "").split("/")), name),
@@ -116,6 +150,8 @@ def get_all_symbols(obj, include_inheritance=True):
 
 def get_symbols_dfs(obj):
     symbols = set()
+    if obj == None:
+        return symbols
     if obj["type"] == "class":
         symbols = get_all_symbols(obj)
         for implement in obj["implements"]:
@@ -213,6 +249,8 @@ def get_all_fields(obj):
 def get_fields_dfs(obj):
     fields = defaultdict(set)
     defaults = {}
+    if obj == None:
+        return fields, defaults
     if obj["type"] == "class":
         for implement in obj["implements"]:
             subfields, subdefaults = get_fields_dfs(symbol_table[implement]["obj"])
@@ -317,6 +355,7 @@ def generate_interface(info):
 
 
 if __name__ == "__main__":
+    build_additional_interfaces()
     build_symbol_table()
     for symbol, info in symbol_table.items():
         if info["builtin"] == False:
