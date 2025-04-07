@@ -71,6 +71,18 @@ symbol_table = {
         "import": "lombok.Setter",
         "builtin": True,
         "obj": None
+    },
+    "Serializable": {
+        "path": None,
+        "import": "java.io.Serializable",
+        "builtin": True,
+        "obj": None
+    },
+    "Serial": {
+        "path": None,
+        "import": "java.io.Serial",
+        "builtin": True,
+        "obj": None
     }
 }
 
@@ -176,11 +188,13 @@ def generate_annotation_lines(lines):
 
 
 def generate_class_start_line(obj, lines):
-    if len(obj["implements"]) == 0:
-        lines.append("public class {} {{\n".format(obj["name"]))
-    else:
-        lines.append("public class {} implements {} {{\n".format(
-            obj["name"], ", ".join(obj["implements"])))
+    implements = list(obj["implements"])
+    if "Serializable" not in implements:
+        implements.append("Serializable")
+
+    lines.append("public class {} implements {} {{\n".format(obj["name"], ", ".join(implements)))
+    lines.append("\n    @Serial")
+    lines.append("\n    private static final long serialVersionUID = 1L;\n")
 
 
 def generate_interface_start_line(obj, lines):
@@ -290,7 +304,7 @@ def generate_class(info):
     symbols = get_symbols_dfs(obj)
     fields, defaults = get_fields_dfs(obj)
     eliminate_fields_conflicts(fields)
-    symbols |= {"Accessors", "Data"}
+    symbols |= {"Accessors", "Data", "Serial", "Serializable"}
     lines = []
     generate_package_line(info, lines)
     generate_import_lines(info, symbols, fields, lines)
