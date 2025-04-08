@@ -1,5 +1,7 @@
 package org.icepear.echarts;
 
+import java.io.Serial;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -10,7 +12,11 @@ import org.icepear.echarts.components.coord.parallel.ValueParallelAxis;
 import org.icepear.echarts.origin.coord.parallel.ParallelAxisOption;
 import org.icepear.echarts.origin.util.SeriesOption;
 
-public abstract class ParallelCoordChart<T extends Chart<?, ?>, E extends SeriesOption> extends Chart<T, E> {
+public abstract class ParallelCoordChart<T extends Chart<?, ?>, E extends SeriesOption> extends Chart<T, E> implements Serializable {
+
+    @Serial
+    private static final long serialVersionUID = 1L;
+
     protected List<ParallelAxisOption> parallelAxes;
 
     public ParallelCoordChart(final Class<T> clazz, final Class<E> seriesClazz) {

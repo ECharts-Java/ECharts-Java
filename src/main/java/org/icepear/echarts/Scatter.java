@@ -2,7 +2,14 @@ package org.icepear.echarts;
 
 import org.icepear.echarts.charts.scatter.ScatterSeries;
 
-public class Scatter extends CartesianCoordChart<Scatter, ScatterSeries> {
+import java.io.Serial;
+import java.io.Serializable;
+
+public class Scatter extends CartesianCoordChart<Scatter, ScatterSeries> implements Serializable {
+
+    @Serial
+    private static final long serialVersionUID = 1L;
+
     public Scatter() {
         super(Scatter.class, ScatterSeries.class);
     }

@@ -2,7 +2,14 @@ package org.icepear.echarts;
 
 import org.icepear.echarts.charts.tree.TreeSeries;
 
-public class Tree extends Chart<Tree, TreeSeries> {
+import java.io.Serial;
+import java.io.Serializable;
+
+public class Tree extends Chart<Tree, TreeSeries> implements Serializable {
+
+    @Serial
+    private static final long serialVersionUID = 1L;
+
     public Tree() {
         super(Tree.class, TreeSeries.class);
     }
