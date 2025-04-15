@@ -1,6 +1,5 @@
 package org.icepear.echarts.components.media;
 
-import java.io.Serial;
 import java.io.Serializable;
 
 import lombok.Data;
@@ -14,7 +13,6 @@ import org.icepear.echarts.origin.util.MediaUnitOption;
 @Data
 public class MediaUnit implements MediaUnitOption, Serializable {
 
-    @Serial
     private static final long serialVersionUID = 1L;
 
     private MediaQueryOption query;

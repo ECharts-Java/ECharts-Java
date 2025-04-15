@@ -2,12 +2,10 @@ package org.icepear.echarts;
 
 import org.icepear.echarts.charts.scatter.ScatterSeries;
 
-import java.io.Serial;
 import java.io.Serializable;
 
 public class PolarScatter extends PolarCoordChart<PolarScatter, ScatterSeries> implements Serializable {
 
-    @Serial
     private static final long serialVersionUID = 1L;
 
     public PolarScatter() {

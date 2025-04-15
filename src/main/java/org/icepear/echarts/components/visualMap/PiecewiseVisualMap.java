@@ -1,6 +1,5 @@
 package org.icepear.echarts.components.visualMap;
 
-import java.io.Serial;
 import java.io.Serializable;
 import java.util.Map;
 
@@ -17,7 +16,6 @@ import org.icepear.echarts.origin.util.LabelOption;
 @Data
 public class PiecewiseVisualMap implements PiecewiseVisualMapOption, Serializable {
 
-    @Serial
     private static final long serialVersionUID = 1L;
 
     private String mainType;

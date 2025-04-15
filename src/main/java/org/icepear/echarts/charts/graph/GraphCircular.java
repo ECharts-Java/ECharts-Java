@@ -1,6 +1,5 @@
 package org.icepear.echarts.charts.graph;
 
-import java.io.Serial;
 import java.io.Serializable;
 
 import lombok.Data;
@@ -12,7 +11,6 @@ import org.icepear.echarts.origin.chart.graph.GraphCircularOption;
 @Data
 public class GraphCircular implements GraphCircularOption, Serializable {
 
-    @Serial
     private static final long serialVersionUID = 1L;
 
     private Boolean rotateLabel;

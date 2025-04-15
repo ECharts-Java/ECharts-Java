@@ -1,6 +1,5 @@
 package org.icepear.echarts.charts.gauge;
 
-import java.io.Serial;
 import java.io.Serializable;
 
 import lombok.AccessLevel;
@@ -15,7 +14,6 @@ import org.icepear.echarts.origin.util.ItemStyleOption;
 @Data
 public class GaugePointer implements GaugePointerOption, Serializable {
 
-    @Serial
     private static final long serialVersionUID = 1L;
 
     private String icon;

@@ -2,12 +2,10 @@ package org.icepear.echarts;
 
 import org.icepear.echarts.charts.bar.BarSeries;
 
-import java.io.Serial;
 import java.io.Serializable;
 
 public class PolarBar extends PolarCoordChart<PolarBar, BarSeries> implements Serializable {
 
-    @Serial
     private static final long serialVersionUID = 1L;
 
     public PolarBar() {

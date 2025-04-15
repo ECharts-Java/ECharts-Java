@@ -1,6 +1,5 @@
 package org.icepear.echarts.charts.line;
 
-import java.io.Serial;
 import java.io.Serializable;
 
 import lombok.Data;
@@ -12,7 +11,6 @@ import org.icepear.echarts.origin.chart.line.LineAreaStyleOption;
 @Data
 public class LineAreaStyle implements LineAreaStyleOption, Serializable {
 
-    @Serial
     private static final long serialVersionUID = 1L;
 
     private Number shadowBlur;

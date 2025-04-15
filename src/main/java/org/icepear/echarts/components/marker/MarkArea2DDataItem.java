@@ -1,6 +1,5 @@
 package org.icepear.echarts.components.marker;
 
-import java.io.Serial;
 import java.io.Serializable;
 
 import lombok.Data;
@@ -13,7 +12,6 @@ import org.icepear.echarts.origin.component.marker.MarkArea2DDataItemOption;
 @Data
 public class MarkArea2DDataItem implements MarkArea2DDataItemOption, Serializable {
 
-    @Serial
     private static final long serialVersionUID = 1L;
 
     private MarkArea2DDataItemDimOption startPoint;

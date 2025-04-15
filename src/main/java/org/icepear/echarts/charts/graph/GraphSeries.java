@@ -1,6 +1,5 @@
 package org.icepear.echarts.charts.graph;
 
-import java.io.Serial;
 import java.io.Serializable;
 import java.util.Map;
 
@@ -32,7 +31,6 @@ import org.icepear.echarts.origin.util.SeriesLineLabelOption;
 @Data
 public class GraphSeries implements GraphSeriesOption, Serializable {
 
-    @Serial
     private static final long serialVersionUID = 1L;
 
     private String mainType;

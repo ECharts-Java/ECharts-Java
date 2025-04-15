@@ -1,6 +1,5 @@
 package org.icepear.echarts.components.series;
 
-import java.io.Serial;
 import java.io.Serializable;
 
 import lombok.AccessLevel;
@@ -14,7 +13,6 @@ import org.icepear.echarts.origin.util.OptionEncode;
 @Data
 public class Encode implements OptionEncode, Serializable {
 
-    @Serial
     private static final long serialVersionUID = 1L;
 
     @Setter(AccessLevel.NONE)

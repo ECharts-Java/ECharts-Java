@@ -1,6 +1,5 @@
 package org.icepear.echarts.charts.sankey;
 
-import java.io.Serial;
 import java.io.Serializable;
 
 import lombok.AccessLevel;
@@ -15,7 +14,6 @@ import org.icepear.echarts.origin.chart.sankey.SankeyEdgeStyleOption;
 @Data
 public class SankeyEdgeItem implements SankeyEdgeItemOption, Serializable {
 
-    @Serial
     private static final long serialVersionUID = 1L;
 
     private SankeyEdgeStyleOption lineStyle;

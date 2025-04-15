@@ -1,6 +1,5 @@
 package org.icepear.echarts.components.coord;
 
-import java.io.Serial;
 import java.io.Serializable;
 import java.util.Map;
 
@@ -16,7 +15,6 @@ import org.icepear.echarts.origin.util.TextCommonOption;
 @Data
 public class CategoryAxisLabel implements CategoryAxisLabelOption, Serializable {
 
-    @Serial
     private static final long serialVersionUID = 1L;
 
     private Number shadowBlur;

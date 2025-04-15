@@ -1,6 +1,5 @@
 package org.icepear.echarts.components.dataset;
 
-import java.io.Serial;
 import java.io.Serializable;
 
 import lombok.AccessLevel;
@@ -14,14 +13,13 @@ import org.icepear.echarts.origin.data.helper.DataTransformConfigOption;
 @Data
 public class DataTransformConfig implements DataTransformConfigOption, Serializable {
 
-    @Serial
     private static final long serialVersionUID = 1L;
 
     private String dimension;
 
     @Setter(AccessLevel.NONE)
     private Object value;
-    
+
     private String order;
 
     public DataTransformConfig setValue(Number value) {

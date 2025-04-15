@@ -1,6 +1,5 @@
 package org.icepear.echarts.charts.pie;
 
-import java.io.Serial;
 import java.io.Serializable;
 
 import lombok.Data;
@@ -14,7 +13,6 @@ import org.icepear.echarts.origin.chart.pie.PieLabelOption;
 @Data
 public class PieEmphasis implements PieEmphasisOption, Serializable {
 
-    @Serial
     private static final long serialVersionUID = 1L;
 
     private PieItemStyleOption itemStyle;

@@ -1,6 +1,5 @@
 package org.icepear.echarts.components.coord.radar;
 
-import java.io.Serial;
 import java.io.Serializable;
 
 import lombok.Data;
@@ -12,7 +11,6 @@ import org.icepear.echarts.origin.coord.radar.RadarIndicatorOption;
 @Data
 public class RadarIndicator implements RadarIndicatorOption, Serializable {
 
-    @Serial
     private static final long serialVersionUID = 1L;
 
     private String name;

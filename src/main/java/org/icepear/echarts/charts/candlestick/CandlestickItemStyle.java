@@ -1,6 +1,5 @@
 package org.icepear.echarts.charts.candlestick;
 
-import java.io.Serial;
 import java.io.Serializable;
 
 import lombok.AccessLevel;
@@ -15,7 +14,6 @@ import org.icepear.echarts.origin.util.DecalObject;
 @Data
 public class CandlestickItemStyle implements CandlestickItemStyleOption, Serializable {
 
-    @Serial
     private static final long serialVersionUID = 1L;
 
     private Number shadowBlur;

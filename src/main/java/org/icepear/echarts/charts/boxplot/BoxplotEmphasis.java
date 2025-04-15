@@ -1,6 +1,5 @@
 package org.icepear.echarts.charts.boxplot;
 
-import java.io.Serial;
 import java.io.Serializable;
 
 import lombok.Data;
@@ -14,7 +13,6 @@ import org.icepear.echarts.origin.util.SeriesLabelOption;
 @Data
 public class BoxplotEmphasis implements BoxplotEmphasisOption, Serializable {
 
-    @Serial
     private static final long serialVersionUID = 1L;
 
     private ItemStyleOption itemStyle;

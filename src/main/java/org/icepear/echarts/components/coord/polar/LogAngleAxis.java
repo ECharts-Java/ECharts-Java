@@ -1,6 +1,5 @@
 package org.icepear.echarts.components.coord.polar;
 
-import java.io.Serial;
 import java.io.Serializable;
 
 import lombok.AccessLevel;
@@ -23,7 +22,6 @@ import org.icepear.echarts.origin.util.CommonAxisPointerOption;
 @Data
 public class LogAngleAxis implements LogAngleAxisOption, Serializable {
 
-    @Serial
     private static final long serialVersionUID = 1L;
 
     private Number polarIndex;

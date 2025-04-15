@@ -1,6 +1,5 @@
 package org.icepear.echarts.components.marker;
 
-import java.io.Serial;
 import java.io.Serializable;
 
 import lombok.AccessLevel;
@@ -17,7 +16,6 @@ import org.icepear.echarts.origin.util.SeriesLabelOption;
 @Data
 public class MarkPoint implements MarkPointOption, Serializable {
 
-    @Serial
     private static final long serialVersionUID = 1L;
 
     private String mainType;

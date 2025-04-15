@@ -1,6 +1,5 @@
 package org.icepear.echarts.components.toolbox;
 
-import java.io.Serial;
 import java.io.Serializable;
 import java.util.Map;
 
@@ -15,7 +14,6 @@ import org.icepear.echarts.origin.component.toolbox.feature.ToolboxMagicTypeFeat
 @Data
 public class ToolboxMagicTypeFeature implements ToolboxMagicTypeFeatureOption, Serializable {
 
-    @Serial
     private static final long serialVersionUID = 1L;
 
     private Boolean show;

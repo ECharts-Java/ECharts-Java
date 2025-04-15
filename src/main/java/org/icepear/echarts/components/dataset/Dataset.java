@@ -1,6 +1,5 @@
 package org.icepear.echarts.components.dataset;
 
-import java.io.Serial;
 import java.io.Serializable;
 import java.util.Map;
 
@@ -18,7 +17,6 @@ import org.icepear.echarts.origin.util.OptionEncode;
 @Data
 public class Dataset implements DatasetOption, Serializable {
 
-    @Serial
     private static final long serialVersionUID = 1L;
 
     private String mainType;

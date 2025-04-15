@@ -1,6 +1,5 @@
 package org.icepear.echarts.components.text;
 
-import java.io.Serial;
 import java.io.Serializable;
 
 import lombok.AccessLevel;
@@ -14,7 +13,6 @@ import org.icepear.echarts.origin.util.LabelLayoutOption;
 @Data
 public class LabelLayout implements LabelLayoutOption, Serializable {
 
-    @Serial
     private static final long serialVersionUID = 1L;
 
     private String moveOverlap;

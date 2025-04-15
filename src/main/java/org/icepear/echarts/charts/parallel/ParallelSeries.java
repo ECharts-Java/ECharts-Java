@@ -1,6 +1,5 @@
 package org.icepear.echarts.charts.parallel;
 
-import java.io.Serial;
 import java.io.Serializable;
 import java.util.Map;
 
@@ -26,7 +25,6 @@ import org.icepear.echarts.origin.util.SeriesLabelOption;
 @Data
 public class ParallelSeries implements ParallelSeriesOption, Serializable {
 
-    @Serial
     private static final long serialVersionUID = 1L;
 
     private String mainType;

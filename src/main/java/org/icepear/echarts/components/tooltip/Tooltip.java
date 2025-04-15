@@ -1,6 +1,5 @@
 package org.icepear.echarts.components.tooltip;
 
-import java.io.Serial;
 import java.io.Serializable;
 
 import lombok.AccessLevel;
@@ -15,7 +14,6 @@ import org.icepear.echarts.origin.component.tooltip.TooltipOption;
 @Data
 public class Tooltip implements TooltipOption, Serializable {
 
-    @Serial
     private static final long serialVersionUID = 1L;
 
     private Boolean show;

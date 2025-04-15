@@ -1,6 +1,5 @@
 package org.icepear.echarts.components.grid;
 
-import java.io.Serial;
 import java.io.Serializable;
 
 import lombok.AccessLevel;
@@ -14,7 +13,6 @@ import org.icepear.echarts.origin.coord.cartesian.GridOption;
 @Data
 public class Grid implements GridOption, Serializable {
 
-    @Serial
     private static final long serialVersionUID = 1L;
 
     private String mainType;

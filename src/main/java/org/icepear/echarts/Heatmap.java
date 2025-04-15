@@ -5,12 +5,10 @@ import org.icepear.echarts.components.coord.SplitArea;
 import org.icepear.echarts.components.coord.cartesian.CategoryAxis;
 import org.icepear.echarts.components.coord.cartesian.ValueAxis;
 
-import java.io.Serial;
 import java.io.Serializable;
 
 public class Heatmap extends CartesianCoordChart<Heatmap, HeatmapSeries> implements Serializable {
 
-    @Serial
     private static final long serialVersionUID = 1L;
 
     public Heatmap() {

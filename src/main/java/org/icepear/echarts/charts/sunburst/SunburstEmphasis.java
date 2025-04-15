@@ -1,6 +1,5 @@
 package org.icepear.echarts.charts.sunburst;
 
-import java.io.Serial;
 import java.io.Serializable;
 
 import lombok.Data;
@@ -14,7 +13,6 @@ import org.icepear.echarts.origin.chart.sunburst.SunburstLabelOption;
 @Data
 public class SunburstEmphasis implements SunburstEmphasisOption, Serializable {
 
-    @Serial
     private static final long serialVersionUID = 1L;
 
     private SunburstItemStyleOption itemStyle;

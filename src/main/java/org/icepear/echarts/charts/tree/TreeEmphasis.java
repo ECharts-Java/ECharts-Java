@@ -1,6 +1,5 @@
 package org.icepear.echarts.charts.tree;
 
-import java.io.Serial;
 import java.io.Serializable;
 
 import lombok.Data;
@@ -14,7 +13,6 @@ import org.icepear.echarts.origin.util.SeriesLabelOption;
 @Data
 public class TreeEmphasis implements TreeEmphasisOption, Serializable {
 
-    @Serial
     private static final long serialVersionUID = 1L;
 
     private ItemStyleOption itemStyle;

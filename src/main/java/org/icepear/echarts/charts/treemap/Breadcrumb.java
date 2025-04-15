@@ -1,6 +1,5 @@
 package org.icepear.echarts.charts.treemap;
 
-import java.io.Serial;
 import java.io.Serializable;
 
 import lombok.AccessLevel;
@@ -16,7 +15,6 @@ import org.icepear.echarts.origin.chart.treemap.BreadcrumbOption;
 @Data
 public class Breadcrumb implements BreadcrumbOption, Serializable {
 
-    @Serial
     private static final long serialVersionUID = 1L;
 
     @Setter(AccessLevel.NONE)

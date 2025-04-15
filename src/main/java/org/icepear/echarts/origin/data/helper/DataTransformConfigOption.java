@@ -12,6 +12,6 @@ public interface DataTransformConfigOption {
     DataTransformConfigOption setValue(Object value);
 
     DataTransformConfigOption setValue(String value);
-    
+
     DataTransformConfigOption setOrder(String order);
 }

@@ -1,6 +1,5 @@
 package org.icepear.echarts.components.coord.radar;
 
-import java.io.Serial;
 import java.io.Serializable;
 
 import lombok.AccessLevel;
@@ -21,7 +20,6 @@ import org.icepear.echarts.origin.coord.radar.RadarOption;
 @Data
 public class RadarAxis implements RadarOption, Serializable {
 
-    @Serial
     private static final long serialVersionUID = 1L;
 
     private String mainType;
