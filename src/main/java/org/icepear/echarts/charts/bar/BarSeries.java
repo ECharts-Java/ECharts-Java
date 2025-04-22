@@ -1,5 +1,6 @@
 package org.icepear.echarts.charts.bar;
 
+import java.io.Serializable;
 import java.util.Map;
 
 import lombok.AccessLevel;
@@ -22,7 +23,9 @@ import org.icepear.echarts.origin.util.OptionEncode;
 
 @Accessors(chain = true)
 @Data
-public class BarSeries implements BarSeriesOption {
+public class BarSeries implements BarSeriesOption, Serializable {
+
+    private static final long serialVersionUID = 1L;
 
     private String mainType;
 

@@ -1,5 +1,6 @@
 package org.icepear.echarts.components.toolbox;
 
+import java.io.Serializable;
 import java.util.Map;
 
 import lombok.AccessLevel;
@@ -11,7 +12,9 @@ import org.icepear.echarts.origin.component.toolbox.feature.ToolboxMagicTypeFeat
 
 @Accessors(chain = true)
 @Data
-public class ToolboxMagicTypeFeature implements ToolboxMagicTypeFeatureOption {
+public class ToolboxMagicTypeFeature implements ToolboxMagicTypeFeatureOption, Serializable {
+
+    private static final long serialVersionUID = 1L;
 
     private Boolean show;
 

@@ -1,5 +1,7 @@
 package org.icepear.echarts.charts.treemap;
 
+import java.io.Serializable;
+
 import lombok.AccessLevel;
 import lombok.Data;
 import lombok.Setter;
@@ -10,7 +12,9 @@ import org.icepear.echarts.origin.util.DecalObject;
 
 @Accessors(chain = true)
 @Data
-public class TreemapSeriesItemStyle implements TreemapSeriesItemStyleOption {
+public class TreemapSeriesItemStyle implements TreemapSeriesItemStyleOption, Serializable {
+
+    private static final long serialVersionUID = 1L;
 
     private Number shadowBlur;
 

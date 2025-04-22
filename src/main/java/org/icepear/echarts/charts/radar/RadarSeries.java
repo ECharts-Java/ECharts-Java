@@ -1,5 +1,6 @@
 package org.icepear.echarts.charts.radar;
 
+import java.io.Serializable;
 import java.util.Map;
 
 import lombok.AccessLevel;
@@ -23,7 +24,9 @@ import org.icepear.echarts.origin.util.SeriesLabelOption;
 
 @Accessors(chain = true)
 @Data
-public class RadarSeries implements RadarSeriesOption {
+public class RadarSeries implements RadarSeriesOption, Serializable {
+
+    private static final long serialVersionUID = 1L;
 
     private String mainType;
 

@@ -1,5 +1,6 @@
 package org.icepear.echarts.components.toolbox;
 
+import java.io.Serializable;
 import java.util.Map;
 
 import lombok.AccessLevel;
@@ -11,7 +12,9 @@ import org.icepear.echarts.origin.component.toolbox.ToolboxFeatureOption;
 
 @Accessors(chain = true)
 @Data
-public class ToolboxDefaultFeature implements ToolboxFeatureOption {
+public class ToolboxDefaultFeature implements ToolboxFeatureOption, Serializable {
+
+    private static final long serialVersionUID = 1L;
 
     private Boolean show;
 

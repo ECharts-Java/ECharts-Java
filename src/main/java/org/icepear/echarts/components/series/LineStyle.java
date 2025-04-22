@@ -1,5 +1,7 @@
 package org.icepear.echarts.components.series;
 
+import java.io.Serializable;
+
 import lombok.Data;
 import lombok.experimental.Accessors;
 
@@ -7,7 +9,9 @@ import org.icepear.echarts.origin.util.LineStyleOption;
 
 @Accessors(chain = true)
 @Data
-public class LineStyle implements LineStyleOption {
+public class LineStyle implements LineStyleOption, Serializable {
+
+    private static final long serialVersionUID = 1L;
 
     private Number shadowBlur;
 

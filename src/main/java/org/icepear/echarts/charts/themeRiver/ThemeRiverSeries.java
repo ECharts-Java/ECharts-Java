@@ -1,5 +1,6 @@
 package org.icepear.echarts.charts.themeRiver;
 
+import java.io.Serializable;
 import java.util.Map;
 
 import lombok.AccessLevel;
@@ -19,7 +20,9 @@ import org.icepear.echarts.origin.util.LabelLineOption;
 
 @Accessors(chain = true)
 @Data
-public class ThemeRiverSeries implements ThemeRiverSeriesOption {
+public class ThemeRiverSeries implements ThemeRiverSeriesOption, Serializable {
+
+    private static final long serialVersionUID = 1L;
 
     private String mainType;
 

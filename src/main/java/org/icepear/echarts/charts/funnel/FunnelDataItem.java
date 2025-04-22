@@ -1,5 +1,7 @@
 package org.icepear.echarts.charts.funnel;
 
+import java.io.Serializable;
+
 import lombok.AccessLevel;
 import lombok.Data;
 import lombok.Setter;
@@ -11,7 +13,9 @@ import org.icepear.echarts.origin.util.ItemStyleOption;
 
 @Accessors(chain = true)
 @Data
-public class FunnelDataItem implements FunnelDataItemOption {
+public class FunnelDataItem implements FunnelDataItemOption, Serializable {
+
+    private static final long serialVersionUID = 1L;
 
     @Setter(AccessLevel.NONE)
     private Object itemStyle;

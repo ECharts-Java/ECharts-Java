@@ -1,5 +1,7 @@
 package org.icepear.echarts.components.tooltip;
 
+import java.io.Serializable;
+
 import lombok.AccessLevel;
 import lombok.Data;
 import lombok.Setter;
@@ -11,7 +13,9 @@ import org.icepear.echarts.origin.util.LineStyleOption;
 
 @Accessors(chain = true)
 @Data
-public class TooltipAxisPointer implements TooltipAxisPointerOption {
+public class TooltipAxisPointer implements TooltipAxisPointerOption, Serializable {
+
+    private static final long serialVersionUID = 1L;
 
     private String mainType;
 

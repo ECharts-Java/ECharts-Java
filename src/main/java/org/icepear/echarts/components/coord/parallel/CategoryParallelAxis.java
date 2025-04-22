@@ -1,5 +1,7 @@
 package org.icepear.echarts.components.coord.parallel;
 
+import java.io.Serializable;
+
 import lombok.AccessLevel;
 import lombok.Data;
 import lombok.Setter;
@@ -18,7 +20,9 @@ import org.icepear.echarts.origin.util.CommonAxisPointerOption;
 
 @Accessors(chain = true)
 @Data
-public class CategoryParallelAxis implements CategoryParallelAxisOption {
+public class CategoryParallelAxis implements CategoryParallelAxisOption, Serializable {
+
+    private static final long serialVersionUID = 1L;
 
     @Setter(AccessLevel.NONE)
     private Object dim;

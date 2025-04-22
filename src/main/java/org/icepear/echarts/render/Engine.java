@@ -17,7 +17,7 @@ import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 public class Engine {
-    private Handlebars handlebars;
+    private final Handlebars handlebars;
 
     public Engine() {
         this.handlebars = new Handlebars();
@@ -25,7 +25,7 @@ public class Engine {
 
     /**
      * Generate Html file according to the specified path
-     * 
+     *
      * @param html     a String representing in html format
      * @param path     path to save the html file
      * @param willOpen whether allowing to open the html in browser automatically
@@ -46,10 +46,11 @@ public class Engine {
 
     /**
      * Compile HandleBar template into HTML String
+     *
      * @param templateName name of the template selected
-     * @param option the option used to init the chart
-     * @param height   the height of the chart, ends with "px" or "%"
-     * @param width    the width of the chart, ends with "px" or "%"
+     * @param option       the option used to init the chart
+     * @param height       the height of the chart, ends with "px" or "%"
+     * @param width        the width of the chart, ends with "px" or "%"
      * @return HTML in String. Empty string when an exception is occurred.
      */
     private String compileHandleBars(String templateName, Option option, String height, String width) {
@@ -68,7 +69,7 @@ public class Engine {
     /**
      * Used in simple chart case, render the echarts in html file, in default width,
      * height and willOpen. The html file also provides download chart function.
-     * 
+     *
      * @param path  path to save the html file
      * @param chart the chart to be rendered
      */
@@ -79,7 +80,7 @@ public class Engine {
     /**
      * Used in advanced chart case, render the echarts in html file, in default
      * width, height and willOpen
-     * 
+     *
      * @param path   path to save the html file
      * @param option the option used to init the chart
      */
@@ -90,7 +91,7 @@ public class Engine {
     /**
      * Used in simple chart cases, render the echarts in
      * customized width, height, and willOpen
-     * 
+     *
      * @param path     path to save the html file
      * @param chart    the chart to be rendered
      * @param height   the height of the chart, ends with "px" or "%"
@@ -104,7 +105,7 @@ public class Engine {
     /**
      * Used in both simple and advanced chart cases, render the echarts in
      * customized width, height, and willOpen
-     * 
+     *
      * @param path     path to save the html file
      * @param option   the option used to init the chart
      * @param height   the height of the chart, ends with "px" or "%"
@@ -119,7 +120,7 @@ public class Engine {
     /**
      * Used in the simple case, render the echarts in default width and height,
      * without download button
-     * 
+     *
      * @param chart the chart to be rendered
      * @return a string in html format
      */
@@ -130,7 +131,7 @@ public class Engine {
     /**
      * Used in the advanced case, render the echarts in default width and height,
      * without download button
-     * 
+     *
      * @param option the option to initiate the chart
      * @return the resulted string in html format
      */
@@ -141,7 +142,7 @@ public class Engine {
     /**
      * Used in the simple cases, render the echarts in customized
      * width and height, without download button
-     * 
+     *
      * @param chart  the chart to be rendered
      * @param height the height of the chart, ends with "px" or "%"
      * @param width  the width of the chart, ends with "px" or "%"
@@ -154,7 +155,7 @@ public class Engine {
     /**
      * Used in both the simple and advanced cases, render the echarts in customized
      * width and height, without download button
-     * 
+     *
      * @param option the option to initiate the chart
      * @param height the height of the chart
      * @param width  the width of the chart
@@ -166,7 +167,7 @@ public class Engine {
 
     /**
      * Render serialized json object of Option in Chart
-     * 
+     *
      * @param chart the chart to be rendered
      * @return a string representation of a json object
      */
@@ -176,7 +177,7 @@ public class Engine {
 
     /**
      * Render serialized json object of an Option
-     * 
+     *
      * @param option the option to be serialized
      * @return a string representation of a json object
      */

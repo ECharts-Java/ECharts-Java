@@ -1,5 +1,6 @@
 package org.icepear.echarts.components.dataset;
 
+import java.io.Serializable;
 import java.util.Map;
 
 import lombok.AccessLevel;
@@ -14,7 +15,9 @@ import org.icepear.echarts.origin.util.OptionEncode;
 
 @Accessors(chain = true)
 @Data
-public class Dataset implements DatasetOption {
+public class Dataset implements DatasetOption, Serializable {
+
+    private static final long serialVersionUID = 1L;
 
     private String mainType;
 

@@ -1,5 +1,7 @@
 package org.icepear.echarts.charts.graph;
 
+import java.io.Serializable;
+
 import lombok.AccessLevel;
 import lombok.Data;
 import lombok.Setter;
@@ -11,7 +13,9 @@ import org.icepear.echarts.origin.util.SeriesLineLabelOption;
 
 @Accessors(chain = true)
 @Data
-public class GraphEdgeItem implements GraphEdgeItemOption {
+public class GraphEdgeItem implements GraphEdgeItemOption, Serializable {
+
+    private static final long serialVersionUID = 1L;
 
     private GraphEdgeLineStyleOption lineStyle;
 

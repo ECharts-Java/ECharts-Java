@@ -1,5 +1,6 @@
 package org.icepear.echarts.components.toolbox;
 
+import java.io.Serializable;
 import java.util.Map;
 
 import lombok.AccessLevel;
@@ -12,7 +13,9 @@ import org.icepear.echarts.origin.util.ItemStyleOption;
 
 @Accessors(chain = true)
 @Data
-public class ToolboxDataZoomFeature implements ToolboxDataZoomFeatureOption {
+public class ToolboxDataZoomFeature implements ToolboxDataZoomFeatureOption, Serializable {
+
+    private static final long serialVersionUID = 1L;
 
     private Boolean show;
 

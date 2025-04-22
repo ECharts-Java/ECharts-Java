@@ -1,5 +1,7 @@
 package org.icepear.echarts.charts.bar;
 
+import java.io.Serializable;
+
 import lombok.AccessLevel;
 import lombok.Data;
 import lombok.Setter;
@@ -11,7 +13,9 @@ import org.icepear.echarts.origin.chart.bar.BarLabelOption;
 
 @Accessors(chain = true)
 @Data
-public class BarDataItem implements BarDataItemOption {
+public class BarDataItem implements BarDataItemOption, Serializable {
+
+    private static final long serialVersionUID = 1L;
 
     private BarItemStyleOption itemStyle;
 

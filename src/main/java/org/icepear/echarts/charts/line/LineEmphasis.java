@@ -1,5 +1,7 @@
 package org.icepear.echarts.charts.line;
 
+import java.io.Serializable;
+
 import lombok.AccessLevel;
 import lombok.Data;
 import lombok.Setter;
@@ -13,7 +15,9 @@ import org.icepear.echarts.origin.util.SeriesLabelOption;
 
 @Accessors(chain = true)
 @Data
-public class LineEmphasis implements LineEmphasisOption {
+public class LineEmphasis implements LineEmphasisOption, Serializable {
+
+    private static final long serialVersionUID = 1L;
 
     private ItemStyleOption itemStyle;
 

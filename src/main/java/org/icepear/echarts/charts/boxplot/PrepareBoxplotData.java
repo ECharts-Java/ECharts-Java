@@ -1,5 +1,7 @@
 package org.icepear.echarts.charts.boxplot;
 
+import java.io.Serializable;
+
 import lombok.AccessLevel;
 import lombok.Data;
 import lombok.Setter;
@@ -9,7 +11,9 @@ import org.icepear.echarts.origin.chart.boxplot.PrepareBoxplotDataOption;
 
 @Accessors(chain = true)
 @Data
-public class PrepareBoxplotData implements PrepareBoxplotDataOption {
+public class PrepareBoxplotData implements PrepareBoxplotDataOption, Serializable {
+
+    private static final long serialVersionUID = 1L;
 
     @Setter(AccessLevel.NONE)
     private Object boundIQR;

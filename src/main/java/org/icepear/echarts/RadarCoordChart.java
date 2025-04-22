@@ -4,7 +4,12 @@ import org.icepear.echarts.components.coord.radar.RadarAxis;
 import org.icepear.echarts.components.coord.radar.RadarIndicator;
 import org.icepear.echarts.origin.util.SeriesOption;
 
-public abstract class RadarCoordChart<T extends Chart<?, ?>, E extends SeriesOption> extends Chart<T, E> {
+import java.io.Serializable;
+
+public abstract class RadarCoordChart<T extends Chart<?, ?>, E extends SeriesOption> extends Chart<T, E> implements Serializable {
+
+    private static final long serialVersionUID = 1L;
+
     public RadarCoordChart(final Class<T> clazz, final Class<E> seriesClazz) {
         super(clazz, seriesClazz);
     }

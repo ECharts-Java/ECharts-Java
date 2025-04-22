@@ -1,5 +1,6 @@
 package org.icepear.echarts.components.axisPointer;
 
+import java.io.Serializable;
 import java.util.Map;
 
 import lombok.AccessLevel;
@@ -12,7 +13,9 @@ import org.icepear.echarts.origin.util.TextCommonOption;
 
 @Accessors(chain = true)
 @Data
-public class AxisPointerLabel implements AxisPointerLabelOption {
+public class AxisPointerLabel implements AxisPointerLabelOption, Serializable {
+
+    private static final long serialVersionUID = 1L;
 
     private Number shadowBlur;
 

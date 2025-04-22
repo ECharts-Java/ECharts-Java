@@ -1,5 +1,7 @@
 package org.icepear.echarts.charts.treemap;
 
+import java.io.Serializable;
+
 import lombok.AccessLevel;
 import lombok.Data;
 import lombok.Setter;
@@ -11,7 +13,9 @@ import org.icepear.echarts.origin.util.LabelOption;
 
 @Accessors(chain = true)
 @Data
-public class BreadcrumbItemStyle implements BreadcrumbItemStyleOption {
+public class BreadcrumbItemStyle implements BreadcrumbItemStyleOption, Serializable {
+
+    private static final long serialVersionUID = 1L;
 
     private Number shadowBlur;
 

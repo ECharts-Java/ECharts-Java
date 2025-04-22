@@ -1,5 +1,7 @@
 package org.icepear.echarts.components.series;
 
+import java.io.Serializable;
+
 import lombok.AccessLevel;
 import lombok.Data;
 import lombok.Setter;
@@ -9,7 +11,9 @@ import org.icepear.echarts.origin.util.OptionEncode;
 
 @Accessors(chain = true)
 @Data
-public class Encode implements OptionEncode {
+public class Encode implements OptionEncode, Serializable {
+
+    private static final long serialVersionUID = 1L;
 
     @Setter(AccessLevel.NONE)
     private Object tooltip;

@@ -1,5 +1,6 @@
 package org.icepear.echarts;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -10,7 +11,10 @@ import org.icepear.echarts.components.coord.cartesian.ValueAxis;
 import org.icepear.echarts.origin.coord.cartesian.AxisOption;
 import org.icepear.echarts.origin.util.SeriesOption;
 
-public abstract class CartesianCoordChart<T extends Chart<?, ?>, E extends SeriesOption> extends Chart<T, E> {
+public abstract class CartesianCoordChart<T extends Chart<?, ?>, E extends SeriesOption> extends Chart<T, E> implements Serializable {
+
+    private static final long serialVersionUID = 1L;
+
     protected List<AxisOption> xAxes;
     protected List<AxisOption> yAxes;
 

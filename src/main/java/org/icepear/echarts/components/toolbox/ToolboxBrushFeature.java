@@ -1,5 +1,6 @@
 package org.icepear.echarts.components.toolbox;
 
+import java.io.Serializable;
 import java.util.Map;
 
 import lombok.AccessLevel;
@@ -11,7 +12,9 @@ import org.icepear.echarts.origin.component.toolbox.feature.ToolboxBrushFeatureO
 
 @Accessors(chain = true)
 @Data
-public class ToolboxBrushFeature implements ToolboxBrushFeatureOption {
+public class ToolboxBrushFeature implements ToolboxBrushFeatureOption, Serializable {
+
+    private static final long serialVersionUID = 1L;
 
     private Boolean show;
 

@@ -1,5 +1,7 @@
 package org.icepear.echarts.charts.sankey;
 
+import java.io.Serializable;
+
 import lombok.Data;
 import lombok.experimental.Accessors;
 
@@ -7,7 +9,9 @@ import org.icepear.echarts.origin.chart.sankey.SankeyEdgeStyleOption;
 
 @Accessors(chain = true)
 @Data
-public class SankeyEdgeStyle implements SankeyEdgeStyleOption {
+public class SankeyEdgeStyle implements SankeyEdgeStyleOption, Serializable {
+
+    private static final long serialVersionUID = 1L;
 
     private Number shadowBlur;
 

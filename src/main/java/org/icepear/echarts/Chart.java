@@ -1,5 +1,6 @@
 package org.icepear.echarts;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,7 +12,10 @@ import org.icepear.echarts.components.visualMap.ContinousVisualMap;
 import org.icepear.echarts.origin.component.visualMap.VisualMapOption;
 import org.icepear.echarts.origin.util.SeriesOption;
 
-public abstract class Chart<T extends Chart<?, ?>, E extends SeriesOption> {
+public abstract class Chart<T extends Chart<?, ?>, E extends SeriesOption> implements Serializable {
+
+    private static final long serialVersionUID = 1L;
+
     protected final T self;
     protected final Class<E> seriesClazz;
     protected List<Dataset> datasets;

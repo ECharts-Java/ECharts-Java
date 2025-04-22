@@ -1,5 +1,6 @@
 package org.icepear.echarts.charts.gauge;
 
+import java.io.Serializable;
 import java.util.Map;
 
 import lombok.AccessLevel;
@@ -25,7 +26,9 @@ import org.icepear.echarts.origin.util.OptionEncode;
 
 @Accessors(chain = true)
 @Data
-public class GaugeSeries implements GaugeSeriesOption {
+public class GaugeSeries implements GaugeSeriesOption, Serializable {
+
+    private static final long serialVersionUID = 1L;
 
     private String mainType;
 

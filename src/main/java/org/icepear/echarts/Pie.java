@@ -2,7 +2,12 @@ package org.icepear.echarts;
 
 import org.icepear.echarts.charts.pie.PieSeries;
 
-public class Pie extends Chart<Pie, PieSeries> {
+import java.io.Serializable;
+
+public class Pie extends Chart<Pie, PieSeries> implements Serializable {
+
+    private static final long serialVersionUID = 1L;
+
     public Pie() {
         super(Pie.class, PieSeries.class);
     }

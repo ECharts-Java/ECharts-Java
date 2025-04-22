@@ -1,5 +1,7 @@
 package org.icepear.echarts.charts.graph;
 
+import java.io.Serializable;
+
 import lombok.Data;
 import lombok.experimental.Accessors;
 
@@ -10,7 +12,9 @@ import org.icepear.echarts.origin.util.SeriesLabelOption;
 
 @Accessors(chain = true)
 @Data
-public class GraphEmphasis implements GraphEmphasisOption {
+public class GraphEmphasis implements GraphEmphasisOption, Serializable {
+
+    private static final long serialVersionUID = 1L;
 
     private Object blurScope;
 

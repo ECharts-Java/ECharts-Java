@@ -1,5 +1,7 @@
 package org.icepear.echarts.charts.sunburst;
 
+import java.io.Serializable;
+
 import lombok.AccessLevel;
 import lombok.Data;
 import lombok.Setter;
@@ -11,7 +13,9 @@ import org.icepear.echarts.origin.chart.sunburst.SunburstLevelOption;
 
 @Accessors(chain = true)
 @Data
-public class SunburstSeriesLevel implements SunburstLevelOption {
+public class SunburstSeriesLevel implements SunburstLevelOption, Serializable {
+
+    private static final long serialVersionUID = 1L;
 
     private SunburstItemStyleOption itemStyle;
 

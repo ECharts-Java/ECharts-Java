@@ -1,5 +1,7 @@
 package org.icepear.echarts.components.marker;
 
+import java.io.Serializable;
+
 import lombok.AccessLevel;
 import lombok.Data;
 import lombok.Setter;
@@ -13,7 +15,9 @@ import org.icepear.echarts.origin.util.SeriesLineLabelOption;
 
 @Accessors(chain = true)
 @Data
-public class MarkLine implements MarkLineOption {
+public class MarkLine implements MarkLineOption, Serializable {
+
+    private static final long serialVersionUID = 1L;
 
     private String mainType;
 

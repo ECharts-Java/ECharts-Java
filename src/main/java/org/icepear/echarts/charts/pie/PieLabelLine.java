@@ -1,5 +1,7 @@
 package org.icepear.echarts.charts.pie;
 
+import java.io.Serializable;
+
 import lombok.AccessLevel;
 import lombok.Data;
 import lombok.Setter;
@@ -10,7 +12,9 @@ import org.icepear.echarts.origin.util.LineStyleOption;
 
 @Accessors(chain = true)
 @Data
-public class PieLabelLine implements PieLabelLineOption {
+public class PieLabelLine implements PieLabelLineOption, Serializable {
+
+    private static final long serialVersionUID = 1L;
 
     private Boolean show;
 

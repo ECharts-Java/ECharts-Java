@@ -1,5 +1,6 @@
 package org.icepear.echarts.charts.pie;
 
+import java.io.Serializable;
 import java.util.Map;
 
 import lombok.AccessLevel;
@@ -12,7 +13,9 @@ import org.icepear.echarts.origin.util.TextCommonOption;
 
 @Accessors(chain = true)
 @Data
-public class PieLabel implements PieLabelOption {
+public class PieLabel implements PieLabelOption, Serializable {
+
+    private static final long serialVersionUID = 1L;
 
     private Number shadowBlur;
 

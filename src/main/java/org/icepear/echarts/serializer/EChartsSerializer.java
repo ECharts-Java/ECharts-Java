@@ -9,7 +9,7 @@ public class EChartsSerializer {
     private final EChartsTypeAdapter<?> markLine2DDataItemAdapter = new MarkLine2DDataItemAdapter();
     private final Gson gson;
 
-    public EChartsSerializer(EChartsTypeAdapter<?> ... typeAdapters) {
+    public EChartsSerializer(EChartsTypeAdapter<?>... typeAdapters) {
         GsonBuilder gsonBuilder = new GsonBuilder().disableHtmlEscaping()
                 .registerTypeAdapter(markArea2DDataItemAdapter.getType(), markArea2DDataItemAdapter)
                 .registerTypeAdapter(markLine2DDataItemAdapter.getType(), markLine2DDataItemAdapter);

@@ -1,5 +1,7 @@
 package org.icepear.echarts.charts.bar;
 
+import java.io.Serializable;
+
 import lombok.Data;
 import lombok.experimental.Accessors;
 
@@ -9,7 +11,9 @@ import org.icepear.echarts.origin.chart.bar.BarLabelOption;
 
 @Accessors(chain = true)
 @Data
-public class BarEmphasis implements BarEmphasisOption {
+public class BarEmphasis implements BarEmphasisOption, Serializable {
+
+    private static final long serialVersionUID = 1L;
 
     private String focus;
 

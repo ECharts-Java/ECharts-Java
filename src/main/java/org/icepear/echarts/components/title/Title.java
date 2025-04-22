@@ -1,5 +1,7 @@
 package org.icepear.echarts.components.title;
 
+import java.io.Serializable;
+
 import lombok.AccessLevel;
 import lombok.Data;
 import lombok.Setter;
@@ -10,7 +12,9 @@ import org.icepear.echarts.origin.util.LabelOption;
 
 @Accessors(chain = true)
 @Data
-public class Title implements TitleOption {
+public class Title implements TitleOption, Serializable {
+
+    private static final long serialVersionUID = 1L;
 
     private String mainType;
 

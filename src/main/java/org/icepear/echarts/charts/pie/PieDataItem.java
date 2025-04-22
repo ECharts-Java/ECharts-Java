@@ -1,5 +1,7 @@
 package org.icepear.echarts.charts.pie;
 
+import java.io.Serializable;
+
 import lombok.AccessLevel;
 import lombok.Data;
 import lombok.Setter;
@@ -11,7 +13,9 @@ import org.icepear.echarts.origin.chart.pie.PieLabelOption;
 
 @Accessors(chain = true)
 @Data
-public class PieDataItem implements PieDataItemOption {
+public class PieDataItem implements PieDataItemOption, Serializable {
+
+    private static final long serialVersionUID = 1L;
 
     @Setter(AccessLevel.NONE)
     private Object id;

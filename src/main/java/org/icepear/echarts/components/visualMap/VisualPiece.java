@@ -1,5 +1,7 @@
 package org.icepear.echarts.components.visualMap;
 
+import java.io.Serializable;
+
 import lombok.Data;
 import lombok.experimental.Accessors;
 
@@ -8,7 +10,9 @@ import org.icepear.echarts.origin.util.DecalObject;
 
 @Accessors(chain = true)
 @Data
-public class VisualPiece implements VisualPieceOption {
+public class VisualPiece implements VisualPieceOption, Serializable {
+
+    private static final long serialVersionUID = 1L;
 
     private String symbol;
 

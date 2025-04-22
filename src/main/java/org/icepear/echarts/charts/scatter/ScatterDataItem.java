@@ -1,5 +1,7 @@
 package org.icepear.echarts.charts.scatter;
 
+import java.io.Serializable;
+
 import lombok.AccessLevel;
 import lombok.Data;
 import lombok.Setter;
@@ -11,7 +13,9 @@ import org.icepear.echarts.origin.util.SeriesLabelOption;
 
 @Accessors(chain = true)
 @Data
-public class ScatterDataItem implements ScatterDataItemOption {
+public class ScatterDataItem implements ScatterDataItemOption, Serializable {
+
+    private static final long serialVersionUID = 1L;
 
     private String symbol;
 

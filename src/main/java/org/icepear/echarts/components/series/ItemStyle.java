@@ -1,5 +1,7 @@
 package org.icepear.echarts.components.series;
 
+import java.io.Serializable;
+
 import lombok.AccessLevel;
 import lombok.Data;
 import lombok.Setter;
@@ -10,7 +12,9 @@ import org.icepear.echarts.origin.util.ItemStyleOption;
 
 @Accessors(chain = true)
 @Data
-public class ItemStyle implements ItemStyleOption {
+public class ItemStyle implements ItemStyleOption, Serializable {
+
+    private static final long serialVersionUID = 1L;
 
     private Number shadowBlur;
 

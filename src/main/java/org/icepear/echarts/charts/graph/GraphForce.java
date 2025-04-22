@@ -1,5 +1,7 @@
 package org.icepear.echarts.charts.graph;
 
+import java.io.Serializable;
+
 import lombok.AccessLevel;
 import lombok.Data;
 import lombok.Setter;
@@ -9,7 +11,9 @@ import org.icepear.echarts.origin.chart.graph.GraphForceOption;
 
 @Accessors(chain = true)
 @Data
-public class GraphForce implements GraphForceOption {
+public class GraphForce implements GraphForceOption, Serializable {
+
+    private static final long serialVersionUID = 1L;
 
     private String initLayout;
 

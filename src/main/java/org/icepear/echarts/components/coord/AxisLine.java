@@ -1,5 +1,7 @@
 package org.icepear.echarts.components.coord;
 
+import java.io.Serializable;
+
 import lombok.AccessLevel;
 import lombok.Data;
 import lombok.Setter;
@@ -10,7 +12,9 @@ import org.icepear.echarts.origin.util.LineStyleOption;
 
 @Accessors(chain = true)
 @Data
-public class AxisLine implements AxisLineOption {
+public class AxisLine implements AxisLineOption, Serializable {
+
+    private static final long serialVersionUID = 1L;
 
     @Setter(AccessLevel.NONE)
     private Object show;

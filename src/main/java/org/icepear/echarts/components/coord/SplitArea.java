@@ -1,5 +1,7 @@
 package org.icepear.echarts.components.coord;
 
+import java.io.Serializable;
+
 import lombok.AccessLevel;
 import lombok.Data;
 import lombok.Setter;
@@ -10,7 +12,9 @@ import org.icepear.echarts.origin.util.AreaStyleOption;
 
 @Accessors(chain = true)
 @Data
-public class SplitArea implements SplitAreaOption {
+public class SplitArea implements SplitAreaOption, Serializable {
+
+    private static final long serialVersionUID = 1L;
 
     private Boolean show;
 

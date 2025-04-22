@@ -1,5 +1,7 @@
 package org.icepear.echarts.charts.parallel;
 
+import java.io.Serializable;
+
 import lombok.Data;
 import lombok.experimental.Accessors;
 
@@ -9,7 +11,9 @@ import org.icepear.echarts.origin.util.SeriesLabelOption;
 
 @Accessors(chain = true)
 @Data
-public class ParallelEmphasis implements ParallelEmphasisOption {
+public class ParallelEmphasis implements ParallelEmphasisOption, Serializable {
+
+    private static final long serialVersionUID = 1L;
 
     private String focus;
 
