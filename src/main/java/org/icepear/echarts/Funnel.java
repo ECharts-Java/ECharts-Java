@@ -1,8 +1,8 @@
 package org.icepear.echarts;
 
-import org.icepear.echarts.charts.funnel.FunnelSeries;
-
 import java.io.Serializable;
+
+import org.icepear.echarts.charts.funnel.FunnelSeries;
 
 public class Funnel extends Chart<Funnel, FunnelSeries> implements Serializable {
 

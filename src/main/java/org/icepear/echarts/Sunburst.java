@@ -1,8 +1,8 @@
 package org.icepear.echarts;
 
-import org.icepear.echarts.charts.sunburst.SunburstSeries;
-
 import java.io.Serializable;
+
+import org.icepear.echarts.charts.sunburst.SunburstSeries;
 
 public class Sunburst extends Chart<Sunburst, SunburstSeries> implements Serializable {
 

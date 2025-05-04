@@ -1,8 +1,8 @@
 package org.icepear.echarts;
 
-import org.icepear.echarts.charts.scatter.ScatterSeries;
-
 import java.io.Serializable;
+
+import org.icepear.echarts.charts.scatter.ScatterSeries;
 
 public class Scatter extends CartesianCoordChart<Scatter, ScatterSeries> implements Serializable {
 

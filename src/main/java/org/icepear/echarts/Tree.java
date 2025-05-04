@@ -1,8 +1,8 @@
 package org.icepear.echarts;
 
-import org.icepear.echarts.charts.tree.TreeSeries;
-
 import java.io.Serializable;
+
+import org.icepear.echarts.charts.tree.TreeSeries;
 
 public class Tree extends Chart<Tree, TreeSeries> implements Serializable {
 

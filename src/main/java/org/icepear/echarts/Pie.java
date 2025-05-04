@@ -1,8 +1,8 @@
 package org.icepear.echarts;
 
-import org.icepear.echarts.charts.pie.PieSeries;
-
 import java.io.Serializable;
+
+import org.icepear.echarts.charts.pie.PieSeries;
 
 public class Pie extends Chart<Pie, PieSeries> implements Serializable {
 

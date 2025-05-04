@@ -1,8 +1,8 @@
 package org.icepear.echarts;
 
-import org.icepear.echarts.charts.gauge.GaugeSeries;
-
 import java.io.Serializable;
+
+import org.icepear.echarts.charts.gauge.GaugeSeries;
 
 public class Gauge extends Chart<Gauge, GaugeSeries> implements Serializable {
 

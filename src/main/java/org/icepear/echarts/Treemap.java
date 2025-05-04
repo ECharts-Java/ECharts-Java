@@ -1,8 +1,8 @@
 package org.icepear.echarts;
 
-import org.icepear.echarts.charts.treemap.TreemapSeries;
-
 import java.io.Serializable;
+
+import org.icepear.echarts.charts.treemap.TreemapSeries;
 
 public class Treemap extends Chart<Treemap, TreemapSeries> implements Serializable {
 

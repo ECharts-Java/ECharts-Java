@@ -1,5 +1,7 @@
 package org.icepear.echarts;
 
+import java.io.Serializable;
+
 import org.icepear.echarts.components.coord.polar.CategoryAngleAxis;
 import org.icepear.echarts.components.coord.polar.CategoryRadiusAxis;
 import org.icepear.echarts.components.coord.polar.PolarAxis;
@@ -8,8 +10,6 @@ import org.icepear.echarts.components.coord.polar.ValueRadiusAxis;
 import org.icepear.echarts.origin.coord.polar.AngleAxisOption;
 import org.icepear.echarts.origin.coord.polar.RadiusAxisOption;
 import org.icepear.echarts.origin.util.SeriesOption;
-
-import java.io.Serializable;
 
 public abstract class PolarCoordChart<T extends Chart<?, ?>, E extends SeriesOption> extends Chart<T, E> implements Serializable {
 

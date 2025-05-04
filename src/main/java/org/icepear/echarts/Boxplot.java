@@ -1,8 +1,8 @@
 package org.icepear.echarts;
 
-import org.icepear.echarts.charts.boxplot.BoxplotSeries;
-
 import java.io.Serializable;
+
+import org.icepear.echarts.charts.boxplot.BoxplotSeries;
 
 public class Boxplot extends CartesianCoordChart<Boxplot, BoxplotSeries> implements Serializable {
 

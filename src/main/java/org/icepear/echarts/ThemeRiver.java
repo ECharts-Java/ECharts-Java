@@ -1,8 +1,8 @@
 package org.icepear.echarts;
 
-import org.icepear.echarts.charts.themeRiver.ThemeRiverSeries;
-
 import java.io.Serializable;
+
+import org.icepear.echarts.charts.themeRiver.ThemeRiverSeries;
 
 public class ThemeRiver extends SingleCoordChart<ThemeRiver, ThemeRiverSeries> implements Serializable {
 
