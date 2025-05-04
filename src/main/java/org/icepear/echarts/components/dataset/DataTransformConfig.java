@@ -17,10 +17,10 @@ public class DataTransformConfig implements DataTransformConfigOption, Serializa
 
     private String dimension;
 
+    private String order;
+
     @Setter(AccessLevel.NONE)
     private Object value;
-
-    private String order;
 
     public DataTransformConfig setValue(Number value) {
         this.value = value;
