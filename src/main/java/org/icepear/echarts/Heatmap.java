@@ -1,11 +1,11 @@
 package org.icepear.echarts;
 
+import java.io.Serializable;
+
 import org.icepear.echarts.charts.heatmap.HeatmapSeries;
-import org.icepear.echarts.components.coord.SplitArea;
 import org.icepear.echarts.components.coord.cartesian.CategoryAxis;
 import org.icepear.echarts.components.coord.cartesian.ValueAxis;
-
-import java.io.Serializable;
+import org.icepear.echarts.components.coord.SplitArea;
 
 public class Heatmap extends CartesianCoordChart<Heatmap, HeatmapSeries> implements Serializable {
 

@@ -1,8 +1,8 @@
 package org.icepear.echarts;
 
-import org.icepear.echarts.charts.line.LineSeries;
-
 import java.io.Serializable;
+
+import org.icepear.echarts.charts.line.LineSeries;
 
 public class Line extends CartesianCoordChart<Line, LineSeries> implements Serializable {
 

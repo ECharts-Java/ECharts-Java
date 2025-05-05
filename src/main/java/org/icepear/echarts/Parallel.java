@@ -1,8 +1,8 @@
 package org.icepear.echarts;
 
-import org.icepear.echarts.charts.parallel.ParallelSeries;
-
 import java.io.Serializable;
+
+import org.icepear.echarts.charts.parallel.ParallelSeries;
 
 public class Parallel extends ParallelCoordChart<Parallel, ParallelSeries> implements Serializable {
 

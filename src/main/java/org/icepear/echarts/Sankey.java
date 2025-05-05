@@ -1,8 +1,8 @@
 package org.icepear.echarts;
 
-import org.icepear.echarts.charts.sankey.SankeySeries;
-
 import java.io.Serializable;
+
+import org.icepear.echarts.charts.sankey.SankeySeries;
 
 public class Sankey extends Chart<Sankey, SankeySeries> implements Serializable {
 

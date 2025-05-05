@@ -2,14 +2,9 @@ package org.icepear.echarts;
 
 import java.io.Serializable;
 
-import lombok.AccessLevel;
-import lombok.Data;
-import lombok.Setter;
-import lombok.experimental.Accessors;
-
 import org.icepear.echarts.origin.component.axisPointer.AxisPointerOption;
-import org.icepear.echarts.origin.component.dataZoom.DataZoomOption;
 import org.icepear.echarts.origin.component.dataset.DatasetOption;
+import org.icepear.echarts.origin.component.dataZoom.DataZoomOption;
 import org.icepear.echarts.origin.component.legend.LegendOption;
 import org.icepear.echarts.origin.component.title.TitleOption;
 import org.icepear.echarts.origin.component.toolbox.ToolboxOption;
@@ -28,6 +23,11 @@ import org.icepear.echarts.origin.util.ComponentOption;
 import org.icepear.echarts.origin.util.ECUnitOption;
 import org.icepear.echarts.origin.util.MediaUnitOption;
 import org.icepear.echarts.origin.util.SeriesOption;
+
+import lombok.AccessLevel;
+import lombok.Data;
+import lombok.experimental.Accessors;
+import lombok.Setter;
 
 @Accessors(chain = true)
 @Data

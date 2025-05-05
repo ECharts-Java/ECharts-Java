@@ -1,8 +1,8 @@
 package org.icepear.echarts;
 
-import org.icepear.echarts.charts.graph.GraphSeries;
-
 import java.io.Serializable;
+
+import org.icepear.echarts.charts.graph.GraphSeries;
 
 public class Graph extends Chart<Graph, GraphSeries> implements Serializable {
 

@@ -1,8 +1,8 @@
 package org.icepear.echarts;
 
-import org.icepear.echarts.charts.radar.RadarSeries;
-
 import java.io.Serializable;
+
+import org.icepear.echarts.charts.radar.RadarSeries;
 
 public class Radar extends RadarCoordChart<Radar, RadarSeries> implements Serializable {
 
