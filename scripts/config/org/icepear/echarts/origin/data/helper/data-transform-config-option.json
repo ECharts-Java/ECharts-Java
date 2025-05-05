@@ -8,11 +8,16 @@
       "types": ["String"]
     },
     {
+      "name": "order",
+      "types": ["String"]
+    },
+    {
       "name": "value",
       "types": ["Number", "String", "Date"]
     }
   ],
   "comments": [
-    "https://echarts.apache.org/examples/en/editor.html?c=data-transform-multiple-pie"
+    "https://echarts.apache.org/examples/en/editor.html?c=data-transform-multiple-pie",
+    "https://echarts.apache.org/examples/en/editor.html?c=data-transform-sort-bar"
   ]
 }
