@@ -1,0 +1,19 @@
+{
+  "xAxis": [{ "type": "value" }],
+  "yAxis": [{ "type": "value" }],
+  "series": [
+    {
+      "type": "effectScatter",
+      "data": [
+        [10, 80],
+        [20, 50],
+        [30, 70],
+        [40, 30],
+        [50, 90]
+      ],
+      "symbolSize": 20,
+      "showEffectOn": "render",
+      "rippleEffect": { "scale": 2.5, "brushType": "stroke" }
+    }
+  ]
+}
