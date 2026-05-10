@@ -1,0 +1,16 @@
+{
+  "xAxis": [
+    { "type": "category", "data": ["Mon", "Tue", "Wed", "Thu", "Fri"] }
+  ],
+  "yAxis": [{ "type": "value" }],
+  "series": [
+    {
+      "type": "pictorialBar",
+      "data": [8000, 9500, 12000, 11000, 15000],
+      "symbol": "circle",
+      "symbolSize": [16, 16],
+      "symbolRepeat": true,
+      "symbolMargin": "10%"
+    }
+  ]
+}
