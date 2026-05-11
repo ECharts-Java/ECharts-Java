@@ -1,0 +1,5 @@
+{
+  "name": "MapItemStyle",
+  "type": "class",
+  "implements": ["MapItemStyleOption"]
+}

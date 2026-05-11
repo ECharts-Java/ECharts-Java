@@ -1,0 +1,15 @@
+{
+  "name": "MapEmphasisOption",
+  "type": "interface",
+  "extends": [
+    "DefaultStatesMixinEmpasis",
+    "MapStateOption",
+    "EmphasisOption"
+  ],
+  "fields": [
+    { "name": "disabled", "types": ["Boolean"] }
+  ],
+  "comments": [
+    "https://echarts.apache.org/en/option.html#series-map.emphasis"
+  ]
+}

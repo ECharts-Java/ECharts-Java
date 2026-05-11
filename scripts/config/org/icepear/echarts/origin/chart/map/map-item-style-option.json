@@ -1,0 +1,11 @@
+{
+  "name": "MapItemStyleOption",
+  "type": "interface",
+  "extends": ["ItemStyleOption"],
+  "fields": [
+    { "name": "areaColor", "types": ["String"] }
+  ],
+  "comments": [
+    "https://echarts.apache.org/en/option.html#series-map.itemStyle"
+  ]
+}

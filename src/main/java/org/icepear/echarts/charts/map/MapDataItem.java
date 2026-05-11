@@ -17,6 +17,16 @@ public class MapDataItem implements MapDataItemOption, Serializable {
 
     private static final long serialVersionUID = 1L;
 
+    private MapItemStyleOption itemStyle;
+
+    private SeriesLabelOption label;
+
+    private Object emphasis;
+
+    private Object select;
+
+    private Object blur;
+
     private String name;
 
     @Setter(AccessLevel.NONE)
@@ -33,14 +43,4 @@ public class MapDataItem implements MapDataItemOption, Serializable {
     }
 
     private Boolean selected;
-
-    private MapItemStyleOption itemStyle;
-
-    private SeriesLabelOption label;
-
-    private Object emphasis;
-
-    private Object select;
-
-    private Object blur;
 }

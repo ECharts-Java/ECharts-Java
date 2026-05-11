@@ -1,0 +1,30 @@
+{
+  "name": "MapSeriesOption",
+  "type": "interface",
+  "extends": [
+    "SeriesOption",
+    "MapStateOption",
+    "BoxLayoutOptionMixin",
+    "RoamOptionMixin",
+    "SeriesEncodeOptionMixin"
+  ],
+  "fields": [
+    { "name": "type", "types": ["String"], "default": "map" },
+    { "name": "map", "types": ["String"] },
+    { "name": "aspectScale", "types": ["Number"] },
+    { "name": "boundingCoords", "types": ["Number[][]"] },
+    { "name": "layoutCenter", "types": ["String[]"] },
+    { "name": "layoutSize", "types": ["String", "Number"] },
+    { "name": "geoIndex", "types": ["Number"] },
+    { "name": "mapValueCalculation", "types": ["String"] },
+    { "name": "showLegendSymbol", "types": ["Boolean"] },
+    { "name": "projection", "types": ["Object"] },
+    { "name": "nameMap", "types": ["Object"] },
+    { "name": "nameProperty", "types": ["String"] },
+    { "name": "data", "types": ["MapDataItemOption[]"] },
+    { "name": "emphasis", "types": ["MapEmphasisOption"] }
+  ],
+  "comments": [
+    "https://echarts.apache.org/en/option.html#series-map"
+  ]
+}

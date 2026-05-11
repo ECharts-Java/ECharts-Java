@@ -15,8 +15,6 @@ public class MapEmphasis implements MapEmphasisOption, Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    private Boolean disabled;
-
     private String focus;
 
     private MapItemStyleOption itemStyle;
@@ -24,4 +22,6 @@ public class MapEmphasis implements MapEmphasisOption, Serializable {
     private SeriesLabelOption label;
 
     private Object blurScope;
+
+    private Boolean disabled;
 }

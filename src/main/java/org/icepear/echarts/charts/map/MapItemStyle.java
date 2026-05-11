@@ -40,8 +40,6 @@ public class MapItemStyle implements MapItemStyleOption, Serializable {
 
     private String color;
 
-    private String areaColor;
-
     private Number opacity;
 
     @Setter(AccessLevel.NONE)
@@ -56,4 +54,6 @@ public class MapItemStyle implements MapItemStyleOption, Serializable {
         this.decal = decal;
         return this;
     }
+
+    private String areaColor;
 }

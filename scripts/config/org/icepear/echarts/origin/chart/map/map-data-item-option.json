@@ -1,0 +1,13 @@
+{
+  "name": "MapDataItemOption",
+  "type": "interface",
+  "extends": ["MapStateOption", "StatesOptionMixin"],
+  "fields": [
+    { "name": "name", "types": ["String"] },
+    { "name": "value", "types": ["Number", "Number[]"] },
+    { "name": "selected", "types": ["Boolean"] }
+  ],
+  "comments": [
+    "https://echarts.apache.org/en/option.html#series-map.data"
+  ]
+}

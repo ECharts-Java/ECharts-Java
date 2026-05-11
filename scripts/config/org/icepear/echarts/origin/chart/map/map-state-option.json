@@ -1,0 +1,13 @@
+{
+  "name": "MapStateOption",
+  "type": "interface",
+  "extends": [],
+  "fields": [
+    { "name": "itemStyle", "types": ["MapItemStyleOption"] },
+    { "name": "label", "types": ["SeriesLabelOption"] }
+  ],
+  "comments": [
+    "https://echarts.apache.org/en/option.html#series-map.itemStyle",
+    "https://echarts.apache.org/en/option.html#series-map.label"
+  ]
+}
