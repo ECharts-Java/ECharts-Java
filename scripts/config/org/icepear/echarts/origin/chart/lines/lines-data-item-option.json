@@ -1,0 +1,15 @@
+{
+  "name": "LinesDataItemOption",
+  "type": "interface",
+  "extends": ["StatesOptionMixin"],
+  "fields": [
+    { "name": "name", "types": ["String"] },
+    { "name": "coords", "types": ["Number[][]"] },
+    { "name": "value", "types": ["Number", "Number[]"] },
+    { "name": "lineStyle", "types": ["LineStyleOption"] },
+    { "name": "label", "types": ["SeriesLabelOption"] }
+  ],
+  "comments": [
+    "https://echarts.apache.org/en/option.html#series-lines.data"
+  ]
+}

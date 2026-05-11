@@ -1,0 +1,23 @@
+{
+  "name": "LinesSeriesOption",
+  "type": "interface",
+  "extends": ["SeriesOption", "LinesStateOption", "SeriesOnGeoOptionMixin"],
+  "fields": [
+    { "name": "type", "types": ["String"], "default": "lines" },
+    { "name": "coordinateSystem", "types": ["String"] },
+    { "name": "xAxisIndex", "types": ["Number"] },
+    { "name": "yAxisIndex", "types": ["Number"] },
+    { "name": "polarIndex", "types": ["Number"] },
+    { "name": "polyline", "types": ["Boolean"] },
+    { "name": "effect", "types": ["LinesEffectOption"] },
+    { "name": "large", "types": ["Boolean"] },
+    { "name": "largeThreshold", "types": ["Number"] },
+    { "name": "symbol", "types": ["String", "String[]"] },
+    { "name": "symbolSize", "types": ["Number", "Number[]"] },
+    { "name": "data", "types": ["LinesDataItemOption[]", "Object[]"] },
+    { "name": "emphasis", "types": ["LinesEmphasisOption"] }
+  ],
+  "comments": [
+    "https://echarts.apache.org/en/option.html#series-lines"
+  ]
+}

@@ -222,18 +222,7 @@ public class LinesSeries implements LinesSeriesOption, Serializable {
 
     private Number hoverLayerThreshold;
 
-    @Setter(AccessLevel.NONE)
-    private Object seriesLayoutBy;
-
-    public LinesSeries setSeriesLayoutBy(Object seriesLayoutBy) {
-        this.seriesLayoutBy = seriesLayoutBy;
-        return this;
-    }
-
-    public LinesSeries setSeriesLayoutBy(String seriesLayoutBy) {
-        this.seriesLayoutBy = seriesLayoutBy;
-        return this;
-    }
+    private String seriesLayoutBy;
 
     private LabelLineOption labelLine;
 
@@ -273,15 +262,23 @@ public class LinesSeries implements LinesSeriesOption, Serializable {
 
     private SeriesLabelOption label;
 
+    private Number geoIndex;
+
+    private String geoId;
+
     private Number xAxisIndex;
 
     private Number yAxisIndex;
 
     private Number polarIndex;
 
-    private Number geoIndex;
+    private Boolean polyline;
 
-    private String geoId;
+    private LinesEffectOption effect;
+
+    private Boolean large;
+
+    private Number largeThreshold;
 
     @Setter(AccessLevel.NONE)
     private Object symbol;
@@ -308,12 +305,4 @@ public class LinesSeries implements LinesSeriesOption, Serializable {
         this.symbolSize = symbolSize;
         return this;
     }
-
-    private Boolean polyline;
-
-    private LinesEffectOption effect;
-
-    private Boolean large;
-
-    private Number largeThreshold;
 }

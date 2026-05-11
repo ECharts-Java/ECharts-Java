@@ -1,0 +1,12 @@
+{
+  "name": "LinesStateOption",
+  "type": "interface",
+  "extends": [],
+  "fields": [
+    { "name": "lineStyle", "types": ["LineStyleOption"] },
+    { "name": "label", "types": ["SeriesLabelOption"] }
+  ],
+  "comments": [
+    "https://echarts.apache.org/en/option.html#series-lines.lineStyle"
+  ]
+}

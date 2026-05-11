@@ -1,0 +1,12 @@
+{
+  "name": "LinesEmphasisOption",
+  "type": "interface",
+  "extends": ["LinesStateOption", "EmphasisOption"],
+  "fields": [
+    { "name": "focus", "types": ["String"] },
+    { "name": "disabled", "types": ["Boolean"] }
+  ],
+  "comments": [
+    "https://echarts.apache.org/en/option.html#series-lines.emphasis"
+  ]
+}

@@ -17,6 +17,12 @@ public class LinesDataItem implements LinesDataItemOption, Serializable {
 
     private static final long serialVersionUID = 1L;
 
+    private Object emphasis;
+
+    private Object select;
+
+    private Object blur;
+
     private String name;
 
     private Number[][] coords;
@@ -37,10 +43,4 @@ public class LinesDataItem implements LinesDataItemOption, Serializable {
     private LineStyleOption lineStyle;
 
     private SeriesLabelOption label;
-
-    private Object emphasis;
-
-    private Object select;
-
-    private Object blur;
 }

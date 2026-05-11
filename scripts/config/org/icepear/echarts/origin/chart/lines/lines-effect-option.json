@@ -1,0 +1,20 @@
+{
+  "name": "LinesEffectOption",
+  "type": "interface",
+  "extends": [],
+  "fields": [
+    { "name": "show", "types": ["Boolean"] },
+    { "name": "period", "types": ["Number"] },
+    { "name": "delay", "types": ["Number"] },
+    { "name": "constantSpeed", "types": ["Number"] },
+    { "name": "symbol", "types": ["String"] },
+    { "name": "symbolSize", "types": ["Number", "Number[]"] },
+    { "name": "color", "types": ["String"] },
+    { "name": "trailLength", "types": ["Number"] },
+    { "name": "loop", "types": ["Boolean"] },
+    { "name": "roundTrip", "types": ["Boolean"] }
+  ],
+  "comments": [
+    "https://echarts.apache.org/en/option.html#series-lines.effect"
+  ]
+}
