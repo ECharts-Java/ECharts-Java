@@ -1,0 +1,13 @@
+{
+  "name": "EffectScatterEmphasisOption",
+  "type": "interface",
+  "extends": ["EffectScatterStateOption", "EmphasisOption"],
+  "fields": [
+    { "name": "focus", "types": ["String"] },
+    { "name": "scale", "types": ["Boolean"] },
+    { "name": "disabled", "types": ["Boolean"] }
+  ],
+  "comments": [
+    "https://echarts.apache.org/en/option.html#series-effectScatter.emphasis"
+  ]
+}

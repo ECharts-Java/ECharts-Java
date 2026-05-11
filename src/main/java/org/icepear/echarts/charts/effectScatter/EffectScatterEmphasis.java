@@ -15,15 +15,15 @@ public class EffectScatterEmphasis implements EffectScatterEmphasisOption, Seria
 
     private static final long serialVersionUID = 1L;
 
-    private Boolean disabled;
-
-    private String focus;
-
-    private Boolean scale;
-
     private ItemStyleOption itemStyle;
 
     private SeriesLabelOption label;
 
     private Object blurScope;
+
+    private String focus;
+
+    private Boolean scale;
+
+    private Boolean disabled;
 }

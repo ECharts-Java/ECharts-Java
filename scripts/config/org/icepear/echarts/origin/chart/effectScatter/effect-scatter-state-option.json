@@ -1,0 +1,13 @@
+{
+  "name": "EffectScatterStateOption",
+  "type": "interface",
+  "extends": [],
+  "fields": [
+    { "name": "itemStyle", "types": ["ItemStyleOption"] },
+    { "name": "label", "types": ["SeriesLabelOption"] }
+  ],
+  "comments": [
+    "https://echarts.apache.org/en/option.html#series-effectScatter.itemStyle",
+    "https://echarts.apache.org/en/option.html#series-effectScatter.label"
+  ]
+}

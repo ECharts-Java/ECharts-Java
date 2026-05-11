@@ -1,0 +1,5 @@
+{
+  "name": "EffectScatterSeries",
+  "type": "class",
+  "implements": ["EffectScatterSeriesOption"]
+}

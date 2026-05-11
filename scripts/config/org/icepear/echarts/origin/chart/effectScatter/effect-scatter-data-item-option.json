@@ -1,0 +1,14 @@
+{
+  "name": "EffectScatterDataItemOption",
+  "type": "interface",
+  "extends": [
+    "SymbolOptionMixin",
+    "EffectScatterStateOption",
+    "StatesOptionMixin",
+    "DefaultOptionDataItemObject"
+  ],
+  "fields": [],
+  "comments": [
+    "https://echarts.apache.org/en/option.html#series-effectScatter.data"
+  ]
+}

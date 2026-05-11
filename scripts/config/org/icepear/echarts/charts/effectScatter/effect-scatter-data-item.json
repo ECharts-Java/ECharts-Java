@@ -1,0 +1,5 @@
+{
+  "name": "EffectScatterDataItem",
+  "type": "class",
+  "implements": ["EffectScatterDataItemOption"]
+}

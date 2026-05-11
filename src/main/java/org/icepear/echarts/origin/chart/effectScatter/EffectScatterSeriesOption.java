@@ -28,6 +28,8 @@ public interface EffectScatterSeriesOption extends SeriesOption, EffectScatterSt
 
     EffectScatterSeriesOption setClip(Boolean clip);
 
+    EffectScatterSeriesOption setData(EffectScatterDataItemOption[] data);
+
     EffectScatterSeriesOption setData(Number[] data);
 
     EffectScatterSeriesOption setData(Number[][] data);
@@ -35,8 +37,6 @@ public interface EffectScatterSeriesOption extends SeriesOption, EffectScatterSt
     EffectScatterSeriesOption setData(Object[] data);
 
     EffectScatterSeriesOption setData(Object[][] data);
-
-    EffectScatterSeriesOption setData(EffectScatterDataItemOption[] data);
 
     EffectScatterSeriesOption setData(String[] data);
 

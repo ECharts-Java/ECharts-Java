@@ -139,12 +139,12 @@ public class EffectScatterSeries implements EffectScatterSeriesOption, Serializa
     @Setter(AccessLevel.NONE)
     private Object emphasis;
 
-    public EffectScatterSeries setEmphasis(Object emphasis) {
+    public EffectScatterSeries setEmphasis(EffectScatterEmphasisOption emphasis) {
         this.emphasis = emphasis;
         return this;
     }
 
-    public EffectScatterSeries setEmphasis(EffectScatterEmphasisOption emphasis) {
+    public EffectScatterSeries setEmphasis(Object emphasis) {
         this.emphasis = emphasis;
         return this;
     }
@@ -183,6 +183,11 @@ public class EffectScatterSeries implements EffectScatterSeriesOption, Serializa
     @Setter(AccessLevel.NONE)
     private Object data;
 
+    public EffectScatterSeries setData(EffectScatterDataItemOption[] data) {
+        this.data = data;
+        return this;
+    }
+
     public EffectScatterSeries setData(Number[] data) {
         this.data = data;
         return this;
@@ -204,11 +209,6 @@ public class EffectScatterSeries implements EffectScatterSeriesOption, Serializa
     }
 
     public EffectScatterSeries setData(Object[][] data) {
-        this.data = data;
-        return this;
-    }
-
-    public EffectScatterSeries setData(EffectScatterDataItemOption[] data) {
         this.data = data;
         return this;
     }
@@ -386,11 +386,11 @@ public class EffectScatterSeries implements EffectScatterSeriesOption, Serializa
 
     private OptionEncode encode;
 
-    private Boolean clip;
-
     private String effectType;
 
     private String showEffectOn;
 
     private RippleEffectOption rippleEffect;
+
+    private Boolean clip;
 }

@@ -1,0 +1,5 @@
+{
+  "name": "EffectScatterEmphasis",
+  "type": "class",
+  "implements": ["EffectScatterEmphasisOption"]
+}
