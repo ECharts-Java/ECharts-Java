@@ -12,7 +12,8 @@ public class EChartsSerializer {
     public EChartsSerializer(EChartsTypeAdapter<?>... typeAdapters) {
         GsonBuilder gsonBuilder = new GsonBuilder().disableHtmlEscaping()
                 .registerTypeAdapter(markArea2DDataItemAdapter.getType(), markArea2DDataItemAdapter)
-                .registerTypeAdapter(markLine2DDataItemAdapter.getType(), markLine2DDataItemAdapter);
+                .registerTypeAdapter(markLine2DDataItemAdapter.getType(), markLine2DDataItemAdapter)
+                .registerTypeAdapter(JsFunction.class, new JsFunctionTypeAdapter());
         for (EChartsTypeAdapter<?> typeAdapter : typeAdapters) {
             gsonBuilder.registerTypeAdapter(typeAdapter.getType(), typeAdapter);
         }
