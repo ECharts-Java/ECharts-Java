@@ -5,7 +5,7 @@ import org.icepear.echarts.origin.util.StatesOptionMixin;
 
 /**
  * https://echarts.apache.org/en/option.html#series-pictorialBar.data
- *
+ * 
  * Each data item may override the series-level pictorial-symbol settings.
  */
 public interface PictorialBarDataItemOption extends PictorialBarStateOption, StatesOptionMixin, DefaultOptionDataItemObject {

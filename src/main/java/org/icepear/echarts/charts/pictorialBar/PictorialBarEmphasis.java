@@ -15,8 +15,6 @@ public class PictorialBarEmphasis implements PictorialBarEmphasisOption, Seriali
 
     private static final long serialVersionUID = 1L;
 
-    private Boolean disabled;
-
     private String focus;
 
     private BarItemStyleOption itemStyle;
@@ -24,4 +22,6 @@ public class PictorialBarEmphasis implements PictorialBarEmphasisOption, Seriali
     private BarLabelOption label;
 
     private Object blurScope;
+
+    private Boolean disabled;
 }

@@ -56,8 +56,6 @@ public interface PictorialBarSeriesOption
 
     PictorialBarSeriesOption setHoverAnimation(Boolean hoverAnimation);
 
-    PictorialBarSeriesOption setData(PictorialBarDataItemOption[] data);
-
     PictorialBarSeriesOption setData(Number[] data);
 
     PictorialBarSeriesOption setData(Number[][] data);
@@ -65,6 +63,8 @@ public interface PictorialBarSeriesOption
     PictorialBarSeriesOption setData(Object[] data);
 
     PictorialBarSeriesOption setData(Object[][] data);
+
+    PictorialBarSeriesOption setData(PictorialBarDataItemOption[] data);
 
     PictorialBarSeriesOption setData(String[] data);
 

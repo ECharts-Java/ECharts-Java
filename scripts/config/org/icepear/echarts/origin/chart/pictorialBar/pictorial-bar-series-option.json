@@ -1,0 +1,43 @@
+{
+  "name": "PictorialBarSeriesOption",
+  "type": "interface",
+  "extends": [
+    "BaseBarSeriesOption",
+    "PictorialBarStateOption",
+    "SeriesStackOptionMixin",
+    "SeriesEncodeOptionMixin"
+  ],
+  "fields": [
+    { "name": "type", "types": ["String"], "default": "pictorialBar" },
+    { "name": "coordinateSystem", "types": ["String"] },
+    { "name": "clip", "types": ["Boolean"] },
+    { "name": "symbol", "types": ["String"] },
+    { "name": "symbolSize", "types": ["Number", "Number[]", "String", "String[]"] },
+    { "name": "symbolPosition", "types": ["String"] },
+    { "name": "symbolOffset", "types": ["Number[]", "String[]"] },
+    { "name": "symbolRotate", "types": ["Number"] },
+    { "name": "symbolRepeat", "types": ["Boolean", "Number", "String"] },
+    { "name": "symbolRepeatDirection", "types": ["String"] },
+    { "name": "symbolMargin", "types": ["Number", "String"] },
+    { "name": "symbolClip", "types": ["Boolean"] },
+    { "name": "symbolBoundingData", "types": ["Number", "Number[]"] },
+    { "name": "symbolPatternSize", "types": ["Number"] },
+    { "name": "hoverAnimation", "types": ["Boolean"] },
+    {
+      "name": "data",
+      "types": [
+        "String[]",
+        "String[][]",
+        "Number[]",
+        "Number[][]",
+        "Date[]",
+        "Date[][]",
+        "PictorialBarDataItemOption[]"
+      ]
+    },
+    { "name": "emphasis", "types": ["PictorialBarEmphasisOption"] }
+  ],
+  "comments": [
+    "https://echarts.apache.org/en/option.html#series-pictorialBar"
+  ]
+}

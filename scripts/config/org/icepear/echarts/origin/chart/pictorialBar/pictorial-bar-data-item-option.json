@@ -1,0 +1,29 @@
+{
+  "name": "PictorialBarDataItemOption",
+  "type": "interface",
+  "extends": [
+    "PictorialBarStateOption",
+    "StatesOptionMixin",
+    "DefaultOptionDataItemObject"
+  ],
+  "fields": [
+    { "name": "cursor", "types": ["String"] },
+    { "name": "symbol", "types": ["String"] },
+    { "name": "symbolSize", "types": ["Number", "Number[]", "String", "String[]"] },
+    { "name": "symbolPosition", "types": ["String"] },
+    { "name": "symbolOffset", "types": ["Number[]", "String[]"] },
+    { "name": "symbolRotate", "types": ["Number"] },
+    { "name": "symbolRepeat", "types": ["Boolean", "Number", "String"] },
+    { "name": "symbolRepeatDirection", "types": ["String"] },
+    { "name": "symbolMargin", "types": ["Number", "String"] },
+    { "name": "symbolClip", "types": ["Boolean"] },
+    { "name": "symbolBoundingData", "types": ["Number", "Number[]"] },
+    { "name": "symbolPatternSize", "types": ["Number"] },
+    { "name": "hoverAnimation", "types": ["Boolean"] }
+  ],
+  "comments": [
+    "https://echarts.apache.org/en/option.html#series-pictorialBar.data",
+    "",
+    "Each data item may override the series-level pictorial-symbol settings."
+  ]
+}

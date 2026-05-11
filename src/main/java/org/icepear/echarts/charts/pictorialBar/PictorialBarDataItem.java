@@ -17,6 +17,16 @@ public class PictorialBarDataItem implements PictorialBarDataItemOption, Seriali
 
     private static final long serialVersionUID = 1L;
 
+    private BarItemStyleOption itemStyle;
+
+    private BarLabelOption label;
+
+    private Object emphasis;
+
+    private Object select;
+
+    private Object blur;
+
     @Setter(AccessLevel.NONE)
     private Object id;
 
@@ -92,16 +102,6 @@ public class PictorialBarDataItem implements PictorialBarDataItemOption, Seriali
     }
 
     private String cursor;
-
-    private BarItemStyleOption itemStyle;
-
-    private BarLabelOption label;
-
-    private Object emphasis;
-
-    private Object select;
-
-    private Object blur;
 
     private String symbol;
 

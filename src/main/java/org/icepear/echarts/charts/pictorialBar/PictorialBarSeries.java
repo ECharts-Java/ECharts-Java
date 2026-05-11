@@ -138,12 +138,12 @@ public class PictorialBarSeries implements PictorialBarSeriesOption, Serializabl
     @Setter(AccessLevel.NONE)
     private Object emphasis;
 
-    public PictorialBarSeries setEmphasis(PictorialBarEmphasisOption emphasis) {
+    public PictorialBarSeries setEmphasis(Object emphasis) {
         this.emphasis = emphasis;
         return this;
     }
 
-    public PictorialBarSeries setEmphasis(Object emphasis) {
+    public PictorialBarSeries setEmphasis(PictorialBarEmphasisOption emphasis) {
         this.emphasis = emphasis;
         return this;
     }
@@ -182,11 +182,6 @@ public class PictorialBarSeries implements PictorialBarSeriesOption, Serializabl
     @Setter(AccessLevel.NONE)
     private Object data;
 
-    public PictorialBarSeries setData(PictorialBarDataItemOption[] data) {
-        this.data = data;
-        return this;
-    }
-
     public PictorialBarSeries setData(Number[] data) {
         this.data = data;
         return this;
@@ -208,6 +203,11 @@ public class PictorialBarSeries implements PictorialBarSeriesOption, Serializabl
     }
 
     public PictorialBarSeries setData(Object[][] data) {
+        this.data = data;
+        return this;
+    }
+
+    public PictorialBarSeries setData(PictorialBarDataItemOption[] data) {
         this.data = data;
         return this;
     }
