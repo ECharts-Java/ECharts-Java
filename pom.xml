@@ -5,7 +5,7 @@
 
   <groupId>org.icepear.echarts</groupId>
   <artifactId>echarts-java</artifactId>
-  <version>1.1.0</version>
+  <version>1.1.1</version>
 
   <name>ECharts Java</name>
   <description>
@@ -37,6 +37,11 @@
       <id>incandescentxxc</id>
       <name>Xiaochuan Xu</name>
       <email>incandescentxxc@gmail.com</email>
+    </developer>
+    <developer>
+      <id>PeiyangYu</id>
+      <name>Peiyang Yu</name>
+      <email>yupeiyang9973@gmail.com</email>
     </developer>
   </developers>
 

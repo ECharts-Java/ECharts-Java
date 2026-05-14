@@ -52,17 +52,17 @@ Maven 项目:
 <dependency>
   <groupId>org.icepear.echarts</groupId>
   <artifactId>echarts-java</artifactId>
-  <version>1.1.0</version>
+  <version>1.1.1</version>
 </dependency>
 ```
 
 Gradle 项目:
 
 ```
-implementation 'org.icepear.echarts:echarts-java:1.1.0'
+implementation 'org.icepear.echarts:echarts-java:1.1.1'
 ```
 
-如果你使用的是其他项目，请参阅[这里](https://search.maven.org/artifact/org.icepear.echarts/echarts-java/1.1.0/jar)。
+如果你使用的是其他项目，请参阅[这里](https://search.maven.org/artifact/org.icepear.echarts/echarts-java/1.1.1/jar)。
 
 ## 🔭 使用
 
