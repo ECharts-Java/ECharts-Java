@@ -1,0 +1,15 @@
+{
+  "name": "RippleEffectOption",
+  "type": "interface",
+  "extends": [],
+  "fields": [
+    { "name": "color", "types": ["String"] },
+    { "name": "number", "types": ["Number"] },
+    { "name": "period", "types": ["Number"] },
+    { "name": "scale", "types": ["Number"] },
+    { "name": "brushType", "types": ["String"] }
+  ],
+  "comments": [
+    "https://echarts.apache.org/en/option.html#series-effectScatter.rippleEffect"
+  ]
+}

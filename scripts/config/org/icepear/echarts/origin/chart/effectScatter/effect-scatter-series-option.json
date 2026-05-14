@@ -1,0 +1,42 @@
+{
+  "name": "EffectScatterSeriesOption",
+  "type": "interface",
+  "extends": [
+    "SeriesOption",
+    "EffectScatterStateOption",
+    "SeriesOnCartesianOptionMixin",
+    "SeriesOnPolarOptionMixin",
+    "SeriesOnCalendarOptionMixin",
+    "SeriesOnGeoOptionMixin",
+    "SeriesOnSingleOptionMixin",
+    "SymbolOptionMixin",
+    "SeriesEncodeOptionMixin"
+  ],
+  "fields": [
+    { "name": "type", "types": ["String"], "default": "effectScatter" },
+    { "name": "coordinateSystem", "types": ["String"] },
+    { "name": "effectType", "types": ["String"] },
+    { "name": "showEffectOn", "types": ["String"] },
+    { "name": "rippleEffect", "types": ["RippleEffectOption"] },
+    { "name": "clip", "types": ["Boolean"] },
+    {
+      "name": "data",
+      "types": [
+        "String[]",
+        "String[][]",
+        "Number[]",
+        "Number[][]",
+        "Date[]",
+        "Date[][]",
+        "EffectScatterDataItemOption[]"
+      ]
+    },
+    {
+      "name": "emphasis",
+      "types": ["EffectScatterEmphasisOption"]
+    }
+  ],
+  "comments": [
+    "https://echarts.apache.org/en/option.html#series-effectScatter"
+  ]
+}
