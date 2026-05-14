@@ -1,0 +1,5 @@
+{
+  "name": "LinesEffect",
+  "type": "class",
+  "implements": ["LinesEffectOption"]
+}

@@ -1,0 +1,15 @@
+{
+  "series": [
+    {
+      "type": "lines",
+      "data": [
+        { "coords": [[0, 0], [50, 80]] },
+        { "coords": [[50, 80], [120, 30]] },
+        { "coords": [[120, 30], [200, 90]] }
+      ],
+      "coordinateSystem": "cartesian2d",
+      "polyline": false,
+      "effect": { "show": true, "symbol": "arrow", "trailLength": 0.7 }
+    }
+  ]
+}

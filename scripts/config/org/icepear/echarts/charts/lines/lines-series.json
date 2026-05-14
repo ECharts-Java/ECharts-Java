@@ -1,0 +1,5 @@
+{
+  "name": "LinesSeries",
+  "type": "class",
+  "implements": ["LinesSeriesOption"]
+}

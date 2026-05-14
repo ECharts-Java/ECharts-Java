@@ -1,0 +1,5 @@
+{
+  "name": "LinesDataItem",
+  "type": "class",
+  "implements": ["LinesDataItemOption"]
+}
