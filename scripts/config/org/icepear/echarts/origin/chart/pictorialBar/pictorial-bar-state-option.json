@@ -1,0 +1,13 @@
+{
+  "name": "PictorialBarStateOption",
+  "type": "interface",
+  "extends": [],
+  "fields": [
+    { "name": "itemStyle", "types": ["BarItemStyleOption"] },
+    { "name": "label", "types": ["BarLabelOption"] }
+  ],
+  "comments": [
+    "https://echarts.apache.org/en/option.html#series-pictorialBar.itemStyle",
+    "https://echarts.apache.org/en/option.html#series-pictorialBar.label"
+  ]
+}

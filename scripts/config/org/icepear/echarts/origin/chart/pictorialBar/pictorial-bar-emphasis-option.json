@@ -1,0 +1,15 @@
+{
+  "name": "PictorialBarEmphasisOption",
+  "type": "interface",
+  "extends": [
+    "DefaultStatesMixinEmpasis",
+    "PictorialBarStateOption",
+    "EmphasisOption"
+  ],
+  "fields": [
+    { "name": "disabled", "types": ["Boolean"] }
+  ],
+  "comments": [
+    "https://echarts.apache.org/en/option.html#series-pictorialBar.emphasis"
+  ]
+}

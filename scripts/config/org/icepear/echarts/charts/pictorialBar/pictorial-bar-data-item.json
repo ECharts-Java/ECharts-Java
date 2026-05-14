@@ -1,0 +1,5 @@
+{
+  "name": "PictorialBarDataItem",
+  "type": "class",
+  "implements": ["PictorialBarDataItemOption"]
+}
