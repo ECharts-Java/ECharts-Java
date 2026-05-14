@@ -1,0 +1,5 @@
+{
+  "name": "MapDataItem",
+  "type": "class",
+  "implements": ["MapDataItemOption"]
+}

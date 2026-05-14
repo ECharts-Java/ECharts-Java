@@ -1,0 +1,5 @@
+{
+  "name": "MapEmphasis",
+  "type": "class",
+  "implements": ["MapEmphasisOption"]
+}

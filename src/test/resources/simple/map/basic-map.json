@@ -1,0 +1,14 @@
+{
+  "series": [
+    {
+      "type": "map",
+      "data": [
+        { "name": "California", "value": 393 },
+        { "name": "Texas", "value": 295 },
+        { "name": "New York", "value": 202 }
+      ],
+      "map": "USA",
+      "roam": true
+    }
+  ]
+}

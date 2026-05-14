@@ -1,0 +1,35 @@
+{
+  "title": { "left": "right", "text": "USA Population Estimates (2012)" },
+  "tooltip": { "showDelay": 0, "transitionDuration": 0.2, "trigger": "item" },
+  "visualMap": {
+    "left": "right",
+    "realtime": false,
+    "min": 500000,
+    "max": 38000000,
+    "color": ["orangered", "yellow", "lightskyblue"],
+    "text": ["High", "Low"],
+    "calculable": true
+  },
+  "series": [
+    {
+      "type": "map",
+      "name": "USA PopEstimates",
+      "emphasis": {
+        "itemStyle": { "areaColor": "rgb(177, 195, 245)" },
+        "label": { "show": true }
+      },
+      "data": [
+        { "name": "Alabama", "value": 4822023 },
+        { "name": "Alaska", "value": 731449 },
+        { "name": "Arizona", "value": 6553255 },
+        { "name": "California", "value": 38041430 },
+        { "name": "Texas", "value": 26059203 },
+        { "name": "New York", "value": 19570261 },
+        { "name": "Puerto Rico", "value": 3667084 }
+      ],
+      "itemStyle": { "borderColor": "#fff", "areaColor": "rgb(135, 169, 240)" },
+      "roam": true,
+      "map": "USA"
+    }
+  ]
+}
