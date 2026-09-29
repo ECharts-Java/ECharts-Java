@@ -1,0 +1,32 @@
+{
+  "title": { "text": "5 Data", "left": 10 },
+  "toolbox": {
+    "feature": {
+      "dataZoom": { "yAxisIndex": false },
+      "saveAsImage": { "pixelRatio": 2 }
+    }
+  },
+  "tooltip": { "trigger": "axis", "axisPointer": { "type": "shadow" } },
+  "grid": { "bottom": 90 },
+  "dataZoom": [{ "type": "inside" }, { "type": "slider" }],
+  "xAxis": {
+    "data": [
+      "2011-01-01\n00:00:00",
+      "2011-01-01\n00:00:01",
+      "2011-01-01\n00:00:02",
+      "2011-01-01\n00:00:03",
+      "2011-01-01\n00:00:04"
+    ],
+    "silent": false,
+    "splitLine": { "show": false },
+    "splitArea": { "show": false }
+  },
+  "yAxis": { "splitArea": { "show": false } },
+  "series": [
+    {
+      "type": "bar",
+      "data": ["3521.00", "3273.00", "3810.00", "3096.00", "3644.00"],
+      "large": true
+    }
+  ]
+}

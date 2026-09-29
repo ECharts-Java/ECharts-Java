@@ -62,7 +62,7 @@
 - [ ] [Multiple Y Axes](https://echarts.apache.org/examples/en/editor.html?c=multiple-y-axis)
 - [ ] ~~[Animation Delay](https://echarts.apache.org/examples/en/editor.html?c=bar-animation-delay)~~
 - [ ] ~~[Bar Chart Drilldown Animation](https://echarts.apache.org/examples/en/editor.html?c=bar-drilldown)~~
-- [ ] [Large Scale Bar Chart](https://echarts.apache.org/examples/en/editor.html?c=bar-large)
+- [x] [Large Scale Bar Chart](https://echarts.apache.org/examples/en/editor.html?c=bar-large)
 - [ ] ~~[Bar Race](https://echarts.apache.org/examples/en/editor.html?c=bar-race)~~
 - [ ] ~~[Bar Race (Country)](https://echarts.apache.org/examples/en/editor.html?c=bar-race-country)~~
 - [ ] ~~[Wheater Statistics](https://echarts.apache.org/examples/en/editor.html?c=bar-rich-text)~~
