@@ -40,7 +40,8 @@ public class LargeScaleBarChartTest {
 
     @Test
     public void testLargeScaleBarChart() {
-        // 官方例子用 formatTime('yyyy-MM-dd\nhh:mm:ss', ...) 逐秒生成，值经过 toFixed(2) 成字符串
+        // The example generates these with formatTime('yyyy-MM-dd\nhh:mm:ss', ...) one
+        // second apart, and pushes values through toFixed(2), so they arrive as strings.
         String[] categoryData = new String[] {
                 "2011-01-01\n00:00:00",
                 "2011-01-01\n00:00:01",
@@ -73,7 +74,7 @@ public class LargeScaleBarChartTest {
 
         DataZoom dataZoom2 = new DataZoom().setType("slider");
 
-        // 官方例子两个轴都没写 type，交给 ECharts 推断 —— 置 null 以保持一致
+        // The example leaves `type` off both axes and lets ECharts infer it, so null it out to match.
         CategoryAxis xAxis = new CategoryAxis()
                 .setType(null)
                 .setData(categoryData)
