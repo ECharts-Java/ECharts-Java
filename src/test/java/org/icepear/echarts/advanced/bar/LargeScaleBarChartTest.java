@@ -106,7 +106,5 @@ public class LargeScaleBarChartTest {
         JsonElement expected = JsonParser.parseReader(reader);
         JsonElement actual = new EChartsSerializer().toJsonTree(option);
         assertEquals(expected, actual);
-
-        // System.out.println(new EChartsSerializer().toJson(option));
     }
 }
