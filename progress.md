@@ -73,7 +73,7 @@
 - [ ] [Stacked Bar Chart on Polar](https://echarts.apache.org/examples/en/editor.html?c=bar-polar-stack)
 - [ ] [Stacked Bar Chart on Polar (Radial)](https://echarts.apache.org/examples/en/editor.html?c=bar-polar-stack-radial)
 - [ ] [Rounded Bar on Polar](https://echarts.apache.org/examples/en/editor.html?c=polar-roundCap)
-- [ ] [Sort Data in Bar Chart](https://echarts.apache.org/examples/en/editor.html?c=data-transform-sort-bar)
+- [x] [Sort Data in Bar Chart](https://echarts.apache.org/examples/en/editor.html?c=data-transform-sort-bar)
 - [ ] [Simple Encode](https://echarts.apache.org/examples/en/editor.html?c=dataset-encode0)
 - [ ] [Series Layout By Column or Row](https://echarts.apache.org/examples/en/editor.html?c=dataset-series-layout-by)
 - [ ] [Simple Example of Dataset](https://echarts.apache.org/examples/en/editor.html?c=dataset-simple0)
